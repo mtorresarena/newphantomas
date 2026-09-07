@@ -154,6 +154,10 @@ la meta), `song` y opcionalmente `dawn` (segundos del reloj de amanecer). Las co
 
 ## Cambios
 
+- **v1.4.1 (2026-09-07)**: bloquea selección, menús y gestos nativos de pulsación
+  prolongada en los controles de Safari/iPhone. Conserva el manejo por Pointer Events
+  y el clic del comparador. La desaparición de la lupa debe confirmarse en el iPhone afectado.
+
 - **v1.4 (2026-09-07)**: renovación visual de los cuatro niveles; fondos ilustrados por familias
   de salas, ocho tipos de enemigo con dos poses, dieciséis decoraciones/metas, materiales de
   suelo y plataformas, puertas y objetos pixelados, interfaz bitmap y comparador conservado.

@@ -19,6 +19,8 @@
     color:#fff;font:600 calc(var(--pad)*.30)/1 system-ui,sans-serif;display:flex;align-items:center;justify-content:center;
     pointer-events:auto;backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px);box-shadow:0 2px 10px rgba(0,0,0,.4);transition:background .08s,transform .08s}
   #touch div:active{background:rgba(255,210,58,.4);transform:scale(.94)}
+  /* Safari: holding a control must not start text selection or a callout. */
+  #touch,#touch *,#c,#lookToggle{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none;touch-action:none}
   /* cruceta abajo a la izquierda */
   #tl{left:calc(var(--sl) + var(--pad)*.25);bottom:calc(var(--sb) + var(--pad)*.55);width:var(--pad);height:var(--pad);font-size:calc(var(--pad)*.42)}
   #tr{left:calc(var(--sl) + var(--pad)*1.42);bottom:calc(var(--sb) + var(--pad)*.55);width:var(--pad);height:var(--pad);font-size:calc(var(--pad)*.42)}
@@ -51,7 +53,7 @@
 <script>
 'use strict';
 // =====================================================================
-//  PHANTOMAS: LA MANSION DEL BARON  v1.4 (2026-09-07)
+//  PHANTOMAS: LA MANSION DEL BARON  v1.4.1 (2026-09-07)
 //  Plataformas horizontal inspirado en Phantomas (Dinamic, 1986).
 //  Motor sin librerias. Presentacion pixel art opcional en assets/.
 //  Mundo logico de 320x192 (tiles de 16 px); se conservan fisicas y mapas.
@@ -736,7 +738,14 @@ addEventListener('blur',autoPause);document.addEventListener('visibilitychange',
 function bindTouch(id,k){const el=document.getElementById(id);const on=e=>{e.preventDefault();touch[k]=true;if(k==='j')anyKey=true;audio.init();if(audio.ctx&&!music.timer)music.start();};const off=e=>{e.preventDefault();touch[k]=false;};
  el.addEventListener('pointerdown',on);el.addEventListener('pointerup',off);el.addEventListener('pointercancel',off);el.addEventListener('pointerleave',off);}
 bindTouch('tl','l');bindTouch('tr','r');bindTouch('tj','j');bindTouch('td','d');
-for(const id of ['tl','tr','tj','td','tf','tp'])document.getElementById(id).addEventListener('contextmenu',e=>e.preventDefault());
+// Keep Pointer Events for gameplay; separately cancel Safari's native touch
+// gestures on these surfaces. Do not suppress clicks on the look comparator.
+for(const el of [cv,...['tl','tr','tj','td','tf','tp'].map(id=>document.getElementById(id))]){
+ const suppressNative=e=>{if(e.cancelable)e.preventDefault();};
+ for(const type of ['touchstart','touchmove'])el.addEventListener(type,suppressNative,{passive:false});
+ for(const type of ['contextmenu','selectstart','dragstart'])el.addEventListener(type,suppressNative);
+}
+for(const type of ['contextmenu','selectstart'])if(lookButton)lookButton.addEventListener(type,e=>{if(e.cancelable)e.preventDefault();});
 document.getElementById('tf').addEventListener('pointerdown',e=>{e.preventDefault();const d=document.documentElement;if(document.fullscreenElement){document.exitFullscreen&&document.exitFullscreen();}else if(d.requestFullscreen)d.requestFullscreen().catch(()=>{});});
 let uiRects={};
 cv.addEventListener('pointerdown',e=>{audio.init();if(audio.ctx&&!music.timer)music.start();const r=cv.getBoundingClientRect();const lx=(e.clientX-r.left)/r.width*W,ly=(e.clientY-r.top)/r.height*VH-vOff;const hitR=k=>{const q=uiRects[k];return !!q&&lx>=q.x&&lx<=q.x+q.w&&ly>=q.y&&ly<=q.y+q.h;};
