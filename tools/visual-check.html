@@ -114,8 +114,9 @@
           const art=frame.contentWindow.WorldArt;
           for(let attempt=0;attempt<100&&!['scenery','enemies','props'].every(n=>art.ready(n));attempt++)await new Promise(r=>setTimeout(r,100));
           if(!['scenery','enemies','props'].every(n=>art.ready(n)))throw Error('Faltan atlas por cargar');
-          let count=0;for(const mode of Object.keys(labels)){api.preview(mode);api.compareLook();api.compareLook();count++;await new Promise(r=>setTimeout(r,30));}
-          report('OK: '+count+' vistas renderizadas en ambos aspectos. Tres atlas cargados. Caché: '+art.cacheSize+' imágenes.');
+          const pixi=frame.contentWindow.PhantomasPixi;if(!pixi)throw Error("Falta la capa PixiJS");for(let attempt=0;attempt<150&&pixi&&!pixi.ready&&!pixi.error;attempt++)await new Promise(r=>setTimeout(r,100));if(pixi&&!pixi.ready)throw Error('PixiJS no pudo iniciar');
+          let count=0;for(const mode of Object.keys(labels)){api.preview(mode);api.compareLook();api.compareLook();if(pixi&&mode!=='title'&&(!pixi.active||pixi.error))throw Error('PixiJS inactivo en '+mode);count++;await new Promise(r=>setTimeout(r,30));}
+          report('OK: '+count+' vistas renderizadas en ambos aspectos y PixiJS activo. Tres atlas cargados. Caché: '+art.cacheSize+' imágenes.');
         }catch(e){report('FALLO: '+e.message,true);}};run();
       }
     } catch (error) {

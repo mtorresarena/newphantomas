@@ -7,7 +7,7 @@
 - Dokploy: Dockerfile de la raíz, contexto de construcción `.`, puerto interno 80.
 - La imagen copia `index.html` y toda la carpeta `assets/`. Los atlas no se generan al construir.
 - El repositorio `cerebro-voz-starter` conserva una copia documental; sus commits no actualizan esta web.
-- Verificación tras desplegar: el HTML debe contener `v1.4` y `assets/world-art.js?v=1.4`;
+- Verificación tras desplegar: el HTML debe contener `v1.5` y `assets/pixi-world.js?v=1.5`;
   `/assets/world-scenery.png` debe responder 200 y `/assets/no-existe.js` debe responder 404.
 - Si Dokploy no tiene autodeploy activado, ejecutar Deploy en la aplicación de este dominio.
 
@@ -186,3 +186,29 @@ la meta), `song` y opcionalmente `dawn` (segundos del reloj de amanecer). Las co
 7. Estado, carga de nivel, físicas (`moveX`, `moveY`), plataformas móviles, jugador, enemigos, cámara.
 8. Render: cielo/fondo, decoración, tiles, objetos, enemigos, jugador, partículas, oscuridad, HUD, pantallas.
 9. Bucle a 60 Hz con respaldo por `setInterval` si `requestAnimationFrame` no dispara.
+
+
+## Presentación con PixiJS (v1.5)
+
+PixiJS está activo por defecto en las salas de los cuatro niveles. El jardín
+utiliza sprites nativos; las demás salas reutilizan el dibujo completo del juego
+en dos texturas de tamaño fijo (fondo y mundo), compuestas por PixiJS con niebla,
+partículas y luces según el ambiente. Se preservan oscuridad, plataformas móviles,
+proyectiles, objetos y animaciones. El marcador y las pantallas siguen en Canvas.
+
+No es una reescritura de físicas ni una migración de todos los objetos a sprites
+nativos. Las dos superficies se reutilizan: no se crean texturas nuevas por frame.
+La calidad de los gráficos interiores se conserva a escala 3×.
+
+- URL normal: efectos activos, sin panel de prueba sobre el juego.
+- `?demo=pixi`: comparación Canvas/PixiJS y efectos durante la misma partida.
+- `?renderer=canvas`: respaldo sin cargar la biblioteca PixiJS.
+- El botón de aspecto anterior también utiliza Canvas.
+- Si falla WebGL, continúa el dibujo Canvas.
+
+Comprobación visual automatizada: `tools/visual-check.html?sweep=1`.
+El rendimiento y el gesto prolongado requieren validación en un iPhone real;
+las pruebas de escritorio no sustituyen esa comprobación.
+
+PixiJS 8.16.0 se sirve localmente desde `assets/pixi-8.16.0.min.js`, con licencia
+MIT en `assets/PIXI-LICENSE.txt`. No depende de un CDN en ejecución.
