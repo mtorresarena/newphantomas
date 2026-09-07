@@ -49,12 +49,15 @@
 <script src="assets/garden-art.js?v=1.4"></script>
 <script src="assets/world-frames.js?v=1.4"></script>
 <script src="assets/world-prop-frames.js?v=1.4"></script>
-<script src="assets/world-art.js?v=1.4"></script>
+<script src="assets/expansion-frames.js?v=2"></script>
+<script src="assets/expansion-prop-frames.js?v=2"></script>
+<script src="assets/expansion-art.js?v=2"></script>
+<script src="assets/world-art.js?v=2.1"></script>
 <script src="assets/pixi-world.js?v=1.5"></script>
 <script>
 'use strict';
 // =====================================================================
-//  PHANTOMAS: LA MANSION DEL BARON  v1.5 (2026-09-07)
+//  PHANTOMAS: LA MANSION DEL BARON  v2.1 (2026-09-07)
 //  Plataformas horizontal inspirado en Phantomas (Dinamic, 1986).
 //  Fisicas propias. Presentacion hibrida PixiJS/Canvas en assets/.
 //  Mundo logico de 320x192 (tiles de 16 px); se conservan fisicas y mapas.
@@ -74,7 +77,7 @@ const CFG={JV:5.5,GRAV:0.23,SPEED:1.5,MAXFALL:6.5,ACCEL:0.35,
  BAT_FX:0.02,BAT_FY:0.09,BAT_AMP_Y:8,SPIDER_F:0.025,SPIDER_TOP:18,SPIDER_TOP_DAWN:28,GHOST_WOBBLE:0.1,VAMP_FLEE:0.7,SKULL_LOOK:24,
  SENTINEL_NOTICE:55,SENTINEL_SPEED:2.3,SENTINEL_DIST:88,SENTINEL_RECOVER:110,SENTINEL_RANGE:140,
  CRUMBLE_SHAKE:60,CRUMBLE_GONE:170,CRUMBLE_WARN:24,
- WATCHER_PREPARE:45,WATCHER_LOCK:24,WATCHER_RECOVER:120,WATCHER_SPEED:2.2,WATCHER_RANGE:160};
+ WATCHER_PREPARE:45,WATCHER_LOCK:24,WATCHER_RECOVER:120,WATCHER_SPEED:2.2,WATCHER_RANGE:160,WATCHER_MAX_ORBS:4};
 const S_ART=6; // resolucion de los lienzos prerrenderizados (se dibujan escalados a la pantalla)
 function computeS(){const coarse=(typeof matchMedia==='function')&&matchMedia('(pointer:coarse)').matches;return Math.max(2,Math.min(coarse?4:6,Math.ceil(Math.min(innerWidth/W,innerHeight/H)*(window.devicePixelRatio||1))));}
 let S=computeS();
@@ -177,6 +180,7 @@ function drawGuard(g,x,y,t,dir,mummy){if(gardenLook&&WORLD&&WORLD.enemy(g,mummy?
  else{g.fillStyle='#141a24';g.fillRect(-3,-15.6,6,1.5);glow(g,0,-14.9,3,'255,60,60',.35);g.fillStyle='#ff4a4a';g.fillRect(-2.4,-15.3,4.8,0.7);g.fillStyle='#e02030';g.beginPath();g.moveTo(-1,-18);g.quadraticCurveTo(-4,-22,-6,-19.5);g.quadraticCurveTo(-3.5,-20.5,-1.5,-16.8);g.closePath();g.fill();}
  g.restore();}
 function drawSentinel(g,x,y,state,timer,dir,anim){
+ if(gardenLook&&window.ExpansionArt?.actor(g,'sentinel',x,y,state,timer,dir,anim))return;
  g.save();g.translate(x+9,y+24);if(dir<0)g.scale(-1,1);
  const crouch=state==='alert'||state==='recover';
  const charging=state==='charge';
@@ -227,7 +231,8 @@ function drawCrackedPlatform(g,x,y,state,timer,th){
  const t=THEMES[th]||THEMES.garden;
  const pk=t.plank||'wood';
  const px=x+ox,py=y+oy;
- if(pk==='stone'){
+ if(gardenLook&&WORLD?.tile(g,th,t,'=',px,py,Math.floor(x/TS),Math.floor(y/TS))){}
+ else if(pk==='stone'){
   rrect(g,px,py,16,5.5,1,lgr(g,px,py,px,py+5.5,['#a8acb6','#6a6e78','#383c44']));
   g.fillStyle='rgba(255,255,255,.25)';g.fillRect(px+0.5,py+0.5,15,0.8);
  }else if(pk==='metal'){
@@ -256,6 +261,7 @@ function drawOrb(g,x,y){
  circ(g,x+4,y+4,1.6,'#ffffff');
 }
 function drawWatcher(g,x,y,state,timer,dir,anim){
+ if(gardenLook&&window.ExpansionArt?.actor(g,'watcher',x,y,state,timer,dir,anim))return;
  g.save();
  g.translate(x+7,y+8);
  const recover=state==='recover';
@@ -834,7 +840,7 @@ const LEVELS=[
 {t:'statues',rows:[
 "############################################",
 "............................................",
-"....A.........A.........A.........A.........",
+"............................................",
 "..................$.........................",
 "................======......................",
 "............................................",
@@ -848,20 +854,20 @@ const LEVELS=[
 {t:'statues',rows:[
 "############################################",
 "............................................",
-"....A.........A.........A.........A.........",
+"............................................",
 "................$.............$.............",
 "..............======........======..........",
 "............................................",
 ".....................................$......",
 "........=====.........=====.......=====.....",
 "..................m.........................",
-"..C.............c........K..............b...",
+"..C......................K..............b...",
 "############################################",
 "############################################"]},
 {t:'statues',rows:[
 "############################################",
 "............................................",
-"....A.........A.........A.........A.........",
+"............................................",
 "............................................",
 "................$...........$...............",
 "..............=====.......=====.............",
@@ -875,7 +881,7 @@ const LEVELS=[
 {t:'statues',rows:[
 "############################################",
 "............................................",
-"....A.........A.........A.........A.........",
+"............................................",
 "...................$.................$......",
 ".................======............======...",
 "............................................",
@@ -888,7 +894,7 @@ const LEVELS=[
 {t:'statues',rows:[
 "############################################",
 "............................................",
-"....A.........A.........A.........A.........",
+"............................................",
 "............................................",
 ".......................S....................",
 "............................................",
@@ -905,21 +911,21 @@ const LEVELS=[
 {t:'clocktower',rows:[
 "############################################",
 "............................................",
-"....Q.........Q.........Q.........Q.........",
+"..............Q.............................",
 "..................$.........................",
 "................======......................",
 "............................................",
 "..........................$.........k.......",
 "..........=====........._____.....=====.....",
 "......$.....................................",
-"..P.......................w.............b...",
+"..P.....................................b...",
 "############################################",
 "############################################"]},
 {t:'clocktower',rows:D3M},
 {t:'clocktower',rows:[
 "############################################",
 "............................................",
-"....Q.........Q.........Q.........Q.........",
+"..............Q.............................",
 "..........$.....................$...........",
 "........=====.................=====.........",
 "............................................",
@@ -932,7 +938,7 @@ const LEVELS=[
 {t:'clocktower',rows:[
 "############################################",
 "............................................",
-"....Q.........Q.........Q.........Q.........",
+"..............Q.............................",
 "................$...................$.......",
 ".............======...............======....",
 "....................................k.......",
@@ -946,7 +952,7 @@ const LEVELS=[
 {t:'clocktower',rows:[
 "############################################",
 "............................................",
-"....Q.........Q.........Q.........Q.........",
+"..............Q.............................",
 "...................$.................$......",
 ".................======............======...",
 "............................................",
@@ -959,7 +965,7 @@ const LEVELS=[
 {t:'clocktower',rows:[
 "############################################",
 "............................................",
-"....Q.........Q.........Q.........Q.........",
+"..............Q.............................",
 "............................................",
 ".......................S....................",
 "............................................",
@@ -976,7 +982,7 @@ const LEVELS=[
 {t:'observatory',rows:[
 "############################################",
 "............................................",
-"....W.........W.........W.........W.........",
+"............................................",
 "..................$.........................",
 "................======......................",
 "............................................",
@@ -990,7 +996,7 @@ const LEVELS=[
 {t:'observatory',rows:[
 "############################################",
 "............................................",
-"....W.........W.........W.........W.........",
+"............................................",
 "............................................",
 "................$...........$...............",
 "..............=====.......=====.............",
@@ -1004,7 +1010,7 @@ const LEVELS=[
 {t:'observatory',rows:[
 "############################################",
 "............................................",
-"....W.........W.........W.........W.........",
+"............................................",
 "................$...................$.......",
 ".............======...............======....",
 "............................................",
@@ -1017,7 +1023,7 @@ const LEVELS=[
 {t:'observatory',rows:[
 "############################################",
 "............................................",
-"....W.........W.........W.........W.........",
+"............................................",
 "...................$.................$......",
 ".................======....Y.......======...",
 "............................................",
@@ -1030,7 +1036,7 @@ const LEVELS=[
 {t:'observatory',rows:[
 "############################################",
 "............................................",
-"....W.........W.........W.........W.........",
+"............................................",
 "............................................",
 ".......................S....................",
 "............................................",
@@ -1047,7 +1053,7 @@ const LEVELS=[
 {t:'heart',rows:[
 "############################################",
 "............................................",
-"....s.........s.........s.........s.........",
+"..............s...................s.........",
 "..................$.........................",
 "................======......................",
 "............................................",
@@ -1061,7 +1067,7 @@ const LEVELS=[
 {t:'heart',rows:[
 "############################################",
 "............................................",
-"....s.........s.........s.........s.........",
+"..............s...................s.........",
 "............................................",
 "................$...........$...............",
 "..............=====.......=====.............",
@@ -1075,7 +1081,7 @@ const LEVELS=[
 {t:'heart',rows:[
 "############################################",
 "............................................",
-"....s.........s.........s.........s.........",
+"..............s...................s.........",
 "................$...................$.......",
 ".............======...............======....",
 "............................................",
@@ -1088,7 +1094,7 @@ const LEVELS=[
 {t:'heart',rows:[
 "############################################",
 "............................................",
-"....s.........s.........s.........s.........",
+"..............s...................s.........",
 "...................$.................$......",
 ".................======....Y.......======...",
 "............................................",
@@ -1101,7 +1107,7 @@ const LEVELS=[
 {t:'heart',rows:[
 "############################################",
 "............................................",
-"....s.........s.........s.........s.........",
+"..............s...................s.........",
 "............................................",
 ".......................S....................",
 "............................................",
@@ -1216,7 +1222,8 @@ const music={step:0,next:0,timer:null,on:true,song:SONGS.garden,
 const keys={},touch={l:false,r:false,j:false,d:false};let anyKey=false,gpPrev=false;
 const START_KEYS=['Space','Enter','ArrowUp','ArrowDown','ArrowLeft','ArrowRight','KeyW','KeyA','KeyS','KeyD','KeyZ','KeyK'];
 function cheatNextScreen(){
- if(state==='title'||state==='intro'||state==='over'||state==='pause'||state==='preview')newGame();
+ if(state==='title'||!player)newGame();
+ continued++;clearInput();
  if(state==='play'&&lvl===3&&boss&&(!boss.active&&!boss.defeated&&player.x<boss.x0-20)){
   player.x=boss.x0-16;player.y=160-18;player.vx=0;player.vy=0;cam.x=boss.x0;
   SFX.win();msg={s:'¡TRUCO: EL CUSTODIO!',t:90,col:'#ff3080'};return;
@@ -1228,7 +1235,7 @@ function cheatNextScreen(){
 }
 addEventListener('keydown',e=>{
  if(e.altKey&&e.code==='KeyN'){
-  e.preventDefault();cheatNextScreen();return;
+  e.preventDefault();if(!e.repeat)cheatNextScreen();return;
  }
  if(['AltLeft','AltRight'].includes(e.code)){e.preventDefault();return;}
  keys[e.code]=true;
@@ -1389,7 +1396,7 @@ function respawn(){if(player.lives<=0){setState('over');return;}music.gate(true)
    boss.conductors.forEach(c=>{c.charged=false;c.zap=0;});
   }
  }
- ents.forEach(e=>{if(e.t==='g'||e.t==='v'){e.active=false;e.x=e.sx;e.y=e.sy;}if(e.t==='K'||e.t==='Y'){e.state='idle';e.timer=0;e.x=e.sx;e.y=e.sy;}});balls=[];orbs=[];cam.x=Math.max(0,Math.min(L.W-W,player.x-150));}
+ ents.forEach(e=>{if(e.t==='g'||e.t==='v'){e.active=false;e.x=e.sx;e.y=e.sy;}if(e.t==='K'||e.t==='Y'){e.state='idle';e.timer=0;e.x=e.sx;e.y=e.sy;e.vy=0;e.onGround=false;e.traveled=0;}});balls=[];orbs=[];cam.x=Math.max(0,Math.min(L.W-W,player.x-150));}
 
 function updateMovers(){for(const m of movers){m.px=m.x;m.py=m.y;m.x=m.sx+Math.sin(simF*CFG.MOVER_FREQ+m.ph)*m.rx;m.y=m.sy+Math.sin(simF*CFG.MOVER_FREQ+m.ph)*m.ry;}}
 function landMovers(p,prevB){p.mover=null;if(p.vy<0||p.drop)return;
@@ -1443,7 +1450,7 @@ function updatePlayer(){const p=player;if(p.dead){p.dead--;if(p.dead===0)respawn
  }
  showZone(false);
  p.anim++;}
-function levelClear(){total.total+=stats.total;total.time+=stats.time;setState('clear');SFX.win();burst(player.x+5,player.y+9,40,C.y,3);
+function levelClear(){if(state!=='play'||(boss&&!boss.defeated))return;total.total+=stats.total;total.time+=stats.time;setState('clear');SFX.win();burst(player.x+5,player.y+9,40,C.y,3);
  if(lvl===LEVELS.length-1&&!continued){const pc=pct(total.bags,total.total);if(pc>best8){best8=pc;try{localStorage.setItem('phantomas.best8',String(pc));}catch(e){}}}}
 
 function updateEnts(){const p=player;const px=p.x+5,py=p.y+9;
@@ -1462,7 +1469,7 @@ function updateEnts(){const p=player;const px=p.x+5,py=p.y+9;
    if(e.y>H+40){e.x=e.sx;e.y=e.sy;e.vy=0;}break;}
   case 'K':{
     if(!e.onGround)e.vy=Math.min(CFG.MAXFALL,e.vy+CFG.GRAV);else e.vy=0;
-    const inCam=(e.x+e.w>cam.x-20&&e.x<cam.x+W+20);
+    const inCam=(e.x>=cam.x&&e.x+e.w<=cam.x+W);
     const dx=px-(e.x+e.w/2),dy=py-(e.y+e.h/2);
     const sameHeight=Math.abs(dy)<28;
     switch(e.state){
@@ -1470,7 +1477,7 @@ function updateEnts(){const p=player;const px=p.x+5,py=p.y+9;
       e.anim++;
       if(inCam&&sameHeight&&Math.abs(dx)<CFG.SENTINEL_RANGE&&!p.dead){
        const targetDir=dx>0?1:-1;
-       if(!wallAhead(e,targetDir)){
+       if(!wallAhead(e,targetDir)&&hasLos(e.x+e.w/2,e.y+e.h/2,px,py)){
         e.dir=targetDir;
         e.state='alert';
         e.timer=CFG.SENTINEL_NOTICE;
@@ -1480,6 +1487,7 @@ function updateEnts(){const p=player;const px=p.x+5,py=p.y+9;
       }
       break;
      case 'alert':
+      if(!inCam||p.dead){e.state='recover';e.timer=CFG.SENTINEL_RECOVER;break;}
       e.timer--;
       if(e.timer<=0){
        e.state='charge';
@@ -1516,7 +1524,7 @@ function updateEnts(){const p=player;const px=p.x+5,py=p.y+9;
     break;}
    case 'Y':{
     e.anim++;
-    const inCam=(e.x+e.w>cam.x-20&&e.x<cam.x+W+20);
+    const inCam=(e.x>=cam.x&&e.x+e.w<=cam.x+W);
     const ex=e.x+e.w/2,ey=e.y+e.h/2;
     const dx=px-ex,dy=py-ey;
     const dist=Math.hypot(dx,dy);
@@ -1533,6 +1541,7 @@ function updateEnts(){const p=player;const px=p.x+5,py=p.y+9;
       }
       break;
      case 'prepare':
+      if(!inCam||p.dead){e.state='recover';e.timer=CFG.WATCHER_RECOVER;break;}
       e.timer--;
       if(e.timer<=0){
        e.state='lock';
@@ -1547,10 +1556,11 @@ function updateEnts(){const p=player;const px=p.x+5,py=p.y+9;
       if(e.timer<=0){
        e.state='recover';
        e.timer=CFG.WATCHER_RECOVER;
+       if(!inCam||p.dead||!hasLos(ex,ey,e.tx,e.ty)||orbs.length>=CFG.WATCHER_MAX_ORBS||orbs.some(o=>o.owner===e))break;
        const fdx=e.tx-ex,fdy=e.ty-ey;
        const fdist=Math.hypot(fdx,fdy)||1;
        const spd=CFG.WATCHER_SPEED;
-       orbs.push({x:ex-4,y:ey-4,vx:(fdx/fdist)*spd,vy:(fdy/fdist)*spd,w:8,h:8,life:130});
+       orbs.push({x:ex-4,y:ey-4,vx:(fdx/fdist)*spd,vy:(fdy/fdist)*spd,w:8,h:8,life:130,owner:e});
        SFX.spectralFire();
        burst(ex,ey,8,'#d040ff',1.5);
       }
@@ -1568,11 +1578,13 @@ function updateEnts(){const p=player;const px=p.x+5,py=p.y+9;
  for(let i=balls.length-1;i>=0;i--){const b=balls[i];b.rot+=b.vx;b.life--;if(moveX(b,b.vx)||b.life<=0){burst(b.x+4,b.y+4,6,C.lg);balls.splice(i,1);}}
  for(let i=orbs.length-1;i>=0;i--){
   const o=orbs[i];
-  o.x+=o.vx;
-  o.y+=o.vy;
+  const steps=Math.max(1,Math.ceil(Math.max(Math.abs(o.vx),Math.abs(o.vy))/2));let blocked=false;
+  for(let n=0;n<steps&&!blocked;n++){
+   o.x+=o.vx/steps;o.y+=o.vy/steps;
+   for(let r=Math.floor(o.y/TS);r<=Math.floor((o.y+o.h-.001)/TS);r++)for(let c=Math.floor(o.x/TS);c<=Math.floor((o.x+o.w-.001)/TS);c++)if(isSolid(tileAt(c,r)))blocked=true;
+  }
   o.life--;
-  const colX=Math.floor((o.x+4)/TS),colY=Math.floor((o.y+4)/TS);
-  if(isSolid(tileAt(colX,colY))||o.life<=0||o.x<-20||o.x>L.W+20||o.y<-20||o.y>H+20){
+  if(blocked||o.life<=0||o.x<cam.x-32||o.x>cam.x+W+32||o.y<-20||o.y>H+20){
    burst(o.x+4,o.y+4,6,'#d040ff',1.2);
    orbs.splice(i,1);
   }
@@ -1761,6 +1773,7 @@ function drawBoss(cx){
   if(cx0<-30||cx0>W+30)continue;
   rrect(ctx,cx0+2,cy0+8,12,12,1,'#5a4628','#2e2010');
   rrect(ctx,cx0+4,cy0+4,8,4,1,'#8a6e38');
+  if(gardenLook){ctx.fillStyle='#b28b4b';ctx.fillRect(cx0+3,cy0+8,10,1);ctx.fillRect(cx0+3,cy0+10,1,8);ctx.fillStyle='#352834';ctx.fillRect(cx0+11,cy0+10,2,9);ctx.fillRect(cx0+4,cy0+18,7,1);ctx.fillStyle=c.charged?'#b8ffff':'#cda65b';ctx.fillRect(cx0+7,cy0+10,3,2);ctx.fillRect(cx0+6,cy0+12,3,2);ctx.fillRect(cx0+7,cy0+14,1,3);}
   if(c.charged){
    glow(ctx,cx0+8,cy0+3,16,'48,232,255',.45);
    circ(ctx,cx0+8,cy0+3,4,'#30e8ff','#ffffff');circ(ctx,cx0+8,cy0+3,2,'#ffffff');
@@ -1785,6 +1798,7 @@ function drawBoss(cx){
   ctx.save();
   ell(ctx,bx+24,142,18,4,'rgba(0,0,0,.35)');
   if(!boss.defeated&&boss.active)glow(ctx,bx+24,by+28,42,'160,60,240',.2);
+  if(!(gardenLook&&window.ExpansionArt?.actor(ctx,'boss',bx,by,boss.defeated?'dead':boss.state,boss.timer,1,boss.anim))){
   const stoneCol=flash?'#ffffff':'#565264',bronzeCol=flash?'#ffffff':'#967634',darkCol=flash?'#ffffff':'#242030';
   rrect(ctx,bx+14,by+40,20,12,3,bronzeCol,darkCol);
   circ(ctx,bx+24,by+46,3.5,stoneCol);
@@ -1810,6 +1824,7 @@ function drawBoss(cx){
    glow(ctx,bx+19,by+12,6,'210,60,255',.6);glow(ctx,bx+28,by+12,6,'210,60,255',.6);
    ctx.fillStyle=eyeCol;ctx.fillRect(bx+18,by+11,3,1.5);ctx.fillRect(bx+27,by+11,3,1.5);
   }
+  }
   ctx.restore();
  }
  if(boss.state==='aim'){
@@ -1829,6 +1844,9 @@ function drawBoss(cx){
   const wx=boss.wave.x-cx,wy=boss.wave.y;
   glow(ctx,wx+6,wy+3,16,'255,80,120',.4);rrect(ctx,wx,wy,boss.wave.w,boss.wave.h,2,'#ff4080','#ffffff');
  }
+}
+function drawBossHUD(){
+ if(!boss)return;
  if(boss.active&&!boss.defeated){
   const hx=W/2-42,hy=18;
   rrect(ctx,hx,hy,84,12,3,'rgba(8,10,24,.75)','#563870');
@@ -2048,7 +2066,7 @@ function drawTitle(){if(gardenLook&&GARDEN.ready('background')){drawGardenTitle(
  text('INSPIRADO EN EL CLÁSICO DE DINAMIC (1986)',W/2,180,'#7a7e86',1,'center');ctx.restore();}
 function drawOverlay(title,lines,col){if(gardenLook){ctx.fillStyle='rgba(2,4,12,.68)';ctx.fillRect(0,0,W,H);const h=40+lines.length*9,y0=Math.max(6,Math.round((H-h)/2));ctx.fillStyle='#0c1428';ctx.fillRect(22,y0,W-44,h);ctx.strokeStyle='#526480';ctx.lineWidth=.5;ctx.strokeRect(22.5,y0+.5,W-45,h-1);ctx.fillStyle=col;ctx.fillRect(23,y0+1,W-46,1);const line=(s,y,c,size)=>{const width=GARDEN_UI.textWidth(s,size),scale=Math.min(1,270/Math.max(1,width));ctx.save();ctx.translate(W/2,y);ctx.scale(scale,scale);GARDEN_UI.drawText(ctx,s,0,0,c,size,'center');ctx.restore();};line(title,y0+8,col,3);lines.forEach((l,i)=>line(l,y0+32+i*9,i===lines.length-1&&((frame>>5)&1)?'rgba(0,0,0,0)':'#e8ecf4',1));return;}ctx.fillStyle='rgba(2,4,12,.6)';ctx.fillRect(0,0,W,H);const h=40+lines.length*9;const y0=Math.max(6,Math.round((H-h)/2));rrect(ctx,30,y0,W-60,h,8,'rgba(10,12,24,.85)','rgba(255,255,255,.12)');
  textS(title,W/2,y0+6,col,'#000000',3,'center');lines.forEach((l,i)=>text(l,W/2,y0+32+i*9,i===lines.length-1&&((frame>>5)&1)?'rgba(0,0,0,0)':'#e8ecf4',1,'center'));}
-function deathText(){return {energy:'PHANTOMAS SE QUEDA SIN ENERGÍA',hit:'PHANTOMAS CAE ANTE LOS GUARDIANES',cannon:'UNA BALA DE CAÑÓN ACABA CON PHANTOMAS',spike:'PHANTOMAS ACABA EN LOS PINCHOS',flame:'PHANTOMAS ARDE EN LAS LLAMAS',acid:'PHANTOMAS SE DISUELVE EN EL ÁCIDO',fall:'PHANTOMAS CAE AL VACÍO',dawn:'EL SOL DESCUBRE A PHANTOMAS'}[lastCause]||'PHANTOMAS CAE';}
+function deathText(){return {energy:'PHANTOMAS SE QUEDA SIN ENERGÍA',hit:'PHANTOMAS CAE ANTE LOS GUARDIANES',spectral:'UN ORBE ESPECTRAL ALCANZA A PHANTOMAS',cannon:'UNA BALA DE CAÑÓN ACABA CON PHANTOMAS',spike:'PHANTOMAS ACABA EN LOS PINCHOS',flame:'PHANTOMAS ARDE EN LAS LLAMAS',acid:'PHANTOMAS SE DISUELVE EN EL ÁCIDO',fall:'PHANTOMAS CAE AL VACÍO',dawn:'EL SOL DESCUBRE A PHANTOMAS'}[lastCause]||'PHANTOMAS CAE';}
 function rank(b,t){const pc=t?b/t:0;if(pc>=1)return 'MAESTRO DEL ROBO';if(pc>=0.75)return 'LADRÓN DE GUANTE BLANCO';if(pc>=0.5)return 'RATERO CON FUTURO';if(pc>=0.25)return 'APRENDIZ DE CACO';return 'TURISTA NOCTURNO';}
 function fmt(t){t=Math.floor(t);return String(Math.floor(t/60)).padStart(2,'0')+':'+String(t%60).padStart(2,'0');}
 function pct(b,t){return t?Math.round(100*b/t):0;}
@@ -2064,7 +2082,7 @@ function render(){const cx=cam.x+(shake?(Math.random()-0.5)*shake:0);const sy=sh
  if(vOff>0){const t=themeAt(cam.x+W/2);ctx.fillStyle=t.sky?'#05060f':t.bg;ctx.fillRect(0,-vOff,W,VH);}
  const pixi=window.PhantomasPixi&&window.PhantomasPixi.render({cx,sy,frame,player,ents,items,parts,decor,L,VH,S,vOff,cv,gardenLook,THEMES,paintLayer,boss});
  if(pixi){ctx.clearRect(0,-vOff,W,VH);}else{ctx.save();ctx.translate(0,sy);drawBackground(cx);drawDecor(cx);drawTiles(cx);drawMovers(cx);drawCrumbles(cx);drawItems(cx);drawEnts(cx);if(boss)drawBoss(cx);drawPlayer(cx);drawParts(cx);drawDark(cx);ctx.restore();}
- drawVignette();drawHUD();
+ drawVignette();drawHUD();drawBossHUD();
  if(fadeT>0){ctx.fillStyle='rgba(0,0,0,'+(fadeT/30)+')';ctx.fillRect(0,0,W,H);}
  const d=L.def;
  if(state==='intro')drawOverlay('NIVEL '+(lvl+1),[d.name,'',...d.intro,'',...(lvl===0?['LA ENERGÍA BAJA SOLA: RECARGA EN LOS ENCHUFES',''] :[]),IS_TOUCH?'TOCA SALTO':'PULSA ESPACIO'],'#ffd23a');
@@ -2093,16 +2111,20 @@ requestAnimationFrame(loop);
 // respaldo si el entorno no dispara requestAnimationFrame (webviews en segundo plano): mismo bucle con acumulador
 setInterval(()=>{if(!document.hidden&&performance.now()-lastRaf>500)tickLoop(performance.now());},1000/60);
 if(window.PhantomasPixi)window.startPixiGardenDemo=()=>{newGame();startLevel();clearInput();fadeT=0;zoneName.n=0;render();};
-if(typeof window.__PHANTOMAS_TEST__==='function')window.__PHANTOMAS_TEST__({LEVELS,TS,ROWS,CFG,tileAt,isSolid,zoneAt,hasLos,buildLevel,loadLevel,newGame,updatePlayer,updateMovers,updateCrumbles,updateEnts,updateBoss,keys,setState,startLevel,
+if(typeof window.__PHANTOMAS_TEST__==='function')window.__PHANTOMAS_TEST__({LEVELS,TS,ROWS,CFG,tileAt,isSolid,zoneAt,hasLos,buildLevel,loadLevel,newGame,updatePlayer,updateMovers,updateCrumbles,updateEnts,updateBoss,levelClear,keys,setState,startLevel,
  preview(mode){if(mode==='title'){setState('title');window.PhantomasPixi?.hide(cv);drawTitle();return;}newGame();startLevel();clearInput();fadeT=0;zoneName.n=0;frame=120;
   if(mode==='acid'){player.x=300;player.y=78;cam.x=180;}
   else if(mode==='interior'){player.x=864;player.y=142;cam.x=800;}
   else if(mode==='boss'){loadLevel(3);startLevel();clearInput();fadeT=0;zoneName.n=0;if(boss){boss.active=true;boss.state='aim';boss.timer=30;player.x=boss.x0+80;player.y=126;cam.x=boss.x0;}frame=120;}
   else if(mode.startsWith('zone:')){const name=mode.slice(5);const index=LEVELS.findIndex(def=>buildLevel(def).zones.some(z=>z.t===name));if(index<0)throw Error('Unknown zone '+name);loadLevel(index);startLevel();clearInput();fadeT=0;zoneName.n=0;const z=L.zones.find(z=>z.t===name);cam.x=Math.max(0,Math.min(L.cols*16-W,z.x0));player.x=cam.x+40;player.y=142;frame=120;}
+  else if(mode.startsWith('room:')){const [_,li,si]=mode.split(':');loadLevel(Number(li));startLevel();clearInput();fadeT=0;zoneName.n=0;const z=L.zones[Number(si)];if(!z)throw Error('Sala desconocida');cam.x=Math.max(0,Math.min(L.W-W,z.x0));player.x=cam.x+40;player.y=142;frame=120;}
+  else if(mode.startsWith('goal:')){loadLevel(Number(mode.split(':')[1]));startLevel();clearInput();fadeT=0;zoneName.n=0;const it=items.find(i=>i.t==='S');cam.x=Math.max(0,Math.min(L.W-W,it.x-160));player.x=cam.x+30;player.y=142;frame=120;}
+  else if(mode==='expansion-enemies'){loadLevel(4);startLevel();clearInput();fadeT=0;zoneName.n=0;cam.x=0;ents=[];items=[];decor=[];
+   for(let i=0;i<4;i++){ents.push({t:'K',x:40+i*70,y:90,w:18,h:24,dir:1,anim:12,state:['idle','alert','charge','recover'][i],timer:30});ents.push({t:'Y',x:40+i*70,y:135,w:14,h:16,dir:1,anim:12,state:['idle','prepare','lock','recover'][i],timer:30,tx:65+i*70,ty:140});}player.x=12;player.y=142;frame=120;}
   else if(mode==='enemies'){loadLevel(3);startLevel();clearInput();fadeT=0;zoneName.n=0;cam.x=0;ents=['w','u','r','a','g','v','n','f'].map((t,i)=>({t,x:35+i*34,y:110,w:12,h:18,ph:0,anim:12,dir:1,active:true,cd:0}));player.x=12;player.y=142;frame=120;}
   player.vx=player.vy=0;player.onGround=true;player.inv=0;setState(['intro','pause','over','clear'].includes(mode)?mode:'preview');render();},
  compareLook(){toggleLook();if(state==='title')drawTitle();else render();},
- get L(){return L},get player(){return player},get items(){return items},get parts(){return parts},get alarmT(){return alarmT},set alarmT(v){alarmT=v},get ents(){return ents},set ents(v){ents=v},get movers(){return movers},get crumbles(){return crumbles},get orbs(){return orbs},get state(){return state},get simF(){return simF},set simF(v){simF=v},get stats(){return stats},get check(){return check},get lvl(){return lvl},get boss(){return boss}});
+ get L(){return L},get player(){return player},get items(){return items},get parts(){return parts},get alarmT(){return alarmT},set alarmT(v){alarmT=v},get ents(){return ents},set ents(v){ents=v},get movers(){return movers},get crumbles(){return crumbles},get orbs(){return orbs},get state(){return state},get simF(){return simF},set simF(v){simF=v},get stats(){return stats},get total(){return total},get check(){return check},get lvl(){return lvl},get boss(){return boss}});
 </script>
 </body>
 </html>

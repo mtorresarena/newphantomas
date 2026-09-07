@@ -56,6 +56,12 @@
   const viewButtons = [...document.querySelectorAll('[data-view]')];
   const labels = {intro:'Introducción',pause:'Pausa',over:'Fin de partida',clear:'Nivel completado',garden:'Vista inicial',acid:'Zona del ácido',interior:'Interior',title:'Título',boss:'El Custodio'};
   for(const name of ['hall','library','crypt','tower','moat','court','armory','dungeon','bell','coffin','keep','roof','roof2','roof3','bridges','attic','warehouse','sewer','museum','egypt','gallery','archive','ballroom','vault','boss','statues','clocktower','observatory','heart']){labels['zone:'+name]=name;const b=document.createElement('button');b.type='button';b.dataset.view=name==='boss'?'boss':'zone:'+name;b.textContent=name==='boss'?'Jefe (Custodio)':name;b.disabled=true;document.querySelector('nav').append(b);buttons.push(b);viewButtons.push(b);}labels.enemies='Enemigos';const eb=document.createElement('button');eb.type='button';eb.dataset.view='enemies';eb.textContent='Enemigos';eb.disabled=true;document.querySelector('nav').append(eb);buttons.push(eb);viewButtons.push(eb);
+  for(let li=4;li<8;li++)for(let si=0;si<8;si++){
+    const mode='room:'+li+':'+si;labels[mode]='N'+(li+1)+' sala '+(si+1);
+    const b=document.createElement('button');b.type='button';b.dataset.view=mode;b.textContent=labels[mode];b.disabled=true;document.querySelector('nav').append(b);buttons.push(b);viewButtons.push(b);
+  }
+  for(let li=4;li<8;li++){const mode='goal:'+li;labels[mode]='Meta N'+(li+1);const b=document.createElement('button');b.type='button';b.dataset.view=mode;b.textContent=labels[mode];b.disabled=true;document.querySelector('nav').append(b);buttons.push(b);viewButtons.push(b);}
+  labels['expansion-enemies']='Enemigos nuevos';const ae=document.createElement('button');ae.type='button';ae.dataset.view='expansion-enemies';ae.textContent='Enemigos nuevos';ae.disabled=true;document.querySelector('nav').append(ae);buttons.push(ae);viewButtons.push(ae);
   const options = new URLSearchParams(location.search);
   const capture = options.get('capture');
   if(capture)document.body.classList.add('capture');
@@ -120,17 +126,19 @@
         throw new Error('La API visual preview/compareLook todavía no está disponible.');
       }
       api = candidate;
+      for(const b of [...viewButtons]){if(b.dataset.view.startsWith('room:')){const [_,li,si]=b.dataset.view.split(':');if(!api.LEVELS[li]?.segs[si]){delete labels[b.dataset.view];b.remove();viewButtons.splice(viewButtons.indexOf(b),1);buttons.splice(buttons.indexOf(b),1);}}}
       buttons.forEach(button => {button.disabled = false;});
       selectView(labels[capture] ? capture : 'acid');
       if(options.get('look')==='classic'){api.compareLook();renewed=false;updateStatus();}
       if(options.get('sweep')==='1'){
         const run=async()=>{try{
           const art=frame.contentWindow.WorldArt;
-          for(let attempt=0;attempt<100&&!['scenery','enemies','props'].every(n=>art.ready(n));attempt++)await new Promise(r=>setTimeout(r,100));
-          if(!['scenery','enemies','props'].every(n=>art.ready(n)))throw Error('Faltan atlas por cargar');
-          const pixi=frame.contentWindow.PhantomasPixi;if(!pixi)throw Error("Falta la capa PixiJS");for(let attempt=0;attempt<150&&pixi&&!pixi.ready&&!pixi.error;attempt++)await new Promise(r=>setTimeout(r,100));if(pixi&&!pixi.ready)throw Error('PixiJS no pudo iniciar');
+          for(let attempt=0;attempt<100&&!['scenery','enemies','props','expansion'].every(n=>art.ready(n));attempt++)await new Promise(r=>setTimeout(r,100));
+          if(!['scenery','enemies','props','expansion'].every(n=>art.ready(n)))throw Error('Faltan atlas por cargar');
+          for(let n=0;n<100&&!(frame.contentWindow.ExpansionArt?.ready()&&frame.contentWindow.ExpansionArt?.propsReady());n++)await new Promise(r=>setTimeout(r,100));if(!(frame.contentWindow.ExpansionArt?.ready()&&frame.contentWindow.ExpansionArt?.propsReady()))throw Error('Falta atlas de enemigos o trofeos nuevos');
+          const pixi=frame.contentWindow.PhantomasPixi;if(!pixi&&options.get('renderer')!=='canvas')throw Error("Falta la capa PixiJS");for(let attempt=0;attempt<150&&pixi&&!pixi.ready&&!pixi.error;attempt++)await new Promise(r=>setTimeout(r,100));if(pixi&&!pixi.ready)throw Error('PixiJS no pudo iniciar');
           let count=0;for(const mode of Object.keys(labels)){api.preview(mode);api.compareLook();api.compareLook();if(pixi&&mode!=='title'&&(!pixi.active||pixi.error))throw Error('PixiJS inactivo en '+mode);count++;await new Promise(r=>setTimeout(r,30));}
-          report('OK: '+count+' vistas renderizadas en ambos aspectos y PixiJS activo. Tres atlas cargados. Caché: '+art.cacheSize+' imágenes.');
+          report('OK: '+count+' vistas renderizadas en ambos aspectos · '+(pixi?'PixiJS activo':'Canvas sin PixiJS')+'. Atlas originales y expansión cargados. Caché: '+art.cacheSize+' imágenes.');
         }catch(e){report('FALLO: '+e.message,true);}};run();
       }
     } catch (error) {
@@ -149,6 +157,7 @@
       if (!response.ok) throw new Error('No se pudo leer index.html (HTTP ' + response.status + ').');
       const source = await response.text();
       const gameDocument = new DOMParser().parseFromString(source, 'text/html');
+      if(options.get('renderer')==='canvas')gameDocument.querySelectorAll('script[src*="pixi-world"]').forEach(s=>s.remove());
       gameDocument.querySelectorAll('base').forEach(base => base.remove());
       const base = gameDocument.createElement('base');
       base.href = baseURL.href;

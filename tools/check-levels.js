@@ -83,6 +83,9 @@ function checkLevel(i){
     const conductorsHit=[...hit].filter(w=>w.t==='boss_c').length;
     if(conductorsHit>=api.boss.conductors.length){
      bossGateOpened=true;
+     // Geometry pass abstracts combat AFTER reaching every conductor.
+     // The separate boss test validates attacks, conductor hits and actual defeat.
+     api.boss.defeated=true;api.boss.active=false;api.boss.gateRight=true;
      const cOut=Math.floor(api.boss.x1/TS)-1;
      L.map[8][cOut]='.';L.map[9][cOut]='.';
      continue;
@@ -331,6 +334,29 @@ function engineTests(){const out=[];
      p.dead=1;api.simF++;api.updatePlayer();
      ok=ok&&api.orbs.length===0;
      out.push([ok,'vigia espectral: aviso telegrafiado, fijacion previa, orbe bloqueable y recuperacion inocua']);}
+    // Regression: attacks must not begin through cover or finish off camera.
+    {newGame();loadLevel(0);startLevel();api.ents=[];
+     const p=api.player;p.x=40;p.y=142;
+     const sent={t:'K',x:140,y:136,w:18,h:24,sx:140,sy:136,dir:-1,vy:0,anim:0,state:'idle',timer:0,traveled:0,zone:api.L.zones[0]};
+     api.ents.push(sent);api.L.map[8][6]='#';api.L.map[9][6]='#';api.updateEnts();
+     let ok=sent.state==='idle';
+     const wat={t:'Y',x:160,y:130,w:14,h:16,sx:160,sy:130,dir:-1,anim:0,state:'lock',timer:1,tx:45,ty:151,ph:0};
+     api.ents=[wat];api.orbs.length=0;api.updateEnts();ok=ok&&api.orbs.length===0;
+     wat.x=330;wat.state='lock';wat.timer=1;api.updateEnts();ok=ok&&api.orbs.length===0;
+     out.push([ok,'cobertura y camara: centinela no detecta a traves de muro, vigia cancela tiro oculto o fuera de vista']);}
+    {newGame();loadLevel(0);startLevel();api.ents=[];api.orbs.length=0;
+     api.L.map[8][6]='#';api.orbs.push({x:86,y:122,w:8,h:8,vx:3,vy:0,life:80});
+     api.updateEnts();
+     out.push([api.orbs.length===0,'orbe: el borde del proyectil choca con esquina del muro aunque su centro pase por fuera']);}
+    {newGame();loadLevel(0);startLevel();api.orbs.length=0;
+     const wat={t:'Y',x:160,y:130,w:14,h:16,sx:160,sy:130,dir:-1,anim:0,state:'lock',timer:1,tx:45,ty:151,ph:0};
+     api.ents=[wat];for(let i=0;i<api.CFG.WATCHER_MAX_ORBS;i++)api.orbs.push({x:280,y:90,w:8,h:8,vx:0,vy:0,life:100});
+     api.updateEnts();let ok=api.orbs.length===api.CFG.WATCHER_MAX_ORBS;
+     api.orbs.length=0;api.orbs.push({x:280,y:90,w:8,h:8,vx:0,vy:0,life:100,owner:wat});wat.state='lock';wat.timer=1;api.updateEnts();
+     out.push([ok&&api.orbs.length===1,'vigia: limite global de orbes y un proyectil activo por propietario']);}
+    {newGame();loadLevel(3);startLevel();api.levelClear();let ok=api.state==='play';
+     api.boss.defeated=true;api.levelClear();ok=ok&&api.state==='clear';const counted=api.total.total;api.levelClear();ok=ok&&api.total.total===counted;
+     out.push([ok&&api.state==='clear','meta del museo: requiere derrotar al jefe y no se reactiva desde la pantalla de cierre']);}
     return out;}
 let bad=0;
 console.log('=== Pruebas de motor ===');for(const [ok,msg] of engineTests()){console.log(`  ${ok?'OK  ':'FALLA'} ${msg}`);if(!ok)bad++;}

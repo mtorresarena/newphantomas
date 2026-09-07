@@ -2,7 +2,7 @@
 (function(root){
  'use strict';
  const base=new URL('.',document.currentScript.src), images={}, cache=new Map();
- for(const name of ['scenery','enemies','props']){const im=new Image();images[name]=im;im.src=new URL('world-'+name+'.png',base).href;im.onerror=()=>console.warn('Phantomas: recurso '+name+' no disponible; usando dibujo de respaldo.');}
+ for(const name of ['scenery','enemies','props','expansion']){const im=new Image();images[name]=im;im.src=new URL('world-'+name+'.png',base).href;im.onerror=()=>console.warn('Phantomas: recurso '+name+' no disponible; usando dibujo de respaldo.');}
  const ready=n=>images[n].complete&&images[n].naturalWidth>0;
  const rect=(g,c,x,y,w,h)=>{g.fillStyle=c;g.fillRect(x,y,w,h);};
  const shade=(c,k)=>'#'+[1,3,5].map(i=>Math.min(255,Math.max(0,Math.round(parseInt(c.slice(i,i+2),16)*k))).toString(16).padStart(2,'0')).join('');
@@ -12,21 +12,23 @@
  function background(g,name,t,cx,time,dawn){
   if(name==='moat')return root.GardenArt.drawBackground(g,cx,time);
   if(!(name in groups)||!ready('scenery'))return false;
-  const i=groups[name],im=images.scenery,sw=im.naturalWidth/2;
+  const expansion={statues:0,clocktower:1,observatory:2,heart:3};
+  const fresh=name in expansion&&ready('expansion');
+  const i=fresh?expansion[name]:groups[name],im=fresh?images.expansion:images.scenery,sw=im.naturalWidth/2;
   // Measured panel boundaries: generated rows are not exactly equal in height.
-  const rows=[0,383/1254,794/1254,1],sy=rows[Math.floor(i/2)]*im.naturalHeight,sh=(rows[Math.floor(i/2)+1]-rows[Math.floor(i/2)])*im.naturalHeight;
+  const rows=fresh?[0,.5,1]:[0,383/1254,794/1254,1],sy=rows[Math.floor(i/2)]*im.naturalHeight,sh=(rows[Math.floor(i/2)+1]-rows[Math.floor(i/2)])*im.naturalHeight;
   g.save();g.imageSmoothingEnabled=false;
   // Bounded drift avoids visible seams between the six distinct illustration plates.
   const drift=12*Math.sin(cx/650);
   g.drawImage(im,(i%2)*sw+2,sy+2,sw-4,sh-4,-24-drift,-10,368,220.8);
   const tint={coffin:'#630925',crypt:'#102237',dungeon:'#091622',sewer:'#12472b',archive:'#24451d',attic:'#442412',warehouse:'#372516',ballroom:'#11385c',vault:'#112a40',boss:'#1f1434',armory:'#49151b',tower:'#251955',statues:'#18243c',clocktower:'#361b2e',observatory:'#162842',heart:'#420e18'}[name];
-  if(tint){g.globalAlpha=.22;rect(g,tint,0,0,320,192);g.globalAlpha=1;}
+  if(tint){g.globalAlpha=fresh?.10:.22;rect(g,tint,0,0,320,192);g.globalAlpha=1;}
   // Different rooms share masonry while keeping their own architectural identity.
   if(['attic','warehouse'].includes(name)){for(let x=-((cx*.16)%80)-80;x<340;x+=80){rect(g,'#1c1720',x,12,6,180);rect(g,'#694932',x,12,1,180);for(let y=35;y<170;y+=48){rect(g,'#292029',x,y,80,5);rect(g,'#805638',x,y,80,1);}}}
   if(name==='sewer'){for(let y of [28,79]){rect(g,'#152b2b',0,y,320,7);rect(g,'#5a7462',0,y,320,1);for(let x=-((cx*.2)%48);x<320;x+=48){rect(g,'#819181',x,y-1,3,9);rect(g,'#243b31',x+1,y,1,7);}}}
   if(name==='coffin'){for(let x=-((cx*.12)%100);x<320;x+=100){rect(g,'#471329',x+20,25,25,100);rect(g,'#83233c',x+21,25,3,94);rect(g,'#c18e42',x+18,23,29,2);}}
   if(name==='vault'){for(let x=-((cx*.1)%40);x<320;x+=40){rect(g,'#12232f',x,18,3,148);rect(g,'#51637b',x,18,1,148);}}
-  if(i===3&&dawn>0){g.globalAlpha=dawn*.36;rect(g,'#ee8958',0,0,320,192);g.globalAlpha=1;}
+  if(!fresh&&i===3&&dawn>0){g.globalAlpha=dawn*.36;rect(g,'#ee8958',0,0,320,192);g.globalAlpha=1;}
   for(let n=0;n<9;n++){g.globalAlpha=.12+.12*Math.sin(time*.018+n);rect(g,i===3?'#bce7ff':'#ffe7a0',((n*47-cx*.22)%340+340)%340,35+(n*29)%120,.5,.5);}
   g.restore();return true;
  }
@@ -42,7 +44,7 @@
    for(let yy=0;yy<16;yy+=8){const shift=yy?4:0;for(let xx=-shift;xx<16;xx+=8){const k=.84+((xx+shift+variant*3+yy)%7)*.04;rect(q,shade(c,k),xx+.5,yy+.5,7.5,7);rect(q,shade(c,k*1.3),xx+1,yy+.5,7,1);rect(q,shade(c,.56),xx+1,yy+6.5,7,1);rect(q,shade(c,k*1.12),xx+2,yy+2,2,.5);}}
    for(let n=0;n<12;n++){const xx=(n*7+variant*3)%16,yy=(n*5+variant)%16;rect(q,shade(c,n%2?1.12:.73),xx,yy,1,.5);}
    if(ch.endsWith('f')){rect(q,shade(c,1.55),0,0,16,1);rect(q,shade(c,1.15),0,1,16,1);}
-   if(['crypt','dungeon','sewer','moat'].includes(name)){rect(q,'#45614d',variant*3,9,3,1);rect(q,'#688367',variant*3+1,9,1,.5);}
+   if(['crypt','dungeon','sewer','moat','statues'].includes(name)){rect(q,'#45614d',variant*3,9,3,1);rect(q,'#688367',variant*3+1,9,1,.5);}
   });return blit(g,im,x,y,16,16);
  }
  const pairs={guard:0,mummy:1,rat:2,spider:3,ghost:4,vampire:5,cannon:6,flame:7};
@@ -61,6 +63,7 @@
  // Small functional objects use deterministic pixel artwork at the collision scale.
  function atlasProp(g,index,x,y,w,h){if(!ready('props')||!root.WorldPropFrames)return false;const b=root.WorldPropFrames.frames[index];g.save();g.imageSmoothingEnabled=false;g.drawImage(images.props,b.x,b.y,b.w,b.h,x,y,w,h);g.restore();return true;}
  function prop(g,name,x,y,opt={}){
+  if(['seal','gear','lens','heart'].includes(name))return !!root.ExpansionArt?.prop(g,name,x,y);
   const goalIndex={safe:12,coffin:13,balloon:14,diamond:15}[name];
   if(goalIndex!==undefined&&atlasProp(g,goalIndex,x,y,32,32))return true;
   const dims={battery:[8,12],garlic:[8,10],socket:[16,16],door:[16,16],safe:[32,32],coffin:[32,32],balloon:[32,32],diamond:[32,32],alarm:[16,6],ball:[8,8]};

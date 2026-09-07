@@ -1,3 +1,11 @@
+# Revisión de la expansión — v2.1
+
+Revisión del jefe y N5–N8: sprites pixel art, fondos propios para los cuatro
+ambientes, limpieza de decoración repetida y correcciones de combate/progresión.
+Ver `review/REVISION-CONSTRUCTOR-v2.1.md` para alcance y evidencia.
+Prueba local: `http://127.0.0.1:8770/` con servidor activo.
+Galería: `tools/visual-check.html` (incluye cada segmento nuevo, metas y enemigos).
+
 # Phantomas: La Mansión del Barón
 
 ## Producción
@@ -7,8 +15,9 @@
 - Dokploy: Dockerfile de la raíz, contexto de construcción `.`, puerto interno 80.
 - La imagen copia `index.html` y toda la carpeta `assets/`. Los atlas no se generan al construir.
 - El repositorio `cerebro-voz-starter` conserva una copia documental; sus commits no actualizan esta web.
-- Verificación tras desplegar: el HTML debe contener `v1.5` y `assets/pixi-world.js?v=1.5`;
-  `/assets/world-scenery.png` debe responder 200 y `/assets/no-existe.js` debe responder 404.
+- Verificación tras desplegar: el HTML debe contener `v2.1` y `assets/expansion-art.js?v=2`;
+  `/assets/world-expansion.png` y `/assets/expansion-props-v2.png` deben responder 200,
+  y `/assets/no-existe.js` debe responder 404.
 - Si Dokploy no tiene autodeploy activado, ejecutar Deploy en la aplicación de este dominio.
 
 ## Aventura renovada — versión 1.4, 7 de septiembre de 2026
