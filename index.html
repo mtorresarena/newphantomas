@@ -1075,6 +1075,13 @@ const music={step:0,next:0,timer:null,on:true,song:SONGS.garden,
 
 // ---------------- Entrada ----------------
 const keys={},touch={l:false,r:false,j:false,d:false};let anyKey=false,gpPrev=false;
+function cheatGoToLevel(target){
+ if(target<0||target>=LEVELS.length)return;
+ if(state==='title'||state==='intro'||state==='over')newGame();
+ if(target>unlocked){unlocked=target;try{localStorage.setItem('phantomas.unlocked',String(unlocked));}catch(err){}}
+ loadLevel(target);startLevel();SFX.win();
+ msg={s:'¡TRUCO! N'+(target+1)+': '+LEVELS[target].name,t:90,col:'#30e8ff'};
+}
 function cheatNextScreen(){
  if(state==='title'||state==='intro'||state==='over')newGame();
  if(state==='play'&&lvl===3&&boss&&(!boss.active&&!boss.defeated&&player.x<boss.x0-20)){
@@ -1082,13 +1089,15 @@ function cheatNextScreen(){
   SFX.win();msg={s:'¡TRUCO: EL CUSTODIO!',t:90,col:'#ff3080'};return;
  }
  const next=(lvl+1)%LEVELS.length;
- if(next>unlocked){unlocked=next;try{localStorage.setItem('phantomas.unlocked',String(unlocked));}catch(err){}}
- loadLevel(next);startLevel();SFX.win();
- msg={s:'¡TRUCO! N'+(next+1)+': '+LEVELS[next].name,t:90,col:'#30e8ff'};
+ cheatGoToLevel(next);
 }
 addEventListener('keydown',e=>{
- if((e.ctrlKey||e.metaKey)&&e.shiftKey&&((e.code==='KeyW'&&keys['KeyE'])||(e.code==='KeyE'&&keys['KeyW']))){
+ if((e.altKey&&e.code==='KeyN')||((e.ctrlKey||e.metaKey)&&e.shiftKey&&e.code==='KeyE')){
   e.preventDefault();cheatNextScreen();return;
+ }
+ if(e.altKey&&e.code.startsWith('Digit')){
+  const num=parseInt(e.code.replace('Digit',''),10);
+  if(num>=1&&num<=LEVELS.length){e.preventDefault();cheatGoToLevel(num-1);return;}
  }
  if(e.target===lookButton&&['Space','Enter'].includes(e.code)){e.preventDefault();if(!e.repeat)toggleLook();return;}if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Space'].includes(e.code))e.preventDefault();if(e.repeat)return;if(START_KEYS.includes(e.code))anyKey=true;keys[e.code]=true;audio.init();if(audio.ctx&&!music.timer)music.start();
  if(e.code==='KeyG')toggleLook();
