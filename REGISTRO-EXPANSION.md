@@ -53,15 +53,15 @@ Resultados extraídos de la ejecución del verificador oficial `tools/check-leve
 | **N2** | EL CASTILLO DE DRÁCULA | 312 | 23 | 3 / 3 | ~134 s | 2.071 | **OK** |
 | **N3** | LOS TEJADOS | 302 | 20 | 2 / 2 | ~80 s | 1.939 | **OK** |
 | **N4** | EL MUSEO (con El Custodio) | 377 | 30 | 3 / 3 | ~159 s | 2.583 | **OK** |
-| **N5** | EL JARDÍN DE LAS ESTATUAS | 226 | 12 | 2 / 2 | ~68 s | 1.380 | **OK** |
-| **N6** | LA TORRE DEL RELOJ | 226 | 10 | 2 / 2 | ~68 s | 1.480 | **OK** |
-| **N7** | EL OBSERVATORIO DEL BARÓN | 226 | 11 | 2 / 2 | ~60 s | 1.413 | **OK** |
-| **N8** | LA CÁMARA DEL CORAZÓN | 226 | 11 | 2 / 2 | ~60 s | 1.460 | **OK** |
-| **TOTAL** | **8 NIVELES** | **2.072** | **130** | **18 / 18** | **~699 s (~11.6 min)** | **13.434** | **100% OK** |
+| **N5** | EL JARDÍN DE LAS ESTATUAS (Centinela `K`) | 226 | 12 | 2 / 2 | ~68 s | 1.380 | **OK** |
+| **N6** | LA TORRE DEL RELOJ (Plataformas `_`) | 226 | 10 | 2 / 2 | ~68 s | 1.527 | **OK** |
+| **N7** | EL OBSERVATORIO DEL BARÓN (Vigía `Y`) | 226 | 11 | 2 / 2 | ~60 s | 1.466 | **OK** |
+| **N8** | LA CÁMARA DEL CORAZÓN (Combinación `K`,`_`,`Y`) | 226 | 11 | 2 / 2 | ~60 s | 1.495 | **OK** |
+| **TOTAL** | **8 NIVELES** | **2.072** | **130** | **18 / 18** | **~699 s (~11.6 min)** | **13.569** | **100% OK** |
 
 ---
 
-## 3. Pruebas de Motor (15/15 OK)
+## 3. Pruebas de Motor (18/18 OK)
 
 - `OK   gracia de amanecer tras morir: dawn=89.9 vidas=2`
 - `OK   ascensor: frames sin apoyo en 700 = 0`
@@ -78,6 +78,9 @@ Resultados extraídos de la ejecución del verificador oficial `tools/check-leve
 - `OK   placa de alarma: saltandola no se activa=true, pisandola se activa=true, expira sola=true`
 - `OK   patrulleros dentro de su sala y fuera de los pinchos`
 - `OK   encuentro con El Custodio: arena, telegrafiado, 3 conductores, derrota, apertura de salida y reinicio seguro`
+- `OK   centinela de piedra: aviso telegrafiado, carga recta, daño en carrera y recuperacion inocua`
+- `OK   plataforma agrietada: activacion al pisar, vibracion, colapso y reconstruccion segura sin atrapamiento`
+- `OK   vigia espectral: aviso telegrafiado, fijacion previa, orbe bloqueable y recuperacion inocua`
 
 ---
 

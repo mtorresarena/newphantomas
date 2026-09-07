@@ -32,7 +32,7 @@ const STEP=4; // resolucion horizontal de estados (px)
 function standingValid(x,r){ // jugador de 10x18 con los pies en la fila r
  const p={x,y:r*TS-18,w:10,h:18};
  for(let rr=Math.floor(p.y/TS);rr<=Math.floor((p.y+p.h-1)/TS);rr++)for(let c=Math.floor(p.x/TS);c<=Math.floor((p.x+p.w-1)/TS);c++)if(isSolid(tileAt(c,rr)))return false;
- let sup=false;for(let c=Math.floor(p.x/TS);c<=Math.floor((p.x+p.w-1)/TS);c++){const ch=tileAt(c,r);if(isSolid(ch)||ch==='=')sup=true;}
+ let sup=false;for(let c=Math.floor(p.x/TS);c<=Math.floor((p.x+p.w-1)/TS);c++){const ch=tileAt(c,r);if(isSolid(ch)||ch==='='||ch==='_')sup=true;}
  return sup;}
 
 // acciones: [teclas, frames maximos, frame en que se suelta el salto]
@@ -60,7 +60,7 @@ function checkLevel(i){
   p.x=sx;p.y=r*TS-18;p.vx=0;p.vy=0;p.onGround=true;p.inv=0;p.dead=0;p.jHeld=false;p.jbuf=0;p.coyote=0;p.drop=0;p.energy=100;p.mover=null;
   const [kd,maxF,release]=act;
   let f=0;try{for(;f<maxF;f++){Object.keys(keys).forEach(k=>keys[k]=false);Object.assign(keys,(release&&f>=release)?Object.fromEntries(Object.entries(kd).filter(([k])=>k!=='Space')):kd);
-   p.energy=100;p.inv=0;api.stats.dawn=999;api.simF=api.simF+1;updateMovers();updatePlayer();
+   p.energy=100;p.inv=0;api.stats.dawn=999;api.simF=api.simF+1;updateMovers();if(api.updateCrumbles)api.updateCrumbles();updatePlayer();
    for(const w of wanted){if(!hit.has(w)&&p.x<w.x+w.w&&p.x+p.w>w.x&&p.y<w.y+w.h&&p.y+p.h>w.y){hit.add(w);hitF.set(w,f0+f+1);}}
    if(api.state!=='play'){api.setState('play');goalReached=true;goalFrames=Math.min(goalFrames,f0+f+1);return null;}
    if(p.dead){p.dead=0;p.lives=3;return null;}
@@ -229,7 +229,109 @@ function engineTests(){const out=[];
    for(let f=0;f<120;f++){api.simF++;api.updatePlayer();if(api.player.dead===0)break;}
    ok=ok&&!b2.active&&b2.hp===3&&b2.gateLeft;
    out.push([ok,'encuentro con El Custodio: arena, telegrafiado, 3 conductores, derrota, apertura de salida y reinicio seguro']);}
-  return out;}
+   // O) Centinela de piedra: aviso telegrafiado, carga horizontal recta, choque contra muro, recuperacion inocua
+   {newGame();loadLevel(0);startLevel();api.ents=[];
+    const p=api.player;p.x=60;p.y=160-18;p.energy=100;p.inv=0;
+    const sent={t:'K',x:140,y:160-24,w:18,h:24,sx:140,sy:160-24,dir:-1,vy:0,anim:0,state:'idle',timer:0,traveled:0,zone:api.L.zones[0]};
+    api.ents.push(sent);
+    // 1. Detectar al jugador en linea visual y activar aviso
+    api.simF++;api.updateEnts();
+    let ok=sent.state==='alert'&&sent.timer===api.CFG.SENTINEL_NOTICE;
+    // 2. Transcurrir aviso sin moverse
+    const xBefore=sent.x, alertTime=sent.timer;
+    for(let f=0;f<alertTime;f++){api.simF++;api.updateEnts();}
+    ok=ok&&sent.state==='charge'&&sent.x===xBefore;
+    // 3. Cargar hacia la izquierda e impactar en el jugador
+    for(let f=0;f<40;f++){api.simF++;api.updateEnts();api.updatePlayer();if(p.hurtT>0)break;}
+    ok=ok&&p.energy<=100-api.CFG.DMG_HIT;
+    // 4. Esperar a que entre en recuperacion
+    for(let f=0;f<60;f++){api.simF++;api.updateEnts();if(sent.state==='recover')break;}
+    ok=ok&&sent.state==='recover';
+    // 5. Durante recuperacion es inocuo: situar al jugador encima sin recibir daño
+    p.energy=100;p.inv=0;p.hurtT=0;p.x=sent.x;p.y=sent.y;
+    for(let f=0;f<30;f++){api.simF++;api.updatePlayer();}
+    ok=ok&&p.hurtT===0&&p.energy>95;
+    out.push([ok,'centinela de piedra: aviso telegrafiado, carga recta, daño en carrera y recuperacion inocua']);}
+   // P) Plataforma agrietada: pisar activa temblor, salto breve no cancela, colapso y reconstruccion segura
+   {newGame();loadLevel(0);startLevel();
+    const p=api.player;p.x=60;p.y=160-18;p.energy=100;
+    const cr={c:4,r:10,x:64,y:160,state:'solid',timer:0,tutorial:false};
+    api.crumbles.length=0;api.crumbles.push(cr);
+    // 1. Colocar al jugador encima (apoyo real)
+    p.x=cr.x+2;p.y=cr.y-18;p.onGround=true;p.vy=0;
+    api.simF++;api.updateCrumbles();
+    let ok=cr.state==='shaking'&&cr.timer===api.CFG.CRUMBLE_SHAKE;
+    // 2. Saltar brevemente: la cuenta no se reinicia
+    p.onGround=false;p.vy=-3;
+    for(let f=0;f<15;f++){api.simF++;api.updateCrumbles();}
+    ok=ok&&cr.state==='shaking'&&cr.timer===(api.CFG.CRUMBLE_SHAKE-15);
+    // 3. Dejar que termine de temblar y colapse
+    while(cr.state==='shaking'){api.simF++;api.updateCrumbles();}
+    ok=ok&&cr.state==='gone'&&cr.timer===api.CFG.CRUMBLE_GONE;
+    // 4. Esperar hasta que entre en aviso de reconstruccion
+    while(cr.state==='gone'){api.simF++;api.updateCrumbles();}
+    ok=ok&&cr.state==='rebuilding';
+    // 5. Si el jugador esta dentro de su volumen, NO reactiva solido inmediatamente
+    p.x=cr.x+2;p.y=cr.y-4; // dentro del volumen de la plataforma
+    for(let f=0;f<api.CFG.CRUMBLE_WARN+10;f++){api.simF++;api.updateCrumbles();}
+    ok=ok&&cr.state==='rebuilding'; // retenido para no atraparlo
+    // 6. Al salir del volumen, se solidifica
+    p.x=cr.x+40;p.y=160-18;
+    api.simF++;api.updateCrumbles();
+    ok=ok&&cr.state==='solid';
+    // 7. Tras morir/respawn, vuelve a solid
+    cr.state='shaking';cr.timer=20;
+    p.dead=1;api.simF++;api.updatePlayer(); // activa respawn
+    ok=ok&&cr.state==='solid'&&cr.timer===0;
+    out.push([ok,'plataforma agrietada: activacion al pisar, vibracion, colapso y reconstruccion segura sin atrapamiento']);}
+    // Q) Vigia espectral: aviso telegrafiado, fijacion previa, orbe bloqueable y recuperacion inocua
+    {newGame();loadLevel(0);startLevel();
+     const p=api.player;p.x=40;p.y=160-18;p.energy=100;p.inv=0;p.hurtT=0;
+     const wat={t:'Y',x:160,y:130,w:14,h:16,sx:160,sy:130,dir:-1,anim:0,state:'idle',timer:0,tx:0,ty:0,ph:0,tutorial:false,zone:api.zoneAt(160)};
+     api.ents.length=0;api.ents.push(wat);api.orbs.length=0;
+     // 1. Con muro intermedio, no debe alertarse
+     wat.state='idle';wat.timer=0;
+     api.L.map[8][6]='#';api.L.map[9][6]='#'; // columna en col 6 (x=96)
+     for(let f=0;f<30;f++){api.simF++;api.updateEnts();}
+     let ok=wat.state==='idle';
+     // 2. Al retirar el muro, entra en 'prepare'
+     api.L.map[8][6]='.';api.L.map[9][6]='.';
+     api.simF++;api.updateEnts();
+     ok=ok&&wat.state==='prepare'&&wat.timer===api.CFG.WATCHER_PREPARE;
+     // 3. Al agotarse prepare, pasa a 'lock' y fija el punto tx, ty
+     while(wat.state==='prepare'){api.simF++;api.updateEnts();}
+     const lockedX=wat.tx,lockedY=wat.ty;
+     ok=ok&&wat.state==='lock'&&wat.timer===api.CFG.WATCHER_LOCK&&lockedX===(p.x+5)&&lockedY===(p.y+9);
+     // 4. Mover al jugador durante lock: tx, ty NO cambian (telegrafiado fijo)
+     p.x=80;p.y=120;
+     for(let f=0;f<10;f++){api.simF++;api.updateEnts();}
+     ok=ok&&wat.state==='lock'&&wat.tx===lockedX&&wat.ty===lockedY;
+     // 5. Al terminar lock, dispara orbe y entra en 'recover'
+     while(wat.state==='lock'){api.simF++;api.updateEnts();}
+     ok=ok&&wat.state==='recover'&&wat.timer===api.CFG.WATCHER_RECOVER&&api.orbs.length===1;
+     // 6. El orbe choca con un muro y se extingue sin atravesar
+     const orb=api.orbs[0];
+     const colWall=Math.max(0,Math.floor((orb.x-20)/api.TS));
+     const rowWall=Math.floor((orb.y+4)/api.TS);
+     api.L.map[rowWall][colWall]='#';
+     let loops=0;
+     while(api.orbs.length>0&&loops++<200){api.simF++;api.updateEnts();}
+     ok=ok&&api.orbs.length===0;
+     // 7. Generar orbe directo hacia jugador: hace dano
+     p.energy=100;p.inv=0;p.hurtT=0;
+     api.orbs.push({x:p.x,y:p.y,w:8,h:8,vx:-1,vy:0,life:60});
+     api.simF++;api.updatePlayer();
+     ok=ok&&Math.abs(p.energy-(100-api.CFG.DMG_HIT))<1&&p.hurtT>0;
+     // 8. Durante recover, el vigia es inocuo por contacto
+     p.energy=100;p.inv=0;p.hurtT=0;p.x=wat.x;p.y=wat.y;wat.state='recover';wat.timer=60;
+     for(let f=0;f<30;f++){api.simF++;api.updatePlayer();}
+     ok=ok&&p.hurtT===0&&p.energy>95;
+     // 9. Respawn limpia los orbes
+     api.orbs.push({x:100,y:100,w:8,h:8,vx:1,vy:0,life:60});
+     p.dead=1;api.simF++;api.updatePlayer();
+     ok=ok&&api.orbs.length===0;
+     out.push([ok,'vigia espectral: aviso telegrafiado, fijacion previa, orbe bloqueable y recuperacion inocua']);}
+    return out;}
 let bad=0;
 console.log('=== Pruebas de motor ===');for(const [ok,msg] of engineTests()){console.log(`  ${ok?'OK  ':'FALLA'} ${msg}`);if(!ok)bad++;}
 for(let i=0;i<LEVELS.length;i++){if(only!==null&&i!==only)continue;
