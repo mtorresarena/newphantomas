@@ -8,7 +8,7 @@
  const shade=(c,k)=>'#'+[1,3,5].map(i=>Math.min(255,Math.max(0,Math.round(parseInt(c.slice(i,i+2),16)*k))).toString(16).padStart(2,'0')).join('');
  function bitmap(key,w,h,draw){if(!cache.has(key)){const c=document.createElement('canvas');c.width=w*2;c.height=h*2;const g=c.getContext('2d');g.scale(2,2);draw(g);cache.set(key,c);}return cache.get(key);}
  function blit(g,im,x,y,w,h){g.save();g.imageSmoothingEnabled=false;g.drawImage(im,x,y,w,h);g.restore();return true;}
- const groups={hall:0,library:1,archive:1,attic:1,warehouse:1,crypt:2,tower:2,moat:2,court:2,armory:2,dungeon:2,bell:2,coffin:2,keep:2,sewer:2,roof:3,roof2:3,roof3:3,bridges:3,museum:4,gallery:4,ballroom:4,vault:4,egypt:5};
+ const groups={hall:0,library:1,archive:1,attic:1,warehouse:1,crypt:2,tower:2,moat:2,court:2,armory:2,dungeon:2,bell:2,coffin:2,keep:2,sewer:2,roof:3,roof2:3,roof3:3,bridges:3,museum:4,gallery:4,ballroom:4,vault:4,boss:4,egypt:5};
  function background(g,name,t,cx,time,dawn){
   if(name==='moat')return root.GardenArt.drawBackground(g,cx,time);
   if(!(name in groups)||!ready('scenery'))return false;
@@ -19,7 +19,7 @@
   // Bounded drift avoids visible seams between the six distinct illustration plates.
   const drift=12*Math.sin(cx/650);
   g.drawImage(im,(i%2)*sw+2,sy+2,sw-4,sh-4,-24-drift,-10,368,220.8);
-  const tint={coffin:'#630925',crypt:'#102237',dungeon:'#091622',sewer:'#12472b',archive:'#24451d',attic:'#442412',warehouse:'#372516',ballroom:'#11385c',vault:'#112a40',armory:'#49151b',tower:'#251955'}[name];
+  const tint={coffin:'#630925',crypt:'#102237',dungeon:'#091622',sewer:'#12472b',archive:'#24451d',attic:'#442412',warehouse:'#372516',ballroom:'#11385c',vault:'#112a40',boss:'#1f1434',armory:'#49151b',tower:'#251955'}[name];
   if(tint){g.globalAlpha=.22;rect(g,tint,0,0,320,192);g.globalAlpha=1;}
   // Different rooms share masonry while keeping their own architectural identity.
   if(['attic','warehouse'].includes(name)){for(let x=-((cx*.16)%80)-80;x<340;x+=80){rect(g,'#1c1720',x,12,6,180);rect(g,'#694932',x,12,1,180);for(let y=35;y<170;y+=48){rect(g,'#292029',x,y,80,5);rect(g,'#805638',x,y,80,1);}}}

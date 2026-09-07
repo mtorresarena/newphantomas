@@ -93,8 +93,8 @@
   const time=v.frame,cx=v.cx;
   const zone=v.L.zones.find(z=>cx+160>=z.x0&&cx+160<z.x1)||v.L.zones[0],name=zone.t;
   const outdoor=['garden','moat','roof','roof2','roof3','bridges'].includes(name);
-  const cold=['crypt','tower','dungeon','coffin','keep','sewer','bell'].includes(name);
-  const color=name==='sewer'?0x7bd28a:cold?0x698cda:outdoor?0x73afd4:0xd9ad70;
+  const cold=['crypt','tower','dungeon','coffin','keep','sewer','bell','boss'].includes(name);
+  const color=name==='sewer'?0x7bd28a:name==='boss'?0x9d54d9:cold?0x698cda:outdoor?0x73afd4:0xd9ad70;
   for(let i=0;i<4;i++)glow(((i*107-cx*.12+time*.035)%490+490)%490-70,115+i%3*18,160,24,color,.07,layers.haze);
   for(let i=0;i<16;i++){
    const x=((i*47-cx*.45+Math.sin(time*.013+i)*9)%360+360)%360-20,y=40+(i*29)%116+Math.sin(time*.018+i)*5;
@@ -110,6 +110,11 @@
   }
   for(let c=Math.max(0,Math.floor(cx/16));c<=Math.min(v.L.cols-1,Math.floor((cx+320)/16));c++)for(let r=0;r<12;r++){
    if(v.L.map[r][c]==='~'&&(r===0||v.L.map[r-1][c]!=='~'))glow(c*16+8-cx,r*16+8,40,32,0x87ff2d,.2);
+  }
+  if(v.boss&&v.boss.active&&!v.boss.defeated){
+   glow(v.boss.x+24-cx,v.boss.y+28,54,54,0xc050ff,.24);
+   if(v.boss.shot)glow(v.boss.shot.x+5-cx,v.boss.shot.y+5,32,32,0xd040ff,.35);
+   for(const c of v.boss.conductors)if(c.charged)glow(c.x+8-cx,c.y+4,28,28,0x30e8ff,.25);
   }
   if(!v.player.dead)glow(v.player.x+5-cx,v.player.y+6,24,22,0x46d9ff,.15);
  }

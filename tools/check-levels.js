@@ -50,6 +50,7 @@ function checkLevel(i){
  newGame();if(i>0)loadLevel(i);startLevel();
  const L=api.L,p=api.player,def=LEVELS[i];
  const wanted=api.items.filter(it=>'k$bjS'.includes(it.t)).map(it=>({t:it.t,x:it.x,y:it.y,w:it.w,h:it.h,col:Math.floor((it.x+it.w/2)/TS),row:Math.floor((it.y+it.h/2)/TS)}));
+ if(def.boss&&api.boss){api.boss.conductors.forEach((c,idx)=>wanted.push({t:'boss_c',x:c.x,y:c.y,w:c.w,h:c.h,col:Math.floor((c.x+c.w/2)/TS),row:Math.floor((c.y+c.h/2)/TS),id:idx}));}
  const entsSaved=api.ents.slice();api.ents=[]; // sin enemigos: solo geometria (las plataformas moviles siguen)
  const doorsAll=[];for(let r=0;r<ROWS;r++)for(let c=0;c<L.cols;c++)if(L.map[r][c]==='D')doorsAll.push(c+','+r);
  const start={x:p.x,r:Math.round((p.y+p.h)/TS)};
@@ -69,7 +70,7 @@ function checkLevel(i){
   return null;}
  // Las puertas se abren solo cuando el BFS ha alcanzado mas llaves que puertas abiertas (orden real llave -> puerta)
  const doorColsAll=[...new Set(doorsAll.map(d=>+d.split(',')[0]))].sort((a,b)=>a-b);
- let passes=0,prevGot=-1;
+ let passes=0,prevGot=-1,bossGateOpened=false;
  while(true){passes++;
   const q=[{...start,f:0}];seen.clear();seen.set(key(start.x,start.r),0);
   while(q.length){const s=q.shift();
@@ -78,12 +79,23 @@ function checkLevel(i){
   const keysHit=[...hit].filter(w=>w.t==='k').length,opened=doorColsAll.length-closed.length;
   if(keysHit>opened&&closed.length){const dc=closed[0];for(let r=0;r<ROWS;r++)if(L.map[r][dc]==='D')L.map[r][dc]='.';
    const kf=[...hit].filter(w=>w.t==='k').map(w=>hitF.get(w)||0);detour+=Math.max(0,...kf);continue;}
+  if(def.boss&&api.boss&&!bossGateOpened){
+    const conductorsHit=[...hit].filter(w=>w.t==='boss_c').length;
+    if(conductorsHit>=api.boss.conductors.length){
+     bossGateOpened=true;
+     const cOut=Math.floor(api.boss.x1/TS)-1;
+     L.map[8][cOut]='.';L.map[9][cOut]='.';
+     continue;
+    }
+   }
   if(hit.size===prevGot)break;prevGot=hit.size;if(passes>10)break;}
- const missing=wanted.filter(w=>!hit.has(w));
+ const missing=wanted.filter(w=>!hit.has(w)&&w.t!=='boss_c');
+ const bossMissing=wanted.filter(w=>!hit.has(w)&&w.t==='boss_c');
+ const warns=[];
+ for(const bm of bossMissing)warns.push(`conductor de jefe inalcanzable en col ${bm.col} fila ${bm.row}`);
  const doorsLeft=doorsAll.filter(d=>{const [c,r]=d.split(',').map(Number);return L.map[r][c]==='D';});
  const keysN=wanted.filter(w=>w.t==='k').length,doorsN=new Set(doorsAll.map(d=>d.split(',')[0])).size;
  // ---- heuristicas de justicia ----
- const warns=[];
  const colDanger=c=>{const b=tileAt(c,10),b2=tileAt(c,11);return b==='~'||(b==='.'&&b2==='.');};
  const dangerIn=(x0,x1)=>{for(let c=Math.floor(x0/TS);c<=Math.floor(x1/TS);c++)if(c>=0&&c<L.cols&&colDanger(c))return c;return -1;};
  const cps=api.items.filter(it=>it.t==='C').map(it=>it.x).concat([start.x]);
@@ -180,7 +192,44 @@ function engineTests(){const out=[];
     if(f%15===0)pat.forEach((e,i)=>{const cx=e.x+e.w/2;if(home[i]&&(cx<home[i].x0||cx>=home[i].x1))bad.push(`nivel ${li+1} '${e.t}' col ${Math.floor(e.sx/TS)} salio de su sala`);
      const cc=Math.floor(cx/TS),rr=Math.floor((e.y+e.h-1)/TS);if(tileAt(cc,rr)==='^'||tileAt(cc,rr+1)==='^')bad.push(`nivel ${li+1} '${e.t}' col ${Math.floor(e.sx/TS)} pisa pinchos en col ${cc}`);});}}
   const uniq=[...new Set(bad)];out.push([uniq.length===0,'patrulleros dentro de su sala y fuera de los pinchos'+(uniq.length?': '+uniq.slice(0,4).join('; ')+(uniq.length>4?` (+${uniq.length-4})`:''):'')]);}
- return out;}
+  // N) encuentro con El Custodio del Diamante (jefe de N4): arena, telegrafiado, 3 conductores, derrota y reaparicion segura
+  {newGame();loadLevel(3);startLevel();
+   const b=api.boss, p=api.player;
+   let ok=b&&!b.active&&!b.defeated&&b.hp===3&&b.gateLeft&&!b.gateRight;
+   // 1. Entrar en la arena
+   p.x=b.x0+32;p.y=160-18;p.vx=0;p.vy=0;
+   for(let f=0;f<5;f++){api.simF++;api.updateBoss();}
+   ok=ok&&b.active&&b.state==='intro'&&!b.gateLeft;
+   // 2. Esperar a fase aim
+   for(let f=0;f<100;f++){api.simF++;api.updateBoss();if(b.state==='aim')break;}
+   ok=ok&&b.state==='aim';
+   // 3. Situar al jugador para que el rayo impacte en conductor 0 (suelo)
+   p.x=b.conductors[0].x+4;p.y=160-18;
+   for(let f=0;f<120;f++){api.simF++;api.updateBoss();if(b.conductors[0].charged)break;}
+   ok=ok&&b.conductors[0].charged&&b.hp===2;
+   // 4. Conductor 1 (plataforma izquierda)
+   for(let f=0;f<120;f++){api.simF++;api.updateBoss();if(b.state==='aim')break;}
+   p.x=b.conductors[1].x+4;p.y=112-18;
+   for(let f=0;f<120;f++){api.simF++;api.updateBoss();if(b.conductors[1].charged)break;}
+   ok=ok&&b.conductors[1].charged&&b.hp===1;
+   // 5. Conductor 2 (plataforma derecha)
+   for(let f=0;f<180;f++){api.simF++;api.updateBoss();if(b.state==='aim')break;}
+   p.x=b.conductors[2].x+4;p.y=112-18;
+   for(let f=0;f<120;f++){api.simF++;api.updateBoss();if(b.conductors[2].charged)break;}
+   ok=ok&&b.conductors[2].charged&&b.hp===0;
+   // 6. Esperar apertura de salida tras derrota
+   for(let f=0;f<150;f++){api.simF++;api.updateBoss();if(b.defeated)break;}
+   const cOut=Math.floor(b.x1/TS)-1;
+   ok=ok&&b.defeated&&b.gateRight&&api.L.map[8][cOut]==='.';
+   // 7. Reintento seguro al morir en la arena
+   newGame();loadLevel(3);startLevel();
+   const b2=api.boss;api.player.x=b2.x0+32;api.player.y=160-18;
+   for(let f=0;f<5;f++){api.simF++;api.updateBoss();}
+   api.player.energy=0.001;api.updatePlayer();
+   for(let f=0;f<120;f++){api.simF++;api.updatePlayer();if(api.player.dead===0)break;}
+   ok=ok&&!b2.active&&b2.hp===3&&b2.gateLeft;
+   out.push([ok,'encuentro con El Custodio: arena, telegrafiado, 3 conductores, derrota, apertura de salida y reinicio seguro']);}
+  return out;}
 let bad=0;
 console.log('=== Pruebas de motor ===');for(const [ok,msg] of engineTests()){console.log(`  ${ok?'OK  ':'FALLA'} ${msg}`);if(!ok)bad++;}
 for(let i=0;i<LEVELS.length;i++){if(only!==null&&i!==only)continue;
