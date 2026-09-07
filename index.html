@@ -565,8 +565,8 @@ const LEVELS=[
 "#########....######....############.########",
 "#########....######....############.########"]}]},
 
-{name:'EL MUSEO',goal:'diamond',goalName:'EL DIAMANTE',song:'museum',boss:true,
- intro:['EL ÚLTIMO GOLPE: EL DIAMANTE DEL','MUSEO NACIONAL, VIGILADO NOCHE Y DÍA.','','ARMADURAS, MOMIAS Y CAÑONES SE','INTERPONEN, Y LAS PLACAS DE ALARMA','LOS DESPIERTAN. QUE NO TE PILLEN.'],
+{name:'EL MUSEO',goal:'diamond',goalName:'EL DIAMANTE',done:'¡EL DIAMANTE ABRE UN PASO SECRETO!',song:'museum',boss:true,
+ intro:['EL GRAN BOTÍN: EL DIAMANTE DEL','MUSEO NACIONAL, VIGILADO NOCHE Y DÍA.','','EL CUSTODIO DE BRONCE GUARDA LA CÁMARA.','DERROTA AL AUTÓMATA Y DESCIENDE','AL JARDÍN OCULTO DEL BARÓN.'],
  segs:[
 {t:'museum',rows:[
 "############################################",
@@ -1113,7 +1113,7 @@ function pollGamepad(){readGamepad();const g=gpad;const now=!!(g&&(gpBtn(g,0)||g
 // ---------------- Estado del juego ----------------
 let state='title',frame=0,simF=0,tick=0,lvl=0;
 let player=null,ents,balls,items,decor,movers,parts,cam,shake,msg,check,stats,total,zoneName,doorCd=0,dawnMix=0,fadeT=0,alarmT=0,boss=null;
-let best=0,unlocked=0;try{best=parseInt(localStorage.getItem('phantomas.best')||'0',10)||0;unlocked=parseInt(localStorage.getItem('phantomas.unlocked')||'0',10)||0;}catch(e){}
+let best=0,best8=0,unlocked=0;try{best=parseInt(localStorage.getItem('phantomas.best')||'0',10)||0;best8=parseInt(localStorage.getItem('phantomas.best8')||'0',10)||0;unlocked=parseInt(localStorage.getItem('phantomas.unlocked')||'0',10)||0;}catch(e){}
 let lastCause='energy';unlocked=Math.min(unlocked,LEVELS.length-1);let continued=0;
 function setState(s){state=s;tick=0;music.on=(s==='play'||s==='title'||s==='intro');music.gate(music.on);if(s==='title'){music.set('garden');dawnMix=0;}}
 function newGame(){lvl=0;continued=0;total={bags:0,total:0,time:0,deaths:0};player={lives:CFG.LIVES};loadLevel(0);}
@@ -1255,7 +1255,7 @@ function updatePlayer(){const p=player;if(p.dead){p.dead--;if(p.dead===0)respawn
  showZone(false);
  p.anim++;}
 function levelClear(){total.total+=stats.total;total.time+=stats.time;setState('clear');SFX.win();burst(player.x+5,player.y+9,40,C.y,3);
- if(lvl===LEVELS.length-1&&!continued){const pc=pct(total.bags,total.total);if(pc>best){best=pc;try{localStorage.setItem('phantomas.best',String(pc));}catch(e){}}}}
+ if(lvl===LEVELS.length-1&&!continued){const pc=pct(total.bags,total.total);if(pc>best8){best8=pc;try{localStorage.setItem('phantomas.best8',String(pc));}catch(e){}}}}
 
 function updateEnts(){const p=player;const px=p.x+5,py=p.y+9;
  for(const e of ents){switch(e.t){
@@ -1634,16 +1634,18 @@ function drawGardenTitle(){
  ctx.fillStyle='rgba(5,9,28,.54)';ctx.fillRect(45,17,230,126);
  const titleY=29;GARDEN_UI.drawText(ctx,'PHANTOMAS',160,titleY+2,'#5a311b',4,'center');
  GARDEN_UI.drawText(ctx,'PHANTOMAS',160,titleY,'#ffdc70',4,'center');
- GARDEN_UI.drawText(ctx,'LA MANSIÓN DEL BARÓN',160,60,'#43eaff',1,'center');
+ GARDEN_UI.drawText(ctx,'LA MANSIÓN DEL BARÓN · 8 NIVELES',160,60,'#43eaff',1,'center');
  const cont=unlocked>0;
  uiRects.start={x:91,y:80,w:138,h:18};
  ctx.fillStyle='#513719';ctx.fillRect(90,80,140,20);ctx.fillStyle='#f4c751';ctx.fillRect(91,80,138,18);
  ctx.fillStyle='#ffea98';ctx.fillRect(93,81,134,1);
  GARDEN_UI.drawText(ctx,'COMENZAR AVENTURA',160,87,'#172137',1,'center');
  if(cont){uiRects.cont={x:95,y:102,w:130,h:12};ctx.fillStyle='rgba(22,62,84,.86)';ctx.fillRect(95,102,130,12);GARDEN_UI.drawText(ctx,'C: CONTINUAR NIVEL '+(unlocked+1),160,106,'#80efff',1,'center');}else delete uiRects.cont;
- const hintY=cont?121:112;
+ const hintY=cont?119:112;
  GARDEN_UI.drawText(ctx,IS_TOUCH?'TOCA PARA ENTRAR':'ESPACIO O ENTER PARA ENTRAR',160,hintY,'#d2e4f7',1,'center');
- GARDEN_UI.drawText(ctx,IS_TOUCH?'MUEVE Y SALTA CON LOS BOTONES':'FLECHAS / WASD + ESPACIO',160,hintY+10,'#8fa9ce',1,'center');
+ GARDEN_UI.drawText(ctx,IS_TOUCH?'MUEVE Y SALTA CON LOS BOTONES':'FLECHAS / WASD + ESPACIO',160,hintY+9,'#8fa9ce',1,'center');
+ const recText=best8>0?'RÉCORD 8 NIVELES: '+best8+'%':best>0?'RÉCORD LEGADO: '+best+'%':'';
+ if(recText)GARDEN_UI.drawText(ctx,recText,160,hintY+18,'#ffd23a',1,'center');
  GARDEN.drawTree(ctx,282,160,56);
  for(let c=0;c<20;c++){GARDEN_TERRAIN.drawTile(ctx,'G',c*16,160,c,10,frame);GARDEN_TERRAIN.drawTile(ctx,'g',c*16,176,c,11,frame);}
  ctx.save();ctx.translate(30,120);ctx.scale(2.2,2.2);drawPhantomas(ctx,0,0,1,'idle',frame,{});ctx.restore();
@@ -1660,10 +1662,11 @@ function drawTitle(){if(gardenLook&&GARDEN.ready('background')){drawGardenTitle(
  const cont=unlocked>0,bl=(frame>>5)&1;uiRects.start={x:W/2-(cont?100:50),y:84,w:100,h:13};if(cont)uiRects.cont={x:W/2+4,y:84,w:100,h:13};else delete uiRects.cont;
  rrect(ctx,uiRects.start.x,84,100,13,4,bl?'rgba(255,210,58,.25)':'rgba(255,255,255,.12)','rgba(255,255,255,.4)');text(IS_TOUCH?'NUEVA PARTIDA':'ESPACIO: NUEVA PARTIDA',uiRects.start.x+50,87.2,'#ffffff',1,'center');
  if(cont){rrect(ctx,uiRects.cont.x,84,100,13,4,'rgba(48,232,255,.15)','rgba(48,232,255,.5)');text((IS_TOUCH?'':'C: ')+'CONTINUAR NIVEL '+(unlocked+1),uiRects.cont.x+50,87.2,'#30e8ff',1,'center');}
- text('4 NIVELES: MANSIÓN, CASTILLO, TEJADOS Y MUSEO',W/2,103,'#e8ecf4',1,'center');text('ROBA LAS LLAVES, ESQUIVA A LOS GUARDIANES',W/2,111,'#e8ecf4',1,'center');
+ text('8 NIVELES · MANSIÓN, CASTILLO, TEJADOS, MUSEO Y MÁS',W/2,103,'#e8ecf4',1,'center');text('ROBA LAS LLAVES, ESQUIVA A LOS GUARDIANES',W/2,111,'#e8ecf4',1,'center');
  text('FLECHAS/WASD MOVER · ESPACIO SALTAR · MANDO OK',W/2,123,'#a0a4ac',1,'center');text('ABAJO+SALTO BAJAR · P PAUSA · M SONIDO',W/2,131,'#a0a4ac',1,'center');
  text('LA ENERGÍA SE AGOTA: BUSCA ENCHUFES Y PILAS',W/2,141,'#40e070',1,'center');
- if(best>0)text('MEJOR BOTÍN: '+best+'%',W/2,150,'#ffd23a',1,'center');
+ if(best8>0)text('MEJOR BOTÍN (8 NIVELES): '+best8+'%',W/2,150,'#ffd23a',1,'center');
+ else if(best>0)text('MEJOR BOTÍN (LEGADO 4 NIVELES): '+best+'%',W/2,150,'#ffd23a',1,'center');
  text('INSPIRADO EN EL CLÁSICO DE DINAMIC (1986)',W/2,180,'#7a7e86',1,'center');ctx.restore();}
 function drawOverlay(title,lines,col){if(gardenLook){ctx.fillStyle='rgba(2,4,12,.68)';ctx.fillRect(0,0,W,H);const h=40+lines.length*9,y0=Math.max(6,Math.round((H-h)/2));ctx.fillStyle='#0c1428';ctx.fillRect(22,y0,W-44,h);ctx.strokeStyle='#526480';ctx.lineWidth=.5;ctx.strokeRect(22.5,y0+.5,W-45,h-1);ctx.fillStyle=col;ctx.fillRect(23,y0+1,W-46,1);const line=(s,y,c,size)=>{const width=GARDEN_UI.textWidth(s,size),scale=Math.min(1,270/Math.max(1,width));ctx.save();ctx.translate(W/2,y);ctx.scale(scale,scale);GARDEN_UI.drawText(ctx,s,0,0,c,size,'center');ctx.restore();};line(title,y0+8,col,3);lines.forEach((l,i)=>line(l,y0+32+i*9,i===lines.length-1&&((frame>>5)&1)?'rgba(0,0,0,0)':'#e8ecf4',1));return;}ctx.fillStyle='rgba(2,4,12,.6)';ctx.fillRect(0,0,W,H);const h=40+lines.length*9;const y0=Math.max(6,Math.round((H-h)/2));rrect(ctx,30,y0,W-60,h,8,'rgba(10,12,24,.85)','rgba(255,255,255,.12)');
  textS(title,W/2,y0+6,col,'#000000',3,'center');lines.forEach((l,i)=>text(l,W/2,y0+32+i*9,i===lines.length-1&&((frame>>5)&1)?'rgba(0,0,0,0)':'#e8ecf4',1,'center'));}

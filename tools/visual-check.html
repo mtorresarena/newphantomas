@@ -36,7 +36,7 @@
 <main>
   <header>
     <h1>PHANTOMAS · revisión visual</h1>
-    <p>Escenas fijas de los cuatro niveles y sus enemigos.</p>
+    <p>Escenas fijas de los ocho niveles y sus enemigos.</p>
   </header>
   <nav aria-label="Escenas de revisión">
     <button type="button" data-view="garden" aria-pressed="false" disabled>Vista inicial</button>
@@ -55,7 +55,7 @@
   const buttons = [...document.querySelectorAll('button')];
   const viewButtons = [...document.querySelectorAll('[data-view]')];
   const labels = {intro:'Introducción',pause:'Pausa',over:'Fin de partida',clear:'Nivel completado',garden:'Vista inicial',acid:'Zona del ácido',interior:'Interior',title:'Título',boss:'El Custodio'};
-  for(const name of ['hall','library','crypt','tower','moat','court','armory','dungeon','bell','coffin','keep','roof','roof2','roof3','bridges','attic','warehouse','sewer','museum','egypt','gallery','archive','ballroom','vault','boss']){labels['zone:'+name]=name;const b=document.createElement('button');b.type='button';b.dataset.view=name==='boss'?'boss':'zone:'+name;b.textContent=name==='boss'?'Jefe (Custodio)':name;b.disabled=true;document.querySelector('nav').append(b);buttons.push(b);viewButtons.push(b);}labels.enemies='Enemigos';const eb=document.createElement('button');eb.type='button';eb.dataset.view='enemies';eb.textContent='Enemigos';eb.disabled=true;document.querySelector('nav').append(eb);buttons.push(eb);viewButtons.push(eb);
+  for(const name of ['hall','library','crypt','tower','moat','court','armory','dungeon','bell','coffin','keep','roof','roof2','roof3','bridges','attic','warehouse','sewer','museum','egypt','gallery','archive','ballroom','vault','boss','statues','clocktower','observatory','heart']){labels['zone:'+name]=name;const b=document.createElement('button');b.type='button';b.dataset.view=name==='boss'?'boss':'zone:'+name;b.textContent=name==='boss'?'Jefe (Custodio)':name;b.disabled=true;document.querySelector('nav').append(b);buttons.push(b);viewButtons.push(b);}labels.enemies='Enemigos';const eb=document.createElement('button');eb.type='button';eb.dataset.view='enemies';eb.textContent='Enemigos';eb.disabled=true;document.querySelector('nav').append(eb);buttons.push(eb);viewButtons.push(eb);
   const options = new URLSearchParams(location.search);
   const capture = options.get('capture');
   if(capture)document.body.classList.add('capture');
