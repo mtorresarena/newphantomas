@@ -1077,13 +1077,13 @@ const music={step:0,next:0,timer:null,on:true,song:SONGS.garden,
 const keys={},touch={l:false,r:false,j:false,d:false};let anyKey=false,gpPrev=false;
 function cheatGoToLevel(target){
  if(target<0||target>=LEVELS.length)return;
- if(state==='title'||state==='intro'||state==='over')newGame();
+ if(state==='title'||state==='intro'||state==='over'||state==='pause')newGame();
  if(target>unlocked){unlocked=target;try{localStorage.setItem('phantomas.unlocked',String(unlocked));}catch(err){}}
  loadLevel(target);startLevel();SFX.win();
  msg={s:'¡TRUCO! N'+(target+1)+': '+LEVELS[target].name,t:90,col:'#30e8ff'};
 }
 function cheatNextScreen(){
- if(state==='title'||state==='intro'||state==='over')newGame();
+ if(state==='title'||state==='intro'||state==='over'||state==='pause')newGame();
  if(state==='play'&&lvl===3&&boss&&(!boss.active&&!boss.defeated&&player.x<boss.x0-20)){
   player.x=boss.x0-16;player.y=160-18;player.vx=0;player.vy=0;cam.x=boss.x0;
   SFX.win();msg={s:'¡TRUCO: EL CUSTODIO!',t:90,col:'#ff3080'};return;
@@ -1092,16 +1092,17 @@ function cheatNextScreen(){
  cheatGoToLevel(next);
 }
 addEventListener('keydown',e=>{
- if((e.altKey&&e.code==='KeyN')||((e.ctrlKey||e.metaKey)&&e.shiftKey&&e.code==='KeyE')){
+ if(['AltLeft','AltRight'].includes(e.code)){e.preventDefault();return;}
+ if(e.code==='KeyN'&&!e.ctrlKey&&!e.metaKey){
   e.preventDefault();cheatNextScreen();return;
  }
- if(e.altKey&&e.code.startsWith('Digit')){
+ if(e.code.startsWith('Digit')&&!e.ctrlKey&&!e.metaKey){
   const num=parseInt(e.code.replace('Digit',''),10);
   if(num>=1&&num<=LEVELS.length){e.preventDefault();cheatGoToLevel(num-1);return;}
  }
  if(e.target===lookButton&&['Space','Enter'].includes(e.code)){e.preventDefault();if(!e.repeat)toggleLook();return;}if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Space'].includes(e.code))e.preventDefault();if(e.repeat)return;if(START_KEYS.includes(e.code))anyKey=true;keys[e.code]=true;audio.init();if(audio.ctx&&!music.timer)music.start();
  if(e.code==='KeyG')toggleLook();
- if(e.code==='KeyM'){audio.muted=!audio.muted;}if(e.code==='KeyC'&&state==='title'&&unlocked>0){continueFrom(unlocked);}if(e.code==='KeyT'&&state==='over'){setState('title');}if(e.code==='KeyP'||e.code==='Escape'){if(state==='play')setState('pause');else if(state==='pause'){player.jHeld=true;player.jbuf=0;setState('play');}}});
+ if(e.code==='KeyM'){audio.muted=!audio.muted;}if(e.code==='KeyC'&&state==='title'&&unlocked>0){continueFrom(unlocked);}if(e.code==='KeyT'&&state==='over'){setState('title');}if(e.code==='KeyP'||e.code==='Escape'||(state==='pause'&&['Space','Enter'].includes(e.code))){if(state==='play')setState('pause');else if(state==='pause'){player.jHeld=true;player.jbuf=0;setState('play');}}});
 addEventListener('keyup',e=>{keys[e.code]=false;});
 function clearInput(){for(const k in keys)keys[k]=false;touch.l=touch.r=touch.j=touch.d=false;}
 function autoPause(){clearInput();if(state==='play')setState('pause');}
@@ -1120,6 +1121,7 @@ for(const type of ['contextmenu','selectstart'])if(lookButton)lookButton.addEven
 document.getElementById('tf').addEventListener('pointerdown',e=>{e.preventDefault();const d=document.documentElement;if(document.fullscreenElement){document.exitFullscreen&&document.exitFullscreen();}else if(d.requestFullscreen)d.requestFullscreen().catch(()=>{});});
 let uiRects={};
 cv.addEventListener('pointerdown',e=>{audio.init();if(audio.ctx&&!music.timer)music.start();const r=cv.getBoundingClientRect();const lx=(e.clientX-r.left)/r.width*W,ly=(e.clientY-r.top)/r.height*VH-vOff;const hitR=k=>{const q=uiRects[k];return !!q&&lx>=q.x&&lx<=q.x+q.w&&ly>=q.y&&ly<=q.y+q.h;};
+ if(state==='pause'){player.jHeld=true;player.jbuf=0;setState('play');return;}
  if(state==='title'&&unlocked>0&&hitR('cont')){continueFrom(unlocked);return;}if(state==='over'&&hitR('title')){setState('title');return;}anyKey=true;});
 document.getElementById('tp').addEventListener('pointerdown',e=>{e.preventDefault();enableTouch();if(state==='play')setState('pause');else if(state==='pause'){player.jHeld=true;player.jbuf=0;setState('play');}});
 let gpad=null;function gp(){return gpad;}function readGamepad(){try{const g=navigator.getGamepads&&navigator.getGamepads();gpad=(g&&g[0])||null;}catch(e){gpad=null;}}
