@@ -92,9 +92,9 @@
   if(!effects)return;
   const time=v.frame,cx=v.cx;
   const zone=v.L.zones.find(z=>cx+160>=z.x0&&cx+160<z.x1)||v.L.zones[0],name=zone.t;
-  const outdoor=['garden','moat','roof','roof2','roof3','bridges'].includes(name);
-  const cold=['crypt','tower','dungeon','coffin','keep','sewer','bell','boss'].includes(name);
-  const color=name==='sewer'?0x7bd28a:name==='boss'?0x9d54d9:cold?0x698cda:outdoor?0x73afd4:0xd9ad70;
+  const outdoor=['garden','moat','roof','roof2','roof3','bridges','statues','observatory'].includes(name);
+  const cold=['crypt','tower','dungeon','coffin','keep','sewer','bell','boss','clocktower','heart'].includes(name);
+  const color=name==='sewer'?0x7bd28a:name==='boss'?0x9d54d9:name==='heart'?0xd03050:name==='clocktower'?0xa04860:name==='statues'?0x4a70a0:name==='observatory'?0x6090e0:cold?0x698cda:outdoor?0x73afd4:0xd9ad70;
   for(let i=0;i<4;i++)glow(((i*107-cx*.12+time*.035)%490+490)%490-70,115+i%3*18,160,24,color,.07,layers.haze);
   for(let i=0;i<16;i++){
    const x=((i*47-cx*.45+Math.sin(time*.013+i)*9)%360+360)%360-20,y=40+(i*29)%116+Math.sin(time*.018+i)*5;
@@ -131,7 +131,7 @@
   textures.glow=canvasTexture(128,128,g=>{const gradient=g.createRadialGradient(64,64,0,64,64,64);gradient.addColorStop(0,'#ffffff');gradient.addColorStop(.25,'rgba(255,255,255,.45)');gradient.addColorStop(1,'rgba(255,255,255,0)');g.fillStyle=gradient;g.fillRect(0,0,128,128);});
   textures.door=[true,false].map(top=>canvasTexture(64,64,g=>{g.scale(4,4);window.WorldArt.prop(g,'door',0,0,{top});}));
   layers={};for(const name of ['back','haze','world','light']){layers[name]=new PIXI.Container();app.stage.addChild(layers[name]);}
-  compare.disabled=false;effectButton.disabled=false;loaded=true;refresh();status.textContent='PixiJS listo · cuatro niveles';
+  compare.disabled=false;effectButton.disabled=false;loaded=true;refresh();status.textContent='PixiJS listo · ocho niveles';
  }catch(error){failed=true;status.textContent='Este navegador no pudo iniciar PixiJS; Canvas sigue disponible.';console.error('Pixi initialization:',error);}}
  init();
 })();
