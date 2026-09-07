@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="es">
-<head>
+<head><base href="../">
 <meta charset="utf-8">
 <link rel="icon" href="data:,">
 <title>Phantomas: La Mansión del Barón</title>
@@ -54,10 +54,10 @@
 <script src="assets/expansion-art.js?v=2"></script>
 <script src="assets/world-art.js?v=2.1"></script>
 <script src="assets/pixi-world.js?v=1.5"></script>
-<script>
+<script>window.requestAnimationFrame=()=>0;window.setInterval=()=>0;window.__PHANTOMAS_TEST__=a=>a.preview(new URLSearchParams(location.search).get("mode")||"room:0:0");</script><script>
 'use strict';
 // =====================================================================
-//  PHANTOMAS: LA MANSION DEL BARON  v2.3 (2026-09-07)
+//  PHANTOMAS: LA MANSION DEL BARON  v2.2 (2026-09-07)
 //  Plataformas horizontal inspirado en Phantomas (Dinamic, 1986).
 //  Fisicas propias. Presentacion hibrida PixiJS/Canvas en assets/.
 //  Mundo logico de 320x192 (tiles de 16 px); se conservan fisicas y mapas.
@@ -980,17 +980,17 @@ const LEVELS=[
   {
    "t": "crypt",
    "label": "EL CLAUSTRO HUNDIDO",
-   "lesson": "Cruza el canal. Sube por la derecha y vuelve a la llave.",
+   "lesson": "Carga, salto y refugio antes de cruzar el canal.",
    "pressure": 6,
    "rows": [
     "########################################################",
-    ".........................................#..............",
-    ".........................................#..............",
-    ".........................................#.k............",
-    ".........................................#####..........",
-    "...................................................$....",
-    "........................$.......................======..",
-    "......................=====.......$....====.............",
+    "........................................................",
+    "........................................................",
+    "........................................................",
+    ".................................................k.$....",
+    "................................................======..",
+    "........................$...............................",
+    "......................=====.......$....====.====........",
     ".............##..................====.........##........",
     "...C...E.....##......K........................##..K..b..",
     "###############################~~~~~~~~~~###############",
@@ -1023,18 +1023,18 @@ const LEVELS=[
   {
    "t": "statues",
    "label": "EL ALTAR DE BRONCE",
-   "lesson": "Mide los saltos. Desde el balcón derecho vuelve al sello.",
+   "lesson": "Supera la guardia y encadena las islas hacia el sello.",
    "pressure": 7,
    "rows": [
     "########################################################",
-    "......................................#.................",
-    "......................................#..S..............",
-    "......................................#####.............",
-    ".................................................$......",
-    "..............................................======....",
+    "........................................................",
+    "........................................................",
+    "........................................................",
+    ".................................................S......",
+    "..........................................$...======....",
     "....................................$...====............",
     "...................=====.....$....====..................",
-    ".............##.............====...............===......",
+    ".............##.............====........................",
     "...C...E.....##.....K................................b..",
     "###########################~~~~~~~~~~~~~~~~~~###########",
     "###########################~~~~~~~~~~~~~~~~~~###########"
@@ -1146,21 +1146,21 @@ const LEVELS=[
   {
    "t": "attic",
    "label": "EL POZO DE PESAS",
-   "lesson": "Sube a la llave. Baja por las tablas hasta el apoyo de piedra.",
+   "lesson": "Sube con el ascensor y salta al balcón de la llave.",
    "pressure": 6,
    "rows": [
-    "################################################",
-    "................................................",
-    ".....................$..k.......................",
-    "...................=======......................",
-    "................................................",
-    "...........................___..........$.......",
-    "......................................=====.....",
-    ".................!..............===.............",
-    "........................................===.....",
-    "...C...E.....................................b..",
-    "###########################~~~~~~~~~~~##########",
-    "###########################~~~~~~~~~~~##########"
+    "############################################",
+    "............................................",
+    ".....................$..k...................",
+    "...................=======..................",
+    "............................................",
+    "....................................$.......",
+    "..................................=====.....",
+    ".................!..........................",
+    "..............................###...........",
+    "...C...E......................###...c....b..",
+    "############################################",
+    "############################################"
    ],
    "part": 3,
    "parts": 5
@@ -1241,9 +1241,9 @@ const LEVELS=[
     "..................=====.........................S.......",
     "...........................$................=======.....",
     ".........................___.....$...____...............",
-    "...............................====.............====....",
+    "...............................====.....................",
     "...............!........................................",
-    "..............................................===.......",
+    "........................................................",
     "...C...E.............................................b..",
     "#######################~~~~~~~~~~~~~~~~~~~~~~###########",
     "#######################~~~~~~~~~~~~~~~~~~~~~~###########"
@@ -1269,17 +1269,17 @@ const LEVELS=[
   {
    "t": "archive",
    "label": "EL ARCHIVO ESTELAR",
-   "lesson": "Usa la columna. Sube por la derecha y vuelve a la llave.",
+   "lesson": "El vigía fija el tiro. Escóndete y cambia de posición.",
    "pressure": 5,
    "rows": [
     "########################################",
-    ".........................#..............",
-    ".........................#..............",
-    ".........................#..k...........",
-    ".........................######.........",
-    ".........................#..............",
-    ".........................#........$.....",
-    "...............$................=====...",
+    "........................................",
+    "........................................",
+    "........................................",
+    "........................................",
+    ".................................$.k....",
+    "...............................======...",
+    "...............$........................",
     "..............##.............##.........",
     "...P...E......##.......Y.....##......b..",
     "########################################",
@@ -1441,21 +1441,21 @@ const LEVELS=[
   {
    "t": "observatory",
    "label": "LA CÚPULA DE LA LENTE",
-   "lesson": "Cruza entre disparos. Desde la derecha vuelve a la lente elevada.",
+   "lesson": "Combina cobertura y altura; el último puente lleva a la lente.",
    "pressure": 9,
    "rows": [
     "############################################################",
-    "............................................#...............",
-    "............................................#.S.............",
-    "............................................#####...........",
-    "............................................#..........$....",
+    "............................................................",
+    "............................................................",
+    "............................................................",
+    ".......................................................S....",
     "..............................$.Y....................=====..",
-    ".............................=====............._____........",
+    ".............................=====.........$...___..........",
     ".............$.......................##..___................",
-    "............##............##.........##.....==........===...",
+    "............##............##.........##.....................",
     "...C...E....##......Y.....##.........##..................b..",
-    "#############################~~~~~~~~###~~~~~~~~~~~~########",
-    "#############################~~~~~~~~###~~~~~~~~~~~~########"
+    "########################################~~~~~~~~~~~~########",
+    "########################################~~~~~~~~~~~~########"
    ],
    "part": 5,
    "parts": 5
@@ -1607,21 +1607,21 @@ const LEVELS=[
   {
    "t": "armory",
    "label": "LA GUARDIA DEL NÚCLEO",
-   "lesson": "Usa la cobertura. Del ascensor pasa a las tablas y a la llave.",
+   "lesson": "Carga, cobertura y ascenso. Una decisión cada vez.",
    "pressure": 9,
    "rows": [
-    "####################################################################",
-    "....................................................................",
-    "...................................................$................",
-    ".................................................=======............",
-    ".................................................................k..",
-    ".........................................................___...=====",
-    "....................................................................",
-    ".............$..............$..................!....................",
-    "............##.............##............##.....................===.",
-    "...C...E....##......K......##......Y.....##......................b..",
-    "####################################################~~~~~~~~~~######",
-    "####################################################~~~~~~~~~~######"
+    "############################################################",
+    "............................................................",
+    "...................................................$..k.....",
+    ".................................................=======....",
+    "............................................................",
+    "............................................................",
+    "............................................................",
+    ".............$..............$..................!............",
+    "............##.............##............##.................",
+    "...C...E....##......K......##......Y.....##..............b..",
+    "############################################################",
+    "############################################################"
    ],
    "part": 4,
    "parts": 5
@@ -1661,7 +1661,7 @@ const LEVELS=[
     "..........................................................___.........======",
     "..............................$.................................___.........",
     "...............$.............###..................!.........................",
-    "..............##.............###............##.........................===..",
+    "..............##.............###............##..............................",
     "...C...E......##......Y......###......K.....##...........................b..",
     "####################################################~~~~~~~~~~~~~~~~~~######",
     "####################################################~~~~~~~~~~~~~~~~~~######"
@@ -1675,7 +1675,7 @@ const LEVELS=[
 // EXPANSION_LAYOUTS_END
 ];
 function buildLevel(def){const rows=Array(ROWS).fill('');const zones=[];let cx=0;
- for(const s of def.segs){const w=Math.max(...s.rows.map(r=>r.length));for(let r=0;r<ROWS;r++){let l=s.rows[r]||'';rows[r]+=l.length<w?l.padEnd(w,'.'):l.slice(0,w);}zones.push({x0:cx*TS,x1:(cx+w)*TS,t:s.t,label:s.label,lesson:s.lesson||'',part:s.part,parts:s.parts,transition:!!s.transition});cx+=w;}
+ for(const s of def.segs){const w=Math.max(...s.rows.map(r=>r.length));for(let r=0;r<ROWS;r++){let l=s.rows[r]||'';rows[r]+=l.length<w?l.padEnd(w,'.'):l.slice(0,w);}zones.push({x0:cx*TS,x1:(cx+w)*TS,t:s.t,label:s.label,part:s.part,parts:s.parts,transition:!!s.transition});cx+=w;}
  return {cols:cx,map:rows.map(r=>r.split('')),zones,W:cx*TS,def};}
 let L=null;
 function tileAt(c,r){if(r<0||r>=ROWS)return '.';if(c<0||c>=L.cols)return '#';return L.map[r][c];}
@@ -1890,7 +1890,7 @@ function loadLevel(i){lvl=i;const def=LEVELS[i];L=buildLevel(def);simF=0;if(i>un
   if(z){
    const cIn=Math.floor(z.x0/TS),cOut=Math.floor(z.x1/TS)-1;
    L.map[8][cIn]='.';L.map[9][cIn]='.';
-   for(let r=1;r<10;r++)L.map[r][cOut]='#';
+   L.map[8][cOut]='#';L.map[9][cOut]='#';
    boss={
     x0:z.x0,x1:z.x1,
     active:false,defeated:false,
@@ -1911,9 +1911,7 @@ function loadLevel(i){lvl=i;const def=LEVELS[i];L=buildLevel(def);simF=0;if(i>un
  setState('intro');}
 function startLevel(){player.jHeld=true;player.jbuf=0;setState('play');showZone(true);}
 function showMsg(s,dur=120,col=C.y){msg={s,t:dur,col};}
-function partLesson(){const z=zoneAt(player.x+5);return z.lesson||(z.part?L.zones.find(p=>p.part===z.part&&!p.transition)?.lesson:'')||'';}
-function lessonLines(s,width=276){const lines=[];let line='';for(const word of s.toUpperCase().split(/\s+/)){const next=line?line+' '+word:word;if(line&&textW(next,1)>width){lines.push(line);line=word;}else line=next;}if(line)lines.push(line);return lines;}
-function showZone(force){const z=zoneAt(player.x+5),id=z.part?'part:'+z.part:z.t;if(id!==zoneName.id||force){if(!force&&zoneName.t)SFX.zone();zoneName={t:z.t,id,label:z.label,part:z.part,parts:z.parts,n:z.lesson?300:140};}}
+function showZone(force){const z=zoneAt(player.x+5),id=z.part?'part:'+z.part:z.t;if(id!==zoneName.id||force){if(!force&&zoneName.t)SFX.zone();zoneName={t:z.t,id,label:z.label,part:z.part,parts:z.parts,n:140};}}
 
 // ---------------- Fisica ----------------
 function moveX(e,dx){if(!dx)return false;e.x+=dx;const dir=Math.sign(dx);const r0=Math.floor(e.y/TS),r1=Math.floor((e.y+e.h-1)/TS);const c=dir>0?Math.floor((e.x+e.w-0.001)/TS):Math.floor(e.x/TS);
@@ -1949,7 +1947,8 @@ function respawn(){if(player.lives<=0){setState('over');return;}music.gate(true)
    boss.hp=3;boss.state='idle';boss.timer=0;boss.shot=null;boss.wave=null;boss.didWave=false;
    boss.gateLeft=true;boss.gateRight=false;
    const cIn=Math.floor(boss.x0/TS),cOut=Math.floor(boss.x1/TS)-1;
-   for(let r=1;r<10;r++){L.map[r][cIn]='.';L.map[r][cOut]='#';}
+   L.map[8][cIn]='.';L.map[9][cIn]='.';
+   L.map[8][cOut]='#';L.map[9][cOut]='#';
    boss.conductors.forEach(c=>{c.charged=false;c.zap=0;});
   }
  }
@@ -2197,15 +2196,12 @@ function updateBoss(){
  if(!boss.defeated&&!boss.active&&player.x>=boss.x0+24&&player.x<boss.x1){
   boss.active=true;boss.state='intro';boss.timer=90;boss.gateLeft=false;
   const cIn=Math.floor(boss.x0/TS);
-  for(let r=1;r<10;r++)L.map[r][cIn]='#';
+  L.map[8][cIn]='#';L.map[9][cIn]='#';
   burst(boss.x0+8,8*TS+8,12,C.c);burst(boss.x0+8,9*TS+8,12,C.c);
   SFX.door();SFX.bossAwaken();
   showMsg('¡EL CUSTODIO DEL DIAMANTE!',120,'#d040ff');
  }
- if(!boss.active||player.dead)return;
- // Keep an interrupted/invalid arena state recoverable while its camera is locked.
- const insideX=Math.max(boss.x0+TS,Math.min(boss.x1-TS-player.w,player.x));
- if(player.x!==insideX){player.x=insideX;player.vx=0;}
+ if(!boss.active)return;
  boss.anim++;
  if(boss.flash>0)boss.flash--;
  for(const c of boss.conductors)if(c.zap>0)c.zap--;
@@ -2308,7 +2304,7 @@ function updateBoss(){
    if(boss.timer<=0){
     boss.defeated=true;boss.active=false;boss.gateRight=true;
     const cOut=Math.floor(boss.x1/TS)-1;
-    for(let r=1;r<10;r++)L.map[r][cOut]='.';
+    L.map[8][cOut]='.';L.map[9][cOut]='.';
     burst(boss.x1-8,8*TS+8,16,C.g);burst(boss.x1-8,9*TS+8,16,C.g);
     SFX.door();showMsg('¡LA CÁMARA DEL DIAMANTE ESTÁ ABIERTA!',140,'#40e070');
    }
@@ -2316,24 +2312,15 @@ function updateBoss(){
  }
 }
 
-function drawBossBarrier(x){
- // Match the full-height collision with a visible barred column in both renderers.
- ctx.fillStyle='#211d32';ctx.fillRect(x,TS,TS,7*TS);
- ctx.fillStyle='#75617d';ctx.fillRect(x+2,TS,2,7*TS);ctx.fillRect(x+12,TS,2,7*TS);
- ctx.fillStyle='#b480d8';ctx.fillRect(x+7,TS,2,7*TS);
- for(let y=TS+6;y<8*TS;y+=16){ctx.fillStyle='#4b385d';ctx.fillRect(x+3,y,10,3);ctx.fillStyle='#e3b5ff';ctx.fillRect(x+7,y,2,3);}
-}
 function drawBoss(cx){
  if(!boss)return;
  if(!boss.gateLeft){
   const gx=boss.x0-cx;
-  drawBossBarrier(gx);
   rrect(ctx,gx,8*TS,16,32,2,'#2a2035','#4a3858');
   ctx.fillStyle='#ffd23a';for(let y=8*TS+4;y<10*TS;y+=6)rrect(ctx,gx+6,y,4,4,1,'#805020');
  }
  if(!boss.gateRight){
   const gx=boss.x1-16-cx;
-  drawBossBarrier(gx);
   rrect(ctx,gx,8*TS,16,32,2,'#2a2035','#4a3858');
   ctx.fillStyle='#ffd23a';for(let y=8*TS+4;y<10*TS;y+=6)rrect(ctx,gx+6,y,4,4,1,'#805020');
  }
@@ -2589,9 +2576,7 @@ function drawHUD(){if(gardenLook){GARDEN_UI.drawHUD(ctx,{energy:player.energy,ch
  }
  if(L.def.dawn){const d=Math.max(0,stats.dawn);const col=d<30&&((frame>>3)&1)?'#ff3040':'#ffa040';rrect(ctx,W-84,17,81,10,3,'rgba(8,10,20,.62)');text('AMANECER '+fmt(d),W-7,18.8,col,1,'right');}
  if(alarmT>0){const ay=(L.def.dawn?28:17)+(zoneName.n>0?18:0);const col=((frame>>3)&1)?'#ff3040':'#ff9060';rrect(ctx,W-84,ay,81,10,3,'rgba(60,8,12,.72)');text('ALARMA '+fmt(alarmT/60),W-7,ay+1.8,col,1,'right');}
- const lessonZone=zoneAt(player.x+5),entryLesson=zoneName.n>0&&lessonZone.lesson&&player.x<lessonZone.x0+9*TS;
- if(entryLesson){const lines=lessonLines(lessonZone.lesson),ly=L.def.dawn?57:44;rrect(ctx,14,ly,W-28,lines.length*8+7,3,'rgba(8,10,20,.92)');lines.forEach((line,i)=>text(line,W/2,ly+3+i*8,'#c8f4f2',1,'center'));}
- if(msg&&msg.t>0){const a=Math.min(1,msg.t/20);ctx.globalAlpha=a;const w=textW(msg.s,1)+14,my=entryLesson?84:56;rrect(ctx,W/2-w/2,my,w,12,4,'rgba(8,10,20,.78)');text(msg.s,W/2,my+2.4,msg.col,1,'center');ctx.globalAlpha=1;}
+ if(msg&&msg.t>0){const a=Math.min(1,msg.t/20);ctx.globalAlpha=a;const w=textW(msg.s,1)+14;rrect(ctx,W/2-w/2,56,w,12,4,'rgba(8,10,20,.78)');text(msg.s,W/2,58.4,msg.col,1,'center');ctx.globalAlpha=1;}
  const currentPart=zoneAt(player.x+5);if(currentPart.part){for(let n=1;n<=currentPart.parts;n++){ctx.fillStyle=n<=currentPart.part?'#80e6ed':'#34435e';ctx.fillRect(260+(n-1)*4,12,3,1);}}
  if(zoneName.n>0){const a=Math.min(1,zoneName.n/30);ctx.globalAlpha=a;const lbl=zoneName.label||THEMES[zoneName.t].label;const size=textW(lbl,2)<=280?2:1,w=textW(lbl,size)+20;const ly=L.def.dawn?30:17;rrect(ctx,W/2-w/2,ly,w,zoneName.part?24:16,3,'rgba(8,10,20,.8)');if(zoneName.part)text('PARTE '+zoneName.part+' / '+zoneName.parts,W/2,ly+2,'#80e6ed',1,'center');textS(lbl,W/2,ly+(zoneName.part?11:2.5),'#ffffff','#101420',size,'center');ctx.globalAlpha=1;}}
 
@@ -2658,7 +2643,7 @@ function render(){const cx=cam.x+(shake?(Math.random()-0.5)*shake:0);const sy=sh
  if(fadeT>0){ctx.fillStyle='rgba(0,0,0,'+(fadeT/30)+')';ctx.fillRect(0,0,W,H);}
  const d=L.def;
  if(state==='intro')drawOverlay('NIVEL '+(lvl+1),[d.name,'',...d.intro,'',...(lvl===0?['LA ENERGÍA BAJA SOLA: RECARGA EN LOS ENCHUFES',''] :[]),IS_TOUCH?'TOCA SALTO':'PULSA ESPACIO'],'#ffd23a');
- else if(state==='pause')drawOverlay('PAUSA',[...(partLesson()?[zoneAt(player.x+5).label,'',...lessonLines(partLesson(),254),'']:['']),IS_TOUCH?'TOCA PARA SEGUIR':'PULSA P O ESPACIO PARA SEGUIR'],'#30e8ff');
+ else if(state==='pause')drawOverlay('PAUSA',['',IS_TOUCH?'TOCA PARA SEGUIR':'PULSA P O ESPACIO PARA SEGUIR'],'#30e8ff');
  else if(state==='over'){drawOverlay('FIN DEL JUEGO',[deathText()+' EN EL NIVEL '+(lvl+1),'BOTÍN TOTAL: '+total.bags+(total.bags===1?' SACO':' SACOS')+'   TIEMPO: '+fmt(total.time+stats.time),'',''],'#ff3040');
   const bl=(frame>>5)&1;uiRects.cont={x:W/2-104,y:117,w:100,h:13};uiRects.title={x:W/2+4,y:117,w:100,h:13};
   rrect(ctx,uiRects.cont.x,117,100,13,4,bl?'rgba(255,210,58,.25)':'rgba(255,255,255,.12)','rgba(255,255,255,.4)');text((IS_TOUCH?'':'ESPACIO: ')+'SEGUIR (NIVEL '+(lvl+1)+')',uiRects.cont.x+50,120.2,'#ffffff',1,'center');
@@ -2687,7 +2672,7 @@ if(typeof window.__PHANTOMAS_TEST__==='function')window.__PHANTOMAS_TEST__({LEVE
  preview(mode){if(mode==='title'){setState('title');window.PhantomasPixi?.hide(cv);drawTitle();return;}newGame();startLevel();clearInput();fadeT=0;zoneName.n=0;frame=120;
   if(mode==='acid'){player.x=300;player.y=78;cam.x=180;}
   else if(mode==='interior'){player.x=864;player.y=142;cam.x=800;}
-  else if(mode==='boss'){loadLevel(3);startLevel();clearInput();fadeT=0;zoneName.n=0;if(boss){player.x=boss.x0+80;player.y=126;updateBoss();boss.state='aim';boss.timer=30;cam.x=boss.x0;msg=null;}frame=120;}
+  else if(mode==='boss'){loadLevel(3);startLevel();clearInput();fadeT=0;zoneName.n=0;if(boss){boss.active=true;boss.state='aim';boss.timer=30;player.x=boss.x0+80;player.y=126;cam.x=boss.x0;}frame=120;}
   else if(mode.startsWith('zone:')){const name=mode.slice(5);const index=LEVELS.findIndex(def=>buildLevel(def).zones.some(z=>z.t===name));if(index<0)throw Error('Unknown zone '+name);loadLevel(index);startLevel();clearInput();fadeT=0;zoneName.n=0;const z=L.zones.find(z=>z.t===name);cam.x=Math.max(0,Math.min(L.cols*16-W,z.x0));player.x=cam.x+40;player.y=142;frame=120;}
   else if(mode.startsWith('room:')){const [_,li,si,offset='0']=mode.split(':');loadLevel(Number(li));startLevel();clearInput();fadeT=0;zoneName.n=0;const z=L.zones[Number(si)];if(!z)throw Error('Sala desconocida');cam.x=Math.max(0,Math.min(L.W-W,z.x0+Math.max(0,z.x1-z.x0-W)*Number(offset)));player.x=cam.x+40;player.y=142;for(let c=Math.ceil(player.x/TS);c<Math.min(L.cols,Math.ceil(player.x/TS)+8);c++){let found=false;for(let r=10;r>=4;r--){if((isSolid(tileAt(c,r))||tileAt(c,r)==='='||tileAt(c,r)==='_')&&tileAt(c,r-1)==='.'&&tileAt(c,r-2)==='.'){player.x=c*TS+3;player.y=r*TS-18;found=true;break;}}if(found)break;}frame=120;if(Number(offset)===0)showZone(true);}
   else if(mode.startsWith('goal:')){loadLevel(Number(mode.split(':')[1]));startLevel();clearInput();fadeT=0;zoneName.n=0;const it=items.find(i=>i.t==='S');cam.x=Math.max(0,Math.min(L.W-W,it.x-160));player.x=cam.x+30;player.y=142;frame=120;}

@@ -1,4 +1,31 @@
-# Revisión de la expansión — v2.1
+# Retos revisados y arena del Custodio corregida — v2.3
+
+Las ayudas de las 20 partes se muestran al entrar y se pueden consultar en pausa.
+N5 y N7 incorporan ascensos de regreso que requieren cambiar de dirección;
+N6 y N8 combinan mecanismos en los tramos que antes terminaban sobre suelo continuo.
+Hay apoyos para recuperar la subida tras caer en las orillas secas finales.
+
+El Custodio cierra la arena en toda su altura: ya no se puede saltar por encima
+de sus puertas y quedar fuera de la cámara fija. La salida se abre al derrotarlo.
+
+- Cambios y comprobaciones: [review/MEJORAS-v2.3.md](review/MEJORAS-v2.3.md).
+- Contraste anterior, con sus discrepancias: [review/AUDITORIA-CIEGA.md](review/AUDITORIA-CIEGA.md).
+- Esta versión no tiene una nueva nota independiente ni pruebas humanas.
+
+## Fases nuevas con progresión por partes — v2.2
+
+N5–N8 tienen ahora cinco partes diferenciadas por fase, con nombre visible,
+ambiente, trazado y reto propios. Las puertas son transiciones entre partes.
+Puentes frágiles, ascensores, cargas y cobertura se introducen y combinan hasta
+la prueba final del corazón. Los mapas N1–N4 se conservan.
+
+- Diseño y pruebas: [review/FASES-NUEVAS-v2.2.md](review/FASES-NUEVAS-v2.2.md).
+- Revisor independiente: [review/REVISOR-FASES-v2.2.md](review/REVISOR-FASES-v2.2.md).
+- Galería: `tools/visual-check.html`; láminas por fase: `tools/parts-contact-sheet.html?level=5`.
+- Fuente de los mapas: `tools/build-expansion-levels.py`; genera solo el bloque marcado
+  de `index.html`. El despliegue usa el HTML ya generado, sin ejecutar Python.
+
+## Revisión artística anterior — v2.1
 
 Revisión del jefe y N5–N8: sprites pixel art, fondos propios para los cuatro
 ambientes, limpieza de decoración repetida y correcciones de combate/progresión.
@@ -15,7 +42,8 @@ Galería: `tools/visual-check.html` (incluye cada segmento nuevo, metas y enemig
 - Dokploy: Dockerfile de la raíz, contexto de construcción `.`, puerto interno 80.
 - La imagen copia `index.html` y toda la carpeta `assets/`. Los atlas no se generan al construir.
 - El repositorio `cerebro-voz-starter` conserva una copia documental; sus commits no actualizan esta web.
-- Verificación tras desplegar: el HTML debe contener `v2.1` y `assets/expansion-art.js?v=2`;
+- Verificación tras desplegar: el HTML debe contener `v2.3`, `drawBossBarrier` y `partLesson`, además de `EL PUENTE DEL PÉNDULO`
+  y `assets/expansion-art.js?v=2`;
   `/assets/world-expansion.png` y `/assets/expansion-props-v2.png` deben responder 200,
   y `/assets/no-existe.js` debe responder 404.
 - Si Dokploy no tiene autodeploy activado, ejecutar Deploy en la aplicación de este dominio.

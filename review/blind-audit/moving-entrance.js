@@ -1,0 +1,3 @@
+const fs=require('fs'),create=require('../tools/route-harness');const results=[];
+for(let phase=0;phase<320;phase+=20){let good=[];for(let d=60;d>=10;d-=2){const g=create();g.api.newGame();g.api.loadLevel(7);g.api.startLevel();g.api.simF=phase;Object.assign(g.api.player,{x:1824-d,y:142,vx:1.5,onGround:true,jHeld:false});for(let f=0;f<95;f++){g.route.input([1,1,0]);g.route.step();if(g.api.player.dead)break;if(f>3&&g.api.player.onGround){if(g.api.player.mover)good.push(d);break;}}}results.push({phase,safeDistances:good});}
+fs.writeFileSync(__dirname+'/moving-entrance-results.json',JSON.stringify(results,null,2));console.log(JSON.stringify(results));

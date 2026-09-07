@@ -1,0 +1,13 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><title>Phantomas · cinco partes</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#080c1b;color:#e6eefb;font:13px system-ui;padding:12px}nav{display:flex;gap:18px;flex-wrap:wrap;padding:8px}a{color:#80e6ed}img{display:block;width:100%;max-width:1280px;margin:auto}p{color:#95acc9}</style>
+<nav id="nav" aria-label="Láminas de revisión"></nav><main><img id="sheet" alt="Cinco partes de la fase"></main><nav id="live" aria-label="Escenas interactivas"></nav>
+<p>Capturas de la revisión v2.2. Los enlaces de parte abren la escena real; la galería permite comprobar PixiJS y Canvas.</p>
+<script>
+const q=new URLSearchParams(location.search),n=Math.max(5,Math.min(8,Number(q.get('level')||5))),offset=Number(q.get('offset')||0);
+const section={0:'entrada',0.5:'centro',1:'salida'}[offset]||'entrada';
+const sheet=document.getElementById('sheet');sheet.src='../review/partes-n'+n+'-'+section+'-v2.2.jpg';sheet.alt='Nivel '+n+': cinco partes, '+section;
+const link=(host,text,url)=>{const a=document.createElement('a');a.textContent=text;a.href=url;document.getElementById(host).append(a);};
+for(let level=5;level<=8;level++)link('nav','Nivel '+level,'?level='+level+'&offset='+offset);
+for(const [o,name] of [[0,'Entradas'],[.5,'Centros'],[1,'Salidas']])link('nav',name,'?level='+n+'&offset='+o);
+for(let p=0;p<5;p++)link('live','Abrir parte '+(p+1),'visual-check.html?capture=room:'+(n-1)+':'+(p*2)+':'+offset);
+</script></html>

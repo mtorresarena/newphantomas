@@ -357,8 +357,12 @@ function engineTests(){const out=[];
     {newGame();loadLevel(3);startLevel();api.levelClear();let ok=api.state==='play';
      api.boss.defeated=true;api.levelClear();ok=ok&&api.state==='clear';const counted=api.total.total;api.levelClear();ok=ok&&api.total.total===counted;
      out.push([ok&&api.state==='clear','meta del museo: requiere derrotar al jefe y no se reactiva desde la pantalla de cierre']);}
+    {newGame();loadLevel(5);startLevel();const practice=api.crumbles.filter(c=>c.tutorial),last=practice.at(-1),p=api.player;
+     p.x=last.x+3;p.y=last.y-p.h;p.onGround=true;api.updateCrumbles();
+     out.push([last.state==='shaking'&&api.crumbles.every(c=>!c.tutorial),'tutorial de grietas: aterrizar en el ultimo tile de practica activa el aviso una sola vez']);}
     return out;}
-let bad=0;
+module.exports={api,checkLevel,engineTests};
+if(require.main===module){let bad=0;
 console.log('=== Pruebas de motor ===');for(const [ok,msg] of engineTests()){console.log(`  ${ok?'OK  ':'FALLA'} ${msg}`);if(!ok)bad++;}
 for(let i=0;i<LEVELS.length;i++){if(only!==null&&i!==only)continue;
  const t0=Date.now();const r=checkLevel(i);const ms=Date.now()-t0;
@@ -369,4 +373,4 @@ for(let i=0;i<LEVELS.length;i++){if(only!==null&&i!==only)continue;
  for(const m of r.missing)console.log(`  INALCANZABLE: '${m.t}' en col ${m.col} fila ${m.row} (x=${m.x}, y=${m.y})`);
  for(const w of r.warns)console.log(`  AVISO: ${w}`);
  console.log(ok?'  RESULTADO: OK':'  RESULTADO: FALLA');if(!ok)bad++;}
-process.exit(bad?1:0);
+process.exit(bad?1:0);}

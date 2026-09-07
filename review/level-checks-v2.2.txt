@@ -1,0 +1,64 @@
+=== Pruebas de motor ===
+  OK   gracia de amanecer tras morir: dawn=89.9 vidas=2
+  OK   ascensor: frames sin apoyo en 700 = 0
+  OK   puente movil: frames sin apoyo en 700 = 0
+  OK   quieto sobre plataforma =: frames sin apoyo=0, desvio vertical=0.00 px
+  OK   quieto sobre suelo solido: frames sin apoyo=0, desvio vertical=0.00 px
+  OK   enemigos terrestres mantienen su fila
+  OK   tope exacto contra muro: penetracion=0.000 px, frames dentro=0
+  OK   desplazamiento de plataformas moviles en el primer frame: 0.94 px
+  OK   reaparicion segura (2 s de invulnerabilidad, 150 frames quieto) en todos los puntos de control
+  OK   puerta col 48: sin llave cerrada=true (tope 0.00), con llave abierta=true llaves restantes=0
+  OK   el acido quita una vida al caer en el
+  OK   la bala de cañon hiere: energia 100 -> 79.6
+  OK   placa de alarma: saltandola no se activa=true, pisandola se activa=true, expira sola=true
+  OK   patrulleros dentro de su sala y fuera de los pinchos
+  OK   encuentro con El Custodio: arena, telegrafiado, 3 conductores, derrota, apertura de salida y reinicio seguro
+  OK   centinela de piedra: aviso telegrafiado, carga recta, daño en carrera y recuperacion inocua
+  OK   plataforma agrietada: activacion al pisar, vibracion, colapso y reconstruccion segura sin atrapamiento
+  OK   vigia espectral: aviso telegrafiado, fijacion previa, orbe bloqueable y recuperacion inocua
+  OK   cobertura y camara: centinela no detecta a traves de muro, vigia cancela tiro oculto o fuera de vista
+  OK   orbe: el borde del proyectil choca con esquina del muro aunque su centro pase por fuera
+  OK   vigia: limite global de orbes y un proyectil activo por propietario
+  OK   meta del museo: requiere derrotar al jefe y no se reactiva desde la pantalla de cierre
+  OK   tutorial de grietas: aterrizar en el ultimo tile de practica activa el aviso una sola vez
+
+=== Nivel 1: LA MANSIÓN DEL BARÓN (177 cols, 13 sacos, 2 llaves / 2 puertas) ===
+  estados alcanzados: 1108  pasadas: 4  tiempo: 23438 ms
+  meta alcanzada: SI (camino minimo ~70 s por BFS, con desvios por llaves)   puertas sin abrir: ninguna
+  RESULTADO: OK
+
+=== Nivel 2: EL CASTILLO DE DRÁCULA (312 cols, 23 sacos, 3 llaves / 3 puertas) ===
+  estados alcanzados: 2071  pasadas: 5  tiempo: 44268 ms
+  meta alcanzada: SI (camino minimo ~134 s por BFS, con desvios por llaves)   puertas sin abrir: ninguna
+  RESULTADO: OK
+
+=== Nivel 3: LOS TEJADOS (302 cols, 20 sacos, 2 llaves / 2 puertas) ===
+  estados alcanzados: 1939  pasadas: 4  tiempo: 30548 ms
+  meta alcanzada: SI (camino minimo ~80 s por BFS, con desvios por llaves)   puertas sin abrir: ninguna
+  RESULTADO: OK
+
+=== Nivel 4: EL MUSEO (377 cols, 30 sacos, 3 llaves / 3 puertas) ===
+  estados alcanzados: 2585  pasadas: 6  tiempo: 58256 ms
+  meta alcanzada: SI (camino minimo ~160 s por BFS, con desvios por llaves)   puertas sin abrir: ninguna
+  RESULTADO: OK
+
+=== Nivel 5: EL JARDÍN DE LAS ESTATUAS (256 cols, 13 sacos, 4 llaves / 4 puertas) ===
+  estados alcanzados: 1228  pasadas: 6  tiempo: 24212 ms
+  meta alcanzada: SI (camino minimo ~131 s por BFS, con desvios por llaves)   puertas sin abrir: ninguna
+  RESULTADO: OK
+
+=== Nivel 6: LA TORRE DEL RELOJ (256 cols, 13 sacos, 4 llaves / 4 puertas) ===
+  estados alcanzados: 1242  pasadas: 6  tiempo: 29262 ms
+  meta alcanzada: SI (camino minimo ~123 s por BFS, con desvios por llaves)   puertas sin abrir: ninguna
+  RESULTADO: OK
+
+=== Nivel 7: EL OBSERVATORIO DEL BARÓN (264 cols, 13 sacos, 4 llaves / 4 puertas) ===
+  estados alcanzados: 1231  pasadas: 6  tiempo: 25349 ms
+  meta alcanzada: SI (camino minimo ~131 s por BFS, con desvios por llaves)   puertas sin abrir: ninguna
+  RESULTADO: OK
+
+=== Nivel 8: LA CÁMARA DEL CORAZÓN (292 cols, 13 sacos, 4 llaves / 4 puertas) ===
+  estados alcanzados: 1343  pasadas: 6  tiempo: 38111 ms
+  meta alcanzada: SI (camino minimo ~143 s por BFS, con desvios por llaves)   puertas sin abrir: ninguna
+  RESULTADO: OK

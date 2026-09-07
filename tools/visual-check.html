@@ -56,8 +56,8 @@
   const viewButtons = [...document.querySelectorAll('[data-view]')];
   const labels = {intro:'Introducción',pause:'Pausa',over:'Fin de partida',clear:'Nivel completado',garden:'Vista inicial',acid:'Zona del ácido',interior:'Interior',title:'Título',boss:'El Custodio'};
   for(const name of ['hall','library','crypt','tower','moat','court','armory','dungeon','bell','coffin','keep','roof','roof2','roof3','bridges','attic','warehouse','sewer','museum','egypt','gallery','archive','ballroom','vault','boss','statues','clocktower','observatory','heart']){labels['zone:'+name]=name;const b=document.createElement('button');b.type='button';b.dataset.view=name==='boss'?'boss':'zone:'+name;b.textContent=name==='boss'?'Jefe (Custodio)':name;b.disabled=true;document.querySelector('nav').append(b);buttons.push(b);viewButtons.push(b);}labels.enemies='Enemigos';const eb=document.createElement('button');eb.type='button';eb.dataset.view='enemies';eb.textContent='Enemigos';eb.disabled=true;document.querySelector('nav').append(eb);buttons.push(eb);viewButtons.push(eb);
-  for(let li=4;li<8;li++)for(let si=0;si<8;si++){
-    const mode='room:'+li+':'+si;labels[mode]='N'+(li+1)+' sala '+(si+1);
+  for(let li=4;li<8;li++)for(let si=0;si<10;si+=2)for(const offset of (li===7&&si===8?[0,.25,.5,.75,1]:[0,.5,1])){
+    const mode='room:'+li+':'+si+':'+offset;labels[mode]='N'+(li+1)+' parte '+(si/2+1)+' · '+({0:'entrada',0.25:'guardia',0.5:'centro',0.75:'ascenso',1:'salida'}[offset]);
     const b=document.createElement('button');b.type='button';b.dataset.view=mode;b.textContent=labels[mode];b.disabled=true;document.querySelector('nav').append(b);buttons.push(b);viewButtons.push(b);
   }
   for(let li=4;li<8;li++){const mode='goal:'+li;labels[mode]='Meta N'+(li+1);const b=document.createElement('button');b.type='button';b.dataset.view=mode;b.textContent=labels[mode];b.disabled=true;document.querySelector('nav').append(b);buttons.push(b);viewButtons.push(b);}
