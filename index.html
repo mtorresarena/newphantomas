@@ -1075,34 +1075,38 @@ const music={step:0,next:0,timer:null,on:true,song:SONGS.garden,
 
 // ---------------- Entrada ----------------
 const keys={},touch={l:false,r:false,j:false,d:false};let anyKey=false,gpPrev=false;
-function cheatGoToLevel(target){
- if(target<0||target>=LEVELS.length)return;
- if(state==='title'||state==='intro'||state==='over'||state==='pause')newGame();
- if(target>unlocked){unlocked=target;try{localStorage.setItem('phantomas.unlocked',String(unlocked));}catch(err){}}
- loadLevel(target);startLevel();SFX.win();
- msg={s:'¡TRUCO! N'+(target+1)+': '+LEVELS[target].name,t:90,col:'#30e8ff'};
-}
+const START_KEYS=['Space','Enter','ArrowUp','ArrowDown','ArrowLeft','ArrowRight','KeyW','KeyA','KeyS','KeyD','KeyZ','KeyK'];
 function cheatNextScreen(){
- if(state==='title'||state==='intro'||state==='over'||state==='pause')newGame();
+ if(state==='title'||state==='intro'||state==='over'||state==='pause'||state==='preview')newGame();
  if(state==='play'&&lvl===3&&boss&&(!boss.active&&!boss.defeated&&player.x<boss.x0-20)){
   player.x=boss.x0-16;player.y=160-18;player.vx=0;player.vy=0;cam.x=boss.x0;
   SFX.win();msg={s:'¡TRUCO: EL CUSTODIO!',t:90,col:'#ff3080'};return;
  }
  const next=(lvl+1)%LEVELS.length;
- cheatGoToLevel(next);
+ if(next>unlocked){unlocked=next;try{localStorage.setItem('phantomas.unlocked',String(unlocked));}catch(err){}}
+ loadLevel(next);startLevel();SFX.win();
+ msg={s:'¡TRUCO! N'+(next+1)+': '+LEVELS[next].name,t:90,col:'#30e8ff'};
 }
 addEventListener('keydown',e=>{
- if(['AltLeft','AltRight'].includes(e.code)){e.preventDefault();return;}
- if(e.code==='KeyN'&&!e.ctrlKey&&!e.metaKey){
+ if(e.altKey&&e.code==='KeyN'){
   e.preventDefault();cheatNextScreen();return;
  }
- if(e.code.startsWith('Digit')&&!e.ctrlKey&&!e.metaKey){
-  const num=parseInt(e.code.replace('Digit',''),10);
-  if(num>=1&&num<=LEVELS.length){e.preventDefault();cheatGoToLevel(num-1);return;}
- }
- if(e.target===lookButton&&['Space','Enter'].includes(e.code)){e.preventDefault();if(!e.repeat)toggleLook();return;}if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Space'].includes(e.code))e.preventDefault();if(e.repeat)return;if(START_KEYS.includes(e.code))anyKey=true;keys[e.code]=true;audio.init();if(audio.ctx&&!music.timer)music.start();
+ if(['AltLeft','AltRight'].includes(e.code)){e.preventDefault();return;}
+ keys[e.code]=true;
+ if(START_KEYS.includes(e.code))anyKey=true;
+ if(e.target===lookButton&&['Space','Enter'].includes(e.code)){e.preventDefault();if(!e.repeat)toggleLook();return;}
+ if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Space'].includes(e.code))e.preventDefault();
+ if(e.repeat)return;
+ audio.init();if(audio.ctx&&!music.timer)music.start();
  if(e.code==='KeyG')toggleLook();
- if(e.code==='KeyM'){audio.muted=!audio.muted;}if(e.code==='KeyC'&&state==='title'&&unlocked>0){continueFrom(unlocked);}if(e.code==='KeyT'&&state==='over'){setState('title');}if(e.code==='KeyP'||e.code==='Escape'||(state==='pause'&&['Space','Enter'].includes(e.code))){if(state==='play')setState('pause');else if(state==='pause'){player.jHeld=true;player.jbuf=0;setState('play');}}});
+ if(e.code==='KeyM'){audio.muted=!audio.muted;}
+ if(e.code==='KeyC'&&state==='title'&&unlocked>0){continueFrom(unlocked);}
+ if(e.code==='KeyT'&&state==='over'){setState('title');}
+ if(e.code==='KeyP'||e.code==='Escape'||(state==='pause'&&['Space','Enter'].includes(e.code))){
+  if(state==='play')setState('pause');
+  else if(state==='pause'){player.jHeld=true;player.jbuf=0;setState('play');}
+ }
+});
 addEventListener('keyup',e=>{keys[e.code]=false;});
 function clearInput(){for(const k in keys)keys[k]=false;touch.l=touch.r=touch.j=touch.d=false;}
 function autoPause(){clearInput();if(state==='play')setState('pause');}
@@ -1729,6 +1733,7 @@ function step(){frame++;tick++;pollGamepad();
  if(state==='title'){if(anyKey&&tick>20){anyKey=false;newGame();}}
  else if(state==='intro'){if(anyKey&&tick>30){anyKey=false;startLevel();}}
  else if(state==='play'){simF++;if(fadeT>0)fadeT--;updateMovers();updatePlayer();updateBoss();updateEnts();updateCam();}
+ else if(state==='preview'){if(anyKey||inp.l||inp.r||inp.j||inp.d){setState('play');showZone(true);}}
  else if(state==='clear'){updateParts();if(anyKey&&tick>90){anyKey=false;if(lvl<LEVELS.length-1)loadLevel(lvl+1);else setState('title');}}
  else if(state==='over'){if(anyKey&&tick>90){anyKey=false;continueFrom(lvl,true);}}
  else if(state==='pause'){if(anyKey&&tick>15){anyKey=false;player.jHeld=true;player.jbuf=0;setState('play');}}

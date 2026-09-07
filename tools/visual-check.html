@@ -80,17 +80,31 @@
       currentView = mode;
       viewButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.view === mode)));
       updateStatus();
+      frame.focus();
+      frame.contentWindow?.focus();
     } catch (error) {
       report('No se pudo mostrar la escena: ' + error.message, true);
     }
   }
 
   viewButtons.forEach(button => button.addEventListener('click', () => selectView(button.dataset.view)));
+  window.addEventListener('keydown', e => {
+    if (e.target !== frame && frame.contentWindow && !['F5','F12','r'].includes(e.key)) {
+      frame.contentWindow.dispatchEvent(new KeyboardEvent('keydown', {code: e.code, key: e.key, altKey: e.altKey, ctrlKey: e.ctrlKey, shiftKey: e.shiftKey, repeat: e.repeat}));
+    }
+  });
+  window.addEventListener('keyup', e => {
+    if (e.target !== frame && frame.contentWindow) {
+      frame.contentWindow.dispatchEvent(new KeyboardEvent('keyup', {code: e.code, key: e.key, altKey: e.altKey, ctrlKey: e.ctrlKey, shiftKey: e.shiftKey}));
+    }
+  });
   document.getElementById('compare').addEventListener('click', () => {
     try {
       api.compareLook();
       renewed = !renewed;
       updateStatus();
+      frame.focus();
+      frame.contentWindow?.focus();
     } catch (error) {
       report('No se pudo cambiar el aspecto: ' + error.message, true);
     }
