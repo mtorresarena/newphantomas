@@ -1075,8 +1075,22 @@ const music={step:0,next:0,timer:null,on:true,song:SONGS.garden,
 
 // ---------------- Entrada ----------------
 const keys={},touch={l:false,r:false,j:false,d:false};let anyKey=false,gpPrev=false;
-const START_KEYS=['Space','Enter','ArrowUp','KeyW','KeyZ','KeyK'];
-addEventListener('keydown',e=>{if(e.target===lookButton&&['Space','Enter'].includes(e.code)){e.preventDefault();if(!e.repeat)toggleLook();return;}if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Space'].includes(e.code))e.preventDefault();if(e.repeat)return;if(START_KEYS.includes(e.code))anyKey=true;keys[e.code]=true;audio.init();if(audio.ctx&&!music.timer)music.start();
+function cheatNextScreen(){
+ if(state==='title'||state==='intro'||state==='over')newGame();
+ if(state==='play'&&lvl===3&&boss&&(!boss.active&&!boss.defeated&&player.x<boss.x0-20)){
+  player.x=boss.x0-16;player.y=160-18;player.vx=0;player.vy=0;cam.x=boss.x0;
+  SFX.win();msg={s:'¡TRUCO: EL CUSTODIO!',t:90,col:'#ff3080'};return;
+ }
+ const next=(lvl+1)%LEVELS.length;
+ if(next>unlocked){unlocked=next;try{localStorage.setItem('phantomas.unlocked',String(unlocked));}catch(err){}}
+ loadLevel(next);startLevel();SFX.win();
+ msg={s:'¡TRUCO! N'+(next+1)+': '+LEVELS[next].name,t:90,col:'#30e8ff'};
+}
+addEventListener('keydown',e=>{
+ if((e.ctrlKey||e.metaKey)&&e.shiftKey&&((e.code==='KeyW'&&keys['KeyE'])||(e.code==='KeyE'&&keys['KeyW']))){
+  e.preventDefault();cheatNextScreen();return;
+ }
+ if(e.target===lookButton&&['Space','Enter'].includes(e.code)){e.preventDefault();if(!e.repeat)toggleLook();return;}if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Space'].includes(e.code))e.preventDefault();if(e.repeat)return;if(START_KEYS.includes(e.code))anyKey=true;keys[e.code]=true;audio.init();if(audio.ctx&&!music.timer)music.start();
  if(e.code==='KeyG')toggleLook();
  if(e.code==='KeyM'){audio.muted=!audio.muted;}if(e.code==='KeyC'&&state==='title'&&unlocked>0){continueFrom(unlocked);}if(e.code==='KeyT'&&state==='over'){setState('title');}if(e.code==='KeyP'||e.code==='Escape'){if(state==='play')setState('pause');else if(state==='pause'){player.jHeld=true;player.jbuf=0;setState('play');}}});
 addEventListener('keyup',e=>{keys[e.code]=false;});
