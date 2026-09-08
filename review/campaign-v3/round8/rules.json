@@ -1,0 +1,21 @@
+{
+  "sourceHash": "06a4ae938c68fa78e3a48d820ec58a35cfb49a3a2fb650d7cb23052239ee8103",
+  "scope": "Isolated state fixtures, not full input routes",
+  "passed": 14,
+  "cases": [
+    "Exactly two bosses N4 + N8; 40 gates in 20 campaign parts",
+    "Every mirror layout connects only with the intended beam turns",
+    "Wrong rune resets; ordered input solves; holding DOWN counts once",
+    "Weight requires pickup before deposit and survives wrong socket attempts",
+    "Seal requires charging guardian, not a stationary overlap or player",
+    "Timer expiry before threshold resets, returns to switches, and cannot clear",
+    "Threshold latches at exact deadline; no closing wall inside player",
+    "Respawn retains solved puzzles, resets unsolved mirrors, weight and timer",
+    "N8 arena confines both edges at all heights and freezes during death",
+    "Boss vulnerability, phases, defeat delay and exit gate are coherent",
+    "Missed core opening returns to warning and offers another opening",
+    "Lethal projectile on final stomp frame gives death, no simultaneous victory",
+    "Death during final defeat animation resets arena coherently before victory",
+    "Snapshot restores campaign, map, both boss states and real input effects"
+  ]
+}

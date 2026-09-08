@@ -1,0 +1,1911 @@
+{
+  "sourceHash": "8eef8b28ed89122e03c5eb04ebed91d5923fe87b51b6b12dd6f999699e35c65b",
+  "witnessHash": "a5b3dfffc8c17d5e3e8d7aa193b298ff9f3d10f5632a097e9552376737112025",
+  "observerHash": "a2cf9551ddc7a6ce5cafa6d5182927089ee4b8a7332eae9d851d598be5c84cfc",
+  "protocolHash": "97cd8025b23ece8040b3ea41b80e701a27a2a97a8a67da7166b77d166d983dac",
+  "summary": {
+    "level": 5,
+    "policy": "speed",
+    "frames": 11855,
+    "seconds": 197.58333333333334,
+    "certainFrames": 897,
+    "certainPercent": 7.56642766765078,
+    "ambiguousFrames": 10958,
+    "lower": {
+      "mandatory_action": 24,
+      "simple_transit": 866,
+      "necessary_mechanism_wait": 0,
+      "optional": 7,
+      "repetition": 0
+    },
+    "upper": {
+      "mandatory_action": 10890,
+      "simple_transit": 11732,
+      "necessary_mechanism_wait": 92,
+      "optional": 10965,
+      "repetition": 10958
+    },
+    "reasons": {
+      "forward_fixed_safe_floor_outside_challenge_margins": 866,
+      "verified_progress_transition": 24,
+      "bag_collection_instant": 7
+    },
+    "ambiguousContexts": {
+      "other": 1614,
+      "energy_recharge": 53,
+      "puzzle": 7647,
+      "obstacle": 509,
+      "encounter": 1135
+    }
+  },
+  "runs": [
+    {
+      "startFrame": 1,
+      "endFrame": 1,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2,
+      "endFrame": 35,
+      "label": "simple_transit",
+      "reason": "forward_fixed_safe_floor_outside_challenge_margins",
+      "possible": []
+    },
+    {
+      "startFrame": 36,
+      "endFrame": 52,
+      "label": "ambiguous",
+      "reason": "energy_recharge",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 53,
+      "endFrame": 92,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 93,
+      "endFrame": 417,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 418,
+      "endFrame": 418,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 419,
+      "endFrame": 622,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 623,
+      "endFrame": 686,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 687,
+      "endFrame": 772,
+      "label": "ambiguous",
+      "reason": "obstacle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 773,
+      "endFrame": 773,
+      "label": "optional",
+      "reason": "bag_collection_instant",
+      "possible": []
+    },
+    {
+      "startFrame": 774,
+      "endFrame": 814,
+      "label": "ambiguous",
+      "reason": "obstacle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 815,
+      "endFrame": 876,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 877,
+      "endFrame": 901,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 902,
+      "endFrame": 965,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 966,
+      "endFrame": 974,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 975,
+      "endFrame": 975,
+      "label": "optional",
+      "reason": "bag_collection_instant",
+      "possible": []
+    },
+    {
+      "startFrame": 976,
+      "endFrame": 1041,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1042,
+      "endFrame": 1198,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1199,
+      "endFrame": 1199,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 1200,
+      "endFrame": 1328,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1329,
+      "endFrame": 1329,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 1330,
+      "endFrame": 1548,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1549,
+      "endFrame": 1549,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 1550,
+      "endFrame": 1616,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1617,
+      "endFrame": 1637,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1638,
+      "endFrame": 1851,
+      "label": "simple_transit",
+      "reason": "forward_fixed_safe_floor_outside_challenge_margins",
+      "possible": []
+    },
+    {
+      "startFrame": 1852,
+      "endFrame": 1872,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1873,
+      "endFrame": 1898,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1899,
+      "endFrame": 1899,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 1900,
+      "endFrame": 2268,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2269,
+      "endFrame": 2269,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 2270,
+      "endFrame": 2344,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2345,
+      "endFrame": 2366,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2367,
+      "endFrame": 2387,
+      "label": "simple_transit",
+      "reason": "forward_fixed_safe_floor_outside_challenge_margins",
+      "possible": []
+    },
+    {
+      "startFrame": 2388,
+      "endFrame": 2421,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2422,
+      "endFrame": 2453,
+      "label": "ambiguous",
+      "reason": "obstacle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2454,
+      "endFrame": 2477,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2478,
+      "endFrame": 2541,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2542,
+      "endFrame": 2560,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2561,
+      "endFrame": 2592,
+      "label": "ambiguous",
+      "reason": "obstacle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2593,
+      "endFrame": 2613,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2614,
+      "endFrame": 2614,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "necessary_mechanism_wait",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2615,
+      "endFrame": 2706,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2707,
+      "endFrame": 2761,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2762,
+      "endFrame": 2825,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2826,
+      "endFrame": 2834,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2835,
+      "endFrame": 2941,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2942,
+      "endFrame": 2950,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "necessary_mechanism_wait",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2951,
+      "endFrame": 3251,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3252,
+      "endFrame": 3260,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "necessary_mechanism_wait",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3261,
+      "endFrame": 3269,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3270,
+      "endFrame": 3270,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 3271,
+      "endFrame": 3618,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3619,
+      "endFrame": 3619,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 3620,
+      "endFrame": 3671,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3672,
+      "endFrame": 3735,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3736,
+      "endFrame": 3870,
+      "label": "simple_transit",
+      "reason": "forward_fixed_safe_floor_outside_challenge_margins",
+      "possible": []
+    },
+    {
+      "startFrame": 3871,
+      "endFrame": 3888,
+      "label": "ambiguous",
+      "reason": "energy_recharge",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3889,
+      "endFrame": 3927,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3928,
+      "endFrame": 4362,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 4363,
+      "endFrame": 4363,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 4364,
+      "endFrame": 4718,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 4719,
+      "endFrame": 4719,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 4720,
+      "endFrame": 4775,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 4776,
+      "endFrame": 4839,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 4840,
+      "endFrame": 4931,
+      "label": "ambiguous",
+      "reason": "obstacle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 4932,
+      "endFrame": 4932,
+      "label": "optional",
+      "reason": "bag_collection_instant",
+      "possible": []
+    },
+    {
+      "startFrame": 4933,
+      "endFrame": 4967,
+      "label": "ambiguous",
+      "reason": "obstacle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 4968,
+      "endFrame": 5024,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 5025,
+      "endFrame": 5052,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 5053,
+      "endFrame": 5122,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 5123,
+      "endFrame": 5153,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 5154,
+      "endFrame": 5155,
+      "label": "simple_transit",
+      "reason": "forward_fixed_safe_floor_outside_challenge_margins",
+      "possible": []
+    },
+    {
+      "startFrame": 5156,
+      "endFrame": 5176,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 5177,
+      "endFrame": 5240,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 5241,
+      "endFrame": 5262,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 5263,
+      "endFrame": 5281,
+      "label": "simple_transit",
+      "reason": "forward_fixed_safe_floor_outside_challenge_margins",
+      "possible": []
+    },
+    {
+      "startFrame": 5282,
+      "endFrame": 5335,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 5336,
+      "endFrame": 5588,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 5589,
+      "endFrame": 5589,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 5590,
+      "endFrame": 5702,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 5703,
+      "endFrame": 5703,
+      "label": "optional",
+      "reason": "bag_collection_instant",
+      "possible": []
+    },
+    {
+      "startFrame": 5704,
+      "endFrame": 5858,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 5859,
+      "endFrame": 5859,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 5860,
+      "endFrame": 6134,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 6135,
+      "endFrame": 6155,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 6156,
+      "endFrame": 6369,
+      "label": "simple_transit",
+      "reason": "forward_fixed_safe_floor_outside_challenge_margins",
+      "possible": []
+    },
+    {
+      "startFrame": 6370,
+      "endFrame": 6390,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 6391,
+      "endFrame": 6648,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 6649,
+      "endFrame": 6649,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 6650,
+      "endFrame": 6868,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 6869,
+      "endFrame": 6869,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 6870,
+      "endFrame": 6998,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 6999,
+      "endFrame": 6999,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 7000,
+      "endFrame": 7078,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 7079,
+      "endFrame": 7079,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 7080,
+      "endFrame": 7254,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 7255,
+      "endFrame": 7275,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 7276,
+      "endFrame": 7297,
+      "label": "simple_transit",
+      "reason": "forward_fixed_safe_floor_outside_challenge_margins",
+      "possible": []
+    },
+    {
+      "startFrame": 7298,
+      "endFrame": 7331,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 7332,
+      "endFrame": 7363,
+      "label": "ambiguous",
+      "reason": "obstacle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 7364,
+      "endFrame": 7387,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 7388,
+      "endFrame": 7451,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 7452,
+      "endFrame": 7470,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 7471,
+      "endFrame": 7502,
+      "label": "ambiguous",
+      "reason": "obstacle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 7503,
+      "endFrame": 7523,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 7524,
+      "endFrame": 7524,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "necessary_mechanism_wait",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 7525,
+      "endFrame": 7616,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 7617,
+      "endFrame": 7626,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 7627,
+      "endFrame": 7627,
+      "label": "optional",
+      "reason": "bag_collection_instant",
+      "possible": []
+    },
+    {
+      "startFrame": 7628,
+      "endFrame": 7661,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 7662,
+      "endFrame": 7729,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 7730,
+      "endFrame": 7730,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 7731,
+      "endFrame": 7748,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 7749,
+      "endFrame": 7891,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 7892,
+      "endFrame": 7900,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "necessary_mechanism_wait",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 7901,
+      "endFrame": 7921,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 7922,
+      "endFrame": 7930,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "necessary_mechanism_wait",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 7931,
+      "endFrame": 7951,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 7952,
+      "endFrame": 7960,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "necessary_mechanism_wait",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 7961,
+      "endFrame": 8013,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 8014,
+      "endFrame": 8061,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 8062,
+      "endFrame": 8062,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 8063,
+      "endFrame": 8097,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 8098,
+      "endFrame": 8107,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 8108,
+      "endFrame": 8573,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 8574,
+      "endFrame": 8574,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 8575,
+      "endFrame": 8911,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 8912,
+      "endFrame": 8920,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "necessary_mechanism_wait",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 8921,
+      "endFrame": 8927,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 8928,
+      "endFrame": 8928,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 8929,
+      "endFrame": 8980,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 8981,
+      "endFrame": 9044,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 9045,
+      "endFrame": 9179,
+      "label": "simple_transit",
+      "reason": "forward_fixed_safe_floor_outside_challenge_margins",
+      "possible": []
+    },
+    {
+      "startFrame": 9180,
+      "endFrame": 9197,
+      "label": "ambiguous",
+      "reason": "energy_recharge",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 9198,
+      "endFrame": 9236,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 9237,
+      "endFrame": 9672,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 9673,
+      "endFrame": 9673,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 9674,
+      "endFrame": 10027,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 10028,
+      "endFrame": 10028,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 10029,
+      "endFrame": 10079,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 10080,
+      "endFrame": 10143,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 10144,
+      "endFrame": 10232,
+      "label": "ambiguous",
+      "reason": "obstacle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 10233,
+      "endFrame": 10233,
+      "label": "optional",
+      "reason": "bag_collection_instant",
+      "possible": []
+    },
+    {
+      "startFrame": 10234,
+      "endFrame": 10271,
+      "label": "ambiguous",
+      "reason": "obstacle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 10272,
+      "endFrame": 10303,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 10304,
+      "endFrame": 10331,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 10332,
+      "endFrame": 10400,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 10401,
+      "endFrame": 10455,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 10456,
+      "endFrame": 10519,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 10520,
+      "endFrame": 10541,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 10542,
+      "endFrame": 10571,
+      "label": "simple_transit",
+      "reason": "forward_fixed_safe_floor_outside_challenge_margins",
+      "possible": []
+    },
+    {
+      "startFrame": 10572,
+      "endFrame": 10625,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 10626,
+      "endFrame": 10689,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 10690,
+      "endFrame": 10742,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 10743,
+      "endFrame": 10763,
+      "label": "simple_transit",
+      "reason": "forward_fixed_safe_floor_outside_challenge_margins",
+      "possible": []
+    },
+    {
+      "startFrame": 10764,
+      "endFrame": 10785,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 10786,
+      "endFrame": 10971,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 10972,
+      "endFrame": 10980,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "necessary_mechanism_wait",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 10981,
+      "endFrame": 11061,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 11062,
+      "endFrame": 11070,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "necessary_mechanism_wait",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 11071,
+      "endFrame": 11091,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 11092,
+      "endFrame": 11100,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "necessary_mechanism_wait",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 11101,
+      "endFrame": 11181,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 11182,
+      "endFrame": 11190,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "necessary_mechanism_wait",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 11191,
+      "endFrame": 11248,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 11249,
+      "endFrame": 11249,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 11250,
+      "endFrame": 11366,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 11367,
+      "endFrame": 11367,
+      "label": "optional",
+      "reason": "bag_collection_instant",
+      "possible": []
+    },
+    {
+      "startFrame": 11368,
+      "endFrame": 11528,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 11529,
+      "endFrame": 11529,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 11530,
+      "endFrame": 11815,
+      "label": "ambiguous",
+      "reason": "puzzle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 11816,
+      "endFrame": 11836,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 11837,
+      "endFrame": 11855,
+      "label": "simple_transit",
+      "reason": "forward_fixed_safe_floor_outside_challenge_margins",
+      "possible": []
+    }
+  ],
+  "limitations": [
+    "Lower bounds count only narrowly attributed frames, not whole tasks.",
+    "Upper bounds overlap and cannot be summed.",
+    "Mechanism latency can overlap useful movement; stationary behavior is not globally mandatory.",
+    "Recharge and reversals do not establish necessity or optionality.",
+    "No human duration or enjoyment inference."
+  ]
+}

@@ -1,0 +1,482 @@
+{
+  "reports": [
+    {
+      "source": "round5",
+      "sourceHash": "faeccc2abdcd3ccff53bd12e98f91720e6d3704f72f1f1d90a8e2606d2dfd427",
+      "fixture": true,
+      "scope": "Logical state fixtures, no movement/accessibility proof. A uniform angle policy is not a full legal route.",
+      "advancedToggleAllSolves": [
+        "N7/2-2",
+        "N7/3-1",
+        "N7/4-2",
+        "N7/5-1",
+        "N7/5-2",
+        "N8/3-1",
+        "N8/5-2"
+      ],
+      "mirrors": [
+        {
+          "level": 7,
+          "id": "1-1",
+          "count": 2,
+          "initial": [
+            0,
+            0
+          ],
+          "sourceDirection": 1,
+          "common": {
+            "unchanged": false,
+            "toggleAllOnce": true,
+            "setAllZero": false,
+            "setAllOne": true
+          },
+          "solutions": [
+            {
+              "mask": 3,
+              "angles": [
+                1,
+                1
+              ],
+              "toggleMask": 3
+            }
+          ]
+        },
+        {
+          "level": 7,
+          "id": "2-2",
+          "count": 3,
+          "initial": [
+            0,
+            0,
+            1
+          ],
+          "sourceDirection": 1,
+          "common": {
+            "unchanged": false,
+            "toggleAllOnce": true,
+            "setAllZero": false,
+            "setAllOne": false
+          },
+          "solutions": [
+            {
+              "mask": 3,
+              "angles": [
+                1,
+                1,
+                0
+              ],
+              "toggleMask": 7
+            }
+          ]
+        },
+        {
+          "level": 7,
+          "id": "3-1",
+          "count": 3,
+          "initial": [
+            1,
+            1,
+            0
+          ],
+          "sourceDirection": 1,
+          "common": {
+            "unchanged": false,
+            "toggleAllOnce": true,
+            "setAllZero": false,
+            "setAllOne": false
+          },
+          "solutions": [
+            {
+              "mask": 4,
+              "angles": [
+                0,
+                0,
+                1
+              ],
+              "toggleMask": 7
+            }
+          ]
+        },
+        {
+          "level": 7,
+          "id": "4-2",
+          "count": 3,
+          "initial": [
+            1,
+            1,
+            0
+          ],
+          "sourceDirection": 3,
+          "common": {
+            "unchanged": false,
+            "toggleAllOnce": true,
+            "setAllZero": false,
+            "setAllOne": false
+          },
+          "solutions": [
+            {
+              "mask": 4,
+              "angles": [
+                0,
+                0,
+                1
+              ],
+              "toggleMask": 7
+            }
+          ]
+        },
+        {
+          "level": 7,
+          "id": "5-1",
+          "count": 3,
+          "initial": [
+            0,
+            0,
+            1
+          ],
+          "sourceDirection": 3,
+          "common": {
+            "unchanged": false,
+            "toggleAllOnce": true,
+            "setAllZero": false,
+            "setAllOne": false
+          },
+          "solutions": [
+            {
+              "mask": 3,
+              "angles": [
+                1,
+                1,
+                0
+              ],
+              "toggleMask": 7
+            }
+          ]
+        },
+        {
+          "level": 7,
+          "id": "5-2",
+          "count": 4,
+          "initial": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "sourceDirection": 1,
+          "common": {
+            "unchanged": false,
+            "toggleAllOnce": true,
+            "setAllZero": false,
+            "setAllOne": false
+          },
+          "solutions": [
+            {
+              "mask": 11,
+              "angles": [
+                1,
+                1,
+                0,
+                1
+              ],
+              "toggleMask": 15
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "id": "3-1",
+          "count": 3,
+          "initial": [
+            1,
+            1,
+            0
+          ],
+          "sourceDirection": 1,
+          "common": {
+            "unchanged": false,
+            "toggleAllOnce": true,
+            "setAllZero": false,
+            "setAllOne": false
+          },
+          "solutions": [
+            {
+              "mask": 4,
+              "angles": [
+                0,
+                0,
+                1
+              ],
+              "toggleMask": 7
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "id": "5-2",
+          "count": 4,
+          "initial": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "sourceDirection": 1,
+          "common": {
+            "unchanged": false,
+            "toggleAllOnce": true,
+            "setAllZero": false,
+            "setAllOne": false
+          },
+          "solutions": [
+            {
+              "mask": 11,
+              "angles": [
+                1,
+                1,
+                0,
+                1
+              ],
+              "toggleMask": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "round6",
+      "sourceHash": "5963bcc02f71090a958df9737eca2b8fd5a96ed0a615f4a9dcbe4be4dc04ef21",
+      "fixture": true,
+      "scope": "Logical state fixtures, no movement/accessibility proof. A uniform angle policy is not a full legal route.",
+      "advancedToggleAllSolves": [],
+      "mirrors": [
+        {
+          "level": 7,
+          "id": "1-1",
+          "count": 2,
+          "initial": [
+            0,
+            0
+          ],
+          "sourceDirection": 1,
+          "common": {
+            "unchanged": false,
+            "toggleAllOnce": true,
+            "setAllZero": false,
+            "setAllOne": true
+          },
+          "solutions": [
+            {
+              "mask": 3,
+              "angles": [
+                1,
+                1
+              ],
+              "toggleMask": 3
+            }
+          ]
+        },
+        {
+          "level": 7,
+          "id": "2-2",
+          "count": 3,
+          "initial": [
+            0,
+            1,
+            1
+          ],
+          "sourceDirection": 1,
+          "common": {
+            "unchanged": false,
+            "toggleAllOnce": false,
+            "setAllZero": false,
+            "setAllOne": false
+          },
+          "solutions": [
+            {
+              "mask": 3,
+              "angles": [
+                1,
+                1,
+                0
+              ],
+              "toggleMask": 5
+            }
+          ]
+        },
+        {
+          "level": 7,
+          "id": "3-1",
+          "count": 3,
+          "initial": [
+            1,
+            0,
+            0
+          ],
+          "sourceDirection": 1,
+          "common": {
+            "unchanged": false,
+            "toggleAllOnce": false,
+            "setAllZero": false,
+            "setAllOne": false
+          },
+          "solutions": [
+            {
+              "mask": 4,
+              "angles": [
+                0,
+                0,
+                1
+              ],
+              "toggleMask": 5
+            }
+          ]
+        },
+        {
+          "level": 7,
+          "id": "4-2",
+          "count": 3,
+          "initial": [
+            0,
+            1,
+            0
+          ],
+          "sourceDirection": 3,
+          "common": {
+            "unchanged": false,
+            "toggleAllOnce": false,
+            "setAllZero": false,
+            "setAllOne": false
+          },
+          "solutions": [
+            {
+              "mask": 4,
+              "angles": [
+                0,
+                0,
+                1
+              ],
+              "toggleMask": 6
+            }
+          ]
+        },
+        {
+          "level": 7,
+          "id": "5-1",
+          "count": 3,
+          "initial": [
+            0,
+            1,
+            1
+          ],
+          "sourceDirection": 3,
+          "common": {
+            "unchanged": false,
+            "toggleAllOnce": false,
+            "setAllZero": false,
+            "setAllOne": false
+          },
+          "solutions": [
+            {
+              "mask": 3,
+              "angles": [
+                1,
+                1,
+                0
+              ],
+              "toggleMask": 5
+            }
+          ]
+        },
+        {
+          "level": 7,
+          "id": "5-2",
+          "count": 4,
+          "initial": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "sourceDirection": 1,
+          "common": {
+            "unchanged": false,
+            "toggleAllOnce": false,
+            "setAllZero": false,
+            "setAllOne": false
+          },
+          "solutions": [
+            {
+              "mask": 11,
+              "angles": [
+                1,
+                1,
+                0,
+                1
+              ],
+              "toggleMask": 6
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "id": "3-1",
+          "count": 3,
+          "initial": [
+            1,
+            0,
+            0
+          ],
+          "sourceDirection": 1,
+          "common": {
+            "unchanged": false,
+            "toggleAllOnce": false,
+            "setAllZero": false,
+            "setAllOne": false
+          },
+          "solutions": [
+            {
+              "mask": 4,
+              "angles": [
+                0,
+                0,
+                1
+              ],
+              "toggleMask": 5
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "id": "5-2",
+          "count": 4,
+          "initial": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "sourceDirection": 1,
+          "common": {
+            "unchanged": false,
+            "toggleAllOnce": false,
+            "setAllZero": false,
+            "setAllOne": false
+          },
+          "solutions": [
+            {
+              "mask": 11,
+              "angles": [
+                1,
+                1,
+                0,
+                1
+              ],
+              "toggleMask": 6
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

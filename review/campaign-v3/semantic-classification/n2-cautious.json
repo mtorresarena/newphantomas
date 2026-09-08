@@ -1,0 +1,1264 @@
+{
+  "sourceHash": "5ada9ce96900d5b60feb1308d0fa25119aacdb34d9ef32c4f07ba04cab261f3d",
+  "witnessHash": "376c98fb7165a0637b0a2188a8a0a902392f85a00bbffbaa5d43e3d9eef2cbda",
+  "observerHash": "20f753584b6a92411e8503d689c9b83107b4bb13e666fd885186d63f826d5850",
+  "protocolHash": "97cd8025b23ece8040b3ea41b80e701a27a2a97a8a67da7166b77d166d983dac",
+  "summary": {
+    "level": 2,
+    "policy": "cautious",
+    "frames": 3993,
+    "seconds": 66.55,
+    "certainFrames": 158,
+    "certainPercent": 3.956924618081643,
+    "ambiguousFrames": 3835,
+    "lower": {
+      "mandatory_action": 6,
+      "simple_transit": 142,
+      "necessary_mechanism_wait": 0,
+      "optional": 10,
+      "repetition": 0
+    },
+    "upper": {
+      "mandatory_action": 3841,
+      "simple_transit": 3977,
+      "necessary_mechanism_wait": 0,
+      "optional": 3845,
+      "repetition": 3835
+    },
+    "reasons": {
+      "bag_collection_instant": 10,
+      "verified_progress_transition": 6,
+      "forward_fixed_safe_floor_outside_challenge_margins": 142
+    },
+    "ambiguousContexts": {
+      "encounter": 1772,
+      "other": 1456,
+      "obstacle": 502,
+      "energy_recharge": 105
+    }
+  },
+  "runs": [
+    {
+      "startFrame": 1,
+      "endFrame": 88,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 89,
+      "endFrame": 97,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 98,
+      "endFrame": 262,
+      "label": "ambiguous",
+      "reason": "obstacle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 263,
+      "endFrame": 294,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 295,
+      "endFrame": 372,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 373,
+      "endFrame": 373,
+      "label": "optional",
+      "reason": "bag_collection_instant",
+      "possible": []
+    },
+    {
+      "startFrame": 374,
+      "endFrame": 381,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 382,
+      "endFrame": 438,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 439,
+      "endFrame": 439,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 440,
+      "endFrame": 510,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 511,
+      "endFrame": 511,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 512,
+      "endFrame": 600,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 601,
+      "endFrame": 664,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 665,
+      "endFrame": 727,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 728,
+      "endFrame": 728,
+      "label": "optional",
+      "reason": "bag_collection_instant",
+      "possible": []
+    },
+    {
+      "startFrame": 729,
+      "endFrame": 750,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 751,
+      "endFrame": 778,
+      "label": "ambiguous",
+      "reason": "obstacle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 779,
+      "endFrame": 832,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 833,
+      "endFrame": 862,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 863,
+      "endFrame": 863,
+      "label": "optional",
+      "reason": "bag_collection_instant",
+      "possible": []
+    },
+    {
+      "startFrame": 864,
+      "endFrame": 896,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 897,
+      "endFrame": 907,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 908,
+      "endFrame": 971,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 972,
+      "endFrame": 1039,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1040,
+      "endFrame": 1047,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1048,
+      "endFrame": 1064,
+      "label": "ambiguous",
+      "reason": "energy_recharge",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1065,
+      "endFrame": 1103,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1104,
+      "endFrame": 1105,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1106,
+      "endFrame": 1114,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1115,
+      "endFrame": 1139,
+      "label": "ambiguous",
+      "reason": "obstacle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1140,
+      "endFrame": 1196,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1197,
+      "endFrame": 1207,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1208,
+      "endFrame": 1226,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1227,
+      "endFrame": 1227,
+      "label": "optional",
+      "reason": "bag_collection_instant",
+      "possible": []
+    },
+    {
+      "startFrame": 1228,
+      "endFrame": 1259,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1260,
+      "endFrame": 1273,
+      "label": "ambiguous",
+      "reason": "obstacle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1274,
+      "endFrame": 1293,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1294,
+      "endFrame": 1329,
+      "label": "ambiguous",
+      "reason": "obstacle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1330,
+      "endFrame": 1335,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1336,
+      "endFrame": 1392,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1393,
+      "endFrame": 1393,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 1394,
+      "endFrame": 1411,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1412,
+      "endFrame": 1513,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1514,
+      "endFrame": 1545,
+      "label": "ambiguous",
+      "reason": "obstacle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1546,
+      "endFrame": 1557,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1558,
+      "endFrame": 1565,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1566,
+      "endFrame": 1566,
+      "label": "optional",
+      "reason": "bag_collection_instant",
+      "possible": []
+    },
+    {
+      "startFrame": 1567,
+      "endFrame": 1630,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1631,
+      "endFrame": 1637,
+      "label": "ambiguous",
+      "reason": "obstacle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1638,
+      "endFrame": 1677,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1678,
+      "endFrame": 1698,
+      "label": "ambiguous",
+      "reason": "obstacle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1699,
+      "endFrame": 1748,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1749,
+      "endFrame": 1749,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 1750,
+      "endFrame": 1762,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1763,
+      "endFrame": 1791,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1792,
+      "endFrame": 1793,
+      "label": "ambiguous",
+      "reason": "energy_recharge",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1794,
+      "endFrame": 1804,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1805,
+      "endFrame": 1836,
+      "label": "ambiguous",
+      "reason": "energy_recharge",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1837,
+      "endFrame": 1841,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1842,
+      "endFrame": 1868,
+      "label": "ambiguous",
+      "reason": "energy_recharge",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1869,
+      "endFrame": 1918,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1919,
+      "endFrame": 1967,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 1968,
+      "endFrame": 1968,
+      "label": "optional",
+      "reason": "bag_collection_instant",
+      "possible": []
+    },
+    {
+      "startFrame": 1969,
+      "endFrame": 2191,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2192,
+      "endFrame": 2247,
+      "label": "ambiguous",
+      "reason": "obstacle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2248,
+      "endFrame": 2249,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2250,
+      "endFrame": 2324,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2325,
+      "endFrame": 2391,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2392,
+      "endFrame": 2433,
+      "label": "ambiguous",
+      "reason": "obstacle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2434,
+      "endFrame": 2455,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2456,
+      "endFrame": 2471,
+      "label": "simple_transit",
+      "reason": "forward_fixed_safe_floor_outside_challenge_margins",
+      "possible": []
+    },
+    {
+      "startFrame": 2472,
+      "endFrame": 2531,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2532,
+      "endFrame": 2750,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2751,
+      "endFrame": 2792,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2793,
+      "endFrame": 2866,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2867,
+      "endFrame": 2914,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2915,
+      "endFrame": 2941,
+      "label": "ambiguous",
+      "reason": "energy_recharge",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2942,
+      "endFrame": 2970,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 2971,
+      "endFrame": 3035,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3036,
+      "endFrame": 3044,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3045,
+      "endFrame": 3062,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3063,
+      "endFrame": 3118,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3119,
+      "endFrame": 3234,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3235,
+      "endFrame": 3350,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3351,
+      "endFrame": 3359,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3360,
+      "endFrame": 3360,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 3361,
+      "endFrame": 3441,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3442,
+      "endFrame": 3450,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3451,
+      "endFrame": 3451,
+      "label": "optional",
+      "reason": "bag_collection_instant",
+      "possible": []
+    },
+    {
+      "startFrame": 3452,
+      "endFrame": 3502,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3503,
+      "endFrame": 3503,
+      "label": "mandatory_action",
+      "reason": "verified_progress_transition",
+      "possible": []
+    },
+    {
+      "startFrame": 3504,
+      "endFrame": 3558,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3559,
+      "endFrame": 3624,
+      "label": "simple_transit",
+      "reason": "forward_fixed_safe_floor_outside_challenge_margins",
+      "possible": []
+    },
+    {
+      "startFrame": 3625,
+      "endFrame": 3632,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3633,
+      "endFrame": 3633,
+      "label": "optional",
+      "reason": "bag_collection_instant",
+      "possible": []
+    },
+    {
+      "startFrame": 3634,
+      "endFrame": 3686,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3687,
+      "endFrame": 3708,
+      "label": "ambiguous",
+      "reason": "obstacle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3709,
+      "endFrame": 3752,
+      "label": "ambiguous",
+      "reason": "encounter",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3753,
+      "endFrame": 3792,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3793,
+      "endFrame": 3793,
+      "label": "optional",
+      "reason": "bag_collection_instant",
+      "possible": []
+    },
+    {
+      "startFrame": 3794,
+      "endFrame": 3814,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3815,
+      "endFrame": 3846,
+      "label": "ambiguous",
+      "reason": "obstacle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3847,
+      "endFrame": 3868,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3869,
+      "endFrame": 3909,
+      "label": "simple_transit",
+      "reason": "forward_fixed_safe_floor_outside_challenge_margins",
+      "possible": []
+    },
+    {
+      "startFrame": 3910,
+      "endFrame": 3910,
+      "label": "optional",
+      "reason": "bag_collection_instant",
+      "possible": []
+    },
+    {
+      "startFrame": 3911,
+      "endFrame": 3921,
+      "label": "simple_transit",
+      "reason": "forward_fixed_safe_floor_outside_challenge_margins",
+      "possible": []
+    },
+    {
+      "startFrame": 3922,
+      "endFrame": 3942,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3943,
+      "endFrame": 3964,
+      "label": "ambiguous",
+      "reason": "obstacle",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3965,
+      "endFrame": 3985,
+      "label": "ambiguous",
+      "reason": "other",
+      "possible": [
+        "mandatory_action",
+        "simple_transit",
+        "optional",
+        "repetition"
+      ]
+    },
+    {
+      "startFrame": 3986,
+      "endFrame": 3993,
+      "label": "simple_transit",
+      "reason": "forward_fixed_safe_floor_outside_challenge_margins",
+      "possible": []
+    }
+  ],
+  "limitations": [
+    "Lower bounds count only narrowly attributed frames, not whole tasks.",
+    "Upper bounds overlap and cannot be summed.",
+    "Mechanism latency can overlap useful movement; stationary behavior is not globally mandatory.",
+    "Recharge and reversals do not establish necessity or optionality.",
+    "No human duration or enjoyment inference."
+  ]
+}

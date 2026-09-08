@@ -1,0 +1,890 @@
+{
+  "sourceHash": "5ada9ce96900d5b60feb1308d0fa25119aacdb34d9ef32c4f07ba04cab261f3d",
+  "scope": "All24 frozen harmonized-v2 policies. Conservative interval comparison; no grade or human-duration inference. A failed single policy is distinguished from failing every comparable policy.",
+  "rows": [
+    {
+      "level": 1,
+      "policy": "balanced",
+      "frames": 3847,
+      "seconds": 64.11666666666666,
+      "vector": {
+        "A": 4,
+        "B": 0,
+        "C": 2,
+        "D": 9,
+        "E": 0
+      },
+      "lower": 15,
+      "upper": 16,
+      "unresolved": [
+        "N1-transit-169-172"
+      ],
+      "minEnergy": 61.59083333332162,
+      "hits": 0,
+      "contexts": {
+        "other_movement": 1711,
+        "encounter_context": 1988,
+        "transit_obstacle_context": 61,
+        "other_still": 81,
+        "effective_charging": 6
+      },
+      "controlsHash": "55c6e06544bb54a33f7352ea83e33bfe6732ddd7d2722ad51d1e2717d7844238"
+    },
+    {
+      "level": 2,
+      "policy": "balanced",
+      "frames": 4053,
+      "seconds": 67.55,
+      "vector": {
+        "A": 6,
+        "B": 0,
+        "C": 9,
+        "D": 10,
+        "E": 0
+      },
+      "lower": 25,
+      "upper": 25,
+      "unresolved": [],
+      "minEnergy": 77.18916666666236,
+      "hits": 1,
+      "contexts": {
+        "encounter_context": 1802,
+        "other_movement": 1591,
+        "transit_obstacle_context": 529,
+        "effective_charging": 131
+      },
+      "controlsHash": "7bcb83d99a5a4bf4f356bfd8254a735b86d8cd26928e41ab42b63aee120052de"
+    },
+    {
+      "level": 3,
+      "policy": "balanced",
+      "frames": 4397,
+      "seconds": 73.28333333333333,
+      "vector": {
+        "A": 4,
+        "B": 0,
+        "C": 9,
+        "D": 9,
+        "E": 0
+      },
+      "lower": 22,
+      "upper": 24,
+      "unresolved": [
+        "N3-transit-101-107",
+        "N3-transit-293-295"
+      ],
+      "minEnergy": 73.60999999999379,
+      "hits": 1,
+      "contexts": {
+        "other_movement": 1920,
+        "transit_obstacle_context": 992,
+        "encounter_context": 1441,
+        "effective_charging": 17,
+        "other_still": 27
+      },
+      "controlsHash": "346e74c50aee6996bb330fa962d0afb910253bb4b4a83281cce2426e7971427a"
+    },
+    {
+      "level": 4,
+      "policy": "balanced",
+      "frames": 6489,
+      "seconds": 108.15,
+      "vector": {
+        "A": 6,
+        "B": 0,
+        "C": 7,
+        "D": 17,
+        "E": 3
+      },
+      "lower": 33,
+      "upper": 33,
+      "unresolved": [],
+      "minEnergy": 42.11333333331888,
+      "hits": 0,
+      "contexts": {
+        "other_movement": 1998,
+        "encounter_context": 3051,
+        "transit_obstacle_context": 527,
+        "effective_charging": 143,
+        "boss_context": 770
+      },
+      "controlsHash": "7e4fbee889e7abaae4b1a4d54d575f7828fc0d4488e30efde8a19124b8b25d79"
+    },
+    {
+      "level": 5,
+      "policy": "balanced",
+      "frames": 11592,
+      "seconds": 193.2,
+      "vector": {
+        "A": 0,
+        "B": 10,
+        "C": 7,
+        "D": 4,
+        "E": 0
+      },
+      "lower": 21,
+      "upper": 21,
+      "unresolved": [],
+      "minEnergy": 67.24749999999172,
+      "hits": 2,
+      "contexts": {
+        "other_movement": 3682,
+        "effective_charging": 51,
+        "unsolved_puzzle_context": 6121,
+        "transit_obstacle_context": 512,
+        "encounter_context": 1224,
+        "other_still": 2
+      },
+      "controlsHash": "8d9f680bf8ed1e2648769d28317e04e574a2b57fcda8a03a3e4457d1bdc0ee71"
+    },
+    {
+      "level": 6,
+      "policy": "balanced",
+      "frames": 10283,
+      "seconds": 171.38333333333333,
+      "vector": {
+        "A": 0,
+        "B": 10,
+        "C": 5,
+        "D": 2,
+        "E": 0
+      },
+      "lower": 17,
+      "upper": 17,
+      "unresolved": [],
+      "minEnergy": 77.41916666665766,
+      "hits": 0,
+      "contexts": {
+        "other_movement": 3300,
+        "effective_charging": 53,
+        "unsolved_puzzle_context": 4302,
+        "encounter_context": 872,
+        "transit_obstacle_context": 1682,
+        "other_still": 74
+      },
+      "controlsHash": "349cd064b6ae3dee04391f4897cacafd9d3bb22bf56ceb2d849941e467d3d628"
+    },
+    {
+      "level": 7,
+      "policy": "balanced",
+      "frames": 8574,
+      "seconds": 142.9,
+      "vector": {
+        "A": 0,
+        "B": 10,
+        "C": 10,
+        "D": 9,
+        "E": 0
+      },
+      "lower": 29,
+      "upper": 29,
+      "unresolved": [],
+      "minEnergy": 70.50499999999548,
+      "hits": 1,
+      "contexts": {
+        "other_movement": 3453,
+        "effective_charging": 51,
+        "unsolved_puzzle_context": 3744,
+        "other_still": 42,
+        "transit_obstacle_context": 220,
+        "encounter_context": 1064
+      },
+      "controlsHash": "662afdaf3c0a4e3061fac5ed5d3ff8a957a7ec071f1b485f3f4da0d822cee4eb"
+    },
+    {
+      "level": 8,
+      "policy": "balanced",
+      "frames": 12949,
+      "seconds": 215.81666666666666,
+      "vector": {
+        "A": 0,
+        "B": 10,
+        "C": 5,
+        "D": 10,
+        "E": 6
+      },
+      "lower": 31,
+      "upper": 31,
+      "unresolved": [],
+      "minEnergy": 72.5016666666549,
+      "hits": 0,
+      "contexts": {
+        "other_movement": 4055,
+        "effective_charging": 104,
+        "unsolved_puzzle_context": 4715,
+        "encounter_context": 1480,
+        "transit_obstacle_context": 776,
+        "other_still": 52,
+        "boss_context": 1767
+      },
+      "controlsHash": "6474a96d9ca8eb1577d4f6f8a73583f0429f113792beab160bd18c21bacfe7b9"
+    },
+    {
+      "level": 1,
+      "policy": "cautious",
+      "frames": 3946,
+      "seconds": 65.76666666666667,
+      "vector": {
+        "A": 4,
+        "B": 0,
+        "C": 2,
+        "D": 9,
+        "E": 0
+      },
+      "lower": 15,
+      "upper": 16,
+      "unresolved": [
+        "N1-transit-169-172"
+      ],
+      "minEnergy": 58.88333333332186,
+      "hits": 0,
+      "contexts": {
+        "other_movement": 1750,
+        "encounter_context": 2048,
+        "transit_obstacle_context": 61,
+        "other_still": 81,
+        "effective_charging": 6
+      },
+      "controlsHash": "f4a21199249193b104cb0e500886536d33109b0c25b86c6767190eb257214fee"
+    },
+    {
+      "level": 2,
+      "policy": "cautious",
+      "frames": 3993,
+      "seconds": 66.55,
+      "vector": {
+        "A": 6,
+        "B": 0,
+        "C": 8,
+        "D": 11,
+        "E": 0
+      },
+      "lower": 25,
+      "upper": 25,
+      "unresolved": [],
+      "minEnergy": 83.15666666666056,
+      "hits": 0,
+      "contexts": {
+        "encounter_context": 1797,
+        "other_movement": 1606,
+        "transit_obstacle_context": 502,
+        "effective_charging": 88
+      },
+      "controlsHash": "20720daba43e1b2d4a6275d7fc05b4c26f1e2d7c2b805120ea8000cc3e5fbb50"
+    },
+    {
+      "level": 3,
+      "policy": "cautious",
+      "frames": 4402,
+      "seconds": 73.36666666666666,
+      "vector": {
+        "A": 4,
+        "B": 0,
+        "C": 10,
+        "D": 9,
+        "E": 0
+      },
+      "lower": 23,
+      "upper": 25,
+      "unresolved": [
+        "N3-encounter-3490-3552",
+        "N3-transit-293-295"
+      ],
+      "minEnergy": 83.5733333333271,
+      "hits": 0,
+      "contexts": {
+        "other_movement": 1891,
+        "transit_obstacle_context": 1001,
+        "encounter_context": 1465,
+        "other_still": 18,
+        "effective_charging": 27
+      },
+      "controlsHash": "fb5643128e78ac540e064cfe4b4da76887cd6c664311a6c6de945ba844514be8"
+    },
+    {
+      "level": 4,
+      "policy": "cautious",
+      "frames": 6507,
+      "seconds": 108.45,
+      "vector": {
+        "A": 6,
+        "B": 0,
+        "C": 7,
+        "D": 17,
+        "E": 3
+      },
+      "lower": 33,
+      "upper": 33,
+      "unresolved": [],
+      "minEnergy": 42.11333333331888,
+      "hits": 0,
+      "contexts": {
+        "other_movement": 2013,
+        "encounter_context": 3051,
+        "transit_obstacle_context": 527,
+        "effective_charging": 149,
+        "boss_context": 767
+      },
+      "controlsHash": "29d99a97729e8a0815dcf2dc7d70e27e5dd5be9df9a3cbafd368a4c3b9dd4b83"
+    },
+    {
+      "level": 5,
+      "policy": "cautious",
+      "frames": 11592,
+      "seconds": 193.2,
+      "vector": {
+        "A": 0,
+        "B": 10,
+        "C": 7,
+        "D": 2,
+        "E": 0
+      },
+      "lower": 19,
+      "upper": 19,
+      "unresolved": [],
+      "minEnergy": 67.66583333332649,
+      "hits": 3,
+      "contexts": {
+        "other_movement": 3686,
+        "effective_charging": 57,
+        "unsolved_puzzle_context": 6107,
+        "transit_obstacle_context": 623,
+        "encounter_context": 1115,
+        "other_still": 4
+      },
+      "controlsHash": "982861da3188a023a2a5ba0b72ccc25c3947361341547d5660ed42ce45da2644"
+    },
+    {
+      "level": 6,
+      "policy": "cautious",
+      "frames": 10291,
+      "seconds": 171.51666666666668,
+      "vector": {
+        "A": 0,
+        "B": 10,
+        "C": 5,
+        "D": 2,
+        "E": 0
+      },
+      "lower": 17,
+      "upper": 17,
+      "unresolved": [],
+      "minEnergy": 77.90916666665758,
+      "hits": 0,
+      "contexts": {
+        "other_movement": 3357,
+        "effective_charging": 52,
+        "unsolved_puzzle_context": 4391,
+        "encounter_context": 859,
+        "transit_obstacle_context": 1540,
+        "other_still": 92
+      },
+      "controlsHash": "5bce6e5feaab070ff1fa5799b074d0dcc5a2d1ec0828da90b5597bf8e1c7d757"
+    },
+    {
+      "level": 7,
+      "policy": "cautious",
+      "frames": 8574,
+      "seconds": 142.9,
+      "vector": {
+        "A": 0,
+        "B": 10,
+        "C": 10,
+        "D": 9,
+        "E": 0
+      },
+      "lower": 29,
+      "upper": 29,
+      "unresolved": [],
+      "minEnergy": 70.50499999999548,
+      "hits": 1,
+      "contexts": {
+        "other_movement": 3453,
+        "effective_charging": 51,
+        "unsolved_puzzle_context": 3744,
+        "other_still": 42,
+        "transit_obstacle_context": 220,
+        "encounter_context": 1064
+      },
+      "controlsHash": "a6e35eaf309c5def3d0ca250c88ddd74c6829c870ff80f6235fcce2822bec35f"
+    },
+    {
+      "level": 8,
+      "policy": "cautious",
+      "frames": 12949,
+      "seconds": 215.81666666666666,
+      "vector": {
+        "A": 0,
+        "B": 10,
+        "C": 5,
+        "D": 10,
+        "E": 6
+      },
+      "lower": 31,
+      "upper": 31,
+      "unresolved": [],
+      "minEnergy": 72.5016666666549,
+      "hits": 0,
+      "contexts": {
+        "other_movement": 4051,
+        "effective_charging": 110,
+        "unsolved_puzzle_context": 4713,
+        "encounter_context": 1480,
+        "transit_obstacle_context": 776,
+        "other_still": 52,
+        "boss_context": 1767
+      },
+      "controlsHash": "a110b1ecfcc1e36bd7bbd80428d7f6c731b0330d21eca0c73e63f016c895a702"
+    },
+    {
+      "level": 1,
+      "policy": "speed",
+      "frames": 3821,
+      "seconds": 63.68333333333333,
+      "vector": {
+        "A": 4,
+        "B": 0,
+        "C": 2,
+        "D": 9,
+        "E": 0
+      },
+      "lower": 15,
+      "upper": 16,
+      "unresolved": [
+        "N1-transit-169-172"
+      ],
+      "minEnergy": 61.12833333332172,
+      "hits": 0,
+      "contexts": {
+        "other_movement": 1776,
+        "encounter_context": 1860,
+        "transit_obstacle_context": 61,
+        "other_still": 108,
+        "effective_charging": 16
+      },
+      "controlsHash": "1b0f4340449b97904aa08bfce10a141c32f934fecbb1aa9543ea3a7b515bcefb"
+    },
+    {
+      "level": 2,
+      "policy": "speed",
+      "frames": 4071,
+      "seconds": 67.85,
+      "vector": {
+        "A": 6,
+        "B": 0,
+        "C": 8,
+        "D": 7,
+        "E": 0
+      },
+      "lower": 21,
+      "upper": 22,
+      "unresolved": [
+        "N2-transit-291-294"
+      ],
+      "minEnergy": 60.63333333332496,
+      "hits": 6,
+      "contexts": {
+        "encounter_context": 1784,
+        "other_movement": 1628,
+        "transit_obstacle_context": 494,
+        "effective_charging": 165
+      },
+      "controlsHash": "6b0babb9d9207afda57a66e47c67aa31404dbdc34c0447d2ef219f6342700183"
+    },
+    {
+      "level": 3,
+      "policy": "speed",
+      "frames": 4085,
+      "seconds": 68.08333333333333,
+      "vector": {
+        "A": 4,
+        "B": 0,
+        "C": 10,
+        "D": 9,
+        "E": 0
+      },
+      "lower": 23,
+      "upper": 24,
+      "unresolved": [
+        "N3-transit-293-295"
+      ],
+      "minEnergy": 71.30083333332642,
+      "hits": 1,
+      "contexts": {
+        "other_movement": 1617,
+        "transit_obstacle_context": 894,
+        "encounter_context": 1529,
+        "other_still": 27,
+        "effective_charging": 18
+      },
+      "controlsHash": "bf4a55460bf6629f98a03d95a0c737ffdb75a12c8205a20f456511ef304f4cac"
+    },
+    {
+      "level": 4,
+      "policy": "speed",
+      "frames": 6807,
+      "seconds": 113.45,
+      "vector": {
+        "A": 6,
+        "B": 0,
+        "C": 7,
+        "D": 18,
+        "E": 3
+      },
+      "lower": 34,
+      "upper": 34,
+      "unresolved": [],
+      "minEnergy": 3.43833333332349,
+      "hits": 2,
+      "contexts": {
+        "other_movement": 2253,
+        "encounter_context": 2952,
+        "transit_obstacle_context": 528,
+        "effective_charging": 301,
+        "boss_context": 768,
+        "other_still": 5
+      },
+      "controlsHash": "ffc08010fb17599ce174a5f399d96b2500edab35fdc9919f5bb8ff7be7f8f6e2"
+    },
+    {
+      "level": 5,
+      "policy": "speed",
+      "frames": 11642,
+      "seconds": 194.03333333333333,
+      "vector": {
+        "A": 0,
+        "B": 10,
+        "C": 7,
+        "D": 4,
+        "E": 0
+      },
+      "lower": 21,
+      "upper": 21,
+      "unresolved": [],
+      "minEnergy": 67.7191666666583,
+      "hits": 3,
+      "contexts": {
+        "other_movement": 3618,
+        "effective_charging": 52,
+        "unsolved_puzzle_context": 6250,
+        "transit_obstacle_context": 512,
+        "encounter_context": 1208,
+        "other_still": 2
+      },
+      "controlsHash": "720cfffc628d0ad3c40df46d07c50c43d76ae0f1a58c0a724834f711e0f0e1ce"
+    },
+    {
+      "level": 6,
+      "policy": "speed",
+      "frames": 10294,
+      "seconds": 171.56666666666666,
+      "vector": {
+        "A": 0,
+        "B": 10,
+        "C": 5,
+        "D": 2,
+        "E": 0
+      },
+      "lower": 17,
+      "upper": 17,
+      "unresolved": [],
+      "minEnergy": 74.90916666665895,
+      "hits": 1,
+      "contexts": {
+        "other_movement": 3277,
+        "effective_charging": 53,
+        "unsolved_puzzle_context": 4347,
+        "encounter_context": 865,
+        "transit_obstacle_context": 1669,
+        "other_still": 83
+      },
+      "controlsHash": "6fc0eadbffc6409698b5b57a40185a05e80a29d36e98157a7c9ffe1bf5ad5788"
+    },
+    {
+      "level": 7,
+      "policy": "speed",
+      "frames": 8518,
+      "seconds": 141.96666666666667,
+      "vector": {
+        "A": 0,
+        "B": 10,
+        "C": 10,
+        "D": 9,
+        "E": 0
+      },
+      "lower": 29,
+      "upper": 29,
+      "unresolved": [],
+      "minEnergy": 78.93999999999119,
+      "hits": 0,
+      "contexts": {
+        "other_movement": 3489,
+        "effective_charging": 52,
+        "unsolved_puzzle_context": 3626,
+        "other_still": 69,
+        "transit_obstacle_context": 218,
+        "encounter_context": 1064
+      },
+      "controlsHash": "c5cea291281837356826bebc011831a0fade081b458725cea442ad21ce3cfba4"
+    },
+    {
+      "level": 8,
+      "policy": "speed",
+      "frames": 12974,
+      "seconds": 216.23333333333332,
+      "vector": {
+        "A": 0,
+        "B": 10,
+        "C": 5,
+        "D": 8,
+        "E": 6
+      },
+      "lower": 29,
+      "upper": 29,
+      "unresolved": [],
+      "minEnergy": 66.5533333333255,
+      "hits": 3,
+      "contexts": {
+        "other_movement": 4004,
+        "effective_charging": 103,
+        "unsolved_puzzle_context": 4773,
+        "encounter_context": 1480,
+        "transit_obstacle_context": 786,
+        "other_still": 61,
+        "boss_context": 1767
+      },
+      "controlsHash": "566d630c2760e16c00e996dbf37b51c03db3a50e83d813f3e3c87e53e028d528"
+    }
+  ],
+  "policies": [
+    {
+      "policy": "balanced",
+      "referenceMedian": {
+        "lower": 23.5,
+        "upper": 24.5
+      },
+      "comparisons": [
+        {
+          "level": 5,
+          "lower": 21,
+          "upper": 21,
+          "required": {
+            "lower": 18.8,
+            "upper": 19.6
+          },
+          "ratio": {
+            "lower": 0.8571428571428571,
+            "upper": 0.8936170212765957
+          },
+          "status": "meets"
+        },
+        {
+          "level": 6,
+          "lower": 17,
+          "upper": 17,
+          "required": {
+            "lower": 18.8,
+            "upper": 19.6
+          },
+          "ratio": {
+            "lower": 0.6938775510204082,
+            "upper": 0.723404255319149
+          },
+          "status": "fails"
+        },
+        {
+          "level": 7,
+          "lower": 29,
+          "upper": 29,
+          "required": {
+            "lower": 18.8,
+            "upper": 19.6
+          },
+          "ratio": {
+            "lower": 1.183673469387755,
+            "upper": 1.2340425531914894
+          },
+          "status": "meets"
+        },
+        {
+          "level": 8,
+          "lower": 31,
+          "upper": 31,
+          "required": {
+            "lower": 23.5,
+            "upper": 24.5
+          },
+          "ratio": {
+            "lower": 1.2653061224489797,
+            "upper": 1.3191489361702127
+          },
+          "status": "meets"
+        }
+      ]
+    },
+    {
+      "policy": "cautious",
+      "referenceMedian": {
+        "lower": 24,
+        "upper": 25
+      },
+      "comparisons": [
+        {
+          "level": 5,
+          "lower": 19,
+          "upper": 19,
+          "required": {
+            "lower": 19.200000000000003,
+            "upper": 20
+          },
+          "ratio": {
+            "lower": 0.76,
+            "upper": 0.7916666666666666
+          },
+          "status": "fails"
+        },
+        {
+          "level": 6,
+          "lower": 17,
+          "upper": 17,
+          "required": {
+            "lower": 19.200000000000003,
+            "upper": 20
+          },
+          "ratio": {
+            "lower": 0.68,
+            "upper": 0.7083333333333334
+          },
+          "status": "fails"
+        },
+        {
+          "level": 7,
+          "lower": 29,
+          "upper": 29,
+          "required": {
+            "lower": 19.200000000000003,
+            "upper": 20
+          },
+          "ratio": {
+            "lower": 1.16,
+            "upper": 1.2083333333333333
+          },
+          "status": "meets"
+        },
+        {
+          "level": 8,
+          "lower": 31,
+          "upper": 31,
+          "required": {
+            "lower": 24,
+            "upper": 25
+          },
+          "ratio": {
+            "lower": 1.24,
+            "upper": 1.2916666666666667
+          },
+          "status": "meets"
+        }
+      ]
+    },
+    {
+      "policy": "speed",
+      "referenceMedian": {
+        "lower": 22,
+        "upper": 23
+      },
+      "comparisons": [
+        {
+          "level": 5,
+          "lower": 21,
+          "upper": 21,
+          "required": {
+            "lower": 17.6,
+            "upper": 18.400000000000002
+          },
+          "ratio": {
+            "lower": 0.9130434782608695,
+            "upper": 0.9545454545454546
+          },
+          "status": "meets"
+        },
+        {
+          "level": 6,
+          "lower": 17,
+          "upper": 17,
+          "required": {
+            "lower": 17.6,
+            "upper": 18.400000000000002
+          },
+          "ratio": {
+            "lower": 0.7391304347826086,
+            "upper": 0.7727272727272727
+          },
+          "status": "fails"
+        },
+        {
+          "level": 7,
+          "lower": 29,
+          "upper": 29,
+          "required": {
+            "lower": 17.6,
+            "upper": 18.400000000000002
+          },
+          "ratio": {
+            "lower": 1.2608695652173914,
+            "upper": 1.3181818181818181
+          },
+          "status": "meets"
+        },
+        {
+          "level": 8,
+          "lower": 29,
+          "upper": 29,
+          "required": {
+            "lower": 22,
+            "upper": 23
+          },
+          "ratio": {
+            "lower": 1.2608695652173914,
+            "upper": 1.3181818181818181
+          },
+          "status": "meets"
+        }
+      ]
+    }
+  ],
+  "uniqueness": [
+    {
+      "level": 1,
+      "distinctControlTraces": 3
+    },
+    {
+      "level": 2,
+      "distinctControlTraces": 3
+    },
+    {
+      "level": 3,
+      "distinctControlTraces": 3
+    },
+    {
+      "level": 4,
+      "distinctControlTraces": 3
+    },
+    {
+      "level": 5,
+      "distinctControlTraces": 3
+    },
+    {
+      "level": 6,
+      "distinctControlTraces": 3
+    },
+    {
+      "level": 7,
+      "distinctControlTraces": 3
+    },
+    {
+      "level": 8,
+      "distinctControlTraces": 3
+    }
+  ]
+}

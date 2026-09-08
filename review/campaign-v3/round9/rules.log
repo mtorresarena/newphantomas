@@ -1,0 +1,14 @@
+PASS Exactly two bosses N4 + N8; 40 gates in 20 campaign parts
+PASS Every mirror layout connects only with the intended beam turns
+PASS Wrong rune resets; ordered input solves; holding DOWN counts once
+PASS Weight requires pickup before deposit and survives wrong socket attempts
+PASS Seal requires charging guardian, not a stationary overlap or player
+PASS Timer expiry before threshold resets, returns to switches, and cannot clear
+PASS Threshold latches at exact deadline; no closing wall inside player
+PASS Respawn retains solved puzzles, resets unsolved mirrors, weight and timer
+PASS N8 arena confines both edges at all heights and freezes during death
+PASS Boss vulnerability, phases, defeat delay and exit gate are coherent
+PASS Missed core opening returns to warning and offers another opening
+PASS Lethal projectile on final stomp frame gives death, no simultaneous victory
+PASS Death during final defeat animation resets arena coherently before victory
+PASS Snapshot restores campaign, map, both boss states and real input effects

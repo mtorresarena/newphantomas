@@ -1,0 +1,56 @@
+{
+  "sourceHash": "b9f1a7b93ca1438d7a969cd76852f119d87e9c6ff91cabb752515f6090a12c03",
+  "fixture": true,
+  "scope": "Isolated state fixtures, including direct node positioning/angle edits and one clock-time setup. These test engine recovery contracts, not human fairness or legal complete routes.",
+  "passed": 5,
+  "cases": [
+    {
+      "name": "Relay: returning retrieved anchored weight to its base preserves access and exactly one recoverable weight",
+      "passed": true
+    },
+    {
+      "name": "Clock: a wrong input at each partial stage clears all nodes and physical supports",
+      "passed": true
+    },
+    {
+      "name": "Clock: expiry while standing on each stage-2 support drops onto safe floor without trapping the body",
+      "passed": true,
+      "detail": [
+        {
+          "bridge": 1,
+          "lives": 3
+        },
+        {
+          "bridge": 2,
+          "lives": 3
+        },
+        {
+          "bridge": 3,
+          "lives": 3
+        }
+      ]
+    },
+    {
+      "name": "Dual light: enumerate all 32 optical states before and after R; S cannot finish without history",
+      "passed": true,
+      "detail": [
+        {
+          "primed": false,
+          "r": 1,
+          "s": 4,
+          "accepted": 0
+        },
+        {
+          "primed": true,
+          "r": 1,
+          "s": 4,
+          "accepted": 4
+        }
+      ]
+    },
+    {
+      "name": "Dual light: interrupted R charge and redirected S charge do not accumulate stale stable frames",
+      "passed": true
+    }
+  ]
+}

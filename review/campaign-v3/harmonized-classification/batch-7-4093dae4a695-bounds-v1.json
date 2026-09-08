@@ -1,0 +1,246 @@
+{
+  "manifestHash": "4093dae4a695ded47c647afb95bc0cb9a3ac2d26ce0da7c9c543ba6cf4561146",
+  "sourceHash": "5ada9ce96900d5b60feb1308d0fa25119aacdb34d9ef32c4f07ba04cab261f3d",
+  "classifierHash": "ed69af11ed2794d48e7b67213434a53adb8d30f1eb94d8a36efcffd4d37bd917",
+  "processed": 7,
+  "expected": 24,
+  "complete": false,
+  "missing": [
+    {
+      "level": 2,
+      "policy": "cautious"
+    },
+    {
+      "level": 3,
+      "policy": "cautious"
+    },
+    {
+      "level": 3,
+      "policy": "speed"
+    },
+    {
+      "level": 4,
+      "policy": "balanced"
+    },
+    {
+      "level": 4,
+      "policy": "cautious"
+    },
+    {
+      "level": 4,
+      "policy": "speed"
+    },
+    {
+      "level": 5,
+      "policy": "cautious"
+    },
+    {
+      "level": 5,
+      "policy": "speed"
+    },
+    {
+      "level": 6,
+      "policy": "balanced"
+    },
+    {
+      "level": 6,
+      "policy": "cautious"
+    },
+    {
+      "level": 6,
+      "policy": "speed"
+    },
+    {
+      "level": 7,
+      "policy": "balanced"
+    },
+    {
+      "level": 7,
+      "policy": "cautious"
+    },
+    {
+      "level": 7,
+      "policy": "speed"
+    },
+    {
+      "level": 8,
+      "policy": "balanced"
+    },
+    {
+      "level": 8,
+      "policy": "cautious"
+    },
+    {
+      "level": 8,
+      "policy": "speed"
+    }
+  ],
+  "results": [
+    {
+      "level": 1,
+      "policy": "balanced",
+      "frames": 3847,
+      "vector": {
+        "A": 4,
+        "B": 0,
+        "C": 2,
+        "D": 9,
+        "E": 0
+      },
+      "totalLowerBound": 15,
+      "totalUpperBound": 16,
+      "unresolved": [
+        "N1-transit-169-172"
+      ],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 385,
+        "coalescedChunks": 226,
+        "fullEndpointIdentical": true,
+        "frames": 3847
+      }
+    },
+    {
+      "level": 2,
+      "policy": "balanced",
+      "frames": 4053,
+      "vector": {
+        "A": 6,
+        "B": 0,
+        "C": 9,
+        "D": 10,
+        "E": 0
+      },
+      "totalLowerBound": 25,
+      "totalUpperBound": 25,
+      "unresolved": [],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 406,
+        "coalescedChunks": 167,
+        "fullEndpointIdentical": true,
+        "frames": 4053
+      }
+    },
+    {
+      "level": 3,
+      "policy": "balanced",
+      "frames": 4397,
+      "vector": {
+        "A": 4,
+        "B": 0,
+        "C": 9,
+        "D": 9,
+        "E": 0
+      },
+      "totalLowerBound": 22,
+      "totalUpperBound": 24,
+      "unresolved": [
+        "N3-transit-101-107",
+        "N3-transit-293-295"
+      ],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 440,
+        "coalescedChunks": 215,
+        "fullEndpointIdentical": true,
+        "frames": 4397
+      }
+    },
+    {
+      "level": 5,
+      "policy": "balanced",
+      "frames": 11592,
+      "vector": {
+        "A": 0,
+        "B": 10,
+        "C": 7,
+        "D": 4,
+        "E": 0
+      },
+      "totalLowerBound": 21,
+      "totalUpperBound": 21,
+      "unresolved": [],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 1186,
+        "coalescedChunks": 430,
+        "fullEndpointIdentical": true,
+        "frames": 11592
+      }
+    },
+    {
+      "level": 1,
+      "policy": "cautious",
+      "frames": 3946,
+      "vector": {
+        "A": 4,
+        "B": 0,
+        "C": 2,
+        "D": 9,
+        "E": 0
+      },
+      "totalLowerBound": 15,
+      "totalUpperBound": 16,
+      "unresolved": [
+        "N1-transit-169-172"
+      ],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 395,
+        "coalescedChunks": 236,
+        "fullEndpointIdentical": true,
+        "frames": 3946
+      }
+    },
+    {
+      "level": 1,
+      "policy": "speed",
+      "frames": 3821,
+      "vector": {
+        "A": 4,
+        "B": 0,
+        "C": 2,
+        "D": 9,
+        "E": 0
+      },
+      "totalLowerBound": 15,
+      "totalUpperBound": 16,
+      "unresolved": [
+        "N1-transit-169-172"
+      ],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 383,
+        "coalescedChunks": 232,
+        "fullEndpointIdentical": true,
+        "frames": 3821
+      }
+    },
+    {
+      "level": 2,
+      "policy": "speed",
+      "frames": 4071,
+      "vector": {
+        "A": 6,
+        "B": 0,
+        "C": 8,
+        "D": 7,
+        "E": 0
+      },
+      "totalLowerBound": 21,
+      "totalUpperBound": 22,
+      "unresolved": [
+        "N2-transit-291-294"
+      ],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 408,
+        "coalescedChunks": 130,
+        "fullEndpointIdentical": true,
+        "frames": 4071
+      }
+    }
+  ],
+  "scope": "Frozen complete witnesses only; this batch does not erase earlier failed searches and does not assign a grade. Context frames are not human activity. Entered-but-uncompleted candidates are unresolved, not silently excluded from upper bounds."
+}

@@ -1,4 +1,43 @@
-# Retos revisados y arena del Custodio corregida — v2.3
+# Campaña de mecanismos y dos jefes — v3.0
+
+N5–N8 se han reconstruido con cinco partes y diez pruebas obligatorias por nivel.
+La última añade la arena del Corazón del Barón, con tres fases de combate.
+Hay exactamente dos jefes: el Custodio en N4 y el Corazón en N8.
+
+Versión fuente 12 aceptada por el usuario para desplegar y probar el 8 de septiembre
+de 2026. Revisión independiente: **9,38/10** (9,375 sin redondear); se conserva esa
+nota, inferior al objetivo inicial de 9,5. [Diseño, pruebas y límites](review/campaign-v3/ENTREGA.md).
+
+| Nivel | Identidad y progresión |
+|---|---|
+| N5 · Jardín de las estatuas | Provocar cargas desde lados opuestos, transportar contrapesos y volver por la llave de la galería; culmina atrayendo guardias hacia el centro y recogiendo una corona alta para regresar cargado. |
+| N6 · Torre del reloj | Reutilizar un mismo contrapeso tras fijar la escalera; reloj cuyos pulsadores cambian las pasarelas; culmina preparando un ascensor y descendiendo sobre ácido dentro del plazo. |
+| N7 · Observatorio | Circuitos luminosos con fuente invertida y retornos; culmina alimentando R para desplegar una pasarela y desviando el mismo haz desde el prisma elevado E hacia S. |
+| N8 · Cámara del corazón | Combina las cinco familias de mecanismos; culmina con un jefe de ataques anunciados y núcleo vulnerable al salto. |
+
+Abajo usa mecanismos; Abajo + Salto atraviesa plataformas por debajo. P abre la
+pista del reto actual: observación, pista y solución a petición mediante H o los
+botones de la pausa. Los fallos de secuencia no consumen recursos; las pruebas
+resueltas se conservan al morir dentro del nivel. Hay puntos de control por parte
+y uno antes del combate final. Continuar desde el título reinicia el nivel.
+
+- Fuente actual: `tools/build-campaign.py` y `tools/campaign-runtime.js`.
+  Ejecutar `python tools/build-campaign.py` regenera únicamente los mapas N5–N8
+  y su bloque de lógica. **No ejecutar el generador antiguo de expansión sobre v3.**
+- Tecnología: JavaScript con físicas propias, Canvas y presentación con PixiJS.
+- Pruebas: `node tools/check-campaign-rules.js`,
+  `node tools/check-campaign-replays.js`, y galería `tools/visual-check.html?sweep=1`.
+- Diseño de las variantes: [MATRIZ-VARIANTES.md](review/campaign-v3/MATRIZ-VARIANTES.md).
+  La documentación de [políticas de prueba](review/campaign-v3/POLITICAS-DE-PRUEBA.md)
+  distingue búsqueda guiada, controles legales y pruebas humanas.
+- Evidencia y revisiones independientes: `review/campaign-v3/`.
+  Las rutas son grabaciones de controles reales reproducidas por un programa;
+  no equivalen a pruebas de diversión o dificultad con personas.
+- Recursos y procedencia: [assets/CAMPAIGN-ART-v3.md](assets/CAMPAIGN-ART-v3.md).
+- Despliegue: comprobar `v3.0`, `CAMPAIGN_RUNTIME_BEGIN` y los recursos
+  `assets/campaign-boss.png` y `assets/campaign-foes.png` en producción.
+
+## Retos revisados y arena del Custodio corregida — antecedente v2.3
 
 Las ayudas de las 20 partes se muestran al entrar y se pueden consultar en pausa.
 N5 y N7 incorporan ascensos de regreso que requieren cambiar de dirección;
@@ -42,9 +81,9 @@ Galería: `tools/visual-check.html` (incluye cada segmento nuevo, metas y enemig
 - Dokploy: Dockerfile de la raíz, contexto de construcción `.`, puerto interno 80.
 - La imagen copia `index.html` y toda la carpeta `assets/`. Los atlas no se generan al construir.
 - El repositorio `cerebro-voz-starter` conserva una copia documental; sus commits no actualizan esta web.
-- Verificación tras desplegar: el HTML debe contener `v2.3`, `drawBossBarrier` y `partLesson`, además de `EL PUENTE DEL PÉNDULO`
-  y `assets/expansion-art.js?v=2`;
-  `/assets/world-expansion.png` y `/assets/expansion-props-v2.png` deben responder 200,
+- Verificación tras desplegar: el HTML debe contener `v3.0`, `CAMPAIGN_RUNTIME_BEGIN`,
+  `EL CORAZÓN DEL BARÓN` y `assets/campaign-boss-art.js?v=3`;
+  `/assets/campaign-boss.png`, `/assets/campaign-foes.png` y `/assets/world-expansion.png` deben responder 200,
   y `/assets/no-existe.js` debe responder 404.
 - Si Dokploy no tiene autodeploy activado, ejecutar Deploy en la aplicación de este dominio.
 

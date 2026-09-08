@@ -1,0 +1,563 @@
+{
+  "level": 2,
+  "complete": true,
+  "witness": "review/campaign-v3/ruta-base-n2.json",
+  "scope": "Clean baseline replay. Mutually exclusive frame categories are mechanical observations, not meaningful activity or human decisions.",
+  "counts": {
+    "frames": 4545,
+    "charging": 615,
+    "movingWithoutCharge": 3930,
+    "stillWithoutCharge": 0,
+    "bossActive": 0,
+    "damageEvents": 14,
+    "jumps": 58
+  },
+  "events": [
+    {
+      "frame": 11,
+      "kind": "jump",
+      "x": 65,
+      "y": 136.73,
+      "energy": 99.3
+    },
+    {
+      "frame": 61,
+      "kind": "jump",
+      "x": 131.64,
+      "y": 136.73,
+      "energy": 98.24
+    },
+    {
+      "frame": 171,
+      "kind": "jump",
+      "x": 230.47,
+      "y": 91.03,
+      "energy": 96.63
+    },
+    {
+      "frame": 369,
+      "kind": "damage",
+      "x": 517.55,
+      "y": 142,
+      "energy": 74.82
+    },
+    {
+      "frame": 446,
+      "kind": "key",
+      "x": 587.15,
+      "y": 142,
+      "energy": 74.11
+    },
+    {
+      "frame": 491,
+      "kind": "jump",
+      "x": 654.65,
+      "y": 136.73,
+      "energy": 73.1
+    },
+    {
+      "frame": 529,
+      "kind": "door",
+      "x": 694.35,
+      "y": 135.9,
+      "energy": 72.75
+    },
+    {
+      "frame": 532,
+      "kind": "jump",
+      "x": 697.5,
+      "y": 136.73,
+      "energy": 72.12
+    },
+    {
+      "frame": 551,
+      "kind": "jump",
+      "x": 726,
+      "y": 136.73,
+      "energy": 71.35
+    },
+    {
+      "frame": 571,
+      "kind": "jump",
+      "x": 756,
+      "y": 136.73,
+      "energy": 70.57
+    },
+    {
+      "frame": 612,
+      "kind": "jump",
+      "x": 817.5,
+      "y": 136.73,
+      "energy": 69.59
+    },
+    {
+      "frame": 653,
+      "kind": "jump",
+      "x": 869.8,
+      "y": 136.73,
+      "energy": 68.61
+    },
+    {
+      "frame": 691,
+      "kind": "jump",
+      "x": 926.8,
+      "y": 136.73,
+      "energy": 67.67
+    },
+    {
+      "frame": 732,
+      "kind": "jump",
+      "x": 981.18,
+      "y": 136.73,
+      "energy": 66.69
+    },
+    {
+      "frame": 786,
+      "kind": "jump",
+      "x": 1050.49,
+      "y": 136.73,
+      "energy": 65.59
+    },
+    {
+      "frame": 821,
+      "kind": "jump",
+      "x": 1102.99,
+      "y": 136.73,
+      "energy": 64.67
+    },
+    {
+      "frame": 862,
+      "kind": "jump",
+      "x": 1164.49,
+      "y": 136.73,
+      "energy": 63.7
+    },
+    {
+      "frame": 911,
+      "kind": "jump",
+      "x": 1228.07,
+      "y": 136.73,
+      "energy": 62.65
+    },
+    {
+      "frame": 956,
+      "kind": "jump",
+      "x": 1287.19,
+      "y": 136.73,
+      "energy": 61.64
+    },
+    {
+      "frame": 991,
+      "kind": "jump",
+      "x": 1339.69,
+      "y": 136.73,
+      "energy": 60.72
+    },
+    {
+      "frame": 1027,
+      "kind": "damage",
+      "x": 1383.89,
+      "y": 127.19,
+      "energy": 75.39
+    },
+    {
+      "frame": 1054,
+      "kind": "jump",
+      "x": 1408.89,
+      "y": 136.73,
+      "energy": 79.87
+    },
+    {
+      "frame": 1107,
+      "kind": "damage",
+      "x": 1432.55,
+      "y": 142,
+      "energy": 71.92
+    },
+    {
+      "frame": 1131,
+      "kind": "jump",
+      "x": 1473.05,
+      "y": 136.73,
+      "energy": 71.1
+    },
+    {
+      "frame": 1166,
+      "kind": "jump",
+      "x": 1525.55,
+      "y": 88.73,
+      "energy": 70.18
+    },
+    {
+      "frame": 1213,
+      "kind": "jump",
+      "x": 1566.7,
+      "y": 88.73,
+      "energy": 69.15
+    },
+    {
+      "frame": 1301,
+      "kind": "jump",
+      "x": 1686.34,
+      "y": 43.03,
+      "energy": 67.74
+    },
+    {
+      "frame": 1335,
+      "kind": "jump",
+      "x": 1725.47,
+      "y": 88.73,
+      "energy": 66.83
+    },
+    {
+      "frame": 1392,
+      "kind": "key",
+      "x": 1802.29,
+      "y": 46,
+      "energy": 66.31
+    },
+    {
+      "frame": 1441,
+      "kind": "jump",
+      "x": 1865.52,
+      "y": 142,
+      "energy": 30.86
+    },
+    {
+      "frame": 1441,
+      "kind": "damage",
+      "x": 1865.52,
+      "y": 142,
+      "energy": 30.86
+    },
+    {
+      "frame": 1486,
+      "kind": "damage",
+      "x": 1933.02,
+      "y": 142,
+      "energy": 20.44
+    },
+    {
+      "frame": 1592,
+      "kind": "damage",
+      "x": 2029.86,
+      "y": 142,
+      "energy": 9.47
+    },
+    {
+      "frame": 1670,
+      "kind": "door",
+      "x": 2151.36,
+      "y": 142,
+      "energy": 8.76
+    },
+    {
+      "frame": 1681,
+      "kind": "jump",
+      "x": 2167.86,
+      "y": 136.73,
+      "energy": 8.06
+    },
+    {
+      "frame": 1701,
+      "kind": "jump",
+      "x": 2188.12,
+      "y": 136.73,
+      "energy": 7.27
+    },
+    {
+      "frame": 1775,
+      "kind": "damage",
+      "x": 2237.99,
+      "y": 142,
+      "energy": 10.2
+    },
+    {
+      "frame": 1795,
+      "kind": "jump",
+      "x": 2222.09,
+      "y": 136.73,
+      "energy": 14.75
+    },
+    {
+      "frame": 1891,
+      "kind": "jump",
+      "x": 2227.08,
+      "y": 136.73,
+      "energy": 38.87
+    },
+    {
+      "frame": 1932,
+      "kind": "jump",
+      "x": 2226.97,
+      "y": 136.73,
+      "energy": 45.89
+    },
+    {
+      "frame": 1971,
+      "kind": "jump",
+      "x": 2226.97,
+      "y": 136.73,
+      "energy": 54
+    },
+    {
+      "frame": 2012,
+      "kind": "jump",
+      "x": 2226.97,
+      "y": 136.73,
+      "energy": 61.02
+    },
+    {
+      "frame": 2176,
+      "kind": "damage",
+      "x": 2245.61,
+      "y": 142,
+      "energy": 88.99
+    },
+    {
+      "frame": 2379,
+      "kind": "damage",
+      "x": 2460.19,
+      "y": 142,
+      "energy": 73.53
+    },
+    {
+      "frame": 2471,
+      "kind": "jump",
+      "x": 2501.22,
+      "y": 138.11,
+      "energy": 72.08
+    },
+    {
+      "frame": 2555,
+      "kind": "damage",
+      "x": 2627.94,
+      "y": 142,
+      "energy": 51.31
+    },
+    {
+      "frame": 2701,
+      "kind": "jump",
+      "x": 2762.11,
+      "y": 141.56,
+      "energy": 49.37
+    },
+    {
+      "frame": 2801,
+      "kind": "jump",
+      "x": 2912.11,
+      "y": 136.73,
+      "energy": 82.86
+    },
+    {
+      "frame": 2846,
+      "kind": "jump",
+      "x": 2971.23,
+      "y": 136.73,
+      "energy": 81.84
+    },
+    {
+      "frame": 2881,
+      "kind": "jump",
+      "x": 3023.73,
+      "y": 136.73,
+      "energy": 80.92
+    },
+    {
+      "frame": 2931,
+      "kind": "jump",
+      "x": 3091.62,
+      "y": 136.73,
+      "energy": 79.87
+    },
+    {
+      "frame": 2976,
+      "kind": "jump",
+      "x": 3150.74,
+      "y": 136.73,
+      "energy": 78.85
+    },
+    {
+      "frame": 3011,
+      "kind": "jump",
+      "x": 3203.24,
+      "y": 136.73,
+      "energy": 77.93
+    },
+    {
+      "frame": 3081,
+      "kind": "jump",
+      "x": 3294.66,
+      "y": 136.73,
+      "energy": 76.69
+    },
+    {
+      "frame": 3126,
+      "kind": "jump",
+      "x": 3340.25,
+      "y": 136.73,
+      "energy": 75.68
+    },
+    {
+      "frame": 3161,
+      "kind": "jump",
+      "x": 3385.64,
+      "y": 136.73,
+      "energy": 74.76
+    },
+    {
+      "frame": 3205,
+      "kind": "damage",
+      "x": 3451.64,
+      "y": 137.7,
+      "energy": 64.35
+    },
+    {
+      "frame": 3281,
+      "kind": "jump",
+      "x": 3509.79,
+      "y": 136.73,
+      "energy": 76.66
+    },
+    {
+      "frame": 3326,
+      "kind": "jump",
+      "x": 3504.02,
+      "y": 136.73,
+      "energy": 84.44
+    },
+    {
+      "frame": 3381,
+      "kind": "jump",
+      "x": 3555.24,
+      "y": 136.73,
+      "energy": 91.61
+    },
+    {
+      "frame": 3416,
+      "kind": "jump",
+      "x": 3533.11,
+      "y": 88.73,
+      "energy": 90.69
+    },
+    {
+      "frame": 3458,
+      "kind": "damage",
+      "x": 3575.64,
+      "y": 75.08,
+      "energy": 70.3
+    },
+    {
+      "frame": 3496,
+      "kind": "jump",
+      "x": 3637.14,
+      "y": 136.73,
+      "energy": 69.35
+    },
+    {
+      "frame": 3532,
+      "kind": "jump",
+      "x": 3684.03,
+      "y": 92.63,
+      "energy": 68.42
+    },
+    {
+      "frame": 3575,
+      "kind": "jump",
+      "x": 3687.15,
+      "y": 115.58,
+      "energy": 67.43
+    },
+    {
+      "frame": 3626,
+      "kind": "jump",
+      "x": 3749.65,
+      "y": 136.73,
+      "energy": 66.36
+    },
+    {
+      "frame": 3673,
+      "kind": "jump",
+      "x": 3813.04,
+      "y": 136.73,
+      "energy": 65.33
+    },
+    {
+      "frame": 3698,
+      "kind": "damage",
+      "x": 3837.94,
+      "y": 79.73,
+      "energy": 45.1
+    },
+    {
+      "frame": 3735,
+      "kind": "jump",
+      "x": 3897.94,
+      "y": 136.73,
+      "energy": 44.16
+    },
+    {
+      "frame": 3782,
+      "kind": "jump",
+      "x": 3968.44,
+      "y": 136.73,
+      "energy": 43.13
+    },
+    {
+      "frame": 3821,
+      "kind": "jump",
+      "x": 4005.34,
+      "y": 88.96,
+      "energy": 42.17
+    },
+    {
+      "frame": 3834,
+      "kind": "key",
+      "x": 3989.34,
+      "y": 41.38,
+      "energy": 42.05
+    },
+    {
+      "frame": 3920,
+      "kind": "damage",
+      "x": 4105.53,
+      "y": 142,
+      "energy": 21.27
+    },
+    {
+      "frame": 4002,
+      "kind": "door",
+      "x": 4182.63,
+      "y": 142,
+      "energy": 20.51
+    },
+    {
+      "frame": 4011,
+      "kind": "jump",
+      "x": 4196.13,
+      "y": 136.73,
+      "energy": 19.83
+    },
+    {
+      "frame": 4181,
+      "kind": "jump",
+      "x": 4451.13,
+      "y": 136.73,
+      "energy": 17.67
+    },
+    {
+      "frame": 4311,
+      "kind": "jump",
+      "x": 4646.13,
+      "y": 136.73,
+      "energy": 15.88
+    },
+    {
+      "frame": 4491,
+      "kind": "jump",
+      "x": 4838.27,
+      "y": 136.73,
+      "energy": 13.63
+    }
+  ]
+}

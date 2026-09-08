@@ -1,0 +1,137 @@
+{
+  "scope": "Independent headless production input-handler fixtures. Source8 retains held input; source9 clears it on pause and fresh input works. Does not model CSS boundary events or physical devices; browser evidence is separate.",
+  "results": [
+    {
+      "round": 8,
+      "sourceHash": "06a4ae938c68fa78e3a48d820ec58a35cfb49a3a2fb650d7cb23052239ee8103",
+      "kind": "touch",
+      "fixture": true,
+      "clockFrozen": true,
+      "inputWhilePaused": {
+        "touch": {
+          "l": false,
+          "r": true,
+          "j": true,
+          "d": false
+        },
+        "keys": {}
+      },
+      "resumed": {
+        "touch": {
+          "l": false,
+          "r": true,
+          "j": true,
+          "d": false
+        },
+        "keys": {}
+      },
+      "retained": true,
+      "freshPressVerified": false
+    },
+    {
+      "round": 8,
+      "sourceHash": "06a4ae938c68fa78e3a48d820ec58a35cfb49a3a2fb650d7cb23052239ee8103",
+      "kind": "keyboard",
+      "fixture": true,
+      "clockFrozen": true,
+      "inputWhilePaused": {
+        "touch": {
+          "l": false,
+          "r": false,
+          "j": false,
+          "d": false
+        },
+        "keys": {
+          "ArrowRight": true,
+          "ArrowLeft": false,
+          "Space": true,
+          "ArrowDown": true,
+          "KeyP": false
+        }
+      },
+      "resumed": {
+        "touch": {
+          "l": false,
+          "r": false,
+          "j": false,
+          "d": false
+        },
+        "keys": {
+          "ArrowRight": true,
+          "ArrowLeft": false,
+          "Space": true,
+          "ArrowDown": true,
+          "KeyP": false
+        }
+      },
+      "retained": true,
+      "freshPressVerified": false
+    },
+    {
+      "round": 9,
+      "sourceHash": "d4b3b88064956af7b9c9460507aff83110f47ed4a2eb28394cacad69d87fee53",
+      "kind": "touch",
+      "fixture": true,
+      "clockFrozen": true,
+      "inputWhilePaused": {
+        "touch": {
+          "l": false,
+          "r": false,
+          "j": false,
+          "d": false
+        },
+        "keys": {}
+      },
+      "resumed": {
+        "touch": {
+          "l": false,
+          "r": false,
+          "j": false,
+          "d": false
+        },
+        "keys": {}
+      },
+      "retained": false,
+      "freshPressVerified": true
+    },
+    {
+      "round": 9,
+      "sourceHash": "d4b3b88064956af7b9c9460507aff83110f47ed4a2eb28394cacad69d87fee53",
+      "kind": "keyboard",
+      "fixture": true,
+      "clockFrozen": true,
+      "inputWhilePaused": {
+        "touch": {
+          "l": false,
+          "r": false,
+          "j": false,
+          "d": false
+        },
+        "keys": {
+          "ArrowRight": false,
+          "ArrowLeft": false,
+          "Space": false,
+          "ArrowDown": false,
+          "KeyP": false
+        }
+      },
+      "resumed": {
+        "touch": {
+          "l": false,
+          "r": false,
+          "j": false,
+          "d": false
+        },
+        "keys": {
+          "ArrowRight": false,
+          "ArrowLeft": false,
+          "Space": false,
+          "ArrowDown": false,
+          "KeyP": false
+        }
+      },
+      "retained": false,
+      "freshPressVerified": true
+    }
+  ]
+}

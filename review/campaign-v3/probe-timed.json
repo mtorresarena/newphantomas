@@ -1,0 +1,40 @@
+{
+  "file": "C:\\Users\\mtare\\Desktop\\cerebro-voz-starter\\_tmp\\newphantomas-deploy\\tools\\campaign-runtime.js",
+  "runtimeSha256": "99bf57853dcddaac5fa6ce2d11bf8270b595cbc0b0bed93afb2dfe81e8790878",
+  "scope": "Fabricated edge-state unit probe, not proof that a player reaches it on an authored route.",
+  "result": {
+    "occupied": {
+      "id": "probe",
+      "kind": "timed",
+      "name": "probe",
+      "x0": 0,
+      "gateX": 160,
+      "open": true,
+      "solved": false,
+      "until": 0,
+      "progress": 0,
+      "nodes": []
+    },
+    "afterExit": {
+      "id": "probe",
+      "kind": "timed",
+      "name": "probe",
+      "x0": 0,
+      "gateX": 160,
+      "open": false,
+      "solved": false,
+      "until": 0,
+      "progress": 0,
+      "nodes": []
+    },
+    "gateTile": "#",
+    "events": [
+      {
+        "frame": 11,
+        "type": "timeout",
+        "id": "probe",
+        "detail": ""
+      }
+    ]
+  }
+}

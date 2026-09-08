@@ -1,0 +1,673 @@
+{
+  "commit": "31d461028516344bc0dbb80b7ecd625296509014",
+  "level": 3,
+  "complete": false,
+  "state": "play",
+  "failed": {
+    "target": {
+      "type": "exit",
+      "x": 3432,
+      "y": 145,
+      "zone": "sewer"
+    },
+    "expanded": 4000,
+    "best": {
+      "distance": 283.5,
+      "x": 3052.4,
+      "y": 137.7,
+      "energy": 30.7
+    }
+  },
+  "scope": "Synthetic controller, production physics and hazards, clean replay; not human duration or difficulty. Partial prefixes are not completability evidence.",
+  "metrics": {
+    "frames": 2540,
+    "jumps": 19,
+    "directionChanges": 26,
+    "idleInputFrames": 240,
+    "stationaryFrames": 22,
+    "movingFrames": 2518,
+    "chargingFrames": 17,
+    "hits": 9,
+    "keys": 2,
+    "doors": 2,
+    "minEnergy": 23.8,
+    "distancePx": 3343.2,
+    "simulatedSeconds": 42.33
+  },
+  "stages": [
+    {
+      "target": {
+        "type": "k",
+        "x": 648,
+        "y": 152,
+        "ox": 644,
+        "zone": "roof"
+      },
+      "frames": 570,
+      "energy": 73,
+      "expanded": 2694
+    },
+    {
+      "target": {
+        "type": "exit",
+        "x": 712,
+        "y": 145,
+        "zone": "roof"
+      },
+      "frames": 50,
+      "energy": 72.5,
+      "expanded": 5
+    },
+    {
+      "target": {
+        "type": "exit",
+        "x": 1352,
+        "y": 145,
+        "zone": "roof2"
+      },
+      "frames": 580,
+      "energy": 61,
+      "expanded": 1663
+    },
+    {
+      "target": {
+        "type": "k",
+        "x": 1688,
+        "y": 40,
+        "ox": 1684,
+        "zone": "attic"
+      },
+      "frames": 400,
+      "energy": 49.5,
+      "expanded": 1202
+    },
+    {
+      "target": {
+        "type": "exit",
+        "x": 2040,
+        "y": 145,
+        "zone": "attic"
+      },
+      "frames": 390,
+      "energy": 26,
+      "expanded": 49
+    },
+    {
+      "target": {
+        "type": "exit",
+        "x": 2728,
+        "y": 145,
+        "zone": "warehouse"
+      },
+      "frames": 550,
+      "energy": 29.8,
+      "expanded": 85
+    }
+  ],
+  "actions": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      -1,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ]
+  ],
+  "framesPerAction": 10,
+  "inputs": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    4,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    2,
+    4,
+    0,
+    0,
+    2,
+    0,
+    0,
+    2,
+    0,
+    2,
+    0,
+    0,
+    2,
+    0,
+    2,
+    0,
+    0,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    4,
+    0,
+    0,
+    2,
+    0,
+    1,
+    1,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    4,
+    0,
+    4,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    5,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    3,
+    2,
+    0,
+    5,
+    2,
+    0,
+    3,
+    4,
+    0,
+    5,
+    2,
+    0,
+    3,
+    4,
+    0,
+    5,
+    2,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    6,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    4,
+    0,
+    0,
+    4,
+    0,
+    0,
+    2,
+    0,
+    2,
+    2,
+    0,
+    2,
+    2,
+    0,
+    2,
+    2,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "events": [
+    {
+      "frame": 31,
+      "kind": "jump",
+      "x": 79,
+      "y": 136.7,
+      "energy": 99.1
+    },
+    {
+      "frame": 101,
+      "kind": "jump",
+      "x": 154,
+      "y": 141.6,
+      "energy": 97.9
+    },
+    {
+      "frame": 363,
+      "kind": "damage",
+      "x": 395.8,
+      "y": 142,
+      "energy": 75.5
+    },
+    {
+      "frame": 431,
+      "kind": "jump",
+      "x": 439.8,
+      "y": 140.2,
+      "energy": 74.2
+    },
+    {
+      "frame": 561,
+      "kind": "key",
+      "x": 634.8,
+      "y": 142,
+      "energy": 73.1
+    },
+    {
+      "frame": 604,
+      "kind": "zone",
+      "x": 699.3,
+      "y": 142,
+      "energy": 72.7,
+      "zone": "roof2"
+    },
+    {
+      "frame": 625,
+      "kind": "checkpoint",
+      "x": 730.8,
+      "y": 142,
+      "energy": 72.5
+    },
+    {
+      "frame": 721,
+      "kind": "jump",
+      "x": 809.1,
+      "y": 141.6,
+      "energy": 71
+    },
+    {
+      "frame": 791,
+      "kind": "damage",
+      "x": 914.1,
+      "y": 142,
+      "energy": 60.3
+    },
+    {
+      "frame": 931,
+      "kind": "damage",
+      "x": 1005.9,
+      "y": 142,
+      "energy": 49.1
+    },
+    {
+      "frame": 991,
+      "kind": "jump",
+      "x": 1094.4,
+      "y": 139,
+      "energy": 47.9
+    },
+    {
+      "frame": 1144,
+      "kind": "damage",
+      "x": 1320.1,
+      "y": 142,
+      "energy": 61.5
+    },
+    {
+      "frame": 1195,
+      "kind": "door",
+      "x": 1350.7,
+      "y": 142,
+      "energy": 61
+    },
+    {
+      "frame": 1201,
+      "kind": "jump",
+      "x": 1359.7,
+      "y": 136.7,
+      "energy": 60.4
+    },
+    {
+      "frame": 1220,
+      "kind": "zone",
+      "x": 1388.2,
+      "y": 142,
+      "energy": 60.2,
+      "zone": "attic"
+    },
+    {
+      "frame": 1221,
+      "kind": "jump",
+      "x": 1389.7,
+      "y": 136.7,
+      "energy": 59.6
+    },
+    {
+      "frame": 1271,
+      "kind": "jump",
+      "x": 1464.7,
+      "y": 136.7,
+      "energy": 58.5
+    },
+    {
+      "frame": 1306,
+      "kind": "jump",
+      "x": 1509.9,
+      "y": 88.7,
+      "energy": 57.6
+    },
+    {
+      "frame": 1341,
+      "kind": "jump",
+      "x": 1539.7,
+      "y": 40.7,
+      "energy": 56.7
+    },
+    {
+      "frame": 1371,
+      "kind": "jump",
+      "x": 1584.2,
+      "y": 40.7,
+      "energy": 55.8
+    },
+    {
+      "frame": 1401,
+      "kind": "jump",
+      "x": 1606,
+      "y": 43,
+      "energy": 55
+    },
+    {
+      "frame": 1431,
+      "kind": "jump",
+      "x": 1603.9,
+      "y": 41.4,
+      "energy": 54.1
+    },
+    {
+      "frame": 1461,
+      "kind": "jump",
+      "x": 1606,
+      "y": 43,
+      "energy": 53.2
+    },
+    {
+      "frame": 1491,
+      "kind": "jump",
+      "x": 1603.9,
+      "y": 41.4,
+      "energy": 52.3
+    },
+    {
+      "frame": 1521,
+      "kind": "jump",
+      "x": 1606,
+      "y": 43,
+      "energy": 51.5
+    },
+    {
+      "frame": 1545,
+      "kind": "jump",
+      "x": 1595,
+      "y": 40.7,
+      "energy": 50.6
+    },
+    {
+      "frame": 1574,
+      "kind": "jump",
+      "x": 1638.5,
+      "y": 65,
+      "energy": 49.8
+    },
+    {
+      "frame": 1598,
+      "kind": "key",
+      "x": 1674.5,
+      "y": 30,
+      "energy": 49.6
+    },
+    {
+      "frame": 1664,
+      "kind": "damage",
+      "x": 1763.6,
+      "y": 142,
+      "energy": 38.9
+    },
+    {
+      "frame": 1955,
+      "kind": "damage",
+      "x": 1985.7,
+      "y": 142,
+      "energy": 26.3
+    },
+    {
+      "frame": 1987,
+      "kind": "door",
+      "x": 2038.2,
+      "y": 142,
+      "energy": 26
+    },
+    {
+      "frame": 1991,
+      "kind": "jump",
+      "x": 2044.2,
+      "y": 136.7,
+      "energy": 25.3
+    },
+    {
+      "frame": 2012,
+      "kind": "zone",
+      "x": 2075.7,
+      "y": 142,
+      "energy": 25.2,
+      "zone": "warehouse"
+    },
+    {
+      "frame": 2033,
+      "kind": "checkpoint",
+      "x": 2107.2,
+      "y": 142,
+      "energy": 25
+    },
+    {
+      "frame": 2166,
+      "kind": "damage",
+      "x": 2306.7,
+      "y": 142,
+      "energy": 48.7
+    },
+    {
+      "frame": 2252,
+      "kind": "damage",
+      "x": 2389.8,
+      "y": 142,
+      "energy": 38
+    },
+    {
+      "frame": 2332,
+      "kind": "damage",
+      "x": 2463.9,
+      "y": 142,
+      "energy": 27.2
+    },
+    {
+      "frame": 2530,
+      "kind": "zone",
+      "x": 2715,
+      "y": 142,
+      "energy": 29.9,
+      "zone": "sewer"
+    }
+  ]
+}

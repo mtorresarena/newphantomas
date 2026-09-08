@@ -1,0 +1,238 @@
+{
+  "inputDir": "round3",
+  "name": "route-n6-retry-service-door-2.json",
+  "spec": {
+    "level": 6,
+    "type": "service",
+    "stage": "door",
+    "part": 2,
+    "keyX": 3172,
+    "door": 217
+  },
+  "witnessHash": "7506195edbc8ef39281a8c02c89ed1f9793cafbf0af432ff2c78a02e7e20e643",
+  "sourceHash": "8eef8b28ed89122e03c5eb04ebed91d5923fe87b51b6b12dd6f999699e35c65b",
+  "evaluatedSource": "round4",
+  "frames": 15931,
+  "seconds": 265.51666666666665,
+  "complete": true,
+  "lives": 2,
+  "events": [
+    {
+      "frame": 7238,
+      "simF": 7238,
+      "type": "death",
+      "x": 3508.785159921854,
+      "y": 142,
+      "keys": 0,
+      "lives": 2,
+      "targetKeyPresent": false,
+      "targetDoorClosed": false,
+      "trials": [
+        {
+          "id": "1-1",
+          "kind": "timed",
+          "progress": 2,
+          "until": 719,
+          "remaining": -6519,
+          "solved": true
+        },
+        {
+          "id": "1-2",
+          "kind": "sequence",
+          "progress": 3,
+          "until": 0,
+          "remaining": -7238,
+          "solved": true
+        },
+        {
+          "id": "2-1",
+          "kind": "weight",
+          "progress": 0,
+          "until": 0,
+          "remaining": -7238,
+          "solved": true
+        },
+        {
+          "id": "2-2",
+          "kind": "timed",
+          "progress": 0,
+          "until": 0,
+          "remaining": -7238,
+          "solved": false
+        },
+        {
+          "id": "3-1",
+          "kind": "timed",
+          "progress": 0,
+          "until": 0,
+          "remaining": -7238,
+          "solved": false
+        },
+        {
+          "id": "3-2",
+          "kind": "weight",
+          "progress": 0,
+          "until": 0,
+          "remaining": -7238,
+          "solved": false
+        },
+        {
+          "id": "4-1",
+          "kind": "sequence",
+          "progress": 0,
+          "until": 0,
+          "remaining": -7238,
+          "solved": false
+        },
+        {
+          "id": "4-2",
+          "kind": "timed",
+          "progress": 0,
+          "until": 0,
+          "remaining": -7238,
+          "solved": false
+        },
+        {
+          "id": "5-1",
+          "kind": "timed",
+          "progress": 0,
+          "until": 0,
+          "remaining": -7238,
+          "solved": false
+        },
+        {
+          "id": "5-2",
+          "kind": "timed",
+          "progress": 0,
+          "until": 0,
+          "remaining": -7238,
+          "solved": false
+        }
+      ]
+    },
+    {
+      "frame": 7328,
+      "simF": 7328,
+      "type": "respawn",
+      "x": 1892,
+      "y": 142,
+      "keys": 0,
+      "lives": 2,
+      "targetKeyPresent": false,
+      "targetDoorClosed": false,
+      "trials": [
+        {
+          "id": "1-1",
+          "kind": "timed",
+          "progress": 2,
+          "until": 719,
+          "remaining": -6609,
+          "solved": true
+        },
+        {
+          "id": "1-2",
+          "kind": "sequence",
+          "progress": 3,
+          "until": 0,
+          "remaining": -7328,
+          "solved": true
+        },
+        {
+          "id": "2-1",
+          "kind": "weight",
+          "progress": 0,
+          "until": 0,
+          "remaining": -7328,
+          "solved": true
+        },
+        {
+          "id": "2-2",
+          "kind": "timed",
+          "progress": 0,
+          "until": 0,
+          "remaining": -7328,
+          "solved": false
+        },
+        {
+          "id": "3-1",
+          "kind": "timed",
+          "progress": 0,
+          "until": 0,
+          "remaining": -7328,
+          "solved": false
+        },
+        {
+          "id": "3-2",
+          "kind": "weight",
+          "progress": 0,
+          "until": 0,
+          "remaining": -7328,
+          "solved": false
+        },
+        {
+          "id": "4-1",
+          "kind": "sequence",
+          "progress": 0,
+          "until": 0,
+          "remaining": -7328,
+          "solved": false
+        },
+        {
+          "id": "4-2",
+          "kind": "timed",
+          "progress": 0,
+          "until": 0,
+          "remaining": -7328,
+          "solved": false
+        },
+        {
+          "id": "5-1",
+          "kind": "timed",
+          "progress": 0,
+          "until": 0,
+          "remaining": -7328,
+          "solved": false
+        },
+        {
+          "id": "5-2",
+          "kind": "timed",
+          "progress": 0,
+          "until": 0,
+          "remaining": -7328,
+          "solved": false
+        }
+      ]
+    }
+  ],
+  "keyEvents": [
+    {
+      "frame": 2942,
+      "keysBefore": 0,
+      "keysAfter": 1,
+      "x": 3163.2936349894235,
+      "y": 30
+    },
+    {
+      "frame": 3432,
+      "keysBefore": 1,
+      "keysAfter": 0,
+      "x": 3462.9280170647157,
+      "y": 95.94000000000003
+    },
+    {
+      "frame": 13129,
+      "keysBefore": 0,
+      "keysAfter": 1,
+      "x": 7578.935631414206,
+      "y": 30
+    },
+    {
+      "frame": 13560,
+      "keysBefore": 1,
+      "keysAfter": 0,
+      "x": 8166.852811692903,
+      "y": 142
+    }
+  ],
+  "fixture": false
+}

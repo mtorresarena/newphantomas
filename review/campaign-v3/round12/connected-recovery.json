@@ -1,0 +1,75 @@
+{
+  "executedSourceHash": "8c3e43a36a29dde8b30a56ad8a5112a0bdb1ccb93b0579b753f54de094362d45",
+  "scope": "Five real control recordings from natural level spawn through mistakes/expiry/death to completion. No state injection.",
+  "results": [
+    {
+      "name": "route-n6-exercise-links",
+      "recordedSourceHash": "b2f5c4fa4d951a78041bb39ac895cef2c7dc6b5bcd37914c2a4e2f677710e773",
+      "inputHash": "92ae66ca179a8e13bb43fa6983add6c6b254eb5a6e6d99a62a8f2c1ba3558ce6",
+      "frames": 11944,
+      "deaths": 0,
+      "resets": [],
+      "lives": 3,
+      "complete": true
+    },
+    {
+      "name": "route-n6-expire-trial5-1",
+      "recordedSourceHash": "b2f5c4fa4d951a78041bb39ac895cef2c7dc6b5bcd37914c2a4e2f677710e773",
+      "inputHash": "ca3c3ef0925b0a808fa0979717ee28457ee56559e5a84bdfe23bd235febf2eda",
+      "frames": 12967,
+      "deaths": 0,
+      "resets": [],
+      "lives": 3,
+      "complete": true
+    },
+    {
+      "name": "route-n7-exercise-links",
+      "recordedSourceHash": "b9f1a7b93ca1438d7a969cd76852f119d87e9c6ff91cabb752515f6090a12c03",
+      "inputHash": "42bd75acdc32ada6f6b680cef5ac28871234fd94e6ac0359f2310047d2aedd7c",
+      "frames": 9624,
+      "deaths": 0,
+      "resets": [],
+      "lives": 3,
+      "complete": true
+    },
+    {
+      "name": "route-n6-retry-weight-trial3-2",
+      "recordedSourceHash": "b9f1a7b93ca1438d7a969cd76852f119d87e9c6ff91cabb752515f6090a12c03",
+      "inputHash": "6f8bb06f887b8d0797b4a7cea7698c70b538ec142150014b6a8ca3d6213335f3",
+      "frames": 22943,
+      "deaths": 1,
+      "resets": [
+        {
+          "frame": 15026,
+          "trial": "3-2",
+          "bridges": [
+            false,
+            false
+          ]
+        }
+      ],
+      "lives": 2,
+      "complete": true
+    },
+    {
+      "name": "route-n7-retry-mirror-trial5-2",
+      "recordedSourceHash": "b9f1a7b93ca1438d7a969cd76852f119d87e9c6ff91cabb752515f6090a12c03",
+      "inputHash": "0902be5b29f98f0a7419b71d436a89f12d2e802756485901547ebce3cfdba573",
+      "frames": 20780,
+      "deaths": 1,
+      "resets": [
+        {
+          "frame": 18984,
+          "trial": "5-2",
+          "bridges": [
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "lives": 2,
+      "complete": true
+    }
+  ]
+}

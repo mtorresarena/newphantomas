@@ -1,0 +1,21 @@
+{
+  "sourceHash": "5963bcc02f71090a958df9737eca2b8fd5a96ed0a615f4a9dcbe4be4dc04ef21",
+  "registryHash": "8f008d354f5c8e77cb782a4251d1c5fdddc0a41a32c749d44606fe2a1cdd480d",
+  "levels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "checks": {
+    "originalFirstFourDefinitionsIdentical": true,
+    "originalPhysicsConfigIdentical": true,
+    "round4InputPlayerEnemyBossTailExceptReadOnlyPartLessonIdentical": true,
+    "campaignMechanicsExceptExactReadOnlyBeetlePromptIdentical": true
+  },
+  "manualDiffScope": "Complete mechanics diff inspected: one added campaign.prompt assignment in first N5 beetle proximity. Exact line excluded explicitly; no broader function excluded. All N5–N8 boundaries preregistered for source6; only N1–N4 controls may be reused from harmonized-v2. Replays still execute source6."
+}

@@ -1,0 +1,53 @@
+{
+  "sourceHash": "383fc2c0837ffdf01deff83fbcf4e3d02dbf512d1de94c39d147679757c42607",
+  "compatibleSourceHash": "5963bcc02f71090a958df9737eca2b8fd5a96ed0a615f4a9dcbe4be4dc04ef21",
+  "registryHash": "8f008d354f5c8e77cb782a4251d1c5fdddc0a41a32c749d44606fe2a1cdd480d",
+  "levels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "checks": {
+    "allEightLevelDefinitionsIdentical": true,
+    "physicsConfigIdentical": true,
+    "allSourceExceptExplicitReadOnlyHelpPauseAndBlankLinesIdentical": true,
+    "permanentFirstPartBeetleHelpPresentAtLegalSamples": true
+  },
+  "excludedRegions": [
+    "campaignLesson + added drawCampaignPortraitPause, until CAMPAIGN_RUNTIME_END",
+    "single draw dispatcher line else if(state===pause)"
+  ],
+  "manualDiffScope": "Complete unified diff inspected. Only mirror help, permanent first N5 part beetle advice, portrait pause drawing and its draw dispatch change. No engine/input/reset change. Blank-only lines ignored after these explicit exclusions.",
+  "samples": [
+    {
+      "frame": 0,
+      "part": 1,
+      "service": null,
+      "lesson": "Provoca la carga desde el lado del sello y salta para esquivarla. El guardián vuelve a su pedestal tras fallar. También puedes pisar los escarabajos desde arriba para eliminarlos; esquivarlos sigue siendo una alternativa."
+    },
+    {
+      "frame": 418,
+      "part": 1,
+      "service": null,
+      "lesson": "Activa con Abajo las runas en este orden: 2 > 1 > 3. Si te equivocas, vuelve a empezar sin perder energía. También puedes pisar los escarabajos desde arriba para eliminarlos; esquivarlos sigue siendo una alternativa."
+    },
+    {
+      "frame": 750,
+      "part": 1,
+      "service": null,
+      "lesson": "Activa con Abajo las runas en este orden: 2 > 1 > 3. Si te equivocas, vuelve a empezar sin perder energía. También puedes pisar los escarabajos desde arriba para eliminarlos; esquivarlos sigue siendo una alternativa."
+    },
+    {
+      "frame": 1300,
+      "part": 1,
+      "service": null,
+      "lesson": "Activa con Abajo las runas en este orden: 2 > 1 > 3. Si te equivocas, vuelve a empezar sin perder energía. También puedes pisar los escarabajos desde arriba para eliminarlos; esquivarlos sigue siendo una alternativa."
+    }
+  ],
+  "scope": "Authorizes the unchanged A–E boundaries for source7. Compatible evidence keeps its original SHA; this audit alone is not a claim that every source6 witness was rerun on source7."
+}

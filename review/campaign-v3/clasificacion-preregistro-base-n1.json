@@ -1,0 +1,323 @@
+{
+  "protocol": "PREREGISTRO-ACTIVIDAD-RONDA2.md",
+  "sourceHash": "c6f2d2b8cf5e13d643af009a09c64bad0dbaf283006db34eb5193cb02b9c1d47",
+  "registryHash": "60a647d43bc88725908d50249ea9593c878e6097dde067c917859e905e0f0f9c",
+  "witness": "ruta-base-v2-n1.json",
+  "witnessHash": "09b674608783c519bd1031b542669078b4ae0f16f142dafe07d42f983a781795",
+  "level": 1,
+  "complete": true,
+  "comparisonEligible": true,
+  "frames": 3227,
+  "deaths": 0,
+  "lives": 3,
+  "minEnergy": 62.58916666665451,
+  "hits": 0,
+  "vector": {
+    "A": 4,
+    "B": 0,
+    "C": 2,
+    "D": 6,
+    "E": 0
+  },
+  "totalLowerBound": 12,
+  "uncertainEpisodes": [],
+  "excludedSurplusKeys": [],
+  "events": [
+    {
+      "frame": 487,
+      "family": "A",
+      "id": "N1-key-660-150",
+      "kind": "key"
+    },
+    {
+      "frame": 559,
+      "family": "A",
+      "id": "N1-door-48",
+      "kind": "door"
+    },
+    {
+      "frame": 2176,
+      "family": "A",
+      "id": "N1-key-1492-70",
+      "kind": "key"
+    },
+    {
+      "frame": 2821,
+      "family": "A",
+      "id": "N1-door-135",
+      "kind": "door"
+    }
+  ],
+  "episodes": [
+    {
+      "id": "N1-encounter-147-243",
+      "category": "D",
+      "startFrame": 63,
+      "endFrame": 127,
+      "actualFrames": 64,
+      "actualHits": 0,
+      "actualDeath": false,
+      "controlChanged": true,
+      "verticalMotion": true,
+      "qualified": true,
+      "status": "qualified",
+      "counterfactual": {
+        "direction": 1,
+        "limit": 124,
+        "frames": 94,
+        "hits": 1,
+        "dead": false,
+        "crossed": true,
+        "requestedFrames": 124
+      },
+      "note": "Local causal contrast; never used to complete the legal witness."
+    },
+    {
+      "id": "N1-transit-20-22",
+      "category": "C",
+      "startFrame": 172,
+      "endFrame": 215,
+      "actualFrames": 43,
+      "actualHits": 0,
+      "actualDeath": false,
+      "controlChanged": true,
+      "verticalMotion": true,
+      "qualified": true,
+      "status": "qualified",
+      "counterfactual": {
+        "direction": 1,
+        "limit": 103,
+        "frames": 20,
+        "hits": 0,
+        "dead": true,
+        "crossed": false,
+        "requestedFrames": 103
+      },
+      "note": "Local causal contrast; never used to complete the legal witness."
+    },
+    {
+      "id": "N1-encounter-368-499",
+      "category": "D",
+      "startFrame": 215,
+      "endFrame": 358,
+      "actualFrames": 143,
+      "actualHits": 0,
+      "actualDeath": false,
+      "controlChanged": true,
+      "verticalMotion": true,
+      "qualified": true,
+      "status": "qualified",
+      "counterfactual": {
+        "direction": 1,
+        "limit": 203,
+        "frames": 148,
+        "hits": 2,
+        "dead": false,
+        "crossed": true,
+        "requestedFrames": 203
+      },
+      "note": "Local causal contrast; never used to complete the legal witness."
+    },
+    {
+      "id": "N1-transit-35-37",
+      "category": "C",
+      "startFrame": 393,
+      "endFrame": 456,
+      "actualFrames": 63,
+      "actualHits": 0,
+      "actualDeath": false,
+      "controlChanged": true,
+      "verticalMotion": true,
+      "qualified": true,
+      "status": "qualified",
+      "counterfactual": {
+        "direction": 1,
+        "limit": 123,
+        "frames": 94,
+        "hits": 2,
+        "dead": false,
+        "crossed": true,
+        "requestedFrames": 123
+      },
+      "note": "Local causal contrast; never used to complete the legal witness."
+    },
+    {
+      "id": "N1-encounter-1026-1170",
+      "category": "D",
+      "startFrame": 757,
+      "endFrame": 853,
+      "actualFrames": 96,
+      "actualHits": 0,
+      "actualDeath": false,
+      "controlChanged": false,
+      "verticalMotion": false,
+      "qualified": false,
+      "status": "not-qualified",
+      "counterfactual": {
+        "direction": 1,
+        "limit": 156,
+        "frames": 96,
+        "hits": 0,
+        "dead": false,
+        "crossed": true,
+        "requestedFrames": 156
+      },
+      "note": "Local causal contrast; never used to complete the legal witness."
+    },
+    {
+      "id": "N1-encounter-1363-1459",
+      "category": "D",
+      "startFrame": 985,
+      "endFrame": 1097,
+      "actualFrames": 112,
+      "actualHits": 0,
+      "actualDeath": false,
+      "controlChanged": true,
+      "verticalMotion": true,
+      "qualified": true,
+      "status": "qualified",
+      "counterfactual": {
+        "direction": 1,
+        "limit": 172,
+        "frames": 96,
+        "hits": 1,
+        "dead": false,
+        "crossed": true,
+        "requestedFrames": 172
+      },
+      "note": "Local causal contrast; never used to complete the legal witness."
+    },
+    {
+      "id": "N1-encounter-1570-1683",
+      "category": "D",
+      "startFrame": 1171,
+      "endFrame": 1246,
+      "actualFrames": 75,
+      "actualHits": 0,
+      "actualDeath": false,
+      "controlChanged": true,
+      "verticalMotion": true,
+      "qualified": true,
+      "status": "qualified",
+      "counterfactual": {
+        "direction": 1,
+        "limit": 135,
+        "frames": 106,
+        "hits": 1,
+        "dead": false,
+        "crossed": true,
+        "requestedFrames": 135
+      },
+      "note": "Local causal contrast; never used to complete the legal witness."
+    },
+    {
+      "id": "N1-encounter-1747-1907",
+      "category": "D",
+      "startFrame": 1289,
+      "endFrame": 1396,
+      "actualFrames": 107,
+      "actualHits": 0,
+      "actualDeath": false,
+      "controlChanged": true,
+      "verticalMotion": true,
+      "qualified": true,
+      "status": "qualified",
+      "counterfactual": {
+        "direction": 1,
+        "limit": 167,
+        "frames": 137,
+        "hits": 1,
+        "dead": false,
+        "crossed": true,
+        "requestedFrames": 167
+      },
+      "note": "Local causal contrast; never used to complete the legal witness."
+    },
+    {
+      "id": "N1-encounter-1970-2066",
+      "category": "D",
+      "startFrame": 1438,
+      "endFrame": 1602,
+      "actualFrames": 164,
+      "actualHits": 0,
+      "actualDeath": false,
+      "controlChanged": true,
+      "verticalMotion": true,
+      "qualified": false,
+      "status": "not-qualified",
+      "counterfactual": {
+        "direction": 1,
+        "limit": 224,
+        "frames": 64,
+        "hits": 0,
+        "dead": false,
+        "crossed": true,
+        "requestedFrames": 224
+      },
+      "note": "Local causal contrast; never used to complete the legal witness."
+    },
+    {
+      "id": "N1-encounter-2290-2400",
+      "category": "D",
+      "startFrame": 2911,
+      "endFrame": 2985,
+      "actualFrames": 74,
+      "actualHits": 0,
+      "actualDeath": false,
+      "controlChanged": true,
+      "verticalMotion": true,
+      "qualified": false,
+      "status": "not-qualified",
+      "counterfactual": {
+        "direction": 1,
+        "limit": 134,
+        "frames": 74,
+        "hits": 0,
+        "dead": false,
+        "crossed": true,
+        "requestedFrames": 134
+      },
+      "note": "Local causal contrast; never used to complete the legal witness."
+    },
+    {
+      "id": "N1-encounter-2466-2659",
+      "category": "D",
+      "startFrame": 3038,
+      "endFrame": 3179,
+      "actualFrames": 141,
+      "actualHits": 0,
+      "actualDeath": false,
+      "controlChanged": true,
+      "verticalMotion": true,
+      "qualified": true,
+      "status": "qualified",
+      "counterfactual": {
+        "direction": 1,
+        "limit": 201,
+        "frames": 157,
+        "hits": 2,
+        "dead": false,
+        "crossed": true,
+        "requestedFrames": 201
+      },
+      "note": "Local causal contrast; never used to complete the legal witness."
+    }
+  ],
+  "uncompletedCandidates": [
+    "N1-transit-169-172"
+  ],
+  "contextFrames": {
+    "other_movement": 1376,
+    "encounter_context": 1775,
+    "transit_obstacle_context": 61,
+    "effective_charging": 15
+  },
+  "semanticActiveFrames": null,
+  "semanticCoverage": "Context is not semantic activity. Mandatory waiting/optional exploration are not established by this observer.",
+  "limitations": [
+    "Static entry can inherit a previously initiated jump; undercount is reported rather than moving boundaries retrospectively.",
+    "D uses a fixed observation radius, not actual enemy attack range.",
+    "Counterfactual fixtures establish only local response causality, not global necessity or human decisions.",
+    "Failure/recovery witnesses are ineligible for the no-death policy comparison."
+  ]
+}

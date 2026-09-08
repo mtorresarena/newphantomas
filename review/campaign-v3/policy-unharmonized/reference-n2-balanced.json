@@ -1,0 +1,1151 @@
+{
+  "policy": "balanced",
+  "sourceHash": "f8cabc99a67ff75ebf459c9c136a250c3cd59e8ebcefc7b282828d1eb16e5717",
+  "level": 2,
+  "complete": true,
+  "state": "clear",
+  "failed": null,
+  "scope": "Synthetic controller, production physics and hazards, clean replay; not human duration or difficulty. Partial prefixes are not completability evidence.",
+  "metrics": {
+    "frames": 4073,
+    "jumps": 48,
+    "directionChanges": 26,
+    "idleInputFrames": 370,
+    "stationaryFrames": 178,
+    "movingFrames": 3895,
+    "chargingFrames": 297,
+    "hits": 7,
+    "keys": 3,
+    "doors": 3,
+    "minEnergy": 44.9,
+    "distancePx": 5339,
+    "simulatedSeconds": 67.88
+  },
+  "stages": [
+    {
+      "target": {
+        "type": "stance",
+        "x": 186,
+        "y": 103,
+        "zone": "moat"
+      },
+      "frames": 100,
+      "energy": 97.9,
+      "expanded": 135
+    },
+    {
+      "target": {
+        "type": "stance",
+        "x": 280,
+        "y": 103,
+        "zone": "moat"
+      },
+      "frames": 110,
+      "energy": 96.3,
+      "expanded": 480
+    },
+    {
+      "target": {
+        "type": "k",
+        "x": 600,
+        "y": 152,
+        "ox": 596,
+        "zone": "moat"
+      },
+      "frames": 240,
+      "energy": 74.1,
+      "expanded": 140
+    },
+    {
+      "target": {
+        "type": "exit",
+        "x": 648,
+        "y": 145,
+        "zone": "moat"
+      },
+      "frames": 40,
+      "energy": 73.7,
+      "expanded": 4
+    },
+    {
+      "target": {
+        "type": "E",
+        "x": 1416,
+        "y": 128,
+        "ox": 1408,
+        "zone": "court"
+      },
+      "frames": 570,
+      "energy": 100,
+      "expanded": 91
+    },
+    {
+      "target": {
+        "type": "exit",
+        "x": 1448,
+        "y": 145,
+        "zone": "court"
+      },
+      "frames": 20,
+      "energy": 99.8,
+      "expanded": 2
+    },
+    {
+      "target": {
+        "type": "k",
+        "x": 1816,
+        "y": 56,
+        "ox": 1812,
+        "zone": "armory"
+      },
+      "frames": 260,
+      "energy": 94.4,
+      "expanded": 238
+    },
+    {
+      "target": {
+        "type": "exit",
+        "x": 2152,
+        "y": 145,
+        "zone": "armory"
+      },
+      "frames": 320,
+      "energy": 46.5,
+      "expanded": 383
+    },
+    {
+      "target": {
+        "type": "E",
+        "x": 2232,
+        "y": 128,
+        "ox": 2224,
+        "zone": "dungeon"
+      },
+      "frames": 260,
+      "energy": 100,
+      "expanded": 52
+    },
+    {
+      "target": {
+        "type": "exit",
+        "x": 2904,
+        "y": 145,
+        "zone": "dungeon"
+      },
+      "frames": 610,
+      "energy": 99.4,
+      "expanded": 639
+    },
+    {
+      "target": {
+        "type": "E",
+        "x": 3512,
+        "y": 128,
+        "ox": 3504,
+        "zone": "keep"
+      },
+      "frames": 460,
+      "energy": 99.8,
+      "expanded": 75
+    },
+    {
+      "target": {
+        "type": "exit",
+        "x": 3544,
+        "y": 145,
+        "zone": "keep"
+      },
+      "frames": 30,
+      "energy": 99.8,
+      "expanded": 3
+    },
+    {
+      "target": {
+        "type": "k",
+        "x": 3992,
+        "y": 40,
+        "ox": 3988,
+        "zone": "bell"
+      },
+      "frames": 330,
+      "energy": 92.6,
+      "expanded": 2230
+    },
+    {
+      "target": {
+        "type": "exit",
+        "x": 4184,
+        "y": 145,
+        "zone": "bell"
+      },
+      "frames": 150,
+      "energy": 91.2,
+      "expanded": 15
+    },
+    {
+      "target": {
+        "type": "S",
+        "x": 4944,
+        "y": 140,
+        "ox": 4928,
+        "zone": "coffin"
+      },
+      "frames": 580,
+      "energy": 63.5,
+      "expanded": 251
+    }
+  ],
+  "actions": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      -1,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ]
+  ],
+  "framesPerAction": 10,
+  "inputs": [
+    0,
+    1,
+    1,
+    0,
+    0,
+    2,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    4,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    6,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    6,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    2,
+    1,
+    0,
+    0,
+    0,
+    2,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    6,
+    0,
+    1,
+    0,
+    6,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    2,
+    0,
+    2,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    1,
+    2,
+    0,
+    2,
+    3,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    6,
+    4,
+    0,
+    0,
+    0,
+    0,
+    4,
+    2,
+    0,
+    4,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    4,
+    0,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    2,
+    4,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    6,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    4,
+    0,
+    0,
+    0,
+    1,
+    0,
+    6,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    6,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    2,
+    0,
+    1,
+    0,
+    6,
+    0,
+    0,
+    1,
+    0,
+    6,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    6,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    6,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    0,
+    2,
+    0,
+    0,
+    0,
+    5,
+    4,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    1,
+    0,
+    1,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    6,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    3,
+    4,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    2,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    2,
+    0,
+    4,
+    2,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "events": [
+    {
+      "frame": 11,
+      "kind": "jump",
+      "x": 65,
+      "y": 136.7,
+      "energy": 99.3
+    },
+    {
+      "frame": 61,
+      "kind": "jump",
+      "x": 131.6,
+      "y": 136.7,
+      "energy": 98.2
+    },
+    {
+      "frame": 171,
+      "kind": "jump",
+      "x": 230.5,
+      "y": 91,
+      "energy": 96.6
+    },
+    {
+      "frame": 369,
+      "kind": "damage",
+      "x": 517.6,
+      "y": 142,
+      "energy": 74.8
+    },
+    {
+      "frame": 446,
+      "kind": "key",
+      "x": 587.2,
+      "y": 142,
+      "energy": 74.1
+    },
+    {
+      "frame": 491,
+      "kind": "jump",
+      "x": 654.7,
+      "y": 136.7,
+      "energy": 73.1
+    },
+    {
+      "frame": 529,
+      "kind": "door",
+      "x": 694.4,
+      "y": 135.9,
+      "energy": 72.8
+    },
+    {
+      "frame": 532,
+      "kind": "jump",
+      "x": 697.5,
+      "y": 136.7,
+      "energy": 72.1
+    },
+    {
+      "frame": 551,
+      "kind": "jump",
+      "x": 726,
+      "y": 136.7,
+      "energy": 71.3
+    },
+    {
+      "frame": 555,
+      "kind": "zone",
+      "x": 732,
+      "y": 128.7,
+      "energy": 71.3,
+      "zone": "court"
+    },
+    {
+      "frame": 571,
+      "kind": "jump",
+      "x": 756,
+      "y": 136.7,
+      "energy": 70.6
+    },
+    {
+      "frame": 576,
+      "kind": "checkpoint",
+      "x": 763.5,
+      "y": 113.8,
+      "energy": 70.5
+    },
+    {
+      "frame": 612,
+      "kind": "jump",
+      "x": 817.5,
+      "y": 136.7,
+      "energy": 69.6
+    },
+    {
+      "frame": 653,
+      "kind": "jump",
+      "x": 869.8,
+      "y": 136.7,
+      "energy": 68.6
+    },
+    {
+      "frame": 691,
+      "kind": "jump",
+      "x": 926.8,
+      "y": 136.7,
+      "energy": 67.7
+    },
+    {
+      "frame": 732,
+      "kind": "jump",
+      "x": 981.2,
+      "y": 136.7,
+      "energy": 66.7
+    },
+    {
+      "frame": 786,
+      "kind": "jump",
+      "x": 1050.5,
+      "y": 136.7,
+      "energy": 65.6
+    },
+    {
+      "frame": 821,
+      "kind": "jump",
+      "x": 1103,
+      "y": 136.7,
+      "energy": 64.7
+    },
+    {
+      "frame": 862,
+      "kind": "jump",
+      "x": 1164.5,
+      "y": 136.7,
+      "energy": 63.7
+    },
+    {
+      "frame": 911,
+      "kind": "jump",
+      "x": 1228.1,
+      "y": 136.7,
+      "energy": 62.6
+    },
+    {
+      "frame": 956,
+      "kind": "jump",
+      "x": 1287.2,
+      "y": 136.7,
+      "energy": 61.6
+    },
+    {
+      "frame": 991,
+      "kind": "jump",
+      "x": 1339.7,
+      "y": 136.7,
+      "energy": 60.7
+    },
+    {
+      "frame": 1070,
+      "kind": "zone",
+      "x": 1436.4,
+      "y": 142,
+      "energy": 99.9,
+      "zone": "armory"
+    },
+    {
+      "frame": 1081,
+      "kind": "jump",
+      "x": 1452.9,
+      "y": 136.7,
+      "energy": 99.2
+    },
+    {
+      "frame": 1116,
+      "kind": "jump",
+      "x": 1505.4,
+      "y": 88.7,
+      "energy": 98.3
+    },
+    {
+      "frame": 1163,
+      "kind": "jump",
+      "x": 1559.3,
+      "y": 88.7,
+      "energy": 97.3
+    },
+    {
+      "frame": 1251,
+      "kind": "jump",
+      "x": 1680,
+      "y": 40.7,
+      "energy": 95.9
+    },
+    {
+      "frame": 1284,
+      "kind": "jump",
+      "x": 1729.5,
+      "y": 88.7,
+      "energy": 95
+    },
+    {
+      "frame": 1333,
+      "kind": "key",
+      "x": 1803,
+      "y": 46,
+      "energy": 94.5
+    },
+    {
+      "frame": 1432,
+      "kind": "jump",
+      "x": 1865.7,
+      "y": 142,
+      "energy": 58.6
+    },
+    {
+      "frame": 1432,
+      "kind": "damage",
+      "x": 1865.7,
+      "y": 142,
+      "energy": 58.6
+    },
+    {
+      "frame": 1539,
+      "kind": "damage",
+      "x": 2026.2,
+      "y": 142,
+      "energy": 47.6
+    },
+    {
+      "frame": 1653,
+      "kind": "door",
+      "x": 2151.3,
+      "y": 142,
+      "energy": 46.6
+    },
+    {
+      "frame": 1661,
+      "kind": "jump",
+      "x": 2163.3,
+      "y": 136.7,
+      "energy": 45.9
+    },
+    {
+      "frame": 1677,
+      "kind": "zone",
+      "x": 2187.3,
+      "y": 142,
+      "energy": 45.8,
+      "zone": "dungeon"
+    },
+    {
+      "frame": 1681,
+      "kind": "jump",
+      "x": 2193.3,
+      "y": 136.7,
+      "energy": 45.1
+    },
+    {
+      "frame": 1718,
+      "kind": "checkpoint",
+      "x": 2218.8,
+      "y": 131.4,
+      "energy": 48.5
+    },
+    {
+      "frame": 1935,
+      "kind": "damage",
+      "x": 2260.6,
+      "y": 142,
+      "energy": 89.9
+    },
+    {
+      "frame": 2126,
+      "kind": "damage",
+      "x": 2426.6,
+      "y": 142,
+      "energy": 79.7
+    },
+    {
+      "frame": 2181,
+      "kind": "jump",
+      "x": 2503.5,
+      "y": 140.2,
+      "energy": 78.6
+    },
+    {
+      "frame": 2273,
+      "kind": "damage",
+      "x": 2634.8,
+      "y": 142,
+      "energy": 67.8
+    },
+    {
+      "frame": 2421,
+      "kind": "jump",
+      "x": 2759.8,
+      "y": 140.2,
+      "energy": 65.8
+    },
+    {
+      "frame": 2515,
+      "kind": "zone",
+      "x": 2891.2,
+      "y": 142,
+      "energy": 99.5,
+      "zone": "keep"
+    },
+    {
+      "frame": 2531,
+      "kind": "jump",
+      "x": 2915.2,
+      "y": 136.7,
+      "energy": 98.8
+    },
+    {
+      "frame": 2536,
+      "kind": "checkpoint",
+      "x": 2922.7,
+      "y": 113.8,
+      "energy": 98.7
+    },
+    {
+      "frame": 2576,
+      "kind": "jump",
+      "x": 2974.4,
+      "y": 136.7,
+      "energy": 97.7
+    },
+    {
+      "frame": 2611,
+      "kind": "jump",
+      "x": 3026.9,
+      "y": 136.7,
+      "energy": 96.8
+    },
+    {
+      "frame": 2652,
+      "kind": "jump",
+      "x": 3081.3,
+      "y": 136.7,
+      "energy": 95.8
+    },
+    {
+      "frame": 2701,
+      "kind": "jump",
+      "x": 3145.6,
+      "y": 136.7,
+      "energy": 94.8
+    },
+    {
+      "frame": 2746,
+      "kind": "jump",
+      "x": 3204.7,
+      "y": 136.7,
+      "energy": 93.8
+    },
+    {
+      "frame": 2781,
+      "kind": "jump",
+      "x": 3257.2,
+      "y": 136.7,
+      "energy": 92.9
+    },
+    {
+      "frame": 2826,
+      "kind": "jump",
+      "x": 3316.3,
+      "y": 136.7,
+      "energy": 91.9
+    },
+    {
+      "frame": 2861,
+      "kind": "jump",
+      "x": 3368.8,
+      "y": 136.7,
+      "energy": 90.9
+    },
+    {
+      "frame": 2906,
+      "kind": "jump",
+      "x": 3427.9,
+      "y": 136.7,
+      "energy": 89.9
+    },
+    {
+      "frame": 3005,
+      "kind": "zone",
+      "x": 3531.7,
+      "y": 142,
+      "energy": 99.9,
+      "zone": "bell"
+    },
+    {
+      "frame": 3021,
+      "kind": "jump",
+      "x": 3555.4,
+      "y": 136.7,
+      "energy": 99.2
+    },
+    {
+      "frame": 3051,
+      "kind": "jump",
+      "x": 3540.7,
+      "y": 90.1,
+      "energy": 98.3
+    },
+    {
+      "frame": 3106,
+      "kind": "jump",
+      "x": 3623.2,
+      "y": 136.7,
+      "energy": 97.2
+    },
+    {
+      "frame": 3153,
+      "kind": "jump",
+      "x": 3693.7,
+      "y": 136.7,
+      "energy": 96.2
+    },
+    {
+      "frame": 3201,
+      "kind": "jump",
+      "x": 3765.7,
+      "y": 136.7,
+      "energy": 95.1
+    },
+    {
+      "frame": 3261,
+      "kind": "jump",
+      "x": 3855.7,
+      "y": 136.7,
+      "energy": 94
+    },
+    {
+      "frame": 3296,
+      "kind": "jump",
+      "x": 3908.2,
+      "y": 87.9,
+      "energy": 93.1
+    },
+    {
+      "frame": 3343,
+      "kind": "key",
+      "x": 3978.7,
+      "y": 30,
+      "energy": 92.6
+    },
+    {
+      "frame": 3495,
+      "kind": "door",
+      "x": 4183.3,
+      "y": 142,
+      "energy": 91.2
+    },
+    {
+      "frame": 3501,
+      "kind": "jump",
+      "x": 4192.3,
+      "y": 136.7,
+      "energy": 90.6
+    },
+    {
+      "frame": 3519,
+      "kind": "zone",
+      "x": 4219.3,
+      "y": 142,
+      "energy": 90.4,
+      "zone": "coffin"
+    },
+    {
+      "frame": 3540,
+      "kind": "checkpoint",
+      "x": 4250.8,
+      "y": 142,
+      "energy": 90.2
+    },
+    {
+      "frame": 3661,
+      "kind": "jump",
+      "x": 4432.3,
+      "y": 136.7,
+      "energy": 88.5
+    },
+    {
+      "frame": 3696,
+      "kind": "damage",
+      "x": 4465.5,
+      "y": 123.2,
+      "energy": 68.2
+    },
+    {
+      "frame": 3841,
+      "kind": "jump",
+      "x": 4648.5,
+      "y": 136.7,
+      "energy": 66.3
+    },
+    {
+      "frame": 4021,
+      "kind": "jump",
+      "x": 4840.7,
+      "y": 136.7,
+      "energy": 64
+    }
+  ]
+}

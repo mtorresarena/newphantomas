@@ -1,0 +1,823 @@
+{
+  "sourceHash": "faeccc2abdcd3ccff53bd12e98f91720e6d3704f72f1f1d90a8e2606d2dfd427",
+  "fixture": true,
+  "scope": "Exhaustive binary-angle mirror logic fixtures and optimistic horizontal timer bounds. No legal route accessibility, human difficulty or timing sufficiency is inferred.",
+  "mirrors": [
+    {
+      "level": 7,
+      "id": "1-1",
+      "part": 1,
+      "sourceDirection": 1,
+      "mirrorCount": 2,
+      "initial": [
+        0,
+        0
+      ],
+      "initialSolves": false,
+      "solutions": [
+        {
+          "mask": 3,
+          "angles": [
+            1,
+            1
+          ],
+          "beam": [
+            {
+              "x0": 216,
+              "y0": 152,
+              "x1": 328,
+              "y1": 152
+            },
+            {
+              "x0": 328,
+              "y0": 152,
+              "x1": 328,
+              "y1": 72
+            },
+            {
+              "x0": 328,
+              "y0": 72,
+              "x1": 568,
+              "y1": 72
+            }
+          ]
+        }
+      ],
+      "essential": [
+        {
+          "id": "A",
+          "affectsSolution": true
+        },
+        {
+          "id": "B",
+          "affectsSolution": true
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "id": "2-2",
+      "part": 2,
+      "sourceDirection": 1,
+      "mirrorCount": 3,
+      "initial": [
+        0,
+        0,
+        1
+      ],
+      "initialSolves": false,
+      "solutions": [
+        {
+          "mask": 3,
+          "angles": [
+            1,
+            1,
+            0
+          ],
+          "beam": [
+            {
+              "x0": 3176,
+              "y0": 152,
+              "x1": 3288,
+              "y1": 152
+            },
+            {
+              "x0": 3288,
+              "y0": 152,
+              "x1": 3288,
+              "y1": 72
+            },
+            {
+              "x0": 3288,
+              "y0": 72,
+              "x1": 3512,
+              "y1": 72
+            },
+            {
+              "x0": 3512,
+              "y0": 72,
+              "x1": 3512,
+              "y1": 120
+            }
+          ]
+        }
+      ],
+      "essential": [
+        {
+          "id": "A",
+          "affectsSolution": true
+        },
+        {
+          "id": "B",
+          "affectsSolution": true
+        },
+        {
+          "id": "C",
+          "affectsSolution": true
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "id": "3-1",
+      "part": 3,
+      "sourceDirection": 1,
+      "mirrorCount": 3,
+      "initial": [
+        1,
+        1,
+        0
+      ],
+      "initialSolves": false,
+      "solutions": [
+        {
+          "mask": 4,
+          "angles": [
+            0,
+            0,
+            1
+          ],
+          "beam": [
+            {
+              "x0": 4040,
+              "y0": 56,
+              "x1": 4168,
+              "y1": 56
+            },
+            {
+              "x0": 4168,
+              "y0": 56,
+              "x1": 4168,
+              "y1": 136
+            },
+            {
+              "x0": 4168,
+              "y0": 136,
+              "x1": 4376,
+              "y1": 136
+            },
+            {
+              "x0": 4376,
+              "y0": 136,
+              "x1": 4376,
+              "y1": 56
+            }
+          ]
+        }
+      ],
+      "essential": [
+        {
+          "id": "A",
+          "affectsSolution": true
+        },
+        {
+          "id": "B",
+          "affectsSolution": true
+        },
+        {
+          "id": "C",
+          "affectsSolution": true
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "id": "4-2",
+      "part": 4,
+      "sourceDirection": 3,
+      "mirrorCount": 3,
+      "initial": [
+        1,
+        1,
+        0
+      ],
+      "initialSolves": false,
+      "solutions": [
+        {
+          "mask": 4,
+          "angles": [
+            0,
+            0,
+            1
+          ],
+          "beam": [
+            {
+              "x0": 7864,
+              "y0": 152,
+              "x1": 7768,
+              "y1": 152
+            },
+            {
+              "x0": 7768,
+              "y0": 152,
+              "x1": 7768,
+              "y1": 56
+            },
+            {
+              "x0": 7768,
+              "y0": 56,
+              "x1": 7544,
+              "y1": 56
+            },
+            {
+              "x0": 7544,
+              "y0": 56,
+              "x1": 7544,
+              "y1": 120
+            }
+          ]
+        }
+      ],
+      "essential": [
+        {
+          "id": "A",
+          "affectsSolution": true
+        },
+        {
+          "id": "B",
+          "affectsSolution": true
+        },
+        {
+          "id": "C",
+          "affectsSolution": true
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "id": "5-1",
+      "part": 5,
+      "sourceDirection": 3,
+      "mirrorCount": 3,
+      "initial": [
+        0,
+        0,
+        1
+      ],
+      "initialSolves": false,
+      "solutions": [
+        {
+          "mask": 3,
+          "angles": [
+            1,
+            1,
+            0
+          ],
+          "beam": [
+            {
+              "x0": 8696,
+              "y0": 72,
+              "x1": 8568,
+              "y1": 72
+            },
+            {
+              "x0": 8568,
+              "y0": 72,
+              "x1": 8568,
+              "y1": 152
+            },
+            {
+              "x0": 8568,
+              "y0": 152,
+              "x1": 8392,
+              "y1": 152
+            },
+            {
+              "x0": 8392,
+              "y0": 152,
+              "x1": 8392,
+              "y1": 56
+            }
+          ]
+        }
+      ],
+      "essential": [
+        {
+          "id": "A",
+          "affectsSolution": true
+        },
+        {
+          "id": "B",
+          "affectsSolution": true
+        },
+        {
+          "id": "C",
+          "affectsSolution": true
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "id": "5-2",
+      "part": 5,
+      "sourceDirection": 1,
+      "mirrorCount": 4,
+      "initial": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "initialSolves": false,
+      "solutions": [
+        {
+          "mask": 11,
+          "angles": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "beam": [
+            {
+              "x0": 9848,
+              "y0": 136,
+              "x1": 9960,
+              "y1": 136
+            },
+            {
+              "x0": 9960,
+              "y0": 136,
+              "x1": 9960,
+              "y1": 56
+            },
+            {
+              "x0": 9960,
+              "y0": 56,
+              "x1": 10184,
+              "y1": 56
+            },
+            {
+              "x0": 10184,
+              "y0": 56,
+              "x1": 10184,
+              "y1": 104
+            },
+            {
+              "x0": 10184,
+              "y0": 104,
+              "x1": 10056,
+              "y1": 104
+            }
+          ]
+        }
+      ],
+      "essential": [
+        {
+          "id": "A",
+          "affectsSolution": true
+        },
+        {
+          "id": "B",
+          "affectsSolution": true
+        },
+        {
+          "id": "C",
+          "affectsSolution": true
+        },
+        {
+          "id": "D",
+          "affectsSolution": true
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "id": "3-1",
+      "part": 3,
+      "sourceDirection": 1,
+      "mirrorCount": 3,
+      "initial": [
+        1,
+        1,
+        0
+      ],
+      "initialSolves": false,
+      "solutions": [
+        {
+          "mask": 4,
+          "angles": [
+            0,
+            0,
+            1
+          ],
+          "beam": [
+            {
+              "x0": 4296,
+              "y0": 56,
+              "x1": 4424,
+              "y1": 56
+            },
+            {
+              "x0": 4424,
+              "y0": 56,
+              "x1": 4424,
+              "y1": 136
+            },
+            {
+              "x0": 4424,
+              "y0": 136,
+              "x1": 4632,
+              "y1": 136
+            },
+            {
+              "x0": 4632,
+              "y0": 136,
+              "x1": 4632,
+              "y1": 56
+            }
+          ]
+        }
+      ],
+      "essential": [
+        {
+          "id": "A",
+          "affectsSolution": true
+        },
+        {
+          "id": "B",
+          "affectsSolution": true
+        },
+        {
+          "id": "C",
+          "affectsSolution": true
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "id": "5-2",
+      "part": 5,
+      "sourceDirection": 1,
+      "mirrorCount": 4,
+      "initial": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "initialSolves": false,
+      "solutions": [
+        {
+          "mask": 11,
+          "angles": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "beam": [
+            {
+              "x0": 10488,
+              "y0": 136,
+              "x1": 10600,
+              "y1": 136
+            },
+            {
+              "x0": 10600,
+              "y0": 136,
+              "x1": 10600,
+              "y1": 56
+            },
+            {
+              "x0": 10600,
+              "y0": 56,
+              "x1": 10824,
+              "y1": 56
+            },
+            {
+              "x0": 10824,
+              "y0": 56,
+              "x1": 10824,
+              "y1": 104
+            },
+            {
+              "x0": 10824,
+              "y0": 104,
+              "x1": 10696,
+              "y1": 104
+            }
+          ]
+        }
+      ],
+      "essential": [
+        {
+          "id": "A",
+          "affectsSolution": true
+        },
+        {
+          "id": "B",
+          "affectsSolution": true
+        },
+        {
+          "id": "C",
+          "affectsSolution": true
+        },
+        {
+          "id": "D",
+          "affectsSolution": true
+        }
+      ]
+    }
+  ],
+  "timers": [
+    {
+      "level": 6,
+      "id": "1-1",
+      "order": [
+        "1",
+        "2"
+      ],
+      "duration": 600,
+      "nodes": [
+        {
+          "id": "1",
+          "x": 232,
+          "y": 152
+        },
+        {
+          "id": "2",
+          "x": 504,
+          "y": 88
+        }
+      ],
+      "gateX": 640,
+      "maximumHorizontalSpeed": 1.5,
+      "horizontalLowerFrames": 215.33333333333334,
+      "impossibleEvenIgnoringVerticalTravel": false
+    },
+    {
+      "level": 6,
+      "id": "2-2",
+      "order": [
+        "1",
+        "2",
+        "3"
+      ],
+      "duration": 420,
+      "nodes": [
+        {
+          "id": "1",
+          "x": 3576,
+          "y": 152
+        },
+        {
+          "id": "2",
+          "x": 3848,
+          "y": 88
+        },
+        {
+          "id": "3",
+          "x": 3928,
+          "y": 152
+        }
+      ],
+      "gateX": 3984,
+      "maximumHorizontalSpeed": 1.5,
+      "horizontalLowerFrames": 182,
+      "impossibleEvenIgnoringVerticalTravel": false
+    },
+    {
+      "level": 6,
+      "id": "3-1",
+      "order": [
+        "1",
+        "2",
+        "3"
+      ],
+      "duration": 660,
+      "nodes": [
+        {
+          "id": "1",
+          "x": 4440,
+          "y": 88
+        },
+        {
+          "id": "2",
+          "x": 4760,
+          "y": 152
+        },
+        {
+          "id": "3",
+          "x": 4632,
+          "y": 88
+        }
+      ],
+      "gateX": 4832,
+      "maximumHorizontalSpeed": 1.5,
+      "horizontalLowerFrames": 342,
+      "impossibleEvenIgnoringVerticalTravel": false
+    },
+    {
+      "level": 6,
+      "id": "4-2",
+      "order": [
+        "2",
+        "1",
+        "3"
+      ],
+      "duration": 780,
+      "nodes": [
+        {
+          "id": "2",
+          "x": 8632,
+          "y": 152
+        },
+        {
+          "id": "1",
+          "x": 8296,
+          "y": 56
+        },
+        {
+          "id": "3",
+          "x": 8584,
+          "y": 104
+        }
+      ],
+      "gateX": 8688,
+      "maximumHorizontalSpeed": 1.5,
+      "horizontalLowerFrames": 395.3333333333333,
+      "impossibleEvenIgnoringVerticalTravel": false
+    },
+    {
+      "level": 6,
+      "id": "5-1",
+      "order": [
+        "1",
+        "2",
+        "3"
+      ],
+      "duration": 720,
+      "nodes": [
+        {
+          "id": "1",
+          "x": 9480,
+          "y": 152
+        },
+        {
+          "id": "2",
+          "x": 9320,
+          "y": 88
+        },
+        {
+          "id": "3",
+          "x": 9160,
+          "y": 56
+        }
+      ],
+      "gateX": 9536,
+      "maximumHorizontalSpeed": 1.5,
+      "horizontalLowerFrames": 374,
+      "impossibleEvenIgnoringVerticalTravel": false
+    },
+    {
+      "level": 6,
+      "id": "5-2",
+      "order": [
+        "1",
+        "2",
+        "3"
+      ],
+      "duration": 420,
+      "nodes": [
+        {
+          "id": "1",
+          "x": 10664,
+          "y": 56
+        },
+        {
+          "id": "2",
+          "x": 10824,
+          "y": 104
+        },
+        {
+          "id": "3",
+          "x": 10984,
+          "y": 152
+        }
+      ],
+      "gateX": 11040,
+      "maximumHorizontalSpeed": 1.5,
+      "horizontalLowerFrames": 160.66666666666666,
+      "impossibleEvenIgnoringVerticalTravel": false
+    },
+    {
+      "level": 7,
+      "id": "3-2",
+      "order": [
+        "1",
+        "2",
+        "3"
+      ],
+      "duration": 660,
+      "nodes": [
+        {
+          "id": "1",
+          "x": 5304,
+          "y": 88
+        },
+        {
+          "id": "2",
+          "x": 5624,
+          "y": 152
+        },
+        {
+          "id": "3",
+          "x": 5496,
+          "y": 88
+        }
+      ],
+      "gateX": 5696,
+      "maximumHorizontalSpeed": 1.5,
+      "horizontalLowerFrames": 342,
+      "impossibleEvenIgnoringVerticalTravel": false
+    },
+    {
+      "level": 7,
+      "id": "4-1",
+      "order": [
+        "2",
+        "1",
+        "3"
+      ],
+      "duration": 780,
+      "nodes": [
+        {
+          "id": "2",
+          "x": 6488,
+          "y": 152
+        },
+        {
+          "id": "1",
+          "x": 6152,
+          "y": 56
+        },
+        {
+          "id": "3",
+          "x": 6440,
+          "y": 104
+        }
+      ],
+      "gateX": 6544,
+      "maximumHorizontalSpeed": 1.5,
+      "horizontalLowerFrames": 395.3333333333333,
+      "impossibleEvenIgnoringVerticalTravel": false
+    },
+    {
+      "level": 8,
+      "id": "1-2",
+      "order": [
+        "1",
+        "2"
+      ],
+      "duration": 600,
+      "nodes": [
+        {
+          "id": "1",
+          "x": 1352,
+          "y": 152
+        },
+        {
+          "id": "2",
+          "x": 1624,
+          "y": 88
+        }
+      ],
+      "gateX": 1760,
+      "maximumHorizontalSpeed": 1.5,
+      "horizontalLowerFrames": 215.33333333333334,
+      "impossibleEvenIgnoringVerticalTravel": false
+    },
+    {
+      "level": 8,
+      "id": "3-2",
+      "order": [
+        "1",
+        "2",
+        "3"
+      ],
+      "duration": 660,
+      "nodes": [
+        {
+          "id": "1",
+          "x": 5688,
+          "y": 88
+        },
+        {
+          "id": "2",
+          "x": 6008,
+          "y": 152
+        },
+        {
+          "id": "3",
+          "x": 5880,
+          "y": 88
+        }
+      ],
+      "gateX": 6080,
+      "maximumHorizontalSpeed": 1.5,
+      "horizontalLowerFrames": 342,
+      "impossibleEvenIgnoringVerticalTravel": false
+    }
+  ]
+}

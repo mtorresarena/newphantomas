@@ -1,0 +1,482 @@
+{
+  "commit": "31d461028516344bc0dbb80b7ecd625296509014",
+  "node": "v22.19.0",
+  "method": "Static definition and loadLevel inventory in DOM/canvas stubs; no route executed, no visual validation.",
+  "levels": [
+    {
+      "level": 1,
+      "name": "LA MANSIÓN DEL BARÓN",
+      "columns": 177,
+      "spawn": {
+        "x": 51,
+        "y": 142
+      },
+      "keys": 2,
+      "checkpoints": 3,
+      "chargers": 1,
+      "goalItems": 1,
+      "doorColumns": 2,
+      "boss": false,
+      "enemies": {
+        "w": 7,
+        "m": 2,
+        "g": 1,
+        "a": 2,
+        "c": 5
+      },
+      "rooms": [
+        {
+          "theme": "garden",
+          "columns": 44
+        },
+        {
+          "theme": "garden",
+          "columns": 6
+        },
+        {
+          "theme": "hall",
+          "columns": 40
+        },
+        {
+          "theme": "library",
+          "columns": 44
+        },
+        {
+          "theme": "library",
+          "columns": 3
+        },
+        {
+          "theme": "tower",
+          "columns": 40
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "name": "EL CASTILLO DE DRÁCULA",
+      "columns": 312,
+      "spawn": {
+        "x": 51,
+        "y": 142
+      },
+      "keys": 3,
+      "checkpoints": 5,
+      "chargers": 3,
+      "goalItems": 1,
+      "doorColumns": 3,
+      "boss": false,
+      "enemies": {
+        "w": 10,
+        "m": 5,
+        "n": 2,
+        "a": 2,
+        "c": 4,
+        "r": 9,
+        "v": 1
+      },
+      "rooms": [
+        {
+          "theme": "moat",
+          "columns": 40
+        },
+        {
+          "theme": "moat",
+          "columns": 6
+        },
+        {
+          "theme": "court",
+          "columns": 44
+        },
+        {
+          "theme": "armory",
+          "columns": 44
+        },
+        {
+          "theme": "armory",
+          "columns": 3
+        },
+        {
+          "theme": "dungeon",
+          "columns": 44
+        },
+        {
+          "theme": "keep",
+          "columns": 40
+        },
+        {
+          "theme": "bell",
+          "columns": 40
+        },
+        {
+          "theme": "bell",
+          "columns": 3
+        },
+        {
+          "theme": "coffin",
+          "columns": 48
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "name": "LOS TEJADOS",
+      "columns": 302,
+      "spawn": {
+        "x": 35,
+        "y": 126
+      },
+      "keys": 2,
+      "checkpoints": 5,
+      "chargers": 2,
+      "goalItems": 1,
+      "doorColumns": 2,
+      "boss": false,
+      "enemies": {
+        "m": 4,
+        "r": 8,
+        "a": 4,
+        "w": 6,
+        "n": 2,
+        "c": 4
+      },
+      "rooms": [
+        {
+          "theme": "roof",
+          "columns": 44
+        },
+        {
+          "theme": "roof2",
+          "columns": 40
+        },
+        {
+          "theme": "roof2",
+          "columns": 3
+        },
+        {
+          "theme": "attic",
+          "columns": 40
+        },
+        {
+          "theme": "attic",
+          "columns": 3
+        },
+        {
+          "theme": "warehouse",
+          "columns": 40
+        },
+        {
+          "theme": "sewer",
+          "columns": 44
+        },
+        {
+          "theme": "bridges",
+          "columns": 44
+        },
+        {
+          "theme": "roof3",
+          "columns": 44
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "name": "EL MUSEO",
+      "columns": 377,
+      "spawn": {
+        "x": 35,
+        "y": 142
+      },
+      "keys": 3,
+      "checkpoints": 6,
+      "chargers": 3,
+      "goalItems": 1,
+      "doorColumns": 3,
+      "boss": true,
+      "enemies": {
+        "w": 18,
+        "u": 6,
+        "n": 5,
+        "g": 3,
+        "a": 2,
+        "m": 5,
+        "c": 3,
+        "f": 3
+      },
+      "rooms": [
+        {
+          "theme": "museum",
+          "columns": 44
+        },
+        {
+          "theme": "museum",
+          "columns": 3
+        },
+        {
+          "theme": "egypt",
+          "columns": 44
+        },
+        {
+          "theme": "gallery",
+          "columns": 44
+        },
+        {
+          "theme": "gallery",
+          "columns": 3
+        },
+        {
+          "theme": "archive",
+          "columns": 44
+        },
+        {
+          "theme": "ballroom",
+          "columns": 48
+        },
+        {
+          "theme": "crypt",
+          "columns": 48
+        },
+        {
+          "theme": "crypt",
+          "columns": 3
+        },
+        {
+          "theme": "vault",
+          "columns": 44
+        },
+        {
+          "theme": "vault",
+          "columns": 16
+        },
+        {
+          "theme": "boss",
+          "columns": 20
+        },
+        {
+          "theme": "vault",
+          "columns": 16
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "name": "EL JARDÍN DE LAS ESTATUAS",
+      "columns": 256,
+      "spawn": {
+        "x": 51,
+        "y": 142
+      },
+      "keys": 4,
+      "checkpoints": 4,
+      "chargers": 5,
+      "goalItems": 1,
+      "doorColumns": 4,
+      "boss": false,
+      "enemies": {
+        "K": 6
+      },
+      "rooms": [
+        {
+          "theme": "statues",
+          "part": 1,
+          "label": "EL PASEO OLVIDADO",
+          "lesson": "Espera el aviso del centinela; salta su carga.",
+          "columns": 40
+        },
+        {
+          "theme": "court",
+          "part": 2,
+          "label": "EL PATIO DE PIEDRA",
+          "lesson": "Dos guardianes, dos refugios. Resuelve uno cada vez.",
+          "columns": 48
+        },
+        {
+          "theme": "sewer",
+          "part": 3,
+          "label": "LOS CANALES VERDES",
+          "lesson": "Dos charcas y una isla para recuperar el salto.",
+          "columns": 44
+        },
+        {
+          "theme": "crypt",
+          "part": 4,
+          "label": "EL CLAUSTRO HUNDIDO",
+          "lesson": "Cruza el canal. Sube por la derecha y vuelve a la llave.",
+          "columns": 56
+        },
+        {
+          "theme": "statues",
+          "part": 5,
+          "label": "EL ALTAR DE BRONCE",
+          "lesson": "Mide los saltos. Desde el balcón derecho vuelve al sello.",
+          "columns": 56
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "name": "LA TORRE DEL RELOJ",
+      "columns": 260,
+      "spawn": {
+        "x": 51,
+        "y": 142
+      },
+      "keys": 4,
+      "checkpoints": 4,
+      "chargers": 5,
+      "goalItems": 1,
+      "doorColumns": 4,
+      "boss": false,
+      "enemies": {},
+      "rooms": [
+        {
+          "theme": "warehouse",
+          "part": 1,
+          "label": "EL TALLER DEL RELOJ",
+          "lesson": "Las tablas vibran antes de caer. Practica sobre suelo seguro.",
+          "columns": 40
+        },
+        {
+          "theme": "clocktower",
+          "part": 2,
+          "label": "EL PUENTE DEL PÉNDULO",
+          "lesson": "Cruza las tablas frágiles; descansa en el apoyo central.",
+          "columns": 48
+        },
+        {
+          "theme": "attic",
+          "part": 3,
+          "label": "EL POZO DE PESAS",
+          "lesson": "Sube a la llave. Baja por las tablas hasta el apoyo de piedra.",
+          "columns": 48
+        },
+        {
+          "theme": "bell",
+          "part": 4,
+          "label": "LAS CAMPANAS ROTAS",
+          "lesson": "Espera el puente móvil antes de pisar las tablas.",
+          "columns": 56
+        },
+        {
+          "theme": "clocktower",
+          "part": 5,
+          "label": "LA MAQUINARIA MAYOR",
+          "lesson": "Ascensor, balcón y puente frágil: mantén el ritmo.",
+          "columns": 56
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "name": "EL OBSERVATORIO DEL BARÓN",
+      "columns": 264,
+      "spawn": {
+        "x": 51,
+        "y": 142
+      },
+      "keys": 4,
+      "checkpoints": 4,
+      "chargers": 5,
+      "goalItems": 1,
+      "doorColumns": 4,
+      "boss": false,
+      "enemies": {
+        "Y": 8
+      },
+      "rooms": [
+        {
+          "theme": "archive",
+          "part": 1,
+          "label": "EL ARCHIVO ESTELAR",
+          "lesson": "Usa la columna. Sube por la derecha y vuelve a la llave.",
+          "columns": 40
+        },
+        {
+          "theme": "observatory",
+          "part": 2,
+          "label": "LA GALERÍA DE LOS RAYOS",
+          "lesson": "Avanza de columna en columna cuando pase el orbe.",
+          "columns": 48
+        },
+        {
+          "theme": "roof2",
+          "part": 3,
+          "label": "LAS TERRAZAS LUNARES",
+          "lesson": "Gana altura y usa los muros como cobertura vertical.",
+          "columns": 48
+        },
+        {
+          "theme": "gallery",
+          "part": 4,
+          "label": "EL PASO DE LAS ÓRBITAS",
+          "lesson": "Resuelve al vigía desde el refugio y cruza el puente.",
+          "columns": 56
+        },
+        {
+          "theme": "observatory",
+          "part": 5,
+          "label": "LA CÚPULA DE LA LENTE",
+          "lesson": "Cruza entre disparos. Desde la derecha vuelve a la lente elevada.",
+          "columns": 60
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "name": "LA CÁMARA DEL CORAZÓN",
+      "columns": 300,
+      "spawn": {
+        "x": 51,
+        "y": 142
+      },
+      "keys": 4,
+      "checkpoints": 4,
+      "chargers": 5,
+      "goalItems": 1,
+      "doorColumns": 4,
+      "boss": false,
+      "enemies": {
+        "K": 3,
+        "Y": 3,
+        "f": 1,
+        "u": 1
+      },
+      "rooms": [
+        {
+          "theme": "vault",
+          "part": 1,
+          "label": "EL UMBRAL DEL SANTUARIO",
+          "lesson": "Alterna la carga de piedra y el tiro espectral.",
+          "columns": 44
+        },
+        {
+          "theme": "heart",
+          "part": 2,
+          "label": "LAS FORJAS DEL BARÓN",
+          "lesson": "Cruza el fuego y las tablas; recupera el salto en piedra.",
+          "columns": 52
+        },
+        {
+          "theme": "sewer",
+          "part": 3,
+          "label": "EL ACUEDUCTO SELLADO",
+          "lesson": "Recarga y cruza la sucesión de apoyos antes de la guardia.",
+          "columns": 48
+        },
+        {
+          "theme": "armory",
+          "part": 4,
+          "label": "LA GUARDIA DEL NÚCLEO",
+          "lesson": "Usa la cobertura. Del ascensor pasa a las tablas y a la llave.",
+          "columns": 68
+        },
+        {
+          "theme": "heart",
+          "part": 5,
+          "label": "EL CORAZÓN DEL CASTILLO",
+          "lesson": "Cambia de altura ante el vigía, supera la carga y cruza al corazón.",
+          "columns": 76
+        }
+      ]
+    }
+  ]
+}

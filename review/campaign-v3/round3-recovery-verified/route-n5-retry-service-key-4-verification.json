@@ -1,0 +1,221 @@
+{
+  "spec": {
+    "level": 5,
+    "part": 4,
+    "keyX": 7188,
+    "door": 463,
+    "type": "service-key-4",
+    "stage": "key"
+  },
+  "witnessHash": "f4f27224a9b150bb809cd6f098373683e8cdecd98b5002f5273ac96f521dc8c1",
+  "sourceHash": "f2a7d393a540134f0c049dfc589001928bb695ae71b0064c4ea0e9017025e780",
+  "frames": 20856,
+  "seconds": 347.6,
+  "complete": true,
+  "lives": 2,
+  "events": [
+    {
+      "frame": 16192,
+      "simF": 16192,
+      "type": "death",
+      "x": 7181.469304425061,
+      "y": 30,
+      "keys": 1,
+      "lives": 2,
+      "targetKeyPresent": false,
+      "targetDoorClosed": true,
+      "trials": [
+        {
+          "id": "1-1",
+          "kind": "charge",
+          "progress": 0,
+          "until": 0,
+          "remaining": -16192,
+          "solved": true
+        },
+        {
+          "id": "1-2",
+          "kind": "sequence",
+          "progress": 3,
+          "until": 0,
+          "remaining": -16192,
+          "solved": true
+        },
+        {
+          "id": "2-1",
+          "kind": "weight",
+          "progress": 0,
+          "until": 0,
+          "remaining": -16192,
+          "solved": true
+        },
+        {
+          "id": "2-2",
+          "kind": "charge",
+          "progress": 0,
+          "until": 0,
+          "remaining": -16192,
+          "solved": true
+        },
+        {
+          "id": "3-1",
+          "kind": "charge",
+          "progress": 0,
+          "until": 0,
+          "remaining": -16192,
+          "solved": true
+        },
+        {
+          "id": "3-2",
+          "kind": "weight",
+          "progress": 0,
+          "until": 0,
+          "remaining": -16192,
+          "solved": true
+        },
+        {
+          "id": "4-1",
+          "kind": "sequence",
+          "progress": 4,
+          "until": 0,
+          "remaining": -16192,
+          "solved": true
+        },
+        {
+          "id": "4-2",
+          "kind": "charge",
+          "progress": 0,
+          "until": 0,
+          "remaining": -16192,
+          "solved": false
+        },
+        {
+          "id": "5-1",
+          "kind": "charge",
+          "progress": 0,
+          "until": 0,
+          "remaining": -16192,
+          "solved": false
+        },
+        {
+          "id": "5-2",
+          "kind": "weight",
+          "progress": 0,
+          "until": 0,
+          "remaining": -16192,
+          "solved": false
+        }
+      ]
+    },
+    {
+      "frame": 16282,
+      "simF": 16282,
+      "type": "respawn",
+      "x": 5956,
+      "y": 142,
+      "keys": 1,
+      "lives": 2,
+      "targetKeyPresent": false,
+      "targetDoorClosed": true,
+      "trials": [
+        {
+          "id": "1-1",
+          "kind": "charge",
+          "progress": 0,
+          "until": 0,
+          "remaining": -16282,
+          "solved": true
+        },
+        {
+          "id": "1-2",
+          "kind": "sequence",
+          "progress": 3,
+          "until": 0,
+          "remaining": -16282,
+          "solved": true
+        },
+        {
+          "id": "2-1",
+          "kind": "weight",
+          "progress": 0,
+          "until": 0,
+          "remaining": -16282,
+          "solved": true
+        },
+        {
+          "id": "2-2",
+          "kind": "charge",
+          "progress": 0,
+          "until": 0,
+          "remaining": -16282,
+          "solved": true
+        },
+        {
+          "id": "3-1",
+          "kind": "charge",
+          "progress": 0,
+          "until": 0,
+          "remaining": -16282,
+          "solved": true
+        },
+        {
+          "id": "3-2",
+          "kind": "weight",
+          "progress": 0,
+          "until": 0,
+          "remaining": -16282,
+          "solved": true
+        },
+        {
+          "id": "4-1",
+          "kind": "sequence",
+          "progress": 4,
+          "until": 0,
+          "remaining": -16282,
+          "solved": true
+        },
+        {
+          "id": "4-2",
+          "kind": "charge",
+          "progress": 0,
+          "until": 0,
+          "remaining": -16282,
+          "solved": false
+        },
+        {
+          "id": "5-1",
+          "kind": "charge",
+          "progress": 0,
+          "until": 0,
+          "remaining": -16282,
+          "solved": false
+        },
+        {
+          "id": "5-2",
+          "kind": "weight",
+          "progress": 0,
+          "until": 0,
+          "remaining": -16282,
+          "solved": false
+        }
+      ]
+    }
+  ],
+  "keyEvents": [
+    {
+      "frame": 7720,
+      "keysBefore": 0,
+      "keysAfter": 1,
+      "x": 7178.683590139349,
+      "y": 30
+    },
+    {
+      "frame": 17258,
+      "keysBefore": 1,
+      "keysAfter": 0,
+      "x": 7398.88887637895,
+      "y": 142
+    }
+  ],
+  "fixture": false
+}

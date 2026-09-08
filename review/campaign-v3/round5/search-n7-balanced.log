@@ -1,0 +1,57 @@
+REPLAY 1 entrance
+REPLAY 1-1 mirror A
+REPLAY 1-1 mirror B
+REPLAY 1-1 gate
+REPLAY 1 traversal end
+REPLAY 1-2 rune 2
+REPLAY 1-2 rune 1
+REPLAY 1-2 rune 3
+REPLAY 1-2 gate
+REPLAY 1 end
+REPLAY 2 entrance
+REPLAY 2-1 rune 2
+REPLAY 2-1 rune 1
+REPLAY 2-1 rune 3
+REPLAY 2-1 gate
+REPLAY 2 traversal end
+REPLAY 2-2 mirror A
+REPLAY 2-2 mirror B
+REPLAY 2-2 mirror C
+REPLAY 2-2 gate
+REPLAY 2 end
+REPLAY 3 entrance
+Changed state, replanning 3-1 mirror A
+{"label":"3-1 mirror A","frames":250,"energy":96.4,"expanded":359,"commandEnd":385}
+{"label":"3-1 mirror B","frames":30,"energy":96,"expanded":3,"commandEnd":391}
+{"label":"3-1 mirror C","frames":130,"energy":94.1,"expanded":14,"commandEnd":407}
+{"label":"3-1 gate","frames":70,"energy":93.1,"expanded":7,"commandEnd":418}
+{"label":"3 traversal end","frames":280,"energy":88.7,"expanded":1410,"commandEnd":446}
+{"label":"3-2 rune 1","frames":350,"energy":92,"expanded":701,"commandEnd":481}
+{"label":"3-2 rune 2","frames":210,"energy":90,"expanded":21,"commandEnd":505}
+{"label":"3-2 rune 3","frames":80,"energy":88,"expanded":12,"commandEnd":516}
+{"label":"3-2 gate","frames":150,"energy":86.5,"expanded":15,"commandEnd":534}
+{"label":"3 end","frames":50,"energy":100,"expanded":5,"commandEnd":539}
+{"label":"4 entrance","frames":100,"energy":99.1,"expanded":10,"commandEnd":549}
+{"label":"4-1 rune 2","frames":350,"energy":95.8,"expanded":35,"commandEnd":584}
+{"label":"4-1 rune 1","frames":210,"energy":90.8,"expanded":65,"commandEnd":608}
+{"label":"4-1 rune 3","frames":210,"energy":87,"expanded":124,"commandEnd":632}
+{"label":"4-1 gate","frames":90,"energy":86.1,"expanded":9,"commandEnd":644}
+{"label":"4 traversal end","frames":270,"energy":81.8,"expanded":1443,"commandEnd":671}
+{"label":"4-2 mirror A","frames":520,"energy":94.7,"expanded":202,"commandEnd":723}
+{"label":"4-2 mirror B","frames":100,"energy":91.9,"expanded":205,"commandEnd":736}
+{"label":"4-2 mirror C","frames":190,"energy":88.2,"expanded":1331,"commandEnd":758}
+{"label":"4-2 gate","frames":270,"energy":85.3,"expanded":27,"commandEnd":789}
+{"label":"4 end","frames":50,"energy":100,"expanded":5,"commandEnd":794}
+{"label":"5 entrance","frames":100,"energy":99,"expanded":10,"commandEnd":804}
+{"label":"5-1 mirror A","frames":280,"energy":95.6,"expanded":298,"commandEnd":832}
+{"label":"5-1 mirror B","frames":30,"energy":95.2,"expanded":3,"commandEnd":838}
+{"label":"5-1 mirror C","frames":120,"energy":94,"expanded":12,"commandEnd":853}
+{"label":"5-1 gate","frames":270,"energy":91.1,"expanded":27,"commandEnd":884}
+{"label":"5 traversal end","frames":260,"energy":86.9,"expanded":1281,"commandEnd":910}
+{"label":"5-2 mirror A","frames":530,"energy":81.5,"expanded":62,"commandEnd":963}
+{"label":"5-2 mirror B","frames":70,"energy":79.6,"expanded":22,"commandEnd":973}
+{"label":"5-2 mirror C","frames":160,"energy":76.2,"expanded":58,"commandEnd":992}
+{"label":"5-2 mirror D","frames":20,"energy":75.9,"expanded":2,"commandEnd":997}
+{"label":"5-2 gate","frames":80,"energy":74.8,"expanded":8,"commandEnd":1009}
+{"label":"goal","frames":40,"energy":74.5,"expanded":4,"commandEnd":1013}
+PASS N7 161.2s

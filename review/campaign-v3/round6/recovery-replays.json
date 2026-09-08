@@ -1,0 +1,258 @@
+{
+  "sourceHash": "5963bcc02f71090a958df9737eca2b8fd5a96ed0a615f4a9dcbe4be4dc04ef21",
+  "scope": "Legal control traces from natural spawn through deliberate death or timer expiry to level completion; no gameplay state injection. Earlier compatible recovery evidence remains archived.",
+  "expected": 4,
+  "complete": true,
+  "results": [
+    {
+      "name": "route-n5-cautious-retry-weight-trial5-2",
+      "file": "review\\campaign-v3\\round6\\route-n5-cautious-retry-weight-trial5-2.json",
+      "recordedSourceHash": "5963bcc02f71090a958df9737eca2b8fd5a96ed0a615f4a9dcbe4be4dc04ef21",
+      "inputHash": "b707fa3227a8e339feb85c5fed54a8f265b61a75690643fcf7c229bb6ae1f964",
+      "frames": 21726,
+      "transitions": [
+        {
+          "frame": 19584,
+          "dead": true,
+          "lives": 2,
+          "keys": 0,
+          "x": 10189.078692587753,
+          "solved": [
+            "1-1",
+            "1-2",
+            "2-1",
+            "2-2",
+            "3-1",
+            "3-2",
+            "4-1",
+            "4-2",
+            "5-1"
+          ],
+          "timed": [],
+          "boss": null
+        },
+        {
+          "frame": 19674,
+          "dead": false,
+          "lives": 2,
+          "keys": 0,
+          "x": 8180,
+          "solved": [
+            "1-1",
+            "1-2",
+            "2-1",
+            "2-2",
+            "3-1",
+            "3-2",
+            "4-1",
+            "4-2",
+            "5-1"
+          ],
+          "timed": [],
+          "boss": null
+        }
+      ],
+      "final": {
+        "state": "clear",
+        "lives": 2
+      }
+    },
+    {
+      "name": "route-n7-retry-mirror-trial5-2",
+      "file": "review\\campaign-v3\\round6\\route-n7-retry-mirror-trial5-2.json",
+      "recordedSourceHash": "5963bcc02f71090a958df9737eca2b8fd5a96ed0a615f4a9dcbe4be4dc04ef21",
+      "inputHash": "a5ef42077716b44ab42420dd688ed665ed32f1f1e90023b19756382a15f7d9b4",
+      "frames": 20819,
+      "transitions": [
+        {
+          "frame": 19156,
+          "dead": true,
+          "lives": 2,
+          "keys": 0,
+          "x": 9968.381383952763,
+          "solved": [
+            "1-1",
+            "1-2",
+            "2-1",
+            "2-2",
+            "3-1",
+            "3-2",
+            "4-1",
+            "4-2",
+            "5-1"
+          ],
+          "timed": [
+            {
+              "id": "3-2",
+              "progress": 3,
+              "remaining": -14012
+            },
+            {
+              "id": "4-1",
+              "progress": 3,
+              "remaining": -12892
+            }
+          ],
+          "boss": null
+        },
+        {
+          "frame": 19246,
+          "dead": false,
+          "lives": 2,
+          "keys": 0,
+          "x": 8180,
+          "solved": [
+            "1-1",
+            "1-2",
+            "2-1",
+            "2-2",
+            "3-1",
+            "3-2",
+            "4-1",
+            "4-2",
+            "5-1"
+          ],
+          "timed": [
+            {
+              "id": "3-2",
+              "progress": 3,
+              "remaining": -14102
+            },
+            {
+              "id": "4-1",
+              "progress": 3,
+              "remaining": -12982
+            }
+          ],
+          "boss": null
+        }
+      ],
+      "final": {
+        "state": "clear",
+        "lives": 2
+      }
+    },
+    {
+      "name": "route-n6-expire-trial4-2",
+      "file": "review\\campaign-v3\\round6\\route-n6-expire-trial4-2.json",
+      "recordedSourceHash": "5963bcc02f71090a958df9737eca2b8fd5a96ed0a615f4a9dcbe4be4dc04ef21",
+      "inputHash": "abb36004c3c07d20ee5acfd33b9ebc11027660abad5c1537010a085ab41f31da",
+      "frames": 11977,
+      "transitions": [],
+      "final": {
+        "state": "clear",
+        "lives": 3
+      }
+    },
+    {
+      "name": "route-n6-retry-timed-active-trial5-2",
+      "file": "review\\campaign-v3\\round6\\route-n6-retry-timed-active-trial5-2.json",
+      "recordedSourceHash": "5963bcc02f71090a958df9737eca2b8fd5a96ed0a615f4a9dcbe4be4dc04ef21",
+      "inputHash": "a26d2c29e3c483958557476dfb7c171dcb2de8415a096e192140a8bb165f2c66",
+      "frames": 22988,
+      "transitions": [
+        {
+          "frame": 20991,
+          "dead": true,
+          "lives": 2,
+          "keys": 0,
+          "x": 10666.761827103555,
+          "solved": [
+            "1-1",
+            "1-2",
+            "2-1",
+            "2-2",
+            "3-1",
+            "3-2",
+            "4-1",
+            "4-2",
+            "5-1"
+          ],
+          "timed": [
+            {
+              "id": "1-1",
+              "progress": 2,
+              "remaining": -20272
+            },
+            {
+              "id": "2-2",
+              "progress": 3,
+              "remaining": -17372
+            },
+            {
+              "id": "3-1",
+              "progress": 3,
+              "remaining": -16462
+            },
+            {
+              "id": "4-2",
+              "progress": 3,
+              "remaining": -11932
+            },
+            {
+              "id": "5-1",
+              "progress": 3,
+              "remaining": -10922
+            },
+            {
+              "id": "5-2",
+              "progress": 1,
+              "remaining": 257
+            }
+          ],
+          "boss": null
+        },
+        {
+          "frame": 21081,
+          "dead": false,
+          "lives": 2,
+          "keys": 0,
+          "x": 8948,
+          "solved": [
+            "1-1",
+            "1-2",
+            "2-1",
+            "2-2",
+            "3-1",
+            "3-2",
+            "4-1",
+            "4-2",
+            "5-1"
+          ],
+          "timed": [
+            {
+              "id": "1-1",
+              "progress": 2,
+              "remaining": -20362
+            },
+            {
+              "id": "2-2",
+              "progress": 3,
+              "remaining": -17462
+            },
+            {
+              "id": "3-1",
+              "progress": 3,
+              "remaining": -16552
+            },
+            {
+              "id": "4-2",
+              "progress": 3,
+              "remaining": -12022
+            },
+            {
+              "id": "5-1",
+              "progress": 3,
+              "remaining": -11012
+            }
+          ],
+          "boss": null
+        }
+      ],
+      "final": {
+        "state": "clear",
+        "lives": 2
+      }
+    }
+  ]
+}

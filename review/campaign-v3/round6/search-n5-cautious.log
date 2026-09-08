@@ -1,0 +1,72 @@
+{"label":"1 entrance","frames":10,"energy":99.9,"expanded":1,"commandEnd":1}
+{"label":"1-1 approach seal 1","frames":250,"energy":98.4,"expanded":88,"commandEnd":26}
+{"label":"1-1 bait 1","frames":160,"energy":96.9,"expanded":120,"commandEnd":42}
+{"label":"1-1 gate","frames":210,"energy":94.4,"expanded":463,"commandEnd":63}
+{"label":"1 canal 1","frames":90,"energy":92.4,"expanded":15,"commandEnd":72}
+{"label":"1 canal 2","frames":100,"energy":90.9,"expanded":25,"commandEnd":82}
+{"label":"1 bank","frames":70,"energy":89.6,"expanded":11,"commandEnd":89}
+{"label":"1 traversal end","frames":60,"energy":99.7,"expanded":6,"commandEnd":95}
+{"label":"1-2 rune 2","frames":260,"energy":94.9,"expanded":193,"commandEnd":121}
+{"label":"1-2 rune 1","frames":120,"energy":93.1,"expanded":1142,"commandEnd":136}
+{"label":"1-2 rune 3","frames":210,"energy":90.5,"expanded":478,"commandEnd":160}
+{"label":"1-2 gate","frames":80,"energy":89.7,"expanded":8,"commandEnd":171}
+{"label":"1 end","frames":50,"energy":99.9,"expanded":5,"commandEnd":176}
+{"label":"2 entrance","frames":90,"energy":99.1,"expanded":9,"commandEnd":185}
+{"label":"2-1 pickup","frames":120,"energy":98,"expanded":12,"commandEnd":197}
+{"label":"2-1 deposit","frames":360,"energy":92.2,"expanded":314,"commandEnd":236}
+{"label":"2-1 gate","frames":90,"energy":91.3,"expanded":9,"commandEnd":248}
+{"label":"2 traversal end","frames":280,"energy":99.7,"expanded":941,"commandEnd":276}
+{"label":"2-2 approach seal 1","frames":290,"energy":78.4,"expanded":88,"commandEnd":305}
+{"label":"2-2 bait 1","frames":340,"energy":74.7,"expanded":3832,"commandEnd":339}
+{"label":"2-2 approach seal 2","frames":130,"energy":72.9,"expanded":27,"commandEnd":352}
+{"label":"2-2 bait 2","frames":220,"energy":70.9,"expanded":281,"commandEnd":374}
+{"label":"2-2 gate","frames":60,"energy":70.4,"expanded":6,"commandEnd":380}
+{"label":"2 end","frames":50,"energy":100,"expanded":5,"commandEnd":385}
+{"label":"3 entrance","frames":100,"energy":99,"expanded":10,"commandEnd":395}
+{"label":"3-1 approach seal 1","frames":190,"energy":98.2,"expanded":121,"commandEnd":414}
+{"label":"3-1 bait 1","frames":350,"energy":95,"expanded":518,"commandEnd":449}
+{"label":"3-1 approach seal 2","frames":140,"energy":93.1,"expanded":18,"commandEnd":463}
+{"label":"3-1 bait 2","frames":10,"energy":73,"expanded":1,"commandEnd":464}
+{"label":"3-1 gate","frames":100,"energy":72.1,"expanded":10,"commandEnd":474}
+{"label":"3 canal 1","frames":80,"energy":70.2,"expanded":14,"commandEnd":482}
+{"label":"3 canal 2","frames":70,"energy":68.9,"expanded":7,"commandEnd":489}
+{"label":"3 bank","frames":90,"energy":67.5,"expanded":16,"commandEnd":498}
+{"label":"3 traversal end","frames":50,"energy":99.7,"expanded":5,"commandEnd":503}
+{"label":"3-2 pickup","frames":590,"energy":93.1,"expanded":213,"commandEnd":562}
+{"label":"3-2 deposit","frames":260,"energy":88.3,"expanded":103,"commandEnd":591}
+{"label":"3-2 gate","frames":290,"energy":84.9,"expanded":191,"commandEnd":623}
+{"label":"3 end","frames":50,"energy":99.9,"expanded":5,"commandEnd":628}
+{"label":"4 entrance","frames":100,"energy":99,"expanded":10,"commandEnd":638}
+{"label":"4-1 rune 4","frames":250,"energy":93.1,"expanded":744,"commandEnd":663}
+{"label":"4-1 rune 2","frames":70,"energy":91.8,"expanded":15,"commandEnd":673}
+{"label":"4-1 rune 1","frames":120,"energy":90,"expanded":935,"commandEnd":688}
+{"label":"4-1 rune 3","frames":210,"energy":87.4,"expanded":459,"commandEnd":712}
+{"label":"4-1 gate","frames":80,"energy":86.6,"expanded":8,"commandEnd":723}
+{"label":"4 traversal end","frames":280,"energy":99.7,"expanded":980,"commandEnd":751}
+{"label":"gallery key 4","frames":200,"energy":76.9,"expanded":173,"commandEnd":771}
+{"label":"maintenance gate 4","frames":250,"energy":74.6,"expanded":43,"commandEnd":796}
+{"label":"4-2 approach seal 1","frames":110,"energy":73.6,"expanded":11,"commandEnd":807}
+{"label":"4-2 bait 1","frames":20,"energy":72.8,"expanded":2,"commandEnd":809}
+{"label":"4-2 approach seal 2","frames":130,"energy":71,"expanded":912,"commandEnd":822}
+{"label":"4-2 bait 2","frames":220,"energy":69,"expanded":196,"commandEnd":844}
+{"label":"4-2 gate","frames":60,"energy":68.4,"expanded":6,"commandEnd":850}
+{"label":"4 end","frames":50,"energy":100,"expanded":5,"commandEnd":855}
+{"label":"5 entrance","frames":100,"energy":99,"expanded":10,"commandEnd":865}
+{"label":"5-1 approach seal 1","frames":220,"energy":97.9,"expanded":137,"commandEnd":887}
+C:\Users\mtare\Desktop\cerebro-voz-starter\_tmp\newphantomas-deploy\tools\plan-campaign-route.js:124
+ }catch(e){if(e.message==='RETRY_PART'){roomIndex--;continue;}throw e;}
+                                                              ^
+
+Error: FAIL 5-1 bait 1 20000 {"x":8511.003325241787,"y":142,"energy":96.77416666666538,"frame":8710}
+    at go (C:\Users\mtare\Desktop\cerebro-voz-starter\_tmp\newphantomas-deploy\tools\plan-campaign-route.js:43:171)
+    at Object.<anonymous> (C:\Users\mtare\Desktop\cerebro-voz-starter\_tmp\newphantomas-deploy\tools\plan-campaign-route.js:82:5)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+
+Node.js v22.19.0

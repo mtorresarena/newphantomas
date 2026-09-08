@@ -1,0 +1,154 @@
+{
+  "sourceHash": "f2a7d393a540134f0c049dfc589001928bb695ae71b0064c4ea0e9017025e780",
+  "protocol": "harmonized-v2",
+  "round": 3,
+  "expected": 24,
+  "frozen": 24,
+  "complete": true,
+  "files": [
+    {
+      "level": 1,
+      "policy": "balanced",
+      "name": "reference-n1-balanced.json",
+      "hash": "3feed8eed1155f9a5f379aad80004bef264967f3def16946771aef71d1ca22b3"
+    },
+    {
+      "level": 2,
+      "policy": "balanced",
+      "name": "reference-n2-balanced.json",
+      "hash": "40d595cfe54be31dc5fb0dd43beaeeab6db304958cd0c7ae7a0735fc5e4433b5"
+    },
+    {
+      "level": 3,
+      "policy": "balanced",
+      "name": "reference-n3-balanced.json",
+      "hash": "3ba2f688df7ce010e2016a995ca7eb4006eb78433375a057b18514f6a3ae7221"
+    },
+    {
+      "level": 4,
+      "policy": "balanced",
+      "name": "reference-n4-balanced.json",
+      "hash": "28dd0afe4b64f4a4121a7396906bed93013c099d96597c98a3e905d48a1a4375"
+    },
+    {
+      "level": 5,
+      "policy": "balanced",
+      "name": "route-n5.json",
+      "hash": "b228be03019ba8f5b3f445874744d349d20b0a2fb42d29ddab50608dd8260480"
+    },
+    {
+      "level": 6,
+      "policy": "balanced",
+      "name": "route-n6.json",
+      "hash": "0e9b1f31b21b847ddd63f80f1332be5ee1f7f60d44799ff9752d6c6298b4f942"
+    },
+    {
+      "level": 7,
+      "policy": "balanced",
+      "name": "route-n7.json",
+      "hash": "14d2c2804a58151e966cc6166c8b61b604d1a7e597090a8e3059a9ead892f58f"
+    },
+    {
+      "level": 8,
+      "policy": "balanced",
+      "name": "route-n8.json",
+      "hash": "b706981105ce67098076482253bad608e5f16b5d9c4dc5b6a1c16c7f9bdcc559"
+    },
+    {
+      "level": 1,
+      "policy": "cautious",
+      "name": "reference-n1-cautious.json",
+      "hash": "b160e8050216ba123069daa293f39465bf16ad30b03ecf93c1b42bc84c5bcea2"
+    },
+    {
+      "level": 2,
+      "policy": "cautious",
+      "name": "reference-n2-cautious.json",
+      "hash": "376c98fb7165a0637b0a2188a8a0a902392f85a00bbffbaa5d43e3d9eef2cbda"
+    },
+    {
+      "level": 3,
+      "policy": "cautious",
+      "name": "reference-n3-cautious.json",
+      "hash": "8d54dd85a09fd3bf239dd131ca98e2fbbfcc6ec0ac6813b3541c37fcd952c48d"
+    },
+    {
+      "level": 4,
+      "policy": "cautious",
+      "name": "reference-n4-cautious.json",
+      "hash": "488acf3cb4999de5fff8a7026cc32099daca2da201810337a4bcb2d5d9e71833"
+    },
+    {
+      "level": 5,
+      "policy": "cautious",
+      "name": "route-n5-cautious.json",
+      "hash": "076ed2f0ad0f1b26dd317660177b256088a8c9418baf64fbdd97adf79120a1bf"
+    },
+    {
+      "level": 6,
+      "policy": "cautious",
+      "name": "route-n6-cautious.json",
+      "hash": "dced1c9ec53b5c07d6a4cc6c17c6fe30a2b33454c3c477d79357d1054cf2978f"
+    },
+    {
+      "level": 7,
+      "policy": "cautious",
+      "name": "route-n7-cautious.json",
+      "hash": "14e93e39955d15f93f65850cbe70927351e3fa6ac4f9e6f7c7fa41645c59684f"
+    },
+    {
+      "level": 8,
+      "policy": "cautious",
+      "name": "route-n8-cautious.json",
+      "hash": "45bb5dbd04fa6dd4df1f416ffc11b2eb0a735aa4f98976d30fb0a5337d59aa61"
+    },
+    {
+      "level": 1,
+      "policy": "speed",
+      "name": "reference-n1-speed.json",
+      "hash": "a2e9145d8118398028922054bd3c6749d4b4ee7c67d758067cddeb61f90da09a"
+    },
+    {
+      "level": 2,
+      "policy": "speed",
+      "name": "reference-n2-speed.json",
+      "hash": "fd84a04a2b43ea929f006f5b2a64bdfe4568c6c334d3b0f107cf5e485adb3a7e"
+    },
+    {
+      "level": 3,
+      "policy": "speed",
+      "name": "reference-n3-speed.json",
+      "hash": "c5de3de722811f5ac69eaf044736e24f985bd723f4842acf98b6bfbf7f3da55d"
+    },
+    {
+      "level": 4,
+      "policy": "speed",
+      "name": "reference-n4-speed.json",
+      "hash": "a868347d28e67885eabfd30b7dff392bc195bd4c4ac7d6771ac1dbe9949c07b8"
+    },
+    {
+      "level": 5,
+      "policy": "speed",
+      "name": "route-n5-speed.json",
+      "hash": "a5b3dfffc8c17d5e3e8d7aa193b298ff9f3d10f5632a097e9552376737112025"
+    },
+    {
+      "level": 6,
+      "policy": "speed",
+      "name": "route-n6-speed.json",
+      "hash": "1f7c51d7f6c2c10275e0f0375560a4846aee986668975be3ac93aa8d0468199c"
+    },
+    {
+      "level": 7,
+      "policy": "speed",
+      "name": "route-n7-speed.json",
+      "hash": "f8444563744809636721f22f77b0a86c740339fec13674e1584cec6ff64050d4"
+    },
+    {
+      "level": 8,
+      "policy": "speed",
+      "name": "route-n8-speed.json",
+      "hash": "f3ccd7e90916f3c5a717cf5494607babb29227ebfd2ecd4ed8b8d73979e39ce0"
+    }
+  ]
+}

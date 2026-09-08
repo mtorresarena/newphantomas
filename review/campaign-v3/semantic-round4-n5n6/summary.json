@@ -1,0 +1,218 @@
+{
+  "sourceHash": "8eef8b28ed89122e03c5eb04ebed91d5923fe87b51b6b12dd6f999699e35c65b",
+  "observerHash": "a2cf9551ddc7a6ce5cafa6d5182927089ee4b8a7332eae9d851d598be5c84cfc",
+  "protocolHash": "97cd8025b23ece8040b3ea41b80e701a27a2a97a8a67da7166b77d166d983dac",
+  "processed": 6,
+  "summaries": [
+    {
+      "level": 5,
+      "policy": "balanced",
+      "frames": 11861,
+      "seconds": 197.68333333333334,
+      "certainFrames": 904,
+      "certainPercent": 7.621617064328471,
+      "ambiguousFrames": 10957,
+      "lower": {
+        "mandatory_action": 24,
+        "simple_transit": 873,
+        "necessary_mechanism_wait": 0,
+        "optional": 7,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 10899,
+        "simple_transit": 11748,
+        "necessary_mechanism_wait": 82,
+        "optional": 10964,
+        "repetition": 10957
+      },
+      "reasons": {
+        "forward_fixed_safe_floor_outside_challenge_margins": 873,
+        "verified_progress_transition": 24,
+        "bag_collection_instant": 7
+      },
+      "ambiguousContexts": {
+        "other": 1696,
+        "energy_recharge": 51,
+        "puzzle": 7467,
+        "obstacle": 535,
+        "encounter": 1208
+      }
+    },
+    {
+      "level": 6,
+      "policy": "balanced",
+      "frames": 10765,
+      "seconds": 179.41666666666666,
+      "certainFrames": 1142,
+      "certainPercent": 10.608453320947515,
+      "ambiguousFrames": 9623,
+      "lower": {
+        "mandatory_action": 38,
+        "simple_transit": 1094,
+        "necessary_mechanism_wait": 0,
+        "optional": 10,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 9552,
+        "simple_transit": 10608,
+        "necessary_mechanism_wait": 109,
+        "optional": 9633,
+        "repetition": 9623
+      },
+      "reasons": {
+        "forward_fixed_safe_floor_outside_challenge_margins": 1094,
+        "verified_progress_transition": 38,
+        "bag_collection_instant": 10
+      },
+      "ambiguousContexts": {
+        "other": 1907,
+        "energy_recharge": 52,
+        "puzzle": 4886,
+        "encounter": 933,
+        "obstacle": 1845
+      }
+    },
+    {
+      "level": 5,
+      "policy": "cautious",
+      "frames": 11823,
+      "seconds": 197.05,
+      "certainFrames": 897,
+      "certainPercent": 7.586906876427303,
+      "ambiguousFrames": 10926,
+      "lower": {
+        "mandatory_action": 24,
+        "simple_transit": 865,
+        "necessary_mechanism_wait": 0,
+        "optional": 8,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 10903,
+        "simple_transit": 11744,
+        "necessary_mechanism_wait": 47,
+        "optional": 10934,
+        "repetition": 10926
+      },
+      "reasons": {
+        "forward_fixed_safe_floor_outside_challenge_margins": 865,
+        "verified_progress_transition": 24,
+        "bag_collection_instant": 8
+      },
+      "ambiguousContexts": {
+        "other": 1588,
+        "energy_recharge": 57,
+        "puzzle": 7445,
+        "obstacle": 629,
+        "encounter": 1207
+      }
+    },
+    {
+      "level": 6,
+      "policy": "cautious",
+      "frames": 10294,
+      "seconds": 171.56666666666666,
+      "certainFrames": 1174,
+      "certainPercent": 11.404701768020207,
+      "ambiguousFrames": 9120,
+      "lower": {
+        "mandatory_action": 38,
+        "simple_transit": 1125,
+        "necessary_mechanism_wait": 0,
+        "optional": 11,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 9130,
+        "simple_transit": 10217,
+        "necessary_mechanism_wait": 28,
+        "optional": 9131,
+        "repetition": 9120
+      },
+      "reasons": {
+        "forward_fixed_safe_floor_outside_challenge_margins": 1125,
+        "verified_progress_transition": 38,
+        "bag_collection_instant": 11
+      },
+      "ambiguousContexts": {
+        "other": 1767,
+        "energy_recharge": 51,
+        "puzzle": 4796,
+        "encounter": 706,
+        "obstacle": 1800
+      }
+    },
+    {
+      "level": 5,
+      "policy": "speed",
+      "frames": 11855,
+      "seconds": 197.58333333333334,
+      "certainFrames": 897,
+      "certainPercent": 7.56642766765078,
+      "ambiguousFrames": 10958,
+      "lower": {
+        "mandatory_action": 24,
+        "simple_transit": 866,
+        "necessary_mechanism_wait": 0,
+        "optional": 7,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 10890,
+        "simple_transit": 11732,
+        "necessary_mechanism_wait": 92,
+        "optional": 10965,
+        "repetition": 10958
+      },
+      "reasons": {
+        "forward_fixed_safe_floor_outside_challenge_margins": 866,
+        "verified_progress_transition": 24,
+        "bag_collection_instant": 7
+      },
+      "ambiguousContexts": {
+        "other": 1614,
+        "energy_recharge": 53,
+        "puzzle": 7647,
+        "obstacle": 509,
+        "encounter": 1135
+      }
+    },
+    {
+      "level": 6,
+      "policy": "speed",
+      "frames": 10751,
+      "seconds": 179.18333333333334,
+      "certainFrames": 1147,
+      "certainPercent": 10.668774997674635,
+      "ambiguousFrames": 9604,
+      "lower": {
+        "mandatory_action": 38,
+        "simple_transit": 1098,
+        "necessary_mechanism_wait": 0,
+        "optional": 11,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 9524,
+        "simple_transit": 10584,
+        "necessary_mechanism_wait": 118,
+        "optional": 9615,
+        "repetition": 9604
+      },
+      "reasons": {
+        "forward_fixed_safe_floor_outside_challenge_margins": 1098,
+        "verified_progress_transition": 38,
+        "bag_collection_instant": 11
+      },
+      "ambiguousContexts": {
+        "other": 1911,
+        "energy_recharge": 51,
+        "puzzle": 4944,
+        "encounter": 914,
+        "obstacle": 1784
+      }
+    }
+  ]
+}

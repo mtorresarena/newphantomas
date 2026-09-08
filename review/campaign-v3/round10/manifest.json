@@ -1,0 +1,46 @@
+{
+  "sourceHash": "649512e5fb4919d441e56e0cdb1ae2c34ac5c7e9e63641ac2371a7b398fae8c3",
+  "protocol": "harmonized-v2",
+  "round": 10,
+  "expected": 24,
+  "frozen": 6,
+  "complete": false,
+  "files": [
+    {
+      "level": 6,
+      "policy": "balanced",
+      "name": "route-n6.json",
+      "hash": "65de82273759e5863bf58af0317db3495250124eb17da59d726dadaf45e4f413"
+    },
+    {
+      "level": 7,
+      "policy": "balanced",
+      "name": "route-n7.json",
+      "hash": "aa9f5e101fdbb7180d5a88ad6f867562c6b615447cc1ec2fdca03beed32ee8c3"
+    },
+    {
+      "level": 6,
+      "policy": "cautious",
+      "name": "route-n6-cautious.json",
+      "hash": "abdc88fdd1ea3af3fd57b7039fba009a2817061da627dde932e492c959a27fda"
+    },
+    {
+      "level": 7,
+      "policy": "cautious",
+      "name": "route-n7-cautious.json",
+      "hash": "dfba7e63b4f70fdb5bad1d0504e3b8358aaa0779e82fa46eadf87ba1db4cffb6"
+    },
+    {
+      "level": 6,
+      "policy": "speed",
+      "name": "route-n6-speed.json",
+      "hash": "ef030481ea2265e10d7509ea811939b3115951976db49742b662d64b832a1d27"
+    },
+    {
+      "level": 7,
+      "policy": "speed",
+      "name": "route-n7-speed.json",
+      "hash": "9389c6eab08faa333bf73f083196de1f678bb6b3cde69f2136797e1fb6edfe02"
+    }
+  ]
+}

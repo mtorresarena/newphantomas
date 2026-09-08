@@ -1,0 +1,285 @@
+{
+  "spec": {
+    "name": "route-n5-cautious-retry-weight-trial5-2.json",
+    "level": 5,
+    "id": "5-2",
+    "kind": "weight"
+  },
+  "sourceHash": "5963bcc02f71090a958df9737eca2b8fd5a96ed0a615f4a9dcbe4be4dc04ef21",
+  "witnessHash": "b707fa3227a8e339feb85c5fed54a8f265b61a75690643fcf7c229bb6ae1f964",
+  "fixture": false,
+  "frames": 21726,
+  "seconds": 362.1,
+  "complete": true,
+  "lives": 2,
+  "initialAngles": [],
+  "life": [
+    {
+      "type": "death",
+      "frame": 19584,
+      "simF": 19584,
+      "x": 10189.078692587753,
+      "y": 30,
+      "energy": 0,
+      "lives": 2,
+      "dead": true,
+      "carry": "5-2",
+      "progress": 0,
+      "until": 0,
+      "remaining": -19584,
+      "solved": false,
+      "open": false,
+      "nodes": [
+        {
+          "id": "1",
+          "role": "stone",
+          "angle": 0,
+          "initialAngle": 0,
+          "active": false
+        },
+        {
+          "id": "2",
+          "role": "socket",
+          "angle": 0,
+          "initialAngle": 0,
+          "active": false
+        }
+      ],
+      "gateTiles": [
+        "#",
+        "#",
+        "#",
+        "#",
+        "#",
+        "#",
+        "#",
+        "#",
+        "#"
+      ]
+    },
+    {
+      "type": "respawn",
+      "frame": 19674,
+      "simF": 19674,
+      "x": 8180,
+      "y": 142,
+      "energy": 100,
+      "lives": 2,
+      "dead": false,
+      "carry": null,
+      "progress": 0,
+      "until": 0,
+      "remaining": -19674,
+      "solved": false,
+      "open": false,
+      "nodes": [
+        {
+          "id": "1",
+          "role": "stone",
+          "angle": 0,
+          "initialAngle": 0,
+          "active": false
+        },
+        {
+          "id": "2",
+          "role": "socket",
+          "angle": 0,
+          "initialAngle": 0,
+          "active": false
+        }
+      ],
+      "gateTiles": [
+        "#",
+        "#",
+        "#",
+        "#",
+        "#",
+        "#",
+        "#",
+        "#",
+        "#"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "event": {
+        "frame": 19674,
+        "type": "respawn",
+        "id": "campaign",
+        "detail": ""
+      },
+      "before": {
+        "progress": 0,
+        "until": 0,
+        "carry": "5-2",
+        "x": 10189.078692587753,
+        "y": 30,
+        "angles": []
+      },
+      "after": {
+        "frame": 19674,
+        "simF": 19674,
+        "x": 8180,
+        "y": 142,
+        "energy": 100,
+        "lives": 2,
+        "dead": false,
+        "carry": null,
+        "progress": 0,
+        "until": 0,
+        "remaining": -19674,
+        "solved": false,
+        "open": false,
+        "nodes": [
+          {
+            "id": "1",
+            "role": "stone",
+            "angle": 0,
+            "initialAngle": 0,
+            "active": false
+          },
+          {
+            "id": "2",
+            "role": "socket",
+            "angle": 0,
+            "initialAngle": 0,
+            "active": false
+          }
+        ],
+        "gateTiles": [
+          "#",
+          "#",
+          "#",
+          "#",
+          "#",
+          "#",
+          "#",
+          "#",
+          "#"
+        ]
+      }
+    },
+    {
+      "event": {
+        "frame": 21413,
+        "type": "deposit",
+        "id": "5-2",
+        "detail": ""
+      },
+      "before": {
+        "progress": 0,
+        "until": 0,
+        "carry": "5-2",
+        "x": 9892.380784048904,
+        "y": 94,
+        "angles": []
+      },
+      "after": {
+        "frame": 21413,
+        "simF": 21413,
+        "x": 9892.380463383863,
+        "y": 94,
+        "energy": 70.13583333332356,
+        "lives": 2,
+        "dead": false,
+        "carry": null,
+        "progress": 0,
+        "until": 0,
+        "remaining": -21413,
+        "solved": true,
+        "open": true,
+        "nodes": [
+          {
+            "id": "1",
+            "role": "stone",
+            "angle": 0,
+            "initialAngle": 0,
+            "active": true
+          },
+          {
+            "id": "2",
+            "role": "socket",
+            "angle": 0,
+            "initialAngle": 0,
+            "active": true
+          }
+        ],
+        "gateTiles": [
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      }
+    },
+    {
+      "event": {
+        "frame": 21413,
+        "type": "solved",
+        "id": "5-2",
+        "detail": ""
+      },
+      "before": {
+        "progress": 0,
+        "until": 0,
+        "carry": "5-2",
+        "x": 9892.380784048904,
+        "y": 94,
+        "angles": []
+      },
+      "after": {
+        "frame": 21413,
+        "simF": 21413,
+        "x": 9892.380463383863,
+        "y": 94,
+        "energy": 70.13583333332356,
+        "lives": 2,
+        "dead": false,
+        "carry": null,
+        "progress": 0,
+        "until": 0,
+        "remaining": -21413,
+        "solved": true,
+        "open": true,
+        "nodes": [
+          {
+            "id": "1",
+            "role": "stone",
+            "angle": 0,
+            "initialAngle": 0,
+            "active": true
+          },
+          {
+            "id": "2",
+            "role": "socket",
+            "angle": 0,
+            "initialAngle": 0,
+            "active": true
+          }
+        ],
+        "gateTiles": [
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      }
+    }
+  ],
+  "guardTransitions": [],
+  "neutralReturnFrames": [],
+  "neutralRecoverFrames": [],
+  "liftAfterRespawnFrames": [],
+  "scope": "Only production controls from natural origin. No restore, state assignment, direct death, healing, or deletion. Read-only snapshots identify failure/reset and legal completion. Angle solution comparison uses separately labelled earlier exhaustive logical fixture."
+}

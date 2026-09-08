@@ -1,0 +1,2248 @@
+{
+  "sourceHash": "57a34b6ffb17a65d897d4e0b6a832ddd9f77300673942a2865efde24ac3d2725",
+  "scope": "Clean legal replays from each natural start; no state mutation, snapshots, previews, healing or direct die/reset calls. Partial before waiting is distinguished from partial still present at death.",
+  "runs": [
+    {
+      "filename": "route-n5-retry-charge.json",
+      "witnessHash": "911d2a39fb8f9fe7ff3616ce647ad1e768c6f915714242bc3821eaf267552618",
+      "level": 5,
+      "kind": "charge",
+      "frames": 14660,
+      "complete": true,
+      "lives": 2,
+      "beforeDeathPartials": [
+        {
+          "frame": 3280,
+          "id": "2-2",
+          "kind": "charge",
+          "solved": false,
+          "progress": 0,
+          "until": 0,
+          "open": false,
+          "nodes": [
+            {
+              "id": "1",
+              "active": true,
+              "angle": 0,
+              "initialAngle": 0
+            },
+            {
+              "id": "2",
+              "active": false,
+              "angle": 0,
+              "initialAngle": 0
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "frame": 4770,
+          "type": "death",
+          "x": 3337.9090058283164,
+          "y": 142,
+          "lives": 2,
+          "carry": null,
+          "trials": [
+            {
+              "id": "1-1",
+              "kind": "charge",
+              "solved": true,
+              "progress": 0,
+              "until": 0,
+              "open": true,
+              "nodes": [
+                {
+                  "id": "1",
+                  "active": true,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            },
+            {
+              "id": "2-2",
+              "kind": "charge",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "1",
+                  "active": true,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "2",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            },
+            {
+              "id": "3-1",
+              "kind": "charge",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "1",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "2",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            },
+            {
+              "id": "4-2",
+              "kind": "charge",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "1",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "2",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            },
+            {
+              "id": "5-1",
+              "kind": "charge",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "1",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "2",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "frame": 4860,
+          "type": "respawn",
+          "x": 1892,
+          "y": 142,
+          "lives": 2,
+          "carry": null,
+          "trials": [
+            {
+              "id": "1-1",
+              "kind": "charge",
+              "solved": true,
+              "progress": 0,
+              "until": 0,
+              "open": true,
+              "nodes": [
+                {
+                  "id": "1",
+                  "active": true,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            },
+            {
+              "id": "2-2",
+              "kind": "charge",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "1",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "2",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            },
+            {
+              "id": "3-1",
+              "kind": "charge",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "1",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "2",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            },
+            {
+              "id": "4-2",
+              "kind": "charge",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "1",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "2",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            },
+            {
+              "id": "5-1",
+              "kind": "charge",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "1",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "2",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "partialAtDeath": [
+        "2-2"
+      ],
+      "campaignEvents": [
+        {
+          "frame": 418,
+          "type": "charge-seal",
+          "id": "1-1",
+          "detail": "1"
+        },
+        {
+          "frame": 418,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 1209,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "2"
+        },
+        {
+          "frame": 1339,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "1"
+        },
+        {
+          "frame": 1559,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "3"
+        },
+        {
+          "frame": 1559,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 2279,
+          "type": "deposit",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 2279,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 3280,
+          "type": "charge-seal",
+          "id": "2-2",
+          "detail": "1"
+        },
+        {
+          "frame": 4860,
+          "type": "respawn",
+          "id": "campaign",
+          "detail": ""
+        },
+        {
+          "frame": 6172,
+          "type": "charge-seal",
+          "id": "2-2",
+          "detail": "1"
+        },
+        {
+          "frame": 6530,
+          "type": "charge-seal",
+          "id": "2-2",
+          "detail": "2"
+        },
+        {
+          "frame": 6530,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 7276,
+          "type": "charge-seal",
+          "id": "3-1",
+          "detail": "1"
+        },
+        {
+          "frame": 7624,
+          "type": "charge-seal",
+          "id": "3-1",
+          "detail": "2"
+        },
+        {
+          "frame": 7624,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 8986,
+          "type": "deposit",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 8986,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 9776,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "3"
+        },
+        {
+          "frame": 9996,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "1"
+        },
+        {
+          "frame": 10126,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "4"
+        },
+        {
+          "frame": 10196,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "2"
+        },
+        {
+          "frame": 10196,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 11509,
+          "type": "charge-seal",
+          "id": "4-2",
+          "detail": "1"
+        },
+        {
+          "frame": 11880,
+          "type": "charge-seal",
+          "id": "4-2",
+          "detail": "2"
+        },
+        {
+          "frame": 11880,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 12633,
+          "type": "charge-seal",
+          "id": "5-1",
+          "detail": "1"
+        },
+        {
+          "frame": 12987,
+          "type": "charge-seal",
+          "id": "5-1",
+          "detail": "2"
+        },
+        {
+          "frame": 12987,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 14347,
+          "type": "deposit",
+          "id": "5-2",
+          "detail": ""
+        },
+        {
+          "frame": 14347,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "filename": "route-n5-retry-sequence.json",
+      "witnessHash": "1238c1cd9aa86c82a7c80cc97d1b43e6a8d91cd3eb156ea430f66ea368efb5b1",
+      "level": 5,
+      "kind": "sequence",
+      "frames": 23041,
+      "complete": true,
+      "lives": 2,
+      "beforeDeathPartials": [
+        {
+          "frame": 1209,
+          "id": "1-2",
+          "kind": "sequence",
+          "solved": false,
+          "progress": 1,
+          "until": 0,
+          "open": false,
+          "nodes": [
+            {
+              "id": "1",
+              "active": false,
+              "angle": 0,
+              "initialAngle": 0
+            },
+            {
+              "id": "2",
+              "active": true,
+              "angle": 0,
+              "initialAngle": 0
+            },
+            {
+              "id": "3",
+              "active": false,
+              "angle": 0,
+              "initialAngle": 0
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "frame": 11559,
+          "type": "death",
+          "x": 1392.785714285714,
+          "y": 94,
+          "lives": 2,
+          "carry": null,
+          "trials": [
+            {
+              "id": "1-2",
+              "kind": "sequence",
+              "solved": false,
+              "progress": 1,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "1",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "2",
+                  "active": true,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "3",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            },
+            {
+              "id": "4-1",
+              "kind": "sequence",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "1",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "2",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "3",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "4",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "frame": 11649,
+          "type": "respawn",
+          "x": 51,
+          "y": 142,
+          "lives": 2,
+          "carry": null,
+          "trials": [
+            {
+              "id": "1-2",
+              "kind": "sequence",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "1",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "2",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "3",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            },
+            {
+              "id": "4-1",
+              "kind": "sequence",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "1",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "2",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "3",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "4",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "partialAtDeath": [
+        "1-2"
+      ],
+      "campaignEvents": [
+        {
+          "frame": 418,
+          "type": "charge-seal",
+          "id": "1-1",
+          "detail": "1"
+        },
+        {
+          "frame": 418,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 1209,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "2"
+        },
+        {
+          "frame": 11649,
+          "type": "respawn",
+          "id": "campaign",
+          "detail": ""
+        },
+        {
+          "frame": 12312,
+          "type": "stomp",
+          "id": "beetle",
+          "detail": ""
+        },
+        {
+          "frame": 12578,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "2"
+        },
+        {
+          "frame": 12698,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "1"
+        },
+        {
+          "frame": 12918,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "3"
+        },
+        {
+          "frame": 12918,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 13638,
+          "type": "deposit",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 13638,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 14680,
+          "type": "charge-seal",
+          "id": "2-2",
+          "detail": "1"
+        },
+        {
+          "frame": 15037,
+          "type": "charge-seal",
+          "id": "2-2",
+          "detail": "2"
+        },
+        {
+          "frame": 15037,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 15785,
+          "type": "charge-seal",
+          "id": "3-1",
+          "detail": "1"
+        },
+        {
+          "frame": 16133,
+          "type": "charge-seal",
+          "id": "3-1",
+          "detail": "2"
+        },
+        {
+          "frame": 16133,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 17354,
+          "type": "deposit",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 17354,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 18144,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "3"
+        },
+        {
+          "frame": 18364,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "1"
+        },
+        {
+          "frame": 18494,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "4"
+        },
+        {
+          "frame": 18564,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "2"
+        },
+        {
+          "frame": 18564,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 19846,
+          "type": "charge-seal",
+          "id": "4-2",
+          "detail": "1"
+        },
+        {
+          "frame": 20202,
+          "type": "charge-seal",
+          "id": "4-2",
+          "detail": "2"
+        },
+        {
+          "frame": 20202,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 20952,
+          "type": "charge-seal",
+          "id": "5-1",
+          "detail": "1"
+        },
+        {
+          "frame": 21308,
+          "type": "charge-seal",
+          "id": "5-1",
+          "detail": "2"
+        },
+        {
+          "frame": 21308,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 22728,
+          "type": "deposit",
+          "id": "5-2",
+          "detail": ""
+        },
+        {
+          "frame": 22728,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "filename": "route-n6-retry-timed.json",
+      "witnessHash": "293baaaa99d857a2af440e5f76b41ac3a418329ae70a2bdf831aaa2cee1423a5",
+      "level": 6,
+      "kind": "timed",
+      "frames": 20768,
+      "complete": true,
+      "lives": 2,
+      "beforeDeathPartials": [
+        {
+          "frame": 119,
+          "id": "1-1",
+          "kind": "timed",
+          "solved": false,
+          "progress": 1,
+          "until": 719,
+          "open": false,
+          "nodes": [
+            {
+              "id": "1",
+              "active": true,
+              "angle": 0,
+              "initialAngle": 0
+            },
+            {
+              "id": "2",
+              "active": false,
+              "angle": 0,
+              "initialAngle": 0
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "frame": 10962,
+          "type": "death",
+          "x": 216.2857142857142,
+          "y": 142,
+          "lives": 2,
+          "carry": null,
+          "trials": [
+            {
+              "id": "1-1",
+              "kind": "timed",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "1",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "2",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            },
+            {
+              "id": "2-2",
+              "kind": "timed",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "1",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "2",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "3",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            },
+            {
+              "id": "3-1",
+              "kind": "timed",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "1",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "2",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "3",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            },
+            {
+              "id": "4-2",
+              "kind": "timed",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "1",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "2",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "3",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            },
+            {
+              "id": "5-1",
+              "kind": "timed",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "1",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "2",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "3",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            },
+            {
+              "id": "5-2",
+              "kind": "timed",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "1",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "2",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "3",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "frame": 11052,
+          "type": "respawn",
+          "x": 51,
+          "y": 142,
+          "lives": 2,
+          "carry": null,
+          "trials": [
+            {
+              "id": "1-1",
+              "kind": "timed",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "1",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "2",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            },
+            {
+              "id": "2-2",
+              "kind": "timed",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "1",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "2",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "3",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            },
+            {
+              "id": "3-1",
+              "kind": "timed",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "1",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "2",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "3",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            },
+            {
+              "id": "4-2",
+              "kind": "timed",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "1",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "2",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "3",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            },
+            {
+              "id": "5-1",
+              "kind": "timed",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "1",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "2",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "3",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            },
+            {
+              "id": "5-2",
+              "kind": "timed",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "1",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "2",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "3",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "partialAtDeath": [],
+      "campaignEvents": [
+        {
+          "frame": 119,
+          "type": "activate",
+          "id": "1-1",
+          "detail": "1"
+        },
+        {
+          "frame": 720,
+          "type": "timeout",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 11052,
+          "type": "respawn",
+          "id": "campaign",
+          "detail": ""
+        },
+        {
+          "frame": 11171,
+          "type": "activate",
+          "id": "1-1",
+          "detail": "1"
+        },
+        {
+          "frame": 11381,
+          "type": "activate",
+          "id": "1-1",
+          "detail": "2"
+        },
+        {
+          "frame": 11470,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 12181,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "2"
+        },
+        {
+          "frame": 12311,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "1"
+        },
+        {
+          "frame": 12531,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "3"
+        },
+        {
+          "frame": 12531,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 13251,
+          "type": "deposit",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 13251,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 13941,
+          "type": "activate",
+          "id": "2-2",
+          "detail": "1"
+        },
+        {
+          "frame": 14141,
+          "type": "activate",
+          "id": "2-2",
+          "detail": "2"
+        },
+        {
+          "frame": 14201,
+          "type": "activate",
+          "id": "2-2",
+          "detail": "3"
+        },
+        {
+          "frame": 14276,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 14571,
+          "type": "activate",
+          "id": "3-1",
+          "detail": "1"
+        },
+        {
+          "frame": 14781,
+          "type": "activate",
+          "id": "3-1",
+          "detail": "2"
+        },
+        {
+          "frame": 14841,
+          "type": "activate",
+          "id": "3-1",
+          "detail": "3"
+        },
+        {
+          "frame": 14881,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 16001,
+          "type": "deposit",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 16001,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 16791,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "3"
+        },
+        {
+          "frame": 17011,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "1"
+        },
+        {
+          "frame": 17141,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "4"
+        },
+        {
+          "frame": 17211,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "2"
+        },
+        {
+          "frame": 17211,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 18591,
+          "type": "activate",
+          "id": "4-2",
+          "detail": "1"
+        },
+        {
+          "frame": 18801,
+          "type": "activate",
+          "id": "4-2",
+          "detail": "2"
+        },
+        {
+          "frame": 18861,
+          "type": "activate",
+          "id": "4-2",
+          "detail": "3"
+        },
+        {
+          "frame": 18901,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 19201,
+          "type": "activate",
+          "id": "5-1",
+          "detail": "1"
+        },
+        {
+          "frame": 19431,
+          "type": "activate",
+          "id": "5-1",
+          "detail": "2"
+        },
+        {
+          "frame": 19491,
+          "type": "activate",
+          "id": "5-1",
+          "detail": "3"
+        },
+        {
+          "frame": 19532,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 20401,
+          "type": "activate",
+          "id": "5-2",
+          "detail": "1"
+        },
+        {
+          "frame": 20611,
+          "type": "activate",
+          "id": "5-2",
+          "detail": "2"
+        },
+        {
+          "frame": 20671,
+          "type": "activate",
+          "id": "5-2",
+          "detail": "3"
+        },
+        {
+          "frame": 20714,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "filename": "route-n7-retry-mirror.json",
+      "witnessHash": "9e60e9b9e26c756e90cf4a0fa521dd3fd96a061a3fd1fe6c6227d5904210e3b7",
+      "level": 7,
+      "kind": "mirror",
+      "frames": 19731,
+      "complete": true,
+      "lives": 2,
+      "beforeDeathPartials": [
+        {
+          "frame": 189,
+          "id": "1-1",
+          "kind": "mirror",
+          "solved": false,
+          "progress": 0,
+          "until": 0,
+          "open": false,
+          "nodes": [
+            {
+              "id": "L",
+              "active": false,
+              "angle": 0,
+              "initialAngle": 0
+            },
+            {
+              "id": "A",
+              "active": false,
+              "angle": 1,
+              "initialAngle": 0
+            },
+            {
+              "id": "B",
+              "active": false,
+              "angle": 0,
+              "initialAngle": 0
+            },
+            {
+              "id": "R",
+              "active": false,
+              "angle": 0,
+              "initialAngle": 0
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "frame": 10962,
+          "type": "death",
+          "x": 321.28571428571433,
+          "y": 142,
+          "lives": 2,
+          "carry": null,
+          "trials": [
+            {
+              "id": "1-1",
+              "kind": "mirror",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "L",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "A",
+                  "active": false,
+                  "angle": 1,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "B",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "R",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            },
+            {
+              "id": "2-2",
+              "kind": "mirror",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "L",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "A",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "B",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "R",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "C",
+                  "active": false,
+                  "angle": 1,
+                  "initialAngle": 1
+                }
+              ]
+            },
+            {
+              "id": "3-1",
+              "kind": "mirror",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "L",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "A",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "B",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "R",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "C",
+                  "active": false,
+                  "angle": 1,
+                  "initialAngle": 1
+                }
+              ]
+            },
+            {
+              "id": "4-2",
+              "kind": "mirror",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "L",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "A",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "B",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "R",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "C",
+                  "active": false,
+                  "angle": 1,
+                  "initialAngle": 1
+                }
+              ]
+            },
+            {
+              "id": "5-1",
+              "kind": "mirror",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "L",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "A",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "B",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "R",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "C",
+                  "active": false,
+                  "angle": 1,
+                  "initialAngle": 1
+                }
+              ]
+            },
+            {
+              "id": "5-2",
+              "kind": "mirror",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "L",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "A",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "B",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "R",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "C",
+                  "active": false,
+                  "angle": 1,
+                  "initialAngle": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "frame": 11052,
+          "type": "respawn",
+          "x": 51,
+          "y": 142,
+          "lives": 2,
+          "carry": null,
+          "trials": [
+            {
+              "id": "1-1",
+              "kind": "mirror",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "L",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "A",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "B",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "R",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                }
+              ]
+            },
+            {
+              "id": "2-2",
+              "kind": "mirror",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "L",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "A",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "B",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "R",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "C",
+                  "active": false,
+                  "angle": 1,
+                  "initialAngle": 1
+                }
+              ]
+            },
+            {
+              "id": "3-1",
+              "kind": "mirror",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "L",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "A",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "B",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "R",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "C",
+                  "active": false,
+                  "angle": 1,
+                  "initialAngle": 1
+                }
+              ]
+            },
+            {
+              "id": "4-2",
+              "kind": "mirror",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "L",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "A",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "B",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "R",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "C",
+                  "active": false,
+                  "angle": 1,
+                  "initialAngle": 1
+                }
+              ]
+            },
+            {
+              "id": "5-1",
+              "kind": "mirror",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "L",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "A",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "B",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "R",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "C",
+                  "active": false,
+                  "angle": 1,
+                  "initialAngle": 1
+                }
+              ]
+            },
+            {
+              "id": "5-2",
+              "kind": "mirror",
+              "solved": false,
+              "progress": 0,
+              "until": 0,
+              "open": false,
+              "nodes": [
+                {
+                  "id": "L",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "A",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "B",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "R",
+                  "active": false,
+                  "angle": 0,
+                  "initialAngle": 0
+                },
+                {
+                  "id": "C",
+                  "active": false,
+                  "angle": 1,
+                  "initialAngle": 1
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "partialAtDeath": [
+        "1-1"
+      ],
+      "campaignEvents": [
+        {
+          "frame": 189,
+          "type": "rotate",
+          "id": "1-1",
+          "detail": "A"
+        },
+        {
+          "frame": 11052,
+          "type": "respawn",
+          "id": "campaign",
+          "detail": ""
+        },
+        {
+          "frame": 11241,
+          "type": "rotate",
+          "id": "1-1",
+          "detail": "A"
+        },
+        {
+          "frame": 11311,
+          "type": "rotate",
+          "id": "1-1",
+          "detail": "B"
+        },
+        {
+          "frame": 11341,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 12166,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "2"
+        },
+        {
+          "frame": 12296,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "1"
+        },
+        {
+          "frame": 12516,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "3"
+        },
+        {
+          "frame": 12516,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 12986,
+          "type": "activate",
+          "id": "2-1",
+          "detail": "2"
+        },
+        {
+          "frame": 13116,
+          "type": "activate",
+          "id": "2-1",
+          "detail": "1"
+        },
+        {
+          "frame": 13336,
+          "type": "activate",
+          "id": "2-1",
+          "detail": "3"
+        },
+        {
+          "frame": 13336,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 14046,
+          "type": "rotate",
+          "id": "2-2",
+          "detail": "A"
+        },
+        {
+          "frame": 14116,
+          "type": "rotate",
+          "id": "2-2",
+          "detail": "B"
+        },
+        {
+          "frame": 14276,
+          "type": "rotate",
+          "id": "2-2",
+          "detail": "C"
+        },
+        {
+          "frame": 14306,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 14788,
+          "type": "rotate",
+          "id": "3-1",
+          "detail": "A"
+        },
+        {
+          "frame": 14858,
+          "type": "rotate",
+          "id": "3-1",
+          "detail": "B"
+        },
+        {
+          "frame": 15028,
+          "type": "rotate",
+          "id": "3-1",
+          "detail": "C"
+        },
+        {
+          "frame": 15058,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 15743,
+          "type": "activate",
+          "id": "3-2",
+          "detail": "1"
+        },
+        {
+          "frame": 15953,
+          "type": "activate",
+          "id": "3-2",
+          "detail": "2"
+        },
+        {
+          "frame": 16013,
+          "type": "activate",
+          "id": "3-2",
+          "detail": "3"
+        },
+        {
+          "frame": 16054,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 16353,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "1"
+        },
+        {
+          "frame": 16583,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "2"
+        },
+        {
+          "frame": 16643,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "3"
+        },
+        {
+          "frame": 16685,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 17443,
+          "type": "rotate",
+          "id": "4-2",
+          "detail": "A"
+        },
+        {
+          "frame": 17513,
+          "type": "rotate",
+          "id": "4-2",
+          "detail": "B"
+        },
+        {
+          "frame": 17663,
+          "type": "rotate",
+          "id": "4-2",
+          "detail": "C"
+        },
+        {
+          "frame": 17693,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 18128,
+          "type": "rotate",
+          "id": "5-1",
+          "detail": "A"
+        },
+        {
+          "frame": 18198,
+          "type": "rotate",
+          "id": "5-1",
+          "detail": "B"
+        },
+        {
+          "frame": 18368,
+          "type": "rotate",
+          "id": "5-1",
+          "detail": "C"
+        },
+        {
+          "frame": 18398,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 19353,
+          "type": "rotate",
+          "id": "5-2",
+          "detail": "A"
+        },
+        {
+          "frame": 19423,
+          "type": "rotate",
+          "id": "5-2",
+          "detail": "B"
+        },
+        {
+          "frame": 19573,
+          "type": "rotate",
+          "id": "5-2",
+          "detail": "C"
+        },
+        {
+          "frame": 19603,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        }
+      ]
+    }
+  ]
+}

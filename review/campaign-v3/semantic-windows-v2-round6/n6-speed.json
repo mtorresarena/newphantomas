@@ -1,0 +1,1559 @@
+{
+  "sourceHash": "5963bcc02f71090a958df9737eca2b8fd5a96ed0a615f4a9dcbe4be4dc04ef21",
+  "witnessHash": "8755220705d097cedb2619995aec2b19ae528f0ce476fe7fb2075953f509ead8",
+  "observerHash": "d761d17ae1da1910a0065e88b2618c98714f703b7fe4bd5512f32e267b651cb5",
+  "protocolHash": "13273f05e087f69bc7cfa7538c367e05f5a2a309eeb3a475f1a1a4f02a11a7b1",
+  "summary": {
+    "level": 6,
+    "policy": "speed",
+    "frames": 11346,
+    "seconds": 189.1,
+    "counts": {
+      "mandatory_objective_execution": 7298,
+      "simple_transit": 2249,
+      "mechanism_wait": 279,
+      "optional_collection": 3,
+      "repetition": 0,
+      "resource_management_unresolved": 51,
+      "unattributed": 1466
+    },
+    "subtypes": {
+      "ordinary_horizontal_travel": 2249,
+      "recharge_observed_not_minimal_need": 51,
+      "puzzle_access_or_interaction": 4669,
+      "milestone": 14,
+      "unattributed_maneuver": 1464,
+      "qualified_crossing": 1727,
+      "objective_window_without_attributed_activity": 2,
+      "passive_moving_platform": 279,
+      "incidental_bag": 3,
+      "carry_transport": 640,
+      "key_ascent": 248
+    },
+    "coveragePercent": 86.62964921558259,
+    "movingAwayFromNextMilestoneFrames": 400,
+    "windows": 44
+  },
+  "windows": [
+    {
+      "family": "B",
+      "id": "N6-trial-1-1",
+      "startFrame": 93,
+      "endFrame": 119,
+      "endMilestone": {
+        "frame": 119,
+        "trialId": "1-1",
+        "type": "activate",
+        "nodeId": "1",
+        "angle": 0,
+        "x": 232,
+        "y": 152
+      },
+      "goal": {
+        "x": 232,
+        "y": 152
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-1-1",
+      "startFrame": 120,
+      "endFrame": 329,
+      "endMilestone": {
+        "frame": 329,
+        "trialId": "1-1",
+        "type": "activate",
+        "nodeId": "2",
+        "angle": 0,
+        "x": 504,
+        "y": 88
+      },
+      "goal": {
+        "x": 504,
+        "y": 88
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-1-1",
+      "startFrame": 330,
+      "endFrame": 418,
+      "endMilestone": {
+        "frame": 418,
+        "trialId": "1-1",
+        "type": "solved",
+        "x": 640,
+        "y": 145
+      },
+      "goal": {
+        "x": 640,
+        "y": 145
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-1-2",
+      "startFrame": 1022,
+      "endFrame": 1179,
+      "endMilestone": {
+        "frame": 1179,
+        "trialId": "1-2",
+        "type": "activate",
+        "nodeId": "2",
+        "angle": 0,
+        "x": 1400,
+        "y": 104
+      },
+      "goal": {
+        "x": 1400,
+        "y": 104
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-1-2",
+      "startFrame": 1180,
+      "endFrame": 1309,
+      "endMilestone": {
+        "frame": 1309,
+        "trialId": "1-2",
+        "type": "activate",
+        "nodeId": "1",
+        "angle": 0,
+        "x": 1224,
+        "y": 152
+      },
+      "goal": {
+        "x": 1224,
+        "y": 152
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-1-2",
+      "startFrame": 1310,
+      "endFrame": 1529,
+      "endMilestone": {
+        "frame": 1529,
+        "trialId": "1-2",
+        "type": "activate",
+        "nodeId": "3",
+        "angle": 0,
+        "x": 1560,
+        "y": 152
+      },
+      "goal": {
+        "x": 1560,
+        "y": 152
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-2-1",
+      "startFrame": 1853,
+      "endFrame": 1879,
+      "endMilestone": {
+        "frame": 1879,
+        "trialId": "2-1",
+        "type": "pickup",
+        "x": 2072,
+        "y": 152
+      },
+      "goal": {
+        "x": 2072,
+        "y": 152
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-2-1",
+      "startFrame": 1880,
+      "endFrame": 2249,
+      "endMilestone": {
+        "frame": 2249,
+        "trialId": "2-1",
+        "type": "deposit",
+        "x": 2408,
+        "y": 104
+      },
+      "goal": {
+        "x": 2408,
+        "y": 104
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-2-2",
+      "startFrame": 3172,
+      "endFrame": 3199,
+      "endMilestone": {
+        "frame": 3199,
+        "trialId": "2-2",
+        "type": "activate",
+        "nodeId": "1",
+        "angle": 0,
+        "x": 3576,
+        "y": 152
+      },
+      "goal": {
+        "x": 3576,
+        "y": 152
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-2-2",
+      "startFrame": 3200,
+      "endFrame": 3409,
+      "endMilestone": {
+        "frame": 3409,
+        "trialId": "2-2",
+        "type": "activate",
+        "nodeId": "2",
+        "angle": 0,
+        "x": 3848,
+        "y": 88
+      },
+      "goal": {
+        "x": 3848,
+        "y": 88
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-2-2",
+      "startFrame": 3410,
+      "endFrame": 3469,
+      "endMilestone": {
+        "frame": 3469,
+        "trialId": "2-2",
+        "type": "activate",
+        "nodeId": "3",
+        "angle": 0,
+        "x": 3928,
+        "y": 152
+      },
+      "goal": {
+        "x": 3928,
+        "y": 152
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-2-2",
+      "startFrame": 3470,
+      "endFrame": 3507,
+      "endMilestone": {
+        "frame": 3507,
+        "trialId": "2-2",
+        "type": "solved",
+        "x": 3984,
+        "y": 145
+      },
+      "goal": {
+        "x": 3984,
+        "y": 145
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-3-1",
+      "startFrame": 3777,
+      "endFrame": 3869,
+      "endMilestone": {
+        "frame": 3869,
+        "trialId": "3-1",
+        "type": "activate",
+        "nodeId": "1",
+        "angle": 0,
+        "x": 4440,
+        "y": 88
+      },
+      "goal": {
+        "x": 4440,
+        "y": 88
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-3-1",
+      "startFrame": 3870,
+      "endFrame": 4119,
+      "endMilestone": {
+        "frame": 4119,
+        "trialId": "3-1",
+        "type": "activate",
+        "nodeId": "2",
+        "angle": 0,
+        "x": 4760,
+        "y": 152
+      },
+      "goal": {
+        "x": 4760,
+        "y": 152
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-3-1",
+      "startFrame": 4120,
+      "endFrame": 4209,
+      "endMilestone": {
+        "frame": 4209,
+        "trialId": "3-1",
+        "type": "activate",
+        "nodeId": "3",
+        "angle": 0,
+        "x": 4632,
+        "y": 88
+      },
+      "goal": {
+        "x": 4632,
+        "y": 88
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-3-1",
+      "startFrame": 4210,
+      "endFrame": 4348,
+      "endMilestone": {
+        "frame": 4348,
+        "trialId": "3-1",
+        "type": "solved",
+        "x": 4832,
+        "y": 145
+      },
+      "goal": {
+        "x": 4832,
+        "y": 145
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-3-2",
+      "startFrame": 5201,
+      "endFrame": 5459,
+      "endMilestone": {
+        "frame": 5459,
+        "trialId": "3-2",
+        "type": "pickup",
+        "x": 6008,
+        "y": 152
+      },
+      "goal": {
+        "x": 6008,
+        "y": 152
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-3-2",
+      "startFrame": 5460,
+      "endFrame": 5729,
+      "endMilestone": {
+        "frame": 5729,
+        "trialId": "3-2",
+        "type": "deposit",
+        "x": 5688,
+        "y": 56
+      },
+      "goal": {
+        "x": 5688,
+        "y": 56
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-4-1",
+      "startFrame": 6262,
+      "endFrame": 6439,
+      "endMilestone": {
+        "frame": 6439,
+        "trialId": "4-1",
+        "type": "activate",
+        "nodeId": "4",
+        "angle": 0,
+        "x": 6616,
+        "y": 56
+      },
+      "goal": {
+        "x": 6616,
+        "y": 56
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-4-1",
+      "startFrame": 6440,
+      "endFrame": 6509,
+      "endMilestone": {
+        "frame": 6509,
+        "trialId": "4-1",
+        "type": "activate",
+        "nodeId": "2",
+        "angle": 0,
+        "x": 6696,
+        "y": 104
+      },
+      "goal": {
+        "x": 6696,
+        "y": 104
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-4-1",
+      "startFrame": 6510,
+      "endFrame": 6629,
+      "endMilestone": {
+        "frame": 6629,
+        "trialId": "4-1",
+        "type": "activate",
+        "nodeId": "1",
+        "angle": 0,
+        "x": 6520,
+        "y": 152
+      },
+      "goal": {
+        "x": 6520,
+        "y": 152
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-4-1",
+      "startFrame": 6630,
+      "endFrame": 6849,
+      "endMilestone": {
+        "frame": 6849,
+        "trialId": "4-1",
+        "type": "activate",
+        "nodeId": "3",
+        "angle": 0,
+        "x": 6856,
+        "y": 152
+      },
+      "goal": {
+        "x": 6856,
+        "y": 152
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-4-2",
+      "startFrame": 8014,
+      "endFrame": 8279,
+      "endMilestone": {
+        "frame": 8279,
+        "trialId": "4-2",
+        "type": "activate",
+        "nodeId": "2",
+        "angle": 0,
+        "x": 8632,
+        "y": 152
+      },
+      "goal": {
+        "x": 8632,
+        "y": 152
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-4-2",
+      "startFrame": 8280,
+      "endFrame": 8539,
+      "endMilestone": {
+        "frame": 8539,
+        "trialId": "4-2",
+        "type": "activate",
+        "nodeId": "1",
+        "angle": 0,
+        "x": 8296,
+        "y": 56
+      },
+      "goal": {
+        "x": 8296,
+        "y": 56
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-4-2",
+      "startFrame": 8540,
+      "endFrame": 8749,
+      "endMilestone": {
+        "frame": 8749,
+        "trialId": "4-2",
+        "type": "activate",
+        "nodeId": "3",
+        "angle": 0,
+        "x": 8584,
+        "y": 104
+      },
+      "goal": {
+        "x": 8584,
+        "y": 104
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-4-2",
+      "startFrame": 8750,
+      "endFrame": 8820,
+      "endMilestone": {
+        "frame": 8820,
+        "trialId": "4-2",
+        "type": "solved",
+        "x": 8688,
+        "y": 145
+      },
+      "goal": {
+        "x": 8688,
+        "y": 145
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-5-1",
+      "startFrame": 9090,
+      "endFrame": 9349,
+      "endMilestone": {
+        "frame": 9349,
+        "trialId": "5-1",
+        "type": "activate",
+        "nodeId": "1",
+        "angle": 0,
+        "x": 9480,
+        "y": 152
+      },
+      "goal": {
+        "x": 9480,
+        "y": 152
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-5-1",
+      "startFrame": 9350,
+      "endFrame": 9449,
+      "endMilestone": {
+        "frame": 9449,
+        "trialId": "5-1",
+        "type": "activate",
+        "nodeId": "2",
+        "angle": 0,
+        "x": 9320,
+        "y": 88
+      },
+      "goal": {
+        "x": 9320,
+        "y": 88
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-5-1",
+      "startFrame": 9450,
+      "endFrame": 9569,
+      "endMilestone": {
+        "frame": 9569,
+        "trialId": "5-1",
+        "type": "activate",
+        "nodeId": "3",
+        "angle": 0,
+        "x": 9160,
+        "y": 56
+      },
+      "goal": {
+        "x": 9160,
+        "y": 56
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-5-1",
+      "startFrame": 9570,
+      "endFrame": 9821,
+      "endMilestone": {
+        "frame": 9821,
+        "trialId": "5-1",
+        "type": "solved",
+        "x": 9536,
+        "y": 145
+      },
+      "goal": {
+        "x": 9536,
+        "y": 145
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-5-2",
+      "startFrame": 10768,
+      "endFrame": 10969,
+      "endMilestone": {
+        "frame": 10969,
+        "trialId": "5-2",
+        "type": "activate",
+        "nodeId": "1",
+        "angle": 0,
+        "x": 10664,
+        "y": 56
+      },
+      "goal": {
+        "x": 10664,
+        "y": 56
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-5-2",
+      "startFrame": 10970,
+      "endFrame": 11099,
+      "endMilestone": {
+        "frame": 11099,
+        "trialId": "5-2",
+        "type": "activate",
+        "nodeId": "2",
+        "angle": 0,
+        "x": 10824,
+        "y": 104
+      },
+      "goal": {
+        "x": 10824,
+        "y": 104
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-5-2",
+      "startFrame": 11100,
+      "endFrame": 11249,
+      "endMilestone": {
+        "frame": 11249,
+        "trialId": "5-2",
+        "type": "activate",
+        "nodeId": "3",
+        "angle": 0,
+        "x": 10984,
+        "y": 152
+      },
+      "goal": {
+        "x": 10984,
+        "y": 152
+      }
+    },
+    {
+      "family": "B",
+      "id": "N6-trial-5-2",
+      "startFrame": 11250,
+      "endFrame": 11292,
+      "endMilestone": {
+        "frame": 11292,
+        "trialId": "5-2",
+        "type": "solved",
+        "x": 11040,
+        "y": 145
+      },
+      "goal": {
+        "x": 11040,
+        "y": 145
+      }
+    },
+    {
+      "family": "C",
+      "id": "N6-transit-47-63",
+      "startFrame": 486,
+      "endFrame": 855,
+      "qualification": "Existing common causal classifier qualified this crossing/response."
+    },
+    {
+      "family": "C",
+      "id": "N6-transit-163-181",
+      "startFrame": 2390,
+      "endFrame": 2727,
+      "qualification": "Existing common causal classifier qualified this crossing/response."
+    },
+    {
+      "family": "C",
+      "id": "N6-transit-309-325",
+      "startFrame": 4417,
+      "endFrame": 4882,
+      "qualification": "Existing common causal classifier qualified this crossing/response."
+    },
+    {
+      "family": "C",
+      "id": "N6-transit-441-459",
+      "startFrame": 6982,
+      "endFrame": 7287,
+      "qualification": "Existing common causal classifier qualified this crossing/response."
+    },
+    {
+      "family": "C",
+      "id": "N6-transit-480-488",
+      "startFrame": 7611,
+      "endFrame": 7737,
+      "qualification": "Existing common causal classifier qualified this crossing/response."
+    },
+    {
+      "family": "C",
+      "id": "N6-transit-603-619",
+      "startFrame": 9889,
+      "endFrame": 10288,
+      "qualification": "Existing common causal classifier qualified this crossing/response."
+    },
+    {
+      "family": "A",
+      "id": "N6-key-3172-38",
+      "startFrame": 2913,
+      "endFrame": 2913,
+      "accessWindow": false,
+      "goal": {
+        "x": 3180,
+        "y": 38
+      }
+    },
+    {
+      "family": "A",
+      "id": "N6-door-217",
+      "startFrame": 3126,
+      "endFrame": 3126,
+      "accessWindow": false,
+      "goal": {
+        "x": 3480,
+        "y": 145
+      }
+    },
+    {
+      "family": "A",
+      "id": "N6-key-7572-38",
+      "startFrame": 7290,
+      "endFrame": 7538,
+      "accessWindow": true,
+      "goal": {
+        "x": 7580,
+        "y": 38
+      }
+    },
+    {
+      "family": "A",
+      "id": "N6-door-511",
+      "startFrame": 7968,
+      "endFrame": 7968,
+      "accessWindow": false,
+      "goal": {
+        "x": 8184,
+        "y": 145
+      }
+    }
+  ],
+  "runs": [
+    {
+      "startFrame": 1,
+      "endFrame": 35,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 36,
+      "endFrame": 52,
+      "category": "resource_management_unresolved",
+      "subtype": "recharge_observed_not_minimal_need",
+      "windowId": null
+    },
+    {
+      "startFrame": 53,
+      "endFrame": 92,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 93,
+      "endFrame": 417,
+      "category": "mandatory_objective_execution",
+      "subtype": "puzzle_access_or_interaction",
+      "windowId": "N6-trial-1-1"
+    },
+    {
+      "startFrame": 418,
+      "endFrame": 418,
+      "category": "mandatory_objective_execution",
+      "subtype": "milestone",
+      "windowId": "N6-trial-1-1"
+    },
+    {
+      "startFrame": 419,
+      "endFrame": 440,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 441,
+      "endFrame": 485,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 486,
+      "endFrame": 649,
+      "category": "mandatory_objective_execution",
+      "subtype": "qualified_crossing",
+      "windowId": "N6-transit-47-63"
+    },
+    {
+      "startFrame": 650,
+      "endFrame": 650,
+      "category": "unattributed",
+      "subtype": "objective_window_without_attributed_activity",
+      "windowId": "N6-transit-47-63"
+    },
+    {
+      "startFrame": 651,
+      "endFrame": 680,
+      "category": "mandatory_objective_execution",
+      "subtype": "qualified_crossing",
+      "windowId": "N6-transit-47-63"
+    },
+    {
+      "startFrame": 681,
+      "endFrame": 740,
+      "category": "mechanism_wait",
+      "subtype": "passive_moving_platform",
+      "windowId": "N6-transit-47-63"
+    },
+    {
+      "startFrame": 741,
+      "endFrame": 855,
+      "category": "mandatory_objective_execution",
+      "subtype": "qualified_crossing",
+      "windowId": "N6-transit-47-63"
+    },
+    {
+      "startFrame": 856,
+      "endFrame": 874,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 875,
+      "endFrame": 880,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 881,
+      "endFrame": 896,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 897,
+      "endFrame": 910,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 911,
+      "endFrame": 935,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 936,
+      "endFrame": 954,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 955,
+      "endFrame": 955,
+      "category": "optional_collection",
+      "subtype": "incidental_bag",
+      "windowId": null
+    },
+    {
+      "startFrame": 956,
+      "endFrame": 990,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 991,
+      "endFrame": 1021,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 1022,
+      "endFrame": 1528,
+      "category": "mandatory_objective_execution",
+      "subtype": "puzzle_access_or_interaction",
+      "windowId": "N6-trial-1-2"
+    },
+    {
+      "startFrame": 1529,
+      "endFrame": 1529,
+      "category": "mandatory_objective_execution",
+      "subtype": "milestone",
+      "windowId": "N6-trial-1-2"
+    },
+    {
+      "startFrame": 1530,
+      "endFrame": 1852,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 1853,
+      "endFrame": 1878,
+      "category": "mandatory_objective_execution",
+      "subtype": "puzzle_access_or_interaction",
+      "windowId": "N6-trial-2-1"
+    },
+    {
+      "startFrame": 1879,
+      "endFrame": 2248,
+      "category": "mandatory_objective_execution",
+      "subtype": "carry_transport",
+      "windowId": "N6-trial-2-1"
+    },
+    {
+      "startFrame": 2249,
+      "endFrame": 2249,
+      "category": "mandatory_objective_execution",
+      "subtype": "milestone",
+      "windowId": "N6-trial-2-1"
+    },
+    {
+      "startFrame": 2250,
+      "endFrame": 2250,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 2251,
+      "endFrame": 2270,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 2271,
+      "endFrame": 2335,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 2336,
+      "endFrame": 2389,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 2390,
+      "endFrame": 2727,
+      "category": "mandatory_objective_execution",
+      "subtype": "qualified_crossing",
+      "windowId": "N6-transit-163-181"
+    },
+    {
+      "startFrame": 2728,
+      "endFrame": 2730,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 2731,
+      "endFrame": 2797,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 2798,
+      "endFrame": 2800,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 2801,
+      "endFrame": 2912,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 2913,
+      "endFrame": 2913,
+      "category": "mandatory_objective_execution",
+      "subtype": "milestone",
+      "windowId": "N6-key-3172-38"
+    },
+    {
+      "startFrame": 2914,
+      "endFrame": 2939,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 2940,
+      "endFrame": 2940,
+      "category": "optional_collection",
+      "subtype": "incidental_bag",
+      "windowId": null
+    },
+    {
+      "startFrame": 2941,
+      "endFrame": 3086,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 3087,
+      "endFrame": 3125,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 3126,
+      "endFrame": 3126,
+      "category": "mandatory_objective_execution",
+      "subtype": "milestone",
+      "windowId": "N6-door-217"
+    },
+    {
+      "startFrame": 3127,
+      "endFrame": 3171,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 3172,
+      "endFrame": 3506,
+      "category": "mandatory_objective_execution",
+      "subtype": "puzzle_access_or_interaction",
+      "windowId": "N6-trial-2-2"
+    },
+    {
+      "startFrame": 3507,
+      "endFrame": 3507,
+      "category": "mandatory_objective_execution",
+      "subtype": "milestone",
+      "windowId": "N6-trial-2-2"
+    },
+    {
+      "startFrame": 3508,
+      "endFrame": 3680,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 3681,
+      "endFrame": 3719,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 3720,
+      "endFrame": 3736,
+      "category": "resource_management_unresolved",
+      "subtype": "recharge_observed_not_minimal_need",
+      "windowId": null
+    },
+    {
+      "startFrame": 3737,
+      "endFrame": 3776,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 3777,
+      "endFrame": 4347,
+      "category": "mandatory_objective_execution",
+      "subtype": "puzzle_access_or_interaction",
+      "windowId": "N6-trial-3-1"
+    },
+    {
+      "startFrame": 4348,
+      "endFrame": 4348,
+      "category": "mandatory_objective_execution",
+      "subtype": "milestone",
+      "windowId": "N6-trial-3-1"
+    },
+    {
+      "startFrame": 4349,
+      "endFrame": 4370,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 4371,
+      "endFrame": 4416,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 4417,
+      "endFrame": 4690,
+      "category": "mandatory_objective_execution",
+      "subtype": "qualified_crossing",
+      "windowId": "N6-transit-309-325"
+    },
+    {
+      "startFrame": 4691,
+      "endFrame": 4696,
+      "category": "mechanism_wait",
+      "subtype": "passive_moving_platform",
+      "windowId": "N6-transit-309-325"
+    },
+    {
+      "startFrame": 4697,
+      "endFrame": 4697,
+      "category": "mandatory_objective_execution",
+      "subtype": "qualified_crossing",
+      "windowId": "N6-transit-309-325"
+    },
+    {
+      "startFrame": 4698,
+      "endFrame": 4790,
+      "category": "mechanism_wait",
+      "subtype": "passive_moving_platform",
+      "windowId": "N6-transit-309-325"
+    },
+    {
+      "startFrame": 4791,
+      "endFrame": 4882,
+      "category": "mandatory_objective_execution",
+      "subtype": "qualified_crossing",
+      "windowId": "N6-transit-309-325"
+    },
+    {
+      "startFrame": 4883,
+      "endFrame": 5054,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 5055,
+      "endFrame": 5061,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 5062,
+      "endFrame": 5128,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 5129,
+      "endFrame": 5200,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 5201,
+      "endFrame": 5458,
+      "category": "mandatory_objective_execution",
+      "subtype": "puzzle_access_or_interaction",
+      "windowId": "N6-trial-3-2"
+    },
+    {
+      "startFrame": 5459,
+      "endFrame": 5728,
+      "category": "mandatory_objective_execution",
+      "subtype": "carry_transport",
+      "windowId": "N6-trial-3-2"
+    },
+    {
+      "startFrame": 5729,
+      "endFrame": 5729,
+      "category": "mandatory_objective_execution",
+      "subtype": "milestone",
+      "windowId": "N6-trial-3-2"
+    },
+    {
+      "startFrame": 5730,
+      "endFrame": 5801,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 5802,
+      "endFrame": 6160,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 6161,
+      "endFrame": 6207,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 6208,
+      "endFrame": 6210,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 6211,
+      "endFrame": 6257,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 6258,
+      "endFrame": 6260,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 6261,
+      "endFrame": 6261,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 6262,
+      "endFrame": 6439,
+      "category": "mandatory_objective_execution",
+      "subtype": "puzzle_access_or_interaction",
+      "windowId": "N6-trial-4-1"
+    },
+    {
+      "startFrame": 6440,
+      "endFrame": 6440,
+      "category": "unattributed",
+      "subtype": "objective_window_without_attributed_activity",
+      "windowId": "N6-trial-4-1"
+    },
+    {
+      "startFrame": 6441,
+      "endFrame": 6848,
+      "category": "mandatory_objective_execution",
+      "subtype": "puzzle_access_or_interaction",
+      "windowId": "N6-trial-4-1"
+    },
+    {
+      "startFrame": 6849,
+      "endFrame": 6849,
+      "category": "mandatory_objective_execution",
+      "subtype": "milestone",
+      "windowId": "N6-trial-4-1"
+    },
+    {
+      "startFrame": 6850,
+      "endFrame": 6865,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 6866,
+      "endFrame": 6927,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 6928,
+      "endFrame": 6981,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 6982,
+      "endFrame": 7287,
+      "category": "mandatory_objective_execution",
+      "subtype": "qualified_crossing",
+      "windowId": "N6-transit-441-459"
+    },
+    {
+      "startFrame": 7288,
+      "endFrame": 7289,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 7290,
+      "endFrame": 7537,
+      "category": "mandatory_objective_execution",
+      "subtype": "key_ascent",
+      "windowId": "N6-key-7572-38"
+    },
+    {
+      "startFrame": 7538,
+      "endFrame": 7538,
+      "category": "mandatory_objective_execution",
+      "subtype": "milestone",
+      "windowId": "N6-key-7572-38"
+    },
+    {
+      "startFrame": 7539,
+      "endFrame": 7544,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 7545,
+      "endFrame": 7560,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 7561,
+      "endFrame": 7591,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 7592,
+      "endFrame": 7597,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 7598,
+      "endFrame": 7598,
+      "category": "optional_collection",
+      "subtype": "incidental_bag",
+      "windowId": null
+    },
+    {
+      "startFrame": 7599,
+      "endFrame": 7609,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 7610,
+      "endFrame": 7610,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 7611,
+      "endFrame": 7737,
+      "category": "mandatory_objective_execution",
+      "subtype": "qualified_crossing",
+      "windowId": "N6-transit-480-488"
+    },
+    {
+      "startFrame": 7738,
+      "endFrame": 7967,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 7968,
+      "endFrame": 7968,
+      "category": "mandatory_objective_execution",
+      "subtype": "milestone",
+      "windowId": "N6-door-511"
+    },
+    {
+      "startFrame": 7969,
+      "endFrame": 8013,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 8014,
+      "endFrame": 8819,
+      "category": "mandatory_objective_execution",
+      "subtype": "puzzle_access_or_interaction",
+      "windowId": "N6-trial-4-2"
+    },
+    {
+      "startFrame": 8820,
+      "endFrame": 8820,
+      "category": "mandatory_objective_execution",
+      "subtype": "milestone",
+      "windowId": "N6-trial-4-2"
+    },
+    {
+      "startFrame": 8821,
+      "endFrame": 9033,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 9034,
+      "endFrame": 9050,
+      "category": "resource_management_unresolved",
+      "subtype": "recharge_observed_not_minimal_need",
+      "windowId": null
+    },
+    {
+      "startFrame": 9051,
+      "endFrame": 9089,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 9090,
+      "endFrame": 9820,
+      "category": "mandatory_objective_execution",
+      "subtype": "puzzle_access_or_interaction",
+      "windowId": "N6-trial-5-1"
+    },
+    {
+      "startFrame": 9821,
+      "endFrame": 9821,
+      "category": "mandatory_objective_execution",
+      "subtype": "milestone",
+      "windowId": "N6-trial-5-1"
+    },
+    {
+      "startFrame": 9822,
+      "endFrame": 9845,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 9846,
+      "endFrame": 9888,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 9889,
+      "endFrame": 10060,
+      "category": "mandatory_objective_execution",
+      "subtype": "qualified_crossing",
+      "windowId": "N6-transit-603-619"
+    },
+    {
+      "startFrame": 10061,
+      "endFrame": 10070,
+      "category": "mechanism_wait",
+      "subtype": "passive_moving_platform",
+      "windowId": "N6-transit-603-619"
+    },
+    {
+      "startFrame": 10071,
+      "endFrame": 10080,
+      "category": "mandatory_objective_execution",
+      "subtype": "qualified_crossing",
+      "windowId": "N6-transit-603-619"
+    },
+    {
+      "startFrame": 10081,
+      "endFrame": 10190,
+      "category": "mechanism_wait",
+      "subtype": "passive_moving_platform",
+      "windowId": "N6-transit-603-619"
+    },
+    {
+      "startFrame": 10191,
+      "endFrame": 10288,
+      "category": "mandatory_objective_execution",
+      "subtype": "qualified_crossing",
+      "windowId": "N6-transit-603-619"
+    },
+    {
+      "startFrame": 10289,
+      "endFrame": 10422,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 10423,
+      "endFrame": 10597,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 10598,
+      "endFrame": 10682,
+      "category": "unattributed",
+      "subtype": "unattributed_maneuver",
+      "windowId": null
+    },
+    {
+      "startFrame": 10683,
+      "endFrame": 10767,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    },
+    {
+      "startFrame": 10768,
+      "endFrame": 11291,
+      "category": "mandatory_objective_execution",
+      "subtype": "puzzle_access_or_interaction",
+      "windowId": "N6-trial-5-2"
+    },
+    {
+      "startFrame": 11292,
+      "endFrame": 11292,
+      "category": "mandatory_objective_execution",
+      "subtype": "milestone",
+      "windowId": "N6-trial-5-2"
+    },
+    {
+      "startFrame": 11293,
+      "endFrame": 11346,
+      "category": "simple_transit",
+      "subtype": "ordinary_horizontal_travel",
+      "windowId": null
+    }
+  ],
+  "scope": "Operational execution windows, not minimum causal frame necessity or human time. A–E counts unchanged. Resource necessity and unassigned movement remain explicit. Movement away from a target may be required geometry, not proven waste."
+}

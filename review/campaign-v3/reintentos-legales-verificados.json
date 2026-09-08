@@ -1,0 +1,270 @@
+{
+  "sourceHash": "57a34b6ffb17a65d897d4e0b6a832ddd9f77300673942a2865efde24ac3d2725",
+  "scope": "Clean legal input replays from natural N8 start. No snapshot restore, preview, state injection, healing, invulnerability, entity deletion or direct boss methods.",
+  "runs": [
+    {
+      "witness": "route-n8-retry.json",
+      "witnessHash": "8b5485c50bd2b6f0d4584c79e5a13163a2518e6f77caa3e06278152a56f0f69e",
+      "complete": true,
+      "frames": 16033,
+      "lives": 2,
+      "events": [
+        {
+          "frame": 11099,
+          "type": "boss-entry",
+          "phase": 1,
+          "hp": 6
+        },
+        {
+          "frame": 13918,
+          "type": "death",
+          "phase": 1,
+          "bossState": "warn",
+          "hp": 6,
+          "x": 11088,
+          "y": 142
+        },
+        {
+          "frame": 14008,
+          "type": "respawn",
+          "bossHp": 6,
+          "bossPhase": 1,
+          "bossState": "idle",
+          "x": 10948,
+          "y": 142,
+          "lives": 2
+        },
+        {
+          "frame": 14113,
+          "type": "boss-entry",
+          "phase": 1,
+          "hp": 6
+        },
+        {
+          "frame": 14420,
+          "type": "boss-progress",
+          "phase": 1,
+          "hp": 5
+        },
+        {
+          "frame": 14658,
+          "type": "boss-progress",
+          "phase": 1,
+          "hp": 4
+        },
+        {
+          "frame": 14932,
+          "type": "boss-progress",
+          "phase": 2,
+          "hp": 3
+        },
+        {
+          "frame": 15177,
+          "type": "boss-progress",
+          "phase": 2,
+          "hp": 2
+        },
+        {
+          "frame": 15451,
+          "type": "boss-progress",
+          "phase": 3,
+          "hp": 1
+        },
+        {
+          "frame": 15731,
+          "type": "boss-progress",
+          "phase": 3,
+          "hp": 0
+        }
+      ]
+    },
+    {
+      "witness": "route-n8-retry-phase2.json",
+      "witnessHash": "194764891b7ac88fb1643b8ea7a585c8da5c3ad3ca39fe8acb91ce9ebc938a24",
+      "complete": true,
+      "frames": 15562,
+      "lives": 2,
+      "events": [
+        {
+          "frame": 11164,
+          "type": "boss-entry",
+          "phase": 1,
+          "hp": 6
+        },
+        {
+          "frame": 11471,
+          "type": "boss-progress",
+          "phase": 1,
+          "hp": 5
+        },
+        {
+          "frame": 11699,
+          "type": "boss-progress",
+          "phase": 1,
+          "hp": 4
+        },
+        {
+          "frame": 13426,
+          "type": "death",
+          "phase": 2,
+          "bossState": "open",
+          "hp": 4,
+          "x": 11366,
+          "y": 142
+        },
+        {
+          "frame": 13516,
+          "type": "respawn",
+          "bossHp": 6,
+          "bossPhase": 1,
+          "bossState": "idle",
+          "x": 10948,
+          "y": 142,
+          "lives": 2
+        },
+        {
+          "frame": 13617,
+          "type": "boss-entry",
+          "phase": 1,
+          "hp": 6
+        },
+        {
+          "frame": 13924,
+          "type": "boss-progress",
+          "phase": 1,
+          "hp": 5
+        },
+        {
+          "frame": 14162,
+          "type": "boss-progress",
+          "phase": 1,
+          "hp": 4
+        },
+        {
+          "frame": 14436,
+          "type": "boss-progress",
+          "phase": 2,
+          "hp": 3
+        },
+        {
+          "frame": 14710,
+          "type": "boss-progress",
+          "phase": 2,
+          "hp": 2
+        },
+        {
+          "frame": 14984,
+          "type": "boss-progress",
+          "phase": 3,
+          "hp": 1
+        },
+        {
+          "frame": 15264,
+          "type": "boss-progress",
+          "phase": 3,
+          "hp": 0
+        }
+      ]
+    },
+    {
+      "witness": "route-n8-retry-phase3.json",
+      "witnessHash": "1e4d43068db0590e88c464a4e4332cef42d5075aa694106768587ff3b0ebdc84",
+      "complete": true,
+      "frames": 15953,
+      "lives": 2,
+      "events": [
+        {
+          "frame": 11164,
+          "type": "boss-entry",
+          "phase": 1,
+          "hp": 6
+        },
+        {
+          "frame": 11471,
+          "type": "boss-progress",
+          "phase": 1,
+          "hp": 5
+        },
+        {
+          "frame": 11699,
+          "type": "boss-progress",
+          "phase": 1,
+          "hp": 4
+        },
+        {
+          "frame": 11973,
+          "type": "boss-progress",
+          "phase": 2,
+          "hp": 3
+        },
+        {
+          "frame": 12247,
+          "type": "boss-progress",
+          "phase": 2,
+          "hp": 2
+        },
+        {
+          "frame": 13767,
+          "type": "death",
+          "phase": 3,
+          "bossState": "warn",
+          "hp": 2,
+          "x": 11156.028912496538,
+          "y": 142
+        },
+        {
+          "frame": 13857,
+          "type": "respawn",
+          "bossHp": 6,
+          "bossPhase": 1,
+          "bossState": "idle",
+          "x": 10948,
+          "y": 142,
+          "lives": 2
+        },
+        {
+          "frame": 13958,
+          "type": "boss-entry",
+          "phase": 1,
+          "hp": 6
+        },
+        {
+          "frame": 14265,
+          "type": "boss-progress",
+          "phase": 1,
+          "hp": 5
+        },
+        {
+          "frame": 14503,
+          "type": "boss-progress",
+          "phase": 1,
+          "hp": 4
+        },
+        {
+          "frame": 14777,
+          "type": "boss-progress",
+          "phase": 2,
+          "hp": 3
+        },
+        {
+          "frame": 15053,
+          "type": "boss-progress",
+          "phase": 2,
+          "hp": 2
+        },
+        {
+          "frame": 15357,
+          "type": "boss-progress",
+          "phase": 3,
+          "hp": 1
+        },
+        {
+          "frame": 15639,
+          "type": "boss-progress",
+          "phase": 3,
+          "hp": 0
+        }
+      ]
+    }
+  ]
+}

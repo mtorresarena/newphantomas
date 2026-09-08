@@ -1,0 +1,888 @@
+{
+  "sourceHash": "b9f1a7b93ca1438d7a969cd76852f119d87e9c6ff91cabb752515f6090a12c03",
+  "declaredSourceHash": "b9f1a7b93ca1438d7a969cd76852f119d87e9c6ff91cabb752515f6090a12c03",
+  "witnessHash": "6f8bb06f887b8d0797b4a7cea7698c70b538ec142150014b6a8ca3d6213335f3",
+  "fixture": false,
+  "name": "route-n6-retry-weight-trial3-2.json",
+  "frames": 22943,
+  "complete": true,
+  "lives": 2,
+  "deaths": [
+    {
+      "frame": 14936,
+      "lives": 2,
+      "carry": null,
+      "trials": [
+        {
+          "id": "3-2",
+          "solved": false,
+          "progress": 0,
+          "until": 0,
+          "stable": 0,
+          "primed": false,
+          "anchored": true,
+          "docked": "2",
+          "bridges": [
+            true,
+            true
+          ],
+          "angles": [],
+          "active": [
+            [
+              "1",
+              false
+            ],
+            [
+              "2",
+              true
+            ],
+            [
+              "3",
+              true
+            ],
+            [
+              "4",
+              false
+            ]
+          ]
+        },
+        {
+          "id": "5-1",
+          "solved": false,
+          "progress": 0,
+          "until": 0,
+          "stable": 0,
+          "primed": false,
+          "anchored": false,
+          "docked": null,
+          "bridges": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "angles": [],
+          "active": [
+            [
+              "1",
+              false
+            ],
+            [
+              "2",
+              false
+            ],
+            [
+              "3",
+              false
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "respawns": [
+    {
+      "frame": 15026,
+      "carry": null,
+      "trials": [
+        {
+          "id": "3-2",
+          "solved": false,
+          "progress": 0,
+          "until": 0,
+          "stable": 0,
+          "primed": false,
+          "anchored": false,
+          "docked": null,
+          "bridges": [
+            false,
+            false
+          ],
+          "angles": [],
+          "active": [
+            [
+              "1",
+              false
+            ],
+            [
+              "2",
+              false
+            ],
+            [
+              "3",
+              false
+            ],
+            [
+              "4",
+              false
+            ]
+          ]
+        },
+        {
+          "id": "5-1",
+          "solved": false,
+          "progress": 0,
+          "until": 0,
+          "stable": 0,
+          "primed": false,
+          "anchored": false,
+          "docked": null,
+          "bridges": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "angles": [],
+          "active": [
+            [
+              "1",
+              false
+            ],
+            [
+              "2",
+              false
+            ],
+            [
+              "3",
+              false
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "frame": 5709,
+      "type": "deposit",
+      "id": "3-2",
+      "detail": "2",
+      "carry": null,
+      "trials": [
+        {
+          "id": "3-2",
+          "solved": false,
+          "progress": 0,
+          "until": 0,
+          "stable": 0,
+          "primed": false,
+          "anchored": false,
+          "docked": "2",
+          "bridges": [
+            true,
+            true
+          ],
+          "angles": [],
+          "active": [
+            [
+              "1",
+              false
+            ],
+            [
+              "2",
+              true
+            ],
+            [
+              "3",
+              false
+            ],
+            [
+              "4",
+              false
+            ]
+          ]
+        },
+        {
+          "id": "5-1",
+          "solved": false,
+          "progress": 0,
+          "until": 0,
+          "stable": 0,
+          "primed": false,
+          "anchored": false,
+          "docked": null,
+          "bridges": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "angles": [],
+          "active": [
+            [
+              "1",
+              false
+            ],
+            [
+              "2",
+              false
+            ],
+            [
+              "3",
+              false
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 5999,
+      "type": "anchor",
+      "id": "3-2",
+      "detail": "",
+      "carry": null,
+      "trials": [
+        {
+          "id": "3-2",
+          "solved": false,
+          "progress": 0,
+          "until": 0,
+          "stable": 0,
+          "primed": false,
+          "anchored": true,
+          "docked": "2",
+          "bridges": [
+            true,
+            true
+          ],
+          "angles": [],
+          "active": [
+            [
+              "1",
+              false
+            ],
+            [
+              "2",
+              true
+            ],
+            [
+              "3",
+              true
+            ],
+            [
+              "4",
+              false
+            ]
+          ]
+        },
+        {
+          "id": "5-1",
+          "solved": false,
+          "progress": 0,
+          "until": 0,
+          "stable": 0,
+          "primed": false,
+          "anchored": false,
+          "docked": null,
+          "bridges": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "angles": [],
+          "active": [
+            [
+              "1",
+              false
+            ],
+            [
+              "2",
+              false
+            ],
+            [
+              "3",
+              false
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 15026,
+      "type": "respawn",
+      "id": "campaign",
+      "detail": "",
+      "carry": null,
+      "trials": [
+        {
+          "id": "3-2",
+          "solved": false,
+          "progress": 0,
+          "until": 0,
+          "stable": 0,
+          "primed": false,
+          "anchored": false,
+          "docked": null,
+          "bridges": [
+            false,
+            false
+          ],
+          "angles": [],
+          "active": [
+            [
+              "1",
+              false
+            ],
+            [
+              "2",
+              false
+            ],
+            [
+              "3",
+              false
+            ],
+            [
+              "4",
+              false
+            ]
+          ]
+        },
+        {
+          "id": "5-1",
+          "solved": false,
+          "progress": 0,
+          "until": 0,
+          "stable": 0,
+          "primed": false,
+          "anchored": false,
+          "docked": null,
+          "bridges": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "angles": [],
+          "active": [
+            [
+              "1",
+              false
+            ],
+            [
+              "2",
+              false
+            ],
+            [
+              "3",
+              false
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 16695,
+      "type": "deposit",
+      "id": "3-2",
+      "detail": "2",
+      "carry": null,
+      "trials": [
+        {
+          "id": "3-2",
+          "solved": false,
+          "progress": 0,
+          "until": 0,
+          "stable": 0,
+          "primed": false,
+          "anchored": false,
+          "docked": "2",
+          "bridges": [
+            true,
+            true
+          ],
+          "angles": [],
+          "active": [
+            [
+              "1",
+              false
+            ],
+            [
+              "2",
+              true
+            ],
+            [
+              "3",
+              false
+            ],
+            [
+              "4",
+              false
+            ]
+          ]
+        },
+        {
+          "id": "5-1",
+          "solved": false,
+          "progress": 0,
+          "until": 0,
+          "stable": 0,
+          "primed": false,
+          "anchored": false,
+          "docked": null,
+          "bridges": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "angles": [],
+          "active": [
+            [
+              "1",
+              false
+            ],
+            [
+              "2",
+              false
+            ],
+            [
+              "3",
+              false
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 16935,
+      "type": "anchor",
+      "id": "3-2",
+      "detail": "",
+      "carry": null,
+      "trials": [
+        {
+          "id": "3-2",
+          "solved": false,
+          "progress": 0,
+          "until": 0,
+          "stable": 0,
+          "primed": false,
+          "anchored": true,
+          "docked": "2",
+          "bridges": [
+            true,
+            true
+          ],
+          "angles": [],
+          "active": [
+            [
+              "1",
+              false
+            ],
+            [
+              "2",
+              true
+            ],
+            [
+              "3",
+              true
+            ],
+            [
+              "4",
+              false
+            ]
+          ]
+        },
+        {
+          "id": "5-1",
+          "solved": false,
+          "progress": 0,
+          "until": 0,
+          "stable": 0,
+          "primed": false,
+          "anchored": false,
+          "docked": null,
+          "bridges": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "angles": [],
+          "active": [
+            [
+              "1",
+              false
+            ],
+            [
+              "2",
+              false
+            ],
+            [
+              "3",
+              false
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 17175,
+      "type": "retrieve",
+      "id": "3-2",
+      "detail": "2",
+      "carry": "3-2",
+      "trials": [
+        {
+          "id": "3-2",
+          "solved": false,
+          "progress": 0,
+          "until": 0,
+          "stable": 0,
+          "primed": false,
+          "anchored": true,
+          "docked": null,
+          "bridges": [
+            true,
+            true
+          ],
+          "angles": [],
+          "active": [
+            [
+              "1",
+              false
+            ],
+            [
+              "2",
+              false
+            ],
+            [
+              "3",
+              true
+            ],
+            [
+              "4",
+              false
+            ]
+          ]
+        },
+        {
+          "id": "5-1",
+          "solved": false,
+          "progress": 0,
+          "until": 0,
+          "stable": 0,
+          "primed": false,
+          "anchored": false,
+          "docked": null,
+          "bridges": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "angles": [],
+          "active": [
+            [
+              "1",
+              false
+            ],
+            [
+              "2",
+              false
+            ],
+            [
+              "3",
+              false
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 17355,
+      "type": "deposit",
+      "id": "3-2",
+      "detail": "4",
+      "carry": null,
+      "trials": [
+        {
+          "id": "3-2",
+          "solved": true,
+          "progress": 0,
+          "until": 0,
+          "stable": 0,
+          "primed": false,
+          "anchored": true,
+          "docked": "4",
+          "bridges": [
+            true,
+            true
+          ],
+          "angles": [],
+          "active": [
+            [
+              "1",
+              false
+            ],
+            [
+              "2",
+              false
+            ],
+            [
+              "3",
+              true
+            ],
+            [
+              "4",
+              true
+            ]
+          ]
+        },
+        {
+          "id": "5-1",
+          "solved": false,
+          "progress": 0,
+          "until": 0,
+          "stable": 0,
+          "primed": false,
+          "anchored": false,
+          "docked": null,
+          "bridges": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "angles": [],
+          "active": [
+            [
+              "1",
+              false
+            ],
+            [
+              "2",
+              false
+            ],
+            [
+              "3",
+              false
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 17355,
+      "type": "solved",
+      "id": "3-2",
+      "detail": "",
+      "carry": null,
+      "trials": [
+        {
+          "id": "3-2",
+          "solved": true,
+          "progress": 0,
+          "until": 0,
+          "stable": 0,
+          "primed": false,
+          "anchored": true,
+          "docked": "4",
+          "bridges": [
+            true,
+            true
+          ],
+          "angles": [],
+          "active": [
+            [
+              "1",
+              false
+            ],
+            [
+              "2",
+              false
+            ],
+            [
+              "3",
+              true
+            ],
+            [
+              "4",
+              true
+            ]
+          ]
+        },
+        {
+          "id": "5-1",
+          "solved": false,
+          "progress": 0,
+          "until": 0,
+          "stable": 0,
+          "primed": false,
+          "anchored": false,
+          "docked": null,
+          "bridges": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "angles": [],
+          "active": [
+            [
+              "1",
+              false
+            ],
+            [
+              "2",
+              false
+            ],
+            [
+              "3",
+              false
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 21629,
+      "type": "solved",
+      "id": "5-1",
+      "detail": "",
+      "carry": null,
+      "trials": [
+        {
+          "id": "3-2",
+          "solved": true,
+          "progress": 0,
+          "until": 0,
+          "stable": 0,
+          "primed": false,
+          "anchored": true,
+          "docked": "4",
+          "bridges": [
+            true,
+            true
+          ],
+          "angles": [],
+          "active": [
+            [
+              "1",
+              false
+            ],
+            [
+              "2",
+              false
+            ],
+            [
+              "3",
+              true
+            ],
+            [
+              "4",
+              true
+            ]
+          ]
+        },
+        {
+          "id": "5-1",
+          "solved": true,
+          "progress": 3,
+          "until": 21785,
+          "stable": 0,
+          "primed": false,
+          "anchored": false,
+          "docked": null,
+          "bridges": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "angles": [],
+          "active": [
+            [
+              "1",
+              true
+            ],
+            [
+              "2",
+              true
+            ],
+            [
+              "3",
+              true
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 22890,
+      "type": "solved",
+      "id": "5-2",
+      "detail": "",
+      "carry": null,
+      "trials": [
+        {
+          "id": "3-2",
+          "solved": true,
+          "progress": 0,
+          "until": 0,
+          "stable": 0,
+          "primed": false,
+          "anchored": true,
+          "docked": "4",
+          "bridges": [
+            true,
+            true
+          ],
+          "angles": [],
+          "active": [
+            [
+              "1",
+              false
+            ],
+            [
+              "2",
+              false
+            ],
+            [
+              "3",
+              true
+            ],
+            [
+              "4",
+              true
+            ]
+          ]
+        },
+        {
+          "id": "5-1",
+          "solved": true,
+          "progress": 3,
+          "until": 21785,
+          "stable": 0,
+          "primed": false,
+          "anchored": false,
+          "docked": null,
+          "bridges": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "angles": [],
+          "active": [
+            [
+              "1",
+              true
+            ],
+            [
+              "2",
+              true
+            ],
+            [
+              "3",
+              true
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "scope": "Independent fresh origin replay; read-only state observations; commands only, no checkpoint injection or direct death."
+}

@@ -1,0 +1,414 @@
+{
+  "spec": {
+    "name": "route-n6-expire-trial4-2.json",
+    "level": 6,
+    "id": "4-2",
+    "kind": "expire"
+  },
+  "sourceHash": "5963bcc02f71090a958df9737eca2b8fd5a96ed0a615f4a9dcbe4be4dc04ef21",
+  "witnessHash": "abb36004c3c07d20ee5acfd33b9ebc11027660abad5c1537010a085ab41f31da",
+  "fixture": false,
+  "frames": 11977,
+  "seconds": 199.61666666666667,
+  "complete": true,
+  "lives": 3,
+  "initialAngles": [],
+  "life": [],
+  "events": [
+    {
+      "event": {
+        "frame": 8279,
+        "type": "activate",
+        "id": "4-2",
+        "detail": "2"
+      },
+      "before": {
+        "progress": 0,
+        "until": 0,
+        "carry": null,
+        "x": 8622.25193030181,
+        "y": 142,
+        "angles": []
+      },
+      "after": {
+        "frame": 8279,
+        "simF": 8279,
+        "x": 8622.282998171067,
+        "y": 142,
+        "energy": 86.66999999999419,
+        "lives": 3,
+        "dead": false,
+        "carry": null,
+        "progress": 1,
+        "until": 9059,
+        "remaining": 780,
+        "solved": false,
+        "open": false,
+        "nodes": [
+          {
+            "id": "1",
+            "role": "switch",
+            "angle": 0,
+            "initialAngle": 0,
+            "active": false
+          },
+          {
+            "id": "2",
+            "role": "switch",
+            "angle": 0,
+            "initialAngle": 0,
+            "active": true
+          },
+          {
+            "id": "3",
+            "role": "switch",
+            "angle": 0,
+            "initialAngle": 0,
+            "active": false
+          }
+        ],
+        "gateTiles": [
+          "#",
+          "#",
+          "#",
+          "#",
+          "#",
+          "#",
+          "#",
+          "#",
+          "#"
+        ]
+      }
+    },
+    {
+      "event": {
+        "frame": 9060,
+        "type": "timeout",
+        "id": "4-2",
+        "detail": ""
+      },
+      "before": {
+        "progress": 1,
+        "until": 9059,
+        "carry": null,
+        "x": 8622.340695642552,
+        "y": 142,
+        "angles": []
+      },
+      "after": {
+        "frame": 9060,
+        "simF": 9060,
+        "x": 8622.340695642552,
+        "y": 142,
+        "energy": 79.51083333332294,
+        "lives": 3,
+        "dead": false,
+        "carry": null,
+        "progress": 0,
+        "until": 0,
+        "remaining": -9060,
+        "solved": false,
+        "open": false,
+        "nodes": [
+          {
+            "id": "1",
+            "role": "switch",
+            "angle": 0,
+            "initialAngle": 0,
+            "active": false
+          },
+          {
+            "id": "2",
+            "role": "switch",
+            "angle": 0,
+            "initialAngle": 0,
+            "active": false
+          },
+          {
+            "id": "3",
+            "role": "switch",
+            "angle": 0,
+            "initialAngle": 0,
+            "active": false
+          }
+        ],
+        "gateTiles": [
+          "#",
+          "#",
+          "#",
+          "#",
+          "#",
+          "#",
+          "#",
+          "#",
+          "#"
+        ]
+      }
+    },
+    {
+      "event": {
+        "frame": 9081,
+        "type": "activate",
+        "id": "4-2",
+        "detail": "2"
+      },
+      "before": {
+        "progress": 0,
+        "until": 0,
+        "carry": null,
+        "x": 8637.537644587532,
+        "y": 142,
+        "angles": []
+      },
+      "after": {
+        "frame": 9081,
+        "simF": 9081,
+        "x": 8637.568712456788,
+        "y": 142,
+        "energy": 79.31833333332281,
+        "lives": 3,
+        "dead": false,
+        "carry": null,
+        "progress": 1,
+        "until": 9861,
+        "remaining": 780,
+        "solved": false,
+        "open": false,
+        "nodes": [
+          {
+            "id": "1",
+            "role": "switch",
+            "angle": 0,
+            "initialAngle": 0,
+            "active": false
+          },
+          {
+            "id": "2",
+            "role": "switch",
+            "angle": 0,
+            "initialAngle": 0,
+            "active": true
+          },
+          {
+            "id": "3",
+            "role": "switch",
+            "angle": 0,
+            "initialAngle": 0,
+            "active": false
+          }
+        ],
+        "gateTiles": [
+          "#",
+          "#",
+          "#",
+          "#",
+          "#",
+          "#",
+          "#",
+          "#",
+          "#"
+        ]
+      }
+    },
+    {
+      "event": {
+        "frame": 9341,
+        "type": "activate",
+        "id": "4-2",
+        "detail": "1"
+      },
+      "before": {
+        "progress": 1,
+        "until": 9861,
+        "carry": null,
+        "x": 8306.663449625818,
+        "y": 46,
+        "angles": []
+      },
+      "after": {
+        "frame": 9341,
+        "simF": 9341,
+        "x": 8306.694517495074,
+        "y": 46,
+        "energy": 73.33499999998799,
+        "lives": 3,
+        "dead": false,
+        "carry": null,
+        "progress": 2,
+        "until": 9861,
+        "remaining": 520,
+        "solved": false,
+        "open": false,
+        "nodes": [
+          {
+            "id": "1",
+            "role": "switch",
+            "angle": 0,
+            "initialAngle": 0,
+            "active": true
+          },
+          {
+            "id": "2",
+            "role": "switch",
+            "angle": 0,
+            "initialAngle": 0,
+            "active": true
+          },
+          {
+            "id": "3",
+            "role": "switch",
+            "angle": 0,
+            "initialAngle": 0,
+            "active": false
+          }
+        ],
+        "gateTiles": [
+          "#",
+          "#",
+          "#",
+          "#",
+          "#",
+          "#",
+          "#",
+          "#",
+          "#"
+        ]
+      }
+    },
+    {
+      "event": {
+        "frame": 9551,
+        "type": "activate",
+        "id": "4-2",
+        "detail": "3"
+      },
+      "before": {
+        "progress": 2,
+        "until": 9861,
+        "carry": null,
+        "x": 8592.017495557458,
+        "y": 94,
+        "angles": []
+      },
+      "after": {
+        "frame": 9551,
+        "simF": 9551,
+        "x": 8592.048563426715,
+        "y": 94,
+        "energy": 69.60999999998677,
+        "lives": 3,
+        "dead": false,
+        "carry": null,
+        "progress": 3,
+        "until": 9861,
+        "remaining": 310,
+        "solved": false,
+        "open": true,
+        "nodes": [
+          {
+            "id": "1",
+            "role": "switch",
+            "angle": 0,
+            "initialAngle": 0,
+            "active": true
+          },
+          {
+            "id": "2",
+            "role": "switch",
+            "angle": 0,
+            "initialAngle": 0,
+            "active": true
+          },
+          {
+            "id": "3",
+            "role": "switch",
+            "angle": 0,
+            "initialAngle": 0,
+            "active": true
+          }
+        ],
+        "gateTiles": [
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      }
+    },
+    {
+      "event": {
+        "frame": 9621,
+        "type": "solved",
+        "id": "4-2",
+        "detail": ""
+      },
+      "before": {
+        "progress": 3,
+        "until": 9861,
+        "carry": null,
+        "x": 8676.67459254412,
+        "y": 142,
+        "angles": []
+      },
+      "after": {
+        "frame": 9621,
+        "simF": 9621,
+        "x": 8678.17459254412,
+        "y": 142,
+        "energy": 68.96833333331969,
+        "lives": 3,
+        "dead": false,
+        "carry": null,
+        "progress": 3,
+        "until": 9861,
+        "remaining": 240,
+        "solved": true,
+        "open": true,
+        "nodes": [
+          {
+            "id": "1",
+            "role": "switch",
+            "angle": 0,
+            "initialAngle": 0,
+            "active": true
+          },
+          {
+            "id": "2",
+            "role": "switch",
+            "angle": 0,
+            "initialAngle": 0,
+            "active": true
+          },
+          {
+            "id": "3",
+            "role": "switch",
+            "angle": 0,
+            "initialAngle": 0,
+            "active": true
+          }
+        ],
+        "gateTiles": [
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          ".",
+          "."
+        ]
+      }
+    }
+  ],
+  "guardTransitions": [],
+  "neutralReturnFrames": [],
+  "neutralRecoverFrames": [],
+  "liftAfterRespawnFrames": [],
+  "scope": "Only production controls from natural origin. No restore, state assignment, direct death, healing, or deletion. Read-only snapshots identify failure/reset and legal completion. Angle solution comparison uses separately labelled earlier exhaustive logical fixture."
+}

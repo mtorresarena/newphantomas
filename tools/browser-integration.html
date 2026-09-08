@@ -1,0 +1,68 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Phantomas: integración real de navegador</title>
+<style>body{background:#080c1b;color:#eef;font:14px system-ui}iframe{width:960px;height:576px;border:0;max-width:100%}pre{white-space:pre-wrap}</style>
+<h1>Integración de navegador</h1><p>Almacenamiento real aislado, eventos DOM sintéticos y mando simulado. No prueba un iPhone ni un mando físico.</p>
+<button id="start">Ejecutar integración</button><pre id="result">Pendiente</pre><iframe id="game" allow="autoplay"></iframe>
+<script>
+const frame=document.querySelector('#game'),result=document.querySelector('#result'),prefix='phantomas.qa.campaign-v3.';
+let checks=[],errors=[],sourceHashes=[];
+const assert=(value,message)=>{if(!value)throw Error(message);checks.push(message);result.textContent=checks.join('\n');};
+const pause=ms=>new Promise(r=>setTimeout(r,ms));
+async function load(){
+ const frozen=new URLSearchParams(location.search).get('source'),url=/^[1-9][0-9]*$/.test(frozen||'')?'../review/campaign-v3/round'+frozen+'/index.html':'../index.html';
+ const source=await fetch(url,{cache:'no-store'}).then(r=>r.text()),doc=new DOMParser().parseFromString(source,'text/html');
+ sourceHashes.push(Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(source))),b=>b.toString(16).padStart(2,'0')).join(''));
+ const base=doc.createElement('base');base.href=new URL('../',location.href);doc.head.prepend(base);
+ const prelude=doc.createElement('script');prelude.textContent=`
+ const rawStorage=window.localStorage,prefix=${JSON.stringify(prefix)};
+ Object.defineProperty(window,'localStorage',{value:{getItem:k=>rawStorage.getItem(prefix+k),setItem:(k,v)=>rawStorage.setItem(prefix+k,v),removeItem:k=>rawStorage.removeItem(prefix+k)}});
+ window.__PHANTOMAS_TEST__=api=>window.testGame=api;
+ window.requestAnimationFrame=()=>0;window.setInterval=()=>0;
+ window.testPad=null;Object.defineProperty(navigator,'getGamepads',{value:()=>window.testPad?[window.testPad]:[]});
+ window.addEventListener('error',e=>parent.postMessage({integrationError:e.message},'*'));
+ `;base.after(prelude);frame.srcdoc='<!doctype html>'+doc.documentElement.outerHTML;
+ for(let n=0;n<150&&!frame.contentWindow?.testGame;n++)await pause(100);
+ const w=frame.contentWindow,a=w.testGame;if(!a)throw Error('No API after load');
+ for(let n=0;n<150&&!(w.PhantomasPixi?.ready&&w.CampaignBossArt?.ready()&&w.CampaignFoeArt?.ready());n++)await pause(100);
+ if(!w.PhantomasPixi?.ready||!w.CampaignBossArt?.ready()||!w.CampaignFoeArt?.ready())throw Error('Renderer/assets not ready');
+ return {w,a};
+}
+window.addEventListener('message',e=>{if(e.source===frame.contentWindow&&e.data.integrationError)errors.push(e.data.integrationError);});
+document.querySelector('#start').onclick=async()=>{checks=[];errors=[];sourceHashes=[];try{
+ for(const key of Object.keys(localStorage).filter(k=>k.startsWith(prefix)))localStorage.removeItem(key);
+ let {w,a}=await load();assert(a.state==='title','Arranque limpio en título y atlas/Pixi cargados');
+ // Progress fixture uses production level loading; persistence is a separate test from campaign completion.
+ a.newGame();a.loadLevel(6);assert(localStorage.getItem(prefix+'phantomas.unlocked')==='6','El juego guarda el desbloqueo N7 en localStorage real aislado');
+ // Remove old document immediately so the next load cannot reuse its test API.
+ frame.srcdoc='';await pause(50);({w,a}=await load());
+ assert(a.state==='title','Documento nuevo arranca en título');
+ const key=(code,type='keydown')=>w.dispatchEvent(new w.KeyboardEvent(type,{code,bubbles:true,cancelable:true}));
+ const advance=n=>{for(let i=0;i<n;i++){a.step();a.parts.length=0;}};
+ key('KeyC');key('KeyC','keyup');assert(a.lvl===6&&a.state==='intro','Continuar por teclado recupera N7 tras recargar documento');
+ advance(40);key('Space');advance(1);key('Space','keyup');assert(a.state==='play','Espacio inicia el nivel continuado');
+ const pointer=(id,type,pointerId=1)=>w.document.getElementById(id).dispatchEvent(new w.PointerEvent(type,{bubbles:true,cancelable:true,pointerType:'touch',pointerId}));
+ const x=a.player.x;pointer('tr','pointerdown');advance(12);pointer('tr','pointercancel');assert(a.player.x>x+5,'Control táctil derecho desplaza al jugador');
+ advance(12);const stopX=a.player.x;advance(10);assert(Math.abs(a.player.x-stopX)<1,'Pointercancel libera el control: no queda movimiento pulsado');
+ pointer('tj','pointerdown');advance(1);pointer('tj','pointerup');assert(a.player.vy<0,'Control táctil SALTO salta');
+ pointer('tp','pointerdown');const f=a.simF;advance(30);assert(a.state==='pause'&&a.simF===f,'Pausa táctil congela la simulación');a.render();assert(w.getComputedStyle(w.document.getElementById('tr')).visibility==='hidden','La pausa oculta los mandos que taparían la ayuda');assert(w.getComputedStyle(w.document.getElementById('tp')).visibility!=='hidden','Pausa y reanudar siguen accesibles');pointer('tp','pointerdown');assert(a.state==='play','Pausa táctil reanuda');a.render();assert(w.getComputedStyle(w.document.getElementById('tr')).visibility!=='hidden','Reanudar recupera los controles de movimiento');
+ pointer('tr','pointerdown',11);pointer('tj','pointerdown',12);advance(1);pointer('tp','pointerdown',13);a.render();
+ for(const pointerId of [11,12])w.document.body.dispatchEvent(new w.PointerEvent('pointerup',{bubbles:true,cancelable:true,pointerType:'touch',pointerId}));
+ pointer('tp','pointerdown',13);a.render();advance(35);const releasedX=a.player.x;advance(10);assert(Math.abs(a.player.x-releasedX)<1&&!a.player.jHeld,'Pausar con dos mandos sostenidos y soltar fuera no deja movimiento ni salto retenidos');
+ const before={x:a.player.x,energy:a.player.energy,lives:a.player.lives};w.document.querySelector('#lookToggle').click();w.document.querySelector('#lookToggle').click();assert(a.player.x===before.x&&a.player.energy===before.energy&&a.player.lives===before.lives,'Comparar ambos aspectos conserva estado de partida');
+ const nativeGesture=new w.Event('touchstart',{cancelable:true});w.document.querySelector('#tr').dispatchEvent(nativeGesture);assert(nativeGesture.defaultPrevented,'Touchstart nativo se cancela en los controles');
+ w.testPad={axes:[1,0],buttons:Array.from({length:16},()=>({pressed:false,value:0}))};const padX=a.player.x;advance(10);assert(a.player.x>padX,'El sondeo del mando simulado lee el eje horizontal');
+ w.testPad.buttons[9].pressed=true;advance(1);assert(a.state==='pause','Botón Start del mando simulado pausa');w.testPad.buttons[9].pressed=false;advance(1);w.testPad.buttons[9].pressed=true;advance(1);assert(a.state==='play','Segunda pulsación Start reanuda');w.testPad=null;
+ w.dispatchEvent(new w.Event('blur'));assert(a.state==='pause','Perder foco pausa la partida');
+ const help=w.document.getElementById('campaignHelp'),more=w.document.getElementById('hintMore'),resume=w.document.getElementById('hintResume'),stage=()=>w.document.getElementById('helpStage').textContent;
+ a.render();assert(!help.hidden&&stage().includes('1/3'),'La pausa empieza con observación, sin revelar la solución');
+ const hintFrame=a.simF,hintEnergy=a.player.energy;key('KeyH');key('KeyH','keyup');assert(stage().includes('2/3')&&a.state==='pause','H pide una segunda pista y conserva la pausa');
+ w.dispatchEvent(new w.KeyboardEvent('keydown',{code:'KeyH',repeat:true,cancelable:true}));assert(stage().includes('2/3'),'Mantener H no revela automáticamente la solución');
+ resume.click();assert(a.state==='play'&&help.hidden,'El botón Seguir cierra la ayuda');key('KeyP');key('KeyP','keyup');assert(stage().includes('2/3'),'Cerrar y abrir pausa conserva la pista sin avanzar');
+ more.click();advance(60);assert(stage().includes('3/3')&&more.disabled&&a.state==='pause','La solución necesita una segunda petición explícita');assert(a.simF===hintFrame&&a.player.energy===hintEnergy,'Consultar las tres pistas no consume reloj ni energía');
+ resume.click();assert(a.state==='play','Seguir tras la solución reanuda el juego');
+ for(let li=0;li<8;li++){a.newGame();a.loadLevel(li);advance(40);key('Space');advance(1);key('Space','keyup');assert(a.lvl===li&&a.state==='play','Carga e inicio por teclado de N'+(li+1)+' (fixture de selección)');a.render();a.compareLook();a.compareLook();assert(li===3?!!a.boss:li===7?!!a.campaign.final:!a.boss&&!a.campaign?.final,'Alcance de jefe y dos aspectos de N'+(li+1));}
+ frame.srcdoc='';await pause(50);({w,a}=await load());key('KeyC');key('KeyC','keyup');assert(a.lvl===7&&a.state==='intro','Continuar recupera N8 al recargar documento');advance(40);key('Space');advance(1);key('Space','keyup');assert(a.state==='play','Iniciar N8 continuado');key('KeyM');key('KeyM','keyup');key('KeyM');key('KeyM','keyup');
+ a.render();assert(errors.length===0,'Sin errores de ejecución capturados');
+ result.textContent=JSON.stringify({sourceHashes,passed:checks.length,checks,scope:'Browser DOM/storage/rendering; synthetic pointers and gamepad, not physical Safari/hardware',errors},null,2);
+ }catch(e){result.textContent=JSON.stringify({sourceHashes,failed:e.message,checks,errors},null,2);}};
+</script>

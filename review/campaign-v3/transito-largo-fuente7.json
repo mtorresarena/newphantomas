@@ -1,0 +1,706 @@
+{
+  "sourceHash": "383fc2c0837ffdf01deff83fbcf4e3d02dbf512d1de94c39d147679757c42607",
+  "scope": "Post-review diagnostic of two longest already-labelled simple-transit intervals in each balanced route. Selection by duration, not a new A–E criterion. Legal full replay and read-only edge states. Does not prove that all rest/safety/camera pacing is dispensable.",
+  "results": [
+    {
+      "level": 5,
+      "spans": [
+        {
+          "startFrame": 1550,
+          "endFrame": 1872,
+          "category": "simple_transit",
+          "subtype": "ordinary_horizontal_travel",
+          "windowId": null,
+          "frames": 323,
+          "seconds": 5.383333333333334,
+          "samples": [
+            {
+              "edge": "before",
+              "frame": 1549,
+              "x": 1545.728016814237,
+              "y": 142,
+              "zone": {
+                "x0": 0,
+                "x1": 1792,
+                "t": "statues",
+                "label": "EL PASEO DE LOS SELLOS",
+                "lesson": "Atráelo sobre el sello y salta su carga. Las columnas te protegen.",
+                "part": 1,
+                "parts": 5,
+                "transition": false
+              },
+              "keys": 0,
+              "bags": 2,
+              "charging": false,
+              "carry": null,
+              "checkpoint": {
+                "x": 51,
+                "y": 142
+              },
+              "cam": {
+                "x": 1412.2106931207509
+              },
+              "energy": 90.45999999999623,
+              "solved": [
+                "1-1",
+                "1-2"
+              ],
+              "campaignEvents": 6
+            },
+            {
+              "edge": "after",
+              "frame": 1872,
+              "x": 2026.3289873893218,
+              "y": 142,
+              "zone": {
+                "x0": 1840,
+                "x1": 3760,
+                "t": "court",
+                "label": "LA BALANZA ENTERRADA",
+                "lesson": "Abajo toma el contrapeso: caminarás más lento. Usa los apoyos hasta el hueco.",
+                "part": 2,
+                "parts": 5,
+                "transition": false
+              },
+              "keys": 0,
+              "bags": 2,
+              "charging": false,
+              "carry": null,
+              "checkpoint": {
+                "x": 1892,
+                "y": 142
+              },
+              "cam": {
+                "x": 1885.8289873893227
+              },
+              "energy": 98.14833333333215,
+              "solved": [
+                "1-1",
+                "1-2"
+              ],
+              "campaignEvents": 6
+            }
+          ],
+          "distance": 480.60097057508483,
+          "levelName": "EL JARDÍN DE LAS ESTATUAS"
+        },
+        {
+          "startFrame": 6005,
+          "endFrame": 6270,
+          "category": "simple_transit",
+          "subtype": "ordinary_horizontal_travel",
+          "windowId": null,
+          "frames": 266,
+          "seconds": 4.433333333333334,
+          "samples": [
+            {
+              "edge": "before",
+              "frame": 6004,
+              "x": 5538.613674456747,
+              "y": 142,
+              "zone": {
+                "x0": 3808,
+                "x1": 5856,
+                "t": "sewer",
+                "label": "LOS CANALES DEL GUARDIÁN",
+                "lesson": "Atráelo sobre el sello y salta su carga. Las columnas te protegen.",
+                "part": 3,
+                "parts": 5,
+                "transition": false
+              },
+              "keys": 0,
+              "bags": 4,
+              "charging": false,
+              "carry": null,
+              "checkpoint": {
+                "x": 3860,
+                "y": 142
+              },
+              "cam": {
+                "x": 5398.113671031037
+              },
+              "energy": 86.90833333332768,
+              "solved": [
+                "1-1",
+                "1-2",
+                "2-1",
+                "2-2",
+                "3-1",
+                "3-2"
+              ],
+              "campaignEvents": 16
+            },
+            {
+              "edge": "after",
+              "frame": 6270,
+              "x": 5937.613674456747,
+              "y": 142,
+              "zone": {
+                "x0": 5904,
+                "x1": 8080,
+                "t": "crypt",
+                "label": "EL CLAUSTRO DE LAS RUNAS",
+                "lesson": "Lee el orden de las runas. Abajo activa cada pedestal.",
+                "part": 4,
+                "parts": 5,
+                "transition": false
+              },
+              "keys": 0,
+              "bags": 4,
+              "charging": false,
+              "carry": null,
+              "checkpoint": {
+                "x": 3860,
+                "y": 142
+              },
+              "cam": {
+                "x": 5797.113674456743
+              },
+              "energy": 99.07416666666607,
+              "solved": [
+                "1-1",
+                "1-2",
+                "2-1",
+                "2-2",
+                "3-1",
+                "3-2"
+              ],
+              "campaignEvents": 16
+            }
+          ],
+          "distance": 399,
+          "levelName": "EL JARDÍN DE LAS ESTATUAS"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "spans": [
+        {
+          "startFrame": 5802,
+          "endFrame": 6160,
+          "category": "simple_transit",
+          "subtype": "ordinary_horizontal_travel",
+          "windowId": null,
+          "frames": 359,
+          "seconds": 5.983333333333333,
+          "samples": [
+            {
+              "edge": "before",
+              "frame": 5801,
+              "x": 5789.213945291579,
+              "y": 142,
+              "zone": {
+                "x0": 4192,
+                "x1": 6240,
+                "t": "clocktower",
+                "label": "LA GALERÍA DEL PÉNDULO",
+                "lesson": "Activa los pulsadores numerados en orden con Abajo. Alcanza la puerta antes de que acabe el reloj.",
+                "part": 3,
+                "parts": 5,
+                "transition": false
+              },
+              "keys": 0,
+              "bags": 6,
+              "charging": false,
+              "carry": null,
+              "checkpoint": {
+                "x": 4244,
+                "y": 142
+              },
+              "cam": {
+                "x": 5648.650522495121
+              },
+              "energy": 87.934999999995,
+              "solved": [
+                "1-1",
+                "1-2",
+                "2-1",
+                "2-2",
+                "3-1",
+                "3-2"
+              ],
+              "campaignEvents": 19
+            },
+            {
+              "edge": "after",
+              "frame": 6160,
+              "x": 6327.713945291579,
+              "y": 142,
+              "zone": {
+                "x0": 6288,
+                "x1": 8848,
+                "t": "bell",
+                "label": "LAS HORAS INVERTIDAS",
+                "lesson": "Lee el orden de las runas. Abajo activa cada pedestal.",
+                "part": 4,
+                "parts": 5,
+                "transition": false
+              },
+              "keys": 0,
+              "bags": 6,
+              "charging": false,
+              "carry": null,
+              "checkpoint": {
+                "x": 4244,
+                "y": 142
+              },
+              "cam": {
+                "x": 6187.213945291574
+              },
+              "energy": 99.03749999999938,
+              "solved": [
+                "1-1",
+                "1-2",
+                "2-1",
+                "2-2",
+                "3-1",
+                "3-2"
+              ],
+              "campaignEvents": 19
+            }
+          ],
+          "distance": 538.5,
+          "levelName": "LA TORRE DEL RELOJ"
+        },
+        {
+          "startFrame": 1530,
+          "endFrame": 1852,
+          "category": "simple_transit",
+          "subtype": "ordinary_horizontal_travel",
+          "windowId": null,
+          "frames": 323,
+          "seconds": 5.383333333333334,
+          "samples": [
+            {
+              "edge": "before",
+              "frame": 1529,
+              "x": 1545.728016814237,
+              "y": 142,
+              "zone": {
+                "x0": 0,
+                "x1": 1792,
+                "t": "warehouse",
+                "label": "EL TALLER DEL ESCAPAMIENTO",
+                "lesson": "Activa los pulsadores numerados en orden con Abajo. Alcanza la puerta antes de que acabe el reloj.",
+                "part": 1,
+                "parts": 5,
+                "transition": false
+              },
+              "keys": 0,
+              "bags": 2,
+              "charging": false,
+              "carry": null,
+              "checkpoint": {
+                "x": 51,
+                "y": 142
+              },
+              "cam": {
+                "x": 1412.2106931207509
+              },
+              "energy": 90.75333333332975,
+              "solved": [
+                "1-1",
+                "1-2"
+              ],
+              "campaignEvents": 7
+            },
+            {
+              "edge": "after",
+              "frame": 1852,
+              "x": 2026.3289873893218,
+              "y": 142,
+              "zone": {
+                "x0": 1840,
+                "x1": 4144,
+                "t": "attic",
+                "label": "LOS CONTRAPESOS GEMELOS",
+                "lesson": "Abajo toma el contrapeso: caminarás más lento. Usa los apoyos hasta el hueco.",
+                "part": 2,
+                "parts": 5,
+                "transition": false
+              },
+              "keys": 0,
+              "bags": 2,
+              "charging": false,
+              "carry": null,
+              "checkpoint": {
+                "x": 1892,
+                "y": 142
+              },
+              "cam": {
+                "x": 1885.8289873893227
+              },
+              "energy": 98.14833333333215,
+              "solved": [
+                "1-1",
+                "1-2"
+              ],
+              "campaignEvents": 7
+            }
+          ],
+          "distance": 480.60097057508483,
+          "levelName": "LA TORRE DEL RELOJ"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "spans": [
+        {
+          "startFrame": 7110,
+          "endFrame": 7500,
+          "category": "simple_transit",
+          "subtype": "ordinary_horizontal_travel",
+          "windowId": null,
+          "frames": 391,
+          "seconds": 6.516666666666667,
+          "samples": [
+            {
+              "edge": "before",
+              "frame": 7109,
+              "x": 7575.750415961246,
+              "y": 142,
+              "zone": {
+                "x0": 5904,
+                "x1": 8080,
+                "t": "gallery",
+                "label": "EL LABERINTO DE LOS RAYOS",
+                "lesson": "Activa los pulsadores numerados en orden con Abajo. Alcanza la puerta antes de que acabe el reloj.",
+                "part": 4,
+                "parts": 5,
+                "transition": false
+              },
+              "keys": 0,
+              "bags": 7,
+              "charging": false,
+              "carry": null,
+              "checkpoint": {
+                "x": 5956,
+                "y": 142
+              },
+              "cam": {
+                "x": 7437.439526497663
+              },
+              "energy": 83.47416666666193,
+              "solved": [
+                "1-1",
+                "1-2",
+                "2-1",
+                "2-2",
+                "3-1",
+                "3-2",
+                "4-1",
+                "4-2"
+              ],
+              "campaignEvents": 28
+            },
+            {
+              "edge": "after",
+              "frame": 7500,
+              "x": 8162.250415961246,
+              "y": 142,
+              "zone": {
+                "x0": 8128,
+                "x1": 10432,
+                "t": "observatory",
+                "label": "LA ALINEACIÓN LUNAR",
+                "lesson": "Abajo gira los espejos. Conecta la lámpara con el receptor.",
+                "part": 5,
+                "parts": 5,
+                "transition": false
+              },
+              "keys": 0,
+              "bags": 7,
+              "charging": false,
+              "carry": null,
+              "checkpoint": {
+                "x": 5956,
+                "y": 142
+              },
+              "cam": {
+                "x": 8021.750415961251
+              },
+              "energy": 99.07416666666607,
+              "solved": [
+                "1-1",
+                "1-2",
+                "2-1",
+                "2-2",
+                "3-1",
+                "3-2",
+                "4-1",
+                "4-2"
+              ],
+              "campaignEvents": 28
+            }
+          ],
+          "distance": 586.5,
+          "levelName": "EL OBSERVATORIO DEL BARÓN"
+        },
+        {
+          "startFrame": 7966,
+          "endFrame": 8275,
+          "category": "simple_transit",
+          "subtype": "ordinary_horizontal_travel",
+          "windowId": null,
+          "frames": 310,
+          "seconds": 5.166666666666667,
+          "samples": [
+            {
+              "edge": "before",
+              "frame": 7965,
+              "x": 8397.707623996735,
+              "y": 142,
+              "zone": {
+                "x0": 8128,
+                "x1": 10432,
+                "t": "observatory",
+                "label": "LA ALINEACIÓN LUNAR",
+                "lesson": "Abajo gira los espejos. Conecta la lámpara con el receptor.",
+                "part": 5,
+                "parts": 5,
+                "transition": false
+              },
+              "keys": 0,
+              "bags": 7,
+              "charging": false,
+              "carry": null,
+              "checkpoint": {
+                "x": 8180,
+                "y": 142
+              },
+              "cam": {
+                "x": 8214.856087710725
+              },
+              "energy": 93.85083333333095,
+              "solved": [
+                "1-1",
+                "1-2",
+                "2-1",
+                "2-2",
+                "3-1",
+                "3-2",
+                "4-1",
+                "4-2",
+                "5-1"
+              ],
+              "campaignEvents": 31
+            },
+            {
+              "edge": "after",
+              "frame": 8275,
+              "x": 8860.207623973865,
+              "y": 142,
+              "zone": {
+                "x0": 8128,
+                "x1": 10432,
+                "t": "observatory",
+                "label": "LA ALINEACIÓN LUNAR",
+                "lesson": "Abajo gira los espejos. Conecta la lámpara con el receptor.",
+                "part": 5,
+                "parts": 5,
+                "transition": false
+              },
+              "keys": 0,
+              "bags": 7,
+              "charging": false,
+              "carry": null,
+              "checkpoint": {
+                "x": 8180,
+                "y": 142
+              },
+              "cam": {
+                "x": 8719.707623973856
+              },
+              "energy": 91.00916666666247,
+              "solved": [
+                "1-1",
+                "1-2",
+                "2-1",
+                "2-2",
+                "3-1",
+                "3-2",
+                "4-1",
+                "4-2",
+                "5-1"
+              ],
+              "campaignEvents": 31
+            }
+          ],
+          "distance": 462.49999997712985,
+          "levelName": "EL OBSERVATORIO DEL BARÓN"
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "spans": [
+        {
+          "startFrame": 3542,
+          "endFrame": 3920,
+          "category": "simple_transit",
+          "subtype": "ordinary_horizontal_travel",
+          "windowId": null,
+          "frames": 379,
+          "seconds": 6.316666666666666,
+          "samples": [
+            {
+              "edge": "before",
+              "frame": 3541,
+              "x": 3537.454281532707,
+              "y": 142,
+              "zone": {
+                "x0": 1968,
+                "x1": 4016,
+                "t": "heart",
+                "label": "LA FORJA DE LAS MEMORIAS",
+                "lesson": "Lee el orden de las runas. Abajo activa cada pedestal.",
+                "part": 2,
+                "parts": 6,
+                "transition": false
+              },
+              "keys": 0,
+              "bags": 2,
+              "charging": false,
+              "carry": null,
+              "checkpoint": {
+                "x": 2020,
+                "y": 142
+              },
+              "cam": {
+                "x": 3396.5064230419366
+              },
+              "energy": 88.50749999999498,
+              "solved": [
+                "1-1",
+                "1-2",
+                "2-1",
+                "2-2"
+              ],
+              "campaignEvents": 11
+            },
+            {
+              "edge": "after",
+              "frame": 3920,
+              "x": 4105.954281532707,
+              "y": 142,
+              "zone": {
+                "x0": 4064,
+                "x1": 6240,
+                "t": "sewer",
+                "label": "EL ACUEDUCTO DE LA SANGRE",
+                "lesson": "Abajo gira los espejos. Conecta la lámpara con el receptor.",
+                "part": 3,
+                "parts": 6,
+                "transition": false
+              },
+              "keys": 0,
+              "bags": 2,
+              "charging": false,
+              "carry": null,
+              "checkpoint": {
+                "x": 2020,
+                "y": 142
+              },
+              "cam": {
+                "x": 3965.454281532705
+              },
+              "energy": 99.02833333333271,
+              "solved": [
+                "1-1",
+                "1-2",
+                "2-1",
+                "2-2"
+              ],
+              "campaignEvents": 11
+            }
+          ],
+          "distance": 568.5,
+          "levelName": "LA CÁMARA DEL CORAZÓN"
+        },
+        {
+          "startFrame": 2641,
+          "endFrame": 2917,
+          "category": "simple_transit",
+          "subtype": "ordinary_horizontal_travel",
+          "windowId": null,
+          "frames": 277,
+          "seconds": 4.616666666666666,
+          "samples": [
+            {
+              "edge": "before",
+              "frame": 2640,
+              "x": 2959.4125775286716,
+              "y": 142,
+              "zone": {
+                "x0": 1968,
+                "x1": 4016,
+                "t": "heart",
+                "label": "LA FORJA DE LAS MEMORIAS",
+                "lesson": "Lee el orden de las runas. Abajo activa cada pedestal.",
+                "part": 2,
+                "parts": 6,
+                "transition": false
+              },
+              "keys": 0,
+              "bags": 1,
+              "charging": false,
+              "carry": null,
+              "checkpoint": {
+                "x": 2020,
+                "y": 142
+              },
+              "cam": {
+                "x": 2821.2570231616182
+              },
+              "energy": 83.93083333332733,
+              "solved": [
+                "1-1",
+                "1-2",
+                "2-1"
+              ],
+              "campaignEvents": 9
+            },
+            {
+              "edge": "after",
+              "frame": 2917,
+              "x": 3374.9125775286716,
+              "y": 142,
+              "zone": {
+                "x0": 1968,
+                "x1": 4016,
+                "t": "heart",
+                "label": "LA FORJA DE LAS MEMORIAS",
+                "lesson": "Lee el orden de las runas. Abajo activa cada pedestal.",
+                "part": 2,
+                "parts": 6,
+                "transition": false
+              },
+              "keys": 0,
+              "bags": 1,
+              "charging": false,
+              "carry": null,
+              "checkpoint": {
+                "x": 2020,
+                "y": 142
+              },
+              "cam": {
+                "x": 3234.412577528674
+              },
+              "energy": 97.82749999999861,
+              "solved": [
+                "1-1",
+                "1-2",
+                "2-1"
+              ],
+              "campaignEvents": 9
+            }
+          ],
+          "distance": 415.5,
+          "levelName": "LA CÁMARA DEL CORAZÓN"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "sourceHash": "57a34b6ffb17a65d897d4e0b6a832ddd9f77300673942a2865efde24ac3d2725",
+  "witness": "route-n5-cautious-retry-weight.json",
+  "witnessHash": "d92ac9367b39aff827870632b6295a8268b11dd73dc410164ebfa90d91af5756",
+  "scope": "Legal input replay from natural N5 start. No state mutation, snapshots, previews, healing or direct die/reset calls. Confirms carry exists at death, clears on respawn and that same weight puzzle is solved afterwards.",
+  "complete": true,
+  "frames": 22295,
+  "seconds": 371.5833333333333,
+  "lives": 2,
+  "events": [
+    {
+      "frame": 1909,
+      "type": "carry-change",
+      "from": null,
+      "to": "2-1",
+      "x": 2056.057004203559,
+      "y": 142
+    },
+    {
+      "frame": 12590,
+      "type": "death",
+      "carry": "2-1",
+      "lives": 2,
+      "x": 2056.114701675035,
+      "y": 142,
+      "weightStates": [
+        {
+          "id": "2-1",
+          "solved": false,
+          "activeNodes": []
+        },
+        {
+          "id": "3-2",
+          "solved": false,
+          "activeNodes": []
+        },
+        {
+          "id": "5-2",
+          "solved": false,
+          "activeNodes": []
+        }
+      ]
+    },
+    {
+      "frame": 12680,
+      "type": "carry-change",
+      "from": "2-1",
+      "to": null,
+      "x": 1892,
+      "y": 142
+    },
+    {
+      "frame": 12680,
+      "type": "respawn",
+      "carry": null,
+      "lives": 2,
+      "x": 1892,
+      "y": 142
+    },
+    {
+      "frame": 12799,
+      "type": "carry-change",
+      "from": null,
+      "to": "2-1",
+      "x": 2057.228016814237,
+      "y": 142
+    },
+    {
+      "frame": 13109,
+      "type": "carry-change",
+      "from": "2-1",
+      "to": null,
+      "x": 2396.92543637322,
+      "y": 94
+    },
+    {
+      "frame": 16429,
+      "type": "carry-change",
+      "from": null,
+      "to": "3-2",
+      "x": 5605.93523527704,
+      "y": 142
+    },
+    {
+      "frame": 16699,
+      "type": "carry-change",
+      "from": "3-2",
+      "to": null,
+      "x": 5306.274532179617,
+      "y": 46
+    },
+    {
+      "frame": 21709,
+      "type": "carry-change",
+      "from": null,
+      "to": "5-2",
+      "x": 10187.357458601997,
+      "y": 142
+    },
+    {
+      "frame": 21979,
+      "type": "carry-change",
+      "from": "5-2",
+      "to": null,
+      "x": 9887.696755504574,
+      "y": 46
+    }
+  ],
+  "campaignEvents": [
+    {
+      "frame": 418,
+      "type": "charge-seal",
+      "id": "1-1",
+      "detail": "1"
+    },
+    {
+      "frame": 418,
+      "type": "solved",
+      "id": "1-1",
+      "detail": ""
+    },
+    {
+      "frame": 1209,
+      "type": "activate",
+      "id": "1-2",
+      "detail": "2"
+    },
+    {
+      "frame": 1339,
+      "type": "activate",
+      "id": "1-2",
+      "detail": "1"
+    },
+    {
+      "frame": 1559,
+      "type": "activate",
+      "id": "1-2",
+      "detail": "3"
+    },
+    {
+      "frame": 1559,
+      "type": "solved",
+      "id": "1-2",
+      "detail": ""
+    },
+    {
+      "frame": 12680,
+      "type": "respawn",
+      "id": "campaign",
+      "detail": ""
+    },
+    {
+      "frame": 13109,
+      "type": "deposit",
+      "id": "2-1",
+      "detail": ""
+    },
+    {
+      "frame": 13109,
+      "type": "solved",
+      "id": "2-1",
+      "detail": ""
+    },
+    {
+      "frame": 14110,
+      "type": "charge-seal",
+      "id": "2-2",
+      "detail": "1"
+    },
+    {
+      "frame": 14459,
+      "type": "charge-seal",
+      "id": "2-2",
+      "detail": "2"
+    },
+    {
+      "frame": 14459,
+      "type": "solved",
+      "id": "2-2",
+      "detail": ""
+    },
+    {
+      "frame": 15199,
+      "type": "charge-seal",
+      "id": "3-1",
+      "detail": "1"
+    },
+    {
+      "frame": 15549,
+      "type": "charge-seal",
+      "id": "3-1",
+      "detail": "2"
+    },
+    {
+      "frame": 15549,
+      "type": "solved",
+      "id": "3-1",
+      "detail": ""
+    },
+    {
+      "frame": 16699,
+      "type": "deposit",
+      "id": "3-2",
+      "detail": ""
+    },
+    {
+      "frame": 16699,
+      "type": "solved",
+      "id": "3-2",
+      "detail": ""
+    },
+    {
+      "frame": 17489,
+      "type": "activate",
+      "id": "4-1",
+      "detail": "3"
+    },
+    {
+      "frame": 17709,
+      "type": "activate",
+      "id": "4-1",
+      "detail": "1"
+    },
+    {
+      "frame": 17839,
+      "type": "activate",
+      "id": "4-1",
+      "detail": "4"
+    },
+    {
+      "frame": 17919,
+      "type": "activate",
+      "id": "4-1",
+      "detail": "2"
+    },
+    {
+      "frame": 17919,
+      "type": "solved",
+      "id": "4-1",
+      "detail": ""
+    },
+    {
+      "frame": 19191,
+      "type": "charge-seal",
+      "id": "4-2",
+      "detail": "1"
+    },
+    {
+      "frame": 19548,
+      "type": "charge-seal",
+      "id": "4-2",
+      "detail": "2"
+    },
+    {
+      "frame": 19548,
+      "type": "solved",
+      "id": "4-2",
+      "detail": ""
+    },
+    {
+      "frame": 20298,
+      "type": "charge-seal",
+      "id": "5-1",
+      "detail": "1"
+    },
+    {
+      "frame": 20650,
+      "type": "charge-seal",
+      "id": "5-1",
+      "detail": "2"
+    },
+    {
+      "frame": 20650,
+      "type": "solved",
+      "id": "5-1",
+      "detail": ""
+    },
+    {
+      "frame": 21979,
+      "type": "deposit",
+      "id": "5-2",
+      "detail": ""
+    },
+    {
+      "frame": 21979,
+      "type": "solved",
+      "id": "5-2",
+      "detail": ""
+    }
+  ]
+}

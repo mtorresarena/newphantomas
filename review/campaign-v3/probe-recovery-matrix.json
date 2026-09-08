@@ -1,0 +1,896 @@
+{
+  "sha256": "671e67a20368fb093e76fa2df2d09df374a49d0f862c65d0a9f087c6acb745ad",
+  "scope": "Partial puzzle and phase states fabricated; death and respawn executed by production step. Tests state recovery, not traversal/reachability.",
+  "cases": [
+    {
+      "level": 5,
+      "trial": "1-1",
+      "kind": "charge",
+      "nodes": 1,
+      "prepared": {
+        "progress": 0,
+        "carry": null,
+        "until": 0,
+        "angles": [
+          0
+        ],
+        "active": [
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 5,
+      "trial": "1-2",
+      "kind": "sequence",
+      "nodes": 3,
+      "prepared": {
+        "progress": 1,
+        "carry": null,
+        "until": 0,
+        "angles": [
+          0,
+          0,
+          0
+        ],
+        "active": [
+          false,
+          true,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 5,
+      "trial": "2-1",
+      "kind": "weight",
+      "nodes": 2,
+      "prepared": {
+        "progress": 0,
+        "carry": "2-1",
+        "until": 0,
+        "angles": [
+          0,
+          0
+        ],
+        "active": [
+          false,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 5,
+      "trial": "2-2",
+      "kind": "charge",
+      "nodes": 2,
+      "prepared": {
+        "progress": 0,
+        "carry": null,
+        "until": 0,
+        "angles": [
+          0,
+          0
+        ],
+        "active": [
+          true,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 5,
+      "trial": "3-1",
+      "kind": "charge",
+      "nodes": 2,
+      "prepared": {
+        "progress": 0,
+        "carry": null,
+        "until": 0,
+        "angles": [
+          0,
+          0
+        ],
+        "active": [
+          true,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 5,
+      "trial": "3-2",
+      "kind": "weight",
+      "nodes": 2,
+      "prepared": {
+        "progress": 0,
+        "carry": "3-2",
+        "until": 0,
+        "angles": [
+          0,
+          0
+        ],
+        "active": [
+          false,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 5,
+      "trial": "4-1",
+      "kind": "sequence",
+      "nodes": 4,
+      "prepared": {
+        "progress": 1,
+        "carry": null,
+        "until": 0,
+        "angles": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "active": [
+          false,
+          false,
+          true,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 5,
+      "trial": "4-2",
+      "kind": "charge",
+      "nodes": 2,
+      "prepared": {
+        "progress": 0,
+        "carry": null,
+        "until": 0,
+        "angles": [
+          0,
+          0
+        ],
+        "active": [
+          true,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 5,
+      "trial": "5-1",
+      "kind": "charge",
+      "nodes": 2,
+      "prepared": {
+        "progress": 0,
+        "carry": null,
+        "until": 0,
+        "angles": [
+          0,
+          0
+        ],
+        "active": [
+          true,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 5,
+      "trial": "5-2",
+      "kind": "weight",
+      "nodes": 2,
+      "prepared": {
+        "progress": 0,
+        "carry": "5-2",
+        "until": 0,
+        "angles": [
+          0,
+          0
+        ],
+        "active": [
+          false,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 6,
+      "trial": "1-1",
+      "kind": "timed",
+      "nodes": 2,
+      "prepared": {
+        "progress": 1,
+        "carry": null,
+        "until": 600,
+        "angles": [
+          0,
+          0
+        ],
+        "active": [
+          true,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 6,
+      "trial": "1-2",
+      "kind": "sequence",
+      "nodes": 3,
+      "prepared": {
+        "progress": 1,
+        "carry": null,
+        "until": 0,
+        "angles": [
+          0,
+          0,
+          0
+        ],
+        "active": [
+          false,
+          true,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 6,
+      "trial": "2-1",
+      "kind": "weight",
+      "nodes": 2,
+      "prepared": {
+        "progress": 0,
+        "carry": "2-1",
+        "until": 0,
+        "angles": [
+          0,
+          0
+        ],
+        "active": [
+          false,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 6,
+      "trial": "2-2",
+      "kind": "timed",
+      "nodes": 3,
+      "prepared": {
+        "progress": 1,
+        "carry": null,
+        "until": 420,
+        "angles": [
+          0,
+          0,
+          0
+        ],
+        "active": [
+          true,
+          false,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 6,
+      "trial": "3-1",
+      "kind": "timed",
+      "nodes": 3,
+      "prepared": {
+        "progress": 1,
+        "carry": null,
+        "until": 420,
+        "angles": [
+          0,
+          0,
+          0
+        ],
+        "active": [
+          true,
+          false,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 6,
+      "trial": "3-2",
+      "kind": "weight",
+      "nodes": 2,
+      "prepared": {
+        "progress": 0,
+        "carry": "3-2",
+        "until": 0,
+        "angles": [
+          0,
+          0
+        ],
+        "active": [
+          false,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 6,
+      "trial": "4-1",
+      "kind": "sequence",
+      "nodes": 4,
+      "prepared": {
+        "progress": 1,
+        "carry": null,
+        "until": 0,
+        "angles": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "active": [
+          false,
+          false,
+          true,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 6,
+      "trial": "4-2",
+      "kind": "timed",
+      "nodes": 3,
+      "prepared": {
+        "progress": 1,
+        "carry": null,
+        "until": 420,
+        "angles": [
+          0,
+          0,
+          0
+        ],
+        "active": [
+          true,
+          false,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 6,
+      "trial": "5-1",
+      "kind": "timed",
+      "nodes": 3,
+      "prepared": {
+        "progress": 1,
+        "carry": null,
+        "until": 420,
+        "angles": [
+          0,
+          0,
+          0
+        ],
+        "active": [
+          true,
+          false,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 6,
+      "trial": "5-2",
+      "kind": "timed",
+      "nodes": 3,
+      "prepared": {
+        "progress": 1,
+        "carry": null,
+        "until": 420,
+        "angles": [
+          0,
+          0,
+          0
+        ],
+        "active": [
+          true,
+          false,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 7,
+      "trial": "1-1",
+      "kind": "mirror",
+      "nodes": 4,
+      "prepared": {
+        "progress": 0,
+        "carry": null,
+        "until": 0,
+        "angles": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "active": [
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 7,
+      "trial": "1-2",
+      "kind": "sequence",
+      "nodes": 3,
+      "prepared": {
+        "progress": 1,
+        "carry": null,
+        "until": 0,
+        "angles": [
+          0,
+          0,
+          0
+        ],
+        "active": [
+          false,
+          true,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 7,
+      "trial": "2-1",
+      "kind": "sequence",
+      "nodes": 3,
+      "prepared": {
+        "progress": 1,
+        "carry": null,
+        "until": 0,
+        "angles": [
+          0,
+          0,
+          0
+        ],
+        "active": [
+          false,
+          true,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 7,
+      "trial": "2-2",
+      "kind": "mirror",
+      "nodes": 5,
+      "prepared": {
+        "progress": 0,
+        "carry": null,
+        "until": 0,
+        "angles": [
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "active": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 7,
+      "trial": "3-1",
+      "kind": "mirror",
+      "nodes": 5,
+      "prepared": {
+        "progress": 0,
+        "carry": null,
+        "until": 0,
+        "angles": [
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "active": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 7,
+      "trial": "3-2",
+      "kind": "timed",
+      "nodes": 3,
+      "prepared": {
+        "progress": 1,
+        "carry": null,
+        "until": 420,
+        "angles": [
+          0,
+          0,
+          0
+        ],
+        "active": [
+          true,
+          false,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 7,
+      "trial": "4-1",
+      "kind": "timed",
+      "nodes": 3,
+      "prepared": {
+        "progress": 1,
+        "carry": null,
+        "until": 420,
+        "angles": [
+          0,
+          0,
+          0
+        ],
+        "active": [
+          true,
+          false,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 7,
+      "trial": "4-2",
+      "kind": "mirror",
+      "nodes": 5,
+      "prepared": {
+        "progress": 0,
+        "carry": null,
+        "until": 0,
+        "angles": [
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "active": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 7,
+      "trial": "5-1",
+      "kind": "mirror",
+      "nodes": 5,
+      "prepared": {
+        "progress": 0,
+        "carry": null,
+        "until": 0,
+        "angles": [
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "active": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 7,
+      "trial": "5-2",
+      "kind": "mirror",
+      "nodes": 5,
+      "prepared": {
+        "progress": 0,
+        "carry": null,
+        "until": 0,
+        "angles": [
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "active": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 8,
+      "trial": "1-1",
+      "kind": "charge",
+      "nodes": 1,
+      "prepared": {
+        "progress": 0,
+        "carry": null,
+        "until": 0,
+        "angles": [
+          0
+        ],
+        "active": [
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 8,
+      "trial": "1-2",
+      "kind": "timed",
+      "nodes": 2,
+      "prepared": {
+        "progress": 1,
+        "carry": null,
+        "until": 600,
+        "angles": [
+          0,
+          0
+        ],
+        "active": [
+          true,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 8,
+      "trial": "2-1",
+      "kind": "sequence",
+      "nodes": 3,
+      "prepared": {
+        "progress": 1,
+        "carry": null,
+        "until": 0,
+        "angles": [
+          0,
+          0,
+          0
+        ],
+        "active": [
+          false,
+          true,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 8,
+      "trial": "2-2",
+      "kind": "weight",
+      "nodes": 2,
+      "prepared": {
+        "progress": 0,
+        "carry": "2-2",
+        "until": 0,
+        "angles": [
+          0,
+          0
+        ],
+        "active": [
+          false,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 8,
+      "trial": "3-1",
+      "kind": "mirror",
+      "nodes": 5,
+      "prepared": {
+        "progress": 0,
+        "carry": null,
+        "until": 0,
+        "angles": [
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "active": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 8,
+      "trial": "3-2",
+      "kind": "timed",
+      "nodes": 3,
+      "prepared": {
+        "progress": 1,
+        "carry": null,
+        "until": 420,
+        "angles": [
+          0,
+          0,
+          0
+        ],
+        "active": [
+          true,
+          false,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 8,
+      "trial": "4-1",
+      "kind": "weight",
+      "nodes": 2,
+      "prepared": {
+        "progress": 0,
+        "carry": "4-1",
+        "until": 0,
+        "angles": [
+          0,
+          0
+        ],
+        "active": [
+          false,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 8,
+      "trial": "4-2",
+      "kind": "charge",
+      "nodes": 2,
+      "prepared": {
+        "progress": 0,
+        "carry": null,
+        "until": 0,
+        "angles": [
+          0,
+          0
+        ],
+        "active": [
+          true,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 8,
+      "trial": "5-1",
+      "kind": "sequence",
+      "nodes": 4,
+      "prepared": {
+        "progress": 1,
+        "carry": null,
+        "until": 0,
+        "angles": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "active": [
+          false,
+          false,
+          true,
+          false
+        ]
+      },
+      "ok": true
+    },
+    {
+      "level": 8,
+      "trial": "5-2",
+      "kind": "mirror",
+      "nodes": 5,
+      "prepared": {
+        "progress": 0,
+        "carry": null,
+        "until": 0,
+        "angles": [
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "active": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "ok": true
+    }
+  ],
+  "bossRetry": {
+    "canonicalX": 11224,
+    "phase3X": 11247.999982614052,
+    "afterResetX": 11247.999982614052,
+    "hp": 6,
+    "phase": 1,
+    "state": "idle",
+    "active": false,
+    "canonicalPositionRestored": false
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "sourceBefore": "d4b3b88064956af7b9c9460507aff83110f47ed4a2eb28394cacad69d87fee53",
+  "sourceAfter": "8c3e43a36a29dde8b30a56ad8a5112a0bdb1ccb93b0579b753f54de094362d45",
+  "fixture": false,
+  "scope": "Actual controls from origin replayed in both versions. Complete player state and all boss state except new visual flash agree at every simulated frame; this does not compare sound audibly.",
+  "frames": 12491,
+  "bossDamageTaken": 1,
+  "initialAuditCorrection": "Initial audit incorrectly assumed zero boss damage for this reused policy. One hurt onset is observed identically in both sources; not a regression. The initial assertion failure is preserved in the expectation-zero script.",
+  "changes": [
+    {
+      "frame": 10629,
+      "state": "intro",
+      "phase": 1,
+      "hp": 6,
+      "flash": 0,
+      "message": "SALTA SOBRE EL NÚCLEO CUANDO SE ABRA"
+    },
+    {
+      "frame": 10778,
+      "state": "warn",
+      "phase": 1,
+      "hp": 6,
+      "flash": 0,
+      "message": "SALTA SOBRE EL NÚCLEO CUANDO SE ABRA"
+    },
+    {
+      "frame": 10848,
+      "state": "attack",
+      "phase": 1,
+      "hp": 6,
+      "flash": 0,
+      "message": "SALTA SOBRE EL NÚCLEO CUANDO SE ABRA"
+    },
+    {
+      "frame": 10898,
+      "state": "open",
+      "phase": 1,
+      "hp": 6,
+      "flash": 0,
+      "message": "SALTA SOBRE EL NÚCLEO CUANDO SE ABRA"
+    },
+    {
+      "frame": 10936,
+      "state": "recover",
+      "phase": 1,
+      "hp": 5,
+      "flash": 24,
+      "message": "SALTA SOBRE EL NÚCLEO CUANDO SE ABRA"
+    },
+    {
+      "frame": 11006,
+      "state": "warn",
+      "phase": 1,
+      "hp": 5,
+      "flash": 0,
+      "message": "SALTA SOBRE EL NÚCLEO CUANDO SE ABRA"
+    },
+    {
+      "frame": 11076,
+      "state": "attack",
+      "phase": 1,
+      "hp": 5,
+      "flash": 0,
+      "message": "SALTA SOBRE EL NÚCLEO CUANDO SE ABRA"
+    },
+    {
+      "frame": 11126,
+      "state": "open",
+      "phase": 1,
+      "hp": 5,
+      "flash": 0,
+      "message": "SALTA SOBRE EL NÚCLEO CUANDO SE ABRA"
+    },
+    {
+      "frame": 11174,
+      "state": "recover",
+      "phase": 1,
+      "hp": 4,
+      "flash": 24,
+      "message": "SALTA SOBRE EL NÚCLEO CUANDO SE ABRA"
+    },
+    {
+      "frame": 11175,
+      "state": "recover",
+      "phase": 2,
+      "hp": 4,
+      "flash": 23,
+      "message": "FASE 2: ABANDONA LA DIRECCIÓN MARCADA"
+    },
+    {
+      "frame": 11244,
+      "state": "warn",
+      "phase": 2,
+      "hp": 4,
+      "flash": 0,
+      "message": "FASE 2: ABANDONA LA DIRECCIÓN MARCADA"
+    },
+    {
+      "frame": 11314,
+      "state": "attack",
+      "phase": 2,
+      "hp": 4,
+      "flash": 0,
+      "message": "FASE 2: ABANDONA LA DIRECCIÓN MARCADA"
+    },
+    {
+      "frame": 11384,
+      "state": "open",
+      "phase": 2,
+      "hp": 4,
+      "flash": 0,
+      "message": "FASE 2: ABANDONA LA DIRECCIÓN MARCADA"
+    },
+    {
+      "frame": 11448,
+      "state": "recover",
+      "phase": 2,
+      "hp": 3,
+      "flash": 24,
+      "message": "FASE 2: ABANDONA LA DIRECCIÓN MARCADA"
+    },
+    {
+      "frame": 11518,
+      "state": "warn",
+      "phase": 2,
+      "hp": 3,
+      "flash": 0,
+      "message": "FASE 2: ABANDONA LA DIRECCIÓN MARCADA"
+    },
+    {
+      "frame": 11588,
+      "state": "attack",
+      "phase": 2,
+      "hp": 3,
+      "flash": 0,
+      "message": "FASE 2: ABANDONA LA DIRECCIÓN MARCADA"
+    },
+    {
+      "frame": 11658,
+      "state": "open",
+      "phase": 2,
+      "hp": 3,
+      "flash": 0,
+      "message": "FASE 2: ABANDONA LA DIRECCIÓN MARCADA"
+    },
+    {
+      "frame": 11686,
+      "state": "recover",
+      "phase": 2,
+      "hp": 2,
+      "flash": 24,
+      "message": "FASE 2: ABANDONA LA DIRECCIÓN MARCADA"
+    },
+    {
+      "frame": 11687,
+      "state": "recover",
+      "phase": 3,
+      "hp": 2,
+      "flash": 23,
+      "message": "FASE 3: MARCA Y BARRIDO COMBINADOS"
+    },
+    {
+      "frame": 11756,
+      "state": "warn",
+      "phase": 3,
+      "hp": 2,
+      "flash": 0,
+      "message": "FASE 3: MARCA Y BARRIDO COMBINADOS"
+    },
+    {
+      "frame": 11826,
+      "state": "attack",
+      "phase": 3,
+      "hp": 2,
+      "flash": 0,
+      "message": "FASE 3: MARCA Y BARRIDO COMBINADOS"
+    },
+    {
+      "frame": 11896,
+      "state": "open",
+      "phase": 3,
+      "hp": 2,
+      "flash": 0,
+      "message": "FASE 3: MARCA Y BARRIDO COMBINADOS"
+    },
+    {
+      "frame": 11920,
+      "state": "recover",
+      "phase": 3,
+      "hp": 1,
+      "flash": 24,
+      "message": "FASE 3: MARCA Y BARRIDO COMBINADOS"
+    },
+    {
+      "frame": 11990,
+      "state": "warn",
+      "phase": 3,
+      "hp": 1,
+      "flash": 0,
+      "message": "FASE 3: MARCA Y BARRIDO COMBINADOS"
+    },
+    {
+      "frame": 12060,
+      "state": "attack",
+      "phase": 3,
+      "hp": 1,
+      "flash": 0,
+      "message": "FASE 3: MARCA Y BARRIDO COMBINADOS"
+    },
+    {
+      "frame": 12130,
+      "state": "open",
+      "phase": 3,
+      "hp": 1,
+      "flash": 0,
+      "message": "FASE 3: MARCA Y BARRIDO COMBINADOS"
+    },
+    {
+      "frame": 12200,
+      "state": "defeat",
+      "phase": 3,
+      "hp": 0,
+      "flash": 24,
+      "message": "FASE 3: MARCA Y BARRIDO COMBINADOS"
+    }
+  ]
+}

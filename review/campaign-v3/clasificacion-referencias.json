@@ -1,0 +1,4396 @@
+{
+  "commit": "31d461028516344bc0dbb80b7ecd625296509014",
+  "scope": "Homogeneous observation/classification of four legal input witnesses. Control commands and planner goals are not distinct human decisions. Search policy differs for N2.",
+  "definitions": {
+    "controlCategories": "Mutually exclusive by buttons; a held jump is not a new jump.",
+    "neutral": "No horizontal/jump/drop/use input; movement can continue.",
+    "interactions": "Observed automatic pickups, door opening, checkpoint changes, conductor hits and clear.",
+    "phases": "Intervals attributed to authored planner targets, not mandatory gameplay phases."
+  },
+  "results": [
+    {
+      "level": 1,
+      "witness": "ruta-base-v2-n1.json",
+      "complete": true,
+      "controls": {
+        "horizontal": 2267,
+        "horizontal_and_jump_held": 600,
+        "jump_held_without_direction": 40,
+        "drop_command": 40,
+        "use_command": 0,
+        "neutral": 280
+      },
+      "observations": {
+        "frames": 3227,
+        "neutralStill": 9,
+        "neutralMoving": 271,
+        "chargingStill": 0,
+        "chargingMoving": 56,
+        "onHorizontalMover": 22,
+        "onVerticalMover": 110,
+        "directionChanges": 24,
+        "jumpStarts": 37,
+        "damageEvents": 0
+      },
+      "interactions": {
+        "key": 2,
+        "door": 2,
+        "bag": 7,
+        "battery": 0,
+        "garlic": 0,
+        "checkpoint": 1,
+        "conductor": 0,
+        "goal": 1
+      },
+      "phaseTotals": {
+        "k": 1010,
+        "exit": 750,
+        "E": 510,
+        "ride": 560,
+        "S": 397
+      },
+      "phases": [
+        {
+          "startFrame": 1,
+          "endFrame": 490,
+          "frames": 490,
+          "type": "k",
+          "zone": "garden",
+          "target": {
+            "type": "k",
+            "x": 664,
+            "y": 152,
+            "ox": 660,
+            "zone": "garden"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 491,
+          "endFrame": 530,
+          "frames": 40,
+          "type": "exit",
+          "zone": "garden",
+          "target": {
+            "type": "exit",
+            "x": 712,
+            "y": 145,
+            "zone": "garden"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 531,
+          "endFrame": 1040,
+          "frames": 510,
+          "type": "E",
+          "zone": "hall",
+          "target": {
+            "type": "E",
+            "x": 1368,
+            "y": 128,
+            "ox": 1360,
+            "zone": "hall"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 1041,
+          "endFrame": 1100,
+          "frames": 60,
+          "type": "exit",
+          "zone": "hall",
+          "target": {
+            "type": "exit",
+            "x": 1448,
+            "y": 145,
+            "zone": "hall"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 1101,
+          "endFrame": 1660,
+          "frames": 560,
+          "type": "ride",
+          "zone": "library",
+          "target": {
+            "type": "ride",
+            "x": 2056,
+            "y": 80,
+            "zone": "library"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 1661,
+          "endFrame": 2180,
+          "frames": 520,
+          "type": "k",
+          "zone": "library",
+          "target": {
+            "type": "k",
+            "x": 1496,
+            "y": 72,
+            "ox": 1492,
+            "zone": "library"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 2181,
+          "endFrame": 2830,
+          "frames": 650,
+          "type": "exit",
+          "zone": "library",
+          "target": {
+            "type": "exit",
+            "x": 2152,
+            "y": 145,
+            "zone": "library"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 2831,
+          "endFrame": 3227,
+          "frames": 397,
+          "type": "S",
+          "zone": "tower",
+          "target": {
+            "type": "S",
+            "x": 2752,
+            "y": 44,
+            "ox": 2736,
+            "zone": "tower"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        }
+      ],
+      "events": [
+        {
+          "frame": 101,
+          "kind": "jump-start",
+          "x": 200,
+          "y": 136.7
+        },
+        {
+          "frame": 191,
+          "kind": "jump-start",
+          "x": 327.9,
+          "y": 140.2
+        },
+        {
+          "frame": 224,
+          "kind": "pickup",
+          "x": 377.4,
+          "y": 119.3,
+          "type": "bag"
+        },
+        {
+          "frame": 300,
+          "kind": "direction-command-change",
+          "x": 447.4,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 320,
+          "kind": "direction-command-change",
+          "x": 441,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 361,
+          "kind": "jump-start",
+          "x": 499.9,
+          "y": 136.7
+        },
+        {
+          "frame": 367,
+          "kind": "pickup",
+          "x": 508.9,
+          "y": 109.9,
+          "type": "bag"
+        },
+        {
+          "frame": 400,
+          "kind": "direction-command-change",
+          "x": 550.1,
+          "y": 122.6,
+          "to": -1
+        },
+        {
+          "frame": 410,
+          "kind": "direction-command-change",
+          "x": 546.5,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 421,
+          "kind": "jump-start",
+          "x": 551.6,
+          "y": 136.7
+        },
+        {
+          "frame": 487,
+          "kind": "pickup",
+          "x": 650.6,
+          "y": 142,
+          "type": "key"
+        },
+        {
+          "frame": 559,
+          "kind": "door-open",
+          "x": 758.6,
+          "y": 142
+        },
+        {
+          "frame": 561,
+          "kind": "jump-start",
+          "x": 761.6,
+          "y": 136.7
+        },
+        {
+          "frame": 601,
+          "kind": "jump-start",
+          "x": 806.4,
+          "y": 136.7
+        },
+        {
+          "frame": 642,
+          "kind": "jump-start",
+          "x": 858.5,
+          "y": 136.7
+        },
+        {
+          "frame": 701,
+          "kind": "pickup",
+          "x": 937.1,
+          "y": 142,
+          "type": "bag"
+        },
+        {
+          "frame": 861,
+          "kind": "pickup",
+          "x": 1177.1,
+          "y": 142,
+          "type": "bag"
+        },
+        {
+          "frame": 991,
+          "kind": "jump-start",
+          "x": 1358.7,
+          "y": 136.7
+        },
+        {
+          "frame": 1000,
+          "kind": "direction-command-change",
+          "x": 1370.9,
+          "y": 99.7,
+          "to": -1
+        },
+        {
+          "frame": 1030,
+          "kind": "direction-command-change",
+          "x": 1357.2,
+          "y": 122.6,
+          "to": 1
+        },
+        {
+          "frame": 1101,
+          "kind": "jump-start",
+          "x": 1460.7,
+          "y": 136.7
+        },
+        {
+          "frame": 1105,
+          "kind": "checkpoint",
+          "x": 1466.7,
+          "y": 118
+        },
+        {
+          "frame": 1147,
+          "kind": "pickup",
+          "x": 1529.7,
+          "y": 142,
+          "type": "bag"
+        },
+        {
+          "frame": 1151,
+          "kind": "jump-start",
+          "x": 1535.7,
+          "y": 136.7
+        },
+        {
+          "frame": 1201,
+          "kind": "jump-start",
+          "x": 1610.7,
+          "y": 136.7
+        },
+        {
+          "frame": 1242,
+          "kind": "jump-start",
+          "x": 1672.2,
+          "y": 136.7
+        },
+        {
+          "frame": 1301,
+          "kind": "jump-start",
+          "x": 1760.7,
+          "y": 136.7
+        },
+        {
+          "frame": 1351,
+          "kind": "jump-start",
+          "x": 1835.7,
+          "y": 136.7
+        },
+        {
+          "frame": 1391,
+          "kind": "pickup",
+          "x": 1895.7,
+          "y": 114.5,
+          "type": "bag"
+        },
+        {
+          "frame": 1401,
+          "kind": "jump-start",
+          "x": 1910.7,
+          "y": 136.7
+        },
+        {
+          "frame": 1451,
+          "kind": "jump-start",
+          "x": 1985.7,
+          "y": 136.7
+        },
+        {
+          "frame": 1480,
+          "kind": "direction-command-change",
+          "x": 2029.2,
+          "y": 104,
+          "to": -1
+        },
+        {
+          "frame": 1485,
+          "kind": "jump-start",
+          "x": 2031.4,
+          "y": 110.9
+        },
+        {
+          "frame": 1530,
+          "kind": "direction-command-change",
+          "x": 1965.6,
+          "y": 62,
+          "to": 1
+        },
+        {
+          "frame": 1585,
+          "kind": "jump-start",
+          "x": 2036.7,
+          "y": 119.4
+        },
+        {
+          "frame": 1600,
+          "kind": "direction-command-change",
+          "x": 2059.2,
+          "y": 68,
+          "to": -1
+        },
+        {
+          "frame": 1620,
+          "kind": "direction-command-change",
+          "x": 2040.6,
+          "y": 79.9,
+          "to": 1
+        },
+        {
+          "frame": 1626,
+          "kind": "jump-start",
+          "x": 2038.9,
+          "y": 88.8
+        },
+        {
+          "frame": 1660,
+          "kind": "direction-command-change",
+          "x": 2069.2,
+          "y": 70.2,
+          "to": -1
+        },
+        {
+          "frame": 1690,
+          "kind": "direction-command-change",
+          "x": 2047.8,
+          "y": 59.6,
+          "to": 1
+        },
+        {
+          "frame": 1700,
+          "kind": "direction-command-change",
+          "x": 2060.2,
+          "y": 59,
+          "to": -1
+        },
+        {
+          "frame": 1730,
+          "kind": "direction-command-change",
+          "x": 2041.3,
+          "y": 66.7,
+          "to": 1
+        },
+        {
+          "frame": 1740,
+          "kind": "direction-command-change",
+          "x": 2044.9,
+          "y": 72.1,
+          "to": -1
+        },
+        {
+          "frame": 1761,
+          "kind": "jump-start",
+          "x": 2024.8,
+          "y": 80.3
+        },
+        {
+          "frame": 1841,
+          "kind": "jump-start",
+          "x": 1904.8,
+          "y": 59
+        },
+        {
+          "frame": 1860,
+          "kind": "direction-command-change",
+          "x": 1876.3,
+          "y": 22.4,
+          "to": 1
+        },
+        {
+          "frame": 1870,
+          "kind": "direction-command-change",
+          "x": 1879.9,
+          "y": 51.2,
+          "to": -1
+        },
+        {
+          "frame": 1874,
+          "kind": "jump-start",
+          "x": 1882.4,
+          "y": 56.7
+        },
+        {
+          "frame": 1941,
+          "kind": "jump-start",
+          "x": 1792.4,
+          "y": 59
+        },
+        {
+          "frame": 2010,
+          "kind": "direction-command-change",
+          "x": 1701.2,
+          "y": 62,
+          "to": 1
+        },
+        {
+          "frame": 2020,
+          "kind": "direction-command-change",
+          "x": 1713.6,
+          "y": 62,
+          "to": -1
+        },
+        {
+          "frame": 2051,
+          "kind": "jump-start",
+          "x": 1678.5,
+          "y": 60.2
+        },
+        {
+          "frame": 2084,
+          "kind": "jump-start",
+          "x": 1629,
+          "y": 56.7
+        },
+        {
+          "frame": 2131,
+          "kind": "jump-start",
+          "x": 1566.1,
+          "y": 60.2
+        },
+        {
+          "frame": 2176,
+          "kind": "pickup",
+          "x": 1498.6,
+          "y": 62,
+          "type": "key"
+        },
+        {
+          "frame": 2190,
+          "kind": "direction-command-change",
+          "x": 1486.3,
+          "y": 75.6,
+          "to": 1
+        },
+        {
+          "frame": 2371,
+          "kind": "jump-start",
+          "x": 1680.3,
+          "y": 136.7
+        },
+        {
+          "frame": 2450,
+          "kind": "direction-command-change",
+          "x": 1786.5,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 2460,
+          "kind": "direction-command-change",
+          "x": 1774.1,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 2480,
+          "kind": "direction-command-change",
+          "x": 1780.5,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 2490,
+          "kind": "direction-command-change",
+          "x": 1768,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 2661,
+          "kind": "jump-start",
+          "x": 1910.1,
+          "y": 136.7
+        },
+        {
+          "frame": 2802,
+          "kind": "pickup",
+          "x": 2121.6,
+          "y": 142,
+          "type": "bag"
+        },
+        {
+          "frame": 2821,
+          "kind": "door-open",
+          "x": 2150.1,
+          "y": 142
+        },
+        {
+          "frame": 2831,
+          "kind": "jump-start",
+          "x": 2165.1,
+          "y": 136.7
+        },
+        {
+          "frame": 2851,
+          "kind": "jump-start",
+          "x": 2195.1,
+          "y": 136.7
+        },
+        {
+          "frame": 2891,
+          "kind": "jump-start",
+          "x": 2255.1,
+          "y": 88.7
+        },
+        {
+          "frame": 2941,
+          "kind": "jump-start",
+          "x": 2330.1,
+          "y": 88.7
+        },
+        {
+          "frame": 2991,
+          "kind": "jump-start",
+          "x": 2405.1,
+          "y": 88.7
+        },
+        {
+          "frame": 3041,
+          "kind": "jump-start",
+          "x": 2465.8,
+          "y": 89
+        },
+        {
+          "frame": 3111,
+          "kind": "jump-start",
+          "x": 2552.3,
+          "y": 80
+        },
+        {
+          "frame": 3154,
+          "kind": "jump-start",
+          "x": 2616.8,
+          "y": 56.7
+        },
+        {
+          "frame": 3191,
+          "kind": "jump-start",
+          "x": 2672.3,
+          "y": 56.7
+        },
+        {
+          "frame": 3227,
+          "kind": "goal",
+          "x": 2726.3,
+          "y": 46
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "witness": "ruta-base-n2.json",
+      "complete": true,
+      "controls": {
+        "horizontal": 3195,
+        "horizontal_and_jump_held": 710,
+        "jump_held_without_direction": 120,
+        "drop_command": 100,
+        "use_command": 0,
+        "neutral": 420
+      },
+      "observations": {
+        "frames": 4545,
+        "neutralStill": 9,
+        "neutralMoving": 411,
+        "chargingStill": 10,
+        "chargingMoving": 605,
+        "onHorizontalMover": 13,
+        "onVerticalMover": 2,
+        "directionChanges": 56,
+        "jumpStarts": 58,
+        "damageEvents": 14
+      },
+      "interactions": {
+        "key": 3,
+        "door": 3,
+        "bag": 12,
+        "battery": 2,
+        "garlic": 0,
+        "checkpoint": 3,
+        "conductor": 0,
+        "goal": 1
+      },
+      "phaseTotals": {
+        "stance": 210,
+        "k": 980,
+        "exit": 1200,
+        "E": 1620,
+        "S": 535
+      },
+      "phases": [
+        {
+          "startFrame": 1,
+          "endFrame": 100,
+          "frames": 100,
+          "type": "stance",
+          "zone": "moat",
+          "target": {
+            "type": "stance",
+            "x": 186,
+            "y": 103,
+            "zone": "moat"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 101,
+          "endFrame": 210,
+          "frames": 110,
+          "type": "stance",
+          "zone": "moat",
+          "target": {
+            "type": "stance",
+            "x": 280,
+            "y": 103,
+            "zone": "moat"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 211,
+          "endFrame": 450,
+          "frames": 240,
+          "type": "k",
+          "zone": "moat",
+          "target": {
+            "type": "k",
+            "x": 600,
+            "y": 152,
+            "ox": 596,
+            "zone": "moat"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 451,
+          "endFrame": 490,
+          "frames": 40,
+          "type": "exit",
+          "zone": "moat",
+          "target": {
+            "type": "exit",
+            "x": 648,
+            "y": 145,
+            "zone": "moat"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 491,
+          "endFrame": 1100,
+          "frames": 610,
+          "type": "E",
+          "zone": "court",
+          "target": {
+            "type": "E",
+            "x": 1416,
+            "y": 128,
+            "ox": 1408,
+            "zone": "court"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 1101,
+          "endFrame": 1120,
+          "frames": 20,
+          "type": "exit",
+          "zone": "court",
+          "target": {
+            "type": "exit",
+            "x": 1448,
+            "y": 145,
+            "zone": "court"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 1121,
+          "endFrame": 1400,
+          "frames": 280,
+          "type": "k",
+          "zone": "armory",
+          "target": {
+            "type": "k",
+            "x": 1816,
+            "y": 56,
+            "ox": 1812,
+            "zone": "armory"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 1401,
+          "endFrame": 1680,
+          "frames": 280,
+          "type": "exit",
+          "zone": "armory",
+          "target": {
+            "type": "exit",
+            "x": 2152,
+            "y": 145,
+            "zone": "armory"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 1681,
+          "endFrame": 2140,
+          "frames": 460,
+          "type": "E",
+          "zone": "dungeon",
+          "target": {
+            "type": "E",
+            "x": 2232,
+            "y": 128,
+            "ox": 2224,
+            "zone": "dungeon"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 2141,
+          "endFrame": 2800,
+          "frames": 660,
+          "type": "exit",
+          "zone": "dungeon",
+          "target": {
+            "type": "exit",
+            "x": 2904,
+            "y": 145,
+            "zone": "dungeon"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 2801,
+          "endFrame": 3350,
+          "frames": 550,
+          "type": "E",
+          "zone": "keep",
+          "target": {
+            "type": "E",
+            "x": 3512,
+            "y": 128,
+            "ox": 3504,
+            "zone": "keep"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 3351,
+          "endFrame": 3380,
+          "frames": 30,
+          "type": "exit",
+          "zone": "keep",
+          "target": {
+            "type": "exit",
+            "x": 3544,
+            "y": 145,
+            "zone": "keep"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 3381,
+          "endFrame": 3840,
+          "frames": 460,
+          "type": "k",
+          "zone": "bell",
+          "target": {
+            "type": "k",
+            "x": 3992,
+            "y": 40,
+            "ox": 3988,
+            "zone": "bell"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 3841,
+          "endFrame": 4010,
+          "frames": 170,
+          "type": "exit",
+          "zone": "bell",
+          "target": {
+            "type": "exit",
+            "x": 4184,
+            "y": 145,
+            "zone": "bell"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 4011,
+          "endFrame": 4545,
+          "frames": 535,
+          "type": "S",
+          "zone": "coffin",
+          "target": {
+            "type": "S",
+            "x": 4944,
+            "y": 140,
+            "ox": 4928,
+            "zone": "coffin"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        }
+      ],
+      "events": [
+        {
+          "frame": 11,
+          "kind": "jump-start",
+          "x": 65,
+          "y": 136.7
+        },
+        {
+          "frame": 61,
+          "kind": "jump-start",
+          "x": 131.6,
+          "y": 136.7
+        },
+        {
+          "frame": 140,
+          "kind": "direction-command-change",
+          "x": 222.8,
+          "y": 94,
+          "to": -1
+        },
+        {
+          "frame": 150,
+          "kind": "direction-command-change",
+          "x": 210.4,
+          "y": 94,
+          "to": 1
+        },
+        {
+          "frame": 171,
+          "kind": "jump-start",
+          "x": 230.5,
+          "y": 91
+        },
+        {
+          "frame": 207,
+          "kind": "pickup",
+          "x": 284.5,
+          "y": 81.5,
+          "type": "bag"
+        },
+        {
+          "frame": 369,
+          "kind": "damage",
+          "x": 517.6,
+          "y": 142
+        },
+        {
+          "frame": 446,
+          "kind": "pickup",
+          "x": 587.2,
+          "y": 142,
+          "type": "key"
+        },
+        {
+          "frame": 491,
+          "kind": "jump-start",
+          "x": 654.7,
+          "y": 136.7
+        },
+        {
+          "frame": 529,
+          "kind": "door-open",
+          "x": 694.4,
+          "y": 135.9
+        },
+        {
+          "frame": 532,
+          "kind": "jump-start",
+          "x": 697.5,
+          "y": 136.7
+        },
+        {
+          "frame": 551,
+          "kind": "jump-start",
+          "x": 726,
+          "y": 136.7
+        },
+        {
+          "frame": 571,
+          "kind": "jump-start",
+          "x": 756,
+          "y": 136.7
+        },
+        {
+          "frame": 576,
+          "kind": "checkpoint",
+          "x": 763.5,
+          "y": 113.8
+        },
+        {
+          "frame": 612,
+          "kind": "jump-start",
+          "x": 817.5,
+          "y": 136.7
+        },
+        {
+          "frame": 653,
+          "kind": "jump-start",
+          "x": 869.8,
+          "y": 136.7
+        },
+        {
+          "frame": 691,
+          "kind": "jump-start",
+          "x": 926.8,
+          "y": 136.7
+        },
+        {
+          "frame": 723,
+          "kind": "pickup",
+          "x": 974,
+          "y": 112.5,
+          "type": "bag"
+        },
+        {
+          "frame": 732,
+          "kind": "jump-start",
+          "x": 981.2,
+          "y": 136.7
+        },
+        {
+          "frame": 786,
+          "kind": "jump-start",
+          "x": 1050.5,
+          "y": 136.7
+        },
+        {
+          "frame": 805,
+          "kind": "pickup",
+          "x": 1079,
+          "y": 112.6,
+          "type": "bag"
+        },
+        {
+          "frame": 821,
+          "kind": "jump-start",
+          "x": 1103,
+          "y": 136.7
+        },
+        {
+          "frame": 853,
+          "kind": "pickup",
+          "x": 1151,
+          "y": 112.5,
+          "type": "bag"
+        },
+        {
+          "frame": 862,
+          "kind": "jump-start",
+          "x": 1164.5,
+          "y": 136.7
+        },
+        {
+          "frame": 911,
+          "kind": "jump-start",
+          "x": 1228.1,
+          "y": 136.7
+        },
+        {
+          "frame": 956,
+          "kind": "jump-start",
+          "x": 1287.2,
+          "y": 136.7
+        },
+        {
+          "frame": 991,
+          "kind": "jump-start",
+          "x": 1339.7,
+          "y": 136.7
+        },
+        {
+          "frame": 1020,
+          "kind": "direction-command-change",
+          "x": 1383.2,
+          "y": 104,
+          "to": -1
+        },
+        {
+          "frame": 1024,
+          "kind": "pickup",
+          "x": 1385.7,
+          "y": 115.9,
+          "type": "battery"
+        },
+        {
+          "frame": 1027,
+          "kind": "damage",
+          "x": 1383.9,
+          "y": 127.2
+        },
+        {
+          "frame": 1054,
+          "kind": "jump-start",
+          "x": 1408.9,
+          "y": 136.7
+        },
+        {
+          "frame": 1090,
+          "kind": "direction-command-change",
+          "x": 1409.5,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 1107,
+          "kind": "damage",
+          "x": 1432.5,
+          "y": 142
+        },
+        {
+          "frame": 1131,
+          "kind": "jump-start",
+          "x": 1473,
+          "y": 136.7
+        },
+        {
+          "frame": 1166,
+          "kind": "jump-start",
+          "x": 1525.5,
+          "y": 88.7
+        },
+        {
+          "frame": 1213,
+          "kind": "jump-start",
+          "x": 1566.7,
+          "y": 88.7
+        },
+        {
+          "frame": 1261,
+          "kind": "pickup",
+          "x": 1626.3,
+          "y": 46,
+          "type": "bag"
+        },
+        {
+          "frame": 1301,
+          "kind": "jump-start",
+          "x": 1686.3,
+          "y": 43
+        },
+        {
+          "frame": 1335,
+          "kind": "jump-start",
+          "x": 1725.5,
+          "y": 88.7
+        },
+        {
+          "frame": 1392,
+          "kind": "pickup",
+          "x": 1802.3,
+          "y": 46,
+          "type": "key"
+        },
+        {
+          "frame": 1440,
+          "kind": "direction-command-change",
+          "x": 1864.4,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 1441,
+          "kind": "jump-start",
+          "x": 1865.5,
+          "y": 142
+        },
+        {
+          "frame": 1441,
+          "kind": "damage",
+          "x": 1865.5,
+          "y": 142
+        },
+        {
+          "frame": 1450,
+          "kind": "direction-command-change",
+          "x": 1879,
+          "y": 132.5,
+          "to": 1
+        },
+        {
+          "frame": 1486,
+          "kind": "damage",
+          "x": 1933,
+          "y": 142
+        },
+        {
+          "frame": 1525,
+          "kind": "pickup",
+          "x": 1945.6,
+          "y": 142,
+          "type": "bag"
+        },
+        {
+          "frame": 1590,
+          "kind": "direction-command-change",
+          "x": 2030.9,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 1592,
+          "kind": "damage",
+          "x": 2029.9,
+          "y": 142
+        },
+        {
+          "frame": 1600,
+          "kind": "direction-command-change",
+          "x": 2045.9,
+          "y": 132.7,
+          "to": 1
+        },
+        {
+          "frame": 1670,
+          "kind": "door-open",
+          "x": 2151.4,
+          "y": 142
+        },
+        {
+          "frame": 1681,
+          "kind": "jump-start",
+          "x": 2167.9,
+          "y": 136.7
+        },
+        {
+          "frame": 1701,
+          "kind": "jump-start",
+          "x": 2188.1,
+          "y": 136.7
+        },
+        {
+          "frame": 1730,
+          "kind": "direction-command-change",
+          "x": 2230.5,
+          "y": 104,
+          "to": -1
+        },
+        {
+          "frame": 1733,
+          "kind": "checkpoint",
+          "x": 2232.9,
+          "y": 112.5
+        },
+        {
+          "frame": 1740,
+          "kind": "direction-command-change",
+          "x": 2226.9,
+          "y": 140.6,
+          "to": 1
+        },
+        {
+          "frame": 1750,
+          "kind": "direction-command-change",
+          "x": 2230.5,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 1760,
+          "kind": "direction-command-change",
+          "x": 2226.9,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 1775,
+          "kind": "damage",
+          "x": 2238,
+          "y": 142
+        },
+        {
+          "frame": 1795,
+          "kind": "jump-start",
+          "x": 2222.1,
+          "y": 136.7
+        },
+        {
+          "frame": 1800,
+          "kind": "direction-command-change",
+          "x": 2229.6,
+          "y": 113.8,
+          "to": -1
+        },
+        {
+          "frame": 1820,
+          "kind": "direction-command-change",
+          "x": 2217.2,
+          "y": 118.1,
+          "to": 1
+        },
+        {
+          "frame": 1830,
+          "kind": "direction-command-change",
+          "x": 2227.3,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 1860,
+          "kind": "direction-command-change",
+          "x": 2220.9,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 1870,
+          "kind": "direction-command-change",
+          "x": 2233.4,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 1891,
+          "kind": "jump-start",
+          "x": 2227.1,
+          "y": 136.7
+        },
+        {
+          "frame": 1932,
+          "kind": "jump-start",
+          "x": 2227,
+          "y": 136.7
+        },
+        {
+          "frame": 1971,
+          "kind": "jump-start",
+          "x": 2227,
+          "y": 136.7
+        },
+        {
+          "frame": 2012,
+          "kind": "jump-start",
+          "x": 2227,
+          "y": 136.7
+        },
+        {
+          "frame": 2030,
+          "kind": "direction-command-change",
+          "x": 2227,
+          "y": 93.5,
+          "to": 1
+        },
+        {
+          "frame": 2040,
+          "kind": "direction-command-change",
+          "x": 2239.5,
+          "y": 107.2,
+          "to": -1
+        },
+        {
+          "frame": 2060,
+          "kind": "direction-command-change",
+          "x": 2220.9,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 2070,
+          "kind": "direction-command-change",
+          "x": 2224.5,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 2090,
+          "kind": "direction-command-change",
+          "x": 2218.1,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 2100,
+          "kind": "direction-command-change",
+          "x": 2230.5,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 2110,
+          "kind": "direction-command-change",
+          "x": 2226.9,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 2120,
+          "kind": "direction-command-change",
+          "x": 2230.5,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 2130,
+          "kind": "direction-command-change",
+          "x": 2226.9,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 2140,
+          "kind": "direction-command-change",
+          "x": 2230.5,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 2160,
+          "kind": "direction-command-change",
+          "x": 2224.2,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 2176,
+          "kind": "damage",
+          "x": 2245.6,
+          "y": 142
+        },
+        {
+          "frame": 2273,
+          "kind": "pickup",
+          "x": 2345.2,
+          "y": 142,
+          "type": "bag"
+        },
+        {
+          "frame": 2379,
+          "kind": "damage",
+          "x": 2460.2,
+          "y": 142
+        },
+        {
+          "frame": 2440,
+          "kind": "direction-command-change",
+          "x": 2493.5,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 2450,
+          "kind": "direction-command-change",
+          "x": 2481.1,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 2471,
+          "kind": "jump-start",
+          "x": 2501.2,
+          "y": 138.1
+        },
+        {
+          "frame": 2555,
+          "kind": "damage",
+          "x": 2627.9,
+          "y": 142
+        },
+        {
+          "frame": 2660,
+          "kind": "direction-command-change",
+          "x": 2739.5,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 2680,
+          "kind": "direction-command-change",
+          "x": 2733.2,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 2701,
+          "kind": "jump-start",
+          "x": 2762.1,
+          "y": 141.6
+        },
+        {
+          "frame": 2733,
+          "kind": "pickup",
+          "x": 2810.1,
+          "y": 117.4,
+          "type": "battery"
+        },
+        {
+          "frame": 2801,
+          "kind": "jump-start",
+          "x": 2912.1,
+          "y": 136.7
+        },
+        {
+          "frame": 2846,
+          "kind": "jump-start",
+          "x": 2971.2,
+          "y": 136.7
+        },
+        {
+          "frame": 2881,
+          "kind": "jump-start",
+          "x": 3023.7,
+          "y": 136.7
+        },
+        {
+          "frame": 2931,
+          "kind": "jump-start",
+          "x": 3091.6,
+          "y": 136.7
+        },
+        {
+          "frame": 2976,
+          "kind": "jump-start",
+          "x": 3150.7,
+          "y": 136.7
+        },
+        {
+          "frame": 3011,
+          "kind": "jump-start",
+          "x": 3203.2,
+          "y": 136.7
+        },
+        {
+          "frame": 3081,
+          "kind": "jump-start",
+          "x": 3294.7,
+          "y": 136.7
+        },
+        {
+          "frame": 3126,
+          "kind": "jump-start",
+          "x": 3340.3,
+          "y": 136.7
+        },
+        {
+          "frame": 3161,
+          "kind": "jump-start",
+          "x": 3385.6,
+          "y": 136.7
+        },
+        {
+          "frame": 3205,
+          "kind": "damage",
+          "x": 3451.6,
+          "y": 137.7
+        },
+        {
+          "frame": 3240,
+          "kind": "direction-command-change",
+          "x": 3508.6,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 3250,
+          "kind": "direction-command-change",
+          "x": 3505,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 3260,
+          "kind": "direction-command-change",
+          "x": 3508.6,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 3270,
+          "kind": "direction-command-change",
+          "x": 3505,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 3280,
+          "kind": "direction-command-change",
+          "x": 3508.6,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 3281,
+          "kind": "jump-start",
+          "x": 3509.8,
+          "y": 136.7
+        },
+        {
+          "frame": 3290,
+          "kind": "direction-command-change",
+          "x": 3505,
+          "y": 99.7,
+          "to": 1
+        },
+        {
+          "frame": 3310,
+          "kind": "direction-command-change",
+          "x": 3516.5,
+          "y": 98.5,
+          "to": -1
+        },
+        {
+          "frame": 3320,
+          "kind": "direction-command-change",
+          "x": 3505.7,
+          "y": 122.6,
+          "to": 1
+        },
+        {
+          "frame": 3326,
+          "kind": "jump-start",
+          "x": 3504,
+          "y": 136.7
+        },
+        {
+          "frame": 3330,
+          "kind": "direction-command-change",
+          "x": 3509.3,
+          "y": 118,
+          "to": -1
+        },
+        {
+          "frame": 3340,
+          "kind": "direction-command-change",
+          "x": 3505.7,
+          "y": 108.6,
+          "to": 1
+        },
+        {
+          "frame": 3381,
+          "kind": "jump-start",
+          "x": 3555.2,
+          "y": 136.7
+        },
+        {
+          "frame": 3390,
+          "kind": "direction-command-change",
+          "x": 3560.6,
+          "y": 99.7,
+          "to": -1
+        },
+        {
+          "frame": 3410,
+          "kind": "direction-command-change",
+          "x": 3534.8,
+          "y": 84,
+          "to": 1
+        },
+        {
+          "frame": 3416,
+          "kind": "jump-start",
+          "x": 3533.1,
+          "y": 88.7
+        },
+        {
+          "frame": 3450,
+          "kind": "direction-command-change",
+          "x": 3576.2,
+          "y": 46.4,
+          "to": -1
+        },
+        {
+          "frame": 3458,
+          "kind": "damage",
+          "x": 3575.6,
+          "y": 75.1
+        },
+        {
+          "frame": 3460,
+          "kind": "direction-command-change",
+          "x": 3579.6,
+          "y": 70.8,
+          "to": 1
+        },
+        {
+          "frame": 3496,
+          "kind": "jump-start",
+          "x": 3637.1,
+          "y": 136.7
+        },
+        {
+          "frame": 3532,
+          "kind": "jump-start",
+          "x": 3684,
+          "y": 92.6
+        },
+        {
+          "frame": 3550,
+          "kind": "direction-command-change",
+          "x": 3711,
+          "y": 49.4,
+          "to": -1
+        },
+        {
+          "frame": 3575,
+          "kind": "jump-start",
+          "x": 3687.2,
+          "y": 115.6
+        },
+        {
+          "frame": 3580,
+          "kind": "direction-command-change",
+          "x": 3684.8,
+          "y": 92.7,
+          "to": 1
+        },
+        {
+          "frame": 3626,
+          "kind": "jump-start",
+          "x": 3749.7,
+          "y": 136.7
+        },
+        {
+          "frame": 3673,
+          "kind": "jump-start",
+          "x": 3813,
+          "y": 136.7
+        },
+        {
+          "frame": 3690,
+          "kind": "direction-command-change",
+          "x": 3838.5,
+          "y": 82.3,
+          "to": -1
+        },
+        {
+          "frame": 3698,
+          "kind": "damage",
+          "x": 3837.9,
+          "y": 79.7
+        },
+        {
+          "frame": 3700,
+          "kind": "direction-command-change",
+          "x": 3841.9,
+          "y": 75.4,
+          "to": 1
+        },
+        {
+          "frame": 3735,
+          "kind": "jump-start",
+          "x": 3897.9,
+          "y": 136.7
+        },
+        {
+          "frame": 3775,
+          "kind": "pickup",
+          "x": 3957.9,
+          "y": 114.5,
+          "type": "bag"
+        },
+        {
+          "frame": 3782,
+          "kind": "jump-start",
+          "x": 3968.4,
+          "y": 136.7
+        },
+        {
+          "frame": 3810,
+          "kind": "direction-command-change",
+          "x": 4010.4,
+          "y": 82.6,
+          "to": -1
+        },
+        {
+          "frame": 3821,
+          "kind": "jump-start",
+          "x": 4005.3,
+          "y": 89
+        },
+        {
+          "frame": 3830,
+          "kind": "direction-command-change",
+          "x": 3991.8,
+          "y": 51.9,
+          "to": 1
+        },
+        {
+          "frame": 3834,
+          "kind": "pickup",
+          "x": 3989.3,
+          "y": 41.4,
+          "type": "key"
+        },
+        {
+          "frame": 3920,
+          "kind": "damage",
+          "x": 4105.5,
+          "y": 142
+        },
+        {
+          "frame": 3920,
+          "kind": "pickup",
+          "x": 4105.5,
+          "y": 142,
+          "type": "bag"
+        },
+        {
+          "frame": 4002,
+          "kind": "door-open",
+          "x": 4182.6,
+          "y": 142
+        },
+        {
+          "frame": 4011,
+          "kind": "jump-start",
+          "x": 4196.1,
+          "y": 136.7
+        },
+        {
+          "frame": 4047,
+          "kind": "checkpoint",
+          "x": 4250.1,
+          "y": 142
+        },
+        {
+          "frame": 4132,
+          "kind": "pickup",
+          "x": 4377.6,
+          "y": 142,
+          "type": "bag"
+        },
+        {
+          "frame": 4181,
+          "kind": "jump-start",
+          "x": 4451.1,
+          "y": 136.7
+        },
+        {
+          "frame": 4292,
+          "kind": "pickup",
+          "x": 4617.6,
+          "y": 142,
+          "type": "bag"
+        },
+        {
+          "frame": 4311,
+          "kind": "jump-start",
+          "x": 4646.1,
+          "y": 136.7
+        },
+        {
+          "frame": 4409,
+          "kind": "pickup",
+          "x": 4793.1,
+          "y": 142,
+          "type": "bag"
+        },
+        {
+          "frame": 4430,
+          "kind": "direction-command-change",
+          "x": 4824.6,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 4450,
+          "kind": "direction-command-change",
+          "x": 4818.3,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 4460,
+          "kind": "direction-command-change",
+          "x": 4830.7,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 4480,
+          "kind": "direction-command-change",
+          "x": 4824.4,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 4491,
+          "kind": "jump-start",
+          "x": 4838.3,
+          "y": 136.7
+        },
+        {
+          "frame": 4545,
+          "kind": "goal",
+          "x": 4919.3,
+          "y": 142
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "witness": "ruta-base-v2-n3.json",
+      "complete": true,
+      "controls": {
+        "horizontal": 2860,
+        "horizontal_and_jump_held": 550,
+        "jump_held_without_direction": 40,
+        "drop_command": 70,
+        "use_command": 0,
+        "neutral": 580
+      },
+      "observations": {
+        "frames": 4100,
+        "neutralStill": 10,
+        "neutralMoving": 570,
+        "chargingStill": 0,
+        "chargingMoving": 33,
+        "onHorizontalMover": 286,
+        "onVerticalMover": 1,
+        "directionChanges": 46,
+        "jumpStarts": 45,
+        "damageEvents": 1
+      },
+      "interactions": {
+        "key": 2,
+        "door": 2,
+        "bag": 7,
+        "battery": 4,
+        "garlic": 0,
+        "checkpoint": 4,
+        "conductor": 0,
+        "goal": 1
+      },
+      "phaseTotals": {
+        "k": 1060,
+        "exit": 2120,
+        "E": 480,
+        "stance": 60,
+        "S": 380
+      },
+      "phases": [
+        {
+          "startFrame": 1,
+          "endFrame": 700,
+          "frames": 700,
+          "type": "k",
+          "zone": "roof",
+          "target": {
+            "type": "k",
+            "x": 648,
+            "y": 152,
+            "ox": 644,
+            "zone": "roof"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 701,
+          "endFrame": 760,
+          "frames": 60,
+          "type": "exit",
+          "zone": "roof",
+          "target": {
+            "type": "exit",
+            "x": 712,
+            "y": 145,
+            "zone": "roof"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 761,
+          "endFrame": 1230,
+          "frames": 470,
+          "type": "exit",
+          "zone": "roof2",
+          "target": {
+            "type": "exit",
+            "x": 1352,
+            "y": 145,
+            "zone": "roof2"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 1231,
+          "endFrame": 1590,
+          "frames": 360,
+          "type": "k",
+          "zone": "attic",
+          "target": {
+            "type": "k",
+            "x": 1688,
+            "y": 40,
+            "ox": 1684,
+            "zone": "attic"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 1591,
+          "endFrame": 2000,
+          "frames": 410,
+          "type": "exit",
+          "zone": "attic",
+          "target": {
+            "type": "exit",
+            "x": 2040,
+            "y": 145,
+            "zone": "attic"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 2001,
+          "endFrame": 2450,
+          "frames": 450,
+          "type": "E",
+          "zone": "warehouse",
+          "target": {
+            "type": "E",
+            "x": 2696,
+            "y": 128,
+            "ox": 2688,
+            "zone": "warehouse"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 2451,
+          "endFrame": 2470,
+          "frames": 20,
+          "type": "exit",
+          "zone": "warehouse",
+          "target": {
+            "type": "exit",
+            "x": 2728,
+            "y": 145,
+            "zone": "warehouse"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 2471,
+          "endFrame": 2500,
+          "frames": 30,
+          "type": "E",
+          "zone": "sewer",
+          "target": {
+            "type": "E",
+            "x": 2792,
+            "y": 128,
+            "ox": 2784,
+            "zone": "sewer"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 2501,
+          "endFrame": 2530,
+          "frames": 30,
+          "type": "stance",
+          "zone": "sewer",
+          "target": {
+            "type": "stance",
+            "x": 2808,
+            "y": 103,
+            "zone": "sewer"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 2531,
+          "endFrame": 2560,
+          "frames": 30,
+          "type": "stance",
+          "zone": "sewer",
+          "target": {
+            "type": "stance",
+            "x": 2880,
+            "y": 55,
+            "zone": "sewer"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 2561,
+          "endFrame": 2970,
+          "frames": 410,
+          "type": "exit",
+          "zone": "sewer",
+          "target": {
+            "type": "exit",
+            "x": 3432,
+            "y": 145,
+            "zone": "sewer"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 2971,
+          "endFrame": 3720,
+          "frames": 750,
+          "type": "exit",
+          "zone": "bridges",
+          "target": {
+            "type": "exit",
+            "x": 4136,
+            "y": 145,
+            "zone": "bridges"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 3721,
+          "endFrame": 4100,
+          "frames": 380,
+          "type": "S",
+          "zone": "roof3",
+          "target": {
+            "type": "S",
+            "x": 4720,
+            "y": 28,
+            "ox": 4704,
+            "zone": "roof3"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        }
+      ],
+      "events": [
+        {
+          "frame": 31,
+          "kind": "jump-start",
+          "x": 79,
+          "y": 136.7
+        },
+        {
+          "frame": 70,
+          "kind": "direction-command-change",
+          "x": 133,
+          "y": 112.3,
+          "to": -1
+        },
+        {
+          "frame": 80,
+          "kind": "direction-command-change",
+          "x": 129.4,
+          "y": 134.2,
+          "to": 1
+        },
+        {
+          "frame": 101,
+          "kind": "jump-start",
+          "x": 154,
+          "y": 141.6
+        },
+        {
+          "frame": 170,
+          "kind": "direction-command-change",
+          "x": 257.5,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 190,
+          "kind": "direction-command-change",
+          "x": 251.2,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 200,
+          "kind": "direction-command-change",
+          "x": 263.6,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 220,
+          "kind": "direction-command-change",
+          "x": 257.2,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 238,
+          "kind": "pickup",
+          "x": 281.6,
+          "y": 142,
+          "type": "bag"
+        },
+        {
+          "frame": 300,
+          "kind": "direction-command-change",
+          "x": 333,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 310,
+          "kind": "direction-command-change",
+          "x": 320.6,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 361,
+          "kind": "jump-start",
+          "x": 385.7,
+          "y": 136.7
+        },
+        {
+          "frame": 380,
+          "kind": "direction-command-change",
+          "x": 414.2,
+          "y": 90.3,
+          "to": -1
+        },
+        {
+          "frame": 400,
+          "kind": "direction-command-change",
+          "x": 395.6,
+          "y": 102.3,
+          "to": 1
+        },
+        {
+          "frame": 440,
+          "kind": "direction-command-change",
+          "x": 432,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 460,
+          "kind": "direction-command-change",
+          "x": 416.8,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 470,
+          "kind": "direction-command-change",
+          "x": 429.2,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 500,
+          "kind": "direction-command-change",
+          "x": 407.9,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 520,
+          "kind": "direction-command-change",
+          "x": 423,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 540,
+          "kind": "direction-command-change",
+          "x": 407.9,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 561,
+          "kind": "jump-start",
+          "x": 436.8,
+          "y": 138.1
+        },
+        {
+          "frame": 575,
+          "kind": "pickup",
+          "x": 457.8,
+          "y": 93.5,
+          "type": "bag"
+        },
+        {
+          "frame": 666,
+          "kind": "pickup",
+          "x": 585.7,
+          "y": 142,
+          "type": "bag"
+        },
+        {
+          "frame": 699,
+          "kind": "pickup",
+          "x": 635.2,
+          "y": 142,
+          "type": "key"
+        },
+        {
+          "frame": 763,
+          "kind": "checkpoint",
+          "x": 731.2,
+          "y": 142
+        },
+        {
+          "frame": 800,
+          "kind": "direction-command-change",
+          "x": 786.7,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 820,
+          "kind": "direction-command-change",
+          "x": 780.3,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 841,
+          "kind": "jump-start",
+          "x": 809.2,
+          "y": 141.6
+        },
+        {
+          "frame": 1001,
+          "kind": "jump-start",
+          "x": 1049.2,
+          "y": 136.7
+        },
+        {
+          "frame": 1030,
+          "kind": "direction-command-change",
+          "x": 1092.7,
+          "y": 104,
+          "to": -1
+        },
+        {
+          "frame": 1040,
+          "kind": "direction-command-change",
+          "x": 1089.1,
+          "y": 140.6,
+          "to": 1
+        },
+        {
+          "frame": 1051,
+          "kind": "jump-start",
+          "x": 1094.2,
+          "y": 139
+        },
+        {
+          "frame": 1086,
+          "kind": "pickup",
+          "x": 1146.7,
+          "y": 125.5,
+          "type": "battery"
+        },
+        {
+          "frame": 1181,
+          "kind": "jump-start",
+          "x": 1289.2,
+          "y": 136.7
+        },
+        {
+          "frame": 1222,
+          "kind": "door-open",
+          "x": 1350.7,
+          "y": 142
+        },
+        {
+          "frame": 1231,
+          "kind": "jump-start",
+          "x": 1364.2,
+          "y": 136.7
+        },
+        {
+          "frame": 1251,
+          "kind": "jump-start",
+          "x": 1394.2,
+          "y": 136.7
+        },
+        {
+          "frame": 1290,
+          "kind": "checkpoint",
+          "x": 1434.6,
+          "y": 110.6
+        },
+        {
+          "frame": 1301,
+          "kind": "jump-start",
+          "x": 1449.3,
+          "y": 136.7
+        },
+        {
+          "frame": 1336,
+          "kind": "jump-start",
+          "x": 1498.9,
+          "y": 88.7
+        },
+        {
+          "frame": 1350,
+          "kind": "direction-command-change",
+          "x": 1514.4,
+          "y": 39.1,
+          "to": -1
+        },
+        {
+          "frame": 1360,
+          "kind": "direction-command-change",
+          "x": 1510.8,
+          "y": 31.3,
+          "to": 1
+        },
+        {
+          "frame": 1421,
+          "kind": "jump-start",
+          "x": 1590.9,
+          "y": 40.7
+        },
+        {
+          "frame": 1430,
+          "kind": "direction-command-change",
+          "x": 1604.4,
+          "y": 17.4,
+          "to": -1
+        },
+        {
+          "frame": 1451,
+          "kind": "jump-start",
+          "x": 1595.1,
+          "y": 40.7
+        },
+        {
+          "frame": 1470,
+          "kind": "direction-command-change",
+          "x": 1594.9,
+          "y": 36.9,
+          "to": 1
+        },
+        {
+          "frame": 1474,
+          "kind": "jump-start",
+          "x": 1598.4,
+          "y": 40.7
+        },
+        {
+          "frame": 1480,
+          "kind": "direction-command-change",
+          "x": 1607.4,
+          "y": 16,
+          "to": -1
+        },
+        {
+          "frame": 1500,
+          "kind": "direction-command-change",
+          "x": 1596.2,
+          "y": 46,
+          "to": 1
+        },
+        {
+          "frame": 1510,
+          "kind": "direction-command-change",
+          "x": 1608.1,
+          "y": 50.8,
+          "to": -1
+        },
+        {
+          "frame": 1511,
+          "kind": "jump-start",
+          "x": 1609.3,
+          "y": 45.6
+        },
+        {
+          "frame": 1530,
+          "kind": "direction-command-change",
+          "x": 1595.8,
+          "y": 33.9,
+          "to": 1
+        },
+        {
+          "frame": 1535,
+          "kind": "jump-start",
+          "x": 1598.4,
+          "y": 40.7
+        },
+        {
+          "frame": 1565,
+          "kind": "jump-start",
+          "x": 1643.4,
+          "y": 70.4
+        },
+        {
+          "frame": 1589,
+          "kind": "pickup",
+          "x": 1679.4,
+          "y": 20.8,
+          "type": "key"
+        },
+        {
+          "frame": 1623,
+          "kind": "pickup",
+          "x": 1721.8,
+          "y": 130.9,
+          "type": "bag"
+        },
+        {
+          "frame": 1651,
+          "kind": "jump-start",
+          "x": 1763.8,
+          "y": 136.7
+        },
+        {
+          "frame": 1720,
+          "kind": "direction-command-change",
+          "x": 1860.1,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 1740,
+          "kind": "direction-command-change",
+          "x": 1853.8,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 1780,
+          "kind": "direction-command-change",
+          "x": 1896.5,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 1781,
+          "kind": "pickup",
+          "x": 1897.7,
+          "y": 142,
+          "type": "bag"
+        },
+        {
+          "frame": 1800,
+          "kind": "direction-command-change",
+          "x": 1890.2,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 1850,
+          "kind": "direction-command-change",
+          "x": 1932.9,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 1870,
+          "kind": "direction-command-change",
+          "x": 1926.6,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 1880,
+          "kind": "direction-command-change",
+          "x": 1939,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 1900,
+          "kind": "direction-command-change",
+          "x": 1932.6,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 1962,
+          "kind": "damage",
+          "x": 1993.1,
+          "y": 142
+        },
+        {
+          "frame": 1989,
+          "kind": "door-open",
+          "x": 2038.1,
+          "y": 142
+        },
+        {
+          "frame": 2001,
+          "kind": "jump-start",
+          "x": 2056.1,
+          "y": 136.7
+        },
+        {
+          "frame": 2035,
+          "kind": "checkpoint",
+          "x": 2107.1,
+          "y": 142
+        },
+        {
+          "frame": 2161,
+          "kind": "jump-start",
+          "x": 2296.1,
+          "y": 136.7
+        },
+        {
+          "frame": 2163,
+          "kind": "pickup",
+          "x": 2299.1,
+          "y": 126.9,
+          "type": "battery"
+        },
+        {
+          "frame": 2206,
+          "kind": "jump-start",
+          "x": 2355.3,
+          "y": 136.7
+        },
+        {
+          "frame": 2241,
+          "kind": "jump-start",
+          "x": 2399.8,
+          "y": 136.7
+        },
+        {
+          "frame": 2282,
+          "kind": "jump-start",
+          "x": 2460.5,
+          "y": 136.7
+        },
+        {
+          "frame": 2501,
+          "kind": "jump-start",
+          "x": 2779,
+          "y": 136.7
+        },
+        {
+          "frame": 2531,
+          "kind": "jump-start",
+          "x": 2816.9,
+          "y": 88.7
+        },
+        {
+          "frame": 2641,
+          "kind": "jump-start",
+          "x": 2972,
+          "y": 136.7
+        },
+        {
+          "frame": 2676,
+          "kind": "jump-start",
+          "x": 3024.5,
+          "y": 88.7
+        },
+        {
+          "frame": 2751,
+          "kind": "jump-start",
+          "x": 3127.6,
+          "y": 136.7
+        },
+        {
+          "frame": 2752,
+          "kind": "pickup",
+          "x": 3129.1,
+          "y": 131.7,
+          "type": "bag"
+        },
+        {
+          "frame": 2821,
+          "kind": "jump-start",
+          "x": 3225.5,
+          "y": 141.6
+        },
+        {
+          "frame": 2910,
+          "kind": "pickup",
+          "x": 3354,
+          "y": 142,
+          "type": "battery"
+        },
+        {
+          "frame": 2974,
+          "kind": "checkpoint",
+          "x": 3450,
+          "y": 142
+        },
+        {
+          "frame": 2981,
+          "kind": "jump-start",
+          "x": 3460.5,
+          "y": 136.7
+        },
+        {
+          "frame": 3026,
+          "kind": "jump-start",
+          "x": 3519.6,
+          "y": 136.7
+        },
+        {
+          "frame": 3080,
+          "kind": "direction-command-change",
+          "x": 3552.9,
+          "y": 115,
+          "to": -1
+        },
+        {
+          "frame": 3100,
+          "kind": "direction-command-change",
+          "x": 3539.8,
+          "y": 115,
+          "to": 1
+        },
+        {
+          "frame": 3110,
+          "kind": "direction-command-change",
+          "x": 3551.6,
+          "y": 115,
+          "to": -1
+        },
+        {
+          "frame": 3120,
+          "kind": "direction-command-change",
+          "x": 3548,
+          "y": 127.6,
+          "to": 1
+        },
+        {
+          "frame": 3126,
+          "kind": "jump-start",
+          "x": 3546.4,
+          "y": 136.7
+        },
+        {
+          "frame": 3341,
+          "kind": "jump-start",
+          "x": 3764.6,
+          "y": 138.1
+        },
+        {
+          "frame": 3360,
+          "kind": "direction-command-change",
+          "x": 3786.9,
+          "y": 91.7,
+          "to": -1
+        },
+        {
+          "frame": 3450,
+          "kind": "direction-command-change",
+          "x": 3820,
+          "y": 115,
+          "to": 1
+        },
+        {
+          "frame": 3471,
+          "kind": "jump-start",
+          "x": 3845,
+          "y": 111.1
+        },
+        {
+          "frame": 3506,
+          "kind": "pickup",
+          "x": 3897.5,
+          "y": 97.6,
+          "type": "bag"
+        },
+        {
+          "frame": 3540,
+          "kind": "direction-command-change",
+          "x": 3948.5,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 3560,
+          "kind": "direction-command-change",
+          "x": 3942.1,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 3570,
+          "kind": "direction-command-change",
+          "x": 3954.5,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 3590,
+          "kind": "direction-command-change",
+          "x": 3948.2,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 3611,
+          "kind": "jump-start",
+          "x": 3977.1,
+          "y": 141.6
+        },
+        {
+          "frame": 3676,
+          "kind": "pickup",
+          "x": 4074.6,
+          "y": 142,
+          "type": "battery"
+        },
+        {
+          "frame": 3721,
+          "kind": "jump-start",
+          "x": 4142.1,
+          "y": 136.7
+        },
+        {
+          "frame": 3771,
+          "kind": "jump-start",
+          "x": 4217.1,
+          "y": 136.7
+        },
+        {
+          "frame": 3806,
+          "kind": "jump-start",
+          "x": 4269.6,
+          "y": 88.7
+        },
+        {
+          "frame": 3853,
+          "kind": "jump-start",
+          "x": 4320.1,
+          "y": 88.7
+        },
+        {
+          "frame": 3886,
+          "kind": "jump-start",
+          "x": 4369.6,
+          "y": 72.7
+        },
+        {
+          "frame": 3931,
+          "kind": "jump-start",
+          "x": 4437.6,
+          "y": 61.7
+        },
+        {
+          "frame": 3981,
+          "kind": "jump-start",
+          "x": 4516.4,
+          "y": 61.7
+        },
+        {
+          "frame": 4021,
+          "kind": "jump-start",
+          "x": 4576.4,
+          "y": 40.7
+        },
+        {
+          "frame": 4062,
+          "kind": "jump-start",
+          "x": 4637.9,
+          "y": 40.7
+        },
+        {
+          "frame": 4100,
+          "kind": "goal",
+          "x": 4694.9,
+          "y": 30
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "witness": "ruta-base-v3-n4.json",
+      "complete": true,
+      "controls": {
+        "horizontal": 4866,
+        "horizontal_and_jump_held": 740,
+        "jump_held_without_direction": 70,
+        "drop_command": 100,
+        "use_command": 0,
+        "neutral": 860
+      },
+      "observations": {
+        "frames": 6636,
+        "neutralStill": 129,
+        "neutralMoving": 731,
+        "chargingStill": 0,
+        "chargingMoving": 168,
+        "onHorizontalMover": 1,
+        "onVerticalMover": 9,
+        "directionChanges": 80,
+        "jumpStarts": 64,
+        "damageEvents": 0
+      },
+      "interactions": {
+        "key": 3,
+        "door": 3,
+        "bag": 17,
+        "battery": 2,
+        "garlic": 0,
+        "checkpoint": 4,
+        "conductor": 3,
+        "goal": 1
+      },
+      "phaseTotals": {
+        "k": 1450,
+        "exit": 2050,
+        "E": 1720,
+        "stance": 580,
+        "conductor": 660,
+        "defeated": 120,
+        "S": 56
+      },
+      "phases": [
+        {
+          "startFrame": 1,
+          "endFrame": 440,
+          "frames": 440,
+          "type": "k",
+          "zone": "museum",
+          "target": {
+            "type": "k",
+            "x": 696,
+            "y": 152,
+            "ox": 692,
+            "zone": "museum"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 441,
+          "endFrame": 460,
+          "frames": 20,
+          "type": "exit",
+          "zone": "museum",
+          "target": {
+            "type": "exit",
+            "x": 712,
+            "y": 145,
+            "zone": "museum"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 461,
+          "endFrame": 1140,
+          "frames": 680,
+          "type": "E",
+          "zone": "egypt",
+          "target": {
+            "type": "E",
+            "x": 1432,
+            "y": 144,
+            "ox": 1424,
+            "zone": "egypt"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 1141,
+          "endFrame": 1180,
+          "frames": 40,
+          "type": "exit",
+          "zone": "egypt",
+          "target": {
+            "type": "exit",
+            "x": 1464,
+            "y": 145,
+            "zone": "egypt"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 1181,
+          "endFrame": 1650,
+          "frames": 470,
+          "type": "k",
+          "zone": "gallery",
+          "target": {
+            "type": "k",
+            "x": 2088,
+            "y": 152,
+            "ox": 2084,
+            "zone": "gallery"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 1651,
+          "endFrame": 1710,
+          "frames": 60,
+          "type": "exit",
+          "zone": "gallery",
+          "target": {
+            "type": "exit",
+            "x": 2168,
+            "y": 145,
+            "zone": "gallery"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 1711,
+          "endFrame": 2570,
+          "frames": 860,
+          "type": "E",
+          "zone": "archive",
+          "target": {
+            "type": "E",
+            "x": 2888,
+            "y": 144,
+            "ox": 2880,
+            "zone": "archive"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 2571,
+          "endFrame": 2600,
+          "frames": 30,
+          "type": "exit",
+          "zone": "archive",
+          "target": {
+            "type": "exit",
+            "x": 2920,
+            "y": 145,
+            "zone": "archive"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 2601,
+          "endFrame": 3160,
+          "frames": 560,
+          "type": "exit",
+          "zone": "ballroom",
+          "target": {
+            "type": "exit",
+            "x": 3688,
+            "y": 145,
+            "zone": "ballroom"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 3161,
+          "endFrame": 3660,
+          "frames": 500,
+          "type": "stance",
+          "zone": "crypt",
+          "target": {
+            "type": "stance",
+            "x": 4380,
+            "y": 119,
+            "zone": "crypt"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 3661,
+          "endFrame": 3740,
+          "frames": 80,
+          "type": "stance",
+          "zone": "crypt",
+          "target": {
+            "type": "stance",
+            "x": 4270,
+            "y": 71,
+            "zone": "crypt"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 3741,
+          "endFrame": 4280,
+          "frames": 540,
+          "type": "k",
+          "zone": "crypt",
+          "target": {
+            "type": "k",
+            "x": 3720,
+            "y": 56,
+            "ox": 3716,
+            "zone": "crypt"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 4281,
+          "endFrame": 4810,
+          "frames": 530,
+          "type": "exit",
+          "zone": "crypt",
+          "target": {
+            "type": "exit",
+            "x": 4456,
+            "y": 145,
+            "zone": "crypt"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 4811,
+          "endFrame": 5510,
+          "frames": 700,
+          "type": "exit",
+          "zone": "vault",
+          "target": {
+            "type": "exit",
+            "x": 5208,
+            "y": 145,
+            "zone": "vault"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 5511,
+          "endFrame": 5690,
+          "frames": 180,
+          "type": "E",
+          "zone": "vault",
+          "target": {
+            "type": "E",
+            "x": 5384,
+            "y": 112,
+            "ox": 5376,
+            "zone": "vault"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 5691,
+          "endFrame": 5750,
+          "frames": 60,
+          "type": "exit",
+          "zone": "vault",
+          "target": {
+            "type": "exit",
+            "x": 5464,
+            "y": 145,
+            "zone": "vault"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 5751,
+          "endFrame": 5950,
+          "frames": 200,
+          "type": "conductor",
+          "zone": "boss",
+          "target": {
+            "type": "conductor",
+            "id": 0,
+            "x": 5562,
+            "y": 151,
+            "zone": "boss"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 5951,
+          "endFrame": 6170,
+          "frames": 220,
+          "type": "conductor",
+          "zone": "boss",
+          "target": {
+            "type": "conductor",
+            "id": 1,
+            "x": 5494,
+            "y": 103,
+            "zone": "boss"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 6171,
+          "endFrame": 6410,
+          "frames": 240,
+          "type": "conductor",
+          "zone": "boss",
+          "target": {
+            "type": "conductor",
+            "id": 2,
+            "x": 5723,
+            "y": 103,
+            "zone": "boss"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 6411,
+          "endFrame": 6530,
+          "frames": 120,
+          "type": "defeated",
+          "zone": "boss",
+          "target": {
+            "type": "defeated",
+            "x": 5723,
+            "y": 103,
+            "zone": "boss"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 6531,
+          "endFrame": 6580,
+          "frames": 50,
+          "type": "exit",
+          "zone": "boss",
+          "target": {
+            "type": "exit",
+            "x": 5784,
+            "y": 145,
+            "zone": "boss"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        },
+        {
+          "startFrame": 6581,
+          "endFrame": 6636,
+          "frames": 56,
+          "type": "S",
+          "zone": "vault",
+          "target": {
+            "type": "S",
+            "x": 5904,
+            "y": 92,
+            "ox": 5888,
+            "zone": "vault"
+          },
+          "meaning": "Planner objective interval, not a semantic activity classification"
+        }
+      ],
+      "events": [
+        {
+          "frame": 41,
+          "kind": "jump-start",
+          "x": 94,
+          "y": 136.7
+        },
+        {
+          "frame": 81,
+          "kind": "pickup",
+          "x": 154,
+          "y": 142,
+          "type": "bag"
+        },
+        {
+          "frame": 161,
+          "kind": "jump-start",
+          "x": 274,
+          "y": 136.7
+        },
+        {
+          "frame": 246,
+          "kind": "pickup",
+          "x": 393.1,
+          "y": 142,
+          "type": "bag"
+        },
+        {
+          "frame": 271,
+          "kind": "jump-start",
+          "x": 430.6,
+          "y": 136.7
+        },
+        {
+          "frame": 406,
+          "kind": "pickup",
+          "x": 633.1,
+          "y": 142,
+          "type": "bag"
+        },
+        {
+          "frame": 439,
+          "kind": "pickup",
+          "x": 682.6,
+          "y": 142,
+          "type": "key"
+        },
+        {
+          "frame": 458,
+          "kind": "door-open",
+          "x": 711.1,
+          "y": 142
+        },
+        {
+          "frame": 461,
+          "kind": "jump-start",
+          "x": 715.6,
+          "y": 136.7
+        },
+        {
+          "frame": 503,
+          "kind": "checkpoint",
+          "x": 778.6,
+          "y": 142
+        },
+        {
+          "frame": 560,
+          "kind": "direction-command-change",
+          "x": 851.9,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 580,
+          "kind": "direction-command-change",
+          "x": 836.7,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 590,
+          "kind": "direction-command-change",
+          "x": 849.1,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 610,
+          "kind": "direction-command-change",
+          "x": 842.8,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 621,
+          "kind": "jump-start",
+          "x": 856.7,
+          "y": 136.7
+        },
+        {
+          "frame": 664,
+          "kind": "pickup",
+          "x": 921.2,
+          "y": 142,
+          "type": "bag"
+        },
+        {
+          "frame": 711,
+          "kind": "jump-start",
+          "x": 977,
+          "y": 136.7
+        },
+        {
+          "frame": 744,
+          "kind": "jump-start",
+          "x": 1026.5,
+          "y": 104.7
+        },
+        {
+          "frame": 851,
+          "kind": "jump-start",
+          "x": 1176.9,
+          "y": 136.7
+        },
+        {
+          "frame": 870,
+          "kind": "direction-command-change",
+          "x": 1189.7,
+          "y": 90.3,
+          "to": -1
+        },
+        {
+          "frame": 890,
+          "kind": "direction-command-change",
+          "x": 1171.1,
+          "y": 140.6,
+          "to": 1
+        },
+        {
+          "frame": 901,
+          "kind": "jump-start",
+          "x": 1176.2,
+          "y": 136.7
+        },
+        {
+          "frame": 987,
+          "kind": "pickup",
+          "x": 1305.2,
+          "y": 142,
+          "type": "bag"
+        },
+        {
+          "frame": 1000,
+          "kind": "direction-command-change",
+          "x": 1324.7,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 1020,
+          "kind": "direction-command-change",
+          "x": 1318.4,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 1031,
+          "kind": "jump-start",
+          "x": 1332.3,
+          "y": 136.7
+        },
+        {
+          "frame": 1133,
+          "kind": "pickup",
+          "x": 1418.3,
+          "y": 142,
+          "type": "battery"
+        },
+        {
+          "frame": 1141,
+          "kind": "jump-start",
+          "x": 1419.4,
+          "y": 136.7
+        },
+        {
+          "frame": 1184,
+          "kind": "checkpoint",
+          "x": 1482.6,
+          "y": 142
+        },
+        {
+          "frame": 1301,
+          "kind": "pickup",
+          "x": 1658.1,
+          "y": 142,
+          "type": "bag"
+        },
+        {
+          "frame": 1310,
+          "kind": "direction-command-change",
+          "x": 1671.6,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 1330,
+          "kind": "direction-command-change",
+          "x": 1665.3,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 1331,
+          "kind": "jump-start",
+          "x": 1665.6,
+          "y": 136.7
+        },
+        {
+          "frame": 1421,
+          "kind": "jump-start",
+          "x": 1789.8,
+          "y": 136.7
+        },
+        {
+          "frame": 1461,
+          "kind": "pickup",
+          "x": 1833.3,
+          "y": 142,
+          "type": "bag"
+        },
+        {
+          "frame": 1500,
+          "kind": "direction-command-change",
+          "x": 1891.8,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 1501,
+          "kind": "jump-start",
+          "x": 1893,
+          "y": 136.7
+        },
+        {
+          "frame": 1510,
+          "kind": "direction-command-change",
+          "x": 1888.2,
+          "y": 99.7,
+          "to": 1
+        },
+        {
+          "frame": 1603,
+          "kind": "pickup",
+          "x": 2009.2,
+          "y": 142,
+          "type": "bag"
+        },
+        {
+          "frame": 1647,
+          "kind": "pickup",
+          "x": 2075.2,
+          "y": 142,
+          "type": "key"
+        },
+        {
+          "frame": 1708,
+          "kind": "door-open",
+          "x": 2166.7,
+          "y": 142
+        },
+        {
+          "frame": 1750,
+          "kind": "direction-command-change",
+          "x": 2217.5,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 1760,
+          "kind": "direction-command-change",
+          "x": 2205.1,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 1780,
+          "kind": "direction-command-change",
+          "x": 2211.4,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 1790,
+          "kind": "direction-command-change",
+          "x": 2199,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 1822,
+          "kind": "checkpoint",
+          "x": 2234.2,
+          "y": 142
+        },
+        {
+          "frame": 1901,
+          "kind": "jump-start",
+          "x": 2310.1,
+          "y": 136.7
+        },
+        {
+          "frame": 2371,
+          "kind": "jump-start",
+          "x": 2773.1,
+          "y": 136.7
+        },
+        {
+          "frame": 2390,
+          "kind": "direction-command-change",
+          "x": 2801.6,
+          "y": 90.3,
+          "to": -1
+        },
+        {
+          "frame": 2400,
+          "kind": "direction-command-change",
+          "x": 2798,
+          "y": 104,
+          "to": 1
+        },
+        {
+          "frame": 2480,
+          "kind": "direction-command-change",
+          "x": 2877.3,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 2501,
+          "kind": "jump-start",
+          "x": 2870.9,
+          "y": 136.7
+        },
+        {
+          "frame": 2510,
+          "kind": "direction-command-change",
+          "x": 2870.8,
+          "y": 99.7,
+          "to": 1
+        },
+        {
+          "frame": 2530,
+          "kind": "direction-command-change",
+          "x": 2891.2,
+          "y": 98.5,
+          "to": -1
+        },
+        {
+          "frame": 2540,
+          "kind": "direction-command-change",
+          "x": 2880.3,
+          "y": 122.6,
+          "to": 1
+        },
+        {
+          "frame": 2550,
+          "kind": "direction-command-change",
+          "x": 2883.9,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 2560,
+          "kind": "direction-command-change",
+          "x": 2880.3,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 2701,
+          "kind": "jump-start",
+          "x": 3080.4,
+          "y": 136.7
+        },
+        {
+          "frame": 2734,
+          "kind": "pickup",
+          "x": 3129.9,
+          "y": 115.9,
+          "type": "bag"
+        },
+        {
+          "frame": 2811,
+          "kind": "jump-start",
+          "x": 3244.9,
+          "y": 136.7
+        },
+        {
+          "frame": 2900,
+          "kind": "pickup",
+          "x": 3369,
+          "y": 142,
+          "type": "bag"
+        },
+        {
+          "frame": 2930,
+          "kind": "direction-command-change",
+          "x": 3401.8,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 2950,
+          "kind": "direction-command-change",
+          "x": 3386.6,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 2961,
+          "kind": "jump-start",
+          "x": 3400.5,
+          "y": 136.7
+        },
+        {
+          "frame": 3002,
+          "kind": "jump-start",
+          "x": 3462,
+          "y": 136.7
+        },
+        {
+          "frame": 3051,
+          "kind": "jump-start",
+          "x": 3526.3,
+          "y": 136.7
+        },
+        {
+          "frame": 3101,
+          "kind": "jump-start",
+          "x": 3601.3,
+          "y": 136.7
+        },
+        {
+          "frame": 3161,
+          "kind": "jump-start",
+          "x": 3691.3,
+          "y": 136.7
+        },
+        {
+          "frame": 3202,
+          "kind": "jump-start",
+          "x": 3752.8,
+          "y": 136.7
+        },
+        {
+          "frame": 3241,
+          "kind": "jump-start",
+          "x": 3797.4,
+          "y": 136.7
+        },
+        {
+          "frame": 3291,
+          "kind": "jump-start",
+          "x": 3872.1,
+          "y": 136.7
+        },
+        {
+          "frame": 3332,
+          "kind": "jump-start",
+          "x": 3912.7,
+          "y": 136.7
+        },
+        {
+          "frame": 3381,
+          "kind": "jump-start",
+          "x": 3972.5,
+          "y": 136.7
+        },
+        {
+          "frame": 3422,
+          "kind": "jump-start",
+          "x": 4034,
+          "y": 136.7
+        },
+        {
+          "frame": 3461,
+          "kind": "jump-start",
+          "x": 4092.5,
+          "y": 136.7
+        },
+        {
+          "frame": 3493,
+          "kind": "pickup",
+          "x": 4140.5,
+          "y": 112.5,
+          "type": "bag"
+        },
+        {
+          "frame": 3502,
+          "kind": "jump-start",
+          "x": 4154,
+          "y": 136.7
+        },
+        {
+          "frame": 3541,
+          "kind": "jump-start",
+          "x": 4212.5,
+          "y": 136.7
+        },
+        {
+          "frame": 3582,
+          "kind": "jump-start",
+          "x": 4274,
+          "y": 136.7
+        },
+        {
+          "frame": 3621,
+          "kind": "jump-start",
+          "x": 4332.5,
+          "y": 136.7
+        },
+        {
+          "frame": 3660,
+          "kind": "direction-command-change",
+          "x": 4391,
+          "y": 110,
+          "to": -1
+        },
+        {
+          "frame": 3661,
+          "kind": "jump-start",
+          "x": 4392.1,
+          "y": 104.7
+        },
+        {
+          "frame": 3717,
+          "kind": "pickup",
+          "x": 4316.9,
+          "y": 62,
+          "type": "bag"
+        },
+        {
+          "frame": 3750,
+          "kind": "direction-command-change",
+          "x": 4267.4,
+          "y": 62,
+          "to": 1
+        },
+        {
+          "frame": 3770,
+          "kind": "direction-command-change",
+          "x": 4273.7,
+          "y": 62,
+          "to": -1
+        },
+        {
+          "frame": 3781,
+          "kind": "jump-start",
+          "x": 4259.8,
+          "y": 57.4
+        },
+        {
+          "frame": 3800,
+          "kind": "direction-command-change",
+          "x": 4231.3,
+          "y": 24.3,
+          "to": 1
+        },
+        {
+          "frame": 3810,
+          "kind": "direction-command-change",
+          "x": 4234.9,
+          "y": 55.3,
+          "to": -1
+        },
+        {
+          "frame": 3821,
+          "kind": "jump-start",
+          "x": 4229.8,
+          "y": 56.7
+        },
+        {
+          "frame": 3880,
+          "kind": "direction-command-change",
+          "x": 4153.5,
+          "y": 62,
+          "to": 1
+        },
+        {
+          "frame": 3890,
+          "kind": "direction-command-change",
+          "x": 4166,
+          "y": 62,
+          "to": -1
+        },
+        {
+          "frame": 3911,
+          "kind": "jump-start",
+          "x": 4145.9,
+          "y": 58.1
+        },
+        {
+          "frame": 3980,
+          "kind": "direction-command-change",
+          "x": 4042.4,
+          "y": 62,
+          "to": 1
+        },
+        {
+          "frame": 4000,
+          "kind": "direction-command-change",
+          "x": 4048.7,
+          "y": 62,
+          "to": -1
+        },
+        {
+          "frame": 4011,
+          "kind": "jump-start",
+          "x": 4034.8,
+          "y": 57.4
+        },
+        {
+          "frame": 4061,
+          "kind": "jump-start",
+          "x": 3966.9,
+          "y": 56.7
+        },
+        {
+          "frame": 4070,
+          "kind": "direction-command-change",
+          "x": 3953.4,
+          "y": 19.7,
+          "to": 1
+        },
+        {
+          "frame": 4090,
+          "kind": "direction-command-change",
+          "x": 3965.8,
+          "y": 55.3,
+          "to": -1
+        },
+        {
+          "frame": 4093,
+          "kind": "jump-start",
+          "x": 3965.3,
+          "y": 56.7
+        },
+        {
+          "frame": 4125,
+          "kind": "jump-start",
+          "x": 3930,
+          "y": 56.7
+        },
+        {
+          "frame": 4211,
+          "kind": "jump-start",
+          "x": 3809.7,
+          "y": 58.1
+        },
+        {
+          "frame": 4270,
+          "kind": "direction-command-change",
+          "x": 3721.2,
+          "y": 62,
+          "to": 1
+        },
+        {
+          "frame": 4271,
+          "kind": "jump-start",
+          "x": 3720.1,
+          "y": 56.7
+        },
+        {
+          "frame": 4271,
+          "kind": "pickup",
+          "x": 3720.1,
+          "y": 56.7,
+          "type": "key"
+        },
+        {
+          "frame": 4323,
+          "kind": "pickup",
+          "x": 3779.3,
+          "y": 116.1,
+          "type": "bag"
+        },
+        {
+          "frame": 4341,
+          "kind": "jump-start",
+          "x": 3798.9,
+          "y": 136.7
+        },
+        {
+          "frame": 4421,
+          "kind": "jump-start",
+          "x": 3911.8,
+          "y": 136.7
+        },
+        {
+          "frame": 4476,
+          "kind": "pickup",
+          "x": 3994.3,
+          "y": 142,
+          "type": "bag"
+        },
+        {
+          "frame": 4571,
+          "kind": "jump-start",
+          "x": 4136.8,
+          "y": 136.7
+        },
+        {
+          "frame": 4590,
+          "kind": "direction-command-change",
+          "x": 4165.3,
+          "y": 90.3,
+          "to": -1
+        },
+        {
+          "frame": 4600,
+          "kind": "direction-command-change",
+          "x": 4161.7,
+          "y": 104,
+          "to": 1
+        },
+        {
+          "frame": 4612,
+          "kind": "jump-start",
+          "x": 4168.3,
+          "y": 136.7
+        },
+        {
+          "frame": 4698,
+          "kind": "pickup",
+          "x": 4297.3,
+          "y": 142,
+          "type": "bag"
+        },
+        {
+          "frame": 4711,
+          "kind": "jump-start",
+          "x": 4316.8,
+          "y": 136.7
+        },
+        {
+          "frame": 4809,
+          "kind": "door-open",
+          "x": 4454.9,
+          "y": 142
+        },
+        {
+          "frame": 4811,
+          "kind": "jump-start",
+          "x": 4457.9,
+          "y": 136.7
+        },
+        {
+          "frame": 4844,
+          "kind": "checkpoint",
+          "x": 4507.4,
+          "y": 142
+        },
+        {
+          "frame": 4881,
+          "kind": "jump-start",
+          "x": 4562.9,
+          "y": 136.7
+        },
+        {
+          "frame": 4939,
+          "kind": "pickup",
+          "x": 4649.9,
+          "y": 142,
+          "type": "bag"
+        },
+        {
+          "frame": 4960,
+          "kind": "direction-command-change",
+          "x": 4681.4,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 4980,
+          "kind": "direction-command-change",
+          "x": 4675,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 4990,
+          "kind": "direction-command-change",
+          "x": 4687.5,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 5010,
+          "kind": "direction-command-change",
+          "x": 4681.1,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 5021,
+          "kind": "jump-start",
+          "x": 4695,
+          "y": 136.7
+        },
+        {
+          "frame": 5140,
+          "kind": "direction-command-change",
+          "x": 4851.4,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 5160,
+          "kind": "direction-command-change",
+          "x": 4836.2,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 5191,
+          "kind": "jump-start",
+          "x": 4851.7,
+          "y": 136.7
+        },
+        {
+          "frame": 5280,
+          "kind": "direction-command-change",
+          "x": 4954.6,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 5290,
+          "kind": "direction-command-change",
+          "x": 4951,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 5320,
+          "kind": "direction-command-change",
+          "x": 4972.3,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 5330,
+          "kind": "direction-command-change",
+          "x": 4959.9,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 5355,
+          "kind": "pickup",
+          "x": 4986,
+          "y": 142,
+          "type": "bag"
+        },
+        {
+          "frame": 5361,
+          "kind": "jump-start",
+          "x": 4995,
+          "y": 136.7
+        },
+        {
+          "frame": 5511,
+          "kind": "jump-start",
+          "x": 5211.6,
+          "y": 136.7
+        },
+        {
+          "frame": 5542,
+          "kind": "pickup",
+          "x": 5258.1,
+          "y": 109.4,
+          "type": "battery"
+        },
+        {
+          "frame": 5552,
+          "kind": "jump-start",
+          "x": 5273.1,
+          "y": 136.7
+        },
+        {
+          "frame": 5611,
+          "kind": "jump-start",
+          "x": 5361.6,
+          "y": 136.7
+        },
+        {
+          "frame": 5630,
+          "kind": "direction-command-change",
+          "x": 5383.9,
+          "y": 90.3,
+          "to": -1
+        },
+        {
+          "frame": 5640,
+          "kind": "direction-command-change",
+          "x": 5373.8,
+          "y": 104,
+          "to": 1
+        },
+        {
+          "frame": 5650,
+          "kind": "direction-command-change",
+          "x": 5377.4,
+          "y": 140.6,
+          "to": -1
+        },
+        {
+          "frame": 5652,
+          "kind": "jump-start",
+          "x": 5379.3,
+          "y": 136.7
+        },
+        {
+          "frame": 5660,
+          "kind": "direction-command-change",
+          "x": 5373.8,
+          "y": 102.9,
+          "to": 1
+        },
+        {
+          "frame": 5670,
+          "kind": "direction-command-change",
+          "x": 5377.4,
+          "y": 81.2,
+          "to": -1
+        },
+        {
+          "frame": 5680,
+          "kind": "direction-command-change",
+          "x": 5373.8,
+          "y": 82.6,
+          "to": 1
+        },
+        {
+          "frame": 5810,
+          "kind": "direction-command-change",
+          "x": 5557.4,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 5830,
+          "kind": "direction-command-change",
+          "x": 5551,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 5840,
+          "kind": "direction-command-change",
+          "x": 5563.4,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 5860,
+          "kind": "direction-command-change",
+          "x": 5557.1,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 5870,
+          "kind": "direction-command-change",
+          "x": 5569.5,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 5900,
+          "kind": "direction-command-change",
+          "x": 5548.2,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 5910,
+          "kind": "direction-command-change",
+          "x": 5560.6,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 5920,
+          "kind": "direction-command-change",
+          "x": 5557,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 5930,
+          "kind": "direction-command-change",
+          "x": 5560.6,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 5940,
+          "kind": "direction-command-change",
+          "x": 5557,
+          "y": 142,
+          "to": 1
+        },
+        {
+          "frame": 5944,
+          "kind": "conductor",
+          "x": 5554.5,
+          "y": 142,
+          "hp": 2
+        },
+        {
+          "frame": 5950,
+          "kind": "direction-command-change",
+          "x": 5560.6,
+          "y": 142,
+          "to": -1
+        },
+        {
+          "frame": 5951,
+          "kind": "jump-start",
+          "x": 5561.7,
+          "y": 136.7
+        },
+        {
+          "frame": 6020,
+          "kind": "direction-command-change",
+          "x": 5479.2,
+          "y": 94,
+          "to": 1
+        },
+        {
+          "frame": 6030,
+          "kind": "direction-command-change",
+          "x": 5491.6,
+          "y": 94,
+          "to": -1
+        },
+        {
+          "frame": 6060,
+          "kind": "direction-command-change",
+          "x": 5485.3,
+          "y": 94,
+          "to": 1
+        },
+        {
+          "frame": 6080,
+          "kind": "direction-command-change",
+          "x": 5500.5,
+          "y": 94,
+          "to": -1
+        },
+        {
+          "frame": 6090,
+          "kind": "direction-command-change",
+          "x": 5488.1,
+          "y": 94,
+          "to": 1
+        },
+        {
+          "frame": 6100,
+          "kind": "direction-command-change",
+          "x": 5491.7,
+          "y": 94,
+          "to": -1
+        },
+        {
+          "frame": 6110,
+          "kind": "direction-command-change",
+          "x": 5488.1,
+          "y": 94,
+          "to": 1
+        },
+        {
+          "frame": 6130,
+          "kind": "direction-command-change",
+          "x": 5494.4,
+          "y": 94,
+          "to": -1
+        },
+        {
+          "frame": 6140,
+          "kind": "direction-command-change",
+          "x": 5482,
+          "y": 94,
+          "to": 1
+        },
+        {
+          "frame": 6161,
+          "kind": "conductor",
+          "x": 5488.7,
+          "y": 94,
+          "hp": 1
+        },
+        {
+          "frame": 6225,
+          "kind": "jump-start",
+          "x": 5583.4,
+          "y": 136.7
+        },
+        {
+          "frame": 6270,
+          "kind": "direction-command-change",
+          "x": 5632.8,
+          "y": 137.6,
+          "to": -1
+        },
+        {
+          "frame": 6272,
+          "kind": "jump-start",
+          "x": 5632.1,
+          "y": 136.7
+        },
+        {
+          "frame": 6280,
+          "kind": "direction-command-change",
+          "x": 5621,
+          "y": 102.9,
+          "to": 1
+        },
+        {
+          "frame": 6321,
+          "kind": "jump-start",
+          "x": 5671.1,
+          "y": 136.7
+        },
+        {
+          "frame": 6410,
+          "kind": "conductor",
+          "x": 5729.9,
+          "y": 94,
+          "hp": 0
+        },
+        {
+          "frame": 6410,
+          "kind": "direction-command-change",
+          "x": 5729.9,
+          "y": 94,
+          "to": -1
+        },
+        {
+          "frame": 6430,
+          "kind": "direction-command-change",
+          "x": 5711.3,
+          "y": 94,
+          "to": 1
+        },
+        {
+          "frame": 6581,
+          "kind": "jump-start",
+          "x": 5796.8,
+          "y": 136.7
+        },
+        {
+          "frame": 6636,
+          "kind": "goal",
+          "x": 5879.3,
+          "y": 94
+        }
+      ]
+    }
+  ]
+}

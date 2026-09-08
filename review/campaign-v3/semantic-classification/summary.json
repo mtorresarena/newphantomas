@@ -1,0 +1,848 @@
+{
+  "sourceHash": "5ada9ce96900d5b60feb1308d0fa25119aacdb34d9ef32c4f07ba04cab261f3d",
+  "observerHash": "20f753584b6a92411e8503d689c9b83107b4bb13e666fd885186d63f826d5850",
+  "protocolHash": "97cd8025b23ece8040b3ea41b80e701a27a2a97a8a67da7166b77d166d983dac",
+  "processed": 24,
+  "summaries": [
+    {
+      "level": 1,
+      "policy": "balanced",
+      "frames": 3847,
+      "seconds": 64.11666666666666,
+      "certainFrames": 33,
+      "certainPercent": 0.8578112815180661,
+      "ambiguousFrames": 3814,
+      "lower": {
+        "mandatory_action": 4,
+        "simple_transit": 20,
+        "necessary_mechanism_wait": 0,
+        "optional": 9,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 3683,
+        "simple_transit": 3699,
+        "necessary_mechanism_wait": 135,
+        "optional": 3823,
+        "repetition": 3814
+      },
+      "reasons": {
+        "forward_fixed_safe_floor_outside_challenge_margins": 20,
+        "bag_collection_instant": 9,
+        "verified_progress_transition": 4
+      },
+      "ambiguousContexts": {
+        "other": 1762,
+        "encounter": 1909,
+        "obstacle": 61,
+        "energy_recharge": 82
+      }
+    },
+    {
+      "level": 2,
+      "policy": "balanced",
+      "frames": 4053,
+      "seconds": 67.55,
+      "certainFrames": 142,
+      "certainPercent": 3.5035775968418457,
+      "ambiguousFrames": 3911,
+      "lower": {
+        "mandatory_action": 6,
+        "simple_transit": 126,
+        "necessary_mechanism_wait": 0,
+        "optional": 10,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 3877,
+        "simple_transit": 3997,
+        "necessary_mechanism_wait": 40,
+        "optional": 3921,
+        "repetition": 3911
+      },
+      "reasons": {
+        "bag_collection_instant": 10,
+        "verified_progress_transition": 6,
+        "forward_fixed_safe_floor_outside_challenge_margins": 126
+      },
+      "ambiguousContexts": {
+        "encounter": 1777,
+        "other": 1457,
+        "obstacle": 529,
+        "energy_recharge": 148
+      }
+    },
+    {
+      "level": 3,
+      "policy": "balanced",
+      "frames": 4397,
+      "seconds": 73.28333333333333,
+      "certainFrames": 80,
+      "certainPercent": 1.8194223334091426,
+      "ambiguousFrames": 4317,
+      "lower": {
+        "mandatory_action": 4,
+        "simple_transit": 67,
+        "necessary_mechanism_wait": 0,
+        "optional": 9,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 4275,
+        "simple_transit": 4338,
+        "necessary_mechanism_wait": 46,
+        "optional": 4326,
+        "repetition": 4317
+      },
+      "reasons": {
+        "bag_collection_instant": 9,
+        "verified_progress_transition": 4,
+        "forward_fixed_safe_floor_outside_challenge_margins": 67
+      },
+      "ambiguousContexts": {
+        "other": 1872,
+        "obstacle": 990,
+        "encounter": 1438,
+        "energy_recharge": 17
+      }
+    },
+    {
+      "level": 4,
+      "policy": "balanced",
+      "frames": 6489,
+      "seconds": 108.15,
+      "certainFrames": 73,
+      "certainPercent": 1.1249807366312221,
+      "ambiguousFrames": 6416,
+      "lower": {
+        "mandatory_action": 9,
+        "simple_transit": 47,
+        "necessary_mechanism_wait": 0,
+        "optional": 17,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 6274,
+        "simple_transit": 6312,
+        "necessary_mechanism_wait": 151,
+        "optional": 6433,
+        "repetition": 6416
+      },
+      "reasons": {
+        "bag_collection_instant": 17,
+        "verified_progress_transition": 9,
+        "forward_fixed_safe_floor_outside_challenge_margins": 47
+      },
+      "ambiguousContexts": {
+        "other": 1871,
+        "encounter": 3018,
+        "obstacle": 527,
+        "energy_recharge": 160,
+        "boss": 840
+      }
+    },
+    {
+      "level": 5,
+      "policy": "balanced",
+      "frames": 11592,
+      "seconds": 193.2,
+      "certainFrames": 874,
+      "certainPercent": 7.5396825396825395,
+      "ambiguousFrames": 10718,
+      "lower": {
+        "mandatory_action": 22,
+        "simple_transit": 846,
+        "necessary_mechanism_wait": 0,
+        "optional": 6,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 10694,
+        "simple_transit": 11518,
+        "necessary_mechanism_wait": 46,
+        "optional": 10724,
+        "repetition": 10718
+      },
+      "reasons": {
+        "forward_fixed_safe_floor_outside_challenge_margins": 846,
+        "verified_progress_transition": 22,
+        "bag_collection_instant": 6
+      },
+      "ambiguousContexts": {
+        "other": 1550,
+        "energy_recharge": 51,
+        "puzzle": 7384,
+        "obstacle": 509,
+        "encounter": 1224
+      }
+    },
+    {
+      "level": 6,
+      "policy": "balanced",
+      "frames": 10283,
+      "seconds": 171.38333333333333,
+      "certainFrames": 848,
+      "certainPercent": 8.246620636001166,
+      "ambiguousFrames": 9435,
+      "lower": {
+        "mandatory_action": 34,
+        "simple_transit": 804,
+        "necessary_mechanism_wait": 0,
+        "optional": 10,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 9296,
+        "simple_transit": 10066,
+        "necessary_mechanism_wait": 173,
+        "optional": 9445,
+        "repetition": 9435
+      },
+      "reasons": {
+        "forward_fixed_safe_floor_outside_challenge_margins": 804,
+        "verified_progress_transition": 34,
+        "bag_collection_instant": 10
+      },
+      "ambiguousContexts": {
+        "other": 1889,
+        "energy_recharge": 53,
+        "puzzle": 4939,
+        "encounter": 872,
+        "obstacle": 1682
+      }
+    },
+    {
+      "level": 7,
+      "policy": "balanced",
+      "frames": 8574,
+      "seconds": 142.9,
+      "certainFrames": 1248,
+      "certainPercent": 14.555633310006998,
+      "ambiguousFrames": 7326,
+      "lower": {
+        "mandatory_action": 20,
+        "simple_transit": 1058,
+        "necessary_mechanism_wait": 162,
+        "optional": 8,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 7310,
+        "simple_transit": 8348,
+        "necessary_mechanism_wait": 198,
+        "optional": 7334,
+        "repetition": 7326
+      },
+      "reasons": {
+        "forward_fixed_safe_floor_outside_challenge_margins": 1058,
+        "correct_mirror_stability_latency": 162,
+        "verified_progress_transition": 20,
+        "bag_collection_instant": 8
+      },
+      "ambiguousContexts": {
+        "other": 1611,
+        "energy_recharge": 51,
+        "puzzle": 4380,
+        "obstacle": 220,
+        "encounter": 1064
+      }
+    },
+    {
+      "level": 8,
+      "policy": "balanced",
+      "frames": 12949,
+      "seconds": 215.81666666666666,
+      "certainFrames": 1069,
+      "certainPercent": 8.255463742373928,
+      "ambiguousFrames": 11880,
+      "lower": {
+        "mandatory_action": 29,
+        "simple_transit": 980,
+        "necessary_mechanism_wait": 54,
+        "optional": 6,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 10984,
+        "simple_transit": 11927,
+        "necessary_mechanism_wait": 987,
+        "optional": 11886,
+        "repetition": 11880
+      },
+      "reasons": {
+        "forward_fixed_safe_floor_outside_challenge_margins": 980,
+        "verified_progress_transition": 29,
+        "bag_collection_instant": 6,
+        "correct_mirror_stability_latency": 54
+      },
+      "ambiguousContexts": {
+        "other": 1743,
+        "energy_recharge": 104,
+        "puzzle": 5912,
+        "encounter": 1480,
+        "obstacle": 776,
+        "boss": 1865
+      }
+    },
+    {
+      "level": 1,
+      "policy": "cautious",
+      "frames": 3946,
+      "seconds": 65.76666666666667,
+      "certainFrames": 33,
+      "certainPercent": 0.8362899138367967,
+      "ambiguousFrames": 3913,
+      "lower": {
+        "mandatory_action": 4,
+        "simple_transit": 20,
+        "necessary_mechanism_wait": 0,
+        "optional": 9,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 3782,
+        "simple_transit": 3798,
+        "necessary_mechanism_wait": 135,
+        "optional": 3922,
+        "repetition": 3913
+      },
+      "reasons": {
+        "forward_fixed_safe_floor_outside_challenge_margins": 20,
+        "bag_collection_instant": 9,
+        "verified_progress_transition": 4
+      },
+      "ambiguousContexts": {
+        "other": 1801,
+        "encounter": 1969,
+        "obstacle": 61,
+        "energy_recharge": 82
+      }
+    },
+    {
+      "level": 2,
+      "policy": "cautious",
+      "frames": 3993,
+      "seconds": 66.55,
+      "certainFrames": 158,
+      "certainPercent": 3.956924618081643,
+      "ambiguousFrames": 3835,
+      "lower": {
+        "mandatory_action": 6,
+        "simple_transit": 142,
+        "necessary_mechanism_wait": 0,
+        "optional": 10,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 3841,
+        "simple_transit": 3977,
+        "necessary_mechanism_wait": 0,
+        "optional": 3845,
+        "repetition": 3835
+      },
+      "reasons": {
+        "bag_collection_instant": 10,
+        "verified_progress_transition": 6,
+        "forward_fixed_safe_floor_outside_challenge_margins": 142
+      },
+      "ambiguousContexts": {
+        "encounter": 1772,
+        "other": 1456,
+        "obstacle": 502,
+        "energy_recharge": 105
+      }
+    },
+    {
+      "level": 3,
+      "policy": "cautious",
+      "frames": 4402,
+      "seconds": 73.36666666666666,
+      "certainFrames": 68,
+      "certainPercent": 1.5447523852794185,
+      "ambiguousFrames": 4334,
+      "lower": {
+        "mandatory_action": 4,
+        "simple_transit": 54,
+        "necessary_mechanism_wait": 0,
+        "optional": 10,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 4319,
+        "simple_transit": 4369,
+        "necessary_mechanism_wait": 19,
+        "optional": 4344,
+        "repetition": 4334
+      },
+      "reasons": {
+        "bag_collection_instant": 10,
+        "verified_progress_transition": 4,
+        "forward_fixed_safe_floor_outside_challenge_margins": 54
+      },
+      "ambiguousContexts": {
+        "other": 1846,
+        "obstacle": 999,
+        "encounter": 1462,
+        "energy_recharge": 27
+      }
+    },
+    {
+      "level": 4,
+      "policy": "cautious",
+      "frames": 6507,
+      "seconds": 108.45,
+      "certainFrames": 68,
+      "certainPercent": 1.045028430920547,
+      "ambiguousFrames": 6439,
+      "lower": {
+        "mandatory_action": 9,
+        "simple_transit": 42,
+        "necessary_mechanism_wait": 0,
+        "optional": 17,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 6189,
+        "simple_transit": 6222,
+        "necessary_mechanism_wait": 259,
+        "optional": 6456,
+        "repetition": 6439
+      },
+      "reasons": {
+        "bag_collection_instant": 17,
+        "verified_progress_transition": 9,
+        "forward_fixed_safe_floor_outside_challenge_margins": 42
+      },
+      "ambiguousContexts": {
+        "other": 1888,
+        "encounter": 3018,
+        "obstacle": 527,
+        "energy_recharge": 166,
+        "boss": 840
+      }
+    },
+    {
+      "level": 5,
+      "policy": "cautious",
+      "frames": 11592,
+      "seconds": 193.2,
+      "certainFrames": 861,
+      "certainPercent": 7.427536231884058,
+      "ambiguousFrames": 10731,
+      "lower": {
+        "mandatory_action": 22,
+        "simple_transit": 831,
+        "necessary_mechanism_wait": 0,
+        "optional": 8,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 10707,
+        "simple_transit": 11516,
+        "necessary_mechanism_wait": 46,
+        "optional": 10739,
+        "repetition": 10731
+      },
+      "reasons": {
+        "forward_fixed_safe_floor_outside_challenge_margins": 831,
+        "verified_progress_transition": 22,
+        "bag_collection_instant": 8
+      },
+      "ambiguousContexts": {
+        "other": 1567,
+        "energy_recharge": 57,
+        "puzzle": 7372,
+        "obstacle": 620,
+        "encounter": 1115
+      }
+    },
+    {
+      "level": 6,
+      "policy": "cautious",
+      "frames": 10291,
+      "seconds": 171.51666666666668,
+      "certainFrames": 833,
+      "certainPercent": 8.094451462442912,
+      "ambiguousFrames": 9458,
+      "lower": {
+        "mandatory_action": 34,
+        "simple_transit": 789,
+        "necessary_mechanism_wait": 0,
+        "optional": 10,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 9347,
+        "simple_transit": 10102,
+        "necessary_mechanism_wait": 145,
+        "optional": 9468,
+        "repetition": 9458
+      },
+      "reasons": {
+        "forward_fixed_safe_floor_outside_challenge_margins": 789,
+        "verified_progress_transition": 34,
+        "bag_collection_instant": 10
+      },
+      "ambiguousContexts": {
+        "other": 1979,
+        "energy_recharge": 52,
+        "puzzle": 5028,
+        "encounter": 859,
+        "obstacle": 1540
+      }
+    },
+    {
+      "level": 7,
+      "policy": "cautious",
+      "frames": 8574,
+      "seconds": 142.9,
+      "certainFrames": 1248,
+      "certainPercent": 14.555633310006998,
+      "ambiguousFrames": 7326,
+      "lower": {
+        "mandatory_action": 20,
+        "simple_transit": 1058,
+        "necessary_mechanism_wait": 162,
+        "optional": 8,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 7310,
+        "simple_transit": 8348,
+        "necessary_mechanism_wait": 198,
+        "optional": 7334,
+        "repetition": 7326
+      },
+      "reasons": {
+        "forward_fixed_safe_floor_outside_challenge_margins": 1058,
+        "correct_mirror_stability_latency": 162,
+        "verified_progress_transition": 20,
+        "bag_collection_instant": 8
+      },
+      "ambiguousContexts": {
+        "other": 1611,
+        "energy_recharge": 51,
+        "puzzle": 4380,
+        "obstacle": 220,
+        "encounter": 1064
+      }
+    },
+    {
+      "level": 8,
+      "policy": "cautious",
+      "frames": 12949,
+      "seconds": 215.81666666666666,
+      "certainFrames": 1069,
+      "certainPercent": 8.255463742373928,
+      "ambiguousFrames": 11880,
+      "lower": {
+        "mandatory_action": 29,
+        "simple_transit": 980,
+        "necessary_mechanism_wait": 54,
+        "optional": 6,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 10984,
+        "simple_transit": 11927,
+        "necessary_mechanism_wait": 987,
+        "optional": 11886,
+        "repetition": 11880
+      },
+      "reasons": {
+        "forward_fixed_safe_floor_outside_challenge_margins": 980,
+        "verified_progress_transition": 29,
+        "bag_collection_instant": 6,
+        "correct_mirror_stability_latency": 54
+      },
+      "ambiguousContexts": {
+        "other": 1739,
+        "energy_recharge": 110,
+        "puzzle": 5910,
+        "encounter": 1480,
+        "obstacle": 776,
+        "boss": 1865
+      }
+    },
+    {
+      "level": 1,
+      "policy": "speed",
+      "frames": 3821,
+      "seconds": 63.68333333333333,
+      "certainFrames": 34,
+      "certainPercent": 0.8898194190002617,
+      "ambiguousFrames": 3787,
+      "lower": {
+        "mandatory_action": 4,
+        "simple_transit": 20,
+        "necessary_mechanism_wait": 0,
+        "optional": 10,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 3617,
+        "simple_transit": 3633,
+        "necessary_mechanism_wait": 174,
+        "optional": 3797,
+        "repetition": 3787
+      },
+      "reasons": {
+        "forward_fixed_safe_floor_outside_challenge_margins": 20,
+        "bag_collection_instant": 10,
+        "verified_progress_transition": 4
+      },
+      "ambiguousContexts": {
+        "other": 1853,
+        "encounter": 1796,
+        "obstacle": 61,
+        "energy_recharge": 77
+      }
+    },
+    {
+      "level": 2,
+      "policy": "speed",
+      "frames": 4071,
+      "seconds": 67.85,
+      "certainFrames": 133,
+      "certainPercent": 3.2670105625153525,
+      "ambiguousFrames": 3938,
+      "lower": {
+        "mandatory_action": 6,
+        "simple_transit": 116,
+        "necessary_mechanism_wait": 0,
+        "optional": 11,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 3825,
+        "simple_transit": 3935,
+        "necessary_mechanism_wait": 119,
+        "optional": 3949,
+        "repetition": 3938
+      },
+      "reasons": {
+        "bag_collection_instant": 11,
+        "verified_progress_transition": 6,
+        "forward_fixed_safe_floor_outside_challenge_margins": 116
+      },
+      "ambiguousContexts": {
+        "encounter": 1759,
+        "other": 1503,
+        "obstacle": 494,
+        "energy_recharge": 182
+      }
+    },
+    {
+      "level": 3,
+      "policy": "speed",
+      "frames": 4085,
+      "seconds": 68.08333333333333,
+      "certainFrames": 77,
+      "certainPercent": 1.8849449204406366,
+      "ambiguousFrames": 4008,
+      "lower": {
+        "mandatory_action": 4,
+        "simple_transit": 64,
+        "necessary_mechanism_wait": 0,
+        "optional": 9,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 3984,
+        "simple_transit": 4044,
+        "necessary_mechanism_wait": 28,
+        "optional": 4017,
+        "repetition": 4008
+      },
+      "reasons": {
+        "bag_collection_instant": 9,
+        "verified_progress_transition": 4,
+        "forward_fixed_safe_floor_outside_challenge_margins": 64
+      },
+      "ambiguousContexts": {
+        "other": 1572,
+        "obstacle": 892,
+        "encounter": 1526,
+        "energy_recharge": 18
+      }
+    },
+    {
+      "level": 4,
+      "policy": "speed",
+      "frames": 6807,
+      "seconds": 113.45,
+      "certainFrames": 82,
+      "certainPercent": 1.2046422800058763,
+      "ambiguousFrames": 6725,
+      "lower": {
+        "mandatory_action": 9,
+        "simple_transit": 56,
+        "necessary_mechanism_wait": 0,
+        "optional": 17,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 6387,
+        "simple_transit": 6434,
+        "necessary_mechanism_wait": 347,
+        "optional": 6742,
+        "repetition": 6725
+      },
+      "reasons": {
+        "bag_collection_instant": 17,
+        "verified_progress_transition": 9,
+        "forward_fixed_safe_floor_outside_challenge_margins": 56
+      },
+      "ambiguousContexts": {
+        "other": 2123,
+        "encounter": 2920,
+        "obstacle": 528,
+        "energy_recharge": 318,
+        "boss": 836
+      }
+    },
+    {
+      "level": 5,
+      "policy": "speed",
+      "frames": 11642,
+      "seconds": 194.03333333333333,
+      "certainFrames": 874,
+      "certainPercent": 7.507301151004982,
+      "ambiguousFrames": 10768,
+      "lower": {
+        "mandatory_action": 22,
+        "simple_transit": 846,
+        "necessary_mechanism_wait": 0,
+        "optional": 6,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 10753,
+        "simple_transit": 11577,
+        "necessary_mechanism_wait": 37,
+        "optional": 10774,
+        "repetition": 10768
+      },
+      "reasons": {
+        "forward_fixed_safe_floor_outside_challenge_margins": 846,
+        "verified_progress_transition": 22,
+        "bag_collection_instant": 6
+      },
+      "ambiguousContexts": {
+        "other": 1479,
+        "energy_recharge": 52,
+        "puzzle": 7520,
+        "obstacle": 509,
+        "encounter": 1208
+      }
+    },
+    {
+      "level": 6,
+      "policy": "speed",
+      "frames": 10294,
+      "seconds": 171.56666666666666,
+      "certainFrames": 962,
+      "certainPercent": 9.345249659996114,
+      "ambiguousFrames": 9332,
+      "lower": {
+        "mandatory_action": 34,
+        "simple_transit": 918,
+        "necessary_mechanism_wait": 0,
+        "optional": 10,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 9166,
+        "simple_transit": 10050,
+        "necessary_mechanism_wait": 200,
+        "optional": 9342,
+        "repetition": 9332
+      },
+      "reasons": {
+        "forward_fixed_safe_floor_outside_challenge_margins": 918,
+        "verified_progress_transition": 34,
+        "bag_collection_instant": 10
+      },
+      "ambiguousContexts": {
+        "other": 1755,
+        "energy_recharge": 53,
+        "puzzle": 4990,
+        "encounter": 865,
+        "obstacle": 1669
+      }
+    },
+    {
+      "level": 7,
+      "policy": "speed",
+      "frames": 8518,
+      "seconds": 141.96666666666667,
+      "certainFrames": 1208,
+      "certainPercent": 14.181732801127025,
+      "ambiguousFrames": 7310,
+      "lower": {
+        "mandatory_action": 20,
+        "simple_transit": 1018,
+        "necessary_mechanism_wait": 162,
+        "optional": 8,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 7258,
+        "simple_transit": 8256,
+        "necessary_mechanism_wait": 234,
+        "optional": 7318,
+        "repetition": 7310
+      },
+      "reasons": {
+        "forward_fixed_safe_floor_outside_challenge_margins": 1018,
+        "correct_mirror_stability_latency": 162,
+        "verified_progress_transition": 20,
+        "bag_collection_instant": 8
+      },
+      "ambiguousContexts": {
+        "other": 1700,
+        "energy_recharge": 52,
+        "puzzle": 4276,
+        "obstacle": 218,
+        "encounter": 1064
+      }
+    },
+    {
+      "level": 8,
+      "policy": "speed",
+      "frames": 12974,
+      "seconds": 216.23333333333332,
+      "certainFrames": 1072,
+      "certainPercent": 8.262679204562971,
+      "ambiguousFrames": 11902,
+      "lower": {
+        "mandatory_action": 29,
+        "simple_transit": 984,
+        "necessary_mechanism_wait": 54,
+        "optional": 5,
+        "repetition": 0
+      },
+      "upper": {
+        "mandatory_action": 11004,
+        "simple_transit": 11952,
+        "necessary_mechanism_wait": 988,
+        "optional": 11907,
+        "repetition": 11902
+      },
+      "reasons": {
+        "forward_fixed_safe_floor_outside_challenge_margins": 984,
+        "verified_progress_transition": 29,
+        "bag_collection_instant": 5,
+        "correct_mirror_stability_latency": 54
+      },
+      "ambiguousContexts": {
+        "other": 1681,
+        "energy_recharge": 103,
+        "puzzle": 5991,
+        "encounter": 1480,
+        "obstacle": 786,
+        "boss": 1861
+      }
+    }
+  ]
+}

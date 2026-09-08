@@ -1,0 +1,752 @@
+{
+  "sourceHash": "b9f1a7b93ca1438d7a969cd76852f119d87e9c6ff91cabb752515f6090a12c03",
+  "observerHash": "cc6be485d1c9f29c4769a39fc224458ca8ee466c920596fdd0cbdd9aa37d6493",
+  "protocolHash": "13273f05e087f69bc7cfa7538c367e05f5a2a309eeb3a475f1a1a4f02a11a7b1",
+  "processed": 24,
+  "summaries": [
+    {
+      "level": 1,
+      "policy": "balanced",
+      "frames": 3847,
+      "seconds": 64.11666666666666,
+      "counts": {
+        "mandatory_objective_execution": 1215,
+        "simple_transit": 361,
+        "mechanism_wait": 1,
+        "optional_collection": 7,
+        "repetition": 0,
+        "resource_management_unresolved": 82,
+        "unattributed": 2181
+      },
+      "subtypes": {
+        "ordinary_horizontal_travel": 361,
+        "qualified_enemy_response": 1105,
+        "unattributed_maneuver": 2064,
+        "qualified_crossing": 106,
+        "incidental_bag": 7,
+        "milestone": 4,
+        "unattributed_still": 81,
+        "objective_window_without_attributed_activity": 36,
+        "recharge_observed_not_minimal_need": 82,
+        "passive_moving_platform": 1
+      },
+      "coveragePercent": 41.17494151286717,
+      "movingAwayFromNextMilestoneFrames": 0,
+      "windows": 15
+    },
+    {
+      "level": 2,
+      "policy": "balanced",
+      "frames": 4053,
+      "seconds": 67.55,
+      "counts": {
+        "mandatory_objective_execution": 2035,
+        "simple_transit": 547,
+        "mechanism_wait": 0,
+        "optional_collection": 7,
+        "repetition": 0,
+        "resource_management_unresolved": 148,
+        "unattributed": 1316
+      },
+      "subtypes": {
+        "qualified_enemy_response": 1024,
+        "qualified_crossing": 822,
+        "ordinary_horizontal_travel": 547,
+        "unattributed_maneuver": 1306,
+        "milestone": 6,
+        "incidental_bag": 7,
+        "recharge_observed_not_minimal_need": 148,
+        "objective_window_without_attributed_activity": 10,
+        "key_ascent": 183
+      },
+      "coveragePercent": 63.87860843819393,
+      "movingAwayFromNextMilestoneFrames": 41,
+      "windows": 25
+    },
+    {
+      "level": 3,
+      "policy": "balanced",
+      "frames": 4397,
+      "seconds": 73.28333333333333,
+      "counts": {
+        "mandatory_objective_execution": 2064,
+        "simple_transit": 545,
+        "mechanism_wait": 138,
+        "optional_collection": 4,
+        "repetition": 0,
+        "resource_management_unresolved": 17,
+        "unattributed": 1629
+      },
+      "subtypes": {
+        "unattributed_maneuver": 1583,
+        "ordinary_horizontal_travel": 545,
+        "qualified_crossing": 1157,
+        "incidental_bag": 4,
+        "qualified_enemy_response": 903,
+        "milestone": 4,
+        "objective_window_without_attributed_activity": 19,
+        "recharge_observed_not_minimal_need": 17,
+        "unattributed_still": 27,
+        "passive_moving_platform": 138
+      },
+      "coveragePercent": 62.56538549010689,
+      "movingAwayFromNextMilestoneFrames": 0,
+      "windows": 22
+    },
+    {
+      "level": 4,
+      "policy": "balanced",
+      "frames": 6489,
+      "seconds": 108.15,
+      "counts": {
+        "mandatory_objective_execution": 3227,
+        "simple_transit": 349,
+        "mechanism_wait": 86,
+        "optional_collection": 8,
+        "repetition": 0,
+        "resource_management_unresolved": 160,
+        "unattributed": 2659
+      },
+      "subtypes": {
+        "unattributed_maneuver": 2594,
+        "qualified_enemy_response": 1926,
+        "ordinary_horizontal_travel": 349,
+        "incidental_bag": 8,
+        "milestone": 9,
+        "qualified_crossing": 673,
+        "recharge_observed_not_minimal_need": 160,
+        "objective_window_without_attributed_activity": 65,
+        "combat_movement": 619,
+        "boss_latency": 86
+      },
+      "coveragePercent": 56.557250732008015,
+      "movingAwayFromNextMilestoneFrames": 0,
+      "windows": 31
+    },
+    {
+      "level": 5,
+      "policy": "balanced",
+      "frames": 10939,
+      "seconds": 182.31666666666666,
+      "counts": {
+        "mandatory_objective_execution": 6443,
+        "simple_transit": 2449,
+        "mechanism_wait": 36,
+        "optional_collection": 2,
+        "repetition": 0,
+        "resource_management_unresolved": 119,
+        "unattributed": 1890
+      },
+      "subtypes": {
+        "ordinary_horizontal_travel": 2449,
+        "recharge_observed_not_minimal_need": 119,
+        "unattributed_maneuver": 1841,
+        "puzzle_access_or_interaction": 4257,
+        "milestone": 12,
+        "qualified_crossing": 709,
+        "qualified_enemy_response": 397,
+        "incidental_bag": 2,
+        "carry_transport": 953,
+        "objective_window_without_attributed_activity": 39,
+        "puzzle_latency": 36,
+        "unattributed_still": 10,
+        "key_ascent": 115
+      },
+      "coveragePercent": 81.63451869457903,
+      "movingAwayFromNextMilestoneFrames": 1104,
+      "windows": 37
+    },
+    {
+      "level": 6,
+      "policy": "balanced",
+      "frames": 11995,
+      "seconds": 199.91666666666666,
+      "counts": {
+        "mandatory_objective_execution": 7824,
+        "simple_transit": 2242,
+        "mechanism_wait": 380,
+        "optional_collection": 3,
+        "repetition": 0,
+        "resource_management_unresolved": 51,
+        "unattributed": 1495
+      },
+      "subtypes": {
+        "ordinary_horizontal_travel": 2242,
+        "recharge_observed_not_minimal_need": 51,
+        "puzzle_access_or_interaction": 5153,
+        "milestone": 14,
+        "unattributed_maneuver": 1463,
+        "qualified_crossing": 1588,
+        "objective_window_without_attributed_activity": 32,
+        "passive_moving_platform": 380,
+        "incidental_bag": 3,
+        "carry_transport": 831,
+        "key_ascent": 238
+      },
+      "coveragePercent": 87.11129637348895,
+      "movingAwayFromNextMilestoneFrames": 715,
+      "windows": 46
+    },
+    {
+      "level": 7,
+      "policy": "balanced",
+      "frames": 9584,
+      "seconds": 159.73333333333332,
+      "counts": {
+        "mandatory_objective_execution": 5345,
+        "simple_transit": 2427,
+        "mechanism_wait": 191,
+        "optional_collection": 6,
+        "repetition": 0,
+        "resource_management_unresolved": 40,
+        "unattributed": 1575
+      },
+      "subtypes": {
+        "ordinary_horizontal_travel": 2427,
+        "recharge_observed_not_minimal_need": 40,
+        "puzzle_access_or_interaction": 4251,
+        "puzzle_latency": 191,
+        "milestone": 10,
+        "unattributed_still": 36,
+        "unattributed_maneuver": 1527,
+        "qualified_crossing": 422,
+        "qualified_enemy_response": 662,
+        "incidental_bag": 6,
+        "objective_window_without_attributed_activity": 12
+      },
+      "coveragePercent": 83.14899833055092,
+      "movingAwayFromNextMilestoneFrames": 373,
+      "windows": 51
+    },
+    {
+      "level": 8,
+      "policy": "balanced",
+      "frames": 12491,
+      "seconds": 208.18333333333334,
+      "counts": {
+        "mandatory_objective_execution": 7096,
+        "simple_transit": 2525,
+        "mechanism_wait": 745,
+        "optional_collection": 2,
+        "repetition": 0,
+        "resource_management_unresolved": 162,
+        "unattributed": 1961
+      },
+      "subtypes": {
+        "ordinary_horizontal_travel": 2525,
+        "recharge_observed_not_minimal_need": 162,
+        "unattributed_maneuver": 1888,
+        "puzzle_access_or_interaction": 3919,
+        "milestone": 16,
+        "qualified_enemy_response": 771,
+        "qualified_crossing": 859,
+        "objective_window_without_attributed_activity": 41,
+        "carry_transport": 540,
+        "puzzle_latency": 54,
+        "unattributed_still": 32,
+        "incidental_bag": 2,
+        "combat_movement": 991,
+        "boss_latency": 691
+      },
+      "coveragePercent": 83.00376270915059,
+      "movingAwayFromNextMilestoneFrames": 482,
+      "windows": 44
+    },
+    {
+      "level": 1,
+      "policy": "cautious",
+      "frames": 3946,
+      "seconds": 65.76666666666667,
+      "counts": {
+        "mandatory_objective_execution": 1219,
+        "simple_transit": 374,
+        "mechanism_wait": 10,
+        "optional_collection": 6,
+        "repetition": 0,
+        "resource_management_unresolved": 82,
+        "unattributed": 2255
+      },
+      "subtypes": {
+        "ordinary_horizontal_travel": 374,
+        "qualified_enemy_response": 1109,
+        "unattributed_maneuver": 2138,
+        "qualified_crossing": 106,
+        "incidental_bag": 6,
+        "milestone": 4,
+        "unattributed_still": 81,
+        "objective_window_without_attributed_activity": 36,
+        "recharge_observed_not_minimal_need": 82,
+        "passive_moving_platform": 10
+      },
+      "coveragePercent": 40.77546882919412,
+      "movingAwayFromNextMilestoneFrames": 0,
+      "windows": 15
+    },
+    {
+      "level": 2,
+      "policy": "cautious",
+      "frames": 3993,
+      "seconds": 66.55,
+      "counts": {
+        "mandatory_objective_execution": 2049,
+        "simple_transit": 584,
+        "mechanism_wait": 0,
+        "optional_collection": 7,
+        "repetition": 0,
+        "resource_management_unresolved": 105,
+        "unattributed": 1248
+      },
+      "subtypes": {
+        "qualified_enemy_response": 1141,
+        "qualified_crossing": 725,
+        "ordinary_horizontal_travel": 584,
+        "unattributed_maneuver": 1248,
+        "milestone": 6,
+        "incidental_bag": 7,
+        "recharge_observed_not_minimal_need": 105,
+        "key_ascent": 177
+      },
+      "coveragePercent": 66.11570247933884,
+      "movingAwayFromNextMilestoneFrames": 36,
+      "windows": 25
+    },
+    {
+      "level": 3,
+      "policy": "cautious",
+      "frames": 4402,
+      "seconds": 73.36666666666666,
+      "counts": {
+        "mandatory_objective_execution": 2222,
+        "simple_transit": 484,
+        "mechanism_wait": 178,
+        "optional_collection": 4,
+        "repetition": 0,
+        "resource_management_unresolved": 27,
+        "unattributed": 1487
+      },
+      "subtypes": {
+        "unattributed_maneuver": 1468,
+        "ordinary_horizontal_travel": 484,
+        "qualified_crossing": 1242,
+        "incidental_bag": 4,
+        "qualified_enemy_response": 976,
+        "milestone": 4,
+        "objective_window_without_attributed_activity": 1,
+        "unattributed_still": 18,
+        "recharge_observed_not_minimal_need": 27,
+        "passive_moving_platform": 178
+      },
+      "coveragePercent": 65.60654248069059,
+      "movingAwayFromNextMilestoneFrames": 0,
+      "windows": 23
+    },
+    {
+      "level": 4,
+      "policy": "cautious",
+      "frames": 6507,
+      "seconds": 108.45,
+      "counts": {
+        "mandatory_objective_execution": 3116,
+        "simple_transit": 340,
+        "mechanism_wait": 152,
+        "optional_collection": 8,
+        "repetition": 0,
+        "resource_management_unresolved": 166,
+        "unattributed": 2725
+      },
+      "subtypes": {
+        "unattributed_maneuver": 2618,
+        "qualified_enemy_response": 1926,
+        "ordinary_horizontal_travel": 340,
+        "incidental_bag": 8,
+        "milestone": 9,
+        "qualified_crossing": 673,
+        "recharge_observed_not_minimal_need": 166,
+        "objective_window_without_attributed_activity": 107,
+        "combat_movement": 508,
+        "boss_latency": 152
+      },
+      "coveragePercent": 55.57092362071615,
+      "movingAwayFromNextMilestoneFrames": 0,
+      "windows": 31
+    },
+    {
+      "level": 5,
+      "policy": "cautious",
+      "frames": 11205,
+      "seconds": 186.75,
+      "counts": {
+        "mandatory_objective_execution": 5053,
+        "simple_transit": 2370,
+        "mechanism_wait": 858,
+        "optional_collection": 2,
+        "repetition": 0,
+        "resource_management_unresolved": 174,
+        "unattributed": 2748
+      },
+      "subtypes": {
+        "ordinary_horizontal_travel": 2370,
+        "recharge_observed_not_minimal_need": 174,
+        "unattributed_maneuver": 2115,
+        "puzzle_access_or_interaction": 2920,
+        "objective_window_without_attributed_activity": 602,
+        "puzzle_latency": 858,
+        "milestone": 12,
+        "unattributed_still": 31,
+        "qualified_crossing": 737,
+        "qualified_enemy_response": 277,
+        "incidental_bag": 2,
+        "carry_transport": 953,
+        "key_ascent": 154
+      },
+      "coveragePercent": 73.92235609103079,
+      "movingAwayFromNextMilestoneFrames": 383,
+      "windows": 36
+    },
+    {
+      "level": 6,
+      "policy": "cautious",
+      "frames": 12035,
+      "seconds": 200.58333333333334,
+      "counts": {
+        "mandatory_objective_execution": 7903,
+        "simple_transit": 2245,
+        "mechanism_wait": 357,
+        "optional_collection": 3,
+        "repetition": 0,
+        "resource_management_unresolved": 51,
+        "unattributed": 1476
+      },
+      "subtypes": {
+        "ordinary_horizontal_travel": 2245,
+        "recharge_observed_not_minimal_need": 51,
+        "puzzle_access_or_interaction": 5184,
+        "milestone": 14,
+        "unattributed_maneuver": 1448,
+        "qualified_crossing": 1635,
+        "passive_moving_platform": 357,
+        "incidental_bag": 3,
+        "carry_transport": 831,
+        "objective_window_without_attributed_activity": 28,
+        "key_ascent": 239
+      },
+      "coveragePercent": 87.31200664727876,
+      "movingAwayFromNextMilestoneFrames": 722,
+      "windows": 46
+    },
+    {
+      "level": 7,
+      "policy": "cautious",
+      "frames": 9564,
+      "seconds": 159.4,
+      "counts": {
+        "mandatory_objective_execution": 5422,
+        "simple_transit": 2426,
+        "mechanism_wait": 191,
+        "optional_collection": 7,
+        "repetition": 0,
+        "resource_management_unresolved": 40,
+        "unattributed": 1478
+      },
+      "subtypes": {
+        "ordinary_horizontal_travel": 2426,
+        "recharge_observed_not_minimal_need": 40,
+        "puzzle_access_or_interaction": 4196,
+        "puzzle_latency": 191,
+        "milestone": 10,
+        "unattributed_still": 36,
+        "unattributed_maneuver": 1422,
+        "qualified_crossing": 480,
+        "qualified_enemy_response": 736,
+        "incidental_bag": 7,
+        "objective_window_without_attributed_activity": 20
+      },
+      "coveragePercent": 84.12797992471769,
+      "movingAwayFromNextMilestoneFrames": 333,
+      "windows": 53
+    },
+    {
+      "level": 8,
+      "policy": "cautious",
+      "frames": 12690,
+      "seconds": 211.5,
+      "counts": {
+        "mandatory_objective_execution": 6973,
+        "simple_transit": 2561,
+        "mechanism_wait": 991,
+        "optional_collection": 2,
+        "repetition": 0,
+        "resource_management_unresolved": 219,
+        "unattributed": 1944
+      },
+      "subtypes": {
+        "ordinary_horizontal_travel": 2561,
+        "recharge_observed_not_minimal_need": 219,
+        "unattributed_maneuver": 1860,
+        "puzzle_access_or_interaction": 3673,
+        "milestone": 16,
+        "qualified_enemy_response": 862,
+        "qualified_crossing": 871,
+        "objective_window_without_attributed_activity": 60,
+        "carry_transport": 540,
+        "puzzle_latency": 273,
+        "unattributed_still": 24,
+        "incidental_bag": 2,
+        "combat_movement": 1011,
+        "boss_latency": 718
+      },
+      "coveragePercent": 82.95508274231679,
+      "movingAwayFromNextMilestoneFrames": 349,
+      "windows": 45
+    },
+    {
+      "level": 1,
+      "policy": "speed",
+      "frames": 3821,
+      "seconds": 63.68333333333333,
+      "counts": {
+        "mandatory_objective_execution": 1220,
+        "simple_transit": 370,
+        "mechanism_wait": 5,
+        "optional_collection": 7,
+        "repetition": 0,
+        "resource_management_unresolved": 77,
+        "unattributed": 2142
+      },
+      "subtypes": {
+        "ordinary_horizontal_travel": 370,
+        "qualified_enemy_response": 1110,
+        "unattributed_maneuver": 2007,
+        "qualified_crossing": 106,
+        "incidental_bag": 7,
+        "milestone": 4,
+        "unattributed_still": 117,
+        "objective_window_without_attributed_activity": 18,
+        "recharge_observed_not_minimal_need": 77,
+        "passive_moving_platform": 5
+      },
+      "coveragePercent": 41.92619733054174,
+      "movingAwayFromNextMilestoneFrames": 0,
+      "windows": 15
+    },
+    {
+      "level": 2,
+      "policy": "speed",
+      "frames": 4071,
+      "seconds": 67.85,
+      "counts": {
+        "mandatory_objective_execution": 1443,
+        "simple_transit": 779,
+        "mechanism_wait": 0,
+        "optional_collection": 9,
+        "repetition": 0,
+        "resource_management_unresolved": 182,
+        "unattributed": 1658
+      },
+      "subtypes": {
+        "qualified_enemy_response": 643,
+        "qualified_crossing": 629,
+        "ordinary_horizontal_travel": 779,
+        "unattributed_maneuver": 1648,
+        "milestone": 6,
+        "incidental_bag": 9,
+        "recharge_observed_not_minimal_need": 182,
+        "objective_window_without_attributed_activity": 10,
+        "key_ascent": 165
+      },
+      "coveragePercent": 54.80225988700565,
+      "movingAwayFromNextMilestoneFrames": 48,
+      "windows": 21
+    },
+    {
+      "level": 3,
+      "policy": "speed",
+      "frames": 4085,
+      "seconds": 68.08333333333333,
+      "counts": {
+        "mandatory_objective_execution": 2313,
+        "simple_transit": 537,
+        "mechanism_wait": 68,
+        "optional_collection": 3,
+        "repetition": 0,
+        "resource_management_unresolved": 18,
+        "unattributed": 1146
+      },
+      "subtypes": {
+        "unattributed_maneuver": 1118,
+        "ordinary_horizontal_travel": 537,
+        "qualified_crossing": 1067,
+        "incidental_bag": 3,
+        "qualified_enemy_response": 940,
+        "milestone": 4,
+        "key_ascent": 302,
+        "objective_window_without_attributed_activity": 1,
+        "unattributed_still": 27,
+        "recharge_observed_not_minimal_need": 18,
+        "passive_moving_platform": 68
+      },
+      "coveragePercent": 71.50550795593635,
+      "movingAwayFromNextMilestoneFrames": 78,
+      "windows": 23
+    },
+    {
+      "level": 4,
+      "policy": "speed",
+      "frames": 6807,
+      "seconds": 113.45,
+      "counts": {
+        "mandatory_objective_execution": 3282,
+        "simple_transit": 433,
+        "mechanism_wait": 265,
+        "optional_collection": 9,
+        "repetition": 0,
+        "resource_management_unresolved": 318,
+        "unattributed": 2500
+      },
+      "subtypes": {
+        "unattributed_maneuver": 2408,
+        "qualified_enemy_response": 1950,
+        "ordinary_horizontal_travel": 433,
+        "incidental_bag": 9,
+        "milestone": 9,
+        "qualified_crossing": 899,
+        "recharge_observed_not_minimal_need": 318,
+        "objective_window_without_attributed_activity": 87,
+        "combat_movement": 424,
+        "boss_latency": 265,
+        "unattributed_still": 5
+      },
+      "coveragePercent": 58.6014396944322,
+      "movingAwayFromNextMilestoneFrames": 0,
+      "windows": 32
+    },
+    {
+      "level": 5,
+      "policy": "speed",
+      "frames": 10875,
+      "seconds": 181.25,
+      "counts": {
+        "mandatory_objective_execution": 6634,
+        "simple_transit": 2483,
+        "mechanism_wait": 18,
+        "optional_collection": 2,
+        "repetition": 0,
+        "resource_management_unresolved": 52,
+        "unattributed": 1686
+      },
+      "subtypes": {
+        "ordinary_horizontal_travel": 2483,
+        "recharge_observed_not_minimal_need": 52,
+        "unattributed_maneuver": 1636,
+        "puzzle_access_or_interaction": 4522,
+        "milestone": 12,
+        "qualified_crossing": 704,
+        "qualified_enemy_response": 277,
+        "incidental_bag": 2,
+        "carry_transport": 970,
+        "objective_window_without_attributed_activity": 50,
+        "puzzle_latency": 18,
+        "key_ascent": 149
+      },
+      "coveragePercent": 84.0183908045977,
+      "movingAwayFromNextMilestoneFrames": 1131,
+      "windows": 36
+    },
+    {
+      "level": 6,
+      "policy": "speed",
+      "frames": 11926,
+      "seconds": 198.76666666666668,
+      "counts": {
+        "mandatory_objective_execution": 7912,
+        "simple_transit": 2225,
+        "mechanism_wait": 278,
+        "optional_collection": 3,
+        "repetition": 0,
+        "resource_management_unresolved": 51,
+        "unattributed": 1457
+      },
+      "subtypes": {
+        "ordinary_horizontal_travel": 2225,
+        "recharge_observed_not_minimal_need": 51,
+        "puzzle_access_or_interaction": 5108,
+        "milestone": 14,
+        "unattributed_maneuver": 1446,
+        "qualified_crossing": 1721,
+        "objective_window_without_attributed_activity": 11,
+        "passive_moving_platform": 278,
+        "incidental_bag": 3,
+        "carry_transport": 831,
+        "key_ascent": 238
+      },
+      "coveragePercent": 87.3553580412544,
+      "movingAwayFromNextMilestoneFrames": 660,
+      "windows": 46
+    },
+    {
+      "level": 7,
+      "policy": "speed",
+      "frames": 9574,
+      "seconds": 159.56666666666666,
+      "counts": {
+        "mandatory_objective_execution": 5357,
+        "simple_transit": 2396,
+        "mechanism_wait": 191,
+        "optional_collection": 4,
+        "repetition": 0,
+        "resource_management_unresolved": 39,
+        "unattributed": 1587
+      },
+      "subtypes": {
+        "ordinary_horizontal_travel": 2396,
+        "recharge_observed_not_minimal_need": 39,
+        "puzzle_access_or_interaction": 4215,
+        "puzzle_latency": 191,
+        "milestone": 10,
+        "unattributed_still": 36,
+        "unattributed_maneuver": 1531,
+        "qualified_crossing": 470,
+        "qualified_enemy_response": 662,
+        "incidental_bag": 4,
+        "objective_window_without_attributed_activity": 20
+      },
+      "coveragePercent": 83.01650302903697,
+      "movingAwayFromNextMilestoneFrames": 385,
+      "windows": 52
+    },
+    {
+      "level": 8,
+      "policy": "speed",
+      "frames": 12256,
+      "seconds": 204.26666666666668,
+      "counts": {
+        "mandatory_objective_execution": 6682,
+        "simple_transit": 2380,
+        "mechanism_wait": 913,
+        "optional_collection": 2,
+        "repetition": 0,
+        "resource_management_unresolved": 79,
+        "unattributed": 2200
+      },
+      "subtypes": {
+        "ordinary_horizontal_travel": 2380,
+        "recharge_observed_not_minimal_need": 79,
+        "unattributed_maneuver": 2142,
+        "puzzle_access_or_interaction": 3885,
+        "milestone": 16,
+        "qualified_enemy_response": 521,
+        "qualified_crossing": 887,
+        "objective_window_without_attributed_activity": 35,
+        "carry_transport": 540,
+        "puzzle_latency": 54,
+        "unattributed_still": 23,
+        "incidental_bag": 2,
+        "combat_movement": 833,
+        "boss_latency": 859
+      },
+      "coveragePercent": 81.40502610966057,
+      "movingAwayFromNextMilestoneFrames": 476,
+      "windows": 41
+    }
+  ]
+}

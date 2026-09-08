@@ -1,0 +1,102 @@
+{
+  "sha256": "57a34b6ffb17a65d897d4e0b6a832ddd9f77300673942a2865efde24ac3d2725",
+  "scope": "Fabricated valid threshold-adjacent state, then production route.step with normal inputs and hazards. Does not claim whole-level reachability.",
+  "cases": [
+    {
+      "crossingOffsetFromDeadline": -1,
+      "gateX": 640,
+      "first": {
+        "simF": 99,
+        "x": 631.5,
+        "right": 641.5,
+        "until": 100,
+        "open": true,
+        "solved": true
+      },
+      "afterExit": {
+        "x": 661.5,
+        "open": true,
+        "solved": true,
+        "tile": "."
+      },
+      "afterReturn": {
+        "x": 605.4,
+        "open": true,
+        "solved": true,
+        "tile": "."
+      },
+      "events": [
+        {
+          "frame": 99,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "crossingOffsetFromDeadline": 0,
+      "gateX": 640,
+      "first": {
+        "simF": 100,
+        "x": 631.5,
+        "right": 641.5,
+        "until": 100,
+        "open": true,
+        "solved": true
+      },
+      "afterExit": {
+        "x": 661.5,
+        "open": true,
+        "solved": true,
+        "tile": "."
+      },
+      "afterReturn": {
+        "x": 605.4,
+        "open": true,
+        "solved": true,
+        "tile": "."
+      },
+      "events": [
+        {
+          "frame": 100,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "crossingOffsetFromDeadline": 1,
+      "gateX": 640,
+      "first": {
+        "simF": 101,
+        "x": 630,
+        "right": 640,
+        "until": 0,
+        "open": false,
+        "solved": false
+      },
+      "afterExit": {
+        "x": 630,
+        "open": false,
+        "solved": false,
+        "tile": "#"
+      },
+      "afterReturn": {
+        "x": 565,
+        "open": false,
+        "solved": false,
+        "tile": "#"
+      },
+      "events": [
+        {
+          "frame": 101,
+          "type": "timeout",
+          "id": "1-1",
+          "detail": ""
+        }
+      ]
+    }
+  ]
+}

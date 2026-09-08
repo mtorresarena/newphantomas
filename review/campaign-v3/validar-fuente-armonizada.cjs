@@ -1,0 +1,15 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),crypto=require('node:crypto');
+const createGame=require('./route-harness-score1.cjs'),read=f=>fs.readFileSync(path.join(__dirname,f),'utf8'),sha=s=>crypto.createHash('sha256').update(s).digest('hex');
+const base=read('index-base-31d4610.html'),score1=read('candidate-score1.html'),frozen=read('harmonized-v2/index.html');
+assert.equal(sha(frozen),'5ada9ce96900d5b60feb1308d0fa25119aacdb34d9ef32c4f07ba04cab261f3d');
+const old=createGame(base).api,one=createGame(score1).api,next=createGame(frozen).api;
+assert.deepEqual(JSON.parse(JSON.stringify(old.LEVELS.slice(0,4))),JSON.parse(JSON.stringify(next.LEVELS.slice(0,4))));
+assert.deepEqual(JSON.parse(JSON.stringify(one.LEVELS)),JSON.parse(JSON.stringify(next.LEVELS)));
+assert.deepEqual(JSON.parse(JSON.stringify(old.CFG)),JSON.parse(JSON.stringify(next.CFG)));
+const mechanics=s=>s.slice(s.indexOf('let campaign=null;'),s.indexOf('function drawCampaign'));
+assert.equal(mechanics(score1),mechanics(frozen));
+const tail=s=>s.slice(s.indexOf('// ---------------- Entrada ----------------'));
+assert.equal(tail(score1),tail(frozen));
+const record={sourceHash:sha(frozen),registryHash:sha(read('segmentos-preregistrados.json')),levels:[1,2,3,4,5,6,7,8],checks:{originalFirstFourLevelDefinitionsIdentical:true,score1AllLevelDefinitionsIdentical:true,originalPhysicsConfigIdentical:true,campaignMechanicsTextIdentical:true,inputPlayerEnemyBossLoopAndRemainingTailIdentical:true},manualDiffScope:'Complete score1→harmonized-v2 diff inspected: CSS/fit touch layout, version comment, moth warning drawing, touch prompt placement and whitespace only.',scope:'Authorizes this exact source hash for unchanged preregistered boundaries; no new units, thresholds or policy-dependent delimitations.'};
+fs.writeFileSync(path.join(__dirname,'compatibilidad-fuente-armonizada.json'),JSON.stringify(record,null,2)+'\n');console.log(JSON.stringify(record));

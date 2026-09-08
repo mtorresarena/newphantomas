@@ -1,0 +1,6250 @@
+{
+  "version": 1,
+  "registered": "2026-09-08",
+  "protocol": "PREREGISTRO-RONDA3-EXCURSIONES.md",
+  "sourceHashes": {
+    "base": "c6f2d2b8cf5e13d643af009a09c64bad0dbaf283006db34eb5193cb02b9c1d47",
+    "candidate": "5963bcc02f71090a958df9737eca2b8fd5a96ed0a615f4a9dcbe4be4dc04ef21"
+  },
+  "scope": "Static candidate episodes; no route read, no simulation step, no measured meaningful-action counts.",
+  "levels": [
+    {
+      "level": 1,
+      "source": "base",
+      "start": 56,
+      "end": 2744,
+      "zones": [
+        {
+          "x0": 0,
+          "x1": 704,
+          "t": "garden",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 704,
+          "x1": 800,
+          "t": "garden",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 800,
+          "x1": 1440,
+          "t": "hall",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 1440,
+          "x1": 2144,
+          "t": "library",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 2144,
+          "x1": 2192,
+          "t": "library",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 2192,
+          "x1": 2832,
+          "t": "tower",
+          "lesson": "",
+          "transition": false
+        }
+      ],
+      "A": [
+        {
+          "id": "N1-key-1492-70",
+          "kind": "key",
+          "x0": 1492,
+          "x1": 1508,
+          "y": 70
+        },
+        {
+          "id": "N1-key-660-150",
+          "kind": "key",
+          "x0": 660,
+          "x1": 676,
+          "y": 150
+        },
+        {
+          "id": "N1-door-48",
+          "kind": "door",
+          "x0": 768,
+          "x1": 784
+        },
+        {
+          "id": "N1-door-135",
+          "kind": "door",
+          "x0": 2160,
+          "x1": 2176
+        }
+      ],
+      "B": [],
+      "C": [
+        {
+          "x0": 320,
+          "x1": 352,
+          "anchors": [
+            {
+              "column": 20,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 21,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N1-transit-20-22",
+          "observeX0": 304,
+          "observeX1": 368,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 560,
+          "x1": 592,
+          "anchors": [
+            {
+              "column": 35,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            },
+            {
+              "column": 36,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N1-transit-35-37",
+          "observeX0": 544,
+          "observeX1": 608,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 2704,
+          "x1": 2752,
+          "anchors": [
+            {
+              "column": 169,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 170,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 171,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            }
+          ],
+          "id": "N1-transit-169-172",
+          "observeX0": 2688,
+          "observeX1": 2744,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        }
+      ],
+      "D": [
+        {
+          "x0": 147,
+          "x1": 243,
+          "anchors": [
+            {
+              "x": 195,
+              "kind": "c",
+              "id": "ent-7"
+            }
+          ],
+          "id": "N1-encounter-147-243",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 368,
+          "x1": 499,
+          "anchors": [
+            {
+              "x": 416,
+              "kind": "m",
+              "id": "ent-3"
+            },
+            {
+              "x": 451,
+              "kind": "c",
+              "id": "ent-8"
+            }
+          ],
+          "id": "N1-encounter-368-499",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 1026,
+          "x1": 1170,
+          "anchors": [
+            {
+              "x": 1074,
+              "kind": "w",
+              "id": "ent-0"
+            },
+            {
+              "x": 1122,
+              "kind": "w",
+              "id": "ent-9"
+            }
+          ],
+          "id": "N1-encounter-1026-1170",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 1363,
+          "x1": 1459,
+          "anchors": [
+            {
+              "x": 1411,
+              "kind": "a",
+              "id": "ent-6"
+            }
+          ],
+          "id": "N1-encounter-1363-1459",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 1570,
+          "x1": 1683,
+          "anchors": [
+            {
+              "x": 1618,
+              "kind": "w",
+              "id": "ent-1"
+            },
+            {
+              "x": 1635,
+              "kind": "c",
+              "id": "ent-10"
+            }
+          ],
+          "id": "N1-encounter-1570-1683",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 1747,
+          "x1": 1907,
+          "anchors": [
+            {
+              "x": 1795,
+              "kind": "a",
+              "id": "ent-11"
+            },
+            {
+              "x": 1842,
+              "kind": "w",
+              "id": "ent-2"
+            },
+            {
+              "x": 1859,
+              "kind": "c",
+              "id": "ent-12"
+            }
+          ],
+          "id": "N1-encounter-1747-1907",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 1970,
+          "x1": 2066,
+          "anchors": [
+            {
+              "x": 2018,
+              "kind": "w",
+              "id": "ent-13"
+            }
+          ],
+          "id": "N1-encounter-1970-2066",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 2290,
+          "x1": 2400,
+          "anchors": [
+            {
+              "x": 2338,
+              "kind": "w",
+              "id": "ent-14"
+            },
+            {
+              "x": 2352,
+              "kind": "m",
+              "id": "ent-4"
+            }
+          ],
+          "id": "N1-encounter-2290-2400",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 2466,
+          "x1": 2659,
+          "anchors": [
+            {
+              "x": 2514,
+              "kind": "g",
+              "id": "ent-5"
+            },
+            {
+              "x": 2530,
+              "kind": "w",
+              "id": "ent-15"
+            },
+            {
+              "x": 2611,
+              "kind": "c",
+              "id": "ent-16"
+            }
+          ],
+          "id": "N1-encounter-2466-2659",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        }
+      ],
+      "E": []
+    },
+    {
+      "level": 2,
+      "source": "base",
+      "start": 56,
+      "end": 4936,
+      "zones": [
+        {
+          "x0": 0,
+          "x1": 640,
+          "t": "moat",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 640,
+          "x1": 736,
+          "t": "moat",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 736,
+          "x1": 1440,
+          "t": "court",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 1440,
+          "x1": 2144,
+          "t": "armory",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 2144,
+          "x1": 2192,
+          "t": "armory",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 2192,
+          "x1": 2896,
+          "t": "dungeon",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 2896,
+          "x1": 3536,
+          "t": "keep",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 3536,
+          "x1": 4176,
+          "t": "bell",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 4176,
+          "x1": 4224,
+          "t": "bell",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 4224,
+          "x1": 4992,
+          "t": "coffin",
+          "lesson": "",
+          "transition": false
+        }
+      ],
+      "A": [
+        {
+          "id": "N2-key-3988-38",
+          "kind": "key",
+          "x0": 3988,
+          "x1": 4004,
+          "y": 38
+        },
+        {
+          "id": "N2-key-1812-54",
+          "kind": "key",
+          "x0": 1812,
+          "x1": 1828,
+          "y": 54
+        },
+        {
+          "id": "N2-key-596-150",
+          "kind": "key",
+          "x0": 596,
+          "x1": 612,
+          "y": 150
+        },
+        {
+          "id": "N2-door-44",
+          "kind": "door",
+          "x0": 704,
+          "x1": 720
+        },
+        {
+          "id": "N2-door-135",
+          "kind": "door",
+          "x0": 2160,
+          "x1": 2176
+        },
+        {
+          "id": "N2-door-262",
+          "kind": "door",
+          "x0": 4192,
+          "x1": 4208
+        }
+      ],
+      "B": [],
+      "C": [
+        {
+          "x0": 176,
+          "x1": 336,
+          "anchors": [
+            {
+              "column": 11,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 12,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 13,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 14,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 15,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 16,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 17,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 18,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 19,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 20,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N2-transit-11-21",
+          "observeX0": 160,
+          "observeX1": 352,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 1008,
+          "x1": 1040,
+          "anchors": [
+            {
+              "column": 63,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            },
+            {
+              "column": 64,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N2-transit-63-65",
+          "observeX0": 992,
+          "observeX1": 1056,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 1504,
+          "x1": 1536,
+          "anchors": [
+            {
+              "column": 94,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            },
+            {
+              "column": 95,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N2-transit-94-96",
+          "observeX0": 1488,
+          "observeX1": 1552,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 1680,
+          "x1": 1728,
+          "anchors": [
+            {
+              "column": 105,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            },
+            {
+              "column": 106,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            },
+            {
+              "column": 107,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N2-transit-105-108",
+          "observeX0": 1664,
+          "observeX1": 1744,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 1872,
+          "x1": 1920,
+          "anchors": [
+            {
+              "column": 117,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            },
+            {
+              "column": 118,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            },
+            {
+              "column": 119,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N2-transit-117-120",
+          "observeX0": 1856,
+          "observeX1": 1936,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 2048,
+          "x1": 2080,
+          "anchors": [
+            {
+              "column": 128,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            },
+            {
+              "column": 129,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N2-transit-128-130",
+          "observeX0": 2032,
+          "observeX1": 2096,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 2496,
+          "x1": 2576,
+          "anchors": [
+            {
+              "column": 156,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 157,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 158,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 159,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 160,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N2-transit-156-161",
+          "observeX0": 2480,
+          "observeX1": 2592,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 2752,
+          "x1": 2816,
+          "anchors": [
+            {
+              "column": 172,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 173,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 174,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 175,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N2-transit-172-176",
+          "observeX0": 2736,
+          "observeX1": 2832,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 4464,
+          "x1": 4496,
+          "anchors": [
+            {
+              "column": 279,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            },
+            {
+              "column": 280,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N2-transit-279-281",
+          "observeX0": 4448,
+          "observeX1": 4512,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 4656,
+          "x1": 4704,
+          "anchors": [
+            {
+              "column": 291,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            },
+            {
+              "column": 292,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            },
+            {
+              "column": 293,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N2-transit-291-294",
+          "observeX0": 4640,
+          "observeX1": 4720,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 4848,
+          "x1": 4880,
+          "anchors": [
+            {
+              "column": 303,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            },
+            {
+              "column": 304,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N2-transit-303-305",
+          "observeX0": 4832,
+          "observeX1": 4896,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        }
+      ],
+      "D": [
+        {
+          "x0": 56,
+          "x1": 163,
+          "anchors": [
+            {
+              "x": 96,
+              "kind": "m",
+              "id": "ent-1"
+            },
+            {
+              "x": 115,
+              "kind": "c",
+              "id": "ent-15"
+            }
+          ],
+          "id": "N2-encounter-56-163",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 384,
+          "x1": 515,
+          "anchors": [
+            {
+              "x": 432,
+              "kind": "m",
+              "id": "ent-2"
+            },
+            {
+              "x": 467,
+              "kind": "c",
+              "id": "ent-16"
+            }
+          ],
+          "id": "N2-encounter-384-515",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 834,
+          "x1": 930,
+          "anchors": [
+            {
+              "x": 882,
+              "kind": "w",
+              "id": "ent-17"
+            }
+          ],
+          "id": "N2-encounter-834-930",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 1106,
+          "x1": 1202,
+          "anchors": [
+            {
+              "x": 1154,
+              "kind": "r",
+              "id": "ent-18"
+            }
+          ],
+          "id": "N2-encounter-1106-1202",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 1218,
+          "x1": 1314,
+          "anchors": [
+            {
+              "x": 1266,
+              "kind": "w",
+              "id": "ent-19"
+            }
+          ],
+          "id": "N2-encounter-1218-1314",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 1392,
+          "x1": 1488,
+          "anchors": [
+            {
+              "x": 1440,
+              "kind": "n",
+              "id": "ent-6"
+            }
+          ],
+          "id": "N2-encounter-1392-1488",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 1490,
+          "x1": 1504,
+          "anchors": [
+            {
+              "x": 1538,
+              "kind": "w",
+              "id": "ent-7"
+            }
+          ],
+          "id": "N2-encounter-1490-1504",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 1536,
+          "x1": 1586,
+          "anchors": [
+            {
+              "x": 1538,
+              "kind": "w",
+              "id": "ent-7"
+            }
+          ],
+          "id": "N2-encounter-1536-1586",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 1602,
+          "x1": 1680,
+          "anchors": [
+            {
+              "x": 1650,
+              "kind": "r",
+              "id": "ent-20"
+            }
+          ],
+          "id": "N2-encounter-1602-1680",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 1730,
+          "x1": 1826,
+          "anchors": [
+            {
+              "x": 1778,
+              "kind": "w",
+              "id": "ent-8"
+            }
+          ],
+          "id": "N2-encounter-1730-1826",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 1938,
+          "x1": 2048,
+          "anchors": [
+            {
+              "x": 1986,
+              "kind": "r",
+              "id": "ent-21"
+            },
+            {
+              "x": 2018,
+              "kind": "w",
+              "id": "ent-9"
+            }
+          ],
+          "id": "N2-encounter-1938-2048",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 2080,
+          "x1": 2176,
+          "anchors": [
+            {
+              "x": 2128,
+              "kind": "n",
+              "id": "ent-10"
+            }
+          ],
+          "id": "N2-encounter-2080-2176",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 2290,
+          "x1": 2496,
+          "anchors": [
+            {
+              "x": 2338,
+              "kind": "r",
+              "id": "ent-22"
+            },
+            {
+              "x": 2355,
+              "kind": "a",
+              "id": "ent-11"
+            },
+            {
+              "x": 2403,
+              "kind": "c",
+              "id": "ent-23"
+            },
+            {
+              "x": 2466,
+              "kind": "r",
+              "id": "ent-24"
+            }
+          ],
+          "id": "N2-encounter-2290-2496",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 2578,
+          "x1": 2691,
+          "anchors": [
+            {
+              "x": 2626,
+              "kind": "r",
+              "id": "ent-25"
+            },
+            {
+              "x": 2643,
+              "kind": "a",
+              "id": "ent-12"
+            },
+            {
+              "x": 2643,
+              "kind": "c",
+              "id": "ent-26"
+            }
+          ],
+          "id": "N2-encounter-2578-2691",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 2962,
+          "x1": 3282,
+          "anchors": [
+            {
+              "x": 3010,
+              "kind": "r",
+              "id": "ent-27"
+            },
+            {
+              "x": 3090,
+              "kind": "w",
+              "id": "ent-13"
+            },
+            {
+              "x": 3138,
+              "kind": "w",
+              "id": "ent-0"
+            },
+            {
+              "x": 3234,
+              "kind": "r",
+              "id": "ent-28"
+            }
+          ],
+          "id": "N2-encounter-2962-3282",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 3346,
+          "x1": 3442,
+          "anchors": [
+            {
+              "x": 3394,
+              "kind": "w",
+              "id": "ent-14"
+            },
+            {
+              "x": 3394,
+              "kind": "r",
+              "id": "ent-29"
+            }
+          ],
+          "id": "N2-encounter-3346-3442",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 3568,
+          "x1": 3664,
+          "anchors": [
+            {
+              "x": 3616,
+              "kind": "m",
+              "id": "ent-3"
+            }
+          ],
+          "id": "N2-encounter-3568-3664",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 3730,
+          "x1": 3904,
+          "anchors": [
+            {
+              "x": 3778,
+              "kind": "w",
+              "id": "ent-30"
+            },
+            {
+              "x": 3856,
+              "kind": "m",
+              "id": "ent-4"
+            }
+          ],
+          "id": "N2-encounter-3730-3904",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 3970,
+          "x1": 4096,
+          "anchors": [
+            {
+              "x": 4018,
+              "kind": "w",
+              "id": "ent-31"
+            },
+            {
+              "x": 4048,
+              "kind": "m",
+              "id": "ent-5"
+            }
+          ],
+          "id": "N2-encounter-3970-4096",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 4496,
+          "x1": 4562,
+          "anchors": [
+            {
+              "x": 4514,
+              "kind": "v",
+              "id": "ent-32"
+            }
+          ],
+          "id": "N2-encounter-4496-4562",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        }
+      ],
+      "E": []
+    },
+    {
+      "level": 3,
+      "source": "base",
+      "start": 40,
+      "end": 4712,
+      "zones": [
+        {
+          "x0": 0,
+          "x1": 704,
+          "t": "roof",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 704,
+          "x1": 1344,
+          "t": "roof2",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 1344,
+          "x1": 1392,
+          "t": "roof2",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 1392,
+          "x1": 2032,
+          "t": "attic",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 2032,
+          "x1": 2080,
+          "t": "attic",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 2080,
+          "x1": 2720,
+          "t": "warehouse",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 2720,
+          "x1": 3424,
+          "t": "sewer",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 3424,
+          "x1": 4128,
+          "t": "bridges",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 4128,
+          "x1": 4832,
+          "t": "roof3",
+          "lesson": "",
+          "transition": false
+        }
+      ],
+      "A": [
+        {
+          "id": "N3-key-1684-38",
+          "kind": "key",
+          "x0": 1684,
+          "x1": 1700,
+          "y": 38
+        },
+        {
+          "id": "N3-key-644-150",
+          "kind": "key",
+          "x0": 644,
+          "x1": 660,
+          "y": 150
+        },
+        {
+          "id": "N3-door-85",
+          "kind": "door",
+          "x0": 1360,
+          "x1": 1376
+        },
+        {
+          "id": "N3-door-128",
+          "kind": "door",
+          "x0": 2048,
+          "x1": 2064
+        }
+      ],
+      "B": [],
+      "C": [
+        {
+          "x0": 96,
+          "x1": 208,
+          "anchors": [
+            {
+              "column": 6,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 7,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 9,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 10,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 11,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 12,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N3-transit-6-13",
+          "observeX0": 80,
+          "observeX1": 224,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 432,
+          "x1": 512,
+          "anchors": [
+            {
+              "column": 27,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 28,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 29,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 30,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 31,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": true
+            }
+          ],
+          "id": "N3-transit-27-32",
+          "observeX0": 416,
+          "observeX1": 528,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 800,
+          "x1": 880,
+          "anchors": [
+            {
+              "column": 50,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 51,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 52,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 53,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 54,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N3-transit-50-55",
+          "observeX0": 784,
+          "observeX1": 896,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 1088,
+          "x1": 1152,
+          "anchors": [
+            {
+              "column": 68,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 69,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 70,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 71,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N3-transit-68-72",
+          "observeX0": 1072,
+          "observeX1": 1168,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 1616,
+          "x1": 1712,
+          "anchors": [
+            {
+              "column": 101,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 102,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 103,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 104,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 105,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 106,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N3-transit-101-107",
+          "observeX0": 1600,
+          "observeX1": 1728,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 2976,
+          "x1": 3072,
+          "anchors": [
+            {
+              "column": 186,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 187,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 188,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 189,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 190,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 191,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N3-transit-186-192",
+          "observeX0": 2960,
+          "observeX1": 3088,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 3216,
+          "x1": 3296,
+          "anchors": [
+            {
+              "column": 201,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 202,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 203,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 204,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 205,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N3-transit-201-206",
+          "observeX0": 3200,
+          "observeX1": 3312,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 3552,
+          "x1": 3680,
+          "anchors": [
+            {
+              "column": 222,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 223,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 224,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 225,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 226,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 227,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 228,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 229,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N3-transit-222-230",
+          "observeX0": 3536,
+          "observeX1": 3696,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 3760,
+          "x1": 3888,
+          "anchors": [
+            {
+              "column": 235,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 236,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 237,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 238,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 239,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 240,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 241,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 242,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N3-transit-235-243",
+          "observeX0": 3744,
+          "observeX1": 3904,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 3968,
+          "x1": 4016,
+          "anchors": [
+            {
+              "column": 248,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 249,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 250,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N3-transit-248-251",
+          "observeX0": 3952,
+          "observeX1": 4032,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 4272,
+          "x1": 4336,
+          "anchors": [
+            {
+              "column": 267,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 268,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 269,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 270,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N3-transit-267-271",
+          "observeX0": 4256,
+          "observeX1": 4352,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 4432,
+          "x1": 4496,
+          "anchors": [
+            {
+              "column": 277,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 278,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 279,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 280,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N3-transit-277-281",
+          "observeX0": 4416,
+          "observeX1": 4512,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 4688,
+          "x1": 4720,
+          "anchors": [
+            {
+              "column": 293,
+              "harmful": false,
+              "voidFloor": true,
+              "bodyBlocked": true
+            },
+            {
+              "column": 294,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            }
+          ],
+          "id": "N3-transit-293-295",
+          "observeX0": 4672,
+          "observeX1": 4712,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        }
+      ],
+      "D": [
+        {
+          "x0": 291,
+          "x1": 400,
+          "anchors": [
+            {
+              "x": 339,
+              "kind": "c",
+              "id": "ent-12"
+            },
+            {
+              "x": 352,
+              "kind": "m",
+              "id": "ent-2"
+            }
+          ],
+          "id": "N3-encounter-291-400",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 880,
+          "x1": 944,
+          "anchors": [
+            {
+              "x": 896,
+              "kind": "n",
+              "id": "ent-13"
+            }
+          ],
+          "id": "N3-encounter-880-944",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 962,
+          "x1": 1088,
+          "anchors": [
+            {
+              "x": 1010,
+              "kind": "r",
+              "id": "ent-14"
+            },
+            {
+              "x": 1075,
+              "kind": "c",
+              "id": "ent-15"
+            }
+          ],
+          "id": "N3-encounter-962-1088",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 1200,
+          "x1": 1298,
+          "anchors": [
+            {
+              "x": 1248,
+              "kind": "m",
+              "id": "ent-3"
+            },
+            {
+              "x": 1250,
+              "kind": "w",
+              "id": "ent-16"
+            }
+          ],
+          "id": "N3-encounter-1200-1298",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 1458,
+          "x1": 1571,
+          "anchors": [
+            {
+              "x": 1506,
+              "kind": "r",
+              "id": "ent-17"
+            },
+            {
+              "x": 1523,
+              "kind": "a",
+              "id": "ent-6"
+            }
+          ],
+          "id": "N3-encounter-1458-1571",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 1730,
+          "x1": 1938,
+          "anchors": [
+            {
+              "x": 1778,
+              "kind": "r",
+              "id": "ent-18"
+            },
+            {
+              "x": 1843,
+              "kind": "a",
+              "id": "ent-7"
+            },
+            {
+              "x": 1890,
+              "kind": "w",
+              "id": "ent-19"
+            }
+          ],
+          "id": "N3-encounter-1730-1938",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 2162,
+          "x1": 2258,
+          "anchors": [
+            {
+              "x": 2210,
+              "kind": "r",
+              "id": "ent-20"
+            }
+          ],
+          "id": "N3-encounter-2162-2258",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 2259,
+          "x1": 2434,
+          "anchors": [
+            {
+              "x": 2307,
+              "kind": "a",
+              "id": "ent-9"
+            },
+            {
+              "x": 2386,
+              "kind": "r",
+              "id": "ent-21"
+            }
+          ],
+          "id": "N3-encounter-2259-2434",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 2467,
+          "x1": 2594,
+          "anchors": [
+            {
+              "x": 2515,
+              "kind": "a",
+              "id": "ent-10"
+            },
+            {
+              "x": 2546,
+              "kind": "r",
+              "id": "ent-22"
+            }
+          ],
+          "id": "N3-encounter-2467-2594",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 2850,
+          "x1": 2963,
+          "anchors": [
+            {
+              "x": 2898,
+              "kind": "r",
+              "id": "ent-4"
+            },
+            {
+              "x": 2915,
+              "kind": "c",
+              "id": "ent-23"
+            }
+          ],
+          "id": "N3-encounter-2850-2963",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 3107,
+          "x1": 3203,
+          "anchors": [
+            {
+              "x": 3155,
+              "kind": "c",
+              "id": "ent-24"
+            }
+          ],
+          "id": "N3-encounter-3107-3203",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 3490,
+          "x1": 3552,
+          "anchors": [
+            {
+              "x": 3538,
+              "kind": "w",
+              "id": "ent-25"
+            }
+          ],
+          "id": "N3-encounter-3490-3552",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 3888,
+          "x1": 3968,
+          "anchors": [
+            {
+              "x": 3936,
+              "kind": "m",
+              "id": "ent-1"
+            }
+          ],
+          "id": "N3-encounter-3888-3968",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 4080,
+          "x1": 4176,
+          "anchors": [
+            {
+              "x": 4128,
+              "kind": "n",
+              "id": "ent-11"
+            }
+          ],
+          "id": "N3-encounter-4080-4176",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 4210,
+          "x1": 4272,
+          "anchors": [
+            {
+              "x": 4258,
+              "kind": "w",
+              "id": "ent-26"
+            }
+          ],
+          "id": "N3-encounter-4210-4272",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 4496,
+          "x1": 4578,
+          "anchors": [
+            {
+              "x": 4530,
+              "kind": "w",
+              "id": "ent-27"
+            }
+          ],
+          "id": "N3-encounter-4496-4578",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        }
+      ],
+      "E": []
+    },
+    {
+      "level": 4,
+      "source": "base",
+      "start": 40,
+      "end": 5896,
+      "zones": [
+        {
+          "x0": 0,
+          "x1": 704,
+          "t": "museum",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 704,
+          "x1": 752,
+          "t": "museum",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 752,
+          "x1": 1456,
+          "t": "egypt",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 1456,
+          "x1": 2160,
+          "t": "gallery",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 2160,
+          "x1": 2208,
+          "t": "gallery",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 2208,
+          "x1": 2912,
+          "t": "archive",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 2912,
+          "x1": 3680,
+          "t": "ballroom",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 3680,
+          "x1": 4448,
+          "t": "crypt",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 4448,
+          "x1": 4496,
+          "t": "crypt",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 4496,
+          "x1": 5200,
+          "t": "vault",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 5200,
+          "x1": 5456,
+          "t": "vault",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 5456,
+          "x1": 5776,
+          "t": "boss",
+          "lesson": "",
+          "transition": false
+        },
+        {
+          "x0": 5776,
+          "x1": 6032,
+          "t": "vault",
+          "lesson": "",
+          "transition": false
+        }
+      ],
+      "A": [
+        {
+          "id": "N4-key-3716-54",
+          "kind": "key",
+          "x0": 3716,
+          "x1": 3732,
+          "y": 54
+        },
+        {
+          "id": "N4-key-692-150",
+          "kind": "key",
+          "x0": 692,
+          "x1": 708,
+          "y": 150
+        },
+        {
+          "id": "N4-key-2084-150",
+          "kind": "key",
+          "x0": 2084,
+          "x1": 2100,
+          "y": 150
+        },
+        {
+          "id": "N4-door-45",
+          "kind": "door",
+          "x0": 720,
+          "x1": 736
+        },
+        {
+          "id": "N4-door-136",
+          "kind": "door",
+          "x0": 2176,
+          "x1": 2192
+        },
+        {
+          "id": "N4-door-279",
+          "kind": "door",
+          "x0": 4464,
+          "x1": 4480
+        }
+      ],
+      "B": [],
+      "C": [
+        {
+          "x0": 864,
+          "x1": 912,
+          "anchors": [
+            {
+              "column": 54,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            },
+            {
+              "column": 55,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            },
+            {
+              "column": 56,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N4-transit-54-57",
+          "observeX0": 848,
+          "observeX1": 928,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 1008,
+          "x1": 1232,
+          "anchors": [
+            {
+              "column": 63,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 64,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 65,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 66,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 67,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 68,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 69,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 70,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 71,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 72,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 74,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            },
+            {
+              "column": 75,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            },
+            {
+              "column": 76,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N4-transit-63-77",
+          "observeX0": 992,
+          "observeX1": 1248,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 3808,
+          "x1": 3840,
+          "anchors": [
+            {
+              "column": 238,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            },
+            {
+              "column": 239,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N4-transit-238-240",
+          "observeX0": 3792,
+          "observeX1": 3856,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 3920,
+          "x1": 3968,
+          "anchors": [
+            {
+              "column": 245,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            },
+            {
+              "column": 246,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            },
+            {
+              "column": 247,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N4-transit-245-248",
+          "observeX0": 3904,
+          "observeX1": 3984,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 4176,
+          "x1": 4208,
+          "anchors": [
+            {
+              "column": 261,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            },
+            {
+              "column": 262,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N4-transit-261-263",
+          "observeX0": 4160,
+          "observeX1": 4224,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 4704,
+          "x1": 4752,
+          "anchors": [
+            {
+              "column": 294,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            },
+            {
+              "column": 295,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            },
+            {
+              "column": 296,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N4-transit-294-297",
+          "observeX0": 4688,
+          "observeX1": 4768,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 4864,
+          "x1": 4912,
+          "anchors": [
+            {
+              "column": 304,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            },
+            {
+              "column": 305,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            },
+            {
+              "column": 306,
+              "harmful": true,
+              "voidFloor": false,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N4-transit-304-307",
+          "observeX0": 4848,
+          "observeX1": 4928,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        }
+      ],
+      "D": [
+        {
+          "x0": 50,
+          "x1": 194,
+          "anchors": [
+            {
+              "x": 98,
+              "kind": "w",
+              "id": "ent-11"
+            },
+            {
+              "x": 146,
+              "kind": "w",
+              "id": "ent-22"
+            }
+          ],
+          "id": "N4-encounter-50-194",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 274,
+          "x1": 546,
+          "anchors": [
+            {
+              "x": 322,
+              "kind": "w",
+              "id": "ent-12"
+            },
+            {
+              "x": 370,
+              "kind": "w",
+              "id": "ent-0"
+            },
+            {
+              "x": 402,
+              "kind": "w",
+              "id": "ent-23"
+            },
+            {
+              "x": 498,
+              "kind": "w",
+              "id": "ent-13"
+            }
+          ],
+          "id": "N4-encounter-274-546",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 610,
+          "x1": 706,
+          "anchors": [
+            {
+              "x": 658,
+              "kind": "w",
+              "id": "ent-24"
+            }
+          ],
+          "id": "N4-encounter-610-706",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 930,
+          "x1": 1008,
+          "anchors": [
+            {
+              "x": 978,
+              "kind": "u",
+              "id": "ent-25"
+            },
+            {
+              "x": 979,
+              "kind": "a",
+              "id": "ent-8"
+            }
+          ],
+          "id": "N4-encounter-930-1008",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 1232,
+          "x1": 1283,
+          "anchors": [
+            {
+              "x": 1235,
+              "kind": "a",
+              "id": "ent-9"
+            }
+          ],
+          "id": "N4-encounter-1232-1283",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 1315,
+          "x1": 1504,
+          "anchors": [
+            {
+              "x": 1363,
+              "kind": "c",
+              "id": "ent-26"
+            },
+            {
+              "x": 1394,
+              "kind": "u",
+              "id": "ent-27"
+            },
+            {
+              "x": 1456,
+              "kind": "n",
+              "id": "ent-14"
+            }
+          ],
+          "id": "N4-encounter-1315-1504",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 1538,
+          "x1": 1680,
+          "anchors": [
+            {
+              "x": 1586,
+              "kind": "w",
+              "id": "ent-28"
+            },
+            {
+              "x": 1632,
+              "kind": "m",
+              "id": "ent-15"
+            }
+          ],
+          "id": "N4-encounter-1538-1680",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 1730,
+          "x1": 1904,
+          "anchors": [
+            {
+              "x": 1778,
+              "kind": "w",
+              "id": "ent-29"
+            },
+            {
+              "x": 1856,
+              "kind": "m",
+              "id": "ent-16"
+            }
+          ],
+          "id": "N4-encounter-1730-1904",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 1922,
+          "x1": 2018,
+          "anchors": [
+            {
+              "x": 1970,
+              "kind": "w",
+              "id": "ent-30"
+            }
+          ],
+          "id": "N4-encounter-1922-2018",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 2096,
+          "x1": 2192,
+          "anchors": [
+            {
+              "x": 2144,
+              "kind": "n",
+              "id": "ent-17"
+            }
+          ],
+          "id": "N4-encounter-2096-2192",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 2258,
+          "x1": 2370,
+          "anchors": [
+            {
+              "x": 2306,
+              "kind": "u",
+              "id": "ent-18"
+            },
+            {
+              "x": 2322,
+              "kind": "w",
+              "id": "ent-31"
+            }
+          ],
+          "id": "N4-encounter-2258-2370",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 2498,
+          "x1": 2594,
+          "anchors": [
+            {
+              "x": 2546,
+              "kind": "u",
+              "id": "ent-1"
+            },
+            {
+              "x": 2546,
+              "kind": "w",
+              "id": "ent-32"
+            }
+          ],
+          "id": "N4-encounter-2498-2594",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 2656,
+          "x1": 2818,
+          "anchors": [
+            {
+              "x": 2704,
+              "kind": "m",
+              "id": "ent-19"
+            },
+            {
+              "x": 2770,
+              "kind": "w",
+              "id": "ent-33"
+            }
+          ],
+          "id": "N4-encounter-2656-2818",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 3044,
+          "x1": 3186,
+          "anchors": [
+            {
+              "x": 3092,
+              "kind": "f",
+              "id": "ent-34"
+            },
+            {
+              "x": 3136,
+              "kind": "m",
+              "id": "ent-20"
+            },
+            {
+              "x": 3138,
+              "kind": "w",
+              "id": "ent-2"
+            }
+          ],
+          "id": "N4-encounter-3044-3186",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 3204,
+          "x1": 3300,
+          "anchors": [
+            {
+              "x": 3252,
+              "kind": "f",
+              "id": "ent-35"
+            }
+          ],
+          "id": "N4-encounter-3204-3300",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 3312,
+          "x1": 3602,
+          "anchors": [
+            {
+              "x": 3360,
+              "kind": "m",
+              "id": "ent-21"
+            },
+            {
+              "x": 3394,
+              "kind": "w",
+              "id": "ent-3"
+            },
+            {
+              "x": 3412,
+              "kind": "f",
+              "id": "ent-36"
+            },
+            {
+              "x": 3459,
+              "kind": "c",
+              "id": "ent-37"
+            },
+            {
+              "x": 3554,
+              "kind": "w",
+              "id": "ent-38"
+            }
+          ],
+          "id": "N4-encounter-3312-3602",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 3616,
+          "x1": 3712,
+          "anchors": [
+            {
+              "x": 3664,
+              "kind": "n",
+              "id": "ent-39"
+            }
+          ],
+          "id": "N4-encounter-3616-3712",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 3858,
+          "x1": 3920,
+          "anchors": [
+            {
+              "x": 3906,
+              "kind": "g",
+              "id": "ent-6"
+            }
+          ],
+          "id": "N4-encounter-3858-3920",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 4050,
+          "x1": 4176,
+          "anchors": [
+            {
+              "x": 4098,
+              "kind": "u",
+              "id": "ent-40"
+            },
+            {
+              "x": 4130,
+              "kind": "g",
+              "id": "ent-7"
+            }
+          ],
+          "id": "N4-encounter-4050-4176",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 4259,
+          "x1": 4355,
+          "anchors": [
+            {
+              "x": 4307,
+              "kind": "c",
+              "id": "ent-41"
+            }
+          ],
+          "id": "N4-encounter-4259-4355",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 4448,
+          "x1": 4544,
+          "anchors": [
+            {
+              "x": 4496,
+              "kind": "n",
+              "id": "ent-4"
+            }
+          ],
+          "id": "N4-encounter-4448-4544",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 4562,
+          "x1": 4658,
+          "anchors": [
+            {
+              "x": 4610,
+              "kind": "w",
+              "id": "ent-42"
+            }
+          ],
+          "id": "N4-encounter-4562-4658",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 4912,
+          "x1": 5122,
+          "anchors": [
+            {
+              "x": 4914,
+              "kind": "g",
+              "id": "ent-10"
+            },
+            {
+              "x": 4994,
+              "kind": "w",
+              "id": "ent-43"
+            },
+            {
+              "x": 5074,
+              "kind": "u",
+              "id": "ent-44"
+            }
+          ],
+          "id": "N4-encounter-4912-5122",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 5136,
+          "x1": 5232,
+          "anchors": [
+            {
+              "x": 5184,
+              "kind": "n",
+              "id": "ent-5"
+            }
+          ],
+          "id": "N4-encounter-5136-5232",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        }
+      ],
+      "E": [
+        {
+          "id": "N4-boss",
+          "kind": "conductors",
+          "x0": 5456,
+          "x1": 5776
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "source": "candidate",
+      "start": 56,
+      "end": 10360,
+      "zones": [
+        {
+          "x0": 0,
+          "x1": 1792,
+          "t": "statues",
+          "label": "EL PASEO DE LOS SELLOS",
+          "lesson": "Atráelo sobre el sello y salta su carga. Las columnas te protegen.",
+          "part": 1,
+          "parts": 5,
+          "transition": false
+        },
+        {
+          "x0": 1792,
+          "x1": 1840,
+          "t": "statues",
+          "label": "EL PASEO DE LOS SELLOS",
+          "lesson": "",
+          "part": 1,
+          "parts": 5,
+          "transition": true
+        },
+        {
+          "x0": 1840,
+          "x1": 3760,
+          "t": "court",
+          "label": "LA BALANZA ENTERRADA",
+          "lesson": "Abajo toma el contrapeso: caminarás más lento. Usa los apoyos hasta el hueco.",
+          "part": 2,
+          "parts": 5,
+          "transition": false
+        },
+        {
+          "x0": 3760,
+          "x1": 3808,
+          "t": "court",
+          "label": "LA BALANZA ENTERRADA",
+          "lesson": "",
+          "part": 2,
+          "parts": 5,
+          "transition": true
+        },
+        {
+          "x0": 3808,
+          "x1": 5856,
+          "t": "sewer",
+          "label": "LOS CANALES DEL GUARDIÁN",
+          "lesson": "Atráelo sobre el sello y salta su carga. Las columnas te protegen.",
+          "part": 3,
+          "parts": 5,
+          "transition": false
+        },
+        {
+          "x0": 5856,
+          "x1": 5904,
+          "t": "sewer",
+          "label": "LOS CANALES DEL GUARDIÁN",
+          "lesson": "",
+          "part": 3,
+          "parts": 5,
+          "transition": true
+        },
+        {
+          "x0": 5904,
+          "x1": 8080,
+          "t": "crypt",
+          "label": "EL CLAUSTRO DE LAS RUNAS",
+          "lesson": "Lee el orden de las runas. Abajo activa cada pedestal.",
+          "part": 4,
+          "parts": 5,
+          "transition": false
+        },
+        {
+          "x0": 8080,
+          "x1": 8128,
+          "t": "crypt",
+          "label": "EL CLAUSTRO DE LAS RUNAS",
+          "lesson": "",
+          "part": 4,
+          "parts": 5,
+          "transition": true
+        },
+        {
+          "x0": 8128,
+          "x1": 10432,
+          "t": "statues",
+          "label": "EL TRIBUNAL DE BRONCE",
+          "lesson": "Atráelo sobre el sello y salta su carga. Las columnas te protegen.",
+          "part": 5,
+          "parts": 5,
+          "transition": false
+        }
+      ],
+      "A": [
+        {
+          "id": "N5-key-7188-38",
+          "kind": "key",
+          "x0": 7188,
+          "x1": 7204,
+          "y": 38
+        },
+        {
+          "id": "N5-door-463",
+          "kind": "door",
+          "x0": 7408,
+          "x1": 7424
+        }
+      ],
+      "B": [
+        {
+          "id": "N5-trial-1-1",
+          "trialId": "1-1",
+          "kind": "charge",
+          "x0": 192,
+          "x1": 656
+        },
+        {
+          "id": "N5-trial-1-2",
+          "trialId": "1-2",
+          "kind": "sequence",
+          "x0": 1184,
+          "x1": 1648
+        },
+        {
+          "id": "N5-trial-2-1",
+          "trialId": "2-1",
+          "kind": "weight",
+          "x0": 2032,
+          "x1": 2496
+        },
+        {
+          "id": "N5-trial-2-2",
+          "trialId": "2-2",
+          "kind": "charge",
+          "x0": 3152,
+          "x1": 3616
+        },
+        {
+          "id": "N5-trial-3-1",
+          "trialId": "3-1",
+          "kind": "charge",
+          "x0": 4000,
+          "x1": 4464
+        },
+        {
+          "id": "N5-trial-3-2",
+          "trialId": "3-2",
+          "kind": "weight",
+          "x0": 5248,
+          "x1": 5712
+        },
+        {
+          "id": "N5-trial-4-1",
+          "trialId": "4-1",
+          "kind": "sequence",
+          "x0": 6096,
+          "x1": 6560
+        },
+        {
+          "id": "N5-trial-4-2",
+          "trialId": "4-2",
+          "kind": "charge",
+          "x0": 7472,
+          "x1": 7936
+        },
+        {
+          "id": "N5-trial-5-1",
+          "trialId": "5-1",
+          "kind": "charge",
+          "x0": 8320,
+          "x1": 8784
+        },
+        {
+          "id": "N5-trial-5-2",
+          "trialId": "5-2",
+          "kind": "weight",
+          "x0": 9824,
+          "x1": 10288
+        }
+      ],
+      "C": [
+        {
+          "x0": 752,
+          "x1": 944,
+          "anchors": [
+            {
+              "column": 47,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 48,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 49,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 50,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 51,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 52,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 53,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 54,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 55,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 56,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 57,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 58,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N5-transit-47-59",
+          "observeX0": 736,
+          "observeX1": 960,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 2608,
+          "x1": 2656,
+          "anchors": [
+            {
+              "column": 163,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 164,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 165,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            }
+          ],
+          "id": "N5-transit-163-166",
+          "observeX0": 2592,
+          "observeX1": 2672,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 2816,
+          "x1": 2864,
+          "anchors": [
+            {
+              "column": 176,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 177,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 178,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            }
+          ],
+          "id": "N5-transit-176-179",
+          "observeX0": 2800,
+          "observeX1": 2880,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 4560,
+          "x1": 4752,
+          "anchors": [
+            {
+              "column": 285,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 286,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 287,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 288,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 289,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 290,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 291,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 292,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 293,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 294,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 295,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 296,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N5-transit-285-297",
+          "observeX0": 4544,
+          "observeX1": 4768,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 6672,
+          "x1": 6720,
+          "anchors": [
+            {
+              "column": 417,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 418,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 419,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            }
+          ],
+          "id": "N5-transit-417-420",
+          "observeX0": 6656,
+          "observeX1": 6736,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 6880,
+          "x1": 6928,
+          "anchors": [
+            {
+              "column": 430,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 431,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 432,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            }
+          ],
+          "id": "N5-transit-430-433",
+          "observeX0": 6864,
+          "observeX1": 6944,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 8880,
+          "x1": 9072,
+          "anchors": [
+            {
+              "column": 555,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 556,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 557,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 558,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 559,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 560,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 561,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 562,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 563,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 564,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 565,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 566,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N5-transit-555-567",
+          "observeX0": 8864,
+          "observeX1": 9088,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        }
+      ],
+      "D": [
+        {
+          "x0": 944,
+          "x1": 992,
+          "anchors": [
+            {
+              "x": 944,
+              "kind": "moth",
+              "id": "foe-0"
+            }
+          ],
+          "id": "N5-encounter-944-992",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 1024,
+          "x1": 1120,
+          "anchors": [
+            {
+              "x": 1072,
+              "kind": "beetle",
+              "id": "foe-1"
+            }
+          ],
+          "id": "N5-encounter-1024-1120",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 2691,
+          "x1": 2787,
+          "anchors": [
+            {
+              "x": 2739,
+              "kind": "a",
+              "id": "ent-2"
+            }
+          ],
+          "id": "N5-encounter-2691-2787",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 2864,
+          "x1": 2960,
+          "anchors": [
+            {
+              "x": 2912,
+              "kind": "beetle",
+              "id": "foe-2"
+            }
+          ],
+          "id": "N5-encounter-2864-2960",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 3042,
+          "x1": 3138,
+          "anchors": [
+            {
+              "x": 3090,
+              "kind": "w",
+              "id": "ent-5"
+            }
+          ],
+          "id": "N5-encounter-3042-3138",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 4752,
+          "x1": 4800,
+          "anchors": [
+            {
+              "x": 4752,
+              "kind": "moth",
+              "id": "foe-3"
+            }
+          ],
+          "id": "N5-encounter-4752-4800",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 4832,
+          "x1": 4928,
+          "anchors": [
+            {
+              "x": 4880,
+              "kind": "beetle",
+              "id": "foe-4"
+            }
+          ],
+          "id": "N5-encounter-4832-4928",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 5010,
+          "x1": 5106,
+          "anchors": [
+            {
+              "x": 5058,
+              "kind": "w",
+              "id": "ent-10"
+            }
+          ],
+          "id": "N5-encounter-5010-5106",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 6755,
+          "x1": 6851,
+          "anchors": [
+            {
+              "x": 6803,
+              "kind": "a",
+              "id": "ent-3"
+            }
+          ],
+          "id": "N5-encounter-6755-6851",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 6928,
+          "x1": 7024,
+          "anchors": [
+            {
+              "x": 6976,
+              "kind": "beetle",
+              "id": "foe-5"
+            }
+          ],
+          "id": "N5-encounter-6928-7024",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 7091,
+          "x1": 7202,
+          "anchors": [
+            {
+              "x": 7139,
+              "kind": "a",
+              "id": "ent-1"
+            },
+            {
+              "x": 7154,
+              "kind": "w",
+              "id": "ent-12"
+            }
+          ],
+          "id": "N5-encounter-7091-7202",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 7360,
+          "x1": 7456,
+          "anchors": [
+            {
+              "x": 7408,
+              "kind": "vent",
+              "id": "hazard-0"
+            }
+          ],
+          "id": "N5-encounter-7360-7456",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 9072,
+          "x1": 9120,
+          "anchors": [
+            {
+              "x": 9072,
+              "kind": "moth",
+              "id": "foe-6"
+            }
+          ],
+          "id": "N5-encounter-9072-9120",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 9152,
+          "x1": 9248,
+          "anchors": [
+            {
+              "x": 9200,
+              "kind": "beetle",
+              "id": "foe-7"
+            }
+          ],
+          "id": "N5-encounter-9152-9248",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 9330,
+          "x1": 9426,
+          "anchors": [
+            {
+              "x": 9378,
+              "kind": "w",
+              "id": "ent-17"
+            }
+          ],
+          "id": "N5-encounter-9330-9426",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 9584,
+          "x1": 9680,
+          "anchors": [
+            {
+              "x": 9632,
+              "kind": "vent",
+              "id": "hazard-1"
+            }
+          ],
+          "id": "N5-encounter-9584-9680",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        }
+      ],
+      "E": []
+    },
+    {
+      "level": 6,
+      "source": "candidate",
+      "start": 56,
+      "end": 11128,
+      "zones": [
+        {
+          "x0": 0,
+          "x1": 1792,
+          "t": "warehouse",
+          "label": "EL TALLER DEL ESCAPAMIENTO",
+          "lesson": "Activa los pulsadores numerados en orden con Abajo. Alcanza la puerta antes de que acabe el reloj.",
+          "part": 1,
+          "parts": 5,
+          "transition": false
+        },
+        {
+          "x0": 1792,
+          "x1": 1840,
+          "t": "warehouse",
+          "label": "EL TALLER DEL ESCAPAMIENTO",
+          "lesson": "",
+          "part": 1,
+          "parts": 5,
+          "transition": true
+        },
+        {
+          "x0": 1840,
+          "x1": 4144,
+          "t": "attic",
+          "label": "LOS CONTRAPESOS GEMELOS",
+          "lesson": "Abajo toma el contrapeso: caminarás más lento. Usa los apoyos hasta el hueco.",
+          "part": 2,
+          "parts": 5,
+          "transition": false
+        },
+        {
+          "x0": 4144,
+          "x1": 4192,
+          "t": "attic",
+          "label": "LOS CONTRAPESOS GEMELOS",
+          "lesson": "",
+          "part": 2,
+          "parts": 5,
+          "transition": true
+        },
+        {
+          "x0": 4192,
+          "x1": 6240,
+          "t": "clocktower",
+          "label": "LA GALERÍA DEL PÉNDULO",
+          "lesson": "Activa los pulsadores numerados en orden con Abajo. Alcanza la puerta antes de que acabe el reloj.",
+          "part": 3,
+          "parts": 5,
+          "transition": false
+        },
+        {
+          "x0": 6240,
+          "x1": 6288,
+          "t": "clocktower",
+          "label": "LA GALERÍA DEL PÉNDULO",
+          "lesson": "",
+          "part": 3,
+          "parts": 5,
+          "transition": true
+        },
+        {
+          "x0": 6288,
+          "x1": 8848,
+          "t": "bell",
+          "label": "LAS HORAS INVERTIDAS",
+          "lesson": "Lee el orden de las runas. Abajo activa cada pedestal.",
+          "part": 4,
+          "parts": 5,
+          "transition": false
+        },
+        {
+          "x0": 8848,
+          "x1": 8896,
+          "t": "bell",
+          "label": "LAS HORAS INVERTIDAS",
+          "lesson": "",
+          "part": 4,
+          "parts": 5,
+          "transition": true
+        },
+        {
+          "x0": 8896,
+          "x1": 11200,
+          "t": "clocktower",
+          "label": "LA GRAN SINFONÍA MECÁNICA",
+          "lesson": "Activa los pulsadores numerados en orden con Abajo. Alcanza la puerta antes de que acabe el reloj.",
+          "part": 5,
+          "parts": 5,
+          "transition": false
+        }
+      ],
+      "A": [
+        {
+          "id": "N6-key-3172-38",
+          "kind": "key",
+          "x0": 3172,
+          "x1": 3188,
+          "y": 38
+        },
+        {
+          "id": "N6-key-7572-38",
+          "kind": "key",
+          "x0": 7572,
+          "x1": 7588,
+          "y": 38
+        },
+        {
+          "id": "N6-door-217",
+          "kind": "door",
+          "x0": 3472,
+          "x1": 3488
+        },
+        {
+          "id": "N6-door-511",
+          "kind": "door",
+          "x0": 8176,
+          "x1": 8192
+        }
+      ],
+      "B": [
+        {
+          "id": "N6-trial-1-1",
+          "trialId": "1-1",
+          "kind": "timed",
+          "x0": 192,
+          "x1": 656
+        },
+        {
+          "id": "N6-trial-1-2",
+          "trialId": "1-2",
+          "kind": "sequence",
+          "x0": 1184,
+          "x1": 1648
+        },
+        {
+          "id": "N6-trial-2-1",
+          "trialId": "2-1",
+          "kind": "weight",
+          "x0": 2032,
+          "x1": 2496
+        },
+        {
+          "id": "N6-trial-2-2",
+          "trialId": "2-2",
+          "kind": "timed",
+          "x0": 3536,
+          "x1": 4000
+        },
+        {
+          "id": "N6-trial-3-1",
+          "trialId": "3-1",
+          "kind": "timed",
+          "x0": 4384,
+          "x1": 4848
+        },
+        {
+          "id": "N6-trial-3-2",
+          "trialId": "3-2",
+          "kind": "weight",
+          "x0": 5632,
+          "x1": 6096
+        },
+        {
+          "id": "N6-trial-4-1",
+          "trialId": "4-1",
+          "kind": "sequence",
+          "x0": 6480,
+          "x1": 6944
+        },
+        {
+          "id": "N6-trial-4-2",
+          "trialId": "4-2",
+          "kind": "timed",
+          "x0": 8240,
+          "x1": 8704
+        },
+        {
+          "id": "N6-trial-5-1",
+          "trialId": "5-1",
+          "kind": "timed",
+          "x0": 9088,
+          "x1": 9552
+        },
+        {
+          "id": "N6-trial-5-2",
+          "trialId": "5-2",
+          "kind": "timed",
+          "x0": 10592,
+          "x1": 11056
+        }
+      ],
+      "C": [
+        {
+          "x0": 752,
+          "x1": 1008,
+          "anchors": [
+            {
+              "column": 47,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 48,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 49,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 50,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 51,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 52,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 53,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 54,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 55,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 56,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 57,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 58,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 59,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 60,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 61,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 62,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N6-transit-47-63",
+          "observeX0": 736,
+          "observeX1": 1024,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 2608,
+          "x1": 2896,
+          "anchors": [
+            {
+              "column": 163,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 164,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 165,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 166,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 167,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 168,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 169,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 170,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 171,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 172,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 173,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 174,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 175,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 176,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 177,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 178,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 179,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 180,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N6-transit-163-181",
+          "observeX0": 2592,
+          "observeX1": 2912,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 4944,
+          "x1": 5200,
+          "anchors": [
+            {
+              "column": 309,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 310,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 311,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 312,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 313,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 314,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 315,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 316,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 317,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 318,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 319,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 320,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 321,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 322,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 323,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 324,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N6-transit-309-325",
+          "observeX0": 4928,
+          "observeX1": 5216,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 7056,
+          "x1": 7344,
+          "anchors": [
+            {
+              "column": 441,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 442,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 443,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 444,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 445,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 446,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 447,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 448,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 449,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 450,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 451,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 452,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 453,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 454,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 455,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 456,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 457,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 458,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N6-transit-441-459",
+          "observeX0": 7040,
+          "observeX1": 7360,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 7680,
+          "x1": 7808,
+          "anchors": [
+            {
+              "column": 480,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 481,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 482,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 483,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 484,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 485,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 486,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 487,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N6-transit-480-488",
+          "observeX0": 7664,
+          "observeX1": 7824,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 9648,
+          "x1": 9904,
+          "anchors": [
+            {
+              "column": 603,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 604,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 605,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 606,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 607,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 608,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 609,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 610,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 611,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 612,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 613,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 614,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 615,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 616,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 617,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 618,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N6-transit-603-619",
+          "observeX0": 9632,
+          "observeX1": 9920,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        }
+      ],
+      "D": [
+        {
+          "x0": 688,
+          "x1": 752,
+          "anchors": [
+            {
+              "x": 736,
+              "kind": "n",
+              "id": "ent-1"
+            }
+          ],
+          "id": "N6-encounter-688-752",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 2528,
+          "x1": 2608,
+          "anchors": [
+            {
+              "x": 2576,
+              "kind": "n",
+              "id": "ent-2"
+            }
+          ],
+          "id": "N6-encounter-2528-2608",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 3042,
+          "x1": 3138,
+          "anchors": [
+            {
+              "x": 3090,
+              "kind": "w",
+              "id": "ent-6"
+            }
+          ],
+          "id": "N6-encounter-3042-3138",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 3296,
+          "x1": 3392,
+          "anchors": [
+            {
+              "x": 3344,
+              "kind": "vent",
+              "id": "hazard-3"
+            }
+          ],
+          "id": "N6-encounter-3296-3392",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 4880,
+          "x1": 4944,
+          "anchors": [
+            {
+              "x": 4928,
+              "kind": "n",
+              "id": "ent-3"
+            }
+          ],
+          "id": "N6-encounter-4880-4944",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 5394,
+          "x1": 5490,
+          "anchors": [
+            {
+              "x": 5442,
+              "kind": "w",
+              "id": "ent-7"
+            }
+          ],
+          "id": "N6-encounter-5394-5490",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 6976,
+          "x1": 7056,
+          "anchors": [
+            {
+              "x": 7024,
+              "kind": "n",
+              "id": "ent-4"
+            }
+          ],
+          "id": "N6-encounter-6976-7056",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 7490,
+          "x1": 7586,
+          "anchors": [
+            {
+              "x": 7538,
+              "kind": "w",
+              "id": "ent-9"
+            }
+          ],
+          "id": "N6-encounter-7490-7586",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 9584,
+          "x1": 9648,
+          "anchors": [
+            {
+              "x": 9632,
+              "kind": "n",
+              "id": "ent-5"
+            }
+          ],
+          "id": "N6-encounter-9584-9648",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 10098,
+          "x1": 10194,
+          "anchors": [
+            {
+              "x": 10146,
+              "kind": "w",
+              "id": "ent-10"
+            }
+          ],
+          "id": "N6-encounter-10098-10194",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 10352,
+          "x1": 10448,
+          "anchors": [
+            {
+              "x": 10400,
+              "kind": "vent",
+              "id": "hazard-9"
+            }
+          ],
+          "id": "N6-encounter-10352-10448",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        }
+      ],
+      "E": []
+    },
+    {
+      "level": 7,
+      "source": "candidate",
+      "start": 56,
+      "end": 10360,
+      "zones": [
+        {
+          "x0": 0,
+          "x1": 1792,
+          "t": "archive",
+          "label": "EL ARCHIVO DE LOS ESPEJOS",
+          "lesson": "Abajo gira los espejos. Conecta la lámpara con el receptor.",
+          "part": 1,
+          "parts": 5,
+          "transition": false
+        },
+        {
+          "x0": 1792,
+          "x1": 1840,
+          "t": "archive",
+          "label": "EL ARCHIVO DE LOS ESPEJOS",
+          "lesson": "",
+          "part": 1,
+          "parts": 5,
+          "transition": true
+        },
+        {
+          "x0": 1840,
+          "x1": 3760,
+          "t": "observatory",
+          "label": "LA BÓVEDA DE LAS CONSTELACIONES",
+          "lesson": "Lee el orden de las runas. Abajo activa cada pedestal.",
+          "part": 2,
+          "parts": 5,
+          "transition": false
+        },
+        {
+          "x0": 3760,
+          "x1": 3808,
+          "t": "observatory",
+          "label": "LA BÓVEDA DE LAS CONSTELACIONES",
+          "lesson": "",
+          "part": 2,
+          "parts": 5,
+          "transition": true
+        },
+        {
+          "x0": 3808,
+          "x1": 5856,
+          "t": "roof2",
+          "label": "LOS BALCONES DEL ECLIPSE",
+          "lesson": "Abajo gira los espejos. Conecta la lámpara con el receptor.",
+          "part": 3,
+          "parts": 5,
+          "transition": false
+        },
+        {
+          "x0": 5856,
+          "x1": 5904,
+          "t": "roof2",
+          "label": "LOS BALCONES DEL ECLIPSE",
+          "lesson": "",
+          "part": 3,
+          "parts": 5,
+          "transition": true
+        },
+        {
+          "x0": 5904,
+          "x1": 8080,
+          "t": "gallery",
+          "label": "EL LABERINTO DE LOS RAYOS",
+          "lesson": "Activa los pulsadores numerados en orden con Abajo. Alcanza la puerta antes de que acabe el reloj.",
+          "part": 4,
+          "parts": 5,
+          "transition": false
+        },
+        {
+          "x0": 8080,
+          "x1": 8128,
+          "t": "gallery",
+          "label": "EL LABERINTO DE LOS RAYOS",
+          "lesson": "",
+          "part": 4,
+          "parts": 5,
+          "transition": true
+        },
+        {
+          "x0": 8128,
+          "x1": 10432,
+          "t": "observatory",
+          "label": "LA ALINEACIÓN LUNAR",
+          "lesson": "Abajo gira los espejos. Conecta la lámpara con el receptor.",
+          "part": 5,
+          "parts": 5,
+          "transition": false
+        }
+      ],
+      "A": [],
+      "B": [
+        {
+          "id": "N7-trial-1-1",
+          "trialId": "1-1",
+          "kind": "mirror",
+          "x0": 192,
+          "x1": 656
+        },
+        {
+          "id": "N7-trial-1-2",
+          "trialId": "1-2",
+          "kind": "sequence",
+          "x0": 1184,
+          "x1": 1648
+        },
+        {
+          "id": "N7-trial-2-1",
+          "trialId": "2-1",
+          "kind": "sequence",
+          "x0": 2032,
+          "x1": 2496
+        },
+        {
+          "id": "N7-trial-2-2",
+          "trialId": "2-2",
+          "kind": "mirror",
+          "x0": 3152,
+          "x1": 3616
+        },
+        {
+          "id": "N7-trial-3-1",
+          "trialId": "3-1",
+          "kind": "mirror",
+          "x0": 4000,
+          "x1": 4464
+        },
+        {
+          "id": "N7-trial-3-2",
+          "trialId": "3-2",
+          "kind": "timed",
+          "x0": 5248,
+          "x1": 5712
+        },
+        {
+          "id": "N7-trial-4-1",
+          "trialId": "4-1",
+          "kind": "timed",
+          "x0": 6096,
+          "x1": 6560
+        },
+        {
+          "id": "N7-trial-4-2",
+          "trialId": "4-2",
+          "kind": "mirror",
+          "x0": 7472,
+          "x1": 7936
+        },
+        {
+          "id": "N7-trial-5-1",
+          "trialId": "5-1",
+          "kind": "mirror",
+          "x0": 8320,
+          "x1": 8784
+        },
+        {
+          "id": "N7-trial-5-2",
+          "trialId": "5-2",
+          "kind": "mirror",
+          "x0": 9824,
+          "x1": 10288
+        }
+      ],
+      "C": [
+        {
+          "x0": 752,
+          "x1": 784,
+          "anchors": [
+            {
+              "column": 47,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 48,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            }
+          ],
+          "id": "N7-transit-47-49",
+          "observeX0": 736,
+          "observeX1": 800,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 944,
+          "x1": 976,
+          "anchors": [
+            {
+              "column": 59,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 60,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            }
+          ],
+          "id": "N7-transit-59-61",
+          "observeX0": 928,
+          "observeX1": 992,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 2592,
+          "x1": 2624,
+          "anchors": [
+            {
+              "column": 162,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 163,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            }
+          ],
+          "id": "N7-transit-162-164",
+          "observeX0": 2576,
+          "observeX1": 2640,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 2784,
+          "x1": 2816,
+          "anchors": [
+            {
+              "column": 174,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 175,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            }
+          ],
+          "id": "N7-transit-174-176",
+          "observeX0": 2768,
+          "observeX1": 2832,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 4560,
+          "x1": 4592,
+          "anchors": [
+            {
+              "column": 285,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 286,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            }
+          ],
+          "id": "N7-transit-285-287",
+          "observeX0": 4544,
+          "observeX1": 4608,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 4752,
+          "x1": 4784,
+          "anchors": [
+            {
+              "column": 297,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 298,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            }
+          ],
+          "id": "N7-transit-297-299",
+          "observeX0": 4736,
+          "observeX1": 4800,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 6656,
+          "x1": 6688,
+          "anchors": [
+            {
+              "column": 416,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 417,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            }
+          ],
+          "id": "N7-transit-416-418",
+          "observeX0": 6640,
+          "observeX1": 6704,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 6848,
+          "x1": 6880,
+          "anchors": [
+            {
+              "column": 428,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 429,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            }
+          ],
+          "id": "N7-transit-428-430",
+          "observeX0": 6832,
+          "observeX1": 6896,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 8880,
+          "x1": 8912,
+          "anchors": [
+            {
+              "column": 555,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 556,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            }
+          ],
+          "id": "N7-transit-555-557",
+          "observeX0": 8864,
+          "observeX1": 8928,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 9072,
+          "x1": 9104,
+          "anchors": [
+            {
+              "column": 567,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            },
+            {
+              "column": 568,
+              "harmful": false,
+              "voidFloor": false,
+              "bodyBlocked": true
+            }
+          ],
+          "id": "N7-transit-567-569",
+          "observeX0": 9056,
+          "observeX1": 9120,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        }
+      ],
+      "D": [
+        {
+          "x0": 801,
+          "x1": 897,
+          "anchors": [
+            {
+              "x": 849,
+              "kind": "Y",
+              "id": "ent-0"
+            }
+          ],
+          "id": "N7-encounter-801-897",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 978,
+          "x1": 1074,
+          "anchors": [
+            {
+              "x": 1026,
+              "kind": "g",
+              "id": "ent-1"
+            }
+          ],
+          "id": "N7-encounter-978-1074",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 2641,
+          "x1": 2737,
+          "anchors": [
+            {
+              "x": 2689,
+              "kind": "Y",
+              "id": "ent-2"
+            }
+          ],
+          "id": "N7-encounter-2641-2737",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 2818,
+          "x1": 2914,
+          "anchors": [
+            {
+              "x": 2866,
+              "kind": "g",
+              "id": "ent-3"
+            }
+          ],
+          "id": "N7-encounter-2818-2914",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 3042,
+          "x1": 3138,
+          "anchors": [
+            {
+              "x": 3090,
+              "kind": "w",
+              "id": "ent-4"
+            }
+          ],
+          "id": "N7-encounter-3042-3138",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 4609,
+          "x1": 4705,
+          "anchors": [
+            {
+              "x": 4657,
+              "kind": "Y",
+              "id": "ent-5"
+            }
+          ],
+          "id": "N7-encounter-4609-4705",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 4800,
+          "x1": 4896,
+          "anchors": [
+            {
+              "x": 4848,
+              "kind": "moth",
+              "id": "foe-0"
+            }
+          ],
+          "id": "N7-encounter-4800-4896",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 5010,
+          "x1": 5106,
+          "anchors": [
+            {
+              "x": 5058,
+              "kind": "w",
+              "id": "ent-6"
+            }
+          ],
+          "id": "N7-encounter-5010-5106",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 6705,
+          "x1": 6801,
+          "anchors": [
+            {
+              "x": 6753,
+              "kind": "Y",
+              "id": "ent-7"
+            }
+          ],
+          "id": "N7-encounter-6705-6801",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 6896,
+          "x1": 6992,
+          "anchors": [
+            {
+              "x": 6944,
+              "kind": "moth",
+              "id": "foe-1"
+            }
+          ],
+          "id": "N7-encounter-6896-6992",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 7106,
+          "x1": 7202,
+          "anchors": [
+            {
+              "x": 7154,
+              "kind": "w",
+              "id": "ent-8"
+            }
+          ],
+          "id": "N7-encounter-7106-7202",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 7360,
+          "x1": 7456,
+          "anchors": [
+            {
+              "x": 7408,
+              "kind": "vent",
+              "id": "hazard-0"
+            }
+          ],
+          "id": "N7-encounter-7360-7456",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 8929,
+          "x1": 9025,
+          "anchors": [
+            {
+              "x": 8977,
+              "kind": "Y",
+              "id": "ent-9"
+            }
+          ],
+          "id": "N7-encounter-8929-9025",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 9120,
+          "x1": 9216,
+          "anchors": [
+            {
+              "x": 9168,
+              "kind": "moth",
+              "id": "foe-2"
+            }
+          ],
+          "id": "N7-encounter-9120-9216",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 9330,
+          "x1": 9426,
+          "anchors": [
+            {
+              "x": 9378,
+              "kind": "w",
+              "id": "ent-10"
+            }
+          ],
+          "id": "N7-encounter-9330-9426",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 9584,
+          "x1": 9680,
+          "anchors": [
+            {
+              "x": 9632,
+              "kind": "vent",
+              "id": "hazard-1"
+            }
+          ],
+          "id": "N7-encounter-9584-9680",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        }
+      ],
+      "E": []
+    },
+    {
+      "level": 8,
+      "source": "candidate",
+      "start": 56,
+      "end": 11544,
+      "zones": [
+        {
+          "x0": 0,
+          "x1": 1920,
+          "t": "vault",
+          "label": "LAS PUERTAS DEL SANTUARIO",
+          "lesson": "Atráelo sobre el sello y salta su carga. Las columnas te protegen.",
+          "part": 1,
+          "parts": 6,
+          "transition": false
+        },
+        {
+          "x0": 1920,
+          "x1": 1968,
+          "t": "vault",
+          "label": "LAS PUERTAS DEL SANTUARIO",
+          "lesson": "",
+          "part": 1,
+          "parts": 6,
+          "transition": true
+        },
+        {
+          "x0": 1968,
+          "x1": 4016,
+          "t": "heart",
+          "label": "LA FORJA DE LAS MEMORIAS",
+          "lesson": "Lee el orden de las runas. Abajo activa cada pedestal.",
+          "part": 2,
+          "parts": 6,
+          "transition": false
+        },
+        {
+          "x0": 4016,
+          "x1": 4064,
+          "t": "heart",
+          "label": "LA FORJA DE LAS MEMORIAS",
+          "lesson": "",
+          "part": 2,
+          "parts": 6,
+          "transition": true
+        },
+        {
+          "x0": 4064,
+          "x1": 6240,
+          "t": "sewer",
+          "label": "EL ACUEDUCTO DE LA SANGRE",
+          "lesson": "Abajo gira los espejos. Conecta la lámpara con el receptor.",
+          "part": 3,
+          "parts": 6,
+          "transition": false
+        },
+        {
+          "x0": 6240,
+          "x1": 6288,
+          "t": "sewer",
+          "label": "EL ACUEDUCTO DE LA SANGRE",
+          "lesson": "",
+          "part": 3,
+          "parts": 6,
+          "transition": true
+        },
+        {
+          "x0": 6288,
+          "x1": 8592,
+          "t": "armory",
+          "label": "LA GUARDIA DEL CREPÚSCULO",
+          "lesson": "Abajo toma el contrapeso: caminarás más lento. Usa los apoyos hasta el hueco.",
+          "part": 4,
+          "parts": 6,
+          "transition": false
+        },
+        {
+          "x0": 8592,
+          "x1": 8640,
+          "t": "armory",
+          "label": "LA GUARDIA DEL CREPÚSCULO",
+          "lesson": "",
+          "part": 4,
+          "parts": 6,
+          "transition": true
+        },
+        {
+          "x0": 8640,
+          "x1": 11072,
+          "t": "heart",
+          "label": "LOS TRES JURAMENTOS",
+          "lesson": "Lee el orden de las runas. Abajo activa cada pedestal.",
+          "part": 5,
+          "parts": 6,
+          "transition": false
+        },
+        {
+          "x0": 11072,
+          "x1": 11392,
+          "t": "heart",
+          "label": "EL CORAZÓN DEL BARÓN",
+          "lesson": "Dos niveles de refugio. Salta sobre el núcleo cuando se abra.",
+          "part": 6,
+          "parts": 6,
+          "transition": false
+        },
+        {
+          "x0": 11392,
+          "x1": 11616,
+          "t": "vault",
+          "label": "EL AMANECER LIBRE",
+          "lesson": "El corazón ya no late. Recoge el tesoro y sal del castillo.",
+          "part": 6,
+          "parts": 6,
+          "transition": false
+        }
+      ],
+      "A": [],
+      "B": [
+        {
+          "id": "N8-trial-1-1",
+          "trialId": "1-1",
+          "kind": "charge",
+          "x0": 192,
+          "x1": 656
+        },
+        {
+          "id": "N8-trial-1-2",
+          "trialId": "1-2",
+          "kind": "timed",
+          "x0": 1312,
+          "x1": 1776
+        },
+        {
+          "id": "N8-trial-2-1",
+          "trialId": "2-1",
+          "kind": "sequence",
+          "x0": 2160,
+          "x1": 2624
+        },
+        {
+          "id": "N8-trial-2-2",
+          "trialId": "2-2",
+          "kind": "weight",
+          "x0": 3408,
+          "x1": 3872
+        },
+        {
+          "id": "N8-trial-3-1",
+          "trialId": "3-1",
+          "kind": "mirror",
+          "x0": 4256,
+          "x1": 4720
+        },
+        {
+          "id": "N8-trial-3-2",
+          "trialId": "3-2",
+          "kind": "timed",
+          "x0": 5632,
+          "x1": 6096
+        },
+        {
+          "id": "N8-trial-4-1",
+          "trialId": "4-1",
+          "kind": "weight",
+          "x0": 6480,
+          "x1": 6944
+        },
+        {
+          "id": "N8-trial-4-2",
+          "trialId": "4-2",
+          "kind": "charge",
+          "x0": 7984,
+          "x1": 8448
+        },
+        {
+          "id": "N8-trial-5-1",
+          "trialId": "5-1",
+          "kind": "sequence",
+          "x0": 8832,
+          "x1": 9296
+        },
+        {
+          "id": "N8-trial-5-2",
+          "trialId": "5-2",
+          "kind": "mirror",
+          "x0": 10464,
+          "x1": 10928
+        }
+      ],
+      "C": [
+        {
+          "x0": 752,
+          "x1": 960,
+          "anchors": [
+            {
+              "column": 47,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 48,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 49,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 50,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 51,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 52,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 53,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 54,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 55,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 56,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 57,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 58,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 59,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N8-transit-47-60",
+          "observeX0": 736,
+          "observeX1": 976,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 2720,
+          "x1": 2928,
+          "anchors": [
+            {
+              "column": 170,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 171,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 172,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 173,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 174,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 175,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 176,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 177,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 178,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 179,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 180,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 181,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 182,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N8-transit-170-183",
+          "observeX0": 2704,
+          "observeX1": 2944,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 4816,
+          "x1": 5024,
+          "anchors": [
+            {
+              "column": 301,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 302,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 303,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 304,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 305,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 306,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 307,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 308,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 309,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 310,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 311,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 312,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 313,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N8-transit-301-314",
+          "observeX0": 4800,
+          "observeX1": 5040,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 7040,
+          "x1": 7248,
+          "anchors": [
+            {
+              "column": 440,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 441,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 442,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 443,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 444,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 445,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 446,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 447,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 448,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 449,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 450,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 451,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 452,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N8-transit-440-453",
+          "observeX0": 7024,
+          "observeX1": 7264,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        },
+        {
+          "x0": 9392,
+          "x1": 9600,
+          "anchors": [
+            {
+              "column": 587,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 588,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 589,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 590,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 591,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 592,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 593,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 594,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 595,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 596,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 597,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 598,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            },
+            {
+              "column": 599,
+              "harmful": true,
+              "voidFloor": true,
+              "bodyBlocked": false
+            }
+          ],
+          "id": "N8-transit-587-600",
+          "observeX0": 9376,
+          "observeX1": 9616,
+          "qualified": false,
+          "qualification": "Pending actual crossing and fixed neutral-horizontal counterfactual."
+        }
+      ],
+      "D": [
+        {
+          "x0": 676,
+          "x1": 752,
+          "anchors": [
+            {
+              "x": 724,
+              "kind": "f",
+              "id": "ent-2"
+            }
+          ],
+          "id": "N8-encounter-676-752",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 960,
+          "x1": 1024,
+          "anchors": [
+            {
+              "x": 976,
+              "kind": "moth",
+              "id": "foe-0"
+            }
+          ],
+          "id": "N8-encounter-960-1024",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 1202,
+          "x1": 1298,
+          "anchors": [
+            {
+              "x": 1250,
+              "kind": "w",
+              "id": "ent-3"
+            }
+          ],
+          "id": "N8-encounter-1202-1298",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 2644,
+          "x1": 2720,
+          "anchors": [
+            {
+              "x": 2692,
+              "kind": "f",
+              "id": "ent-4"
+            }
+          ],
+          "id": "N8-encounter-2644-2720",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 2928,
+          "x1": 2992,
+          "anchors": [
+            {
+              "x": 2944,
+              "kind": "moth",
+              "id": "foe-1"
+            }
+          ],
+          "id": "N8-encounter-2928-2992",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 3170,
+          "x1": 3266,
+          "anchors": [
+            {
+              "x": 3218,
+              "kind": "w",
+              "id": "ent-5"
+            }
+          ],
+          "id": "N8-encounter-3170-3266",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 4740,
+          "x1": 4816,
+          "anchors": [
+            {
+              "x": 4788,
+              "kind": "f",
+              "id": "ent-7"
+            }
+          ],
+          "id": "N8-encounter-4740-4816",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 5024,
+          "x1": 5088,
+          "anchors": [
+            {
+              "x": 5040,
+              "kind": "moth",
+              "id": "foe-2"
+            }
+          ],
+          "id": "N8-encounter-5024-5088",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 5105,
+          "x1": 5201,
+          "anchors": [
+            {
+              "x": 5153,
+              "kind": "Y",
+              "id": "ent-8"
+            }
+          ],
+          "id": "N8-encounter-5105-5201",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 5266,
+          "x1": 5362,
+          "anchors": [
+            {
+              "x": 5314,
+              "kind": "w",
+              "id": "ent-9"
+            }
+          ],
+          "id": "N8-encounter-5266-5362",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 5520,
+          "x1": 5616,
+          "anchors": [
+            {
+              "x": 5568,
+              "kind": "vent",
+              "id": "hazard-1"
+            }
+          ],
+          "id": "N8-encounter-5520-5616",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 6964,
+          "x1": 7040,
+          "anchors": [
+            {
+              "x": 7012,
+              "kind": "f",
+              "id": "ent-11"
+            }
+          ],
+          "id": "N8-encounter-6964-7040",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 7248,
+          "x1": 7312,
+          "anchors": [
+            {
+              "x": 7264,
+              "kind": "moth",
+              "id": "foe-3"
+            }
+          ],
+          "id": "N8-encounter-7248-7312",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 7329,
+          "x1": 7425,
+          "anchors": [
+            {
+              "x": 7377,
+              "kind": "Y",
+              "id": "ent-12"
+            }
+          ],
+          "id": "N8-encounter-7329-7425",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 7490,
+          "x1": 7586,
+          "anchors": [
+            {
+              "x": 7538,
+              "kind": "w",
+              "id": "ent-13"
+            }
+          ],
+          "id": "N8-encounter-7490-7586",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 7744,
+          "x1": 7840,
+          "anchors": [
+            {
+              "x": 7792,
+              "kind": "vent",
+              "id": "hazard-2"
+            }
+          ],
+          "id": "N8-encounter-7744-7840",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 9316,
+          "x1": 9392,
+          "anchors": [
+            {
+              "x": 9364,
+              "kind": "f",
+              "id": "ent-16"
+            }
+          ],
+          "id": "N8-encounter-9316-9392",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 9600,
+          "x1": 9664,
+          "anchors": [
+            {
+              "x": 9616,
+              "kind": "moth",
+              "id": "foe-4"
+            }
+          ],
+          "id": "N8-encounter-9600-9664",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 9681,
+          "x1": 9777,
+          "anchors": [
+            {
+              "x": 9729,
+              "kind": "Y",
+              "id": "ent-17"
+            }
+          ],
+          "id": "N8-encounter-9681-9777",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 9842,
+          "x1": 9938,
+          "anchors": [
+            {
+              "x": 9890,
+              "kind": "w",
+              "id": "ent-18"
+            }
+          ],
+          "id": "N8-encounter-9842-9938",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        },
+        {
+          "x0": 10096,
+          "x1": 10192,
+          "anchors": [
+            {
+              "x": 10144,
+              "kind": "vent",
+              "id": "hazard-3"
+            }
+          ],
+          "id": "N8-encounter-10096-10192",
+          "qualified": false,
+          "qualification": "Pending observed response and fixed neutral-horizontal counterfactual; no automatic enemy count."
+        }
+      ],
+      "E": [
+        {
+          "id": "N8-boss",
+          "kind": "heart",
+          "x0": 11072,
+          "x1": 11392
+        }
+      ]
+    }
+  ]
+}

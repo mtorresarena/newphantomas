@@ -1,0 +1,23 @@
+{
+  "sourceHash": "8eef8b28ed89122e03c5eb04ebed91d5923fe87b51b6b12dd6f999699e35c65b",
+  "registryHash": "b06a8b64c6a2fd92fa29669d6acf66eba01ef91abe30b9da3128c85ab9968968",
+  "levels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "checks": {
+    "originalFirstFourLevelDefinitionsIdentical": true,
+    "score1Levels7and8Identical": true,
+    "originalPhysicsConfigIdentical": true,
+    "campaignMechanicsTextIdentical": true,
+    "inputPlayerEnemyBossLoopAndTailExceptReadOnlyPartLessonIdentical": true
+  },
+  "manualDiffScope": "Original N1–N4 and score1 N7–N8 definitions match. New N5/N6 boundaries registered independently from round4 maps before reading routes. Physics, campaign mechanics and input/player/enemy/boss loop compared as exact text. Only the read-only partLesson line is excluded from the tail comparison after inspecting the complete diff.",
+  "scope": "Authorizes this exact source hash for unchanged preregistered boundaries; no new units, thresholds or policy-dependent delimitations."
+}

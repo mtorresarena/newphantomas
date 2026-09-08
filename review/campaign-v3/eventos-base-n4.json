@@ -1,0 +1,671 @@
+{
+  "level": 4,
+  "complete": true,
+  "witness": "review/campaign-v3/ruta-base-v3-n4.json",
+  "scope": "Clean baseline replay. Mutually exclusive frame categories are mechanical observations, not meaningful activity or human decisions.",
+  "counts": {
+    "frames": 6636,
+    "charging": 168,
+    "movingWithoutCharge": 6339,
+    "stillWithoutCharge": 129,
+    "bossActive": 771,
+    "damageEvents": 0,
+    "jumps": 64
+  },
+  "events": [
+    {
+      "frame": 41,
+      "kind": "jump",
+      "x": 94,
+      "y": 136.73,
+      "energy": 99.02
+    },
+    {
+      "frame": 161,
+      "kind": "jump",
+      "x": 274,
+      "y": 136.73,
+      "energy": 97.32
+    },
+    {
+      "frame": 271,
+      "kind": "jump",
+      "x": 430.62,
+      "y": 136.73,
+      "energy": 95.72
+    },
+    {
+      "frame": 439,
+      "kind": "key",
+      "x": 682.62,
+      "y": 142,
+      "energy": 94.18
+    },
+    {
+      "frame": 458,
+      "kind": "door",
+      "x": 711.12,
+      "y": 142,
+      "energy": 94
+    },
+    {
+      "frame": 461,
+      "kind": "jump",
+      "x": 715.62,
+      "y": 136.73,
+      "energy": 93.37
+    },
+    {
+      "frame": 621,
+      "kind": "jump",
+      "x": 856.69,
+      "y": 136.73,
+      "energy": 91.31
+    },
+    {
+      "frame": 711,
+      "kind": "jump",
+      "x": 977.02,
+      "y": 136.73,
+      "energy": 89.88
+    },
+    {
+      "frame": 744,
+      "kind": "jump",
+      "x": 1026.52,
+      "y": 104.73,
+      "energy": 88.98
+    },
+    {
+      "frame": 851,
+      "kind": "jump",
+      "x": 1176.9,
+      "y": 136.73,
+      "energy": 87.4
+    },
+    {
+      "frame": 901,
+      "kind": "jump",
+      "x": 1176.24,
+      "y": 136.73,
+      "energy": 86.34
+    },
+    {
+      "frame": 1031,
+      "kind": "jump",
+      "x": 1332.31,
+      "y": 136.73,
+      "energy": 84.55
+    },
+    {
+      "frame": 1141,
+      "kind": "jump",
+      "x": 1419.42,
+      "y": 136.73,
+      "energy": 99.66
+    },
+    {
+      "frame": 1331,
+      "kind": "jump",
+      "x": 1665.62,
+      "y": 136.73,
+      "energy": 97.7
+    },
+    {
+      "frame": 1421,
+      "kind": "jump",
+      "x": 1789.85,
+      "y": 136.73,
+      "energy": 96.28
+    },
+    {
+      "frame": 1501,
+      "kind": "jump",
+      "x": 1893,
+      "y": 136.73,
+      "energy": 94.95
+    },
+    {
+      "frame": 1647,
+      "kind": "key",
+      "x": 2075.23,
+      "y": 142,
+      "energy": 93.61
+    },
+    {
+      "frame": 1708,
+      "kind": "door",
+      "x": 2166.73,
+      "y": 142,
+      "energy": 93.05
+    },
+    {
+      "frame": 1901,
+      "kind": "jump",
+      "x": 2310.08,
+      "y": 136.73,
+      "energy": 90.68
+    },
+    {
+      "frame": 2371,
+      "kind": "jump",
+      "x": 2773.11,
+      "y": 136.73,
+      "energy": 85.77
+    },
+    {
+      "frame": 2501,
+      "kind": "jump",
+      "x": 2870.91,
+      "y": 136.73,
+      "energy": 90.91
+    },
+    {
+      "frame": 2701,
+      "kind": "jump",
+      "x": 3080.44,
+      "y": 136.73,
+      "energy": 98.27
+    },
+    {
+      "frame": 2811,
+      "kind": "jump",
+      "x": 3244.91,
+      "y": 136.73,
+      "energy": 96.66
+    },
+    {
+      "frame": 2961,
+      "kind": "jump",
+      "x": 3400.52,
+      "y": 136.73,
+      "energy": 94.69
+    },
+    {
+      "frame": 3002,
+      "kind": "jump",
+      "x": 3462.02,
+      "y": 136.73,
+      "energy": 93.71
+    },
+    {
+      "frame": 3051,
+      "kind": "jump",
+      "x": 3526.32,
+      "y": 136.73,
+      "energy": 92.66
+    },
+    {
+      "frame": 3101,
+      "kind": "jump",
+      "x": 3601.32,
+      "y": 136.73,
+      "energy": 91.61
+    },
+    {
+      "frame": 3161,
+      "kind": "jump",
+      "x": 3691.32,
+      "y": 136.73,
+      "energy": 90.46
+    },
+    {
+      "frame": 3202,
+      "kind": "jump",
+      "x": 3752.82,
+      "y": 136.73,
+      "energy": 89.48
+    },
+    {
+      "frame": 3241,
+      "kind": "jump",
+      "x": 3797.37,
+      "y": 136.73,
+      "energy": 88.52
+    },
+    {
+      "frame": 3291,
+      "kind": "jump",
+      "x": 3872.1,
+      "y": 136.73,
+      "energy": 87.46
+    },
+    {
+      "frame": 3332,
+      "kind": "jump",
+      "x": 3912.73,
+      "y": 136.73,
+      "energy": 86.49
+    },
+    {
+      "frame": 3381,
+      "kind": "jump",
+      "x": 3972.46,
+      "y": 136.73,
+      "energy": 85.44
+    },
+    {
+      "frame": 3422,
+      "kind": "jump",
+      "x": 4033.96,
+      "y": 136.73,
+      "energy": 84.46
+    },
+    {
+      "frame": 3461,
+      "kind": "jump",
+      "x": 4092.46,
+      "y": 136.73,
+      "energy": 83.51
+    },
+    {
+      "frame": 3502,
+      "kind": "jump",
+      "x": 4153.96,
+      "y": 136.73,
+      "energy": 82.53
+    },
+    {
+      "frame": 3541,
+      "kind": "jump",
+      "x": 4212.46,
+      "y": 136.73,
+      "energy": 81.57
+    },
+    {
+      "frame": 3582,
+      "kind": "jump",
+      "x": 4273.96,
+      "y": 136.73,
+      "energy": 80.6
+    },
+    {
+      "frame": 3621,
+      "kind": "jump",
+      "x": 4332.46,
+      "y": 136.73,
+      "energy": 79.64
+    },
+    {
+      "frame": 3661,
+      "kind": "jump",
+      "x": 4392.11,
+      "y": 104.73,
+      "energy": 78.67
+    },
+    {
+      "frame": 3781,
+      "kind": "jump",
+      "x": 4259.78,
+      "y": 57.42,
+      "energy": 76.97
+    },
+    {
+      "frame": 3821,
+      "kind": "jump",
+      "x": 4229.78,
+      "y": 56.73,
+      "energy": 76.01
+    },
+    {
+      "frame": 3911,
+      "kind": "jump",
+      "x": 4145.86,
+      "y": 58.11,
+      "energy": 74.58
+    },
+    {
+      "frame": 4011,
+      "kind": "jump",
+      "x": 4034.78,
+      "y": 57.42,
+      "energy": 73.06
+    },
+    {
+      "frame": 4061,
+      "kind": "jump",
+      "x": 3966.9,
+      "y": 56.73,
+      "energy": 72.01
+    },
+    {
+      "frame": 4093,
+      "kind": "jump",
+      "x": 3965.26,
+      "y": 56.73,
+      "energy": 71.11
+    },
+    {
+      "frame": 4125,
+      "kind": "jump",
+      "x": 3930.02,
+      "y": 56.73,
+      "energy": 70.22
+    },
+    {
+      "frame": 4211,
+      "kind": "jump",
+      "x": 3809.7,
+      "y": 58.11,
+      "energy": 68.83
+    },
+    {
+      "frame": 4271,
+      "kind": "jump",
+      "x": 3720.05,
+      "y": 56.73,
+      "energy": 67.68
+    },
+    {
+      "frame": 4271,
+      "kind": "key",
+      "x": 3720.05,
+      "y": 56.73,
+      "energy": 67.68
+    },
+    {
+      "frame": 4341,
+      "kind": "jump",
+      "x": 3798.9,
+      "y": 136.73,
+      "energy": 66.44
+    },
+    {
+      "frame": 4421,
+      "kind": "jump",
+      "x": 3911.79,
+      "y": 136.73,
+      "energy": 65.11
+    },
+    {
+      "frame": 4571,
+      "kind": "jump",
+      "x": 4136.79,
+      "y": 136.73,
+      "energy": 63.13
+    },
+    {
+      "frame": 4612,
+      "kind": "jump",
+      "x": 4168.29,
+      "y": 136.73,
+      "energy": 62.15
+    },
+    {
+      "frame": 4711,
+      "kind": "jump",
+      "x": 4316.79,
+      "y": 136.73,
+      "energy": 60.65
+    },
+    {
+      "frame": 4809,
+      "kind": "door",
+      "x": 4454.89,
+      "y": 142,
+      "energy": 59.75
+    },
+    {
+      "frame": 4811,
+      "kind": "jump",
+      "x": 4457.89,
+      "y": 136.73,
+      "energy": 59.13
+    },
+    {
+      "frame": 4881,
+      "kind": "jump",
+      "x": 4562.89,
+      "y": 136.73,
+      "energy": 57.89
+    },
+    {
+      "frame": 5021,
+      "kind": "jump",
+      "x": 4695.03,
+      "y": 136.73,
+      "energy": 56.01
+    },
+    {
+      "frame": 5191,
+      "kind": "jump",
+      "x": 4851.75,
+      "y": 136.73,
+      "energy": 53.85
+    },
+    {
+      "frame": 5361,
+      "kind": "jump",
+      "x": 4994.99,
+      "y": 136.73,
+      "energy": 51.69
+    },
+    {
+      "frame": 5511,
+      "kind": "jump",
+      "x": 5211.6,
+      "y": 136.73,
+      "energy": 49.71
+    },
+    {
+      "frame": 5552,
+      "kind": "jump",
+      "x": 5273.1,
+      "y": 136.73,
+      "energy": 83.74
+    },
+    {
+      "frame": 5611,
+      "kind": "jump",
+      "x": 5361.6,
+      "y": 136.73,
+      "energy": 82.6
+    },
+    {
+      "frame": 5652,
+      "kind": "jump",
+      "x": 5379.31,
+      "y": 136.73,
+      "energy": 90.69
+    },
+    {
+      "frame": 5759,
+      "kind": "boss-start",
+      "x": 5480.86,
+      "y": 142,
+      "energy": 99.41
+    },
+    {
+      "frame": 5759,
+      "kind": "boss-state",
+      "x": 5480.86,
+      "y": 142,
+      "energy": 99.41,
+      "state": "intro",
+      "timer": 89
+    },
+    {
+      "frame": 5848,
+      "kind": "boss-state",
+      "x": 5562.83,
+      "y": 142,
+      "energy": 98.6,
+      "state": "aim",
+      "timer": 50
+    },
+    {
+      "frame": 5898,
+      "kind": "boss-state",
+      "x": 5548.21,
+      "y": 142,
+      "energy": 98.14,
+      "state": "fire",
+      "timer": 0
+    },
+    {
+      "frame": 5944,
+      "kind": "boss-state",
+      "x": 5554.48,
+      "y": 142,
+      "energy": 97.72,
+      "state": "zap",
+      "timer": 45
+    },
+    {
+      "frame": 5944,
+      "kind": "boss-hit",
+      "x": 5554.48,
+      "y": 142,
+      "energy": 97.72,
+      "hp": 2,
+      "charged": [
+        0
+      ]
+    },
+    {
+      "frame": 5951,
+      "kind": "jump",
+      "x": 5561.73,
+      "y": 136.73,
+      "energy": 97.05
+    },
+    {
+      "frame": 5989,
+      "kind": "boss-state",
+      "x": 5513.48,
+      "y": 94,
+      "energy": 96.7,
+      "state": "cooldown",
+      "timer": 60
+    },
+    {
+      "frame": 6049,
+      "kind": "boss-state",
+      "x": 5485.32,
+      "y": 94,
+      "energy": 96.15,
+      "state": "aim",
+      "timer": 50
+    },
+    {
+      "frame": 6099,
+      "kind": "boss-state",
+      "x": 5490.19,
+      "y": 94,
+      "energy": 95.7,
+      "state": "fire",
+      "timer": 0
+    },
+    {
+      "frame": 6161,
+      "kind": "boss-state",
+      "x": 5488.74,
+      "y": 94,
+      "energy": 95.13,
+      "state": "zap",
+      "timer": 45
+    },
+    {
+      "frame": 6161,
+      "kind": "boss-hit",
+      "x": 5488.74,
+      "y": 94,
+      "energy": 95.13,
+      "hp": 1,
+      "charged": [
+        1
+      ]
+    },
+    {
+      "frame": 6206,
+      "kind": "boss-state",
+      "x": 5554.95,
+      "y": 94.69,
+      "energy": 94.72,
+      "state": "cooldown",
+      "timer": 60
+    },
+    {
+      "frame": 6225,
+      "kind": "jump",
+      "x": 5583.45,
+      "y": 136.73,
+      "energy": 93.94
+    },
+    {
+      "frame": 6266,
+      "kind": "boss-state",
+      "x": 5631.95,
+      "y": 118.69,
+      "energy": 93.57,
+      "state": "wave",
+      "timer": 80
+    },
+    {
+      "frame": 6272,
+      "kind": "jump",
+      "x": 5632.12,
+      "y": 136.73,
+      "energy": 92.91
+    },
+    {
+      "frame": 6321,
+      "kind": "jump",
+      "x": 5671.14,
+      "y": 136.73,
+      "energy": 91.86
+    },
+    {
+      "frame": 6346,
+      "kind": "boss-state",
+      "x": 5708.64,
+      "y": 94,
+      "energy": 91.63,
+      "state": "aim",
+      "timer": 50
+    },
+    {
+      "frame": 6396,
+      "kind": "boss-state",
+      "x": 5717.42,
+      "y": 94,
+      "energy": 91.17,
+      "state": "fire",
+      "timer": 0
+    },
+    {
+      "frame": 6410,
+      "kind": "boss-state",
+      "x": 5729.92,
+      "y": 94,
+      "energy": 91.05,
+      "state": "defeat",
+      "timer": 120
+    },
+    {
+      "frame": 6410,
+      "kind": "boss-hit",
+      "x": 5729.92,
+      "y": 94,
+      "energy": 91.05,
+      "hp": 0,
+      "charged": [
+        2
+      ]
+    },
+    {
+      "frame": 6530,
+      "kind": "boss-defeated",
+      "x": 5730.21,
+      "y": 94,
+      "energy": 89.95
+    },
+    {
+      "frame": 6581,
+      "kind": "jump",
+      "x": 5796.79,
+      "y": 136.73,
+      "energy": 88.88
+    }
+  ]
+}

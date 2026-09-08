@@ -1,0 +1,556 @@
+{
+  "manifestHash": "6eae50c0d168e8e3cf13c3a975ef78395d2572384c80fcbfbc0d19586fcc0bae",
+  "sourceHash": "5963bcc02f71090a958df9737eca2b8fd5a96ed0a615f4a9dcbe4be4dc04ef21",
+  "classifierHash": "c1567df0fcf9e64c39fe098c00582331a47361cbf234ce660f6e9c144c782906",
+  "processed": 24,
+  "expected": 24,
+  "complete": true,
+  "missing": [],
+  "results": [
+    {
+      "level": 1,
+      "policy": "balanced",
+      "frames": 3847,
+      "vector": {
+        "A": 4,
+        "B": 0,
+        "C": 2,
+        "D": 9,
+        "E": 0
+      },
+      "totalLowerBound": 15,
+      "totalUpperBound": 16,
+      "unresolved": [
+        "N1-transit-169-172"
+      ],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 385,
+        "coalescedChunks": 226,
+        "fullEndpointIdentical": true,
+        "frames": 3847
+      }
+    },
+    {
+      "level": 2,
+      "policy": "balanced",
+      "frames": 4053,
+      "vector": {
+        "A": 6,
+        "B": 0,
+        "C": 9,
+        "D": 10,
+        "E": 0
+      },
+      "totalLowerBound": 25,
+      "totalUpperBound": 25,
+      "unresolved": [],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 406,
+        "coalescedChunks": 167,
+        "fullEndpointIdentical": true,
+        "frames": 4053
+      }
+    },
+    {
+      "level": 3,
+      "policy": "balanced",
+      "frames": 4397,
+      "vector": {
+        "A": 4,
+        "B": 0,
+        "C": 9,
+        "D": 9,
+        "E": 0
+      },
+      "totalLowerBound": 22,
+      "totalUpperBound": 24,
+      "unresolved": [
+        "N3-transit-101-107",
+        "N3-transit-293-295"
+      ],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 440,
+        "coalescedChunks": 215,
+        "fullEndpointIdentical": true,
+        "frames": 4397
+      }
+    },
+    {
+      "level": 4,
+      "policy": "balanced",
+      "frames": 6489,
+      "vector": {
+        "A": 6,
+        "B": 0,
+        "C": 7,
+        "D": 17,
+        "E": 3
+      },
+      "totalLowerBound": 33,
+      "totalUpperBound": 33,
+      "unresolved": [],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 649,
+        "coalescedChunks": 298,
+        "fullEndpointIdentical": true,
+        "frames": 6489
+      }
+    },
+    {
+      "level": 1,
+      "policy": "cautious",
+      "frames": 3946,
+      "vector": {
+        "A": 4,
+        "B": 0,
+        "C": 2,
+        "D": 9,
+        "E": 0
+      },
+      "totalLowerBound": 15,
+      "totalUpperBound": 16,
+      "unresolved": [
+        "N1-transit-169-172"
+      ],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 395,
+        "coalescedChunks": 236,
+        "fullEndpointIdentical": true,
+        "frames": 3946
+      }
+    },
+    {
+      "level": 2,
+      "policy": "cautious",
+      "frames": 3993,
+      "vector": {
+        "A": 6,
+        "B": 0,
+        "C": 8,
+        "D": 11,
+        "E": 0
+      },
+      "totalLowerBound": 25,
+      "totalUpperBound": 25,
+      "unresolved": [],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 400,
+        "coalescedChunks": 166,
+        "fullEndpointIdentical": true,
+        "frames": 3993
+      }
+    },
+    {
+      "level": 3,
+      "policy": "cautious",
+      "frames": 4402,
+      "vector": {
+        "A": 4,
+        "B": 0,
+        "C": 10,
+        "D": 9,
+        "E": 0
+      },
+      "totalLowerBound": 23,
+      "totalUpperBound": 25,
+      "unresolved": [
+        "N3-encounter-3490-3552",
+        "N3-transit-293-295"
+      ],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 441,
+        "coalescedChunks": 227,
+        "fullEndpointIdentical": true,
+        "frames": 4402
+      }
+    },
+    {
+      "level": 4,
+      "policy": "cautious",
+      "frames": 6507,
+      "vector": {
+        "A": 6,
+        "B": 0,
+        "C": 7,
+        "D": 17,
+        "E": 3
+      },
+      "totalLowerBound": 33,
+      "totalUpperBound": 33,
+      "unresolved": [],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 651,
+        "coalescedChunks": 296,
+        "fullEndpointIdentical": true,
+        "frames": 6507
+      }
+    },
+    {
+      "level": 1,
+      "policy": "speed",
+      "frames": 3821,
+      "vector": {
+        "A": 4,
+        "B": 0,
+        "C": 2,
+        "D": 9,
+        "E": 0
+      },
+      "totalLowerBound": 15,
+      "totalUpperBound": 16,
+      "unresolved": [
+        "N1-transit-169-172"
+      ],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 383,
+        "coalescedChunks": 232,
+        "fullEndpointIdentical": true,
+        "frames": 3821
+      }
+    },
+    {
+      "level": 2,
+      "policy": "speed",
+      "frames": 4071,
+      "vector": {
+        "A": 6,
+        "B": 0,
+        "C": 8,
+        "D": 7,
+        "E": 0
+      },
+      "totalLowerBound": 21,
+      "totalUpperBound": 22,
+      "unresolved": [
+        "N2-transit-291-294"
+      ],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 408,
+        "coalescedChunks": 130,
+        "fullEndpointIdentical": true,
+        "frames": 4071
+      }
+    },
+    {
+      "level": 3,
+      "policy": "speed",
+      "frames": 4085,
+      "vector": {
+        "A": 4,
+        "B": 0,
+        "C": 10,
+        "D": 9,
+        "E": 0
+      },
+      "totalLowerBound": 23,
+      "totalUpperBound": 24,
+      "unresolved": [
+        "N3-transit-293-295"
+      ],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 409,
+        "coalescedChunks": 202,
+        "fullEndpointIdentical": true,
+        "frames": 4085
+      }
+    },
+    {
+      "level": 4,
+      "policy": "speed",
+      "frames": 6807,
+      "vector": {
+        "A": 6,
+        "B": 0,
+        "C": 7,
+        "D": 18,
+        "E": 3
+      },
+      "totalLowerBound": 34,
+      "totalUpperBound": 34,
+      "unresolved": [],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 681,
+        "coalescedChunks": 309,
+        "fullEndpointIdentical": true,
+        "frames": 6807
+      }
+    },
+    {
+      "level": 5,
+      "policy": "balanced",
+      "frames": 10939,
+      "vector": {
+        "A": 2,
+        "B": 10,
+        "C": 7,
+        "D": 6,
+        "E": 0
+      },
+      "totalLowerBound": 25,
+      "totalUpperBound": 25,
+      "unresolved": [],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 1116,
+        "coalescedChunks": 430,
+        "fullEndpointIdentical": true,
+        "frames": 10939
+      }
+    },
+    {
+      "level": 5,
+      "policy": "cautious",
+      "frames": 11205,
+      "vector": {
+        "A": 2,
+        "B": 10,
+        "C": 7,
+        "D": 5,
+        "E": 0
+      },
+      "totalLowerBound": 24,
+      "totalUpperBound": 24,
+      "unresolved": [],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 1134,
+        "coalescedChunks": 322,
+        "fullEndpointIdentical": true,
+        "frames": 11205
+      }
+    },
+    {
+      "level": 5,
+      "policy": "speed",
+      "frames": 10875,
+      "vector": {
+        "A": 2,
+        "B": 10,
+        "C": 7,
+        "D": 5,
+        "E": 0
+      },
+      "totalLowerBound": 24,
+      "totalUpperBound": 24,
+      "unresolved": [],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 1114,
+        "coalescedChunks": 415,
+        "fullEndpointIdentical": true,
+        "frames": 10875
+      }
+    },
+    {
+      "level": 6,
+      "policy": "balanced",
+      "frames": 11346,
+      "vector": {
+        "A": 4,
+        "B": 10,
+        "C": 6,
+        "D": 1,
+        "E": 0
+      },
+      "totalLowerBound": 21,
+      "totalUpperBound": 21,
+      "unresolved": [],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 1191,
+        "coalescedChunks": 434,
+        "fullEndpointIdentical": true,
+        "frames": 11346
+      }
+    },
+    {
+      "level": 6,
+      "policy": "cautious",
+      "frames": 11346,
+      "vector": {
+        "A": 4,
+        "B": 10,
+        "C": 6,
+        "D": 1,
+        "E": 0
+      },
+      "totalLowerBound": 21,
+      "totalUpperBound": 21,
+      "unresolved": [],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 1191,
+        "coalescedChunks": 435,
+        "fullEndpointIdentical": true,
+        "frames": 11346
+      }
+    },
+    {
+      "level": 6,
+      "policy": "speed",
+      "frames": 11346,
+      "vector": {
+        "A": 4,
+        "B": 10,
+        "C": 6,
+        "D": 0,
+        "E": 0
+      },
+      "totalLowerBound": 20,
+      "totalUpperBound": 20,
+      "unresolved": [],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 1191,
+        "coalescedChunks": 431,
+        "fullEndpointIdentical": true,
+        "frames": 11346
+      }
+    },
+    {
+      "level": 7,
+      "policy": "balanced",
+      "frames": 9345,
+      "vector": {
+        "A": 0,
+        "B": 10,
+        "C": 9,
+        "D": 10,
+        "E": 0
+      },
+      "totalLowerBound": 29,
+      "totalUpperBound": 29,
+      "unresolved": [],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 968,
+        "coalescedChunks": 336,
+        "fullEndpointIdentical": true,
+        "frames": 9345
+      }
+    },
+    {
+      "level": 7,
+      "policy": "cautious",
+      "frames": 9344,
+      "vector": {
+        "A": 0,
+        "B": 10,
+        "C": 10,
+        "D": 11,
+        "E": 0
+      },
+      "totalLowerBound": 31,
+      "totalUpperBound": 31,
+      "unresolved": [],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 968,
+        "coalescedChunks": 339,
+        "fullEndpointIdentical": true,
+        "frames": 9344
+      }
+    },
+    {
+      "level": 7,
+      "policy": "speed",
+      "frames": 9378,
+      "vector": {
+        "A": 0,
+        "B": 10,
+        "C": 10,
+        "D": 10,
+        "E": 0
+      },
+      "totalLowerBound": 30,
+      "totalUpperBound": 30,
+      "unresolved": [],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 971,
+        "coalescedChunks": 344,
+        "fullEndpointIdentical": true,
+        "frames": 9378
+      }
+    },
+    {
+      "level": 8,
+      "policy": "balanced",
+      "frames": 12491,
+      "vector": {
+        "A": 0,
+        "B": 10,
+        "C": 5,
+        "D": 11,
+        "E": 6
+      },
+      "totalLowerBound": 32,
+      "totalUpperBound": 32,
+      "unresolved": [],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 2004,
+        "coalescedChunks": 487,
+        "fullEndpointIdentical": true,
+        "frames": 12491
+      }
+    },
+    {
+      "level": 8,
+      "policy": "cautious",
+      "frames": 12690,
+      "vector": {
+        "A": 0,
+        "B": 10,
+        "C": 5,
+        "D": 12,
+        "E": 6
+      },
+      "totalLowerBound": 33,
+      "totalUpperBound": 33,
+      "unresolved": [],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 2058,
+        "coalescedChunks": 473,
+        "fullEndpointIdentical": true,
+        "frames": 12690
+      }
+    },
+    {
+      "level": 8,
+      "policy": "speed",
+      "frames": 12256,
+      "vector": {
+        "A": 0,
+        "B": 10,
+        "C": 5,
+        "D": 8,
+        "E": 6
+      },
+      "totalLowerBound": 29,
+      "totalUpperBound": 29,
+      "unresolved": [],
+      "semanticActiveFrames": null,
+      "normalization": {
+        "originalChunks": 2184,
+        "coalescedChunks": 437,
+        "fullEndpointIdentical": true,
+        "frames": 12256
+      }
+    }
+  ],
+  "scope": "Frozen complete witnesses only; this batch does not erase earlier failed searches and does not assign a grade. Context frames are not human activity. Entered-but-uncompleted candidates are unresolved, not silently excluded from upper bounds."
+}

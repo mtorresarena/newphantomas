@@ -1,0 +1,79 @@
+REPLAY 1 entrance
+REPLAY 1-1 rune 1
+REPLAY 1-1 rune 2
+REPLAY 1-1 gate
+REPLAY 1 moving bridge
+REPLAY 1 crumble bridge
+REPLAY 1 bank
+REPLAY 1 traversal end
+REPLAY 1-2 rune 2
+REPLAY 1-2 rune 1
+REPLAY 1-2 rune 3
+REPLAY 1-2 gate
+REPLAY 1 end
+REPLAY 2 entrance
+REPLAY 2-1 pickup
+REPLAY 2-1 deposit
+REPLAY 2-1 gate
+REPLAY 2 lift bank
+REPLAY 2 board lift
+REPLAY 2 upper balcony
+REPLAY 2 descending crumble
+REPLAY 2 bank
+REPLAY 2 traversal end
+REPLAY maintenance lift
+REPLAY gallery key 2
+REPLAY maintenance gate 2
+REPLAY 2-2 rune 1
+REPLAY 2-2 rune 2
+REPLAY 2-2 rune 3
+REPLAY 2-2 gate
+REPLAY 2 end
+REPLAY 3 entrance
+REPLAY 3-1 rune 1
+REPLAY 3-1 rune 2
+REPLAY 3-1 rune 3
+REPLAY 3-1 gate
+REPLAY 3 moving bridge
+REPLAY 3 crumble bridge
+REPLAY 3 bank
+REPLAY 3 traversal end
+REPLAY 3-2 pickup
+REPLAY 3-2 deposit
+REPLAY 3-2 gate
+REPLAY 3 end
+REPLAY 4 entrance
+REPLAY 4-1 rune 4
+REPLAY 4-1 rune 2
+REPLAY 4-1 rune 1
+REPLAY 4-1 rune 3
+REPLAY 4-1 gate
+REPLAY 4 lift bank
+REPLAY 4 board lift
+REPLAY 4 upper balcony
+REPLAY 4 descending crumble
+REPLAY 4 bank
+REPLAY 4 traversal end
+REPLAY pendulum gallery ascent
+REPLAY gallery key 4
+REPLAY pendulum fragile crossing
+REPLAY maintenance gate 4
+REPLAY 4-2 rune 2
+PASS deliberate timer expiry 4-2
+C:\Users\mtare\Desktop\cerebro-voz-starter\_tmp\newphantomas-deploy\tools\plan-campaign-route.js:45
+ if(!found){fs.writeFileSync(out,JSON.stringify({protocol:"harmonized-v2",policy,budget:limit,level:level+1,complete:false,stages,commands,failed:t,bestP},null,2));throw Error('FAIL '+t.label+' '+expanded+' '+JSON.stringify(bestP));}
+                                                                                                                                                                    ^
+
+Error: FAIL 4 entrance 1 null
+    at go (C:\Users\mtare\Desktop\cerebro-voz-starter\_tmp\newphantomas-deploy\tools\plan-campaign-route.js:45:171)
+    at Object.<anonymous> (C:\Users\mtare\Desktop\cerebro-voz-starter\_tmp\newphantomas-deploy\tools\plan-campaign-route.js:74:2)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+
+Node.js v22.19.0

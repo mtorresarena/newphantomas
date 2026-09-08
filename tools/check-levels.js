@@ -17,7 +17,7 @@ const noop=()=>{};
 const ctxStub=new Proxy({},{get:(t,k)=>{if(k==='createLinearGradient'||k==='createRadialGradient')return()=>({addColorStop:noop});if(k==='measureText')return()=>({width:0});return noop;},set:()=>true});
 const mkCanvas=()=>({width:0,height:0,style:{},getContext:()=>ctxStub,addEventListener:noop});
 const el=()=>({addEventListener:noop,classList:{add:noop},style:{}});
-const sandbox={console,Math,setInterval:()=>0,clearInterval:noop,setTimeout:()=>0,clearTimeout:noop,matchMedia:()=>({matches:false}),performance:{now:()=>Date.now()},requestAnimationFrame:noop,innerWidth:1280,innerHeight:720,
+const sandbox={console,Math,structuredClone,setInterval:()=>0,clearInterval:noop,setTimeout:()=>0,clearTimeout:noop,matchMedia:()=>({matches:false}),performance:{now:()=>Date.now()},requestAnimationFrame:noop,innerWidth:1280,innerHeight:720,
  addEventListener:noop,navigator:{},localStorage:{getItem:()=>null,setItem:noop},
  document:{getElementById:id=>id==='c'?mkCanvas():el(),createElement:mkCanvas,body:{classList:{add:noop}},hidden:false,addEventListener:noop,documentElement:{}},Proxy};
 sandbox.window=sandbox;
@@ -52,6 +52,10 @@ function checkLevel(i){
  const wanted=api.items.filter(it=>'k$bjS'.includes(it.t)).map(it=>({t:it.t,x:it.x,y:it.y,w:it.w,h:it.h,col:Math.floor((it.x+it.w/2)/TS),row:Math.floor((it.y+it.h/2)/TS)}));
  if(def.boss&&api.boss){api.boss.conductors.forEach((c,idx)=>wanted.push({t:'boss_c',x:c.x,y:c.y,w:c.w,h:c.h,col:Math.floor((c.x+c.w/2)/TS),row:Math.floor((c.y+c.h/2)/TS),id:idx}));}
  const entsSaved=api.ents.slice();api.ents=[]; // sin enemigos: solo geometria (las plataformas moviles siguen)
+ // Campaign logic is verified separately by check-campaign-rules/replays.
+ // This graph deliberately abstracts solved locks to test physical reachability.
+ if(api.campaign){for(const t of api.campaign.trials){for(const n of t.nodes.filter(n=>!['source','receiver','plate'].includes(n.role)))wanted.push({t:'mechanism',x:n.x-6,y:n.y-6,w:12,h:12,col:Math.floor(n.x/16),row:Math.floor(n.y/16)});api.campaignGate(t,true);t.solved=true;}
+  const b=api.campaign.final;if(b){b.defeated=true;for(let r=1;r<10;r++)L.map[r][b.x1/16-1]='.';}}
  const doorsAll=[];for(let r=0;r<ROWS;r++)for(let c=0;c<L.cols;c++)if(L.map[r][c]==='D')doorsAll.push(c+','+r);
  const start={x:p.x,r:Math.round((p.y+p.h)/TS)};
  const seen=new Map();let goalReached=false,goalFrames=Infinity,detour=0;const hit=new Set(),hitF=new Map();
@@ -369,7 +373,7 @@ for(let i=0;i<LEVELS.length;i++){if(only!==null&&i!==only)continue;
  const ok=r.missing.length===0&&r.goalReached&&r.doorsLeft.length===0&&r.keysN>=r.doorsN;
  console.log(`\n=== Nivel ${i+1}: ${r.name} (${r.cols} cols, ${r.bags} sacos, ${r.keysN} llaves / ${r.doorsN} puertas) ===`);
  console.log(`  estados alcanzados: ${r.states}  pasadas: ${r.passes}  tiempo: ${ms} ms`);
- console.log(`  meta alcanzada: ${r.goalReached?'SI (camino minimo ~'+(r.goalFrames/60).toFixed(0)+' s por BFS, con desvios por llaves)':'NO'}   puertas sin abrir: ${r.doorsLeft.length?r.doorsLeft.join(' '):'ninguna'}`);
+ console.log(`  meta alcanzada: ${r.goalReached?'SI (camino minimo ~'+(r.goalFrames/60).toFixed(0)+' s en modelo BFS abstracto, no minimo del motor real)':'NO'}   puertas sin abrir: ${r.doorsLeft.length?r.doorsLeft.join(' '):'ninguna'}`);
  for(const m of r.missing)console.log(`  INALCANZABLE: '${m.t}' en col ${m.col} fila ${m.row} (x=${m.x}, y=${m.y})`);
  for(const w of r.warns)console.log(`  AVISO: ${w}`);
  console.log(ok?'  RESULTADO: OK':'  RESULTADO: FALLA');if(!ok)bad++;}

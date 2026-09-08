@@ -63,6 +63,7 @@
   for(let li=4;li<8;li++){const mode='goal:'+li;labels[mode]='Meta N'+(li+1);const b=document.createElement('button');b.type='button';b.dataset.view=mode;b.textContent=labels[mode];b.disabled=true;document.querySelector('nav').append(b);buttons.push(b);viewButtons.push(b);}
   labels['expansion-enemies']='Enemigos nuevos';const ae=document.createElement('button');ae.type='button';ae.dataset.view='expansion-enemies';ae.textContent='Enemigos nuevos';ae.disabled=true;document.querySelector('nav').append(ae);buttons.push(ae);viewButtons.push(ae);
   const options = new URLSearchParams(location.search);
+  for(const mode of ['heart-boss:warn','heart-boss:attack','heart-boss:open','heart-boss:defeat','trial:4:2','trial:7:3',...Array.from({length:4},(_,i)=>'trial:'+(i+4)+':0'),...Array.from({length:4},(_,i)=>'trial:'+(i+4)+':9')]){labels[mode]=mode;const b=document.createElement('button');b.type='button';b.dataset.view=mode;b.textContent=mode;b.disabled=true;document.querySelector('nav').append(b);buttons.push(b);viewButtons.push(b);}
   const capture = options.get('capture');
   if(capture)document.body.classList.add('capture');
   if(options.get('touch')==='1')document.body.classList.add('touchTest');
@@ -71,7 +72,7 @@
   let renewed = true;
 
   function report(message, isError = false) {
-    status.textContent = message;
+    status.textContent = message+(options.get('metrics')==='1'?' · '+JSON.stringify({child:[frame.contentWindow?.innerWidth,frame.contentWindow?.innerHeight],canvas:frame.contentDocument?.querySelector('#c')?.getBoundingClientRect().toJSON()}):'');
     status.classList.toggle('error', isError);
   }
   window.addEventListener('message',event=>{if(event.source===frame.contentWindow&&event.data?.visualError)report(event.data.visualError,true);});
@@ -130,9 +131,35 @@
       buttons.forEach(button => {button.disabled = false;});
       selectView(labels[capture] ? capture : 'acid');
       if(options.get('look')==='classic'){api.compareLook();renewed=false;updateStatus();}
+      if(options.has('replay')){(async()=>{try{
+       const ready=()=>frame.contentWindow.CampaignBossArt?.ready()&&frame.contentWindow.CampaignFoeArt?.ready()&&frame.contentWindow.WorldArt?.ready('enemies')&&(options.get('renderer')==='canvas'||frame.contentWindow.PhantomasPixi?.ready);
+       for(let n=0;n<150&&!ready();n++)await new Promise(r=>setTimeout(r,100));
+       if(!ready())throw Error('No se han cargado los recursos para capturar el replay');
+       const li=Number(options.get('replay'))-1,stop=Number(options.get('at')||Infinity),policy=['cautious','speed'].includes(options.get('policy'))?'-'+options.get('policy'):'',record=options.get('record'),round=/^[1-9][0-9]*$/.test(options.get('round')||'')?options.get('round'):'3',w=await fetch(record&&/^route-n[5-8][-a-z0-9]*$/.test(record)?'../review/campaign-v3/round'+round+'/'+record+'.json':'../review/campaign-v3/route-n'+(li+1)+policy+'.json').then(r=>r.json());
+       api.newGame();api.loadLevel(li);api.startLevel();let frames=0;
+       for(const c of w.commands){for(const k of Object.keys(api.keys))api.keys[k]=false;api.keys.ArrowRight=c.a[0]>0;api.keys.ArrowLeft=c.a[0]<0;api.keys.Space=!!c.a[1];api.keys.ArrowDown=!!c.a[2];for(let f=0;f<c.frames&&api.state==='play'&&frames<stop;f++){api.step();api.parts.length=0;frames++;}if(frames>=stop||api.state==='clear')break;}
+       if(options.get('pause')==='1')frame.contentWindow.dispatchEvent(new frame.contentWindow.KeyboardEvent('keydown',{code:'KeyP',bubbles:true}));
+       api.render();report('Replay real N'+(li+1)+' · frame '+frames+' · '+api.state+' · energía '+api.player.energy.toFixed(1));
+       if(options.get('proof')==='1'){
+        // Export the actual composited game canvases in this same render turn,
+        // before WebGL discards its drawing buffer. This is a world-frame
+        // artifact, not a screenshot of the surrounding HTML controls/help.
+        const d=frame.contentDocument,base=d.querySelector('#c'),out=document.createElement('canvas');out.width=base.width;out.height=base.height;
+        const g=out.getContext('2d');g.fillStyle='#05060f';g.fillRect(0,0,out.width,out.height);
+        for(const c of d.querySelectorAll('#wrap canvas'))if(frame.contentWindow.getComputedStyle(c).display!=='none')g.drawImage(c,0,0,out.width,out.height);
+        const proof=document.createElement('img');proof.id='worldProof';proof.alt='Fotograma exportado de los lienzos del juego';proof.src=out.toDataURL('image/png');proof.style.cssText='max-width:100vw;max-height:100vh;object-fit:contain';frame.style.display='none';frame.after(proof);
+       }
+       // Replay disables the game's RAF. Redraw after resize without stepping
+       // the simulation; production's normal RAF supplies this redraw itself.
+       const frozen=JSON.stringify({frame:api.simF,x:api.player.x,y:api.player.y,energy:api.player.energy,state:api.state});
+       frame.contentWindow.addEventListener('resize',()=>setTimeout(()=>{const unchanged=JSON.stringify({frame:api.simF,x:api.player.x,y:api.player.y,energy:api.player.energy,state:api.state})===frozen;api.render();report('Replay tras giro · '+api.state+' · simulación '+(unchanged?'sin cambios':'MODIFICADA'),!unchanged);},250));
+      }catch(e){report(e.message,true);}})();}
       if(options.get('sweep')==='1'){
         const run=async()=>{try{
           const art=frame.contentWindow.WorldArt;
+          const campaignArtReady=()=>frame.contentWindow.CampaignBossArt?.ready()&&frame.contentWindow.CampaignFoeArt?.ready();
+          for(let n=0;n<100&&!campaignArtReady();n++)await new Promise(r=>setTimeout(r,100));
+          if(!campaignArtReady())throw Error('Faltan atlas del corazón o sus enemigos');
           for(let attempt=0;attempt<100&&!['scenery','enemies','props','expansion'].every(n=>art.ready(n));attempt++)await new Promise(r=>setTimeout(r,100));
           if(!['scenery','enemies','props','expansion'].every(n=>art.ready(n)))throw Error('Faltan atlas por cargar');
           for(let n=0;n<100&&!(frame.contentWindow.ExpansionArt?.ready()&&frame.contentWindow.ExpansionArt?.propsReady());n++)await new Promise(r=>setTimeout(r,100));if(!(frame.contentWindow.ExpansionArt?.ready()&&frame.contentWindow.ExpansionArt?.propsReady()))throw Error('Falta atlas de enemigos o trofeos nuevos');
@@ -165,6 +192,7 @@
       const prelude = gameDocument.createElement('script');
       prelude.textContent = 'window.__PHANTOMAS_TEST__ = function(api) { window.visualGame = api; };const previewStorage=new Map();Object.defineProperty(window,"localStorage",{value:{getItem:k=>previewStorage.get(k)||null,setItem:(k,v)=>previewStorage.set(k,String(v)),removeItem:k=>previewStorage.delete(k)}});';
       prelude.textContent += 'window.addEventListener("error",e=>parent.postMessage({visualError:e.message},"*"));';
+      if(options.has('replay'))prelude.textContent += 'window.requestAnimationFrame=()=>0;window.setInterval=()=>0;';
       if(options.get('touch')==='1')prelude.textContent += "const nativeMatchMedia=window.matchMedia.bind(window);window.matchMedia=q=>q==='(pointer:coarse)'?{matches:true}:nativeMatchMedia(q);window.ontouchstart=null;";
       base.after(prelude);
       if(capture&&options.get('controls')!=='1'){const style=gameDocument.createElement('style');style.textContent='#lookToggle{display:none}';gameDocument.head.append(style);}

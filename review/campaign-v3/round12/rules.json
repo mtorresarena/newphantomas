@@ -1,0 +1,25 @@
+{
+  "sourceHash": "8c3e43a36a29dde8b30a56ad8a5112a0bdb1ccb93b0579b753f54de094362d45",
+  "scope": "Isolated state fixtures, not full input routes",
+  "passed": 18,
+  "cases": [
+    "Exactly two bosses N4 + N8; 40 gates in 20 campaign parts",
+    "Every mirror layout connects only with the intended beam turns",
+    "A single relay weight powers, retracts, anchors and is reused at the upper balance",
+    "Relay death resets both state and supports at each incomplete stage",
+    "Clock switch geometry changes and expiration restores the safe initial configuration",
+    "Prism cannot bypass R; R latches while the same beam is redirected to S; reset clears both",
+    "Wrong rune resets; ordered input solves; holding DOWN counts once",
+    "Weight requires pickup before deposit and survives wrong socket attempts",
+    "Seal requires charging guardian, not a stationary overlap or player",
+    "Timer expiry before threshold resets, returns to switches, and cannot clear",
+    "Threshold latches at exact deadline; no closing wall inside player",
+    "Respawn retains solved puzzles, resets unsolved mirrors, weight and timer",
+    "N8 arena confines both edges at all heights and freezes during death",
+    "Boss vulnerability, phases, defeat delay and exit gate are coherent",
+    "Missed core opening returns to warning and offers another opening",
+    "Lethal projectile on final stomp frame gives death, no simultaneous victory",
+    "Death during final defeat animation resets arena coherently before victory",
+    "Snapshot restores campaign, map, both boss states and real input effects"
+  ]
+}

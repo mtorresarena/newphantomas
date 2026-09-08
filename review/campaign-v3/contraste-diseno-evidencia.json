@@ -1,0 +1,6108 @@
+{
+  "sourceHash": "8eef8b28ed89122e03c5eb04ebed91d5923fe87b51b6b12dd6f999699e35c65b",
+  "scope": "Independent input replay. No restore, invulnerability or state editing. Input telemetry is not a human decision count.",
+  "runs": [
+    {
+      "level": 1,
+      "policy": "balanced",
+      "frames": 3847,
+      "stationary": 135,
+      "neutralInput": 740,
+      "charging": 82,
+      "moving": 3712,
+      "backwardDistance": 851.8241529246977,
+      "forwardDistance": 3527.9242574124773,
+      "hits": 0,
+      "minEnergy": 61.59083333332162,
+      "deaths": 0,
+      "interactions": 0,
+      "bossFrames": 0,
+      "bossTrace": [],
+      "trialTimes": [],
+      "complete": true,
+      "events": []
+    },
+    {
+      "level": 2,
+      "policy": "balanced",
+      "frames": 4053,
+      "stationary": 40,
+      "neutralInput": 440,
+      "charging": 148,
+      "moving": 4013,
+      "backwardDistance": 180.26318629080544,
+      "forwardDistance": 5047.350365292634,
+      "hits": 1,
+      "minEnergy": 77.18916666666236,
+      "deaths": 0,
+      "interactions": 0,
+      "bossFrames": 0,
+      "bossTrace": [],
+      "trialTimes": [],
+      "complete": true,
+      "events": []
+    },
+    {
+      "level": 3,
+      "policy": "balanced",
+      "frames": 4397,
+      "stationary": 46,
+      "neutralInput": 670,
+      "charging": 17,
+      "moving": 4351,
+      "backwardDistance": 376.1259318495107,
+      "forwardDistance": 5035.692677196664,
+      "hits": 1,
+      "minEnergy": 73.60999999999379,
+      "deaths": 0,
+      "interactions": 0,
+      "bossFrames": 0,
+      "bossTrace": [],
+      "trialTimes": [],
+      "complete": true,
+      "events": []
+    },
+    {
+      "level": 4,
+      "policy": "balanced",
+      "frames": 6489,
+      "stationary": 152,
+      "neutralInput": 800,
+      "charging": 160,
+      "moving": 6337,
+      "backwardDistance": 1185.617336721434,
+      "forwardDistance": 7029.026880798476,
+      "hits": 0,
+      "minEnergy": 42.11333333331888,
+      "deaths": 0,
+      "interactions": 0,
+      "bossFrames": 770,
+      "bossTrace": [
+        {
+          "frame": 5595,
+          "state": "intro",
+          "hp": 3,
+          "x": 25,
+          "y": 142,
+          "energy": 99.45
+        },
+        {
+          "frame": 5684,
+          "state": "aim",
+          "hp": 3,
+          "x": 99,
+          "y": 142,
+          "energy": 98.63
+        },
+        {
+          "frame": 5734,
+          "state": "fire",
+          "hp": 3,
+          "x": 110,
+          "y": 142,
+          "energy": 98.18
+        },
+        {
+          "frame": 5779,
+          "state": "zap",
+          "hp": 2,
+          "x": 106,
+          "y": 142,
+          "energy": 97.76
+        },
+        {
+          "frame": 5824,
+          "state": "cooldown",
+          "hp": 2,
+          "x": 38,
+          "y": 94,
+          "energy": 96.75
+        },
+        {
+          "frame": 5884,
+          "state": "aim",
+          "hp": 2,
+          "x": 35,
+          "y": 94,
+          "energy": 96.2
+        },
+        {
+          "frame": 5934,
+          "state": "fire",
+          "hp": 2,
+          "x": 35,
+          "y": 94,
+          "energy": 95.74
+        },
+        {
+          "frame": 5996,
+          "state": "zap",
+          "hp": 1,
+          "x": 35,
+          "y": 94,
+          "energy": 95.17
+        },
+        {
+          "frame": 6041,
+          "state": "cooldown",
+          "hp": 1,
+          "x": 94,
+          "y": 94,
+          "energy": 94.76
+        },
+        {
+          "frame": 6101,
+          "state": "wave",
+          "hp": 1,
+          "x": 184,
+          "y": 86,
+          "energy": 93.61
+        },
+        {
+          "frame": 6181,
+          "state": "aim",
+          "hp": 1,
+          "x": 253,
+          "y": 94,
+          "energy": 92.28
+        },
+        {
+          "frame": 6231,
+          "state": "fire",
+          "hp": 1,
+          "x": 259,
+          "y": 94,
+          "energy": 91.82
+        },
+        {
+          "frame": 6245,
+          "state": "defeat",
+          "hp": 0,
+          "x": 275,
+          "y": 94,
+          "energy": 91.69
+        }
+      ],
+      "trialTimes": [],
+      "complete": true,
+      "events": []
+    },
+    {
+      "level": 5,
+      "policy": "balanced",
+      "frames": 11861,
+      "stationary": 82,
+      "neutralInput": 1087,
+      "charging": 51,
+      "moving": 11779,
+      "backwardDistance": 2347.589765652033,
+      "forwardDistance": 12638.604430410074,
+      "hits": 3,
+      "minEnergy": 61.56916666665939,
+      "deaths": 0,
+      "interactions": 19,
+      "bossFrames": 0,
+      "bossTrace": [],
+      "trialTimes": [
+        {
+          "frame": 418,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 1549,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 2269,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 3618,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 4708,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 5849,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 7069,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 8939,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 10039,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 11539,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        }
+      ],
+      "complete": true,
+      "solved": 10,
+      "events": [
+        {
+          "frame": 418,
+          "type": "charge-seal",
+          "id": "1-1",
+          "detail": "1"
+        },
+        {
+          "frame": 418,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 1199,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "2"
+        },
+        {
+          "frame": 1329,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "1"
+        },
+        {
+          "frame": 1549,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "3"
+        },
+        {
+          "frame": 1549,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 2269,
+          "type": "deposit",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 2269,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 3270,
+          "type": "charge-seal",
+          "id": "2-2",
+          "detail": "1"
+        },
+        {
+          "frame": 3618,
+          "type": "charge-seal",
+          "id": "2-2",
+          "detail": "2"
+        },
+        {
+          "frame": 3618,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 4360,
+          "type": "charge-seal",
+          "id": "3-1",
+          "detail": "1"
+        },
+        {
+          "frame": 4708,
+          "type": "charge-seal",
+          "id": "3-1",
+          "detail": "2"
+        },
+        {
+          "frame": 4708,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 5849,
+          "type": "deposit",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 5849,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 6639,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "3"
+        },
+        {
+          "frame": 6859,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "1"
+        },
+        {
+          "frame": 6989,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "4"
+        },
+        {
+          "frame": 7069,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "2"
+        },
+        {
+          "frame": 7069,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 7563,
+          "type": "stomp",
+          "id": "beetle",
+          "detail": ""
+        },
+        {
+          "frame": 8574,
+          "type": "charge-seal",
+          "id": "4-2",
+          "detail": "1"
+        },
+        {
+          "frame": 8939,
+          "type": "charge-seal",
+          "id": "4-2",
+          "detail": "2"
+        },
+        {
+          "frame": 8939,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 9690,
+          "type": "charge-seal",
+          "id": "5-1",
+          "detail": "1"
+        },
+        {
+          "frame": 10039,
+          "type": "charge-seal",
+          "id": "5-1",
+          "detail": "2"
+        },
+        {
+          "frame": 10039,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 11539,
+          "type": "deposit",
+          "id": "5-2",
+          "detail": ""
+        },
+        {
+          "frame": 11539,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "policy": "balanced",
+      "frames": 10765,
+      "stationary": 109,
+      "neutralInput": 1252,
+      "charging": 52,
+      "moving": 10656,
+      "backwardDistance": 1288.6332913710867,
+      "forwardDistance": 12348.086068350764,
+      "hits": 0,
+      "minEnergy": 79.84249999999138,
+      "deaths": 0,
+      "interactions": 26,
+      "bossFrames": 0,
+      "bossTrace": [],
+      "trialTimes": [
+        {
+          "frame": 418,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 1529,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 2249,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 3813,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 4427,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 5709,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 6929,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 8572,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 9176,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 10675,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        }
+      ],
+      "complete": true,
+      "solved": 10,
+      "events": [
+        {
+          "frame": 119,
+          "type": "activate",
+          "id": "1-1",
+          "detail": "1"
+        },
+        {
+          "frame": 329,
+          "type": "activate",
+          "id": "1-1",
+          "detail": "2"
+        },
+        {
+          "frame": 418,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 1179,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "2"
+        },
+        {
+          "frame": 1309,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "1"
+        },
+        {
+          "frame": 1529,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "3"
+        },
+        {
+          "frame": 1529,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 2249,
+          "type": "deposit",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 2249,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 3509,
+          "type": "activate",
+          "id": "2-2",
+          "detail": "1"
+        },
+        {
+          "frame": 3709,
+          "type": "activate",
+          "id": "2-2",
+          "detail": "2"
+        },
+        {
+          "frame": 3769,
+          "type": "activate",
+          "id": "2-2",
+          "detail": "3"
+        },
+        {
+          "frame": 3813,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 4109,
+          "type": "activate",
+          "id": "3-1",
+          "detail": "1"
+        },
+        {
+          "frame": 4329,
+          "type": "activate",
+          "id": "3-1",
+          "detail": "2"
+        },
+        {
+          "frame": 4389,
+          "type": "activate",
+          "id": "3-1",
+          "detail": "3"
+        },
+        {
+          "frame": 4427,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 5709,
+          "type": "deposit",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 5709,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 6499,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "3"
+        },
+        {
+          "frame": 6719,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "1"
+        },
+        {
+          "frame": 6849,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "4"
+        },
+        {
+          "frame": 6929,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "2"
+        },
+        {
+          "frame": 6929,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 8269,
+          "type": "activate",
+          "id": "4-2",
+          "detail": "1"
+        },
+        {
+          "frame": 8469,
+          "type": "activate",
+          "id": "4-2",
+          "detail": "2"
+        },
+        {
+          "frame": 8529,
+          "type": "activate",
+          "id": "4-2",
+          "detail": "3"
+        },
+        {
+          "frame": 8572,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 8869,
+          "type": "activate",
+          "id": "5-1",
+          "detail": "1"
+        },
+        {
+          "frame": 9079,
+          "type": "activate",
+          "id": "5-1",
+          "detail": "2"
+        },
+        {
+          "frame": 9139,
+          "type": "activate",
+          "id": "5-1",
+          "detail": "3"
+        },
+        {
+          "frame": 9176,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 10289,
+          "type": "activate",
+          "id": "5-2",
+          "detail": "1"
+        },
+        {
+          "frame": 10489,
+          "type": "activate",
+          "id": "5-2",
+          "detail": "2"
+        },
+        {
+          "frame": 10569,
+          "type": "activate",
+          "id": "5-2",
+          "detail": "3"
+        },
+        {
+          "frame": 10675,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "policy": "balanced",
+      "frames": 8574,
+      "stationary": 204,
+      "neutralInput": 641,
+      "charging": 51,
+      "moving": 8370,
+      "backwardDistance": 495.51208840535617,
+      "forwardDistance": 10787.526790099737,
+      "hits": 1,
+      "minEnergy": 70.50499999999548,
+      "deaths": 0,
+      "interactions": 29,
+      "bossFrames": 0,
+      "bossTrace": [],
+      "trialTimes": [
+        {
+          "frame": 289,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 1444,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 2274,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 3184,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 3909,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 4997,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 5601,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 6584,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 7299,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 8454,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        }
+      ],
+      "complete": true,
+      "solved": 10,
+      "events": [
+        {
+          "frame": 189,
+          "type": "rotate",
+          "id": "1-1",
+          "detail": "A"
+        },
+        {
+          "frame": 259,
+          "type": "rotate",
+          "id": "1-1",
+          "detail": "B"
+        },
+        {
+          "frame": 289,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 1094,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "2"
+        },
+        {
+          "frame": 1224,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "1"
+        },
+        {
+          "frame": 1444,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "3"
+        },
+        {
+          "frame": 1444,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 1924,
+          "type": "activate",
+          "id": "2-1",
+          "detail": "2"
+        },
+        {
+          "frame": 2054,
+          "type": "activate",
+          "id": "2-1",
+          "detail": "1"
+        },
+        {
+          "frame": 2274,
+          "type": "activate",
+          "id": "2-1",
+          "detail": "3"
+        },
+        {
+          "frame": 2274,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 2904,
+          "type": "rotate",
+          "id": "2-2",
+          "detail": "A"
+        },
+        {
+          "frame": 2974,
+          "type": "rotate",
+          "id": "2-2",
+          "detail": "B"
+        },
+        {
+          "frame": 3154,
+          "type": "rotate",
+          "id": "2-2",
+          "detail": "C"
+        },
+        {
+          "frame": 3184,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 3629,
+          "type": "rotate",
+          "id": "3-1",
+          "detail": "A"
+        },
+        {
+          "frame": 3699,
+          "type": "rotate",
+          "id": "3-1",
+          "detail": "B"
+        },
+        {
+          "frame": 3879,
+          "type": "rotate",
+          "id": "3-1",
+          "detail": "C"
+        },
+        {
+          "frame": 3909,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 4694,
+          "type": "activate",
+          "id": "3-2",
+          "detail": "1"
+        },
+        {
+          "frame": 4894,
+          "type": "activate",
+          "id": "3-2",
+          "detail": "2"
+        },
+        {
+          "frame": 4954,
+          "type": "activate",
+          "id": "3-2",
+          "detail": "3"
+        },
+        {
+          "frame": 4997,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 5294,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "1"
+        },
+        {
+          "frame": 5504,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "2"
+        },
+        {
+          "frame": 5554,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "3"
+        },
+        {
+          "frame": 5601,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 6334,
+          "type": "rotate",
+          "id": "4-2",
+          "detail": "A"
+        },
+        {
+          "frame": 6404,
+          "type": "rotate",
+          "id": "4-2",
+          "detail": "B"
+        },
+        {
+          "frame": 6554,
+          "type": "rotate",
+          "id": "4-2",
+          "detail": "C"
+        },
+        {
+          "frame": 6584,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 7019,
+          "type": "rotate",
+          "id": "5-1",
+          "detail": "A"
+        },
+        {
+          "frame": 7089,
+          "type": "rotate",
+          "id": "5-1",
+          "detail": "B"
+        },
+        {
+          "frame": 7269,
+          "type": "rotate",
+          "id": "5-1",
+          "detail": "C"
+        },
+        {
+          "frame": 7299,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 8174,
+          "type": "rotate",
+          "id": "5-2",
+          "detail": "A"
+        },
+        {
+          "frame": 8244,
+          "type": "rotate",
+          "id": "5-2",
+          "detail": "B"
+        },
+        {
+          "frame": 8424,
+          "type": "rotate",
+          "id": "5-2",
+          "detail": "C"
+        },
+        {
+          "frame": 8454,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "policy": "balanced",
+      "frames": 12949,
+      "stationary": 989,
+      "neutralInput": 2049,
+      "charging": 104,
+      "moving": 11960,
+      "backwardDistance": 2016.7784915899501,
+      "forwardDistance": 13492.57125861419,
+      "hits": 0,
+      "minEnergy": 72.5016666666549,
+      "deaths": 0,
+      "interactions": 23,
+      "bossFrames": 1767,
+      "bossTrace": [
+        {
+          "frame": 11005,
+          "state": "intro",
+          "hp": 6,
+          "phase": 1,
+          "x": 25,
+          "y": 84,
+          "energy": 98.72
+        },
+        {
+          "frame": 11154,
+          "state": "warn",
+          "hp": 6,
+          "phase": 1,
+          "x": 118,
+          "y": 62,
+          "energy": 96.16
+        },
+        {
+          "frame": 11224,
+          "state": "attack",
+          "hp": 6,
+          "phase": 1,
+          "x": 118,
+          "y": 62,
+          "energy": 95.51
+        },
+        {
+          "frame": 11274,
+          "state": "open",
+          "hp": 6,
+          "phase": 1,
+          "x": 118,
+          "y": 62,
+          "energy": 95.06
+        },
+        {
+          "frame": 11312,
+          "state": "recover",
+          "hp": 5,
+          "phase": 1,
+          "x": 172,
+          "y": 44,
+          "energy": 94.11
+        },
+        {
+          "frame": 11382,
+          "state": "warn",
+          "hp": 5,
+          "phase": 1,
+          "x": 241,
+          "y": 62,
+          "energy": 92.87
+        },
+        {
+          "frame": 11452,
+          "state": "attack",
+          "hp": 5,
+          "phase": 1,
+          "x": 241,
+          "y": 62,
+          "energy": 92.22
+        },
+        {
+          "frame": 11502,
+          "state": "open",
+          "hp": 5,
+          "phase": 1,
+          "x": 241,
+          "y": 62,
+          "energy": 91.77
+        },
+        {
+          "frame": 11550,
+          "state": "recover",
+          "hp": 4,
+          "phase": 1,
+          "x": 184,
+          "y": 44,
+          "energy": 90.73
+        },
+        {
+          "frame": 11551,
+          "state": "recover",
+          "hp": 4,
+          "phase": 2,
+          "x": 186,
+          "y": 42,
+          "energy": 90.72
+        },
+        {
+          "frame": 11620,
+          "state": "warn",
+          "hp": 4,
+          "phase": 2,
+          "x": 235,
+          "y": 62,
+          "energy": 90.08
+        },
+        {
+          "frame": 11690,
+          "state": "attack",
+          "hp": 4,
+          "phase": 2,
+          "x": 264,
+          "y": 94,
+          "energy": 89.44
+        },
+        {
+          "frame": 11760,
+          "state": "open",
+          "hp": 4,
+          "phase": 2,
+          "x": 264,
+          "y": 94,
+          "energy": 88.8
+        },
+        {
+          "frame": 11824,
+          "state": "recover",
+          "hp": 3,
+          "phase": 2,
+          "x": 174,
+          "y": 44,
+          "energy": 87.01
+        },
+        {
+          "frame": 11894,
+          "state": "warn",
+          "hp": 3,
+          "phase": 2,
+          "x": 234,
+          "y": 62,
+          "energy": 85.77
+        },
+        {
+          "frame": 11964,
+          "state": "attack",
+          "hp": 3,
+          "phase": 2,
+          "x": 263,
+          "y": 94,
+          "energy": 85.13
+        },
+        {
+          "frame": 12034,
+          "state": "open",
+          "hp": 3,
+          "phase": 2,
+          "x": 263,
+          "y": 94,
+          "energy": 84.49
+        },
+        {
+          "frame": 12098,
+          "state": "recover",
+          "hp": 2,
+          "phase": 2,
+          "x": 180,
+          "y": 44,
+          "energy": 82.7
+        },
+        {
+          "frame": 12099,
+          "state": "recover",
+          "hp": 2,
+          "phase": 3,
+          "x": 181,
+          "y": 42,
+          "energy": 82.69
+        },
+        {
+          "frame": 12168,
+          "state": "warn",
+          "hp": 2,
+          "phase": 3,
+          "x": 234,
+          "y": 62,
+          "energy": 82.06
+        },
+        {
+          "frame": 12238,
+          "state": "attack",
+          "hp": 2,
+          "phase": 3,
+          "x": 263,
+          "y": 94,
+          "energy": 81.42
+        },
+        {
+          "frame": 12308,
+          "state": "open",
+          "hp": 2,
+          "phase": 3,
+          "x": 263,
+          "y": 94,
+          "energy": 80.78
+        },
+        {
+          "frame": 12372,
+          "state": "recover",
+          "hp": 1,
+          "phase": 3,
+          "x": 183,
+          "y": 44,
+          "energy": 78.99
+        },
+        {
+          "frame": 12442,
+          "state": "warn",
+          "hp": 1,
+          "phase": 3,
+          "x": 225,
+          "y": 62,
+          "energy": 78.35
+        },
+        {
+          "frame": 12512,
+          "state": "attack",
+          "hp": 1,
+          "phase": 3,
+          "x": 254,
+          "y": 139,
+          "energy": 77.71
+        },
+        {
+          "frame": 12582,
+          "state": "open",
+          "hp": 1,
+          "phase": 3,
+          "x": 254,
+          "y": 142,
+          "energy": 77.07
+        },
+        {
+          "frame": 12652,
+          "state": "defeat",
+          "hp": 0,
+          "phase": 3,
+          "x": 219,
+          "y": 44,
+          "energy": 75.22
+        }
+      ],
+      "trialTimes": [
+        {
+          "frame": 418,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 1541,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 2319,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 3459,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 4369,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 5801,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 6594,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 8414,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 9404,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 10734,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        }
+      ],
+      "complete": true,
+      "solved": 10,
+      "events": [
+        {
+          "frame": 418,
+          "type": "charge-seal",
+          "id": "1-1",
+          "detail": "1"
+        },
+        {
+          "frame": 418,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 1249,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "1"
+        },
+        {
+          "frame": 1449,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "2"
+        },
+        {
+          "frame": 1541,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 1969,
+          "type": "activate",
+          "id": "2-1",
+          "detail": "2"
+        },
+        {
+          "frame": 2099,
+          "type": "activate",
+          "id": "2-1",
+          "detail": "1"
+        },
+        {
+          "frame": 2319,
+          "type": "activate",
+          "id": "2-1",
+          "detail": "3"
+        },
+        {
+          "frame": 2319,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 3459,
+          "type": "deposit",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 3459,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 4109,
+          "type": "rotate",
+          "id": "3-1",
+          "detail": "A"
+        },
+        {
+          "frame": 4179,
+          "type": "rotate",
+          "id": "3-1",
+          "detail": "B"
+        },
+        {
+          "frame": 4339,
+          "type": "rotate",
+          "id": "3-1",
+          "detail": "C"
+        },
+        {
+          "frame": 4369,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 5494,
+          "type": "activate",
+          "id": "3-2",
+          "detail": "1"
+        },
+        {
+          "frame": 5704,
+          "type": "activate",
+          "id": "3-2",
+          "detail": "2"
+        },
+        {
+          "frame": 5764,
+          "type": "activate",
+          "id": "3-2",
+          "detail": "3"
+        },
+        {
+          "frame": 5801,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 6594,
+          "type": "deposit",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 6594,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 8060,
+          "type": "charge-seal",
+          "id": "4-2",
+          "detail": "1"
+        },
+        {
+          "frame": 8414,
+          "type": "charge-seal",
+          "id": "4-2",
+          "detail": "2"
+        },
+        {
+          "frame": 8414,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 8974,
+          "type": "activate",
+          "id": "5-1",
+          "detail": "3"
+        },
+        {
+          "frame": 9194,
+          "type": "activate",
+          "id": "5-1",
+          "detail": "1"
+        },
+        {
+          "frame": 9324,
+          "type": "activate",
+          "id": "5-1",
+          "detail": "4"
+        },
+        {
+          "frame": 9404,
+          "type": "activate",
+          "id": "5-1",
+          "detail": "2"
+        },
+        {
+          "frame": 9404,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 10484,
+          "type": "rotate",
+          "id": "5-2",
+          "detail": "A"
+        },
+        {
+          "frame": 10554,
+          "type": "rotate",
+          "id": "5-2",
+          "detail": "B"
+        },
+        {
+          "frame": 10704,
+          "type": "rotate",
+          "id": "5-2",
+          "detail": "C"
+        },
+        {
+          "frame": 10734,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        },
+        {
+          "frame": 11005,
+          "type": "boss-start",
+          "id": "heart",
+          "detail": ""
+        },
+        {
+          "frame": 11274,
+          "type": "boss-open",
+          "id": "heart",
+          "detail": "1"
+        },
+        {
+          "frame": 11312,
+          "type": "boss-hit",
+          "id": "heart",
+          "detail": "5"
+        },
+        {
+          "frame": 11502,
+          "type": "boss-open",
+          "id": "heart",
+          "detail": "1"
+        },
+        {
+          "frame": 11550,
+          "type": "boss-hit",
+          "id": "heart",
+          "detail": "4"
+        },
+        {
+          "frame": 11760,
+          "type": "boss-open",
+          "id": "heart",
+          "detail": "2"
+        },
+        {
+          "frame": 11824,
+          "type": "boss-hit",
+          "id": "heart",
+          "detail": "3"
+        },
+        {
+          "frame": 12034,
+          "type": "boss-open",
+          "id": "heart",
+          "detail": "2"
+        },
+        {
+          "frame": 12098,
+          "type": "boss-hit",
+          "id": "heart",
+          "detail": "2"
+        },
+        {
+          "frame": 12308,
+          "type": "boss-open",
+          "id": "heart",
+          "detail": "3"
+        },
+        {
+          "frame": 12372,
+          "type": "boss-hit",
+          "id": "heart",
+          "detail": "1"
+        },
+        {
+          "frame": 12582,
+          "type": "boss-open",
+          "id": "heart",
+          "detail": "3"
+        },
+        {
+          "frame": 12652,
+          "type": "boss-hit",
+          "id": "heart",
+          "detail": "0"
+        },
+        {
+          "frame": 12772,
+          "type": "boss-defeated",
+          "id": "heart",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "level": 1,
+      "policy": "cautious",
+      "frames": 3946,
+      "stationary": 135,
+      "neutralInput": 760,
+      "charging": 82,
+      "moving": 3811,
+      "backwardDistance": 895.1892159306472,
+      "forwardDistance": 3571.1431863021057,
+      "hits": 0,
+      "minEnergy": 58.88333333332186,
+      "deaths": 0,
+      "interactions": 0,
+      "bossFrames": 0,
+      "bossTrace": [],
+      "trialTimes": [],
+      "complete": true,
+      "events": []
+    },
+    {
+      "level": 2,
+      "policy": "cautious",
+      "frames": 3993,
+      "stationary": 0,
+      "neutralInput": 260,
+      "charging": 105,
+      "moving": 3993,
+      "backwardDistance": 218.0030532273061,
+      "forwardDistance": 5085.342648217471,
+      "hits": 0,
+      "minEnergy": 83.15666666666056,
+      "deaths": 0,
+      "interactions": 0,
+      "bossFrames": 0,
+      "bossTrace": [],
+      "trialTimes": [],
+      "complete": true,
+      "events": []
+    },
+    {
+      "level": 3,
+      "policy": "cautious",
+      "frames": 4402,
+      "stationary": 19,
+      "neutralInput": 650,
+      "charging": 27,
+      "moving": 4383,
+      "backwardDistance": 400.10329886572356,
+      "forwardDistance": 5059.3225741475735,
+      "hits": 0,
+      "minEnergy": 83.5733333333271,
+      "deaths": 0,
+      "interactions": 0,
+      "bossFrames": 0,
+      "bossTrace": [],
+      "trialTimes": [],
+      "complete": true,
+      "events": []
+    },
+    {
+      "level": 4,
+      "policy": "cautious",
+      "frames": 6507,
+      "stationary": 261,
+      "neutralInput": 920,
+      "charging": 166,
+      "moving": 6246,
+      "backwardDistance": 1122.240440294088,
+      "forwardDistance": 6975.934024354248,
+      "hits": 0,
+      "minEnergy": 42.11333333331888,
+      "deaths": 0,
+      "interactions": 0,
+      "bossFrames": 767,
+      "bossTrace": [
+        {
+          "frame": 5606,
+          "state": "intro",
+          "hp": 3,
+          "x": 25,
+          "y": 142,
+          "energy": 99.45
+        },
+        {
+          "frame": 5695,
+          "state": "aim",
+          "hp": 3,
+          "x": 100,
+          "y": 142,
+          "energy": 98.63
+        },
+        {
+          "frame": 5745,
+          "state": "fire",
+          "hp": 3,
+          "x": 100,
+          "y": 142,
+          "energy": 98.18
+        },
+        {
+          "frame": 5787,
+          "state": "zap",
+          "hp": 2,
+          "x": 100,
+          "y": 142,
+          "energy": 97.79
+        },
+        {
+          "frame": 5832,
+          "state": "cooldown",
+          "hp": 2,
+          "x": 39,
+          "y": 94,
+          "energy": 96.78
+        },
+        {
+          "frame": 5892,
+          "state": "aim",
+          "hp": 2,
+          "x": 34,
+          "y": 94,
+          "energy": 96.23
+        },
+        {
+          "frame": 5942,
+          "state": "fire",
+          "hp": 2,
+          "x": 34,
+          "y": 94,
+          "energy": 95.77
+        },
+        {
+          "frame": 6004,
+          "state": "zap",
+          "hp": 1,
+          "x": 34,
+          "y": 94,
+          "energy": 95.2
+        },
+        {
+          "frame": 6049,
+          "state": "cooldown",
+          "hp": 1,
+          "x": 90,
+          "y": 94,
+          "energy": 94.79
+        },
+        {
+          "frame": 6109,
+          "state": "wave",
+          "hp": 1,
+          "x": 180,
+          "y": 83,
+          "energy": 93.64
+        },
+        {
+          "frame": 6189,
+          "state": "aim",
+          "hp": 1,
+          "x": 254,
+          "y": 94,
+          "energy": 92.31
+        },
+        {
+          "frame": 6239,
+          "state": "fire",
+          "hp": 1,
+          "x": 255,
+          "y": 94,
+          "energy": 91.85
+        },
+        {
+          "frame": 6253,
+          "state": "defeat",
+          "hp": 0,
+          "x": 274,
+          "y": 94,
+          "energy": 91.72
+        }
+      ],
+      "trialTimes": [],
+      "complete": true,
+      "events": []
+    },
+    {
+      "level": 5,
+      "policy": "cautious",
+      "frames": 11823,
+      "stationary": 48,
+      "neutralInput": 1107,
+      "charging": 57,
+      "moving": 11775,
+      "backwardDistance": 2350.9951276112124,
+      "forwardDistance": 12642.585587033518,
+      "hits": 3,
+      "minEnergy": 63.92666666665827,
+      "deaths": 0,
+      "interactions": 19,
+      "bossFrames": 0,
+      "bossTrace": [],
+      "trialTimes": [
+        {
+          "frame": 418,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 1569,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 2289,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 3638,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 4740,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 5949,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 7159,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 8937,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 10039,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 11499,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        }
+      ],
+      "complete": true,
+      "solved": 10,
+      "events": [
+        {
+          "frame": 418,
+          "type": "charge-seal",
+          "id": "1-1",
+          "detail": "1"
+        },
+        {
+          "frame": 418,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 1219,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "2"
+        },
+        {
+          "frame": 1349,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "1"
+        },
+        {
+          "frame": 1569,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "3"
+        },
+        {
+          "frame": 1569,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 2289,
+          "type": "deposit",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 2289,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 3290,
+          "type": "charge-seal",
+          "id": "2-2",
+          "detail": "1"
+        },
+        {
+          "frame": 3638,
+          "type": "charge-seal",
+          "id": "2-2",
+          "detail": "2"
+        },
+        {
+          "frame": 3638,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 4384,
+          "type": "charge-seal",
+          "id": "3-1",
+          "detail": "1"
+        },
+        {
+          "frame": 4740,
+          "type": "charge-seal",
+          "id": "3-1",
+          "detail": "2"
+        },
+        {
+          "frame": 4740,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 5949,
+          "type": "deposit",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 5949,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 6729,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "3"
+        },
+        {
+          "frame": 6949,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "1"
+        },
+        {
+          "frame": 7079,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "4"
+        },
+        {
+          "frame": 7159,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "2"
+        },
+        {
+          "frame": 7159,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 7653,
+          "type": "stomp",
+          "id": "beetle",
+          "detail": ""
+        },
+        {
+          "frame": 8574,
+          "type": "charge-seal",
+          "id": "4-2",
+          "detail": "1"
+        },
+        {
+          "frame": 8937,
+          "type": "charge-seal",
+          "id": "4-2",
+          "detail": "2"
+        },
+        {
+          "frame": 8937,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 9686,
+          "type": "charge-seal",
+          "id": "5-1",
+          "detail": "1"
+        },
+        {
+          "frame": 10039,
+          "type": "charge-seal",
+          "id": "5-1",
+          "detail": "2"
+        },
+        {
+          "frame": 10039,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 11499,
+          "type": "deposit",
+          "id": "5-2",
+          "detail": ""
+        },
+        {
+          "frame": 11499,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "policy": "cautious",
+      "frames": 10294,
+      "stationary": 29,
+      "neutralInput": 972,
+      "charging": 51,
+      "moving": 10265,
+      "backwardDistance": 1211.2161677936297,
+      "forwardDistance": 12270.329033506712,
+      "hits": 0,
+      "minEnergy": 79.91583333332476,
+      "deaths": 0,
+      "interactions": 26,
+      "bossFrames": 0,
+      "bossTrace": [],
+      "trialTimes": [
+        {
+          "frame": 427,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 1529,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 2249,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 3506,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 4110,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 5379,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 6599,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 8232,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 8847,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 10241,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        }
+      ],
+      "complete": true,
+      "solved": 10,
+      "events": [
+        {
+          "frame": 119,
+          "type": "activate",
+          "id": "1-1",
+          "detail": "1"
+        },
+        {
+          "frame": 339,
+          "type": "activate",
+          "id": "1-1",
+          "detail": "2"
+        },
+        {
+          "frame": 427,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 1179,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "2"
+        },
+        {
+          "frame": 1309,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "1"
+        },
+        {
+          "frame": 1529,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "3"
+        },
+        {
+          "frame": 1529,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 2249,
+          "type": "deposit",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 2249,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 3199,
+          "type": "activate",
+          "id": "2-2",
+          "detail": "1"
+        },
+        {
+          "frame": 3409,
+          "type": "activate",
+          "id": "2-2",
+          "detail": "2"
+        },
+        {
+          "frame": 3459,
+          "type": "activate",
+          "id": "2-2",
+          "detail": "3"
+        },
+        {
+          "frame": 3506,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 3799,
+          "type": "activate",
+          "id": "3-1",
+          "detail": "1"
+        },
+        {
+          "frame": 4009,
+          "type": "activate",
+          "id": "3-1",
+          "detail": "2"
+        },
+        {
+          "frame": 4069,
+          "type": "activate",
+          "id": "3-1",
+          "detail": "3"
+        },
+        {
+          "frame": 4110,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 5379,
+          "type": "deposit",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 5379,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 6169,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "3"
+        },
+        {
+          "frame": 6389,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "1"
+        },
+        {
+          "frame": 6519,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "4"
+        },
+        {
+          "frame": 6599,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "2"
+        },
+        {
+          "frame": 6599,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 7929,
+          "type": "activate",
+          "id": "4-2",
+          "detail": "1"
+        },
+        {
+          "frame": 8129,
+          "type": "activate",
+          "id": "4-2",
+          "detail": "2"
+        },
+        {
+          "frame": 8189,
+          "type": "activate",
+          "id": "4-2",
+          "detail": "3"
+        },
+        {
+          "frame": 8232,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 8529,
+          "type": "activate",
+          "id": "5-1",
+          "detail": "1"
+        },
+        {
+          "frame": 8749,
+          "type": "activate",
+          "id": "5-1",
+          "detail": "2"
+        },
+        {
+          "frame": 8809,
+          "type": "activate",
+          "id": "5-1",
+          "detail": "3"
+        },
+        {
+          "frame": 8847,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 9929,
+          "type": "activate",
+          "id": "5-2",
+          "detail": "1"
+        },
+        {
+          "frame": 10139,
+          "type": "activate",
+          "id": "5-2",
+          "detail": "2"
+        },
+        {
+          "frame": 10199,
+          "type": "activate",
+          "id": "5-2",
+          "detail": "3"
+        },
+        {
+          "frame": 10241,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "policy": "cautious",
+      "frames": 8574,
+      "stationary": 204,
+      "neutralInput": 631,
+      "charging": 51,
+      "moving": 8370,
+      "backwardDistance": 495.51208840535617,
+      "forwardDistance": 10787.526790099737,
+      "hits": 1,
+      "minEnergy": 70.50499999999548,
+      "deaths": 0,
+      "interactions": 29,
+      "bossFrames": 0,
+      "bossTrace": [],
+      "trialTimes": [
+        {
+          "frame": 289,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 1444,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 2274,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 3184,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 3909,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 4997,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 5601,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 6584,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 7299,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 8454,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        }
+      ],
+      "complete": true,
+      "solved": 10,
+      "events": [
+        {
+          "frame": 189,
+          "type": "rotate",
+          "id": "1-1",
+          "detail": "A"
+        },
+        {
+          "frame": 259,
+          "type": "rotate",
+          "id": "1-1",
+          "detail": "B"
+        },
+        {
+          "frame": 289,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 1094,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "2"
+        },
+        {
+          "frame": 1224,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "1"
+        },
+        {
+          "frame": 1444,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "3"
+        },
+        {
+          "frame": 1444,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 1924,
+          "type": "activate",
+          "id": "2-1",
+          "detail": "2"
+        },
+        {
+          "frame": 2054,
+          "type": "activate",
+          "id": "2-1",
+          "detail": "1"
+        },
+        {
+          "frame": 2274,
+          "type": "activate",
+          "id": "2-1",
+          "detail": "3"
+        },
+        {
+          "frame": 2274,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 2904,
+          "type": "rotate",
+          "id": "2-2",
+          "detail": "A"
+        },
+        {
+          "frame": 2974,
+          "type": "rotate",
+          "id": "2-2",
+          "detail": "B"
+        },
+        {
+          "frame": 3154,
+          "type": "rotate",
+          "id": "2-2",
+          "detail": "C"
+        },
+        {
+          "frame": 3184,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 3629,
+          "type": "rotate",
+          "id": "3-1",
+          "detail": "A"
+        },
+        {
+          "frame": 3699,
+          "type": "rotate",
+          "id": "3-1",
+          "detail": "B"
+        },
+        {
+          "frame": 3879,
+          "type": "rotate",
+          "id": "3-1",
+          "detail": "C"
+        },
+        {
+          "frame": 3909,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 4694,
+          "type": "activate",
+          "id": "3-2",
+          "detail": "1"
+        },
+        {
+          "frame": 4894,
+          "type": "activate",
+          "id": "3-2",
+          "detail": "2"
+        },
+        {
+          "frame": 4954,
+          "type": "activate",
+          "id": "3-2",
+          "detail": "3"
+        },
+        {
+          "frame": 4997,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 5294,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "1"
+        },
+        {
+          "frame": 5504,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "2"
+        },
+        {
+          "frame": 5554,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "3"
+        },
+        {
+          "frame": 5601,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 6334,
+          "type": "rotate",
+          "id": "4-2",
+          "detail": "A"
+        },
+        {
+          "frame": 6404,
+          "type": "rotate",
+          "id": "4-2",
+          "detail": "B"
+        },
+        {
+          "frame": 6554,
+          "type": "rotate",
+          "id": "4-2",
+          "detail": "C"
+        },
+        {
+          "frame": 6584,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 7019,
+          "type": "rotate",
+          "id": "5-1",
+          "detail": "A"
+        },
+        {
+          "frame": 7089,
+          "type": "rotate",
+          "id": "5-1",
+          "detail": "B"
+        },
+        {
+          "frame": 7269,
+          "type": "rotate",
+          "id": "5-1",
+          "detail": "C"
+        },
+        {
+          "frame": 7299,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 8174,
+          "type": "rotate",
+          "id": "5-2",
+          "detail": "A"
+        },
+        {
+          "frame": 8244,
+          "type": "rotate",
+          "id": "5-2",
+          "detail": "B"
+        },
+        {
+          "frame": 8424,
+          "type": "rotate",
+          "id": "5-2",
+          "detail": "C"
+        },
+        {
+          "frame": 8454,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "policy": "cautious",
+      "frames": 12949,
+      "stationary": 989,
+      "neutralInput": 2039,
+      "charging": 110,
+      "moving": 11960,
+      "backwardDistance": 2019.7433184927295,
+      "forwardDistance": 13495.53608551697,
+      "hits": 0,
+      "minEnergy": 72.5016666666549,
+      "deaths": 0,
+      "interactions": 23,
+      "bossFrames": 1767,
+      "bossTrace": [
+        {
+          "frame": 11005,
+          "state": "intro",
+          "hp": 6,
+          "phase": 1,
+          "x": 25,
+          "y": 84,
+          "energy": 98.72
+        },
+        {
+          "frame": 11154,
+          "state": "warn",
+          "hp": 6,
+          "phase": 1,
+          "x": 118,
+          "y": 62,
+          "energy": 96.16
+        },
+        {
+          "frame": 11224,
+          "state": "attack",
+          "hp": 6,
+          "phase": 1,
+          "x": 118,
+          "y": 62,
+          "energy": 95.51
+        },
+        {
+          "frame": 11274,
+          "state": "open",
+          "hp": 6,
+          "phase": 1,
+          "x": 118,
+          "y": 62,
+          "energy": 95.06
+        },
+        {
+          "frame": 11312,
+          "state": "recover",
+          "hp": 5,
+          "phase": 1,
+          "x": 172,
+          "y": 44,
+          "energy": 94.11
+        },
+        {
+          "frame": 11382,
+          "state": "warn",
+          "hp": 5,
+          "phase": 1,
+          "x": 241,
+          "y": 62,
+          "energy": 92.87
+        },
+        {
+          "frame": 11452,
+          "state": "attack",
+          "hp": 5,
+          "phase": 1,
+          "x": 241,
+          "y": 62,
+          "energy": 92.22
+        },
+        {
+          "frame": 11502,
+          "state": "open",
+          "hp": 5,
+          "phase": 1,
+          "x": 241,
+          "y": 62,
+          "energy": 91.77
+        },
+        {
+          "frame": 11550,
+          "state": "recover",
+          "hp": 4,
+          "phase": 1,
+          "x": 184,
+          "y": 44,
+          "energy": 90.73
+        },
+        {
+          "frame": 11551,
+          "state": "recover",
+          "hp": 4,
+          "phase": 2,
+          "x": 186,
+          "y": 42,
+          "energy": 90.72
+        },
+        {
+          "frame": 11620,
+          "state": "warn",
+          "hp": 4,
+          "phase": 2,
+          "x": 235,
+          "y": 62,
+          "energy": 90.08
+        },
+        {
+          "frame": 11690,
+          "state": "attack",
+          "hp": 4,
+          "phase": 2,
+          "x": 264,
+          "y": 94,
+          "energy": 89.44
+        },
+        {
+          "frame": 11760,
+          "state": "open",
+          "hp": 4,
+          "phase": 2,
+          "x": 264,
+          "y": 94,
+          "energy": 88.8
+        },
+        {
+          "frame": 11824,
+          "state": "recover",
+          "hp": 3,
+          "phase": 2,
+          "x": 174,
+          "y": 44,
+          "energy": 87.01
+        },
+        {
+          "frame": 11894,
+          "state": "warn",
+          "hp": 3,
+          "phase": 2,
+          "x": 234,
+          "y": 62,
+          "energy": 85.77
+        },
+        {
+          "frame": 11964,
+          "state": "attack",
+          "hp": 3,
+          "phase": 2,
+          "x": 263,
+          "y": 94,
+          "energy": 85.13
+        },
+        {
+          "frame": 12034,
+          "state": "open",
+          "hp": 3,
+          "phase": 2,
+          "x": 263,
+          "y": 94,
+          "energy": 84.49
+        },
+        {
+          "frame": 12098,
+          "state": "recover",
+          "hp": 2,
+          "phase": 2,
+          "x": 180,
+          "y": 44,
+          "energy": 82.7
+        },
+        {
+          "frame": 12099,
+          "state": "recover",
+          "hp": 2,
+          "phase": 3,
+          "x": 181,
+          "y": 42,
+          "energy": 82.69
+        },
+        {
+          "frame": 12168,
+          "state": "warn",
+          "hp": 2,
+          "phase": 3,
+          "x": 234,
+          "y": 62,
+          "energy": 82.06
+        },
+        {
+          "frame": 12238,
+          "state": "attack",
+          "hp": 2,
+          "phase": 3,
+          "x": 263,
+          "y": 94,
+          "energy": 81.42
+        },
+        {
+          "frame": 12308,
+          "state": "open",
+          "hp": 2,
+          "phase": 3,
+          "x": 263,
+          "y": 94,
+          "energy": 80.78
+        },
+        {
+          "frame": 12372,
+          "state": "recover",
+          "hp": 1,
+          "phase": 3,
+          "x": 183,
+          "y": 44,
+          "energy": 78.99
+        },
+        {
+          "frame": 12442,
+          "state": "warn",
+          "hp": 1,
+          "phase": 3,
+          "x": 225,
+          "y": 62,
+          "energy": 78.35
+        },
+        {
+          "frame": 12512,
+          "state": "attack",
+          "hp": 1,
+          "phase": 3,
+          "x": 254,
+          "y": 139,
+          "energy": 77.71
+        },
+        {
+          "frame": 12582,
+          "state": "open",
+          "hp": 1,
+          "phase": 3,
+          "x": 254,
+          "y": 142,
+          "energy": 77.07
+        },
+        {
+          "frame": 12652,
+          "state": "defeat",
+          "hp": 0,
+          "phase": 3,
+          "x": 219,
+          "y": 44,
+          "energy": 75.22
+        }
+      ],
+      "trialTimes": [
+        {
+          "frame": 418,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 1541,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 2319,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 3459,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 4369,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 5801,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 6594,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 8414,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 9404,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 10734,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        }
+      ],
+      "complete": true,
+      "solved": 10,
+      "events": [
+        {
+          "frame": 418,
+          "type": "charge-seal",
+          "id": "1-1",
+          "detail": "1"
+        },
+        {
+          "frame": 418,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 1249,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "1"
+        },
+        {
+          "frame": 1449,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "2"
+        },
+        {
+          "frame": 1541,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 1969,
+          "type": "activate",
+          "id": "2-1",
+          "detail": "2"
+        },
+        {
+          "frame": 2099,
+          "type": "activate",
+          "id": "2-1",
+          "detail": "1"
+        },
+        {
+          "frame": 2319,
+          "type": "activate",
+          "id": "2-1",
+          "detail": "3"
+        },
+        {
+          "frame": 2319,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 3459,
+          "type": "deposit",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 3459,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 4109,
+          "type": "rotate",
+          "id": "3-1",
+          "detail": "A"
+        },
+        {
+          "frame": 4179,
+          "type": "rotate",
+          "id": "3-1",
+          "detail": "B"
+        },
+        {
+          "frame": 4339,
+          "type": "rotate",
+          "id": "3-1",
+          "detail": "C"
+        },
+        {
+          "frame": 4369,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 5494,
+          "type": "activate",
+          "id": "3-2",
+          "detail": "1"
+        },
+        {
+          "frame": 5704,
+          "type": "activate",
+          "id": "3-2",
+          "detail": "2"
+        },
+        {
+          "frame": 5764,
+          "type": "activate",
+          "id": "3-2",
+          "detail": "3"
+        },
+        {
+          "frame": 5801,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 6594,
+          "type": "deposit",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 6594,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 8060,
+          "type": "charge-seal",
+          "id": "4-2",
+          "detail": "1"
+        },
+        {
+          "frame": 8414,
+          "type": "charge-seal",
+          "id": "4-2",
+          "detail": "2"
+        },
+        {
+          "frame": 8414,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 8974,
+          "type": "activate",
+          "id": "5-1",
+          "detail": "3"
+        },
+        {
+          "frame": 9194,
+          "type": "activate",
+          "id": "5-1",
+          "detail": "1"
+        },
+        {
+          "frame": 9324,
+          "type": "activate",
+          "id": "5-1",
+          "detail": "4"
+        },
+        {
+          "frame": 9404,
+          "type": "activate",
+          "id": "5-1",
+          "detail": "2"
+        },
+        {
+          "frame": 9404,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 10484,
+          "type": "rotate",
+          "id": "5-2",
+          "detail": "A"
+        },
+        {
+          "frame": 10554,
+          "type": "rotate",
+          "id": "5-2",
+          "detail": "B"
+        },
+        {
+          "frame": 10704,
+          "type": "rotate",
+          "id": "5-2",
+          "detail": "C"
+        },
+        {
+          "frame": 10734,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        },
+        {
+          "frame": 11005,
+          "type": "boss-start",
+          "id": "heart",
+          "detail": ""
+        },
+        {
+          "frame": 11274,
+          "type": "boss-open",
+          "id": "heart",
+          "detail": "1"
+        },
+        {
+          "frame": 11312,
+          "type": "boss-hit",
+          "id": "heart",
+          "detail": "5"
+        },
+        {
+          "frame": 11502,
+          "type": "boss-open",
+          "id": "heart",
+          "detail": "1"
+        },
+        {
+          "frame": 11550,
+          "type": "boss-hit",
+          "id": "heart",
+          "detail": "4"
+        },
+        {
+          "frame": 11760,
+          "type": "boss-open",
+          "id": "heart",
+          "detail": "2"
+        },
+        {
+          "frame": 11824,
+          "type": "boss-hit",
+          "id": "heart",
+          "detail": "3"
+        },
+        {
+          "frame": 12034,
+          "type": "boss-open",
+          "id": "heart",
+          "detail": "2"
+        },
+        {
+          "frame": 12098,
+          "type": "boss-hit",
+          "id": "heart",
+          "detail": "2"
+        },
+        {
+          "frame": 12308,
+          "type": "boss-open",
+          "id": "heart",
+          "detail": "3"
+        },
+        {
+          "frame": 12372,
+          "type": "boss-hit",
+          "id": "heart",
+          "detail": "1"
+        },
+        {
+          "frame": 12582,
+          "type": "boss-open",
+          "id": "heart",
+          "detail": "3"
+        },
+        {
+          "frame": 12652,
+          "type": "boss-hit",
+          "id": "heart",
+          "detail": "0"
+        },
+        {
+          "frame": 12772,
+          "type": "boss-defeated",
+          "id": "heart",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "level": 1,
+      "policy": "speed",
+      "frames": 3821,
+      "stationary": 174,
+      "neutralInput": 830,
+      "charging": 77,
+      "moving": 3647,
+      "backwardDistance": 779.9676024372407,
+      "forwardDistance": 3455.4296131959404,
+      "hits": 0,
+      "minEnergy": 61.12833333332172,
+      "deaths": 0,
+      "interactions": 0,
+      "bossFrames": 0,
+      "bossTrace": [],
+      "trialTimes": [],
+      "complete": true,
+      "events": []
+    },
+    {
+      "level": 2,
+      "policy": "speed",
+      "frames": 4071,
+      "stationary": 119,
+      "neutralInput": 270,
+      "charging": 182,
+      "moving": 3952,
+      "backwardDistance": 294.5703000265291,
+      "forwardDistance": 5162.561250258572,
+      "hits": 6,
+      "minEnergy": 60.63333333332496,
+      "deaths": 0,
+      "interactions": 0,
+      "bossFrames": 0,
+      "bossTrace": [],
+      "trialTimes": [],
+      "complete": true,
+      "events": []
+    },
+    {
+      "level": 3,
+      "policy": "speed",
+      "frames": 4085,
+      "stationary": 28,
+      "neutralInput": 530,
+      "charging": 18,
+      "moving": 4057,
+      "backwardDistance": 259.73917916553546,
+      "forwardDistance": 4919.01237712422,
+      "hits": 1,
+      "minEnergy": 71.30083333332642,
+      "deaths": 0,
+      "interactions": 0,
+      "bossFrames": 0,
+      "bossTrace": [],
+      "trialTimes": [],
+      "complete": true,
+      "events": []
+    },
+    {
+      "level": 4,
+      "policy": "speed",
+      "frames": 6807,
+      "stationary": 349,
+      "neutralInput": 1100,
+      "charging": 318,
+      "moving": 6458,
+      "backwardDistance": 1218.194572415017,
+      "forwardDistance": 7073.42523402588,
+      "hits": 2,
+      "minEnergy": 3.43833333332349,
+      "deaths": 0,
+      "interactions": 0,
+      "bossFrames": 768,
+      "bossTrace": [
+        {
+          "frame": 5908,
+          "state": "intro",
+          "hp": 3,
+          "x": 25,
+          "y": 142,
+          "energy": 99.45
+        },
+        {
+          "frame": 5997,
+          "state": "aim",
+          "hp": 3,
+          "x": 107,
+          "y": 142,
+          "energy": 98.63
+        },
+        {
+          "frame": 6047,
+          "state": "fire",
+          "hp": 3,
+          "x": 112,
+          "y": 142,
+          "energy": 98.18
+        },
+        {
+          "frame": 6090,
+          "state": "zap",
+          "hp": 2,
+          "x": 108,
+          "y": 142,
+          "energy": 97.78
+        },
+        {
+          "frame": 6135,
+          "state": "cooldown",
+          "hp": 2,
+          "x": 40,
+          "y": 94,
+          "energy": 96.77
+        },
+        {
+          "frame": 6195,
+          "state": "aim",
+          "hp": 2,
+          "x": 30,
+          "y": 94,
+          "energy": 96.22
+        },
+        {
+          "frame": 6245,
+          "state": "fire",
+          "hp": 2,
+          "x": 30,
+          "y": 94,
+          "energy": 95.76
+        },
+        {
+          "frame": 6307,
+          "state": "zap",
+          "hp": 1,
+          "x": 30,
+          "y": 94,
+          "energy": 95.19
+        },
+        {
+          "frame": 6352,
+          "state": "cooldown",
+          "hp": 1,
+          "x": 91,
+          "y": 94,
+          "energy": 94.78
+        },
+        {
+          "frame": 6412,
+          "state": "wave",
+          "hp": 1,
+          "x": 181,
+          "y": 87,
+          "energy": 93.63
+        },
+        {
+          "frame": 6492,
+          "state": "aim",
+          "hp": 1,
+          "x": 261,
+          "y": 94,
+          "energy": 92.3
+        },
+        {
+          "frame": 6542,
+          "state": "fire",
+          "hp": 1,
+          "x": 261,
+          "y": 94,
+          "energy": 91.84
+        },
+        {
+          "frame": 6556,
+          "state": "defeat",
+          "hp": 0,
+          "x": 261,
+          "y": 94,
+          "energy": 91.71
+        }
+      ],
+      "trialTimes": [],
+      "complete": true,
+      "events": []
+    },
+    {
+      "level": 5,
+      "policy": "speed",
+      "frames": 11855,
+      "stationary": 92,
+      "neutralInput": 1027,
+      "charging": 53,
+      "moving": 11763,
+      "backwardDistance": 2349.3324328217423,
+      "forwardDistance": 12641.150329267362,
+      "hits": 3,
+      "minEnergy": 63.91249999999121,
+      "deaths": 0,
+      "interactions": 19,
+      "bossFrames": 0,
+      "bossTrace": [],
+      "trialTimes": [
+        {
+          "frame": 418,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 1549,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 2269,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 3619,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 4719,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 5859,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 7079,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 8928,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 10028,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 11529,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        }
+      ],
+      "complete": true,
+      "solved": 10,
+      "events": [
+        {
+          "frame": 418,
+          "type": "charge-seal",
+          "id": "1-1",
+          "detail": "1"
+        },
+        {
+          "frame": 418,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 1199,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "2"
+        },
+        {
+          "frame": 1329,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "1"
+        },
+        {
+          "frame": 1549,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "3"
+        },
+        {
+          "frame": 1549,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 2269,
+          "type": "deposit",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 2269,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 3270,
+          "type": "charge-seal",
+          "id": "2-2",
+          "detail": "1"
+        },
+        {
+          "frame": 3619,
+          "type": "charge-seal",
+          "id": "2-2",
+          "detail": "2"
+        },
+        {
+          "frame": 3619,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 4363,
+          "type": "charge-seal",
+          "id": "3-1",
+          "detail": "1"
+        },
+        {
+          "frame": 4719,
+          "type": "charge-seal",
+          "id": "3-1",
+          "detail": "2"
+        },
+        {
+          "frame": 4719,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 5859,
+          "type": "deposit",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 5859,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 6649,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "3"
+        },
+        {
+          "frame": 6869,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "1"
+        },
+        {
+          "frame": 6999,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "4"
+        },
+        {
+          "frame": 7079,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "2"
+        },
+        {
+          "frame": 7079,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 7573,
+          "type": "stomp",
+          "id": "beetle",
+          "detail": ""
+        },
+        {
+          "frame": 8574,
+          "type": "charge-seal",
+          "id": "4-2",
+          "detail": "1"
+        },
+        {
+          "frame": 8928,
+          "type": "charge-seal",
+          "id": "4-2",
+          "detail": "2"
+        },
+        {
+          "frame": 8928,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 9673,
+          "type": "charge-seal",
+          "id": "5-1",
+          "detail": "1"
+        },
+        {
+          "frame": 10028,
+          "type": "charge-seal",
+          "id": "5-1",
+          "detail": "2"
+        },
+        {
+          "frame": 10028,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 11529,
+          "type": "deposit",
+          "id": "5-2",
+          "detail": ""
+        },
+        {
+          "frame": 11529,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "policy": "speed",
+      "frames": 10751,
+      "stationary": 119,
+      "neutralInput": 1052,
+      "charging": 51,
+      "moving": 10632,
+      "backwardDistance": 1371.2581013251731,
+      "forwardDistance": 12430.860941445246,
+      "hits": 2,
+      "minEnergy": 65.95416666665962,
+      "deaths": 0,
+      "interactions": 26,
+      "bossFrames": 0,
+      "bossTrace": [],
+      "trialTimes": [
+        {
+          "frame": 418,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 1529,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 2249,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 3813,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 4417,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 5739,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 7009,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 8572,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 9177,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 10678,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        }
+      ],
+      "complete": true,
+      "solved": 10,
+      "events": [
+        {
+          "frame": 119,
+          "type": "activate",
+          "id": "1-1",
+          "detail": "1"
+        },
+        {
+          "frame": 329,
+          "type": "activate",
+          "id": "1-1",
+          "detail": "2"
+        },
+        {
+          "frame": 418,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 1179,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "2"
+        },
+        {
+          "frame": 1309,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "1"
+        },
+        {
+          "frame": 1529,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "3"
+        },
+        {
+          "frame": 1529,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 2249,
+          "type": "deposit",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 2249,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 3509,
+          "type": "activate",
+          "id": "2-2",
+          "detail": "1"
+        },
+        {
+          "frame": 3709,
+          "type": "activate",
+          "id": "2-2",
+          "detail": "2"
+        },
+        {
+          "frame": 3769,
+          "type": "activate",
+          "id": "2-2",
+          "detail": "3"
+        },
+        {
+          "frame": 3813,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 4109,
+          "type": "activate",
+          "id": "3-1",
+          "detail": "1"
+        },
+        {
+          "frame": 4319,
+          "type": "activate",
+          "id": "3-1",
+          "detail": "2"
+        },
+        {
+          "frame": 4379,
+          "type": "activate",
+          "id": "3-1",
+          "detail": "3"
+        },
+        {
+          "frame": 4417,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 5739,
+          "type": "deposit",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 5739,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 6579,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "3"
+        },
+        {
+          "frame": 6799,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "1"
+        },
+        {
+          "frame": 6929,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "4"
+        },
+        {
+          "frame": 7009,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "2"
+        },
+        {
+          "frame": 7009,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 8269,
+          "type": "activate",
+          "id": "4-2",
+          "detail": "1"
+        },
+        {
+          "frame": 8469,
+          "type": "activate",
+          "id": "4-2",
+          "detail": "2"
+        },
+        {
+          "frame": 8529,
+          "type": "activate",
+          "id": "4-2",
+          "detail": "3"
+        },
+        {
+          "frame": 8572,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 8869,
+          "type": "activate",
+          "id": "5-1",
+          "detail": "1"
+        },
+        {
+          "frame": 9079,
+          "type": "activate",
+          "id": "5-1",
+          "detail": "2"
+        },
+        {
+          "frame": 9139,
+          "type": "activate",
+          "id": "5-1",
+          "detail": "3"
+        },
+        {
+          "frame": 9177,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 10269,
+          "type": "activate",
+          "id": "5-2",
+          "detail": "1"
+        },
+        {
+          "frame": 10469,
+          "type": "activate",
+          "id": "5-2",
+          "detail": "2"
+        },
+        {
+          "frame": 10569,
+          "type": "activate",
+          "id": "5-2",
+          "detail": "3"
+        },
+        {
+          "frame": 10678,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "policy": "speed",
+      "frames": 8518,
+      "stationary": 240,
+      "neutralInput": 691,
+      "charging": 52,
+      "moving": 8278,
+      "backwardDistance": 440.3365792384569,
+      "forwardDistance": 10732.280268322165,
+      "hits": 0,
+      "minEnergy": 78.93999999999119,
+      "deaths": 0,
+      "interactions": 29,
+      "bossFrames": 0,
+      "bossTrace": [],
+      "trialTimes": [
+        {
+          "frame": 289,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 1444,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 2284,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 3154,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 3839,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 4987,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 5592,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 6574,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 7259,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 8394,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        }
+      ],
+      "complete": true,
+      "solved": 10,
+      "events": [
+        {
+          "frame": 189,
+          "type": "rotate",
+          "id": "1-1",
+          "detail": "A"
+        },
+        {
+          "frame": 259,
+          "type": "rotate",
+          "id": "1-1",
+          "detail": "B"
+        },
+        {
+          "frame": 289,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 1094,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "2"
+        },
+        {
+          "frame": 1224,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "1"
+        },
+        {
+          "frame": 1444,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "3"
+        },
+        {
+          "frame": 1444,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 1934,
+          "type": "activate",
+          "id": "2-1",
+          "detail": "2"
+        },
+        {
+          "frame": 2064,
+          "type": "activate",
+          "id": "2-1",
+          "detail": "1"
+        },
+        {
+          "frame": 2284,
+          "type": "activate",
+          "id": "2-1",
+          "detail": "3"
+        },
+        {
+          "frame": 2284,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 2904,
+          "type": "rotate",
+          "id": "2-2",
+          "detail": "A"
+        },
+        {
+          "frame": 2974,
+          "type": "rotate",
+          "id": "2-2",
+          "detail": "B"
+        },
+        {
+          "frame": 3124,
+          "type": "rotate",
+          "id": "2-2",
+          "detail": "C"
+        },
+        {
+          "frame": 3154,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 3589,
+          "type": "rotate",
+          "id": "3-1",
+          "detail": "A"
+        },
+        {
+          "frame": 3659,
+          "type": "rotate",
+          "id": "3-1",
+          "detail": "B"
+        },
+        {
+          "frame": 3809,
+          "type": "rotate",
+          "id": "3-1",
+          "detail": "C"
+        },
+        {
+          "frame": 3839,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 4684,
+          "type": "activate",
+          "id": "3-2",
+          "detail": "1"
+        },
+        {
+          "frame": 4884,
+          "type": "activate",
+          "id": "3-2",
+          "detail": "2"
+        },
+        {
+          "frame": 4944,
+          "type": "activate",
+          "id": "3-2",
+          "detail": "3"
+        },
+        {
+          "frame": 4987,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 5284,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "1"
+        },
+        {
+          "frame": 5494,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "2"
+        },
+        {
+          "frame": 5554,
+          "type": "activate",
+          "id": "4-1",
+          "detail": "3"
+        },
+        {
+          "frame": 5592,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 6324,
+          "type": "rotate",
+          "id": "4-2",
+          "detail": "A"
+        },
+        {
+          "frame": 6394,
+          "type": "rotate",
+          "id": "4-2",
+          "detail": "B"
+        },
+        {
+          "frame": 6544,
+          "type": "rotate",
+          "id": "4-2",
+          "detail": "C"
+        },
+        {
+          "frame": 6574,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 7009,
+          "type": "rotate",
+          "id": "5-1",
+          "detail": "A"
+        },
+        {
+          "frame": 7079,
+          "type": "rotate",
+          "id": "5-1",
+          "detail": "B"
+        },
+        {
+          "frame": 7229,
+          "type": "rotate",
+          "id": "5-1",
+          "detail": "C"
+        },
+        {
+          "frame": 7259,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 8144,
+          "type": "rotate",
+          "id": "5-2",
+          "detail": "A"
+        },
+        {
+          "frame": 8214,
+          "type": "rotate",
+          "id": "5-2",
+          "detail": "B"
+        },
+        {
+          "frame": 8364,
+          "type": "rotate",
+          "id": "5-2",
+          "detail": "C"
+        },
+        {
+          "frame": 8394,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "policy": "speed",
+      "frames": 12974,
+      "stationary": 990,
+      "neutralInput": 1979,
+      "charging": 103,
+      "moving": 11984,
+      "backwardDistance": 2081.55690143595,
+      "forwardDistance": 13556.812218508305,
+      "hits": 3,
+      "minEnergy": 66.5533333333255,
+      "deaths": 0,
+      "interactions": 23,
+      "bossFrames": 1767,
+      "bossTrace": [
+        {
+          "frame": 11035,
+          "state": "intro",
+          "hp": 6,
+          "phase": 1,
+          "x": 25,
+          "y": 84,
+          "energy": 98.72
+        },
+        {
+          "frame": 11184,
+          "state": "warn",
+          "hp": 6,
+          "phase": 1,
+          "x": 118,
+          "y": 62,
+          "energy": 96.16
+        },
+        {
+          "frame": 11254,
+          "state": "attack",
+          "hp": 6,
+          "phase": 1,
+          "x": 118,
+          "y": 62,
+          "energy": 95.51
+        },
+        {
+          "frame": 11304,
+          "state": "open",
+          "hp": 6,
+          "phase": 1,
+          "x": 118,
+          "y": 62,
+          "energy": 95.06
+        },
+        {
+          "frame": 11342,
+          "state": "recover",
+          "hp": 5,
+          "phase": 1,
+          "x": 172,
+          "y": 44,
+          "energy": 94.11
+        },
+        {
+          "frame": 11412,
+          "state": "warn",
+          "hp": 5,
+          "phase": 1,
+          "x": 241,
+          "y": 62,
+          "energy": 92.87
+        },
+        {
+          "frame": 11482,
+          "state": "attack",
+          "hp": 5,
+          "phase": 1,
+          "x": 241,
+          "y": 62,
+          "energy": 92.22
+        },
+        {
+          "frame": 11532,
+          "state": "open",
+          "hp": 5,
+          "phase": 1,
+          "x": 241,
+          "y": 62,
+          "energy": 91.77
+        },
+        {
+          "frame": 11580,
+          "state": "recover",
+          "hp": 4,
+          "phase": 1,
+          "x": 184,
+          "y": 44,
+          "energy": 90.73
+        },
+        {
+          "frame": 11581,
+          "state": "recover",
+          "hp": 4,
+          "phase": 2,
+          "x": 186,
+          "y": 42,
+          "energy": 90.72
+        },
+        {
+          "frame": 11650,
+          "state": "warn",
+          "hp": 4,
+          "phase": 2,
+          "x": 235,
+          "y": 62,
+          "energy": 90.08
+        },
+        {
+          "frame": 11720,
+          "state": "attack",
+          "hp": 4,
+          "phase": 2,
+          "x": 264,
+          "y": 94,
+          "energy": 89.44
+        },
+        {
+          "frame": 11790,
+          "state": "open",
+          "hp": 4,
+          "phase": 2,
+          "x": 264,
+          "y": 94,
+          "energy": 88.8
+        },
+        {
+          "frame": 11854,
+          "state": "recover",
+          "hp": 3,
+          "phase": 2,
+          "x": 174,
+          "y": 44,
+          "energy": 87.01
+        },
+        {
+          "frame": 11924,
+          "state": "warn",
+          "hp": 3,
+          "phase": 2,
+          "x": 234,
+          "y": 62,
+          "energy": 85.77
+        },
+        {
+          "frame": 11994,
+          "state": "attack",
+          "hp": 3,
+          "phase": 2,
+          "x": 263,
+          "y": 94,
+          "energy": 85.13
+        },
+        {
+          "frame": 12064,
+          "state": "open",
+          "hp": 3,
+          "phase": 2,
+          "x": 263,
+          "y": 94,
+          "energy": 84.49
+        },
+        {
+          "frame": 12128,
+          "state": "recover",
+          "hp": 2,
+          "phase": 2,
+          "x": 180,
+          "y": 44,
+          "energy": 82.7
+        },
+        {
+          "frame": 12129,
+          "state": "recover",
+          "hp": 2,
+          "phase": 3,
+          "x": 181,
+          "y": 42,
+          "energy": 82.69
+        },
+        {
+          "frame": 12198,
+          "state": "warn",
+          "hp": 2,
+          "phase": 3,
+          "x": 234,
+          "y": 62,
+          "energy": 82.06
+        },
+        {
+          "frame": 12268,
+          "state": "attack",
+          "hp": 2,
+          "phase": 3,
+          "x": 263,
+          "y": 94,
+          "energy": 81.42
+        },
+        {
+          "frame": 12338,
+          "state": "open",
+          "hp": 2,
+          "phase": 3,
+          "x": 263,
+          "y": 94,
+          "energy": 80.78
+        },
+        {
+          "frame": 12402,
+          "state": "recover",
+          "hp": 1,
+          "phase": 3,
+          "x": 183,
+          "y": 44,
+          "energy": 78.99
+        },
+        {
+          "frame": 12472,
+          "state": "warn",
+          "hp": 1,
+          "phase": 3,
+          "x": 225,
+          "y": 62,
+          "energy": 78.35
+        },
+        {
+          "frame": 12542,
+          "state": "attack",
+          "hp": 1,
+          "phase": 3,
+          "x": 254,
+          "y": 139,
+          "energy": 77.71
+        },
+        {
+          "frame": 12612,
+          "state": "open",
+          "hp": 1,
+          "phase": 3,
+          "x": 254,
+          "y": 142,
+          "energy": 77.07
+        },
+        {
+          "frame": 12682,
+          "state": "defeat",
+          "hp": 0,
+          "phase": 3,
+          "x": 226,
+          "y": 44,
+          "energy": 75.22
+        }
+      ],
+      "trialTimes": [
+        {
+          "frame": 418,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 1541,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 2309,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 3449,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 4339,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 5801,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 6594,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 8441,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 9434,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 10764,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        }
+      ],
+      "complete": true,
+      "solved": 10,
+      "events": [
+        {
+          "frame": 418,
+          "type": "charge-seal",
+          "id": "1-1",
+          "detail": "1"
+        },
+        {
+          "frame": 418,
+          "type": "solved",
+          "id": "1-1",
+          "detail": ""
+        },
+        {
+          "frame": 1249,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "1"
+        },
+        {
+          "frame": 1449,
+          "type": "activate",
+          "id": "1-2",
+          "detail": "2"
+        },
+        {
+          "frame": 1541,
+          "type": "solved",
+          "id": "1-2",
+          "detail": ""
+        },
+        {
+          "frame": 1959,
+          "type": "activate",
+          "id": "2-1",
+          "detail": "2"
+        },
+        {
+          "frame": 2089,
+          "type": "activate",
+          "id": "2-1",
+          "detail": "1"
+        },
+        {
+          "frame": 2309,
+          "type": "activate",
+          "id": "2-1",
+          "detail": "3"
+        },
+        {
+          "frame": 2309,
+          "type": "solved",
+          "id": "2-1",
+          "detail": ""
+        },
+        {
+          "frame": 3449,
+          "type": "deposit",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 3449,
+          "type": "solved",
+          "id": "2-2",
+          "detail": ""
+        },
+        {
+          "frame": 4069,
+          "type": "rotate",
+          "id": "3-1",
+          "detail": "A"
+        },
+        {
+          "frame": 4139,
+          "type": "rotate",
+          "id": "3-1",
+          "detail": "B"
+        },
+        {
+          "frame": 4309,
+          "type": "rotate",
+          "id": "3-1",
+          "detail": "C"
+        },
+        {
+          "frame": 4339,
+          "type": "solved",
+          "id": "3-1",
+          "detail": ""
+        },
+        {
+          "frame": 5494,
+          "type": "activate",
+          "id": "3-2",
+          "detail": "1"
+        },
+        {
+          "frame": 5704,
+          "type": "activate",
+          "id": "3-2",
+          "detail": "2"
+        },
+        {
+          "frame": 5754,
+          "type": "activate",
+          "id": "3-2",
+          "detail": "3"
+        },
+        {
+          "frame": 5801,
+          "type": "solved",
+          "id": "3-2",
+          "detail": ""
+        },
+        {
+          "frame": 6594,
+          "type": "deposit",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 6594,
+          "type": "solved",
+          "id": "4-1",
+          "detail": ""
+        },
+        {
+          "frame": 8080,
+          "type": "charge-seal",
+          "id": "4-2",
+          "detail": "1"
+        },
+        {
+          "frame": 8441,
+          "type": "charge-seal",
+          "id": "4-2",
+          "detail": "2"
+        },
+        {
+          "frame": 8441,
+          "type": "solved",
+          "id": "4-2",
+          "detail": ""
+        },
+        {
+          "frame": 9004,
+          "type": "activate",
+          "id": "5-1",
+          "detail": "3"
+        },
+        {
+          "frame": 9224,
+          "type": "activate",
+          "id": "5-1",
+          "detail": "1"
+        },
+        {
+          "frame": 9354,
+          "type": "activate",
+          "id": "5-1",
+          "detail": "4"
+        },
+        {
+          "frame": 9434,
+          "type": "activate",
+          "id": "5-1",
+          "detail": "2"
+        },
+        {
+          "frame": 9434,
+          "type": "solved",
+          "id": "5-1",
+          "detail": ""
+        },
+        {
+          "frame": 10514,
+          "type": "rotate",
+          "id": "5-2",
+          "detail": "A"
+        },
+        {
+          "frame": 10584,
+          "type": "rotate",
+          "id": "5-2",
+          "detail": "B"
+        },
+        {
+          "frame": 10734,
+          "type": "rotate",
+          "id": "5-2",
+          "detail": "C"
+        },
+        {
+          "frame": 10764,
+          "type": "solved",
+          "id": "5-2",
+          "detail": ""
+        },
+        {
+          "frame": 11035,
+          "type": "boss-start",
+          "id": "heart",
+          "detail": ""
+        },
+        {
+          "frame": 11304,
+          "type": "boss-open",
+          "id": "heart",
+          "detail": "1"
+        },
+        {
+          "frame": 11342,
+          "type": "boss-hit",
+          "id": "heart",
+          "detail": "5"
+        },
+        {
+          "frame": 11532,
+          "type": "boss-open",
+          "id": "heart",
+          "detail": "1"
+        },
+        {
+          "frame": 11580,
+          "type": "boss-hit",
+          "id": "heart",
+          "detail": "4"
+        },
+        {
+          "frame": 11790,
+          "type": "boss-open",
+          "id": "heart",
+          "detail": "2"
+        },
+        {
+          "frame": 11854,
+          "type": "boss-hit",
+          "id": "heart",
+          "detail": "3"
+        },
+        {
+          "frame": 12064,
+          "type": "boss-open",
+          "id": "heart",
+          "detail": "2"
+        },
+        {
+          "frame": 12128,
+          "type": "boss-hit",
+          "id": "heart",
+          "detail": "2"
+        },
+        {
+          "frame": 12338,
+          "type": "boss-open",
+          "id": "heart",
+          "detail": "3"
+        },
+        {
+          "frame": 12402,
+          "type": "boss-hit",
+          "id": "heart",
+          "detail": "1"
+        },
+        {
+          "frame": 12612,
+          "type": "boss-open",
+          "id": "heart",
+          "detail": "3"
+        },
+        {
+          "frame": 12682,
+          "type": "boss-hit",
+          "id": "heart",
+          "detail": "0"
+        },
+        {
+          "frame": 12802,
+          "type": "boss-defeated",
+          "id": "heart",
+          "detail": ""
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "level": 5,
+      "trials": [
+        {
+          "id": "1-1",
+          "kind": "charge",
+          "nodes": [
+            {
+              "role": "plate",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            }
+          ]
+        },
+        {
+          "id": "1-2",
+          "kind": "sequence",
+          "nodes": [
+            {
+              "role": "switch",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 11,
+              "row": 6,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 21,
+              "row": 9,
+              "angle": 0
+            }
+          ],
+          "order": [
+            "2",
+            "1",
+            "3"
+          ]
+        },
+        {
+          "id": "2-1",
+          "kind": "weight",
+          "nodes": [
+            {
+              "role": "stone",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "socket",
+              "col": 21,
+              "row": 6,
+              "angle": 0
+            }
+          ]
+        },
+        {
+          "id": "2-2",
+          "kind": "charge",
+          "nodes": [
+            {
+              "role": "plate",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "plate",
+              "col": 14,
+              "row": 9,
+              "angle": 0
+            }
+          ]
+        },
+        {
+          "id": "3-1",
+          "kind": "charge",
+          "nodes": [
+            {
+              "role": "plate",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "plate",
+              "col": 14,
+              "row": 9,
+              "angle": 0
+            }
+          ]
+        },
+        {
+          "id": "3-2",
+          "kind": "weight",
+          "nodes": [
+            {
+              "role": "stone",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "socket",
+              "col": -20,
+              "row": 3,
+              "angle": 0
+            }
+          ]
+        },
+        {
+          "id": "4-1",
+          "kind": "sequence",
+          "nodes": [
+            {
+              "role": "switch",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 11,
+              "row": 6,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 21,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 6,
+              "row": 3,
+              "angle": 0
+            }
+          ],
+          "order": [
+            "3",
+            "1",
+            "4",
+            "2"
+          ]
+        },
+        {
+          "id": "4-2",
+          "kind": "charge",
+          "nodes": [
+            {
+              "role": "plate",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "plate",
+              "col": 14,
+              "row": 9,
+              "angle": 0
+            }
+          ]
+        },
+        {
+          "id": "5-1",
+          "kind": "charge",
+          "nodes": [
+            {
+              "role": "plate",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "plate",
+              "col": 14,
+              "row": 9,
+              "angle": 0
+            }
+          ]
+        },
+        {
+          "id": "5-2",
+          "kind": "weight",
+          "nodes": [
+            {
+              "role": "stone",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "socket",
+              "col": -20,
+              "row": 3,
+              "angle": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "trials": [
+        {
+          "id": "1-1",
+          "kind": "timed",
+          "nodes": [
+            {
+              "role": "switch",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 17,
+              "row": 5,
+              "angle": 0
+            }
+          ],
+          "order": [
+            "1",
+            "2"
+          ],
+          "duration": 600
+        },
+        {
+          "id": "1-2",
+          "kind": "sequence",
+          "nodes": [
+            {
+              "role": "switch",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 11,
+              "row": 6,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 21,
+              "row": 9,
+              "angle": 0
+            }
+          ],
+          "order": [
+            "2",
+            "1",
+            "3"
+          ]
+        },
+        {
+          "id": "2-1",
+          "kind": "weight",
+          "nodes": [
+            {
+              "role": "stone",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "socket",
+              "col": 21,
+              "row": 6,
+              "angle": 0
+            }
+          ]
+        },
+        {
+          "id": "2-2",
+          "kind": "timed",
+          "nodes": [
+            {
+              "role": "switch",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 17,
+              "row": 5,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 22,
+              "row": 9,
+              "angle": 0
+            }
+          ],
+          "order": [
+            "1",
+            "2",
+            "3"
+          ],
+          "duration": 420
+        },
+        {
+          "id": "3-1",
+          "kind": "timed",
+          "nodes": [
+            {
+              "role": "switch",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 17,
+              "row": 5,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 22,
+              "row": 9,
+              "angle": 0
+            }
+          ],
+          "order": [
+            "1",
+            "2",
+            "3"
+          ],
+          "duration": 420
+        },
+        {
+          "id": "3-2",
+          "kind": "weight",
+          "nodes": [
+            {
+              "role": "stone",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "socket",
+              "col": -20,
+              "row": 3,
+              "angle": 0
+            }
+          ]
+        },
+        {
+          "id": "4-1",
+          "kind": "sequence",
+          "nodes": [
+            {
+              "role": "switch",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 11,
+              "row": 6,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 21,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 6,
+              "row": 3,
+              "angle": 0
+            }
+          ],
+          "order": [
+            "3",
+            "1",
+            "4",
+            "2"
+          ]
+        },
+        {
+          "id": "4-2",
+          "kind": "timed",
+          "nodes": [
+            {
+              "role": "switch",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 17,
+              "row": 5,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 22,
+              "row": 9,
+              "angle": 0
+            }
+          ],
+          "order": [
+            "1",
+            "2",
+            "3"
+          ],
+          "duration": 420
+        },
+        {
+          "id": "5-1",
+          "kind": "timed",
+          "nodes": [
+            {
+              "role": "switch",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 17,
+              "row": 5,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 22,
+              "row": 9,
+              "angle": 0
+            }
+          ],
+          "order": [
+            "1",
+            "2",
+            "3"
+          ],
+          "duration": 420
+        },
+        {
+          "id": "5-2",
+          "kind": "timed",
+          "nodes": [
+            {
+              "role": "switch",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 17,
+              "row": 5,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 22,
+              "row": 9,
+              "angle": 0
+            }
+          ],
+          "order": [
+            "1",
+            "2",
+            "3"
+          ],
+          "duration": 420
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "trials": [
+        {
+          "id": "1-1",
+          "kind": "mirror",
+          "nodes": [
+            {
+              "role": "source",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "mirror",
+              "col": 7,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "mirror",
+              "col": 7,
+              "row": 4,
+              "angle": 0
+            },
+            {
+              "role": "receiver",
+              "col": 22,
+              "row": 4,
+              "angle": 0
+            }
+          ]
+        },
+        {
+          "id": "1-2",
+          "kind": "sequence",
+          "nodes": [
+            {
+              "role": "switch",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 11,
+              "row": 6,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 21,
+              "row": 9,
+              "angle": 0
+            }
+          ],
+          "order": [
+            "2",
+            "1",
+            "3"
+          ]
+        },
+        {
+          "id": "2-1",
+          "kind": "sequence",
+          "nodes": [
+            {
+              "role": "switch",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 11,
+              "row": 6,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 21,
+              "row": 9,
+              "angle": 0
+            }
+          ],
+          "order": [
+            "2",
+            "1",
+            "3"
+          ]
+        },
+        {
+          "id": "2-2",
+          "kind": "mirror",
+          "nodes": [
+            {
+              "role": "source",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "mirror",
+              "col": 7,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "mirror",
+              "col": 7,
+              "row": 4,
+              "angle": 0
+            },
+            {
+              "role": "receiver",
+              "col": 21,
+              "row": 7,
+              "angle": 0
+            },
+            {
+              "role": "mirror",
+              "col": 21,
+              "row": 4,
+              "angle": 1
+            }
+          ]
+        },
+        {
+          "id": "3-1",
+          "kind": "mirror",
+          "nodes": [
+            {
+              "role": "source",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "mirror",
+              "col": 7,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "mirror",
+              "col": 7,
+              "row": 4,
+              "angle": 0
+            },
+            {
+              "role": "receiver",
+              "col": 21,
+              "row": 7,
+              "angle": 0
+            },
+            {
+              "role": "mirror",
+              "col": 21,
+              "row": 4,
+              "angle": 1
+            }
+          ]
+        },
+        {
+          "id": "3-2",
+          "kind": "timed",
+          "nodes": [
+            {
+              "role": "switch",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 17,
+              "row": 5,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 22,
+              "row": 9,
+              "angle": 0
+            }
+          ],
+          "order": [
+            "1",
+            "2",
+            "3"
+          ],
+          "duration": 420
+        },
+        {
+          "id": "4-1",
+          "kind": "timed",
+          "nodes": [
+            {
+              "role": "switch",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 17,
+              "row": 5,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 22,
+              "row": 9,
+              "angle": 0
+            }
+          ],
+          "order": [
+            "1",
+            "2",
+            "3"
+          ],
+          "duration": 420
+        },
+        {
+          "id": "4-2",
+          "kind": "mirror",
+          "nodes": [
+            {
+              "role": "source",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "mirror",
+              "col": 7,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "mirror",
+              "col": 7,
+              "row": 4,
+              "angle": 0
+            },
+            {
+              "role": "receiver",
+              "col": 21,
+              "row": 7,
+              "angle": 0
+            },
+            {
+              "role": "mirror",
+              "col": 21,
+              "row": 4,
+              "angle": 1
+            }
+          ]
+        },
+        {
+          "id": "5-1",
+          "kind": "mirror",
+          "nodes": [
+            {
+              "role": "source",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "mirror",
+              "col": 7,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "mirror",
+              "col": 7,
+              "row": 4,
+              "angle": 0
+            },
+            {
+              "role": "receiver",
+              "col": 21,
+              "row": 7,
+              "angle": 0
+            },
+            {
+              "role": "mirror",
+              "col": 21,
+              "row": 4,
+              "angle": 1
+            }
+          ]
+        },
+        {
+          "id": "5-2",
+          "kind": "mirror",
+          "nodes": [
+            {
+              "role": "source",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "mirror",
+              "col": 7,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "mirror",
+              "col": 7,
+              "row": 4,
+              "angle": 0
+            },
+            {
+              "role": "receiver",
+              "col": 21,
+              "row": 7,
+              "angle": 0
+            },
+            {
+              "role": "mirror",
+              "col": 21,
+              "row": 4,
+              "angle": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "trials": [
+        {
+          "id": "1-1",
+          "kind": "charge",
+          "nodes": [
+            {
+              "role": "plate",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            }
+          ]
+        },
+        {
+          "id": "1-2",
+          "kind": "timed",
+          "nodes": [
+            {
+              "role": "switch",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 17,
+              "row": 5,
+              "angle": 0
+            }
+          ],
+          "order": [
+            "1",
+            "2"
+          ],
+          "duration": 600
+        },
+        {
+          "id": "2-1",
+          "kind": "sequence",
+          "nodes": [
+            {
+              "role": "switch",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 11,
+              "row": 6,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 21,
+              "row": 9,
+              "angle": 0
+            }
+          ],
+          "order": [
+            "2",
+            "1",
+            "3"
+          ]
+        },
+        {
+          "id": "2-2",
+          "kind": "weight",
+          "nodes": [
+            {
+              "role": "stone",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "socket",
+              "col": -20,
+              "row": 3,
+              "angle": 0
+            }
+          ]
+        },
+        {
+          "id": "3-1",
+          "kind": "mirror",
+          "nodes": [
+            {
+              "role": "source",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "mirror",
+              "col": 7,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "mirror",
+              "col": 7,
+              "row": 4,
+              "angle": 0
+            },
+            {
+              "role": "receiver",
+              "col": 21,
+              "row": 7,
+              "angle": 0
+            },
+            {
+              "role": "mirror",
+              "col": 21,
+              "row": 4,
+              "angle": 1
+            }
+          ]
+        },
+        {
+          "id": "3-2",
+          "kind": "timed",
+          "nodes": [
+            {
+              "role": "switch",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 17,
+              "row": 5,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 22,
+              "row": 9,
+              "angle": 0
+            }
+          ],
+          "order": [
+            "1",
+            "2",
+            "3"
+          ],
+          "duration": 420
+        },
+        {
+          "id": "4-1",
+          "kind": "weight",
+          "nodes": [
+            {
+              "role": "stone",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "socket",
+              "col": -20,
+              "row": 3,
+              "angle": 0
+            }
+          ]
+        },
+        {
+          "id": "4-2",
+          "kind": "charge",
+          "nodes": [
+            {
+              "role": "plate",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "plate",
+              "col": 14,
+              "row": 9,
+              "angle": 0
+            }
+          ]
+        },
+        {
+          "id": "5-1",
+          "kind": "sequence",
+          "nodes": [
+            {
+              "role": "switch",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 11,
+              "row": 6,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 21,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "switch",
+              "col": 6,
+              "row": 3,
+              "angle": 0
+            }
+          ],
+          "order": [
+            "3",
+            "1",
+            "4",
+            "2"
+          ]
+        },
+        {
+          "id": "5-2",
+          "kind": "mirror",
+          "nodes": [
+            {
+              "role": "source",
+              "col": 0,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "mirror",
+              "col": 7,
+              "row": 9,
+              "angle": 0
+            },
+            {
+              "role": "mirror",
+              "col": 7,
+              "row": 4,
+              "angle": 0
+            },
+            {
+              "role": "receiver",
+              "col": 21,
+              "row": 7,
+              "angle": 0
+            },
+            {
+              "role": "mirror",
+              "col": 21,
+              "row": 4,
+              "angle": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
